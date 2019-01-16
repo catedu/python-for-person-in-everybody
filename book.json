@@ -1,0 +1,20 @@
+{
+    "plugins": ["youtube", "accordion", "styled-blockquotes", "localized-footer"],
+    "language": "es",
+    "variables": {
+        "title": "Google Classroom",
+        "authors": [
+            "Isabel Pérez Pérez",
+            "Ricardo Alonso Liarte"
+        ],
+        "collaborators": [
+            { "name": "_________", "edited": "_____________" }
+        ]
+    },
+    "pluginsConfig": {
+        "localized-footer": {
+            "hline": true,
+            "filename": "./FOOTER.md"
+        }
+    }
+}

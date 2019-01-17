@@ -1,0 +1,27 @@
+{
+    "plugins": ["youtube", "accordion", "styled-blockquotes", "localized-footer", "github-edit", "githubcontributors"],
+    "language": "es",
+    "variables": {
+        "title": "Python for person in everybody",
+        "authors": [
+            "Charles R. Severance"
+        ],
+        "collaborators": [
+            { "name": "_________", "edited": "_____________" }
+        ]
+    },
+    "pluginsConfig": {
+        "localized-footer": {
+            "hline": true,
+            "filename": "./FOOTER.md"
+        },
+        "github-edit": {
+            "repo": "catedu/python-for-person-in-everybody",
+            "branch": "master"
+        },
+        "githubcontributors": {
+            "githubOwner": "catedu",
+            "githubRepository": "python-for-person-in-everybody"
+        }
+    }
+}

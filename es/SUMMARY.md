@@ -18,3 +18,7 @@ ___
 - [13. Python and Web Services](13-servicios-web.md)
 - [14. Objects](14-objetos.md)
 - [15. Python and Databases](15-bases-de-datos-y-sql.md)
+
+___
+
+- [Créditos](crditos.md)

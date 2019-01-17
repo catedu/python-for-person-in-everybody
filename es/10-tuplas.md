@@ -1,61 +1,3 @@
-
-<li class = "name">
-<a aria-label="Index Page" href="//trinket.io/" role="button">
-<img alt = "Trinket te ayuda a enseñar con el código" src = "/ cache-prefix-aac84e42 / img / trinket-logo.png" />
-</a>
-</ li>
-- [](#)
-
-- [<i class = "fa fa-star"> </i> Plans] (// trinket.io/plans)
-- [<i class = "fa fa-graduation-cap"> </i> Learn] (https://hourofpython.com)
-- [<i class = "fa fa-question-circle"> </i> Ayuda] (// trinket.io/help)
-- [Registrarse] (// trinket.io/signup)
-- [Iniciar sesión <i class = "fa fa-sign-in"> </i>] (// trinket.io/login)
-
-<li class = "name">
-<h1> [Python for Everybody] (https://books.trinket.io/pfe/index.html) </h1>
-</ li>
-- [Menú] (#)
-
-<li>
-<a href="https://books.trinket.io">
-<i class = "fa fa-angle-left"> </i> Todos los libros de texto
-</a>
-</ li>
-
-<li class = "has-dropdown">
-[Capítulos] (#)
-<ul class = "dropdown">
-- [Ver todos los capítulos] (https://books.trinket.io/pfe/index.html)
-- [Capítulo 1: Introducción] (https://books.trinket.io/pfe/01-intro.html)
-- [Capítulo 2: Variables] (https://books.trinket.io/pfe/02-variables.html)
-- [Capítulo 3: Condicionales] (https://books.trinket.io/pfe/03-conditional.html)
-- [Capítulo 4: Funciones] (https://books.trinket.io/pfe/04-functions.html)
-- [Capítulo 5: Iteraciones] (https://books.trinket.io/pfe/05-iterations.html)
-- [Capítulo 6: Cadenas] (https://books.trinket.io/pfe/06-strings.html)
-- [Capítulo 7: Archivos] (https://books.trinket.io/pfe/07-files.html)
-- [Capítulo 8: Listas] (https://books.trinket.io/pfe/08-lists.html)
-- [Capítulo 9: Diccionarios] (https://books.trinket.io/pfe/09-dictionaries.html)
-- [Capítulo 10: Tuplas] (https://books.trinket.io/pfe/10-tuples.html)
-- [Capítulo 11: Regex] (https://books.trinket.io/pfe/11-regex.html)
-- [Capítulo 12: Programas en red] (https://books.trinket.io/pfe/12-network.html)
-- [Capítulo 13: Python y servicios web] (https://books.trinket.io/pfe/13-web.html)
-- [Capítulo 14: Objetos] (https://books.trinket.io/pfe/14-objects.html)
-- [Capítulo 15: Python y bases de datos] (https://books.trinket.io/pfe/15-database.html)
-
-<li class = "has-dropdown"> [Tuplas] (# tuplas) <ul class = "dropdown">
-- [Las tuplas son inmutables] (# tuplas son inmutables)
-- [Comparando tuplas] (# comparando tuplas)
-- [Asignación de tupla] (# asignación de tupla)
-- [Diccionarios y tuplas] (# diccionarios-y-tuplas)
-- [Asignación múltiple con diccionarios] (# asignación múltiple con diccionarios)
-- [Las palabras más comunes] (# las palabras más comunes)
-- [Usando tuples como claves en los diccionarios] (# using-tuples-as-keys-in-dictionary)
-- [Secuencias: cadenas, listas y tuplas - ¡Oh My!] (# Secuencias-listas-listas-y-tuplas --- oh-my)
-- [Depuración] (# depuración)
-- [Glosario] (# glosario)
-- [Ejercicios] (# ejercicios)
-
 # [Tuplas] (# tuplas)
 
 ## [Las tuplas son inmutables] (# tuplas son inmutables)
@@ -316,8 +258,8 @@ Para comenzar con lo obvio, las cadenas son más limitadas que otras secuencias 
 Las listas son más comunes que las tuplas, principalmente porque son mutables. Pero hay algunos casos en los que quizás prefieras las tuplas:
 
 1. En algunos contextos, como una declaración `return ', es sintácticamente más simple crear una tupla que una lista. En otros contextos, es posible que prefiera una lista.
-1. Si desea usar una secuencia como clave de diccionario, debe usar un tipo inmutable como una tupla o cadena.
-1. Si está pasando una secuencia como un argumento a una función, el uso de tuplas reduce el potencial de comportamiento inesperado debido al aliasing.
+2. Si desea usar una secuencia como clave de diccionario, debe usar un tipo inmutable como una tupla o cadena.
+3. Si está pasando una secuencia como un argumento a una función, el uso de tuplas reduce el potencial de comportamiento inesperado debido al aliasing.
 
 Si desea usar una secuencia como clave de diccionario, debe usar un tipo inmutable como una tupla o cadena.
 
@@ -430,24 +372,3 @@ Enter a file name: mbox-short.txt
 1. Python no traduce la sintaxis literalmente. Por ejemplo, si intenta esto con un diccionario, no funcionará como podría esperarse. [↩] (# fnref2)
 
 Python no traduce la sintaxis literalmente. Por ejemplo, si intenta esto con un diccionario, no funcionará como podría esperarse. [↩] (# fnref2)
-
-© 2015-2018 Baratija
-
-#### Sobre nosotros
-
-- [Nuestra historia] (// trinket.io/our-story)
-<li> [Blog] (http://blog.trinket.io)
-<li> [Asociaciones] (// trinket.io/partners)
-</ Li> </ li>
-#### Soporte
-
-- [Preguntas frecuentes] (// trinket.io/faq)
-- [Ayuda] (// trinket.io/help)
-- [Contáctenos] (// trinket.io/contact)
-
-#### Legal
-
-- [Términos de servicio] (// trinket.io/tos)
-- [Privacidad] (// trinket.io/privacy)
-
-#### Conectar

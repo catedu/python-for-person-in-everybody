@@ -1,61 +1,3 @@
-
-<li class = "name">
-<a aria-label="Index Page" href="//trinket.io/" role="button">
-<img alt = "Trinket te ayuda a enseñar con el código" src = "/ cache-prefix-aac84e42 / img / trinket-logo.png" />
-</a>
-</ li>
-- [](#)
-
-- [<i class = "fa fa-star"> </i> Plans] (// trinket.io/plans)
-- [<i class = "fa fa-graduation-cap"> </i> Learn] (https://hourofpython.com)
-- [<i class = "fa fa-question-circle"> </i> Ayuda] (// trinket.io/help)
-- [Registrarse] (// trinket.io/signup)
-- [Iniciar sesión <i class = "fa fa-sign-in"> </i>] (// trinket.io/login)
-
-<li class = "name">
-<h1> [Python for Everybody] (https://books.trinket.io/pfe/index.html) </h1>
-</ li>
-- [Menú] (#)
-
-<li>
-<a href="https://books.trinket.io">
-<i class = "fa fa-angle-left"> </i> Todos los libros de texto
-</a>
-</ li>
-
-<li class = "has-dropdown">
-[Capítulos] (#)
-<ul class = "dropdown">
-- [Ver todos los capítulos] (https://books.trinket.io/pfe/index.html)
-- [Capítulo 1: Introducción] (https://books.trinket.io/pfe/01-intro.html)
-- [Capítulo 2: Variables] (https://books.trinket.io/pfe/02-variables.html)
-- [Capítulo 3: Condicionales] (https://books.trinket.io/pfe/03-conditional.html)
-- [Capítulo 4: Funciones] (https://books.trinket.io/pfe/04-functions.html)
-- [Capítulo 5: Iteraciones] (https://books.trinket.io/pfe/05-iterations.html)
-- [Capítulo 6: Cadenas] (https://books.trinket.io/pfe/06-strings.html)
-- [Capítulo 7: Archivos] (https://books.trinket.io/pfe/07-files.html)
-- [Capítulo 8: Listas] (https://books.trinket.io/pfe/08-lists.html)
-- [Capítulo 9: Diccionarios] (https://books.trinket.io/pfe/09-dictionaries.html)
-- [Capítulo 10: Tuplas] (https://books.trinket.io/pfe/10-tuples.html)
-- [Capítulo 11: Regex] (https://books.trinket.io/pfe/11-regex.html)
-- [Capítulo 12: Programas en red] (https://books.trinket.io/pfe/12-network.html)
-- [Capítulo 13: Python y servicios web] (https://books.trinket.io/pfe/13-web.html)
-- [Capítulo 14: Objetos] (https://books.trinket.io/pfe/14-objects.html)
-- [Capítulo 15: Python y bases de datos] (https://books.trinket.io/pfe/15-database.html)
-
-<li class = "has-dropdown"> [Usar bases de datos y SQL] (# using -atabases-bases-de-datos) <ul class = "dropdown">
-- [¿Qué es una base de datos?] (# What-is-a-database)
-- [Conceptos de base de datos] (# conceptos de base de datos)
-- [Database Browser for SQLite] (# database-browser-for-sqlite)
-- [Creando una tabla de base de datos] (# creating-a-database-table)
-- [Resumen de lenguaje de consulta estructurado] (# estructurado de consulta-lenguaje-resumen)
-- [Spidering Twitter usando una base de datos] (# spidering-twitter-using-a-database)
-- [Modelado básico de datos] (# modelado básico de datos)
-<li> [Programación con varias tablas] (# programación-con-tablas-múltiples) <ul>
-- [Restricciones en tablas de base de datos] (# restricciones en tablas de base de datos)
-- [Recuperar y / o insertar un registro] (# recuperar-andor-insertar-un-registro)
-- [Almacenar la relación de amistad] (# relación de guardar el amigo)
-
 # [Uso de bases de datos y SQL] (# using -atabases-and-sql)
 
 ## [¿Qué es una base de datos?] (# What-is-a-database)
@@ -80,7 +22,7 @@ Cuando miras por primera vez una base de datos, parece una hoja de cálculo con 
 
 Bases de datos relacionales
 
-En las descripciones técnicas de las bases de datos relacionales, los conceptos de tabla, fila y columna se denominan más formalmente ** relación **, ** tupla ** y ** atributo **, respectivamente. Usaremos los términos menos formales en este capítulo.
+En las descripciones técnicas de las bases de datos relacionales, los conceptos de tabla, fila y columna se denominan más formalmente **relación**, **tupla** y **atributo**, respectivamente. Usaremos los términos menos formales en este capítulo.
 
 ## [Database Browser for SQLite] (# database-browser-for-sqlite)
 
@@ -372,8 +314,8 @@ Ahora rehaceremos el programa de arañas de Twitter utilizando dos tablas, las c
 Este programa está empezando a complicarse un poco, pero ilustra los patrones que debemos usar cuando estamos usando claves de enteros para vincular tablas. Los patrones básicos son:
 
 1. Crear tablas con claves primarias y restricciones.
-1. Cuando tenemos una clave lógica para una persona (es decir, el nombre de la cuenta) y necesitamos el valor `id` para la persona, dependiendo de si la persona ya está en la tabla` Personas 'o bien debemos: ( 1) busque la persona en la tabla `People` y recupere el valor` id` para la persona o (2) agregue a la persona a la tabla `People` y obtenga el valor` id` para la fila recién agregada.
-1. Inserte la fila que captura la relación "sigue".
+2. Cuando tenemos una clave lógica para una persona (es decir, el nombre de la cuenta) y necesitamos el valor `id` para la persona, dependiendo de si la persona ya está en la tabla` Personas 'o bien debemos: ( 1) busque la persona en la tabla `People` y recupere el valor` id` para la persona o (2) agregue a la persona a la tabla `People` y obtenga el valor` id` para la fila recién agregada.
+3. Inserte la fila que captura la relación "sigue".
 
 Vamos a cubrir cada uno de estos a su vez.
 
@@ -586,24 +528,3 @@ Por lo tanto, una solución es asegurarse de cerrar el navegador de la base de d
 
 1. SQLite realmente permite cierta flexibilidad en el tipo de datos almacenados en una columna, pero mantendremos nuestros tipos de datos estrictos en este capítulo para que los conceptos se apliquen por igual a otros sistemas de bases de datos como MySQL. [↩] (# fnref1)
 1. En general, cuando una oración comienza con "si todo va bien", encontrará que el código debe usar try / except. [↩] (# fnref2)
-
-© 2015-2018 Baratija
-
-#### Sobre nosotros
-
-- [Nuestra historia] (// trinket.io/our-story)
-<li> [Blog] (http://blog.trinket.io)
-<li> [Asociaciones] (// trinket.io/partners)
-</ Li> </ li>
-#### Soporte
-
-- [Preguntas frecuentes] (// trinket.io/faq)
-- [Ayuda] (// trinket.io/help)
-- [Contáctenos] (// trinket.io/contact)
-
-#### Legal
-
-- [Términos de servicio] (// trinket.io/tos)
-- [Privacidad] (// trinket.io/privacy)
-
-#### Conectar

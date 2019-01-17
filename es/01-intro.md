@@ -1,64 +1,9 @@
 
-<li class = "name">
-<a aria-label="Index Page" href="//trinket.io/" role="button">
-<img alt = "Trinket te ayuda a enseñar con el código" src = "/ cache-prefix-aac84e42 / img / trinket-logo.png" />
-</a>
-</ li>
-- [](#)
+# Sobre este viaje
 
-- [<i class = "fa fa-star"> </i> Plans] (// trinket.io/plans)
-- [<i class = "fa fa-graduation-cap"> </i> Learn] (https://hourofpython.com)
-- [<i class = "fa fa-question-circle"> </i> Ayuda] (// trinket.io/help)
-- [Registrarse] (// trinket.io/signup)
-- [Iniciar sesión <i class = "fa fa-sign-in"> </i>] (// trinket.io/login)
+* [¿Por qué debería aprender a escribir programas?](#por-que-programar)
 
-<li class = "name">
-<h1> [Python for Everybody] (https://books.trinket.io/pfe/index.html) </h1>
-</ li>
-- [Menú] (#)
-
-<li>
-<a href="https://books.trinket.io">
-<i class = "fa fa-angle-left"> </i> Todos los libros de texto
-</a>
-</ li>
-
-<li class = "has-dropdown">
-[Capítulos] (#)
-<ul class = "dropdown">
-- [Ver todos los capítulos] (https://books.trinket.io/pfe/index.html)
-- [Capítulo 1: Introducción] (https://books.trinket.io/pfe/01-intro.html)
-- [Capítulo 2: Variables] (https://books.trinket.io/pfe/02-variables.html)
-- [Capítulo 3: Condicionales] (https://books.trinket.io/pfe/03-conditional.html)
-- [Capítulo 4: Funciones] (https://books.trinket.io/pfe/04-functions.html)
-- [Capítulo 5: Iteraciones] (https://books.trinket.io/pfe/05-iterations.html)
-- [Capítulo 6: Cadenas] (https://books.trinket.io/pfe/06-strings.html)
-- [Capítulo 7: Archivos] (https://books.trinket.io/pfe/07-files.html)
-- [Capítulo 8: Listas] (https://books.trinket.io/pfe/08-lists.html)
-- [Capítulo 9: Diccionarios] (https://books.trinket.io/pfe/09-dictionaries.html)
-- [Capítulo 10: Tuplas] (https://books.trinket.io/pfe/10-tuples.html)
-- [Capítulo 11: Regex] (https://books.trinket.io/pfe/11-regex.html)
-- [Capítulo 12: Programas en red] (https://books.trinket.io/pfe/12-network.html)
-- [Capítulo 13: Python y servicios web] (https://books.trinket.io/pfe/13-web.html)
-- [Capítulo 14: Objetos] (https://books.trinket.io/pfe/14-objects.html)
-- [Capítulo 15: Python y bases de datos] (https://books.trinket.io/pfe/15-database.html)
-
-<li class = "has-dropdown"> [¿Por qué debería aprender a escribir programas?] (# por qué debería aprender a escribir programas) <ul class = "dropdown">
-- [Creatividad y motivación] (# creatividad-y-motivación)
-- [Arquitectura de hardware de computadora] (# computer-hardware-architecture)
-- [Entendiendo la programación] (# comprensión-programación)
-- [Palabras y oraciones] (# palabras y oraciones)
-- [Conversando con Python] (# conversing-with-python)
-- [Terminología: intérprete y compilador] (# terminología-intérprete-y-compilador)
-- [Escribiendo un programa] (# writing-a-program)
-- [¿Qué es un programa?] (# Qué es un programa)
-- [Los componentes básicos de los programas] (# the-building-blocks-of-programs)
-- [¿Qué podría salir mal?] (# Qué-podría-podría-ir-mal)
-- [El viaje de aprendizaje] (# the-learning-journey)
-- [Glosario] (# glosario)
-- [Ejercicios] (# ejercicios)
-
-# [¿Por qué debería aprender a escribir programas?] (# Por qué debería aprender a escribir programas)
+## [¿Por qué debería aprender a escribir programas?](#por-que-programar)
 
 Escribir programas (o programación) es una actividad muy creativa y gratificante. Puede escribir programas por muchas razones, desde ganarse la vida hasta resolver un problema difícil de análisis de datos hasta divertirse o ayudar a alguien más a resolver un problema. Este libro asume que ** todos ** deben saber cómo programar, y que una vez que sepa cómo programar, descubrirá qué quiere hacer con sus nuevas habilidades.
 
@@ -72,7 +17,8 @@ Nuestras computadoras son rápidas y tienen una gran cantidad de memoria y podr�
 
 Por ejemplo, mire los primeros tres párrafos de este capítulo y dígame la palabra que se usa con más frecuencia y cuántas veces se usa la palabra. Si bien pudiste leer y entender las palabras en unos pocos segundos, contarlas es casi doloroso porque no es el tipo de problema que las mentes humanas están diseñadas para resolver. Para una computadora es todo lo contrario, leer y entender texto de una hoja de papel es difícil de hacer para una computadora, pero contar las palabras y decirle cuántas veces se usó la palabra más usada es muy fácil para la computadora:
 
-```    python words.py
+```bash
+python words.py
     Enter file:words.txt
     to 16
 ```
@@ -80,7 +26,7 @@ Nuestro "asistente de análisis de información personal" rápidamente nos dijo 
 
 Este mismo hecho de que las computadoras son buenas para las cosas que los humanos no son es la razón por la que necesita adquirir habilidad para hablar "lenguaje de computadora". Una vez que aprenda este nuevo idioma, puede delegar tareas mundanas a su compañero (la computadora), lo que le deja más tiempo para hacer las cosas para las que está preparado de manera única. Traes creatividad, intuición e inventiva a esta asociación.
 
-## [Creatividad y motivación] (# creatividad y motivación)
+## [Creatividad y motivación](# creatividad y motivación)
 
 Si bien este libro no está dirigido a programadores profesionales, la programación profesional puede ser un trabajo muy gratificante tanto a nivel financiero como personal. Crear programas útiles, elegantes e inteligentes para que otros puedan usar es una actividad muy creativa. Su computadora o Personal Digital Assistant (PDA) usualmente contiene muchos programas diferentes de diferentes grupos de programadores, cada uno compitiendo por su atención e interés. Hacen todo lo posible para satisfacer sus necesidades y le brindan una excelente experiencia de usuario en el proceso. En algunas situaciones, cuando elige una pieza de software, los programadores reciben una compensación directa debido a su elección.
 
@@ -90,7 +36,7 @@ Programadores hablando contigo
 
 Por ahora, nuestra principal motivación no es ganar dinero o complacer a los usuarios finales, sino que seamos más productivos en el manejo de los datos y la información que encontraremos en nuestras vidas. Cuando comience, será el programador y el usuario final de sus programas. A medida que adquiere destreza como programador y programación se siente más creativo para usted, sus pensamientos pueden dirigirse hacia el desarrollo de programas para otros.
 
-## [Arquitectura de hardware de computadora] (# arquitectura de hardware de computadora)
+## [Arquitectura de hardware de computadora](# arquitectura de hardware de computadora)
 
 
 
@@ -114,7 +60,7 @@ Como programador, su trabajo consiste en utilizar y organizar cada uno de estos 
 
 Necesitas ser la persona que responde a la CPU "¿Qué sigue?" pregunta. Pero sería muy incómodo reducirlo a una altura de 5 mm e insertarlo en la computadora solo para que pueda emitir un comando tres mil millones de veces por segundo. Así que en lugar de eso, debes escribir tus instrucciones con anticipación. Llamamos a estas instrucciones almacenadas un ** programa ** y el hecho de escribir estas instrucciones y obtener las instrucciones para que sean correctas ** en la programación **.
 
-## [Entendiendo la programación] (# comprensión-programación)
+## [Entendiendo la programación](# comprensión-programación)
 
 En el resto de este libro, trataremos de convertirlo en una persona experta en el arte de la programación. Al final, será un ** programador ** - quizás no un programador profesional, pero al menos tendrá las habilidades para analizar un problema de análisis de datos / información y desarrollar un programa para resolver el problema.
 
@@ -131,13 +77,13 @@ Aprenderás el "vocabulario" y las "oraciones" de Python con bastante rapidez. L
 
 Comenzamos con el vocabulario y la estructura de los programas de Python. Sea paciente, ya que los ejemplos simples le recuerdan cuando comenzó a leer por primera vez.
 
-## [Palabras y oraciones] (# palabras y oraciones)
+## [Palabras y oraciones](# palabras y oraciones)
 
 
 
 A diferencia de las lenguas humanas, el vocabulario de Python es bastante pequeño. Llamamos a este "vocabulario" las "palabras reservadas". Estas son palabras que tienen un significado muy especial para Python. Cuando Python ve estas palabras en un programa de Python, tienen un solo significado para Python. Luego, a medida que escribe programas, inventará sus propias palabras que tienen un significado para usted llamadas ** variables **. Tendrá gran libertad para elegir sus nombres para sus variables, pero no puede usar ninguna de las palabras reservadas de Python como nombre para una variable.
 
-Cuando entrenamos a un perro, usamos palabras especiales como "sentarse", "quedarse" y "buscar". Cuando le hablas a un perro y no usas ninguna de las palabras reservadas, solo te miran con una expresión burlona hasta que dices una palabra reservada. Por ejemplo, si dice: "Me gustaría que más gente caminara para mejorar su salud general", lo que la mayoría de los perros escuchan es "bla bla bla ** caminar ** bla bla bla bla". Esto se debe a que "caminar" es una palabra reservada en lenguaje canino. Muchos podrían sugerir que el lenguaje entre humanos y gatos no tiene palabras reservadas [<sup> 1 </sup>] (# fn1).
+Cuando entrenamos a un perro, usamos palabras especiales como "sentarse", "quedarse" y "buscar". Cuando le hablas a un perro y no usas ninguna de las palabras reservadas, solo te miran con una expresión burlona hasta que dices una palabra reservada. Por ejemplo, si dice: "Me gustaría que más gente caminara para mejorar su salud general", lo que la mayoría de los perros escuchan es "bla bla bla ** caminar ** bla bla bla bla". Esto se debe a que "caminar" es una palabra reservada en lenguaje canino. Muchos podrían sugerir que el lenguaje entre humanos y gatos no tiene palabras reservadas [<sup> 1 </sup>](# fn1).
 
 Las palabras reservadas en el idioma donde los humanos hablan con Python incluyen lo siguiente:
 
@@ -157,7 +103,7 @@ Aprenderemos estas palabras reservadas y cómo se usarán a tiempo, pero por aho
 ```
 E incluso hemos escrito nuestra primera oración de Python sintácticamente correcta. Nuestra oración comienza con la función ** imprimir ** seguida de una cadena de texto de nuestra elección entre comillas simples.
 
-## [Conversando con Python] (# conversing-with-python)
+## [Conversando con Python](# conversing-with-python)
 
 Ahora que tenemos una palabra y una oración simple que conocemos en Python, necesitamos saber cómo iniciar una conversación con Python para probar nuestras nuevas habilidades lingüísticas.
 
@@ -226,7 +172,7 @@ Notará que el error es diferente para los dos primeros intentos incorrectos. El
 
 La forma correcta de decir "adiós" a Python es ingresar ** quit () ** en el indicador interactivo chevron `& gt; & gt; & gt;`. Probablemente te haya tomado bastante tiempo adivinarlo, por lo que tener un libro a la mano probablemente te resulte útil.
 
-## [Terminología: intérprete y compilador] (# terminología-intérprete-y-compilador)
+## [Terminología: intérprete y compilador](# terminología-intérprete-y-compilador)
 
 Python es un lenguaje ** de alto nivel ** destinado a ser relativamente sencillo para que los humanos lean y escriban y para que las computadoras lean y procesen. Otros lenguajes de alto nivel incluyen Java, C ++, PHP, Ruby, Basic, Perl, JavaScript y muchos más. El hardware real dentro de la Unidad Central de Procesamiento (CPU) no comprende ninguno de estos lenguajes de alto nivel.
 
@@ -281,7 +227,7 @@ El intérprete de Python está escrito en un lenguaje de alto nivel llamado "C".
 ```
 Eso es más de lo que realmente necesitas saber para ser un programador de Python, pero a veces vale la pena responder esas pequeñas y molestas preguntas desde el principio.
 
-## [Escribiendo un programa] (# writing-a-program)
+## [Escribiendo un programa](# writing-a-program)
 
 Escribir comandos en el intérprete de Python es una excelente manera de experimentar con las funciones de Python, pero no se recomienda para resolver problemas más complejos.
 
@@ -303,7 +249,7 @@ Llamamos al intérprete de Python y le decimos que lea el código fuente del arc
 
 Notará que no había necesidad de tener ** quit () ** al final del programa Python en el archivo. Cuando Python está leyendo el código fuente de un archivo, sabe que debe detenerse cuando llega al final del archivo.
 
-## [¿Qué es un programa?] (# What-is-a-program)
+## [¿Qué es un programa?](# What-is-a-program)
 
 La definición de un ** programa ** en su forma más básica es una secuencia de sentencias de Python que se han creado para hacer algo. Incluso nuestro sencillo script ** hello.py ** es un programa. Es un programa de una línea y no es particularmente útil, pero en la definición más estricta, es un programa de Python.
 
@@ -326,7 +272,7 @@ Ni siquiera necesitas saber Python para usar este programa. Deberá leer el Cap�
 
 Este es un buen ejemplo de cómo Python y el lenguaje Python actúan como intermediarios entre usted (el usuario final) y yo (el programador). Python es una forma de intercambiar secuencias de instrucciones útiles (es decir, programas) en un lenguaje común que puede ser utilizado por cualquier persona que instale Python en su computadora. Así que ninguno de los dos está hablando ** con Python **, en lugar de eso, nos estamos comunicando unos con otros ** a través de ** Python.
 
-## [Los componentes básicos de los programas] (# the-building-blocks-of-programs)
+## [Los componentes básicos de los programas](# the-building-blocks-of-programs)
 
 En los siguientes capítulos, aprenderemos más sobre el vocabulario, la estructura de las oraciones, la estructura de los párrafos y la estructura de la historia de Python. Aprenderemos sobre las potentes capacidades de Python y cómo componer esas capacidades para crear programas útiles.
 
@@ -348,7 +294,7 @@ Suena casi demasiado simple para ser verdad, y por supuesto nunca es tan simple.
 
 El programa de conteo de palabras de arriba usa directamente todos estos patrones excepto uno.
 
-## [¿Qué podría salir mal?] (# Qué-podría-podría-ir-mal)
+## [¿Qué podría salir mal?](# Qué-podría-podría-ir-mal)
 
 Como vimos en nuestras primeras conversaciones con Python, debemos comunicarnos con mucha precisión cuando escribimos el código de Python. La desviación o error más pequeño hará que Python deje de mirar su programa.
 
@@ -390,7 +336,7 @@ Un error semántico es cuando su descripción de los pasos a seguir es sintácti
 
 Nuevamente, en los tres tipos de errores, Python simplemente está haciendo todo lo posible por hacer exactamente lo que usted pidió.
 
-## [El viaje de aprendizaje] (# the-learning-journey)
+## [El viaje de aprendizaje](# the-learning-journey)
 
 A medida que avance en el resto del libro, no tenga miedo si los conceptos no parecen encajar bien la primera vez. Cuando estabas aprendiendo a hablar, no fue un problema durante los primeros años que hiciste ruidos de gorgoteo. Y estuvo bien si tardó seis meses en pasar de un vocabulario simple a oraciones simples y tardó 5-6 años más en pasar de las oraciones a los párrafos, y algunos años más para poder escribir un cuento completo completo interesante en su propio.
 
@@ -400,7 +346,7 @@ Por lo general, cuando estás aprendiendo tu primer lenguaje de programación, h
 
 Si algo parece particularmente difícil, generalmente no hay valor en permanecer despierto toda la noche y mirarlo fijamente. Tome un descanso, tome una siesta, tome un refrigerio, explíquele a alguien (o quizás a su perro) con qué está teniendo problemas y luego vuelva con los ojos frescos. Le aseguro que una vez que aprenda los conceptos de programación en el libro, mirará hacia atrás y verá que todo fue realmente fácil y elegante, y que simplemente le tomó un poco de tiempo absorberlo.
 
-## [Glosario] (# glosario)
+## [Glosario](# glosario)
 
 
 
@@ -440,7 +386,7 @@ Si algo parece particularmente difícil, generalmente no hay valor en permanecer
 
 
 
-## [Ejercicios] (# ejercicios)
+## [Ejercicios](# ejercicios)
 
 Ejercicio 1: ¿Cuál es la función de la memoria secundaria en una computadora?
 
@@ -485,24 +431,3 @@ Ejercicio 9: ¿Cómo arreglas un "Error de sintaxis"?
 
 
 1. [http://xkcd.com/231/](http://xkcd.com/231/)[↩](#fnref1)
-
-© 2015-2018 Baratija
-
-#### Sobre nosotros
-
-- [Nuestra historia] (// trinket.io/our-story)
-<li> [Blog] (http://blog.trinket.io)
-<li> [Asociaciones] (// trinket.io/partners)
-</ Li> </ li>
-#### Soporte
-
-- [FAQ] (// trinket.io/faq)
-- [Ayuda] (// trinket.io/help)
-- [Contáctenos] (// trinket.io/contact)
-
-#### Legal
-
-- [Términos de servicio] (// trinket.io/tos)
-- [Privacidad] (// trinket.io/privacy)
-
-#### Conectar

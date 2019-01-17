@@ -1,62 +1,3 @@
-
-<li class = "name">
-<a aria-label="Index Page" href="//trinket.io/" role="button">
-<img alt = "Trinket te ayuda a enseñar con el código" src = "/ cache-prefix-aac84e42 / img / trinket-logo.png" />
-</a>
-</ li>
-- [](#)
-
-- [<i class = "fa fa-star"> </i> Plans] (// trinket.io/plans)
-- [<i class = "fa fa-graduation-cap"> </i> Learn] (https://hourofpython.com)
-- [<i class = "fa fa-question-circle"> </i> Ayuda] (// trinket.io/help)
-- [Registrarse] (// trinket.io/signup)
-- [Iniciar sesión <i class = "fa fa-sign-in"> </i>] (// trinket.io/login)
-
-<li class = "name">
-<h1> [Python for Everybody] (https://books.trinket.io/pfe/index.html) </h1>
-</ li>
-- [Menú] (#)
-
-<li>
-<a href="https://books.trinket.io">
-<i class = "fa fa-angle-left"> </i> Todos los libros de texto
-</a>
-</ li>
-
-<li class = "has-dropdown">
-[Capítulos] (#)
-<ul class = "dropdown">
-- [Ver todos los capítulos] (https://books.trinket.io/pfe/index.html)
-- [Capítulo 1: Introducción] (https://books.trinket.io/pfe/01-intro.html)
-- [Capítulo 2: Variables] (https://books.trinket.io/pfe/02-variables.html)
-- [Capítulo 3: Condicionales] (https://books.trinket.io/pfe/03-conditional.html)
-- [Capítulo 4: Funciones] (https://books.trinket.io/pfe/04-functions.html)
-- [Capítulo 5: Iteraciones] (https://books.trinket.io/pfe/05-iterations.html)
-- [Capítulo 6: Cadenas] (https://books.trinket.io/pfe/06-strings.html)
-- [Capítulo 7: Archivos] (https://books.trinket.io/pfe/07-files.html)
-- [Capítulo 8: Listas] (https://books.trinket.io/pfe/08-lists.html)
-- [Capítulo 9: Diccionarios] (https://books.trinket.io/pfe/09-dictionaries.html)
-- [Capítulo 10: Tuplas] (https://books.trinket.io/pfe/10-tuples.html)
-- [Capítulo 11: Regex] (https://books.trinket.io/pfe/11-regex.html)
-- [Capítulo 12: Programas en red] (https://books.trinket.io/pfe/12-network.html)
-- [Capítulo 13: Python y servicios web] (https://books.trinket.io/pfe/13-web.html)
-- [Capítulo 14: Objetos] (https://books.trinket.io/pfe/14-objects.html)
-- [Capítulo 15: Python y bases de datos] (https://books.trinket.io/pfe/15-database.html)
-
-<li class = "has-dropdown"> [Programación orientada a objetos] (# # programación orientada a objetos) <ul class = "dropdown">
-- [Administración de programas más grandes] (# administrando programas más grandes)
-- [Comenzando] (# comenzando)
-- [Uso de objetos] (# using-objects)
-- [Comenzando con Programas] (# comience con programas)
-- [Subdivisión de un problema - Encapsulación] (# subdividing-a-problem --- encapsulation)
-- [Nuestro primer objeto de Python] (# our-first-python-object)
-- [Clases como tipos] (# clases-como-tipos)
-- [Object Lifecycle] (# object-lifecycle)
-- [Muchas instancias] (# muchas instancias)
-- [Herencia] (# herencia)
-- [Resumen] (# resumen)
-- [Glosario] (# glosario)
-
 # [Programación orientada a objetos] (# programación orientada a objetos)
 
 ## [Administrar programas más grandes] (# administrando programas más grandes)
@@ -349,28 +290,7 @@ Esos son los fundamentos y la terminología de la programación orientada a obje
 
 
 1. https://docs.python.org/3/library/html.parser.html[↩](#fnref1)
-1. La imagen de la cookie está protegida por derechos de autor de CC-BY https://www.flickr.com/photos/dinnerseries/23570475099[#◆(#fnref2)
-1. Si tiene curiosidad por saber dónde está definida la clase de la lista, eche un vistazo (esperemos que la URL no cambie) https://github.com/python/cpython/blob/master/Objects/listobject.c - el La lista de clases está escrita en un lenguaje llamado "C". Si echas un vistazo a ese código fuente y te resulta curioso, quizás quieras explorar algunos cursos de informática. [↩] (# fnref3)
+2. La imagen de la cookie está protegida por derechos de autor de CC-BY https://www.flickr.com/photos/dinnerseries/23570475099[#◆(#fnref2)
+3. Si tiene curiosidad por saber dónde está definida la clase de la lista, eche un vistazo (esperemos que la URL no cambie) https://github.com/python/cpython/blob/master/Objects/listobject.c - el La lista de clases está escrita en un lenguaje llamado "C". Si echas un vistazo a ese código fuente y te resulta curioso, quizás quieras explorar algunos cursos de informática. [↩] (# fnref3)
 
 Derechos de autor de la imagen de la cookie CC-BY https://www.flickr.com/photos/dinnerseries/23570475099[↩◆(#fnref2)
-
-© 2015-2018 Baratija
-
-#### Sobre nosotros
-
-- [Nuestra historia] (// trinket.io/our-story)
-<li> [Blog] (http://blog.trinket.io)
-<li> [Asociaciones] (// trinket.io/partners)
-</ Li> </ li>
-#### Soporte
-
-- [Preguntas frecuentes] (// trinket.io/faq)
-- [Ayuda] (// trinket.io/help)
-- [Contáctenos] (// trinket.io/contact)
-
-#### Legal
-
-- [Términos de servicio] (// trinket.io/tos)
-- [Privacidad] (// trinket.io/privacy)
-
-#### Conectar

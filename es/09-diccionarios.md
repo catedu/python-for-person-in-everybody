@@ -1,57 +1,3 @@
-
-<li class = "name">
-<a aria-label="Index Page" href="//trinket.io/" role="button">
-<img alt = "Trinket te ayuda a enseñar con el código" src = "/ cache-prefix-aac84e42 / img / trinket-logo.png" />
-</a>
-</ li>
-- [](#)
-
-- [<i class = "fa fa-star"> </i> Plans] (// trinket.io/plans)
-- [<i class = "fa fa-graduation-cap"> </i> Learn] (https://hourofpython.com)
-- [<i class = "fa fa-question-circle"> </i> Ayuda] (// trinket.io/help)
-- [Registrarse] (// trinket.io/signup)
-- [Iniciar sesión <i class = "fa fa-sign-in"> </i>] (// trinket.io/login)
-
-<li class = "name">
-<h1> [Python for Everybody] (https://books.trinket.io/pfe/index.html) </h1>
-</ li>
-- [Menú] (#)
-
-<li>
-<a href="https://books.trinket.io">
-<i class = "fa fa-angle-left"> </i> Todos los libros de texto
-</a>
-</ li>
-
-<li class = "has-dropdown">
-[Capítulos] (#)
-<ul class = "dropdown">
-- [Ver todos los capítulos] (https://books.trinket.io/pfe/index.html)
-- [Capítulo 1: Introducción] (https://books.trinket.io/pfe/01-intro.html)
-- [Capítulo 2: Variables] (https://books.trinket.io/pfe/02-variables.html)
-- [Capítulo 3: Condicionales] (https://books.trinket.io/pfe/03-conditional.html)
-- [Capítulo 4: Funciones] (https://books.trinket.io/pfe/04-functions.html)
-- [Capítulo 5: Iteraciones] (https://books.trinket.io/pfe/05-iterations.html)
-- [Capítulo 6: Cadenas] (https://books.trinket.io/pfe/06-strings.html)
-- [Capítulo 7: Archivos] (https://books.trinket.io/pfe/07-files.html)
-- [Capítulo 8: Listas] (https://books.trinket.io/pfe/08-lists.html)
-- [Capítulo 9: Diccionarios] (https://books.trinket.io/pfe/09-dictionaries.html)
-- [Capítulo 10: Tuplas] (https://books.trinket.io/pfe/10-tuples.html)
-- [Capítulo 11: Regex] (https://books.trinket.io/pfe/11-regex.html)
-- [Capítulo 12: Programas en red] (https://books.trinket.io/pfe/12-network.html)
-- [Capítulo 13: Python y servicios web] (https://books.trinket.io/pfe/13-web.html)
-- [Capítulo 14: Objetos] (https://books.trinket.io/pfe/14-objects.html)
-- [Capítulo 15: Python y bases de datos] (https://books.trinket.io/pfe/15-database.html)
-
-<li class = "has-dropdown"> [Diccionarios] (# diccionarios) <ul class = "dropdown">
-- [Diccionario como conjunto de contadores] (# dictionary-as-a-set-set-of-counters)
-- [Diccionarios y archivos] (# diccionarios-y-archivos)
-- [Bucles y diccionarios] (# bucles y diccionarios)
-- [Análisis de texto avanzado] (# análisis de texto avanzado)
-- [Depuración] (# depuración)
-- [Glosario] (# glosario)
-- [Ejercicios] (# ejercicios)
-
 # [Diccionarios] (# diccionarios)
 
 
@@ -142,8 +88,8 @@ Escriba un programa que lea las palabras en `words.txt` y las almacene como clav
 Supongamos que se le asigna una cadena y desea contar cuántas veces aparece cada letra. Hay varias formas de hacerlo:
 
 1. Podrías crear 26 variables, una para cada letra del alfabeto. Luego, podría atravesar la cadena y, para cada carácter, incrementar el contador correspondiente, probablemente utilizando un condicional encadenado.
-1. Podrías crear una lista con 26 elementos. Luego, puede convertir cada carácter en un número (utilizando la función incorporada `ord`), usar el número como un índice en la lista e incrementar el contador apropiado.
-1. Podrías crear un diccionario con caracteres como teclas y contadores como los valores correspondientes. La primera vez que vea un carácter, agregará un elemento al diccionario. Después de eso, incrementarías el valor de un artículo existente.
+2. Podrías crear una lista con 26 elementos. Luego, puede convertir cada carácter en un número (utilizando la función incorporada `ord`), usar el número como un índice en la lista e incrementar el contador apropiado.
+3. Podrías crear un diccionario con caracteres como teclas y contadores como los valores correspondientes. La primera vez que vea un carácter, agregará un elemento al diccionario. Después de eso, incrementarías el valor de un artículo existente.
 
 Podrías crear una lista con 26 elementos. Luego, puede convertir cada carácter en un número (utilizando la función incorporada `ord`), usar el número como un índice en la lista e incrementar el contador apropiado.
 
@@ -406,23 +352,3 @@ Enter a file name: mbox-short.txt
 {'media.berkeley.edu': 4, 'uct.ac.za': 6, 'umich.edu': 7,
 'gmail.com': 1, 'caret.cam.ac.uk': 1, 'iupui.edu': 8}
 ```
-© 2015-2018 Baratija
-
-#### Sobre nosotros
-
-- [Nuestra historia] (// trinket.io/our-story)
-<li> [Blog] (http://blog.trinket.io)
-<li> [Asociaciones] (// trinket.io/partners)
-</ Li> </ li>
-#### Soporte
-
-- [Preguntas frecuentes] (// trinket.io/faq)
-- [Ayuda] (// trinket.io/help)
-- [Contáctenos] (// trinket.io/contact)
-
-#### Legal
-
-- [Términos de servicio] (// trinket.io/tos)
-- [Privacidad] (// trinket.io/privacy)
-
-#### Conectar

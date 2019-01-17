@@ -1,5 +1,5 @@
 {
-    "plugins": ["youtube", "accordion", "styled-blockquotes", "localized-footer"],
+    "plugins": ["youtube", "accordion", "styled-blockquotes", "localized-footer", "github-edit"],
     "language": "es",
     "variables": {
         "title": "Google Classroom",
@@ -15,6 +15,10 @@
         "localized-footer": {
             "hline": true,
             "filename": "./FOOTER.md"
+        },
+        "github-edit": {
+            "repo": "",
+            "branch": "master"
         }
     }
 }

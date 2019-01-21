@@ -11,7 +11,7 @@ A tuple[<sup>1</sup>](#fn1) is a sequence of values much like a list. The values
 Syntactically, a tuple is a comma-separated list of values:
 
 ```
-&gt;&gt;&gt; t = 'a', 'b', 'c', 'd', 'e'
+>>> t = 'a', 'b', 'c', 'd', 'e'
 ```
 
 Although it is not necessary, it is common to enclose tuples in parentheses to help us quickly identify tuples when we look at Python code:
@@ -19,7 +19,7 @@ Although it is not necessary, it is common to enclose tuples in parentheses to h
 
 
 ```
-&gt;&gt;&gt; t = ('a', 'b', 'c', 'd', 'e')
+>>> t = ('a', 'b', 'c', 'd', 'e')
 ```
 
 To create a tuple with a single element, you have to include the final comma:
@@ -29,9 +29,9 @@ To create a tuple with a single element, you have to include the final comma:
 Without the comma Python treats `('a')` as an expression with a string in parentheses that evaluates to a string:
 
 ```
-&gt;&gt;&gt; t2 = ('a')
-&gt;&gt;&gt; type(t2)
-&lt;type 'str'&gt;
+>>> t2 = ('a')
+>>> type(t2)
+<type 'str'>
 ```
 
 Another way to construct a tuple is the built-in function `tuple`. With no argument, it creates an empty tuple:
@@ -51,7 +51,7 @@ And the slice operator selects a range of elements.
  
 
 ```
-&gt;&gt;&gt; print(t[1:3])
+>>> print(t[1:3])
 ('b', 'c')
 ```
 
@@ -60,7 +60,7 @@ But if you try to modify one of the elements of the tuple, you get an error:
  
 
 ```
-&gt;&gt;&gt; t[0] = 'A'
+>>> t[0] = 'A'
 TypeError: object doesn't support item assignment
 ```
 
@@ -116,19 +116,19 @@ It is not magic, Python **roughly** translates the tuple assignment syntax to be
 Stylistically when we use a tuple on the left side of the assignment statement, we omit the parentheses, but the following is an equally valid syntax:
 
 ```
-&gt;&gt;&gt; m = [ 'have', 'fun' ]
-&gt;&gt;&gt; (x, y) = m
-&gt;&gt;&gt; x
+>>> m = [ 'have', 'fun' ]
+>>> (x, y) = m
+>>> x
 'have'
-&gt;&gt;&gt; y
+>>> y
 'fun'
-&gt;&gt;&gt;
+>>>
 ```
 
 A particularly clever application of tuple assignment allows us to **swap** the values of two variables in a single statement:
 
 ```
-&gt;&gt;&gt; a, b = b, a
+>>> a, b = b, a
 ```
 
 Both sides of this statement are tuples, but the left side is a tuple of variables; the right side is a tuple of expressions. Each value on the right side is assigned to its respective variable on the left side. All the expressions on the right side are evaluated before any of the assignments.
@@ -138,7 +138,7 @@ The number of variables on the left and the number of values on the right must b
  
 
 ```
-&gt;&gt;&gt; a, b = 1, 2, 3
+>>> a, b = 1, 2, 3
 ValueError: too many values to unpack
 ```
 
@@ -147,16 +147,16 @@ More generally, the right side can be any kind of sequence (string, list, or tup
  
 
 ```
-&gt;&gt;&gt; addr = 'monty@python.org'
-&gt;&gt;&gt; uname, domain = addr.split('@')
+>>> addr = 'monty@python.org'
+>>> uname, domain = addr.split('@')
 ```
 
 The return value from `split` is a list with two elements; the first element is assigned to `uname`, the second to `domain`.
 
 ```
-&gt;&gt;&gt; print(uname)
+>>> print(uname)
 monty
-&gt;&gt;&gt; print(domain)
+>>> print(domain)
 python.org
 ```
 
@@ -171,12 +171,12 @@ As you should expect from a dictionary, the items are in no particular order.
 However, since the list of tuples is a list, and tuples are comparable, we can now sort the list of tuples. Converting a dictionary to a list of tuples is a way for us to output the contents of a dictionary sorted by key:
 
 ```
-&gt;&gt;&gt; d = {'a':10, 'b':1, 'c':22}
-&gt;&gt;&gt; t = list(d.items())
-&gt;&gt;&gt; t
+>>> d = {'a':10, 'b':1, 'c':22}
+>>> t = list(d.items())
+>>> t
 [('b', 1), ('a', 10), ('c', 22)]
-&gt;&gt;&gt; t.sort()
-&gt;&gt;&gt; t
+>>> t.sort()
+>>> t
 [('a', 10), ('b', 1), ('c', 22)]
 ```
 
@@ -212,17 +212,17 @@ If we combine these two techniques, we can print out the contents of a dictionar
 To do this, we first make a list of tuples where each tuple is `(value, key)`. The `items` method would give us a list of `(key, value)` tuples, but this time we want to sort by value, not key. Once we have constructed the list with the value-key tuples, it is a simple matter to sort the list in reverse order and print out the new, sorted list.
 
 ```
-&gt;&gt;&gt; d = {'a':10, 'b':1, 'c':22}
-&gt;&gt;&gt; l = list()
-&gt;&gt;&gt; for key, val in d.items() :
+>>> d = {'a':10, 'b':1, 'c':22}
+>>> l = list()
+>>> for key, val in d.items() :
 ...     l.append( (val, key) )
 ...
-&gt;&gt;&gt; l
+>>> l
 [(10, 'a'), (22, 'c'), (1, 'b')]
-&gt;&gt;&gt; l.sort(reverse=True)
-&gt;&gt;&gt; l
+>>> l.sort(reverse=True)
+>>> l
 [(22, 'c'), (10, 'a'), (1, 'b')]
-&gt;&gt;&gt;
+>>>
 ```
 
 By carefully constructing the list of tuples to have the value as the first element of each tuple, we can sort the list of tuples and get our dictionary contents sorted by value.

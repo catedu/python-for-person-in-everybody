@@ -23,9 +23,9 @@ We will primarily focus on reading and writing text files such as those we creat
 When we want to read or write a file (say on your hard drive), we first must **open** the file. Opening the file communicates with your operating system, which knows where the data for each file is stored. When you open a file, you are asking the operating system to find the file by name and make sure the file exists. In this example, we open the file `mbox.txt`, which should be stored in the same folder that you are in when you start Python. You can download this file from [www.py4e.com/code3/mbox.txt](http://www.py4e.com/code3/mbox.txt)
 
 ```
-&gt;&gt;&gt; fhand = open('mbox.txt')
-&gt;&gt;&gt; print(fhand)
-&lt;_io.TextIOWrapper name='mbox.txt' mode='r' encoding='cp1252'&gt;
+>>> fhand = open('mbox.txt')
+>>> print(fhand)
+<_io.TextIOWrapper name='mbox.txt' mode='r' encoding='cp1252'>
 ```
 
 
@@ -37,9 +37,9 @@ A File Handle
 If the file does not exist, `open` will fail with a traceback and you will not get a handle to access the contents of the file:
 
 ```
-&gt;&gt;&gt; fhand = open('stuff.txt')
+>>> fhand = open('stuff.txt')
 Traceback (most recent call last):
-  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "<stdin>", line 1, in <module>
 FileNotFoundError: [Errno 2] No such file or directory: 'stuff.txt'
 ```
 
@@ -49,7 +49,7 @@ Later we will use `try` and `except` to deal more gracefully with the situation 
 
 A text file can be thought of as a sequence of lines, much like a Python string can be thought of as a sequence of characters. For example, this is a sample of a text file which records mail activity from various individuals in an open source project development team:
 
-`From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008`<br/>`Return-Path: &lt;postmaster@collab.sakaiproject.org&gt;`<br/>`Date: Sat, 5 Jan 2008 09:12:18 -0500`<br/>`To: source@collab.sakaiproject.org`<br/>`From: stephen.marquard@uct.ac.za`<br/>`Subject: [sakai] svn commit: r39772 - content/branches/`<br/>`Details: http://source.sakaiproject.org/viewsvn/?view=rev&amp;rev=39772`<br/>`...`
+`From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008`<br/>`Return-Path: <postmaster@collab.sakaiproject.org>`<br/>`Date: Sat, 5 Jan 2008 09:12:18 -0500`<br/>`To: source@collab.sakaiproject.org`<br/>`From: stephen.marquard@uct.ac.za`<br/>`Subject: [sakai] svn commit: r39772 - content/branches/`<br/>`Details: http://source.sakaiproject.org/viewsvn/?view=rev&amp;rev=39772`<br/>`...`
 
 The entire file of mail interactions is available from
 
@@ -68,17 +68,17 @@ To break the file into lines, there is a special character that represents the "
 In Python, we represent the **newline** character as a backslash-n in string constants. Even though this looks like two characters, it is actually a single character. When we look at the variable by entering "stuff" in the interpreter, it shows us the `\n` in the string, but when we use `print` to show the string, we see the string broken into two lines by the newline character.
 
 ```
-&gt;&gt;&gt; stuff = 'Hello\nWorld!'
-&gt;&gt;&gt; stuff
+>>> stuff = 'Hello\nWorld!'
+>>> stuff
 'Hello\nWorld!'
-&gt;&gt;&gt; print(stuff)
+>>> print(stuff)
 Hello
 World!
-&gt;&gt;&gt; stuff = 'X\nY'
-&gt;&gt;&gt; print(stuff)
+>>> stuff = 'X\nY'
+>>> print(stuff)
 X
 Y
-&gt;&gt;&gt; len(stuff)
+>>> len(stuff)
 3
 ```
 
@@ -105,11 +105,11 @@ Because the `for` loop reads the data one line at a time, it can efficiently rea
 If you know the file is relatively small compared to the size of your main memory, you can read the whole file into one string using the `read` method on the file handle.
 
 ```
-&gt;&gt;&gt; fhand = open('mbox-short.txt')
-&gt;&gt;&gt; inp = fhand.read()
-&gt;&gt;&gt; print(len(inp))
+>>> fhand = open('mbox-short.txt')
+>>> inp = fhand.read()
+>>> print(len(inp))
 94626
-&gt;&gt;&gt; print(inp[:20])
+>>> print(inp[:20])
 From stephen.marquar
 ```
 
@@ -209,14 +209,14 @@ What if our user types something that is not a file name?
 python search6.py
 Enter the file name: missing.txt
 Traceback (most recent call last):
-  File "search6.py", line 2, in &lt;module&gt;
+  File "search6.py", line 2, in <module>
     fhand = open(fname)
 FileNotFoundError: [Errno 2] No such file or directory: 'missing.txt'
 
 python search6.py
 Enter the file name: na na boo boo
 Traceback (most recent call last):
-  File "search6.py", line 2, in &lt;module&gt;
+  File "search6.py", line 2, in <module>
     fhand = open(fname)
 FileNotFoundError: [Errno 2] No such file or directory: 'na na boo boo'
 ```
@@ -256,9 +256,9 @@ Once you become more skilled in Python, you can engage in repartee with other Py
 To write a file, you have to open it with mode "w" as a second parameter:
 
 ```
-&gt;&gt;&gt; fout = open('output.txt', 'w')
-&gt;&gt;&gt; print(fout)
-&lt;_io.TextIOWrapper name='output.txt' mode='w' encoding='cp1252'&gt;
+>>> fout = open('output.txt', 'w')
+>>> print(fout)
+<_io.TextIOWrapper name='output.txt' mode='w' encoding='cp1252'>
 ```
 
 If the file already exists, opening it in write mode clears out the old data and starts fresh, so be careful! If the file doesn't exist, a new one is created.
@@ -266,8 +266,8 @@ If the file already exists, opening it in write mode clears out the old data and
 The `write` method of the file handle object puts data into the file, returning the number of characters written. The default write mode is text for writing (and reading) strings.
 
 ```
-&gt;&gt;&gt; line1 = "This here's the wattle,\n"
-&gt;&gt;&gt; fout.write(line1)
+>>> line1 = "This here's the wattle,\n"
+>>> fout.write(line1)
 24
 ```
 
@@ -278,15 +278,15 @@ Again, the file object keeps track of where it is, so if you call `write` again,
 We must make sure to manage the ends of lines as we write to the file by explicitly inserting the newline character when we want to end a line. The `print` statement automatically appends a newline, but the `write` method does not add the newline automatically.
 
 ```
-&gt;&gt;&gt; line2 = 'the emblem of our land.\n'
-&gt;&gt;&gt; fout.write(line2)
+>>> line2 = 'the emblem of our land.\n'
+>>> fout.write(line2)
 24
 ```
 
 When you are done writing, you have to close the file to make sure that the last bit of data is physically written to the disk so it will not be lost if the power goes off.
 
 ```
-&gt;&gt;&gt; fout.close()
+>>> fout.close()
 ```
 
 We could close the files which we open for read as well, but we can be a little sloppy if we are only opening a few files since Python makes sure that all open files are closed when the program ends. When we are writing files, we want to explicitly close the files so as to leave nothing to chance.
@@ -300,8 +300,8 @@ We could close the files which we open for read as well, but we can be a little 
 When you are reading and writing files, you might run into problems with whitespace. These errors can be hard to debug because spaces, tabs, and newlines are normally invisible:
 
 ```
-&gt;&gt;&gt; s = '1 2\t 3\n 4'
-&gt;&gt;&gt; print(s)
+>>> s = '1 2\t 3\n 4'
+>>> print(s)
 1 2  3
  4
 ```
@@ -311,7 +311,7 @@ When you are reading and writing files, you might run into problems with whitesp
 The built-in function `repr` can help. It takes any object as an argument and returns a string representation of the object. For strings, it represents whitespace characters with backslash sequences:
 
 ```
-&gt;&gt;&gt; print(repr(s))
+>>> print(repr(s))
 '1 2\t 3\n 4'
 ```
 
@@ -343,7 +343,7 @@ Exercise 1: Write a program to read through a file and print the contents of the
 python shout.py
 Enter a file name: mbox-short.txt
 FROM STEPHEN.MARQUARD@UCT.AC.ZA SAT JAN  5 09:14:16 2008
-RETURN-PATH: &lt;POSTMASTER@COLLAB.SAKAIPROJECT.ORG&gt;
+RETURN-PATH: <POSTMASTER@COLLAB.SAKAIPROJECT.ORG>
 RECEIVED: FROM MURDER (MAIL.UMICH.EDU [141.211.14.90])
      BY FRANKENSTEIN.MAIL.UMICH.EDU (CYRUS V2.3.8) WITH LMTPA;
      SAT, 05 JAN 2008 09:14:16 -0500

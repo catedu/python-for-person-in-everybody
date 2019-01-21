@@ -11,17 +11,17 @@ Una ** expresión booleana ** es una expresión que es verdadera o falsa. Los si
 
 
 ```>>> type(True)
-&lt;class 'bool'&gt;
+<class 'bool'>
 >>> type(False)
-&lt;class 'bool'&gt;
+<class 'bool'>
 ```
 El operador `==` es uno de los ** operadores de comparación **; los otros son:
 
 ```      x != y               # x is not equal to y
-      x &gt; y                # x is greater than y
-      x &lt; y                # x is less than y
-      x &gt;= y               # x is greater than or equal to y
-      x &lt;= y               # x is less than or equal to y
+      x > y                # x is greater than y
+      x < y                # x is less than y
+      x >= y               # x is greater than or equal to y
+      x <= y               # x is less than or equal to y
       x is y               # x is the same as y
       x is not y           # x is not the same as y
 ```
@@ -58,7 +58,7 @@ Esta flexibilidad puede ser útil, pero hay algunas sutilezas que pueden ser con
 
 Para escribir programas útiles, casi siempre necesitamos la capacidad de verificar las condiciones y cambiar el comportamiento del programa en consecuencia. ** Declaraciones condicionales ** nos dan esta habilidad. La forma más simple es la instrucción `if`:
 
-```if x &gt; 0 :
+```if x > 0 :
     print('x is positive')
 ```
 La expresión booleana después de la instrucción `if` se llama la condición ** **. Terminamos la instrucción `if` con un carácter de dos puntos (:) y la (s) línea (s) después de que la instrucción if esté sangrada.
@@ -75,13 +75,13 @@ No hay límite en el número de declaraciones que pueden aparecer en el cuerpo, 
 
 
 
-```if x &lt; 0 :
+```if x < 0 :
     pass          # need to handle negative values!
 ```
 Si ingresa una instrucción `if` en el intérprete de Python, el indicador cambiará de tres puntos a tres puntos para indicar que se encuentra en medio de un bloque de declaraciones, como se muestra a continuación:
 
 ```>>> x = 3
->>> if x &lt; 10:
+>>> if x < 10:
 ...    print('Small')
 ...
 Small
@@ -112,9 +112,9 @@ Dado que la condición debe ser verdadera o falsa, se ejecutará exactamente una
 
 A veces hay más de dos posibilidades y necesitamos más de dos ramas. Una forma de expresar un cálculo como ese es un ** condicional encadenado **:
 
-```if x &lt; y:
+```if x < y:
     print('x is less than y')
-elif x &gt; y:
+elif x > y:
     print('x is greater than y')
 else:
     print('x and y are equal')
@@ -145,7 +145,7 @@ Un condicional también puede ser anidado dentro de otro. Podríamos haber escri
 ```if x == y:
     print('x and y are equal')
 else:
-    if x &lt; y:
+    if x < y:
         print('x is less than y')
     else:
         print('x is greater than y')
@@ -158,13 +158,13 @@ Aunque la sangría de los enunciados hace que la estructura sea aparente, ** los
 
 Los operadores lógicos a menudo proporcionan una forma de simplificar sentencias condicionales anidadas. Por ejemplo, podemos reescribir el siguiente código usando un solo condicional:
 
-```if 0 &lt; x:
-    if x &lt; 10:
+```if 0 < x:
+    if x < 10:
         print('x is a positive single-digit number.')
 ```
 La instrucción `print` se ejecuta solo si superamos ambas condiciones, por lo que podemos obtener el mismo efecto con el operador` y`:
 
-```if 0 &lt; x and x &lt; 10:
+```if 0 < x and x < 10:
     print('x is a positive single-digit number.')
 ```
 ## [Detectar excepciones utilizando try y except] (# catch-exceptions-using-try-and-except)
@@ -198,7 +198,7 @@ Enter Fahrenheit Temperature:72
 ```python fahren.py
 Enter Fahrenheit Temperature:fred
 Traceback (most recent call last):
-  File "fahren.py", line 2, in &lt;module&gt;
+  File "fahren.py", line 2, in <module>
     fahr = float(inp)
 ValueError: could not convert string to float: 'fred'
 ```
@@ -234,17 +234,17 @@ Si bien esto puede parecer un punto delicado, el comportamiento de cortocircuito
 
 ```>>> x = 6
 >>> y = 2
->>> x &gt;= 2 and (x/y) &gt; 2
+>>> x >= 2 and (x/y) > 2
 True
 >>> x = 1
 >>> y = 0
->>> x &gt;= 2 and (x/y) &gt; 2
+>>> x >= 2 and (x/y) > 2
 False
 >>> x = 6
 >>> y = 0
->>> x &gt;= 2 and (x/y) &gt; 2
+>>> x >= 2 and (x/y) > 2
 Traceback (most recent call last):
-  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 >>>
 ```
@@ -254,15 +254,15 @@ Podemos construir la expresión lógica para colocar estratégicamente una evalu
 
 ```>>> x = 1
 >>> y = 0
->>> x &gt;= 2 and y != 0 and (x/y) &gt; 2
+>>> x >= 2 and y != 0 and (x/y) > 2
 False
 >>> x = 6
 >>> y = 0
->>> x &gt;= 2 and y != 0 and (x/y) &gt; 2
+>>> x >= 2 and y != 0 and (x/y) > 2
 False
->>> x &gt;= 2 and (x/y) &gt; 2 and y != 0
+>>> x >= 2 and (x/y) > 2 and y != 0
 Traceback (most recent call last):
-  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 >>>
 ```
@@ -286,7 +286,7 @@ Los errores de sintaxis son generalmente fáciles de encontrar, pero hay algunos
 
 ```>>> x = 5
 >>>  y = 6
-  File "&lt;stdin&gt;", line 1
+  File "<stdin>", line 1
     y = 6
     ^
 IndentationError: unexpected indent
@@ -343,11 +343,11 @@ Error, please enter numeric input
 Ejercicio 3: Escriba un programa para solicitar una puntuación entre 0.0 y 1.0. Si el puntaje está fuera de rango, imprima un mensaje de error. Si el puntaje está entre 0.0 y 1.0, imprima una calificación usando la siguiente tabla:
 
 ```Score   Grade
-&gt;= 0.9     A
-&gt;= 0.8     B
-&gt;= 0.7     C
-&gt;= 0.6     D
-&lt; 0.6    F
+>= 0.9     A
+>= 0.8     B
+>= 0.7     C
+>= 0.6     D
+< 0.6    F
 ~~~
 
 ```

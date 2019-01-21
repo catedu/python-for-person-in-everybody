@@ -26,7 +26,7 @@ Sin la coma, Python trata `('a')` como una expresión con una cadena entre paré
 
 ```>>> t2 = ('a')
 >>> type(t2)
-&lt;type 'str'&gt;
+<type 'str'>
 ```
 Otra forma de construir una tupla es la función incorporada `tupla`. Sin argumento, crea una tupla vacía:
 

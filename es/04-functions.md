@@ -7,7 +7,7 @@
 En el contexto de la programación, una función ** es una secuencia de instrucciones con nombre que realiza un cálculo. Cuando define una función, especifica el nombre y la secuencia de instrucciones. Más tarde, puede "llamar" a la función por su nombre. Ya hemos visto un ejemplo de una función ** llamada **:
 
 ```>>> type(32)
-&lt;class 'int'&gt;
+<class 'int'>
 ```
 El nombre de la función es `tipo`. La expresión entre paréntesis se llama el ** argumento ** de la función. El argumento es un valor o variable que estamos pasando a la función como entrada a la función. El resultado, para la función `type`, es el tipo del argumento.
 
@@ -148,7 +148,7 @@ Python tiene un módulo `math` que proporciona la mayoría de las funciones mate
 Esta declaración crea un ** objeto de módulo ** llamado math. Si imprime el objeto de módulo, obtiene alguna información al respecto:
 
 ```>>> print(math)
-&lt;module 'math' (built-in)&gt;
+<module 'math' (built-in)>
 ```
 El objeto módulo contiene las funciones y variables definidas en el módulo. Para acceder a una de las funciones, debe especificar el nombre del módulo y el nombre de la función, separados por un punto (también conocido como un punto). Este formato se llama ** notación de puntos **.
 
@@ -219,9 +219,9 @@ Para finalizar la función, debe ingresar una línea vacía (esto no es necesari
 La definición de una función crea una variable con el mismo nombre.
 
 ```>>> print(print_lyrics)
-&lt;function print_lyrics at 0xb7e99e9c&gt;
+<function print_lyrics at 0xb7e99e9c>
 >>> print(type(print_lyrics))
-&lt;class 'function'&gt;
+<class 'function'>
 ```
 El valor de `print_lyrics` es un ** objeto de función **, que tiene el tipo" función ".
 
@@ -372,7 +372,7 @@ None
 El valor `Ninguno` no es el mismo que la cadena" Ninguno ". Es un valor especial que tiene su propio tipo:
 
 ```>>> print(type(None))
-&lt;class 'NoneType'&gt;
+<class 'NoneType'>
 ```
 Para devolver un resultado de una función, usamos la declaración `return` en nuestra función. Por ejemplo, podríamos hacer una función muy simple llamada `addtwo` que suma dos números y devuelve un resultado.
 
@@ -476,11 +476,11 @@ Pay: 475.0
 Ejercicio 7: reescriba el programa de calificación del capítulo anterior utilizando una función llamada `computegrade` que toma una puntuación como parámetro y devuelve una nota como una cadena.
 
 ```Score   Grade
-&gt; 0.9     A
-&gt; 0.8     B
-&gt; 0.7     C
-&gt; 0.6     D
-&lt;= 0.6    F
+> 0.9     A
+> 0.8     B
+> 0.7     C
+> 0.6     D
+<= 0.6    F
 ```
 ```Program Execution:
 ```

@@ -121,7 +121,7 @@ El indicador `& gt; & gt; & gt;` es la forma en que el intérprete de Python te 
 Digamos, por ejemplo, que no conocías ni las palabras ni las oraciones más simples del lenguaje Python. Es posible que desee utilizar la línea estándar que usan los astronautas cuando aterrizan en un planeta lejano y tratan de hablar con los habitantes del planeta:
 
 ```    >>> I come in peace, please take me to your leader
-      File "&lt;stdin&gt;", line 1
+      File "<stdin>", line 1
         I come in peace, please take me to your leader
              ^
     SyntaxError: invalid syntax
@@ -143,7 +143,7 @@ Esto se ve mucho mejor, así que intenta comunicar algo más:
     >>> print('Our legend says you will be very tasty with mustard')
     Our legend says you will be very tasty with mustard
     >>> print 'We will have a feast tonight unless you say
-      File "&lt;stdin&gt;", line 1
+      File "<stdin>", line 1
         print 'We will have a feast tonight unless you say
                                                          ^
     SyntaxError: Missing parentheses in call to 'print'
@@ -159,10 +159,10 @@ Antes de dejar nuestra primera conversación con el intérprete de Python, proba
 
 ```    >>> good-bye
     Traceback (most recent call last):
-      File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+      File "<stdin>", line 1, in <module>
     NameError: name 'good' is not defined
     >>> if you don't mind, I need to leave
-      File "&lt;stdin&gt;", line 1
+      File "<stdin>", line 1
         if you don't mind, I need to leave
                  ^
     SyntaxError: invalid syntax
@@ -301,22 +301,22 @@ Como vimos en nuestras primeras conversaciones con Python, debemos comunicarnos 
 Los programadores principiantes a menudo toman el hecho de que Python no deja espacio para errores como evidencia de que Python es malo, cruel y cruel. Si bien a Python parece gustarle todo el mundo, Python los conoce personalmente y guarda rencor contra ellos. Debido a este rencor, Python toma nuestros programas perfectamente escritos y los rechaza como "no aptos" solo para atormentarnos.
 
 ```    >>> primt 'Hello world!'
-      File "&lt;stdin&gt;", line 1
+      File "<stdin>", line 1
         primt 'Hello world!'
                            ^
     SyntaxError: invalid syntax
     >>> primt ('Hello world')
     Traceback (most recent call last):
-    File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+    File "<stdin>", line 1, in <module>
     NameError: name 'primt' is not defined
     
     >>> I hate you Python!
-      File "&lt;stdin&gt;", line 1
+      File "<stdin>", line 1
         I hate you Python!
              ^
     SyntaxError: invalid syntax
     >>> if you come out of there, I would teach you a lesson
-      File "&lt;stdin&gt;", line 1
+      File "<stdin>", line 1
         if you come out of there, I would teach you a lesson
                   ^
     SyntaxError: invalid syntax
@@ -403,7 +403,7 @@ a) El intérprete de Python <br/> b) El teclado <br/> c) Archivo fuente de Pytho
 Ejercicio 5: ¿Qué está mal con el siguiente código:
 
 ```    >>> primt 'Hello world!'
-      File "&lt;stdin&gt;", line 1
+      File "<stdin>", line 1
         primt 'Hello world!'
                            ^
     SyntaxError: invalid syntax

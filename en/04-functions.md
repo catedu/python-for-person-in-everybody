@@ -7,8 +7,8 @@
 In the context of programming, a **function** is a named sequence of statements that performs a computation. When you define a function, you specify the name and the sequence of statements. Later, you can "call" the function by name. We have already seen one example of a **function call**:
 
 ```
-&gt;&gt;&gt; type(32)
-&lt;class 'int'&gt;
+>>> type(32)
+<class 'int'>
 ```
 
 The name of the function is `type`. The expression in parentheses is called the **argument** of the function. The argument is a value or variable that we are passing into the function as input to the function. The result, for the `type` function, is the type of the argument.
@@ -26,11 +26,11 @@ Python provides a number of important built-in functions that we can use without
 The `max` and `min` functions give us the largest and smallest values in a list, respectively:
 
 ```
-&gt;&gt;&gt; max('Hello world')
+>>> max('Hello world')
 'w'
-&gt;&gt;&gt; min('Hello world')
+>>> min('Hello world')
 ' '
-&gt;&gt;&gt;
+>>>
 ```
 
 The `max` function tells us the "largest character" in the string (which turns out to be the letter "w") and the `min` function shows us the smallest character (which turns out to be a space).
@@ -38,9 +38,9 @@ The `max` function tells us the "largest character" in the string (which turns o
 Another very common built-in function is the `len` function which tells us how many items are in its argument. If the argument to `len` is a string, it returns the number of characters in the string.
 
 ```
-&gt;&gt;&gt; len('Hello world')
+>>> len('Hello world')
 11
-&gt;&gt;&gt;
+>>>
 ```
 
 These functions are not limited to looking at strings. They can operate on any set of values, as we will see in later chapters.
@@ -56,18 +56,18 @@ Python also provides built-in functions that convert values from one type to ano
  
 
 ```
-&gt;&gt;&gt; int('32')
+>>> int('32')
 32
-&gt;&gt;&gt; int('Hello')
+>>> int('Hello')
 ValueError: invalid literal for int() with base 10: 'Hello'
 ```
 
 `int` can convert floating-point values to integers, but it doesn't round off; it chops off the fraction part:
 
 ```
-&gt;&gt;&gt; int(3.99999)
+>>> int(3.99999)
 3
-&gt;&gt;&gt; int(-2.3)
+>>> int(-2.3)
 -2
 ```
 
@@ -76,9 +76,9 @@ ValueError: invalid literal for int() with base 10: 'Hello'
  
 
 ```
-&gt;&gt;&gt; float(32)
+>>> float(32)
 32.0
-&gt;&gt;&gt; float('3.14159')
+>>> float('3.14159')
 3.14159
 ```
 
@@ -87,9 +87,9 @@ Finally, `str` converts its argument to a string:
  
 
 ```
-&gt;&gt;&gt; str(32)
+>>> str(32)
 '32'
-&gt;&gt;&gt; str(3.14159)
+>>> str(3.14159)
 '3.14159'
 ```
 
@@ -139,9 +139,9 @@ The `random` function is only one of many functions that handle random numbers. 
  
 
 ```
-&gt;&gt;&gt; random.randint(5, 10)
+>>> random.randint(5, 10)
 5
-&gt;&gt;&gt; random.randint(5, 10)
+>>> random.randint(5, 10)
 9
 ```
 
@@ -150,10 +150,10 @@ To choose an element from a sequence at random, you can use `choice`:
  
 
 ```
-&gt;&gt;&gt; t = [1, 2, 3]
-&gt;&gt;&gt; random.choice(t)
+>>> t = [1, 2, 3]
+>>> random.choice(t)
 2
-&gt;&gt;&gt; random.choice(t)
+>>> random.choice(t)
 3
 ```
 
@@ -166,14 +166,14 @@ The `random` module also provides functions to generate random values from conti
 Python has a `math` module that provides most of the familiar mathematical functions. Before we can use the module, we have to import it:
 
 ```
-&gt;&gt;&gt; import math
+>>> import math
 ```
 
 This statement creates a **module object** named math. If you print the module object, you get some information about it:
 
 ```
-&gt;&gt;&gt; print(math)
-&lt;module 'math' (built-in)&gt;
+>>> print(math)
+<module 'math' (built-in)>
 ```
 
 The module object contains the functions and variables defined in the module. To access one of the functions, you have to specify the name of the module and the name of the function, separated by a dot (also known as a period). This format is called **dot notation**.
@@ -181,11 +181,11 @@ The module object contains the functions and variables defined in the module. To
 
 
 ```
-&gt;&gt;&gt; ratio = signal_power / noise_power
-&gt;&gt;&gt; decibels = 10 * math.log10(ratio)
+>>> ratio = signal_power / noise_power
+>>> decibels = 10 * math.log10(ratio)
 
-&gt;&gt;&gt; radians = 0.7
-&gt;&gt;&gt; height = math.sin(radians)
+>>> radians = 0.7
+>>> height = math.sin(radians)
 ```
 
 The first example computes the logarithm base 10 of the signal-to-noise ratio. The math module also provides a function called `log` that computes logarithms base `e`.
@@ -195,9 +195,9 @@ The first example computes the logarithm base 10 of the signal-to-noise ratio. T
 The second example finds the sine of `radians`. The name of the variable is a hint that `sin` and the other trigonometric functions (`cos`, `tan`, etc.) take arguments in radians. To convert from degrees to radians, divide by 360 and multiply by 2**π**:
 
 ```
-&gt;&gt;&gt; degrees = 45
-&gt;&gt;&gt; radians = degrees / 360.0 * 2 * math.pi
-&gt;&gt;&gt; math.sin(radians)
+>>> degrees = 45
+>>> radians = degrees / 360.0 * 2 * math.pi
+>>> math.sin(radians)
 0.7071067811865476
 ```
 
@@ -210,7 +210,7 @@ If you know your trigonometry, you can check the previous result by comparing it
  
 
 ```
-&gt;&gt;&gt; math.sqrt(2) / 2.0
+>>> math.sqrt(2) / 2.0
 0.7071067811865476
 ```
 
@@ -245,7 +245,7 @@ The strings in the print statements are enclosed in quotes. Single quotes and do
 If you type a function definition in interactive mode, the interpreter prints ellipses (**...**) to let you know that the definition isn't complete:
 
 ```
-&gt;&gt;&gt; def print_lyrics():
+>>> def print_lyrics():
 ...     print("I'm a lumberjack, and I'm okay.")
 ...     print('I sleep all night and I work all day.')
 ...
@@ -256,10 +256,10 @@ To end the function, you have to enter an empty line (this is not necessary in a
 Defining a function creates a variable with the same name.
 
 ```
-&gt;&gt;&gt; print(print_lyrics)
-&lt;function print_lyrics at 0xb7e99e9c&gt;
-&gt;&gt;&gt; print(type(print_lyrics))
-&lt;class 'function'&gt;
+>>> print(print_lyrics)
+<function print_lyrics at 0xb7e99e9c>
+>>> print(type(print_lyrics))
+<class 'function'>
 ```
 
 The value of `print_lyrics` is a **function object**, which has type "function".
@@ -269,7 +269,7 @@ The value of `print_lyrics` is a **function object**, which has type "function".
 The syntax for calling the new function is the same as for built-in functions:
 
 ```
-&gt;&gt;&gt; print_lyrics()
+>>> print_lyrics()
 I'm a lumberjack, and I'm okay.
 I sleep all night and I work all day.
 ```
@@ -285,7 +285,7 @@ def repeat_lyrics():
 And then call `repeat_lyrics`:
 
 ```
-&gt;&gt;&gt; repeat_lyrics()
+>>> repeat_lyrics()
 I'm a lumberjack, and I'm okay.
 I sleep all night and I work all day.
 I'm a lumberjack, and I'm okay.
@@ -349,14 +349,14 @@ This function assigns the argument to a parameter named `bruce`. When the functi
 This function works with any value that can be printed.
 
 ```
-&gt;&gt;&gt; print_twice('Spam')
+>>> print_twice('Spam')
 Spam
 Spam
-&gt;&gt;&gt; print_twice(17)
+>>> print_twice(17)
 17
 17
-&gt;&gt;&gt; import math
-&gt;&gt;&gt; print_twice(math.pi)
+>>> import math
+>>> print_twice(math.pi)
 3.141592653589793
 3.141592653589793
 ```
@@ -366,10 +366,10 @@ The same rules of composition that apply to built-in functions also apply to use
 
 
 ```
-&gt;&gt;&gt; print_twice('Spam '*4)
+>>> print_twice('Spam '*4)
 Spam Spam Spam Spam
 Spam Spam Spam Spam
-&gt;&gt;&gt; print_twice(math.cos(math.pi))
+>>> print_twice(math.cos(math.pi))
 -1.0
 -1.0
 ```
@@ -381,8 +381,8 @@ The argument is evaluated before the function is called, so in the examples the 
 You can also use a variable as an argument:
 
 ```
-&gt;&gt;&gt; michael = 'Eric, the half a bee.'
-&gt;&gt;&gt; print_twice(michael)
+>>> michael = 'Eric, the half a bee.'
+>>> print_twice(michael)
 Eric, the half a bee.
 Eric, the half a bee.
 ```
@@ -405,7 +405,7 @@ golden = (math.sqrt(5) + 1) / 2
 When you call a function in interactive mode, Python displays the result:
 
 ```
-&gt;&gt;&gt; math.sqrt(5)
+>>> math.sqrt(5)
 2.23606797749979
 ```
 
@@ -424,18 +424,18 @@ Void functions might display something on the screen or have some other effect, 
  
 
 ```
-&gt;&gt;&gt; result = print_twice('Bing')
+>>> result = print_twice('Bing')
 Bing
 Bing
-&gt;&gt;&gt; print(result)
+>>> print(result)
 None
 ```
 
 The value `None` is not the same as the string "None". It is a special value that has its own type:
 
 ```
-&gt;&gt;&gt; print(type(None))
-&lt;class 'NoneType'&gt;
+>>> print(type(None))
+<class 'NoneType'>
 ```
 
 To return a result from a function, we use the `return` statement in our function. For example, we could make a very simple function called `addtwo` that adds two numbers together and returns a result.
@@ -545,11 +545,11 @@ Exercise 7: Rewrite the grade program from the previous chapter using a function
 
 ```
 Score   Grade
-&gt; 0.9     A
-&gt; 0.8     B
-&gt; 0.7     C
-&gt; 0.6     D
-&lt;= 0.6    F
+> 0.9     A
+> 0.8     B
+> 0.7     C
+> 0.6     D
+<= 0.6    F
 ```
 
 ```

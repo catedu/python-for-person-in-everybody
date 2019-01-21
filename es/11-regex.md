@@ -63,8 +63,8 @@ Es posible decirle a un asterisco o signo más que no sea tan "codicioso" al agr
 Si queremos extraer datos de una cadena en Python, podemos usar el método `findall ()` para extraer todas las subcadenas que coinciden con una expresión regular. Usemos el ejemplo de querer extraer todo lo que parece una dirección de correo electrónico desde cualquier línea, independientemente del formato. Por ejemplo, queremos extraer las direcciones de correo electrónico de cada una de las siguientes líneas:
 
 ```From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
-Return-Path: &lt;postmaster@collab.sakaiproject.org&gt;
-          for &lt;source@collab.sakaiproject.org&gt;;
+Return-Path: <postmaster@collab.sakaiproject.org>
+          for <source@collab.sakaiproject.org>;
 Received: (from apache@localhost)
 Author: stephen.marquard@uct.ac.za
 ```
@@ -88,11 +88,11 @@ Si ejecutamos el programa en `mbox.txt` obtenemos el siguiente resultado:
 
 ```['wagnermr@iupui.edu']
 ['cwen@iupui.edu']
-['&lt;postmaster@collab.sakaiproject.org&gt;']
-['&lt;200801032122.m03LMFo4005148@nakamura.uits.iupui.edu&gt;']
-['&lt;source@collab.sakaiproject.org&gt;;']
-['&lt;source@collab.sakaiproject.org&gt;;']
-['&lt;source@collab.sakaiproject.org&gt;;']
+['<postmaster@collab.sakaiproject.org>']
+['<200801032122.m03LMFo4005148@nakamura.uits.iupui.edu>']
+['<source@collab.sakaiproject.org>;']
+['<source@collab.sakaiproject.org>;']
+['<source@collab.sakaiproject.org>;']
 ['apache@localhost)']
 ['source@collab.sakaiproject.org;']
 ```
@@ -292,7 +292,7 @@ Puede abrir un sistema de ayuda interactivo usando `help ()`.
 
 ```>>> help()
 
-help&gt; modules
+help> modules
 ```
 Si sabe qué módulo desea usar, puede usar el comando `dir ()` para encontrar los métodos en el módulo de la siguiente manera:
 

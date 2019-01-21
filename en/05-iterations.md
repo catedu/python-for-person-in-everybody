@@ -17,7 +17,7 @@ This means "get the current value of `x`, add 1, and then update `x` with the ne
 If you try to update a variable that doesn't exist, you get an error, because Python evaluates the right side before it assigns a value to `x`:
 
 ```
-&gt;&gt;&gt; x = x + 1
+>>> x = x + 1
 NameError: name 'x' is not defined
 ```
 
@@ -26,8 +26,8 @@ Before you can update a variable, you have to **initialize** it, usually with a 
 
 
 ```
-&gt;&gt;&gt; x = 0
-&gt;&gt;&gt; x = x + 1
+>>> x = 0
+>>> x = x + 1
 ```
 
 Updating a variable by adding 1 is called an **increment**; subtracting 1 is called a **decrement**.
@@ -44,7 +44,7 @@ One form of iteration in Python is the `while` statement. Here is a simple progr
 
 ```
 n = 5
-while n &gt; 0:
+while n > 0:
     print(n)
     n = n - 1
 print('Blastoff!')
@@ -101,11 +101,11 @@ The loop condition is `True`, which is always true, so the loop runs repeatedly 
 Each time through, it prompts the user with an angle bracket. If the user types `done`, the `break` statement exits the loop. Otherwise the program echoes whatever the user types and goes back to the top of the loop. Here's a sample run:
 
 ```
-&gt; hello there
+> hello there
 hello there
-&gt; finished
+> finished
 finished
-&gt; done
+> done
 Done!
 ```
 
@@ -122,12 +122,12 @@ Here is an example of a loop that copies its input until the user types "done", 
 Here is a sample run of this new program with `continue` added.
 
 ```
-&gt; hello there
+> hello there
 hello there
-&gt; # don't print this
-&gt; print this!
+> # don't print this
+> print this!
 print this!
-&gt; done
+> done
 Done!
 ```
 
@@ -224,7 +224,7 @@ To find the largest value in a list or sequence, we construct the following loop
 largest = None
 print('Before:', largest)
 for itervar in [3, 41, 12, 9, 74, 15]:
-    if largest is None or itervar &gt; largest :
+    if largest is None or itervar > largest :
         largest = itervar
     print('Loop:', itervar, largest)
 print('Largest:', largest)
@@ -247,7 +247,7 @@ The variable `largest` is best thought of as the "largest value we have seen so 
 
 Before the loop starts, the largest value we have seen so far is `None` since we have not yet seen any values. While the loop is executing, if `largest` is `None` then we take the first value we see as the largest so far. You can see in the first iteration when the value of `itervar` is 3, since `largest` is `None`, we immediately set `largest` to be 3.
 
-After the first iteration, `largest` is no longer `None`, so the second part of the compound logical expression that checks `itervar &gt; largest` triggers only when we see a value that is larger than the "largest so far". When we see a new "even larger" value we take that new value for `largest`. You can see in the program output that `largest` progresses from 3 to 41 to 74.
+After the first iteration, `largest` is no longer `None`, so the second part of the compound logical expression that checks `itervar > largest` triggers only when we see a value that is larger than the "largest so far". When we see a new "even larger" value we take that new value for `largest`. You can see in the program output that `largest` progresses from 3 to 41 to 74.
 
 At the end of the loop, we have scanned all of the values and the variable `largest` now does contain the largest value in the list.
 
@@ -257,7 +257,7 @@ To compute the smallest number, the code is very similar with one small change:
 smallest = None
 print('Before:', smallest)
 for itervar in [3, 41, 12, 9, 74, 15]:
-    if smallest is None or itervar &lt; smallest:
+    if smallest is None or itervar < smallest:
         smallest = itervar
     print('Loop:', itervar, smallest)
 print('Smallest:', smallest)
@@ -273,7 +273,7 @@ The following is a simple version of the Python built-in `min()` function:
 def min(values):
     smallest = None
     for value in values:
-        if smallest is None or value &lt; smallest:
+        if smallest is None or value < smallest:
             smallest = value
     return smallest
 ```

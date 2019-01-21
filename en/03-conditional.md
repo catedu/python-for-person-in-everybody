@@ -11,25 +11,25 @@ A **boolean expression** is an expression that is either true or false. The foll
  
 
 ```
-&gt;&gt;&gt; type(True)
-&lt;class 'bool'&gt;
-&gt;&gt;&gt; type(False)
-&lt;class 'bool'&gt;
+>>> type(True)
+<class 'bool'>
+>>> type(False)
+<class 'bool'>
 ```
 
 The `==` operator is one of the **comparison operators**; the others are:
 
 ```
       x != y               # x is not equal to y
-      x &gt; y                # x is greater than y
-      x &lt; y                # x is less than y
-      x &gt;= y               # x is greater than or equal to y
-      x &lt;= y               # x is less than or equal to y
+      x > y                # x is greater than y
+      x < y                # x is less than y
+      x >= y               # x is greater than or equal to y
+      x <= y               # x is less than or equal to y
       x is y               # x is the same as y
       x is not y           # x is not the same as y
 ```
 
-Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols for the same operations. A common error is to use a single equal sign (`=`) instead of a double equal sign (`==`). Remember that `=` is an assignment operator and `==` is a comparison operator. There is no such thing as `=&lt;` or `=&gt;`.
+Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols for the same operations. A common error is to use a single equal sign (`=`) instead of a double equal sign (`==`). Remember that `=` is an assignment operator and `==` is a comparison operator. There is no such thing as `=<` or `=>`.
 
  
 
@@ -39,7 +39,7 @@ Although these operations are probably familiar to you, the Python symbols are d
 
 There are three **logical operators**: `and`, `or`, and `not`. The semantics (meaning) of these operators is similar to their meaning in English. For example,
 
-`x &gt; 0 and x &lt; 10`
+`x > 0 and x < 10`
 
 is true only if `x` is greater than 0 **and** less than 10.
 
@@ -47,12 +47,12 @@ is true only if `x` is greater than 0 **and** less than 10.
 
 `n%2 == 0 or n%3 == 0` is true if **either** of the conditions is true, that is, if the number is divisible by 2 **or** 3.
 
-Finally, the `not` operator negates a boolean expression, so `not (x &gt; y)` is true if `x &gt; y` is false; that is, if `x` is less than or equal to `y`.
+Finally, the `not` operator negates a boolean expression, so `not (x > y)` is true if `x > y` is false; that is, if `x` is less than or equal to `y`.
 
 Strictly speaking, the operands of the logical operators should be boolean expressions, but Python is not very strict. Any nonzero number is interpreted as "true."
 
 ```
-&gt;&gt;&gt; 17 and True
+>>> 17 and True
 True
 ```
 
@@ -65,7 +65,7 @@ This flexibility can be useful, but there are some subtleties to it that might b
 In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. **Conditional statements** give us this ability. The simplest form is the `if` statement:
 
 ```
-if x &gt; 0 :
+if x > 0 :
     print('x is positive')
 ```
 
@@ -84,19 +84,19 @@ There is no limit on the number of statements that can appear in the body, but t
  
 
 ```
-if x &lt; 0 :
+if x < 0 :
     pass          # need to handle negative values!
 ```
 
 If you enter an `if` statement in the Python interpreter, the prompt will change from three chevrons to three dots to indicate you are in the middle of a block of statements, as shown below:
 
 ```
-&gt;&gt;&gt; x = 3
-&gt;&gt;&gt; if x &lt; 10:
+>>> x = 3
+>>> if x < 10:
 ...    print('Small')
 ...
 Small
-&gt;&gt;&gt;
+>>>
 ```
 
 ## [Alternative execution](#alternative-execution)
@@ -127,9 +127,9 @@ Since the condition must either be true or false, exactly one of the alternative
 Sometimes there are more than two possibilities and we need more than two branches. One way to express a computation like that is a **chained conditional**:
 
 ```
-if x &lt; y:
+if x < y:
     print('x is less than y')
-elif x &gt; y:
+elif x > y:
     print('x is greater than y')
 else:
     print('x and y are equal')
@@ -164,7 +164,7 @@ One conditional can also be nested within another. We could have written the thr
 if x == y:
     print('x and y are equal')
 else:
-    if x &lt; y:
+    if x < y:
         print('x is less than y')
     else:
         print('x is greater than y')
@@ -179,15 +179,15 @@ Although the indentation of the statements makes the structure apparent, **neste
 Logical operators often provide a way to simplify nested conditional statements. For example, we can rewrite the following code using a single conditional:
 
 ```
-if 0 &lt; x:
-    if x &lt; 10:
+if 0 < x:
+    if x < 10:
         print('x is a positive single-digit number.')
 ```
 
 The `print` statement is executed only if we make it past both conditionals, so we can get the same effect with the `and` operator:
 
 ```
-if 0 &lt; x and x &lt; 10:
+if 0 < x and x < 10:
     print('x is a positive single-digit number.')
 ```
 
@@ -196,13 +196,13 @@ if 0 &lt; x and x &lt; 10:
 Earlier we saw a code segment where we used the `input` and `int` functions to read and parse an integer number entered by the user. We also saw how treacherous doing this could be:
 
 ```
-&gt;&gt;&gt; prompt = "What...is the airspeed velocity of an unladen swallow?\n"
-&gt;&gt;&gt; speed = input(prompt)
+>>> prompt = "What...is the airspeed velocity of an unladen swallow?\n"
+>>> speed = input(prompt)
 What...is the airspeed velocity of an unladen swallow?
 What do you mean, an African or a European swallow?
-&gt;&gt;&gt; int(speed)
+>>> int(speed)
 ValueError: invalid literal for int() with base 10:
-&gt;&gt;&gt;
+>>>
 ```
 
 When we are executing these statements in the Python interpreter, we get a new prompt from the interpreter, think "oops", and move on to our next statement.
@@ -227,7 +227,7 @@ Enter Fahrenheit Temperature:72
 python fahren.py
 Enter Fahrenheit Temperature:fred
 Traceback (most recent call last):
-  File "fahren.py", line 2, in &lt;module&gt;
+  File "fahren.py", line 2, in <module>
     fahr = float(inp)
 ValueError: could not convert string to float: 'fred'
 ```
@@ -258,7 +258,7 @@ Handling an exception with a `try` statement is called **catching** an exception
 
 
 
-When Python is processing a logical expression such as `x &gt;= 2 and (x/y) &gt; 2`, it evaluates the expression from left to right. Because of the definition of `and`, if `x` is less than 2, the expression `x &gt;= 2` is `False` and so the whole expression is `False` regardless of whether `(x/y) &gt; 2` evaluates to `True` or `False`.
+When Python is processing a logical expression such as `x >= 2 and (x/y) > 2`, it evaluates the expression from left to right. Because of the definition of `and`, if `x` is less than 2, the expression `x >= 2` is `False` and so the whole expression is `False` regardless of whether `(x/y) > 2` evaluates to `True` or `False`.
 
 When Python detects that there is nothing to be gained by evaluating the rest of a logical expression, it stops its evaluation and does not do the computations in the rest of the logical expression. When the evaluation of a logical expression stops because the overall value is already known, it is called **short-circuiting** the evaluation.
 
@@ -267,44 +267,44 @@ When Python detects that there is nothing to be gained by evaluating the rest of
 While this may seem like a fine point, the short-circuit behavior leads to a clever technique called the **guardian pattern**. Consider the following code sequence in the Python interpreter:
 
 ```
-&gt;&gt;&gt; x = 6
-&gt;&gt;&gt; y = 2
-&gt;&gt;&gt; x &gt;= 2 and (x/y) &gt; 2
+>>> x = 6
+>>> y = 2
+>>> x >= 2 and (x/y) > 2
 True
-&gt;&gt;&gt; x = 1
-&gt;&gt;&gt; y = 0
-&gt;&gt;&gt; x &gt;= 2 and (x/y) &gt; 2
+>>> x = 1
+>>> y = 0
+>>> x >= 2 and (x/y) > 2
 False
-&gt;&gt;&gt; x = 6
-&gt;&gt;&gt; y = 0
-&gt;&gt;&gt; x &gt;= 2 and (x/y) &gt; 2
+>>> x = 6
+>>> y = 0
+>>> x >= 2 and (x/y) > 2
 Traceback (most recent call last):
-  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
-&gt;&gt;&gt;
+>>>
 ```
 
-The third calculation failed because Python was evaluating `(x/y)` and `y` was zero, which causes a runtime error. But the second example did **not** fail because the first part of the expression `x &gt;= 2` evaluated to `False` so the `(x/y)` was not ever executed due to the **short-circuit** rule and there was no error.
+The third calculation failed because Python was evaluating `(x/y)` and `y` was zero, which causes a runtime error. But the second example did **not** fail because the first part of the expression `x >= 2` evaluated to `False` so the `(x/y)` was not ever executed due to the **short-circuit** rule and there was no error.
 
 We can construct the logical expression to strategically place a **guard** evaluation just before the evaluation that might cause an error as follows:
 
 ```
-&gt;&gt;&gt; x = 1
-&gt;&gt;&gt; y = 0
-&gt;&gt;&gt; x &gt;= 2 and y != 0 and (x/y) &gt; 2
+>>> x = 1
+>>> y = 0
+>>> x >= 2 and y != 0 and (x/y) > 2
 False
-&gt;&gt;&gt; x = 6
-&gt;&gt;&gt; y = 0
-&gt;&gt;&gt; x &gt;= 2 and y != 0 and (x/y) &gt; 2
+>>> x = 6
+>>> y = 0
+>>> x >= 2 and y != 0 and (x/y) > 2
 False
-&gt;&gt;&gt; x &gt;= 2 and (x/y) &gt; 2 and y != 0
+>>> x >= 2 and (x/y) > 2 and y != 0
 Traceback (most recent call last):
-  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
-&gt;&gt;&gt;
+>>>
 ```
 
-In the first logical expression, `x &gt;= 2` is `False` so the evaluation stops at the `and`. In the second logical expression, `x &gt;= 2` is `True` but `y != 0` is `False` so we never reach `(x/y)`.
+In the first logical expression, `x >= 2` is `False` so the evaluation stops at the `and`. In the second logical expression, `x >= 2` is `True` but `y != 0` is `False` so we never reach `(x/y)`.
 
 In the third logical expression, the `y != 0` is **after** the `(x/y)` calculation so the expression fails with an error.
 
@@ -324,9 +324,9 @@ Syntax errors are usually easy to find, but there are a few gotchas. Whitespace 
 
 
 ```
-&gt;&gt;&gt; x = 5
-&gt;&gt;&gt;  y = 6
-  File "&lt;stdin&gt;", line 1
+>>> x = 5
+>>>  y = 6
+  File "<stdin>", line 1
     y = 6
     ^
 IndentationError: unexpected indent
@@ -346,7 +346,7 @@ In general, error messages tell you where the problem was discovered, but that i
 
  
 
-One of the operators that compares its operands: `==`, `!=`, `&gt;`, `&lt;`, `&gt;=`, and `&lt;=`.
+One of the operators that compares its operands: `==`, `!=`, `>`, `<`, `>=`, and `<=`.
 
  
 
@@ -391,11 +391,11 @@ Exercise 3: Write a program to prompt for a score between 0.0 and 1.0. If the sc
 
 ```
 Score   Grade
-&gt;= 0.9     A
-&gt;= 0.8     B
-&gt;= 0.7     C
-&gt;= 0.6     D
-&lt; 0.6    F
+>= 0.9     A
+>= 0.8     B
+>= 0.7     C
+>= 0.6     D
+< 0.6    F
 ~~~
 
 ```

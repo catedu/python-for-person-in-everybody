@@ -36,7 +36,7 @@ Las computadoras se utilizan a menudo para automatizar tareas repetitivas. Repet
 Una forma de iteración en Python es la instrucción `while`. Aquí hay un programa simple que cuenta a partir de cinco y luego dice "¡Explosión!".
 
 ```n = 5
-while n &gt; 0:
+while n > 0:
     print(n)
     n = n - 1
 print('Blastoff!')
@@ -90,11 +90,11 @@ La condición del bucle es `True`, que siempre es verdadera, por lo que el bucle
 
 Cada vez que pasa, le pide al usuario un corchete angular. Si el usuario escribe `done`, la instrucción` break` sale del bucle. De lo contrario, el programa hace eco de lo que sea que el usuario escriba y vuelve a la parte superior del bucle. Aquí hay una muestra de ejecución:
 
-```&gt; hello there
+```> hello there
 hello there
-&gt; finished
+> finished
 finished
-&gt; done
+> done
 Done!
 ```
 Esta forma de escribir bucles 'while` es común porque puede verificar la condición en cualquier parte del bucle (no solo en la parte superior) y puede expresar la condición de detención afirmativamente ("detenerse cuando esto sucede") en lugar de negativamente ("seguir adelante hasta que eso suceda.
@@ -109,12 +109,12 @@ Aquí hay un ejemplo de un bucle que copia su entrada hasta que el usuario escri
 
 Aquí hay una muestra de ejecución de este nuevo programa con `continue` agregado.
 
-```&gt; hello there
+```> hello there
 hello there
-&gt; # don't print this
-&gt; print this!
+> # don't print this
+> print this!
 print this!
-&gt; done
+> done
 Done!
 ```
 Todas las líneas se imprimen, excepto la que comienza con el signo hash porque cuando se ejecuta `continue`, finaliza la iteración actual y vuelve a la instrucción` while` para iniciar la siguiente iteración, omitiendo la instrucción `print` .
@@ -197,7 +197,7 @@ Para encontrar el valor más grande en una lista o secuencia, construimos el sig
 ```largest = None
 print('Before:', largest)
 for itervar in [3, 41, 12, 9, 74, 15]:
-    if largest is None or itervar &gt; largest :
+    if largest is None or itervar > largest :
         largest = itervar
     print('Loop:', itervar, largest)
 print('Largest:', largest)
@@ -226,7 +226,7 @@ Para calcular el número más pequeño, el código es muy similar con un pequeñ
 ```smallest = None
 print('Before:', smallest)
 for itervar in [3, 41, 12, 9, 74, 15]:
-    if smallest is None or itervar &lt; smallest:
+    if smallest is None or itervar < smallest:
         smallest = itervar
     print('Loop:', itervar, smallest)
 print('Smallest:', smallest)
@@ -240,7 +240,7 @@ La siguiente es una versión simple de la función `min ()` incorporada en Pytho
 ```def min(values):
     smallest = None
     for value in values:
-        if smallest is None or value &lt; smallest:
+        if smallest is None or value < smallest:
             smallest = value
     return smallest
 ```En la versión de la función del código más pequeño, eliminamos todas las declaraciones `print` para que sean equivalentes a la función` min` que ya está incorporada en Python.

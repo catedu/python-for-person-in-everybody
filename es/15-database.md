@@ -224,7 +224,7 @@ Enter a Twitter account, or quit: quit
 ```
 Desde que presionamos enter (es decir, no especificamos una cuenta de Twitter), se ejecuta el siguiente código:
 
-```if ( len(acct) &lt; 1 ) :
+```if ( len(acct) < 1 ) :
     cur.execute('SELECT name FROM Twitter WHERE retrieved = 0 LIMIT 1')
     try:
         acct = cur.fetchone()[0]

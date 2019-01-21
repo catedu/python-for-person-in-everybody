@@ -7,8 +7,8 @@
 A string is a **sequence** of characters. You can access the characters one at a time with the bracket operator:
 
 ```
-&gt;&gt;&gt; fruit = 'banana'
-&gt;&gt;&gt; letter = fruit[1]
+>>> fruit = 'banana'
+>>> letter = fruit[1]
 ```
 
  
@@ -20,15 +20,15 @@ The expression in brackets is called an **index**. The index indicates which cha
 But you might not get what you expect:
 
 ```
-&gt;&gt;&gt; print(letter)
+>>> print(letter)
 a
 ```
 
 For most people, the first letter of "banana" is `b`, not `a`. But in Python, the index is an offset from the beginning of the string, and the offset of the first letter is zero.
 
 ```
-&gt;&gt;&gt; letter = fruit[0]
-&gt;&gt;&gt; print(letter)
+>>> letter = fruit[0]
+>>> print(letter)
 b
 ```
 
@@ -43,7 +43,7 @@ You can use any expression, including variables and operators, as an index, but 
  
 
 ```
-&gt;&gt;&gt; letter = fruit[1.5]
+>>> letter = fruit[1.5]
 TypeError: string indices must be integers
 ```
 
@@ -54,8 +54,8 @@ TypeError: string indices must be integers
 `len` is a built-in function that returns the number of characters in a string:
 
 ```
-&gt;&gt;&gt; fruit = 'banana'
-&gt;&gt;&gt; len(fruit)
+>>> fruit = 'banana'
+>>> len(fruit)
 6
 ```
 
@@ -64,16 +64,16 @@ To get the last letter of a string, you might be tempted to try something like t
  
 
 ```
-&gt;&gt;&gt; length = len(fruit)
-&gt;&gt;&gt; last = fruit[length]
+>>> length = len(fruit)
+>>> last = fruit[length]
 IndexError: string index out of range
 ```
 
 The reason for the `IndexError` is that there is no letter in `'banana'` with the index 6. Since we started counting at zero, the six letters are numbered 0 to 5. To get the last character, you have to subtract 1 from `length`:
 
 ```
-&gt;&gt;&gt; last = fruit[length-1]
-&gt;&gt;&gt; print(last)
+>>> last = fruit[length-1]
+>>> print(last)
 a
 ```
 
@@ -89,13 +89,13 @@ A lot of computations involve processing a string one character at a time. Often
 
 ```
 index = 0
-while index &lt; len(fruit):
+while index < len(fruit):
     letter = fruit[index]
     print(letter)
     index = index + 1
 ```
 
-This loop traverses the string and displays each letter on a line by itself. The loop condition is `index \&lt; len(fruit)`, so when `index` is equal to the length of the string, the condition is false, and the body of the loop is not executed. The last character accessed is the one with the index `len(fruit)-1`, which is the last character in the string.
+This loop traverses the string and displays each letter on a line by itself. The loop condition is `index \< len(fruit)`, so when `index` is equal to the length of the string, the condition is false, and the body of the loop is not executed. The last character accessed is the one with the index `len(fruit)-1`, which is the last character in the string.
 
 Exercise 1: Write a `while` loop that starts at the last character in the string and works its way backwards to the first character in the string, printing each letter on a separate line, except backwards.
 
@@ -115,10 +115,10 @@ Each time through the loop, the next character in the string is assigned to the 
 A segment of a string is called a **slice**. Selecting a slice is similar to selecting a character:
 
 ```
-&gt;&gt;&gt; s = 'Monty Python'
-&gt;&gt;&gt; print(s[0:5])
+>>> s = 'Monty Python'
+>>> print(s[0:5])
 Monty
-&gt;&gt;&gt; print(s[6:12])
+>>> print(s[6:12])
 Python
 ```
 
@@ -127,10 +127,10 @@ The operator returns the part of the string from the "n-eth" character to the "m
 If you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string:
 
 ```
-&gt;&gt;&gt; fruit = 'banana'
-&gt;&gt;&gt; fruit[:3]
+>>> fruit = 'banana'
+>>> fruit[:3]
 'ban'
-&gt;&gt;&gt; fruit[3:]
+>>> fruit[3:]
 'ana'
 ```
 
@@ -139,8 +139,8 @@ If the first index is greater than or equal to the second the result is an **emp
 
 
 ```
-&gt;&gt;&gt; fruit = 'banana'
-&gt;&gt;&gt; fruit[3:3]
+>>> fruit = 'banana'
+>>> fruit[3:3]
 ''
 ```
 
@@ -159,8 +159,8 @@ It is tempting to use the operator on the left side of an assignment, with the i
  
 
 ```
-&gt;&gt;&gt; greeting = 'Hello, world!'
-&gt;&gt;&gt; greeting[0] = 'J'
+>>> greeting = 'Hello, world!'
+>>> greeting[0] = 'J'
 TypeError: 'str' object does not support item assignment
 ```
 
@@ -171,9 +171,9 @@ The "object" in this case is the string and the "item" is the character you trie
 The reason for the error is that strings are **immutable**, which means you can't change an existing string. The best you can do is create a new string that is a variation on the original:
 
 ```
-&gt;&gt;&gt; greeting = 'Hello, world!'
-&gt;&gt;&gt; new_greeting = 'J' + greeting[1:]
-&gt;&gt;&gt; print(new_greeting)
+>>> greeting = 'Hello, world!'
+>>> new_greeting = 'J' + greeting[1:]
+>>> print(new_greeting)
 Jello, world!
 ```
 
@@ -211,9 +211,9 @@ Encapsulate this code in a function named `count`, and generalize it so that it 
 The word `in` is a boolean operator that takes two strings and returns `True` if the first appears as a substring in the second:
 
 ```
-&gt;&gt;&gt; 'a' in 'banana'
+>>> 'a' in 'banana'
 True
-&gt;&gt;&gt; 'seed' in 'banana'
+>>> 'seed' in 'banana'
 False
 ```
 
@@ -231,9 +231,9 @@ if word == 'banana':
 Other comparison operations are useful for putting words in alphabetical order:
 
 ```
-if word &lt; 'banana':
+if word < 'banana':
     print('Your word,' + word + ', comes before banana.')
-elif word &gt; 'banana':
+elif word > 'banana':
     print('Your word,' + word + ', comes after banana.')
 else:
     print('All right, bananas.')
@@ -254,10 +254,10 @@ Strings are an example of Python **objects**. An object contains both data (the 
 Python has a function called `dir` which lists the methods available for an object. The `type` function shows the type of an object and the `dir` function shows the available methods.
 
 ```
-&gt;&gt;&gt; stuff = 'Hello world'
-&gt;&gt;&gt; type(stuff)
-&lt;class 'str'&gt;
-&gt;&gt;&gt; dir(stuff)
+>>> stuff = 'Hello world'
+>>> type(stuff)
+<class 'str'>
+>>> dir(stuff)
 ['capitalize', 'casefold', 'center', 'count', 'encode',
 'endswith', 'expandtabs', 'find', 'format', 'format_map',
 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit',
@@ -267,15 +267,15 @@ Python has a function called `dir` which lists the methods available for an obje
 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip',
 'split', 'splitlines', 'startswith', 'strip', 'swapcase',
 'title', 'translate', 'upper', 'zfill']
-&gt;&gt;&gt; help(str.capitalize)
+>>> help(str.capitalize)
 Help on method_descriptor:
 
 capitalize(...)
-    S.capitalize() -&gt; str
+    S.capitalize() -> str
 
     Return a capitalized version of S, i.e. make the first character
     have upper case and the rest lower case.
-&gt;&gt;&gt;
+>>>
 ```
 
 While the `dir` function lists the methods, and you can use `help` to get some simple documentation on a method, a better source of documentation for string methods would be [https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods).
@@ -291,9 +291,9 @@ Instead of the function syntax `upper(word)`, it uses the method syntax `word.up
 
 
 ```
-&gt;&gt;&gt; word = 'banana'
-&gt;&gt;&gt; new_word = word.upper()
-&gt;&gt;&gt; print(new_word)
+>>> word = 'banana'
+>>> new_word = word.upper()
+>>> print(new_word)
 BANANA
 ```
 
@@ -308,9 +308,9 @@ A method call is called an **invocation**; in this case, we would say that we ar
 For example, there is a string method named `find` that searches for the position of one string within another:
 
 ```
-&gt;&gt;&gt; word = 'banana'
-&gt;&gt;&gt; index = word.find('a')
-&gt;&gt;&gt; print(index)
+>>> word = 'banana'
+>>> index = word.find('a')
+>>> print(index)
 1
 ```
 
@@ -319,7 +319,7 @@ In this example, we invoke `find` on `word` and pass the letter we are looking f
 The `find` method can find substrings as well as characters:
 
 ```
-&gt;&gt;&gt; word.find('na')
+>>> word.find('na')
 2
 ```
 
@@ -328,37 +328,37 @@ It can take as a second argument the index where it should start:
  
 
 ```
-&gt;&gt;&gt; word.find('na', 3)
+>>> word.find('na', 3)
 4
 ```
 
 One common task is to remove white space (spaces, tabs, or newlines) from the beginning and end of a string using the `strip` method:
 
 ```
-&gt;&gt;&gt; line = '  Here we go  '
-&gt;&gt;&gt; line.strip()
+>>> line = '  Here we go  '
+>>> line.strip()
 'Here we go'
 ```
 
 Some methods such as **startswith** return boolean values.
 
 ```
-&gt;&gt;&gt; line = 'Have a nice day'
-&gt;&gt;&gt; line.startswith('Have')
+>>> line = 'Have a nice day'
+>>> line.startswith('Have')
 True
-&gt;&gt;&gt; line.startswith('h')
+>>> line.startswith('h')
 False
 ```
 
 You will note that `startswith` requires case to match, so sometimes we take a line and map it all to lowercase before we do any checking using the `lower` method.
 
 ```
-&gt;&gt;&gt; line = 'Have a nice day'
-&gt;&gt;&gt; line.startswith('h')
+>>> line = 'Have a nice day'
+>>> line.startswith('h')
 False
-&gt;&gt;&gt; line.lower()
+>>> line.lower()
 'have a nice day'
-&gt;&gt;&gt; line.lower().startswith('h')
+>>> line.lower().startswith('h')
 True
 ```
 
@@ -381,17 +381,17 @@ and we wanted to pull out only the second half of the address (i.e., `uct.ac.za`
 First, we will find the position of the at-sign in the string. Then we will find the position of the first space **after** the at-sign. And then we will use string slicing to extract the portion of the string which we are looking for.
 
 ```
-&gt;&gt;&gt; data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
-&gt;&gt;&gt; atpos = data.find('@')
-&gt;&gt;&gt; print(atpos)
+>>> data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+>>> atpos = data.find('@')
+>>> print(atpos)
 21
-&gt;&gt;&gt; sppos = data.find(' ',atpos)
-&gt;&gt;&gt; print(sppos)
+>>> sppos = data.find(' ',atpos)
+>>> print(sppos)
 31
-&gt;&gt;&gt; host = data[atpos+1:sppos]
-&gt;&gt;&gt; print(host)
+>>> host = data[atpos+1:sppos]
+>>> print(host)
 uct.ac.za
-&gt;&gt;&gt;
+>>>
 ```
 
 We use a version of the `find` method which allows us to specify a position in the string where we want `find` to start looking. When we slice, we extract the characters from "one beyond the at-sign through up to **but not including** the space character".
@@ -415,8 +415,8 @@ The first operand is the **format string**, which contains one or more **format 
 For example, the format sequence "%d" means that the second operand should be formatted as an integer (`d` stands for "decimal"):
 
 ```
-&gt;&gt;&gt; camels = 42
-&gt;&gt;&gt; '%d' % camels
+>>> camels = 42
+>>> '%d' % camels
 '42'
 ```
 
@@ -425,8 +425,8 @@ The result is the string "42", which is not to be confused with the integer valu
 A format sequence can appear anywhere in the string, so you can embed a value in a sentence:
 
 ```
-&gt;&gt;&gt; camels = 42
-&gt;&gt;&gt; 'I have spotted %d camels.' % camels
+>>> camels = 42
+>>> 'I have spotted %d camels.' % camels
 'I have spotted 42 camels.'
 ```
 
@@ -435,7 +435,7 @@ If there is more than one format sequence in the string, the second argument has
 The following example uses "%d" to format an integer, "%g" to format a floating-point number (don't ask why), and "%s" to format a string:
 
 ```
-&gt;&gt;&gt; 'In %d years I have spotted %g %s.' % (3, 0.1, 'camels')
+>>> 'In %d years I have spotted %g %s.' % (3, 0.1, 'camels')
 'In 3 years I have spotted 0.1 camels.'
 ```
 
@@ -444,9 +444,9 @@ The number of elements in the tuple must match the number of format sequences in
  
 
 ```
-&gt;&gt;&gt; '%d %d %d' % (1, 2)
+>>> '%d %d %d' % (1, 2)
 TypeError: not enough arguments for format string
-&gt;&gt;&gt; '%d' % 'dollars'
+>>> '%d' % 'dollars'
 TypeError: %d format: a number is required, not str
 ```
 
@@ -467,14 +467,14 @@ For example, look at the program which we used to demonstrate the `while` loop i
 Look what happens when the user enters an empty line of input:
 
 ```
-&gt; hello there
+> hello there
 hello there
-&gt; # don't print this
-&gt; print this!
+> # don't print this
+> print this!
 print this!
-&gt;
+>
 Traceback (most recent call last):
-  File "copytildone.py", line 3, in &lt;module&gt;
+  File "copytildone.py", line 3, in <module>
     if line[0] == '#':
 IndexError: string index out of range
 ```
@@ -492,7 +492,7 @@ One possibility is to simply use the `startswith` method which returns `False` i
 Another way is to safely write the `if` statement using the **guardian** pattern and make sure the second logical expression is evaluated only where there is at least one character in the string.:
 
 ```
-    if len(line) &gt; 0 and line[0] == '#':
+    if len(line) > 0 and line[0] == '#':
 ```
 
 ## [Glossary](#glossary)

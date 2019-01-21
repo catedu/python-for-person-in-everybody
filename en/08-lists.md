@@ -40,7 +40,7 @@ As you might expect, you can assign list values to variables:
 The syntax for accessing the elements of a list is the same as for accessing the characters of a string: the bracket operator. The expression inside the brackets specifies the index. Remember that the indices start at 0:
 
 ```
-&gt;&gt;&gt; print(cheeses[0])
+>>> print(cheeses[0])
 Cheddar
 ```
 
@@ -133,7 +133,7 @@ If you omit the first index, the slice starts at the beginning. If you omit the 
  
 
 ```
-&gt;&gt;&gt; t[:]
+>>> t[:]
 ['a', 'b', 'c', 'd', 'e', 'f']
 ```
 
@@ -311,8 +311,8 @@ An object with more than one reference has more than one name, so we say that th
 If the aliased object is mutable, changes made with one alias affect the other:
 
 ```
-&gt;&gt;&gt; b[0] = 17
-&gt;&gt;&gt; print(a)
+>>> b[0] = 17
+>>> print(a)
 [17, 2, 3]
 ```
 
@@ -419,7 +419,7 @@ This looks much simpler and we don't even need to do the `rstrip` to remove the 
 <pre><code>        python search8.py
         Sat
         Traceback (most recent call last):
-          File "search8.py", line 5, in &lt;module&gt;
+          File "search8.py", line 5, in <module>
             if words[0] != 'From' : continue
         IndexError: list index out of range</code></pre>
 It kind of works and we see the day from the first line (Sat), but then the program fails with a traceback error. What went wrong? What messed-up data caused our elegant, clever, and very Pythonic program to fail?
@@ -435,7 +435,7 @@ When we run the program, a lot of output scrolls off the screen but at the end, 
         Debug: ['X-DSPAM-Probability:', '0.0000']
         Debug: []
         Traceback (most recent call last):
-          File "search9.py", line 6, in &lt;module&gt;
+          File "search9.py", line 6, in <module>
             if words[0] != 'From' : continue
         IndexError: list index out of range</code></pre>
 Each debug line is printing the list of words which we get when we `split` the line into words. When the program fails, the list of words is empty `[]`. If we open the file in a text editor and look at the file, at that point it looks as follows:

@@ -24,7 +24,7 @@ Cuando queremos leer o escribir un archivo (digamos en su disco duro), primero d
 
 ```>>> fhand = open('mbox.txt')
 >>> print(fhand)
-&lt;_io.TextIOWrapper name='mbox.txt' mode='r' encoding='cp1252'&gt;
+<_io.TextIOWrapper name='mbox.txt' mode='r' encoding='cp1252'>
 ```
 
 
@@ -36,7 +36,7 @@ Si el archivo no existe, `open` fallará con un rastreo y no obtendrá un identi
 
 ```>>> fhand = open('stuff.txt')
 Traceback (most recent call last):
-  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "<stdin>", line 1, in <module>
 FileNotFoundError: [Errno 2] No such file or directory: 'stuff.txt'
 ```
 Más adelante usaremos `try` y` except` para tratar con más gracia la situación en la que intentamos abrir un archivo que no existe.
@@ -45,7 +45,7 @@ Más adelante usaremos `try` y` except` para tratar con más gracia la situació
 
 Un archivo de texto puede considerarse como una secuencia de líneas, al igual que una cadena de Python puede considerarse como una secuencia de caracteres. Por ejemplo, esta es una muestra de un archivo de texto que registra la actividad de correo de varias personas en un equipo de desarrollo de proyectos de código abierto:
 
-`From stephen.marquard@uct.ac.za sábado 5 de enero 09:14:16 2008` <br/>` Ruta de retorno: & lt; postmaster@collab.sakaiproject.org&gt; `<br/>` Fecha: Sat, 5 de enero de 2008 09:12:18 -0500` <br/> `Para: source @ collab.sakaiproject.org` <br/>` De: stephen.marquard @ uct.ac.za` <br/> `Asunto: [sakai] svn commit: r39772 - contenido / sucursales / `<br/>` Detalles: http: //source.sakaiproject.org/viewsvn/? view = rev & amp; rev = 39772` <br/> `...`
+`From stephen.marquard@uct.ac.za sábado 5 de enero 09:14:16 2008` <br/>` Ruta de retorno: & lt; postmaster@collab.sakaiproject.org> `<br/>` Fecha: Sat, 5 de enero de 2008 09:12:18 -0500` <br/> `Para: source @ collab.sakaiproject.org` <br/>` De: stephen.marquard @ uct.ac.za` <br/> `Asunto: [sakai] svn commit: r39772 - contenido / sucursales / `<br/>` Detalles: http: //source.sakaiproject.org/viewsvn/? view = rev & amp; rev = 39772` <br/> `...`
 
 El archivo completo de interacciones de correo está disponible en
 
@@ -192,14 +192,14 @@ Te dije que no miraras. Esta es tu última oportunidad.
 ```python search6.py
 Enter the file name: missing.txt
 Traceback (most recent call last):
-  File "search6.py", line 2, in &lt;module&gt;
+  File "search6.py", line 2, in <module>
     fhand = open(fname)
 FileNotFoundError: [Errno 2] No such file or directory: 'missing.txt'
 
 python search6.py
 Enter the file name: na na boo boo
 Traceback (most recent call last):
-  File "search6.py", line 2, in &lt;module&gt;
+  File "search6.py", line 2, in <module>
     fhand = open(fname)
 FileNotFoundError: [Errno 2] No such file or directory: 'na na boo boo'
 ```
@@ -237,7 +237,7 @@ Para escribir un archivo, debe abrirlo con el modo "w" como segundo parámetro:
 
 ```>>> fout = open('output.txt', 'w')
 >>> print(fout)
-&lt;_io.TextIOWrapper name='output.txt' mode='w' encoding='cp1252'&gt;
+<_io.TextIOWrapper name='output.txt' mode='w' encoding='cp1252'>
 ```
 Si el archivo ya existe, abrirlo en modo de escritura borra los datos antiguos y comienza de nuevo, ¡así que tenga cuidado! Si el archivo no existe, se crea uno nuevo.
 
@@ -309,7 +309,7 @@ Ejercicio 1: escriba un programa para leer un archivo e imprima el contenido del
 ```python shout.py
 Enter a file name: mbox-short.txt
 FROM STEPHEN.MARQUARD@UCT.AC.ZA SAT JAN  5 09:14:16 2008
-RETURN-PATH: &lt;POSTMASTER@COLLAB.SAKAIPROJECT.ORG&gt;
+RETURN-PATH: <POSTMASTER@COLLAB.SAKAIPROJECT.ORG>
 RECEIVED: FROM MURDER (MAIL.UMICH.EDU [141.211.14.90])
      BY FRANKENSTEIN.MAIL.UMICH.EDU (CYRUS V2.3.8) WITH LMTPA;
      SAT, 05 JAN 2008 09:14:16 -0500

@@ -60,11 +60,11 @@ Para mostrar el valor de una variable, puede usar una declaración de impresión
 El tipo de una variable es el tipo del valor al que se refiere.
 
 ```>>> type(message)
-&lt;class 'str'&gt;
+<class 'str'>
 >>> type(n)
-&lt;class 'int'&gt;
+<class 'int'>
 >>> type(pi)
-&lt;class 'float'&gt;
+<class 'float'>
 ```
 ## [Nombres de variables y palabras clave] (# variables-names-and-keywords)
 
@@ -356,7 +356,7 @@ Si coloca un espacio en el nombre de una variable, Python cree que son dos opera
 SyntaxError: invalid syntax
 ```
 ```>>> month = 09
-  File "&lt;stdin&gt;", line 1
+  File "<stdin>", line 1
     month = 09
              ^
 SyntaxError: invalid token

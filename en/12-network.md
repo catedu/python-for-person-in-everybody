@@ -172,12 +172,12 @@ One simple way to parse HTML is to use regular expressions to repeatedly search 
 Here is a simple web page:
 
 ```
-&lt;h1&gt;The First Page&lt;/h1&gt;
-&lt;p&gt;
+<h1>The First Page</h1>
+<p>
 If you like, you can switch to the
-&lt;a href="http://www.dr-chuck.com/page2.htm"&gt;
-Second Page&lt;/a&gt;.
-&lt;/p&gt;
+<a href="http://www.dr-chuck.com/page2.htm">
+Second Page</a>.
+</p>
 ```
 
 We can construct a well-formed regular expression to match and extract the link values from the above text as follows:
@@ -262,8 +262,8 @@ You can use BeautifulSoup to pull out various parts of each tag as follows:
 ```
 python urllink2.py
 Enter - http://www.dr-chuck.com/page1.htm
-TAG: &lt;a href="http://www.dr-chuck.com/page2.htm"&gt;
-Second Page&lt;/a&gt;
+TAG: <a href="http://www.dr-chuck.com/page2.htm">
+Second Page</a>
 URL: http://www.dr-chuck.com/page2.htm
 Content: ['\nSecond Page']
 Attrs: [('href', 'http://www.dr-chuck.com/page2.htm')]

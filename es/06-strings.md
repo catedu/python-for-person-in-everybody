@@ -73,7 +73,7 @@ Alternativamente, puede usar índices negativos, que cuentan hacia atrás desde 
 Una gran cantidad de cálculos implican procesar una cadena de un carácter a la vez. A menudo comienzan al principio, seleccionan cada personaje por turno, le hacen algo y continúan hasta el final. Este patrón de procesamiento se denomina ** transversal **. Una forma de escribir un recorrido es con un bucle `while`:
 
 ```index = 0
-while index &lt; len(fruit):
+while index < len(fruit):
     letter = fruit[index]
     print(letter)
     index = index + 1
@@ -193,9 +193,9 @@ Los operadores de comparación trabajan en cadenas. Para ver si dos cuerdas son 
 ```
 Otras operaciones de comparación son útiles para poner las palabras en orden alfabético:
 
-```if word &lt; 'banana':
+```if word < 'banana':
     print('Your word,' + word + ', comes before banana.')
-elif word &gt; 'banana':
+elif word > 'banana':
     print('Your word,' + word + ', comes after banana.')
 else:
     print('All right, bananas.')
@@ -214,7 +214,7 @@ Python tiene una función llamada `dir` que lista los métodos disponibles para 
 
 ```>>> stuff = 'Hello world'
 >>> type(stuff)
-&lt;class 'str'&gt;
+<class 'str'>
 >>> dir(stuff)
 ['capitalize', 'casefold', 'center', 'count', 'encode',
 'endswith', 'expandtabs', 'find', 'format', 'format_map',
@@ -229,7 +229,7 @@ Python tiene una función llamada `dir` que lista los métodos disponibles para 
 Help on method_descriptor:
 
 capitalize(...)
-    S.capitalize() -&gt; str
+    S.capitalize() -> str
 
     Return a capitalized version of S, i.e. make the first character
     have upper case and the rest lower case.
@@ -399,14 +399,14 @@ Por ejemplo, mire el programa que usamos para demostrar el bucle `while` en el c
 
 Mira lo que sucede cuando el usuario ingresa una línea de entrada vacía:
 
-```&gt; hello there
+```> hello there
 hello there
-&gt; # don't print this
-&gt; print this!
+> # don't print this
+> print this!
 print this!
-&gt;
+>
 Traceback (most recent call last):
-  File "copytildone.py", line 3, in &lt;module&gt;
+  File "copytildone.py", line 3, in <module>
     if line[0] == '#':
 IndexError: string index out of range
 ```
@@ -420,7 +420,7 @@ Una posibilidad es simplemente usar el método `startswith` que devuelve` False`
 
 Otra forma es escribir de forma segura la instrucción `if` utilizando el patrón ** guardian ** y asegurarse de que la segunda expresión lógica se evalúa solo cuando hay al menos un carácter en la cadena:
 
-```    if len(line) &gt; 0 and line[0] == '#':
+```    if len(line) > 0 and line[0] == '#':
 ```
 ## [Glosario] (# glosario)
 

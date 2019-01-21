@@ -54,8 +54,8 @@ The last three lines of the program are completely equivalent, but it is more co
 We can take a look into the capabilities of an object by looking at the output of the `dir()` function:
 
 ```
-&gt;&gt;&gt; stuff = list()
-&gt;&gt;&gt; dir(stuff)
+>>> stuff = list()
+>>> dir(stuff)
 ['__add__', '__class__', '__contains__', '__delattr__',
 '__delitem__', '__dir__', '__doc__', '__eq__',
 '__format__', '__ge__', '__getattribute__', '__getitem__',
@@ -66,7 +66,7 @@ We can take a look into the capabilities of an object by looking at the output o
 '__setitem__', '__sizeof__', '__str__', '__subclasshook__',
 'append', 'clear', 'copy', 'count', 'extend', 'index',
 'insert', 'pop', 'remove', 'reverse', 'sort']
-&gt;&gt;&gt;
+>>>
 ```
 
 The precise definition of `dir()` is that it lists the **methods** and **attributes** of a Python object.
@@ -187,12 +187,12 @@ As we have seen, in Python, all variables have a type. And we can use the built-
 When this program executes, it produces the following output:
 
 ```
-Type &lt;class '__main__.PartyAnimal'&gt;
+Type <class '__main__.PartyAnimal'>
 Dir  ['__class__', '__delattr__', ...
 '__sizeof__', '__str__', '__subclasshook__',
 '__weakref__', 'party', 'x']
-Type &lt;class 'int'&gt;
-Type &lt;class 'method'&gt;
+Type <class 'int'>
+Type <class 'method'>
 ```
 
 You can see that using the `class` keyword, we have created a new type. From the `dir` output, you can see both the `x` integer attribute and the `party` method are available in the object.

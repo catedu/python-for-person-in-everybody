@@ -191,7 +191,7 @@ Podemos usar este patrón para implementar los diversos modismos de bucle que he
 
 ```counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
 for key in counts:
-    if counts[key] &gt; 10 :
+    if counts[key] > 10 :
         print(key, counts[key])
 ```
 El bucle `for` recorre las ** teclas ** del diccionario, por lo que debemos utilizar el operador de índice para recuperar el valor ** correspondiente para cada tecla. Así es como se ve la salida:
@@ -246,7 +246,7 @@ No especificaremos la 'tabla', pero usaremos el parámetro `deletechars` para el
 
 ```>>> import string
 >>> string.punctuation
-'!"#$%&amp;\'()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~'
+'!"#$%&amp;\'()*+,-./:;<=>?@[\\]^_`{|}~'
 ```
 Los parámetros utilizados por `translate` eran diferentes en Python 2.0.
 

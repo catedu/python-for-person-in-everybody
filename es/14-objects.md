@@ -168,12 +168,12 @@ Como hemos visto, en Python, todas las variables tienen un tipo. Y podemos usar 
 
 Cuando este programa se ejecuta, produce la siguiente salida:
 
-```Type &lt;class '__main__.PartyAnimal'&gt;
+```Type <class '__main__.PartyAnimal'>
 Dir  ['__class__', '__delattr__', ...
 '__sizeof__', '__str__', '__subclasshook__',
 '__weakref__', 'party', 'x']
-Type &lt;class 'int'&gt;
-Type &lt;class 'method'&gt;
+Type <class 'int'>
+Type <class 'method'>
 ```
 Puedes ver que usando la palabra clave `class`, hemos creado un nuevo tipo. Desde la salida de `dir`, puede ver que tanto el atributo de entero` x` como el método `party` están disponibles en el objeto.
 

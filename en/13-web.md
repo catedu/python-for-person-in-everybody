@@ -11,13 +11,13 @@ There are two common formats that we use when exchanging data across the web. Th
 XML looks very similar to HTML, but XML is more structured than HTML. Here is a sample of an XML document:
 
 ```
-&lt;person&gt;
-  &lt;name&gt;Chuck&lt;/name&gt;
-  &lt;phone type="intl"&gt;
+<person>
+  <name>Chuck</name>
+  <phone type="intl">
      +1 734 303 4456
-   &lt;/phone&gt;
-   &lt;email hide="yes"/&gt;
-&lt;/person&gt;
+   </phone>
+   <email hide="yes"/>
+</person>
 ```
 
 Often it is helpful to think of an XML document as a tree structure where there is a top tag `person` and other tags such as `phone` are drawn as **children** of their parent nodes.

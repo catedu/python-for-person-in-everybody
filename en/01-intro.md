@@ -1,10 +1,24 @@
+* [Why should you learn to write programs?](#why-should-you-learn-to-write-programs)
+    * [Creativity and motivation](#creativity-and-motivation)
+    * [Computer hardware architecture](#computer-hardware-architecture)
+    * [Understanding programming](#understanding-programming)
+    * [Words and sentences](#words-and-sentences)
+    * [Conversing with Python](#conversing-with-python)
+    * [Terminology: interpreter and compiler](#terminology-interpreter-and-compiler)
+    * [Writing a program](#writing-a-program)
+    * [What is a program?](#what-is-a-program)
+    * [The building blocks of programs](#the-building-blocks-of-programs)
+    * [What could possibly go wrong?](#what-could-possibly-go-wrong)
+    * [The learning journey](#the-learning-journey)
+    * [Exercises](#exercises)
+
 # [Why should you learn to write programs?](#why-should-you-learn-to-write-programs)
 
 Writing programs (or programming) is a very creative and rewarding activity. You can write programs for many reasons, ranging from making your living to solving a difficult data analysis problem to having fun to helping someone else solve a problem. This book assumes that **everyone** needs to know how to program, and that once you know how to program you will figure out what you want to do with your newfound skills.
 
 We are surrounded in our daily lives with computers ranging from laptops to cell phones. We can think of these computers as our "personal assistants" who can take care of many things on our behalf. The hardware in our current-day computers is essentially built to continuously ask us the question, "What would you like me to do next?"
 
-Personal Digital Assistant
+![Personal Digital Assistant](../img/descarga.svg)
 
 Programmers add an operating system and a set of applications to the hardware and we end up with a Personal Digital Assistant that is quite helpful and capable of helping us do many different things.
 
@@ -13,9 +27,9 @@ Our computers are fast and have vast amounts of memory and could be very helpful
 For example, look at the first three paragraphs of this chapter and tell me the most commonly used word and how many times the word is used. While you were able to read and understand the words in a few seconds, counting them is almost painful because it is not the kind of problem that human minds are designed to solve. For a computer the opposite is true, reading and understanding text from a piece of paper is hard for a computer to do but counting the words and telling you how many times the most used word was used is very easy for the computer:
 
 ```
-    python words.py
-    Enter file:words.txt
-    to 16
+python words.py
+ Enter file:words.txt
+ to 16
 ```
 
 Our "personal information analysis assistant" quickly told us that the word "to" was used sixteen times in the first three paragraphs of this chapter.
@@ -28,17 +42,15 @@ While this book is not intended for professional programmers, professional progr
 
 If we think of programs as the creative output of groups of programmers, perhaps the following figure is a more sensible version of our PDA:
 
-Programmers Talking to You
+![Programmers Talking to You](../img/programers-talking-to-you.svg)
 
 For now, our primary motivation is not to make money or please end users, but instead for us to be more productive in handling the data and information that we will encounter in our lives. When you first start, you will be both the programmer and the end user of your programs. As you gain skill as a programmer and programming feels more creative to you, your thoughts may turn toward developing programs for others.
 
 ## [Computer hardware architecture](#computer-hardware-architecture)
 
- 
-
 Before we start learning the language we speak to give instructions to computers to develop software, we need to learn a small amount about how computers are built. If you were to take apart your computer or cell phone and look deep inside, you would find the following parts:
 
-Hardware Archicture
+![Hardware Archicture](../img/hardware-architecture.svg)
 
 The high-level definitions of these parts are as follows:
 
@@ -52,7 +64,7 @@ While most of the detail of how these components work is best left to computer b
 
 As a programmer, your job is to use and orchestrate each of these resources to solve the problem that you need to solve and analyze the data you get from the solution. As a programmer you will mostly be "talking" to the CPU and telling it what to do next. Sometimes you will tell the CPU to use the main memory, secondary memory, network, or the input/output devices.
 
-Where Are You?
+![Where Are you?](../img/where-r-you.svg)
 
 You need to be the person who answers the CPU's "What next?" question. But it would be very uncomfortable to shrink you down to 5mm tall and insert you into the computer just so you could issue a command three billion times per second. So instead, you must write down your instructions in advance. We call these stored instructions a **program** and the act of writing these instructions down and getting the instructions to be correct **programming**.
 
@@ -75,11 +87,9 @@ We start with the vocabulary and structure of Python programs. Be patient as the
 
 ## [Words and sentences](#words-and-sentences)
 
- 
-
 Unlike human languages, the Python vocabulary is actually pretty small. We call this "vocabulary" the "reserved words". These are words that have very special meaning to Python. When Python sees these words in a Python program, they have one and only one meaning to Python. Later as you write programs you will make up your own words that have meaning to you called **variables**. You will have great latitude in choosing your names for your variables, but you cannot use any of Python's reserved words as a name for a variable.
 
-When we train a dog, we use special words like "sit", "stay", and "fetch". When you talk to a dog and don't use any of the reserved words, they just look at you with a quizzical look on their face until you say a reserved word. For example, if you say, "I wish more people would walk to improve their overall health", what most dogs likely hear is, "blah blah blah **walk** blah blah blah blah." That is because "walk" is a reserved word in dog language. Many might suggest that the language between humans and cats has no reserved words[<sup>1</sup>](#fn1).
+When we train a dog, we use special words like "sit", "stay", and "fetch". When you talk to a dog and don't use any of the reserved words, they just look at you with a quizzical look on their face until you say a reserved word. For example, if you say, "I wish more people would walk to improve their overall health", what most dogs likely hear is, "blah blah blah **walk** blah blah blah blah." That is because "walk" is a reserved word in dog language. Many might suggest that the language between humans and cats has no reserved words[^1].
 
 The reserved words in the language where humans talk to Python include the following:
 
@@ -97,8 +107,8 @@ That is it, and unlike a dog, Python is already completely trained. When you say
 
 We will learn these reserved words and how they are used in good time, but for now we will focus on the Python equivalent of "speak" (in human-to-dog language). The nice thing about telling Python to speak is that we can even tell it what to say by giving it a message in quotes:
 
-```
-    print('Hello world!')
+```python
+print('Hello world!')
 ```
 
 And we have even written our first syntactically correct Python sentence. Our sentence starts with the function **print** followed by a string of text of our choosing enclosed in single quotes.
@@ -111,50 +121,50 @@ Before you can converse with Python, you must first install the Python software 
 
 
 
-```
+```bash
     Python 3.5.1 (v3.5.1:37a07cee5969, Dec  6 2015, 01:54:25)
     [MSC v.1900 64 bit (AMD64)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
-    &gt;&gt;&gt;
+    >>>
 ```
 
-The `&gt;&gt;&gt;` prompt is the Python interpreter's way of asking you, "What do you want me to do next?" Python is ready to have a conversation with you. All you have to know is how to speak the Python language.
+The `>>>` prompt is the Python interpreter's way of asking you, "What do you want me to do next?" Python is ready to have a conversation with you. All you have to know is how to speak the Python language.
 
 Let's say for example that you did not know even the simplest Python language words or sentences. You might want to use the standard line that astronauts use when they land on a faraway planet and try to speak with the inhabitants of the planet:
 
-```
-    &gt;&gt;&gt; I come in peace, please take me to your leader
-      File "&lt;stdin&gt;", line 1
+```python
+    >>> I come in peace, please take me to your leader
+      File "<stdin>", line 1
         I come in peace, please take me to your leader
              ^
     SyntaxError: invalid syntax
-    &gt;&gt;&gt;
+    >>>
 ```
 
 This is not going so well. Unless you think of something quickly, the inhabitants of the planet are likely to stab you with their spears, put you on a spit, roast you over a fire, and eat you for dinner.
 
 Luckily you brought a copy of this book on your travels, and you thumb to this very page and try again:
 
-```
-    &gt;&gt;&gt; print('Hello world!')
+```python
+    >>> print('Hello world!')
     Hello world!
 ```
 
 This is looking much better, so you try to communicate some more:
 
-```
-    &gt;&gt;&gt; print('You must be the legendary god that comes from the sky')
+```python
+    >>> print('You must be the legendary god that comes from the sky')
     You must be the legendary god that comes from the sky
-    &gt;&gt;&gt; print('We have been waiting for you for a long time')
+    >>> print('We have been waiting for you for a long time')
     We have been waiting for you for a long time
-    &gt;&gt;&gt; print('Our legend says you will be very tasty with mustard')
+    >>> print('Our legend says you will be very tasty with mustard')
     Our legend says you will be very tasty with mustard
-    &gt;&gt;&gt; print 'We will have a feast tonight unless you say
-      File "&lt;stdin&gt;", line 1
+    >>> print 'We will have a feast tonight unless you say
+      File "<stdin>", line 1
         print 'We will have a feast tonight unless you say
                                                          ^
     SyntaxError: Missing parentheses in call to 'print'
-    &gt;&gt;&gt;
+    >>>
 ```
 
 The conversation was going so well for a while and then you made the tiniest mistake using the Python language and Python brought the spears back out.
@@ -165,22 +175,22 @@ In a sense, when you use a program written by someone else the conversation is b
 
 Before we leave our first conversation with the Python interpreter, you should probably know the proper way to say "good-bye" when interacting with the inhabitants of Planet Python:
 
-```
-    &gt;&gt;&gt; good-bye
+```python
+    >>> good-bye
     Traceback (most recent call last):
-      File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+      File "<stdin>", line 1, in <module>
     NameError: name 'good' is not defined
-    &gt;&gt;&gt; if you don't mind, I need to leave
-      File "&lt;stdin&gt;", line 1
+    >>> if you don't mind, I need to leave
+      File "<stdin>", line 1
         if you don't mind, I need to leave
                  ^
     SyntaxError: invalid syntax
-    &gt;&gt;&gt; quit()
+    >>> quit()
 ```
 
 You will notice that the error is different for the first two incorrect attempts. The second error is different because **if** is a reserved word and Python saw the reserved word and thought we were trying to say something but got the syntax of the sentence wrong.
 
-The proper way to say "good-bye" to Python is to enter **quit()** at the interactive chevron `&gt;&gt;&gt;` prompt. It would have probably taken you quite a while to guess that one, so having a book handy probably will turn out to be helpful.
+The proper way to say "good-bye" to Python is to enter **quit()** or **exit()** at the interactive chevron `>>>` prompt. It would have probably taken you quite a while to guess that one, so having a book handy probably will turn out to be helpful.
 
 ## [Terminology: interpreter and compiler](#terminology-interpreter-and-compiler)
 
@@ -204,14 +214,14 @@ An **interpreter** reads the source code of the program as written by the progra
 
 Some of the lines of Python tell Python that you want it to remember some value for later. We need to pick a name for that value to be remembered and we can use that symbolic name to retrieve the value later. We use the term **variable** to refer to the labels we use to refer to this stored data.
 
-```
-    &gt;&gt;&gt; x = 6
-    &gt;&gt;&gt; print(x)
+```python
+    >>> x = 6
+    >>> print(x)
     6
-    &gt;&gt;&gt; y = x * 7
-    &gt;&gt;&gt; print(y)
+    >>> y = x * 7
+    >>> print(y)
     42
-    &gt;&gt;&gt;
+    >>>
 ```
 
 In this example, we ask Python to remember the value six and use the label **x** so we can retrieve the value later. We verify that Python has actually remembered the value using **print**. Then we ask Python to retrieve **x** and multiply it by seven and put the newly computed value in **y**. Then we ask Python to print out the value currently in **y**.
@@ -255,7 +265,7 @@ When we want to write a program, we use a text editor to write the Python instru
 
 To execute the script, you have to tell the Python interpreter the name of the file. In a Unix or Windows command window, you would type `python hello.py` as follows:
 
-```
+```python
     csev$ cat hello.py
     print('Hello world!')
     csev$ python hello.py
@@ -288,6 +298,8 @@ Then imagine that you are doing this task looking at millions of lines of text. 
 
 The even better news is that I already came up with a simple program to find the most common word in a text file. I wrote it, tested it, and now I am giving it to you to use so you can save some time.
 
+<iframe src="https://trinket.io/embed/python3/d51dc614a8" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 You don't even need to know Python to use this program. You will need to get through Chapter 10 of this book to fully understand the awesome Python techniques that were used to make the program. You are the end user, you simply use the program and marvel at its cleverness and how it saved you so much manual effort. You simply type the code into a file called **words.py** and run it or you download the source code from [http://www.py4e.com/code3/](http://www.py4e.com/code3/) and run it.
 
 
@@ -300,15 +312,27 @@ In the next few chapters, we will learn more about the vocabulary, sentence stru
 
 There are some low-level conceptual patterns that we use to construct programs. These constructs are not just for Python programs, they are part of every programming language from machine language up to the high-level languages.
 
+#### input
+
 Get data from the "outside world". This might be reading data from a file, or even some kind of sensor like a microphone or GPS. In our initial programs, our input will come from the user typing data on the keyboard.
+
+#### output
 
 Display the results of the program on a screen or store them in a file or perhaps write them to a device like a speaker to play music or speak text.
 
+#### sequential execution
+
 Perform statements one after another in the order they are encountered in the script.
+
+#### conditional execution
 
 Check for certain conditions and then execute or skip a sequence of statements.
 
+#### repeated execution
+
 Perform some set of statements repeatedly, usually with some variation.
+
+#### reuse
 
 Write a set of instructions once and give them a name and then reuse those instructions as needed throughout your program.
 
@@ -322,39 +346,45 @@ As we saw in our earliest conversations with Python, we must communicate very pr
 
 Beginning programmers often take the fact that Python leaves no room for errors as evidence that Python is mean, hateful, and cruel. While Python seems to like everyone else, Python knows them personally and holds a grudge against them. Because of this grudge, Python takes our perfectly written programs and rejects them as "unfit" just to torment us.
 
-```
-    &gt;&gt;&gt; primt 'Hello world!'
-      File "&lt;stdin&gt;", line 1
+```python
+    >>> primt 'Hello world!'
+      File "<stdin>", line 1
         primt 'Hello world!'
                            ^
     SyntaxError: invalid syntax
-    &gt;&gt;&gt; primt ('Hello world')
+    >>> primt ('Hello world')
     Traceback (most recent call last):
-    File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+    File "<stdin>", line 1, in <module>
     NameError: name 'primt' is not defined
     
-    &gt;&gt;&gt; I hate you Python!
-      File "&lt;stdin&gt;", line 1
+    >>> I hate you Python!
+      File "<stdin>", line 1
         I hate you Python!
              ^
     SyntaxError: invalid syntax
-    &gt;&gt;&gt; if you come out of there, I would teach you a lesson
-      File "&lt;stdin&gt;", line 1
+    >>> if you come out of there, I would teach you a lesson
+      File "<stdin>", line 1
         if you come out of there, I would teach you a lesson
                   ^
     SyntaxError: invalid syntax
-    &gt;&gt;&gt;
+    >>>
 ```
 
 There is little to be gained by arguing with Python. It is just a tool. It has no emotions and it is happy and ready to serve you whenever you need it. Its error messages sound harsh, but they are just Python's call for help. It has looked at what you typed, and it simply cannot understand what you have entered.
 
-Python is much more like a dog, loving you unconditionally, having a few key words that it understands, looking you with a sweet look on its face (`&gt;&gt;&gt;`), and waiting for you to say something it understands. When Python says "SyntaxError: invalid syntax", it is simply wagging its tail and saying, "You seemed to say something but I just don't understand what you meant, but please keep talking to me (`&gt;&gt;&gt;`)."
+Python is much more like a dog, loving you unconditionally, having a few key words that it understands, looking you with a sweet look on its face (`>>>`), and waiting for you to say something it understands. When Python says "SyntaxError: invalid syntax", it is simply wagging its tail and saying, "You seemed to say something but I just don't understand what you meant, but please keep talking to me (`>>>`)."
 
 As your programs become increasingly sophisticated, you will encounter three general types of errors:
 
+#### Syntax errors
+
 These are the first errors you will make and the easiest to fix. A syntax error means that you have violated the "grammar" rules of Python. Python does its best to point right at the line and character where it noticed it was confused. The only tricky bit of syntax errors is that sometimes the mistake that needs fixing is actually earlier in the program than where Python **noticed** it was confused. So the line and character that Python indicates in a syntax error may just be a starting point for your investigation.
 
+#### Logic errors
+
 A logic error is when your program has good syntax but there is a mistake in the order of the statements or perhaps a mistake in how the statements relate to one another. A good example of a logic error might be, "take a drink from your water bottle, put it in your backpack, walk to the library, and then put the top back on the bottle."
+
+#### Semantic errors
 
 A semantic error is when your description of the steps to take is syntactically perfect and in the right order, but there is simply a mistake in the program. The program is perfectly correct but it does not do what you **intended** for it to do. A simple example would be if you were giving a person directions to a restaurant and said, "...when you reach the intersection with the gas station, turn left and go one mile and the restaurant is a red building on your left." Your friend is very late and calls you to tell you that they are on a farm and walking around behind a barn, with no sign of a restaurant. Then you say "did you turn left or right at the gas station?" and they say, "I followed your directions perfectly, I have them written down, it says turn left and go one mile at the gas station." Then you say, "I am very sorry, because while my instructions were syntactically correct, they sadly contained a small but undetected semantic error.".
 
@@ -370,82 +400,42 @@ Usually when you are learning your first programming language, there are a few w
 
 If something seems particularly hard, there is usually no value in staying up all night and staring at it. Take a break, take a nap, have a snack, explain what you are having a problem with to someone (or perhaps your dog), and then come back to it with fresh eyes. I assure you that once you learn the programming concepts in the book you will look back and see that it was all really easy and elegant and it simply took you a bit of time to absorb it.
 
-## [Glossary](#glossary)
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## [Exercises](#exercises)
 
-Exercise 1: What is the function of the secondary memory in a computer?
+**Exercise 1**: What is the function of the secondary memory in a computer?
 
 a) Execute all of the computation and logic of the program<br/>b) Retrieve web pages over the Internet<br/>c) Store information for the long term, even beyond a power cycle<br/>d) Take input from the user
 
-Exercise 2: What is a program?
+**Exercise 2**: What is a program?
 
-Exercise 3: What is the difference between a compiler and an interpreter?
+**Exercise 3**: What is the difference between a compiler and an interpreter?
 
-Exercise 4: Which of the following contains "machine code"?
+**Exercise 4**: Which of the following contains "machine code"?
 
 a) The Python interpreter<br/>b) The keyboard<br/>c) Python source file<br/>d) A word processing document
 
-Exercise 5: What is wrong with the following code:
+**Exercise 5**: What is wrong with the following code:
 
-```
-    &gt;&gt;&gt; primt 'Hello world!'
-      File "&lt;stdin&gt;", line 1
+```python
+    >>> primt 'Hello world!'
+      File "<stdin>", line 1
         primt 'Hello world!'
                            ^
     SyntaxError: invalid syntax
-    &gt;&gt;&gt;
+    >>>
 ```
 
-Exercise 6: Where in the computer is a variable such as "x" stored after the following Python line finishes?
+**Exercise 6**: Where in the computer is a variable such as "x" stored after the following Python line finishes?
 
-```
+```python
     x = 123
 ```
 
 a) Central processing unit<br/>b) Main Memory<br/>c) Secondary Memory<br/>d) Input Devices<br/>e) Output Devices
 
-Exercise 7: What will the following program print out:
+**Exercise 7**: What will the following program print out:
 
-```
+```python
     x = 43
     x = x + 1
     print(x)
@@ -453,11 +443,11 @@ Exercise 7: What will the following program print out:
 
 a) 43<br/>b) 44<br/>c) x + 1<br/>d) Error because x = x + 1 is not possible mathematically
 
-Exercise 8: Explain each of the following using an example of a human capability: (1) Central processing unit, (2) Main Memory, (3) Secondary Memory, (4) Input Device, and (5) Output Device. For example, "What is the human equivalent to a Central Processing Unit"?
+**Exercise 8**: Explain each of the following using an example of a human capability: (1) Central processing unit, (2) Main Memory, (3) Secondary Memory, (4) Input Device, and (5) Output Device. For example, "What is the human equivalent to a Central Processing Unit"?
 
-Exercise 9: How do you fix a "Syntax Error"?
+**Exercise 9**: How do you fix a "Syntax Error"?
 
 ---
 
 
-1. [http://xkcd.com/231/](http://xkcd.com/231/)[↩](#fnref1)
+[^1]: [http://xkcd.com/231/](http://xkcd.com/231/)

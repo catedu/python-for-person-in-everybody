@@ -64,8 +64,8 @@ If we want to extract data from a string in Python we can use the `findall()` me
 
 ```
 From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
-Return-Path: &lt;postmaster@collab.sakaiproject.org&gt;
-          for &lt;source@collab.sakaiproject.org&gt;;
+Return-Path: <postmaster@collab.sakaiproject.org>
+          for <source@collab.sakaiproject.org>;
 Received: (from apache@localhost)
 Author: stephen.marquard@uct.ac.za
 ```
@@ -93,16 +93,16 @@ If we run the program on `mbox.txt` we get the following output:
 ```
 ['wagnermr@iupui.edu']
 ['cwen@iupui.edu']
-['&lt;postmaster@collab.sakaiproject.org&gt;']
-['&lt;200801032122.m03LMFo4005148@nakamura.uits.iupui.edu&gt;']
-['&lt;source@collab.sakaiproject.org&gt;;']
-['&lt;source@collab.sakaiproject.org&gt;;']
-['&lt;source@collab.sakaiproject.org&gt;;']
+['<postmaster@collab.sakaiproject.org>']
+['<200801032122.m03LMFo4005148@nakamura.uits.iupui.edu>']
+['<source@collab.sakaiproject.org>;']
+['<source@collab.sakaiproject.org>;']
+['<source@collab.sakaiproject.org>;']
 ['apache@localhost)']
 ['source@collab.sakaiproject.org;']
 ```
 
-Some of our email addresses have incorrect characters like "`&lt;`" or ";" at the beginning or end. Let's declare that we are only interested in the portion of the string that starts and ends with a letter or a number.
+Some of our email addresses have incorrect characters like "`<`" or ";" at the beginning or end. Let's declare that we are only interested in the portion of the string that starts and ends with a letter or a number.
 
 To do this, we use another feature of regular expressions. Square brackets are used to indicate a set of multiple acceptable characters we are willing to consider matching. In a sense, the "`\`S" is asking to match the set of "non-whitespace characters". Now we will be a little more explicit in terms of the characters we will match.
 
@@ -130,7 +130,7 @@ If we use this expression in our program, our data is much cleaner:
 ['apache@localhost']
 ```
 
-Notice that on the "source@collab.sakaiproject.org" lines, our regular expression eliminated two letters at the end of the string ("`&gt;`;"). This is because when we append "[a-zA-Z]" to the end of our regular expression, we are demanding that whatever string the regular expression parser finds must end with a letter. So when it sees the "`&gt;`" after "sakaiproject.org`&gt;`;" it simply stops at the last "matching" letter it found (i.e., the "g" was the last good match).
+Notice that on the "source@collab.sakaiproject.org" lines, our regular expression eliminated two letters at the end of the string ("`>`;"). This is because when we append "[a-zA-Z]" to the end of our regular expression, we are demanding that whatever string the regular expression parser finds must end with a letter. So when it sees the "`>`" after "sakaiproject.org`>`;" it simply stops at the last "matching" letter it found (i.e., the "g" was the last good match).
 
 Also note that the output of the program is a Python list that has a string as the single element in the list.
 
@@ -325,9 +325,9 @@ Python has some simple and rudimentary built-in documentation that can be quite 
 You can bring up an interactive help system using `help()`.
 
 ```
-&gt;&gt;&gt; help()
+>>> help()
 
-help&gt; modules
+help> modules
 ```
 
 If you know what module you want to use, you can use the `dir()` command to find the methods in the module as follows:

@@ -10,13 +10,13 @@ Hay dos formatos comunes que utilizamos cuando intercambiamos datos a través de
 
 XML se ve muy similar a HTML, pero XML es más estructurado que HTML. Aquí hay una muestra de un documento XML:
 
-```&lt;person&gt;
-  &lt;name&gt;Chuck&lt;/name&gt;
-  &lt;phone type="intl"&gt;
+```<person>
+  <name>Chuck</name>
+  <phone type="intl">
      +1 734 303 4456
-   &lt;/phone&gt;
-   &lt;email hide="yes"/&gt;
-&lt;/person&gt;
+   </phone>
+   <email hide="yes"/>
+</person>
 ```
 A menudo es útil pensar en un documento XML como una estructura de árbol donde hay una etiqueta superior "persona" y otras etiquetas como "teléfono" se dibujan como ** hijos ** de sus nodos principales.
 

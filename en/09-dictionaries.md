@@ -19,21 +19,21 @@ The curly brackets, `{}`, represent an empty dictionary. To add items to the dic
  
 
 ```
-&gt;&gt;&gt; eng2sp['one'] = 'uno'
+>>> eng2sp['one'] = 'uno'
 ```
 
 This line creates an item that maps from the key `'one'` to the value "uno". If we print the dictionary again, we see a key-value pair with a colon between the key and value:
 
 ```
-&gt;&gt;&gt; print(eng2sp)
+>>> print(eng2sp)
 {'one': 'uno'}
 ```
 
 This output format is also an input format. For example, you can create a new dictionary with three items. But if you print `eng2sp`, you might be surprised:
 
 ```
-&gt;&gt;&gt; eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
-&gt;&gt;&gt; print(eng2sp)
+>>> eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+>>> print(eng2sp)
 {'one': 'uno', 'three': 'tres', 'two': 'dos'}
 ```
 
@@ -42,7 +42,7 @@ The order of the key-value pairs is not the same. In fact, if you type the same 
 But that's not a problem because the elements of a dictionary are never indexed with integer indices. Instead, you use the keys to look up the corresponding values:
 
 ```
-&gt;&gt;&gt; print(eng2sp['two'])
+>>> print(eng2sp['two'])
 'dos'
 ```
 
@@ -53,7 +53,7 @@ If the key isn't in the dictionary, you get an exception:
  
 
 ```
-&gt;&gt;&gt; print(eng2sp['four'])
+>>> print(eng2sp['four'])
 KeyError: 'four'
 ```
 
@@ -62,7 +62,7 @@ The `len` function works on dictionaries; it returns the number of key-value pai
  
 
 ```
-&gt;&gt;&gt; len(eng2sp)
+>>> len(eng2sp)
 3
 ```
 
@@ -71,9 +71,9 @@ The `in` operator works on dictionaries; it tells you whether something appears 
  
 
 ```
-&gt;&gt;&gt; 'one' in eng2sp
+>>> 'one' in eng2sp
 True
-&gt;&gt;&gt; 'uno' in eng2sp
+>>> 'uno' in eng2sp
 False
 ```
 
@@ -82,8 +82,8 @@ To see whether something appears as a value in a dictionary, you can use the met
  
 
 ```
-&gt;&gt;&gt; vals = list(eng2sp.values())
-&gt;&gt;&gt; 'uno' in vals
+>>> vals = list(eng2sp.values())
+>>> 'uno' in vals
 True
 ```
 
@@ -218,7 +218,7 @@ We can use this pattern to implement the various loop idioms that we have descri
 ```
 counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
 for key in counts:
-    if counts[key] &gt; 10 :
+    if counts[key] > 10 :
         print(key, counts[key])
 ```
 
@@ -281,9 +281,9 @@ We can solve both these problems by using the string methods `lower`, `punctuati
 We will not specify the `table` but we will use the `deletechars` parameter to delete all of the punctuation. We will even let Python tell us the list of characters that it considers "punctuation":
 
 ```
-&gt;&gt;&gt; import string
-&gt;&gt;&gt; string.punctuation
-'!"#$%&amp;\'()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~'
+>>> import string
+>>> string.punctuation
+'!"#$%&amp;\'()*+,-./:;<=>?@[\\]^_`{|}~'
 ```
 
 The parameters used by `translate` were different in Python 2.0.

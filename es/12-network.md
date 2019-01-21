@@ -163,12 +163,12 @@ Una forma sencilla de analizar HTML es usar expresiones regulares para buscar y 
 
 Aquí hay una simple página web:
 
-```&lt;h1&gt;The First Page&lt;/h1&gt;
-&lt;p&gt;
+```<h1>The First Page</h1>
+<p>
 If you like, you can switch to the
-&lt;a href="http://www.dr-chuck.com/page2.htm"&gt;
-Second Page&lt;/a&gt;.
-&lt;/p&gt;
+<a href="http://www.dr-chuck.com/page2.htm">
+Second Page</a>.
+</p>
 ```
 Podemos construir una expresión regular bien formada para que coincida y extraiga los valores de enlace del texto anterior de la siguiente manera:
 
@@ -241,8 +241,8 @@ Puede usar BeautifulSoup para extraer varias partes de cada etiqueta de la sigui
 
 ```python urllink2.py
 Enter - http://www.dr-chuck.com/page1.htm
-TAG: &lt;a href="http://www.dr-chuck.com/page2.htm"&gt;
-Second Page&lt;/a&gt;
+TAG: <a href="http://www.dr-chuck.com/page2.htm">
+Second Page</a>
 URL: http://www.dr-chuck.com/page2.htm
 Content: ['\nSecond Page']
 Attrs: [('href', 'http://www.dr-chuck.com/page2.htm')]

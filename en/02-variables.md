@@ -14,7 +14,7 @@ The `print` statement also works for integers. We use the `python` command to st
 
 ```
 python
-&gt;&gt;&gt; print(4)
+>>> print(4)
 4
 ```
 
@@ -47,9 +47,9 @@ One of the most powerful features of a programming language is the ability to ma
 An **assignment statement** creates new variables and gives them values:
 
 ```
-&gt;&gt;&gt; message = 'And now for something completely different'
-&gt;&gt;&gt; n = 17
-&gt;&gt;&gt; pi = 3.1415926535897931
+>>> message = 'And now for something completely different'
+>>> n = 17
+>>> pi = 3.1415926535897931
 ```
 
 This example makes three assignments. The first assigns a string to a new variable named `message`; the second assigns the integer `17` to `n`; the third assigns the (approximate) value of **π** to `pi`.
@@ -57,21 +57,21 @@ This example makes three assignments. The first assigns a string to a new variab
 To display the value of a variable, you can use a print statement:
 
 ```
-&gt;&gt;&gt; print(n)
+>>> print(n)
 17
-&gt;&gt;&gt; print(pi)
+>>> print(pi)
 3.141592653589793
 ```
 
 The type of a variable is the type of the value it refers to.
 
 ```
-&gt;&gt;&gt; type(message)
-&lt;class 'str'&gt;
-&gt;&gt;&gt; type(n)
-&lt;class 'int'&gt;
-&gt;&gt;&gt; type(pi)
-&lt;class 'float'&gt;
+>>> type(message)
+<class 'str'>
+>>> type(n)
+<class 'int'>
+>>> type(pi)
+<class 'float'>
 ```
 
 ## [Variable names and keywords](#variable-names-and-keywords)
@@ -152,8 +152,8 @@ There has been a change in the division operator between Python 2.x and Python 3
 The division operator in Python 2.0 would divide two integers and truncate the result to an integer:
 
 ```
-&gt;&gt;&gt; minute = 59
-&gt;&gt;&gt; minute/60
+>>> minute = 59
+>>> minute/60
 0
 ```
 
@@ -178,7 +178,7 @@ x + 17
 If you type an expression in interactive mode, the interpreter **evaluates** it and displays the result:
 
 ```
-&gt;&gt;&gt; 1 + 1
+>>> 1 + 1
 2
 ```
 
@@ -230,13 +230,13 @@ The `+` operator works with strings, but it is not addition in the mathematical 
 
 
 ```
-&gt;&gt;&gt; first = 10
-&gt;&gt;&gt; second = 15
-&gt;&gt;&gt; print(first+second)
+>>> first = 10
+>>> second = 15
+>>> print(first+second)
 25
-&gt;&gt;&gt; first = '100'
-&gt;&gt;&gt; second = '150'
-&gt;&gt;&gt; print(first + second)
+>>> first = '100'
+>>> second = '150'
+>>> print(first + second)
 100150
 ```
 
@@ -251,9 +251,9 @@ Sometimes we would like to take the value for a variable from the user via their
 
 
 ```
-&gt;&gt;&gt; input = input()
+>>> input = input()
 Some silly stuff
-&gt;&gt;&gt; print(input)
+>>> print(input)
 Some silly stuff
 ```
 
@@ -262,10 +262,10 @@ Before getting input from the user, it is a good idea to print a prompt telling 
 
 
 ```
-&gt;&gt;&gt; name = input('What is your name?\n')
+>>> name = input('What is your name?\n')
 What is your name?
 Chuck
-&gt;&gt;&gt; print(name)
+>>> print(name)
 Chuck
 ```
 
@@ -276,23 +276,23 @@ The sequence `\n` at the end of the prompt represents a **newline**, which is a 
 If you expect the user to type an integer, you can try to convert the return value to `int` using the `int()` function:
 
 ```
-&gt;&gt;&gt; prompt = 'What...is the airspeed velocity of an unladen swallow?\n'
-&gt;&gt;&gt; speed = input(prompt)
+>>> prompt = 'What...is the airspeed velocity of an unladen swallow?\n'
+>>> speed = input(prompt)
 What...is the airspeed velocity of an unladen swallow?
 17
-&gt;&gt;&gt; int(speed)
+>>> int(speed)
 17
-&gt;&gt;&gt; int(speed) + 5
+>>> int(speed) + 5
 22
 ```
 
 But if the user types something other than a string of digits, you get an error:
 
 ```
-&gt;&gt;&gt; speed = input(prompt)
+>>> speed = input(prompt)
 What...is the airspeed velocity of an unladen swallow?
 What do you mean, an African or a European swallow?
-&gt;&gt;&gt; int(speed)
+>>> int(speed)
 ValueError: invalid literal for int() with base 10:
 ```
 
@@ -407,13 +407,13 @@ At this point, the syntax error you are most likely to make is an illegal variab
 If you put a space in a variable name, Python thinks it is two operands without an operator:
 
 ```
-&gt;&gt;&gt; bad name = 5
+>>> bad name = 5
 SyntaxError: invalid syntax
 ```
 
 ```
-&gt;&gt;&gt; month = 09
-  File "&lt;stdin&gt;", line 1
+>>> month = 09
+  File "<stdin>", line 1
     month = 09
              ^
 SyntaxError: invalid token
@@ -426,8 +426,8 @@ For syntax errors, the error messages don't help much. The most common messages 
 The runtime error you are most likely to make is a "use before def;" that is, trying to use a variable before you have assigned a value. This can happen if you spell a variable name wrong:
 
 ```
-&gt;&gt;&gt; principal = 327.68
-&gt;&gt;&gt; interest = principle * rate
+>>> principal = 327.68
+>>> interest = principle * rate
 NameError: name 'principle' is not defined
 ```
 
@@ -438,7 +438,7 @@ Variables names are case sensitive, so `LaTeX` is not the same as `latex`.
 At this point, the most likely cause of a semantic error is the order of operations. For example, to evaluate 1 / 2**π**, you might be tempted to write
 
 ```
-&gt;&gt;&gt; 1.0 / 2.0 * pi
+>>> 1.0 / 2.0 * pi
 ```
 
 But the division happens first, so you would get **π** / 2, which is not the same thing! There is no way for Python to know what you meant to write, so in this case you don't get an error message; you just get the wrong answer.

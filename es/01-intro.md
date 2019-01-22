@@ -2,14 +2,18 @@
 # Sobre este viaje
 
 * [¿Por qué debería aprender a escribir programas?](#por-que-programar)
+* [Creatividad y motivación](#creatividad-y-motivacion)
+* [Arquitectura del hardware del ordenador](#arquitectura-de-hardware-de-computadora)
+* [Entendiendo la programación](#comprension-programacion)
 
-## [¿Por qué debería aprender a escribir programas?](#por-que-programar)
+## ¿Por qué debería aprender a escribir programas? {#por-que-programar}
 
 Escribir programas (o programación) es una actividad muy creativa y gratificante. Puede escribir programas por muchas razones, desde ganarse la vida hasta resolver un problema difícil de análisis de datos hasta divertirse o ayudar a alguien más a resolver un problema. Este libro asume que ** todos ** deben saber cómo programar, y que una vez que sepa cómo programar, descubrirá qué quiere hacer con sus nuevas habilidades.
 
 Estamos rodeados en nuestra vida diaria con computadoras que van desde computadoras portátiles hasta teléfonos celulares. Podemos pensar en estas computadoras como nuestros "asistentes personales" que pueden hacerse cargo de muchas cosas en nuestro nombre. El hardware en nuestras computadoras de hoy en día está esencialmente construido para hacernos continuamente la pregunta "¿Qué quieres que haga ahora?"
 
-Asistente personal digital
+![Asistente personal digital](../img/descarga.svg)
+
 
 Los programadores agregan un sistema operativo y un conjunto de aplicaciones al hardware y terminamos con un Asistente digital personal que es bastante útil y capaz de ayudarnos a hacer muchas cosas diferentes.
 
@@ -22,27 +26,30 @@ python words.py
     Enter file:words.txt
     to 16
 ```
+
 Nuestro "asistente de análisis de información personal" rápidamente nos dijo que la palabra "a" se usó dieciséis veces en los primeros tres párrafos de este capítulo.
 
 Este mismo hecho de que las computadoras son buenas para las cosas que los humanos no son es la razón por la que necesita adquirir habilidad para hablar "lenguaje de computadora". Una vez que aprenda este nuevo idioma, puede delegar tareas mundanas a su compañero (la computadora), lo que le deja más tiempo para hacer las cosas para las que está preparado de manera única. Traes creatividad, intuición e inventiva a esta asociación.
 
-## [Creatividad y motivación](# creatividad y motivación)
+## Creatividad y motivación {#creatividad-y-motivacion}
 
 Si bien este libro no está dirigido a programadores profesionales, la programación profesional puede ser un trabajo muy gratificante tanto a nivel financiero como personal. Crear programas útiles, elegantes e inteligentes para que otros puedan usar es una actividad muy creativa. Su computadora o Personal Digital Assistant (PDA) usualmente contiene muchos programas diferentes de diferentes grupos de programadores, cada uno compitiendo por su atención e interés. Hacen todo lo posible para satisfacer sus necesidades y le brindan una excelente experiencia de usuario en el proceso. En algunas situaciones, cuando elige una pieza de software, los programadores reciben una compensación directa debido a su elección.
 
 Si pensamos en los programas como la salida creativa de grupos de programadores, tal vez la siguiente figura sea una versión más sensata de nuestra PDA:
 
-Programadores hablando contigo
+![Programadores hablando contigo](../img/programers-talking-to-you.svg)
+
 
 Por ahora, nuestra principal motivación no es ganar dinero o complacer a los usuarios finales, sino que seamos más productivos en el manejo de los datos y la información que encontraremos en nuestras vidas. Cuando comience, será el programador y el usuario final de sus programas. A medida que adquiere destreza como programador y programación se siente más creativo para usted, sus pensamientos pueden dirigirse hacia el desarrollo de programas para otros.
 
-## [Arquitectura de hardware de computadora](# arquitectura de hardware de computadora)
+## Arquitectura de hardware del ordenador {#arquitectura-de-hardware-de-computadora}
 
 
 
 Antes de comenzar a aprender el idioma que hablamos para dar instrucciones a las computadoras para desarrollar software, necesitamos aprender un poco sobre cómo se construyen las computadoras. Si tuviera que desarmar su computadora o teléfono celular y mirar adentro, encontraría las siguientes partes:
 
-Arquitectura de hardware
+![Arquitectura de hardware](../img/hardware-architecture.svg)
+
 
 Las definiciones de alto nivel de estas partes son las siguientes:
 
@@ -56,11 +63,12 @@ Si bien la mayoría de los detalles de cómo funcionan estos componentes es mejo
 
 Como programador, su trabajo consiste en utilizar y organizar cada uno de estos recursos para resolver el problema que necesita para resolver y analizar los datos que obtiene de la solución. Como programador, en general, estará "hablando" con la CPU y le dirá qué hacer a continuación. A veces le dirá a la CPU que use la memoria principal, la memoria secundaria, la red o los dispositivos de entrada / salida.
 
-¿Dónde estás?
+![¿Dónde estás?](../img/where-r-you.svg)
+
 
 Necesitas ser la persona que responde a la CPU "¿Qué sigue?" pregunta. Pero sería muy incómodo reducirlo a una altura de 5 mm e insertarlo en la computadora solo para que pueda emitir un comando tres mil millones de veces por segundo. Así que en lugar de eso, debes escribir tus instrucciones con anticipación. Llamamos a estas instrucciones almacenadas un ** programa ** y el hecho de escribir estas instrucciones y obtener las instrucciones para que sean correctas ** en la programación **.
 
-## [Entendiendo la programación](# comprensión-programación)
+## Entendiendo la programación {#comprension-programacion}
 
 En el resto de este libro, trataremos de convertirlo en una persona experta en el arte de la programación. Al final, será un ** programador ** - quizás no un programador profesional, pero al menos tendrá las habilidades para analizar un problema de análisis de datos / información y desarrollar un programa para resolver el problema.
 

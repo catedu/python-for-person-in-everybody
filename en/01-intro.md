@@ -26,7 +26,7 @@ Our computers are fast and have vast amounts of memory and could be very helpful
 
 For example, look at the first three paragraphs of this chapter and tell me the most commonly used word and how many times the word is used. While you were able to read and understand the words in a few seconds, counting them is almost painful because it is not the kind of problem that human minds are designed to solve. For a computer the opposite is true, reading and understanding text from a piece of paper is hard for a computer to do but counting the words and telling you how many times the most used word was used is very easy for the computer:
 
-```
+```bash
 python words.py
  Enter file:words.txt
  to 16

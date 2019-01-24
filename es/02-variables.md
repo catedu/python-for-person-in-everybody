@@ -1,4 +1,4 @@
-# Variables, expresiones y declaraciones]
+# Variables, expresiones y declaraciones
 
 ## Valores y tipos {#values-and-types}
 
@@ -89,7 +89,7 @@ El tipo de una variable es el tipo del valor al que se refiere.
 <class 'float'>
 ```
 
-## Nombres de variables y palabras clave {(#variable-names-and-keywords)}
+## Nombres de variables y palabras clave {#variable-names-and-keywords}
 
 
 
@@ -130,7 +130,7 @@ def       for       lambda    return
 
 Es posible que desee mantener esta lista a mano. Si el intérprete se queja de uno de sus nombres de variables y no sabe por qué, vea si está en esta lista.
 
-## Declaraciones #statements
+## Declaraciones {#statements}
 
 Una ** instrucción ** es una unidad de código que el intérprete de Python puede ejecutar. Hemos visto dos tipos de declaraciones: la impresión es una declaración de expresión y una asignación.
 
@@ -154,7 +154,7 @@ produce la salida
 
 La sentencia de asignación no produce salida.
 
-## Operadores y operandos #operators-and-operands
+## Operadores y operandos {#operators-and-operands}
 
 
 ** Los operadores ** son símbolos especiales que representan cálculos como la suma y la multiplicación. Los valores a los que se aplica el operador se denominan ** operandos **.
@@ -273,7 +273,7 @@ La salida de este programa es `100150`.
 
 
 
-A veces nos gustaría tomar el valor para una variable del usuario a través de su teclado. Python proporciona una función incorporada llamada `input` que obtiene información desde el teclado [<sup> 1 </sup>] (# fn1). Cuando se llama a esta función, el programa se detiene y espera a que el usuario escriba algo. Cuando el usuario presiona `Return` o` Enter`, el programa se reanuda y `input` devuelve lo que el usuario escribió como una cadena.
+A veces nos gustaría tomar el valor para una variable del usuario a través de su teclado. Python proporciona una función incorporada llamada `input` que obtiene información desde el teclado[^1]. Cuando se llama a esta función, el programa se detiene y espera a que el usuario escriba algo. Cuando el usuario presiona `Return` o` Enter`, el programa se reanuda y `input` devuelve lo que el usuario escribió como una cadena.
 
 
 
@@ -422,7 +422,7 @@ Después de un período de tiempo bastante corto, conocerá las palabras reserva
 
 Las partes del código definidas por Python (`for`,` in`, `print` y`: `) están en negrita y las variables elegidas por el programador (` word` y `words`) no están en negrita . Muchos editores de texto conocen la sintaxis de Python y colorearán las palabras reservadas de manera diferente para darle pistas sobre cómo mantener separadas sus variables y palabras reservadas. Después de un tiempo, comenzarás a leer Python y determinar rápidamente qué es una variable y qué es una palabra reservada.
 
-## Depuración #debugging
+## Depuración {#debugging}
 
 
 
@@ -507,7 +507,6 @@ Use el intérprete de Python para verificar sus respuestas.
 **Ejercicio 5**: escriba un programa que solicite al usuario una temperatura en grados Celsius, convierta la temperatura a Fahrenheit e imprima la temperatura convertida.
 
 ---
-
 
 [^1]: En Python 2.0, esta función se denominó `raw_input`.
 [^2]: Consulte [http://en.wikipedia.org/wiki/Mnemonic](http://en.wikipedia.org/wiki/Mnemonic) para obtener una descripción ampliada de la palabra "mnemonic".

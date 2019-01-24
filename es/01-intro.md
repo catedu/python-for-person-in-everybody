@@ -5,6 +5,15 @@
 * [Creatividad y motivación](#creatividad-y-motivacion)
 * [Arquitectura del hardware del ordenador](#arquitectura-de-hardware-de-computadora)
 * [Entendiendo la programación](#comprension-programacion)
+* [Palabras y oraciones](#palabras-y-oraciones)
+* [Conversando con Python](#conversing-with-python)
+* [Terminología: intérprete y compilador](#terminología-interprete-y-compilador)
+* [Escribiendo un programa](#writing-a-program)
+* [¿Qué es un programa](#what-is-a-program)
+* [Los componentes básicos de los programas](#the-building-blocks-of-programs)
+* [Qué podría salir mal](#what-could-possibly-go-wrong)
+* [El viaje del aprendizaje](#the-learning-journey)
+* [Ejercicios](#ejercicios)
 
 ## ¿Por qué debería aprender a escribir programas? {#por-que-programar}
 
@@ -85,17 +94,18 @@ Aprenderás el "vocabulario" y las "oraciones" de Python con bastante rapidez. L
 
 Comenzamos con el vocabulario y la estructura de los programas de Python. Sea paciente, ya que los ejemplos simples le recuerdan cuando comenzó a leer por primera vez.
 
-## [Palabras y oraciones](# palabras y oraciones)
+## Palabras y oraciones {#palabras-y-oraciones}
 
 
 
 A diferencia de las lenguas humanas, el vocabulario de Python es bastante pequeño. Llamamos a este "vocabulario" las "palabras reservadas". Estas son palabras que tienen un significado muy especial para Python. Cuando Python ve estas palabras en un programa de Python, tienen un solo significado para Python. Luego, a medida que escribe programas, inventará sus propias palabras que tienen un significado para usted llamadas ** variables **. Tendrá gran libertad para elegir sus nombres para sus variables, pero no puede usar ninguna de las palabras reservadas de Python como nombre para una variable.
 
-Cuando entrenamos a un perro, usamos palabras especiales como "sentarse", "quedarse" y "buscar". Cuando le hablas a un perro y no usas ninguna de las palabras reservadas, solo te miran con una expresión burlona hasta que dices una palabra reservada. Por ejemplo, si dice: "Me gustaría que más gente caminara para mejorar su salud general", lo que la mayoría de los perros escuchan es "bla bla bla ** caminar ** bla bla bla bla". Esto se debe a que "caminar" es una palabra reservada en lenguaje canino. Muchos podrían sugerir que el lenguaje entre humanos y gatos no tiene palabras reservadas [<sup> 1 </sup>](# fn1).
+Cuando entrenamos a un perro, usamos palabras especiales como "sentarse", "quedarse" y "buscar". Cuando le hablas a un perro y no usas ninguna de las palabras reservadas, solo te miran con una expresión burlona hasta que dices una palabra reservada. Por ejemplo, si dice: "Me gustaría que más gente caminara para mejorar su salud general", lo que la mayoría de los perros escuchan es "bla bla bla ** caminar ** bla bla bla bla". Esto se debe a que "caminar" es una palabra reservada en lenguaje canino. Muchos podrían sugerir que el lenguaje entre humanos y gatos no tiene palabras reservadas[^1].
 
 Las palabras reservadas en el idioma donde los humanos hablan con Python incluyen lo siguiente:
 
-```and       del       global      not       with
+```
+and       del       global      not       with
 as        elif      if          or        yield
 assert    else      import      pass      
 break     except    in          raise
@@ -103,15 +113,18 @@ class     finally   is          return
 continue  for       lambda      try
 def       from      nonlocal    while    
 ```
+
 Eso es todo, y a diferencia de un perro, Python ya está completamente entrenado. Cuando dices "probar", Python lo intentará cada vez que lo digas sin falta.
 
 Aprenderemos estas palabras reservadas y cómo se usarán a tiempo, pero por ahora nos enfocaremos en el equivalente de Python de "hablar" (en lenguaje humano a perro). Lo bueno de decirle a Python que hable es que incluso podemos decirle qué decir dándole un mensaje entre comillas:
 
-```    print('Hello world!')
+```python
+    print('Hello world!')
 ```
-E incluso hemos escrito nuestra primera oración de Python sintácticamente correcta. Nuestra oración comienza con la función ** imprimir ** seguida de una cadena de texto de nuestra elección entre comillas simples.
 
-## [Conversando con Python](# conversing-with-python)
+E incluso hemos escrito nuestra primera oración de Python sintácticamente correcta. Nuestra oración comienza con la función **imprimir** seguida de una cadena de texto de nuestra elección entre comillas simples.
+
+## Conversando con Python {#conversing-with-python}
 
 Ahora que tenemos una palabra y una oración simple que conocemos en Python, necesitamos saber cómo iniciar una conversación con Python para probar nuestras nuevas habilidades lingüísticas.
 
@@ -119,32 +132,39 @@ Antes de poder conversar con Python, primero debe instalar el software de Python
 
 
 
-```    Python 3.5.1 (v3.5.1:37a07cee5969, Dec  6 2015, 01:54:25)
+```bash
+    Python 3.5.1 (v3.5.1:37a07cee5969, Dec  6 2015, 01:54:25)
     [MSC v.1900 64 bit (AMD64)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 ```
-El indicador `& gt; & gt; & gt;` es la forma en que el intérprete de Python te pregunta: "¿Qué quieres que haga ahora?" Python está listo para tener una conversación contigo. Todo lo que tienes que saber es cómo hablar el idioma Python.
+
+El indicador `>>>` es la forma en que el intérprete de Python te pregunta: "¿Qué quieres que haga ahora?" Python está listo para tener una conversación contigo. Todo lo que tienes que saber es cómo hablar el idioma Python.
 
 Digamos, por ejemplo, que no conocías ni las palabras ni las oraciones más simples del lenguaje Python. Es posible que desee utilizar la línea estándar que usan los astronautas cuando aterrizan en un planeta lejano y tratan de hablar con los habitantes del planeta:
 
-```    >>> I come in peace, please take me to your leader
+```python
+    >>> I come in peace, please take me to your leader
       File "<stdin>", line 1
         I come in peace, please take me to your leader
              ^
     SyntaxError: invalid syntax
     >>>
 ```
+
 Esto no va tan bien. A menos que pienses en algo rápido, es probable que los habitantes del planeta te apuñalen con sus lanzas, te pongan a escupir, te asen al fuego y te coman para la cena.
 
 Afortunadamente, trajiste una copia de este libro en tus viajes, y accedes a esta misma página e intentas nuevamente:
 
-```    >>> print('Hello world!')
+```python
+    >>> print('Hello world!')
     Hello world!
 ```
+
 Esto se ve mucho mejor, así que intenta comunicar algo más:
 
-```    >>> print('You must be the legendary god that comes from the sky')
+```python
+    >>> print('You must be the legendary god that comes from the sky')
     You must be the legendary god that comes from the sky
     >>> print('We have been waiting for you for a long time')
     We have been waiting for you for a long time
@@ -157,6 +177,7 @@ Esto se ve mucho mejor, así que intenta comunicar algo más:
     SyntaxError: Missing parentheses in call to 'print'
     >>>
 ```
+
 La conversación transcurrió muy bien durante un tiempo y luego cometiste el más mínimo error al usar el lenguaje Python y Python sacó las lanzas.
 
 En este punto, también debes darte cuenta de que, si bien Python es increíblemente complejo, poderoso y muy exigente con la sintaxis que utilizas para comunicarte con él, Python no es ** inteligente **. Realmente solo estás teniendo una conversación contigo mismo, pero usando la sintaxis adecuada.
@@ -165,7 +186,8 @@ En cierto sentido, cuando utiliza un programa escrito por otra persona, la conve
 
 Antes de dejar nuestra primera conversación con el intérprete de Python, probablemente debas saber la forma correcta de decir "adiós" cuando interactúas con los habitantes de Planet Python:
 
-```    >>> good-bye
+```python
+    >>> good-bye
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     NameError: name 'good' is not defined
@@ -176,20 +198,23 @@ Antes de dejar nuestra primera conversación con el intérprete de Python, proba
     SyntaxError: invalid syntax
     >>> quit()
 ```
+
 Notará que el error es diferente para los dos primeros intentos incorrectos. El segundo error es diferente porque ** if ** es una palabra reservada y Python vio la palabra reservada y pensó que estábamos tratando de decir algo, pero se equivocó en la sintaxis de la oración.
 
-La forma correcta de decir "adiós" a Python es ingresar ** quit () ** en el indicador interactivo chevron `& gt; & gt; & gt;`. Probablemente te haya tomado bastante tiempo adivinarlo, por lo que tener un libro a la mano probablemente te resulte útil.
+La forma correcta de decir "adiós" a Python es ingresar ** quit () ** en el indicador interactivo chevron `>>>`. Probablemente te haya tomado bastante tiempo adivinarlo, por lo que tener un libro a la mano probablemente te resulte útil.
 
-## [Terminología: intérprete y compilador](# terminología-intérprete-y-compilador)
+## Terminología: intérprete y compilador {#terminología-interprete-y-compilador}
 
-Python es un lenguaje ** de alto nivel ** destinado a ser relativamente sencillo para que los humanos lean y escriban y para que las computadoras lean y procesen. Otros lenguajes de alto nivel incluyen Java, C ++, PHP, Ruby, Basic, Perl, JavaScript y muchos más. El hardware real dentro de la Unidad Central de Procesamiento (CPU) no comprende ninguno de estos lenguajes de alto nivel.
+Python es un lenguaje **de alto nivel** destinado a ser relativamente sencillo para que los humanos lean y escriban y para que las computadoras lean y procesen. Otros lenguajes de alto nivel incluyen Java, C ++, PHP, Ruby, Basic, Perl, JavaScript y muchos más. El hardware real dentro de la Unidad Central de Procesamiento (CPU) no comprende ninguno de estos lenguajes de alto nivel.
 
 La CPU entiende un idioma que llamamos ** lenguaje de máquina **. El lenguaje de máquina es muy simple y francamente muy tedioso de escribir porque está representado en ceros y unos:
 
-```    001010001110100100101010000001111
+```bash
+    001010001110100100101010000001111
     11100110000011101010010101101101
     ...
 ```
+
 El lenguaje de máquina parece bastante simple en la superficie, dado que solo hay ceros y unos, pero su sintaxis es aún más compleja y mucho más compleja que Python. Tan pocos programadores escriben lenguaje de máquina. En su lugar, creamos varios traductores para permitir que los programadores escriban en lenguajes de alto nivel como Python o JavaScript y estos traductores convierten los programas al lenguaje de máquina para su ejecución real por parte de la CPU.
 
 Dado que el lenguaje de la máquina está vinculado al hardware de la computadora, el lenguaje de la máquina no es ** portátil ** a través de diferentes tipos de hardware. Los programas escritos en lenguajes de alto nivel se pueden mover entre diferentes computadoras utilizando un intérprete diferente en la nueva máquina o compilando el código para crear una versión del programa en la máquina.
@@ -200,7 +225,8 @@ Un ** intérprete ** lee el código fuente del programa como está escrito por e
 
 Algunas de las líneas de Python le dicen a Python que quieres que recuerde algún valor para más adelante. Necesitamos elegir un nombre para que se recuerde ese valor y podemos usar ese nombre simbólico para recuperar el valor más adelante. Utilizamos el término ** variable ** para referirnos a las etiquetas que usamos para referirnos a estos datos almacenados.
 
-```    >>> x = 6
+```python
+    >>> x = 6
     >>> print(x)
     6
     >>> y = x * 7
@@ -208,6 +234,7 @@ Algunas de las líneas de Python le dicen a Python que quieres que recuerde alg�
     42
     >>>
 ```
+
 En este ejemplo, le pedimos a Python que recuerde el valor seis y use la etiqueta ** x ** para poder recuperar el valor más adelante. Verificamos que Python realmente haya recordado el valor utilizando ** print **. Luego le pedimos a Python que recupere ** x ** y lo multiplique por siete y ponga el nuevo valor calculado en ** y **. Luego le pedimos a Python que imprima el valor actualmente en ** y **.
 
 Aunque estamos escribiendo estos comandos en Python una línea a la vez, Python los trata como una secuencia ordenada de declaraciones con declaraciones posteriores que pueden recuperar datos creados en declaraciones anteriores. Estamos escribiendo nuestro primer párrafo simple con cuatro oraciones en un orden lógico y significativo.
@@ -218,24 +245,28 @@ Si tiene un sistema Windows, a menudo estos programas de lenguaje de máquina ej
 
 Si fueras a abrir un archivo ejecutable en un editor de texto, se vería completamente loco y sería ilegible:
 
-```    ^?ELF^A^A^A^@^@^@^@^@^@^@^@^@^B^@^C^@^A^@^@^@\xa0\x82
+```bash
+    ^?ELF^A^A^A^@^@^@^@^@^@^@^@^@^B^@^C^@^A^@^@^@\xa0\x82
     ^D^H4^@^@^@\x90^]^@^@^@^@^@^@4^@ ^@^G^@(^@$^@!^@^F^@
     ^@^@4^@^@^@4\x80^D^H4\x80^D^H\xe0^@^@^@\xe0^@^@^@^E
     ^@^@^@^D^@^@^@^C^@^@^@^T^A^@^@^T\x81^D^H^T\x81^D^H^S
     ^@^@^@^S^@^@^@^D^@^@^@^A^@^@^@^A\^D^HQVhT\x83^D^H\xe8
     ....
 ```
+
 No es fácil leer o escribir lenguaje de máquina, por lo que es bueno que tengamos ** intérpretes ** y ** compiladores ** que nos permiten escribir en lenguajes de alto nivel como Python o C.
 
 Ahora, en este punto de nuestra discusión sobre compiladores e intérpretes, deberías preguntarte un poco sobre el intérprete de Python. ¿En qué idioma está escrito? ¿Está escrito en un lenguaje compilado? Cuando escribimos "python", ¿qué está sucediendo exactamente?
 
 El intérprete de Python está escrito en un lenguaje de alto nivel llamado "C". Puede consultar el código fuente real del intérprete de Python en [www.python.org] (http://www.python.org) y buscar el código fuente. Entonces, Python es un programa en sí mismo y está compilado en código de máquina. Cuando instaló Python en su computadora (o el proveedor lo instaló), copió una copia en código de máquina del programa Python traducido en su sistema. En Windows, el código de máquina ejecutable para Python en sí mismo es probable en un archivo con un nombre como:
 
-```    C:\Python35\python.exe
+```bash
+    C:\Python35\python.exe
 ```
+
 Eso es más de lo que realmente necesitas saber para ser un programador de Python, pero a veces vale la pena responder esas pequeñas y molestas preguntas desde el principio.
 
-## [Escribiendo un programa](# writing-a-program)
+## Escribiendo un programa {#writing-a-program}
 
 Escribir comandos en el intérprete de Python es una excelente manera de experimentar con las funciones de Python, pero no se recomienda para resolver problemas más complejos.
 
@@ -245,19 +276,21 @@ Cuando queremos escribir un programa, usamos un editor de texto para escribir la
 
 Para ejecutar el script, debe decirle al intérprete de Python el nombre del archivo. En una ventana de comandos de Unix o Windows, escribiría `python hello.py` de la siguiente manera:
 
-```    csev$ cat hello.py
+```python
+    csev$ cat hello.py
     print('Hello world!')
     csev$ python hello.py
     Hello world!
     csev$
 ```
+
 El "csev $" es el indicador del sistema operativo y el "cat hello.py" nos muestra que el archivo "hello.py" tiene un programa de Python de una línea para imprimir una cadena.
 
 Llamamos al intérprete de Python y le decimos que lea el código fuente del archivo "hello.py" en lugar de pedirnos líneas interactivas de código de Python.
 
 Notará que no había necesidad de tener ** quit () ** al final del programa Python en el archivo. Cuando Python está leyendo el código fuente de un archivo, sabe que debe detenerse cuando llega al final del archivo.
 
-## [¿Qué es un programa?](# What-is-a-program)
+## ¿Qué es un programa? {#what-is-a-program}
 
 La definición de un ** programa ** en su forma más básica es una secuencia de sentencias de Python que se han creado para hacer algo. Incluso nuestro sencillo script ** hello.py ** es un programa. Es un programa de una línea y no es particularmente útil, pero en la definición más estricta, es un programa de Python.
 
@@ -267,12 +300,16 @@ Digamos que usted está haciendo una investigación de Computación Social en la
 
 Por ejemplo, mira el siguiente texto sobre un payaso y un automóvil. Mire el texto y calcule la palabra más común y cuántas veces aparece.
 
-```    the clown ran after the car and the car ran into the tent
+```bash
+    the clown ran after the car and the car ran into the tent
     and the tent fell down on the clown and the car
 ```
+
 Luego imagina que estás haciendo esta tarea mirando millones de líneas de texto. Francamente, sería más rápido aprender Python y escribir un programa Python para contar las palabras que escanearlas manualmente.
 
 La noticia aún mejor es que ya se me ocurrió un programa simple para encontrar la palabra más común en un archivo de texto. Lo escribí, lo probé y ahora te lo doy para que lo uses para que puedas ahorrar algo de tiempo.
+
+<iframe src="https://trinket.io/embed/python3/d51dc614a8" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Ni siquiera necesitas saber Python para usar este programa. Deberá leer el Capítulo 10 de este libro para comprender completamente las impresionantes técnicas de Python que se utilizaron para crear el programa. Usted es el usuario final, simplemente utiliza el programa y se maravilla de su inteligencia y de cómo le ahorró tanto esfuerzo manual. Simplemente escriba el código en un archivo llamado ** palabras.py ** y ejecútelo o descargue el código fuente de [http://www.py4e.com/code3/◆(http://www.py4e.com / code3 /) y ejecutarlo.
 
@@ -280,21 +317,33 @@ Ni siquiera necesitas saber Python para usar este programa. Deberá leer el Cap�
 
 Este es un buen ejemplo de cómo Python y el lenguaje Python actúan como intermediarios entre usted (el usuario final) y yo (el programador). Python es una forma de intercambiar secuencias de instrucciones útiles (es decir, programas) en un lenguaje común que puede ser utilizado por cualquier persona que instale Python en su computadora. Así que ninguno de los dos está hablando ** con Python **, en lugar de eso, nos estamos comunicando unos con otros ** a través de ** Python.
 
-## [Los componentes básicos de los programas](# the-building-blocks-of-programs)
+## Los componentes básicos de los programas {#the-building-blocks-of-programs}
 
 En los siguientes capítulos, aprenderemos más sobre el vocabulario, la estructura de las oraciones, la estructura de los párrafos y la estructura de la historia de Python. Aprenderemos sobre las potentes capacidades de Python y cómo componer esas capacidades para crear programas útiles.
 
 Hay algunos patrones conceptuales de bajo nivel que utilizamos para construir programas. Estas construcciones no son solo para programas de Python, sino que forman parte de todos los lenguajes de programación, desde el lenguaje de máquina hasta los lenguajes de alto nivel.
 
+#### entrada (input)
+
 Obtener datos del "mundo exterior". Esto podría ser leer datos de un archivo, o incluso algún tipo de sensor como un micrófono o un GPS. En nuestros programas iniciales, nuestra entrada provendrá del usuario que escribe datos en el teclado.
+
+#### salida (output)
 
 Muestre los resultados del programa en una pantalla o guárdelos en un archivo o tal vez escríbalos en un dispositivo como un altavoz para reproducir música o hablar texto.
 
+#### ejecución secuencial
+
 Realice las instrucciones una tras otra en el orden en que se encuentran en el script.
+
+#### ejecución condicional
 
 Verifique ciertas condiciones y luego ejecute u omita una secuencia de sentencias.
 
+#### ejecución iterativa
+
 Realizar algún conjunto de declaraciones repetidamente, generalmente con alguna variación.
+
+#### reutilizar
 
 Escriba un conjunto de instrucciones una vez y deles un nombre y luego reutilice esas instrucciones según sea necesario en todo el programa.
 
@@ -302,13 +351,14 @@ Suena casi demasiado simple para ser verdad, y por supuesto nunca es tan simple.
 
 El programa de conteo de palabras de arriba usa directamente todos estos patrones excepto uno.
 
-## [¿Qué podría salir mal?](# Qué-podría-podría-ir-mal)
+## ¿Qué podría salir mal? {#what-could-possibly-go-wrong}
 
 Como vimos en nuestras primeras conversaciones con Python, debemos comunicarnos con mucha precisión cuando escribimos el código de Python. La desviación o error más pequeño hará que Python deje de mirar su programa.
 
 Los programadores principiantes a menudo toman el hecho de que Python no deja espacio para errores como evidencia de que Python es malo, cruel y cruel. Si bien a Python parece gustarle todo el mundo, Python los conoce personalmente y guarda rencor contra ellos. Debido a este rencor, Python toma nuestros programas perfectamente escritos y los rechaza como "no aptos" solo para atormentarnos.
 
-```    >>> primt 'Hello world!'
+```python
+    >>> primt 'Hello world!'
       File "<stdin>", line 1
         primt 'Hello world!'
                            ^
@@ -330,21 +380,28 @@ Los programadores principiantes a menudo toman el hecho de que Python no deja es
     SyntaxError: invalid syntax
     >>>
 ```
+
 Hay poco que ganar discutiendo con Python. Es solo una herramienta. No tiene emociones y está feliz y listo para servirle cuando lo necesite. Sus mensajes de error suenan ásperos, pero son solo la llamada de ayuda de Python. Ha examinado lo que escribió y simplemente no puede entender lo que ha ingresado.
 
-Python es mucho más como un perro, te ama incondicionalmente, tiene algunas palabras clave que entiende, te mira con una mirada dulce en su cara (`& gt; & gt; & gt;`), y te espera para que digas algo que entiendas . Cuando Python dice "SyntaxError: sintaxis no válida", simplemente mueve la cola y dice: "Parecías decir algo, pero no entiendo lo que quisiste decir, pero sigue hablando (` & gt; & gt; & gt; `)."
+Python es mucho más como un perro, te ama incondicionalmente, tiene algunas palabras clave que entiende, te mira con una mirada dulce en su cara (`>>>`), y te espera para que digas algo que entiendas . Cuando Python dice "SyntaxError: sintaxis no válida", simplemente mueve la cola y dice: "Parecías decir algo, pero no entiendo lo que quisiste decir, pero sigue hablando (`>>>`)."
 
 A medida que sus programas se vuelven cada vez más sofisticados, encontrará tres tipos generales de errores:
 
+#### Errores sintácticos
+
 Estos son los primeros errores que cometerás y los más fáciles de corregir. Un error de sintaxis significa que ha violado las reglas de "gramática" de Python. Python hace todo lo posible para señalar la línea y el carácter en el que notó que estaba confundido. La única parte difícil de los errores de sintaxis es que, a veces, el error que debe solucionarse es, en realidad, más temprano en el programa que en el que Python notó ** que estaba confundido. Por lo tanto, la línea y el carácter que Python indica en un error de sintaxis pueden ser solo un punto de partida para su investigación.
 
+#### Errores lógicos
+
 Un error lógico es cuando su programa tiene una buena sintaxis pero hay un error en el orden de las declaraciones o quizás un error en la forma en que las declaraciones se relacionan entre sí. Un buen ejemplo de un error lógico podría ser: "tome un trago de su botella de agua, colóquelo en su mochila, camine hasta la biblioteca y luego vuelva a colocar la tapa en la botella".
+
+#### Errores semánticos
 
 Un error semántico es cuando su descripción de los pasos a seguir es sintácticamente perfecta y en el orden correcto, pero simplemente hay un error en el programa. El programa es perfectamente correcto, pero no hace lo que usted ** quería ** que haga. Un ejemplo simple sería si le diera a una persona instrucciones para llegar a un restaurante y dijo: "... cuando llegue a la intersección con la estación de servicio, gire a la izquierda y avance una milla y el restaurante es un edificio rojo a su izquierda". Su amigo llega tarde y lo llama para decirle que está en una granja y que está caminando detrás de un granero, sin ninguna señal de restaurante. Entonces dices "¿giraste a la izquierda oa la derecha en la estación de servicio?" y dicen: "Seguí tus instrucciones a la perfección, las tengo escritas, dice: gira a la izquierda y ve una milla en la gasolinera". Luego dices: "Lo siento mucho, porque aunque mis instrucciones fueron sintácticamente correctas, tristemente contenían un error semántico pequeño pero no detectado".
 
 Nuevamente, en los tres tipos de errores, Python simplemente está haciendo todo lo posible por hacer exactamente lo que usted pidió.
 
-## [El viaje de aprendizaje](# the-learning-journey)
+## El viaje del aprendizaje {#the-learning-journey}
 
 A medida que avance en el resto del libro, no tenga miedo si los conceptos no parecen encajar bien la primera vez. Cuando estabas aprendiendo a hablar, no fue un problema durante los primeros años que hiciste ruidos de gorgoteo. Y estuvo bien si tardó seis meses en pasar de un vocabulario simple a oraciones simples y tardó 5-6 años más en pasar de las oraciones a los párrafos, y algunos años más para poder escribir un cuento completo completo interesante en su propio.
 
@@ -354,88 +411,54 @@ Por lo general, cuando estás aprendiendo tu primer lenguaje de programación, h
 
 Si algo parece particularmente difícil, generalmente no hay valor en permanecer despierto toda la noche y mirarlo fijamente. Tome un descanso, tome una siesta, tome un refrigerio, explíquele a alguien (o quizás a su perro) con qué está teniendo problemas y luego vuelva con los ojos frescos. Le aseguro que una vez que aprenda los conceptos de programación en el libro, mirará hacia atrás y verá que todo fue realmente fácil y elegante, y que simplemente le tomó un poco de tiempo absorberlo.
 
-## [Glosario](# glosario)
+## Ejercicios {#ejercicios}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## [Ejercicios](# ejercicios)
-
-Ejercicio 1: ¿Cuál es la función de la memoria secundaria en una computadora?
+**Ejercicio 1**: ¿Cuál es la función de la memoria secundaria en una computadora?
 
 a) Ejecute todos los cálculos y la lógica del programa <br/> b) Recupere páginas web a través de Internet <br/> c) Almacene información a largo plazo, incluso más allá de un ciclo de alimentación <br/> d) Tome información del usuario
 
-Ejercicio 2: ¿Qué es un programa?
+**Ejercicio 2**: ¿Qué es un programa?
 
-Ejercicio 3: ¿Cuál es la diferencia entre un compilador y un intérprete?
+**Ejercicio 3**: ¿Cuál es la diferencia entre un compilador y un intérprete?
 
-Ejercicio 4: ¿Cuál de los siguientes contiene "código de máquina"?
+**Ejercicio 4**: ¿Cuál de los siguientes contiene "código de máquina"?
 
 a) El intérprete de Python <br/> b) El teclado <br/> c) Archivo fuente de Python <br/> d) Un documento de procesamiento de texto
 
-Ejercicio 5: ¿Qué está mal con el siguiente código:
+**Ejercicio 5**: ¿Qué está mal con el siguiente código:
 
-```    >>> primt 'Hello world!'
+```python
+    >>> primt 'Hello world!'
       File "<stdin>", line 1
         primt 'Hello world!'
                            ^
     SyntaxError: invalid syntax
     >>>
 ```
-Ejercicio 6: ¿En qué parte de la computadora hay una variable como "x" almacenada después de que termina la siguiente línea de Python?
 
-```    x = 123
+**Ejercicio 6**: ¿En qué parte de la computadora hay una variable como "x" almacenada después de que termina la siguiente línea de Python?
+
+```python
+    x = 123
 ```
+
 a) Unidad de procesamiento central <br/> b) Memoria principal <br/> c) Memoria secundaria <br/> d) Dispositivos de entrada <br/> e) Dispositivos de salida
 
-Ejercicio 7: ¿Qué imprimirá el siguiente programa?
+**Ejercicio 7**: ¿Qué imprimirá el siguiente programa?
 
-```    x = 43
+```python
+    x = 43
     x = x + 1
     print(x)
 ```
+
 a) 43 <br/> b) 44 <br/> c) x + 1 <br/> d) Error porque x = x + 1 no es posible matemáticamente
 
-Ejercicio 8: Explique cada uno de los siguientes ejemplos con un ejemplo de una capacidad humana: (1) Unidad central de procesamiento, (2) Memoria principal, (3) Memoria secundaria, (4) Dispositivo de entrada y (5) Dispositivo de salida. Por ejemplo, "¿Cuál es el equivalente humano a una unidad central de procesamiento"?
+**Ejercicio 8**: Explique cada uno de los siguientes ejemplos con un ejemplo de una capacidad humana: (1) Unidad central de procesamiento, (2) Memoria principal, (3) Memoria secundaria, (4) Dispositivo de entrada y (5) Dispositivo de salida. Por ejemplo, "¿Cuál es el equivalente humano a una unidad central de procesamiento"?
 
-Ejercicio 9: ¿Cómo arreglas un "Error de sintaxis"?
+**Ejercicio 9**: ¿Cómo arreglas un "Error de sintaxis"?
 
 ---
 
 
-1. [http://xkcd.com/231/](http://xkcd.com/231/)[↩](#fnref1)
+[^1]: [http://xkcd.com/231/](http://xkcd.com/231/)

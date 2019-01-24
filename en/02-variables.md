@@ -2,17 +2,13 @@
 
 ## [Values and types](#values-and-types)
 
- 
-
 A **value** is one of the basic things a program works with, like a letter or a number. The values we have seen so far are `1`, `2`, and "Hello, World!"
 
 These values belong to different **types**: `2` is an integer, and "Hello, World!" is a **string**, so called because it contains a "string" of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.
 
-
-
 The `print` statement also works for integers. We use the `python` command to start the interpreter.
 
-```
+```python
 python
 >>> print(4)
 4
@@ -20,33 +16,49 @@ python
 
 If you are not sure what type a value has, the interpreter can tell you.
 
+```python
+>>> type('Hello, World!')
+<class 'str'>
+>>> type(17)
+<class 'int'>
+```
+
 Not surprisingly, strings belong to the type `str` and integers belong to the type `int`. Less obviously, numbers with a decimal point belong to a type called `float`, because these numbers are represented in a format called **floating point**.
 
- 
+```python
+>>> type(3.2)
+<class 'float'>
+```
 
 What about values like "17" and "3.2"? They look like numbers, but they are in quotation marks like strings.
 
-
+```python
+>>> type('17')
+<class 'str'>
+>>> type('3.2')
+<class 'str'>
+```
 
 They're strings.
 
 When you type a large integer, you might be tempted to use commas between groups of three digits, as in `1,000,000`. This is not a legal integer in Python, but it is legal:
 
-Well, that's not what we expected at all! Python interprets `1,000,000` as a comma-separated sequence of integers, which it prints with spaces between.
+```python
+>>> print(1,000,000)
+1 0 0
+```
 
- 
+Well, that's not what we expected at all! Python interprets `1,000,000` as a comma-separated sequence of integers, which it prints with spaces between.
 
 This is the first example we have seen of a semantic error: the code runs without producing an error message, but it doesn't do the "right" thing.
 
 ## [Variables](#variables)
 
- 
-
 One of the most powerful features of a programming language is the ability to manipulate **variables**. A variable is a name that refers to a value.
 
 An **assignment statement** creates new variables and gives them values:
 
-```
+```python
 >>> message = 'And now for something completely different'
 >>> n = 17
 >>> pi = 3.1415926535897931
@@ -56,7 +68,7 @@ This example makes three assignments. The first assigns a string to a new variab
 
 To display the value of a variable, you can use a print statement:
 
-```
+```python
 >>> print(n)
 17
 >>> print(pi)
@@ -65,7 +77,7 @@ To display the value of a variable, you can use a print statement:
 
 The type of a variable is the type of the value it refers to.
 
-```
+```python
 >>> type(message)
 <class 'str'>
 >>> type(n)
@@ -76,27 +88,30 @@ The type of a variable is the type of the value it refers to.
 
 ## [Variable names and keywords](#variable-names-and-keywords)
 
-
-
 Programmers generally choose names for their variables that are meaningful and document what the variable is used for.
 
 Variable names can be arbitrarily long. They can contain both letters and numbers, but they cannot start with a number. It is legal to use uppercase letters, but it is a good idea to begin variable names with a lowercase letter (you'll see why later).
 
 The underscore character (`_`) can appear in a name. It is often used in names with multiple words, such as `my_name` or `airspeed_of_unladen_swallow`. Variable names can start with an underscore character, but we generally avoid doing this unless we are writing library code for others to use.
 
-
-
 If you give a variable an illegal name, you get a syntax error:
+
+```python
+>>> 76trombones = 'big parade'
+SyntaxError: invalid syntax
+>>> more@ = 1000000
+SyntaxError: invalid syntax
+>>> class = 'Advanced Theoretical Zymurgy'
+SyntaxError: invalid syntax
+```
 
 `76trombones` is illegal because it begins with a number. `more@` is illegal because it contains an illegal character, `@`. But what's wrong with `class`?
 
 It turns out that `class` is one of Python's **keywords**. The interpreter uses keywords to recognize the structure of the program, and they cannot be used as variable names.
 
-
-
 Python reserves 33 keywords:
 
-```
+```python
 and       del       from      None      True
 as        elif      global    nonlocal  try
 assert    else      if        not       while
@@ -112,15 +127,13 @@ You might want to keep this list handy. If the interpreter complains about one o
 
 A **statement** is a unit of code that the Python interpreter can execute. We have seen two kinds of statements: print being an expression statement and assignment.
 
- 
-
 When you type a statement in interactive mode, the interpreter executes it and displays the result, if there is one.
 
 A script usually contains a sequence of statements. If there is more than one statement, the results appear one at a time as the statements execute.
 
 For example, the script
 
-```
+```python
 print(1)
 x = 2
 print(x)
@@ -128,7 +141,7 @@ print(x)
 
 produces the output
 
-```
+```python
 1
 2
 ```
@@ -137,21 +150,25 @@ The assignment statement produces no output.
 
 ## [Operators and operands](#operators-and-operands)
 
- 
-
 **Operators** are special symbols that represent computations like addition and multiplication. The values the operator is applied to are called **operands**.
 
 The operators `+`, `-`, `*`, `/`, and `**` perform addition, subtraction, multiplication, division, and exponentiation, as in the following examples:
 
-```
+```python
 20+32   hour-1   hour*60+minute   minute/60   5**2   (5+9)*(15-7)
 ```
 
 There has been a change in the division operator between Python 2.x and Python 3.x. In Python 3.x, the result of this division is a floating point result:
 
+```python
+>>> minute = 59
+>>> minute/60
+0.9833333333333333
+```
+
 The division operator in Python 2.0 would divide two integers and truncate the result to an integer:
 
-```
+```python
 >>> minute = 59
 >>> minute/60
 0
@@ -159,17 +176,19 @@ The division operator in Python 2.0 would divide two integers and truncate the r
 
 To obtain the same answer in Python 3.0 use floored ( // integer) division.
 
-In Python 3.0 integer division functions much more as you would expect if you entered the expression on a calculator.
+```python
+>>> minute = 59
+>>> minute//60
+0
+```
 
- 
+In Python 3.0 integer division functions much more as you would expect if you entered the expression on a calculator.
 
 ## [Expressions](#expressions)
 
 An **expression** is a combination of values, variables, and operators. A value all by itself is considered an expression, and so is a variable, so the following are all legal expressions (assuming that the variable `x` has been assigned a value):
 
- 
-
-```
+```python
 17
 x
 x + 17
@@ -177,7 +196,7 @@ x + 17
 
 If you type an expression in interactive mode, the interpreter **evaluates** it and displays the result:
 
-```
+```python
 >>> 1 + 1
 2
 ```
@@ -186,7 +205,7 @@ But in a script, an expression all by itself doesn't do anything! This is a comm
 
 Exercise 1: Type the following statements in the Python interpreter to see what they do:
 
-```
+```python
 5
 x = 5
 x + 1
@@ -194,11 +213,7 @@ x + 1
 
 ## [Order of operations](#order-of-operations)
 
- 
-
 When more than one operator appears in an expression, the order of evaluation depends on the **rules of precedence**. For mathematical operators, Python follows mathematical convention. The acronym **PEMDAS** is a useful way to remember the rules:
-
-
 
 - **P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, `2 *     (3-1)` is 4, and `(1+1)**(5-2)` is 8. You can also use parentheses to make an expression easier to read, as in `(minute * 100) / 60`, even if it doesn't change the result.
 - **E**xponentiation has the next highest precedence, so `2**1+1` is 3, not 4, and `3*1**3` is 3, not 27.
@@ -209,27 +224,32 @@ When in doubt, always put parentheses in your expressions to make sure the compu
 
 ## [Modulus operator](#modulus-operator)
 
- 
-
 The **modulus operator** works on integers and yields the remainder when the first operand is divided by the second. In Python, the modulus operator is a percent sign (`%`). The syntax is the same as for other operators:
+
+```python
+>>> quotient = 7 // 3
+>>> print(quotient)
+2
+>>> remainder = 7 % 3
+>>> print(remainder)
+1
+```
 
 So 7 divided by 3 is 2 with 1 left over.
 
 The modulus operator turns out to be surprisingly useful. For example, you can check whether one number is divisible by another: if `x % y` is zero, then `x` is divisible by `y`.
 
-
-
 You can also extract the right-most digit or digits from a number. For example, `x % 10` yields the right-most digit of `x` (in base 10). Similarly, `x % 100` yields the last two digits.
 
 ## [String operations](#string-operations)
 
- 
+
 
 The `+` operator works with strings, but it is not addition in the mathematical sense. Instead it performs **concatenation**, which means joining the strings by linking them end to end. For example:
 
 
 
-```
+```python
 >>> first = 10
 >>> second = 15
 >>> print(first+second)
@@ -246,11 +266,11 @@ The output of this program is `100150`.
 
 
 
-Sometimes we would like to take the value for a variable from the user via their keyboard. Python provides a built-in function called `input` that gets input from the keyboard[<sup>1</sup>](#fn1). When this function is called, the program stops and waits for the user to type something. When the user presses `Return` or `Enter`, the program resumes and `input` returns what the user typed as a string.
+Sometimes we would like to take the value for a variable from the user via their keyboard. Python provides a built-in function called `input` that gets input from the keyboard[^1]. When this function is called, the program stops and waits for the user to type something. When the user presses `Return` or `Enter`, the program resumes and `input` returns what the user typed as a string.
 
 
 
-```
+```python
 >>> input = input()
 Some silly stuff
 >>> print(input)
@@ -261,7 +281,7 @@ Before getting input from the user, it is a good idea to print a prompt telling 
 
 
 
-```
+```python
 >>> name = input('What is your name?\n')
 What is your name?
 Chuck
@@ -275,7 +295,7 @@ The sequence `\n` at the end of the prompt represents a **newline**, which is a 
 
 If you expect the user to type an integer, you can try to convert the return value to `int` using the `int()` function:
 
-```
+```python
 >>> prompt = 'What...is the airspeed velocity of an unladen swallow?\n'
 >>> speed = input(prompt)
 What...is the airspeed velocity of an unladen swallow?
@@ -288,7 +308,7 @@ What...is the airspeed velocity of an unladen swallow?
 
 But if the user types something other than a string of digits, you get an error:
 
-```
+```python
 >>> speed = input(prompt)
 What...is the airspeed velocity of an unladen swallow?
 What do you mean, an African or a European swallow?
@@ -308,14 +328,14 @@ As programs get bigger and more complicated, they get more difficult to read. Fo
 
 For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing. These notes are called **comments**, and in Python they start with the `#` symbol:
 
-```
+```python
 # compute the percentage of the hour that has elapsed
 percentage = (minute * 100) / 60
 ```
 
 In this case, the comment appears on a line by itself. You can also put comments at the end of a line:
 
-```
+```python
 percentage = (minute * 100) / 60     # percentage of an hour
 ```
 
@@ -325,13 +345,13 @@ Comments are most useful when they document non-obvious features of the code. It
 
 This comment is redundant with the code and useless:
 
-```
+```python
 v = 5     # assign 5 to v
 ```
 
 This comment contains useful information that is not in the code:
 
-```
+```python
 v = 5     # velocity in meters/second.
 ```
 
@@ -343,21 +363,21 @@ Good variable names can reduce the need for comments, but long names can make co
 
 As long as you follow the simple rules of variable naming, and avoid reserved words, you have a lot of choice when you name your variables. In the beginning, this choice can be confusing both when you read a program and when you write your own programs. For example, the following three programs are identical in terms of what they accomplish, but very different when you read them and try to understand them.
 
-```
+```python
 a = 35.0
 b = 12.50
 c = a * b
 print(c)
 ```
 
-```
+```python
 hours = 35.0
 rate = 12.50
 pay = hours * rate
 print(pay)
 ```
 
-```
+```python
 x1q3z9ahd = 35.0
 x1q3z9afd = 12.50
 x1q3p9afd = x1q3z9ahd * x1q3z9afd
@@ -366,13 +386,13 @@ print(x1q3p9afd)
 
 The Python interpreter sees all three of these programs as **exactly the same** but humans see and understand these programs quite differently. Humans will most quickly understand the **intent** of the second program because the programmer has chosen variable names that reflect their intent regarding what data will be stored in each variable.
 
-We call these wisely chosen variable names "mnemonic variable names". The word **mnemonic**[<sup>2</sup>](#fn2) means "memory aid". We choose mnemonic variable names to help us remember why we created the variable in the first place.
+We call these wisely chosen variable names "mnemonic variable names". The word **mnemonic**[^2] means "memory aid". We choose mnemonic variable names to help us remember why we created the variable in the first place.
 
 While this all sounds great, and it is a very good idea to use mnemonic variable names, mnemonic variable names can get in the way of a beginning programmer's ability to parse and understand code. This is because beginning programmers have not yet memorized the reserved words (there are only 33 of them) and sometimes variables with names that are too descriptive start to look like part of the language and not just well-chosen variable names.
 
 Take a quick look at the following Python sample code which loops through some data. We will cover loops soon, but for now try to just puzzle through what this means:
 
-```
+```python
 for word in words:
     print(word)
 ```
@@ -381,7 +401,7 @@ What is happening here? Which of the tokens (for, word, in, etc.) are reserved w
 
 The following code is equivalent to the above code:
 
-```
+```python
 for slice in pizza:
     print(slice)
 ```
@@ -398,20 +418,16 @@ The parts of the code that are defined by Python (`for`, `in`, `print`, and `:`)
 
 ## [Debugging](#debugging)
 
-
-
 At this point, the syntax error you are most likely to make is an illegal variable name, like `class` and `yield`, which are keywords, or `odd~job` and `US$`, which contain illegal characters.
-
- 
 
 If you put a space in a variable name, Python thinks it is two operands without an operator:
 
-```
+```python
 >>> bad name = 5
 SyntaxError: invalid syntax
 ```
 
-```
+```python
 >>> month = 09
   File "<stdin>", line 1
     month = 09
@@ -425,7 +441,7 @@ For syntax errors, the error messages don't help much. The most common messages 
 
 The runtime error you are most likely to make is a "use before def;" that is, trying to use a variable before you have assigned a value. This can happen if you spell a variable name wrong:
 
-```
+```python
 >>> principal = 327.68
 >>> interest = principle * rate
 NameError: name 'principle' is not defined
@@ -437,64 +453,24 @@ Variables names are case sensitive, so `LaTeX` is not the same as `latex`.
 
 At this point, the most likely cause of a semantic error is the order of operations. For example, to evaluate 1 / 2**π**, you might be tempted to write
 
-```
+```python
 >>> 1.0 / 2.0 * pi
 ```
 
 But the division happens first, so you would get **π** / 2, which is not the same thing! There is no way for Python to know what you meant to write, so in this case you don't get an error message; you just get the wrong answer.
 
-
-
-## [Glossary](#glossary)
-
-
-
-
-
-
-
-To simplify an expression by performing the operations in order to yield a single value.
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
 ## [Exercises](#exercises)
 
-Exercise 2: Write a program that uses `input` to prompt a user for their name and then welcomes them.
+**Exercise 1**: Write a program that uses `input` to prompt a user for their name and then welcomes them.
 
-```
+```python
 Enter your name: Chuck
 Hello Chuck
 ```
 
-Exercise 3: Write a program to prompt the user for hours and rate per hour to compute gross pay.
+**Exercise 3**: Write a program to prompt the user for hours and rate per hour to compute gross pay.
 
-```
+```python
 Enter Hours: 35
 Enter Rate: 2.75
 Pay: 96.25
@@ -502,9 +478,9 @@ Pay: 96.25
 
 We won't worry about making sure our pay has exactly two digits after the decimal place for now. If you want, you can play with the built-in Python `round` function to properly round the resulting pay to two decimal places.
 
-Exercise 4: Assume that we execute the following assignment statements:
+**Exercise 4**: Assume that we execute the following assignment statements:
 
-```
+```python
 width = 17
 height = 12.0
 ```
@@ -518,10 +494,10 @@ For each of the following expressions, write the value of the expression and the
 
 Use the Python interpreter to check your answers.
 
-Exercise 5: Write a program which prompts the user for a Celsius temperature, convert the temperature to Fahrenheit, and print out the converted temperature.
+**Exercise 5**: Write a program which prompts the user for a Celsius temperature, convert the temperature to Fahrenheit, and print out the converted temperature.
 
 ---
 
 
-1. In Python 2.0, this function was named `raw_input`.[↩](#fnref1)
-1. See [http://en.wikipedia.org/wiki/Mnemonic](http://en.wikipedia.org/wiki/Mnemonic) for an extended description of the word "mnemonic".[↩](#fnref2)
+[^1]: In Python 2.0, this function was named `raw_input`.
+[^2]: See [http://en.wikipedia.org/wiki/Mnemonic](http://en.wikipedia.org/wiki/Mnemonic) for an extended description of the word "mnemonic".

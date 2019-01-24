@@ -198,7 +198,7 @@ Python is a **high-level** language intended to be relatively straightforward fo
 
 The CPU understands a language we call **machine language**. Machine language is very simple and frankly very tiresome to write because it is represented all in zeros and ones:
 
-```
+```bash
     001010001110100100101010000001111
     11100110000011101010010101101101
     ...
@@ -234,7 +234,7 @@ If you have a Windows system, often these executable machine language programs h
 
 If you were to open an executable file in a text editor, it would look completely crazy and be unreadable:
 
-```
+```bash
     ^?ELF^A^A^A^@^@^@^@^@^@^@^@^@^B^@^C^@^A^@^@^@\xa0\x82
     ^D^H4^@^@^@\x90^]^@^@^@^@^@^@4^@ ^@^G^@(^@$^@!^@^F^@
     ^@^@4^@^@^@4\x80^D^H4\x80^D^H\xe0^@^@^@\xe0^@^@^@^E
@@ -249,7 +249,7 @@ Now at this point in our discussion of compilers and interpreters, you should be
 
 The Python interpreter is written in a high-level language called "C". You can look at the actual source code for the Python interpreter by going to [www.python.org](http://www.python.org) and working your way to their source code. So Python is a program itself and it is compiled into machine code. When you installed Python on your computer (or the vendor installed it), you copied a machine-code copy of the translated Python program onto your system. In Windows, the executable machine code for Python itself is likely in a file with a name like:
 
-```
+```bash
     C:\Python35\python.exe
 ```
 
@@ -289,7 +289,7 @@ Lets say you are doing Social Computing research on Facebook posts and you are i
 
 For example, look at the following text about a clown and a car. Look at the text and figure out the most common word and how many times it occurs.
 
-```
+```bash
     the clown ran after the car and the car ran into the tent
     and the tent fell down on the clown and the car
 ```

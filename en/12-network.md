@@ -230,7 +230,7 @@ As an example, we will simply parse some HTML input and extract links using the 
 
 You can download and "install" BeautifulSoup or you can simply place the `BeautifulSoup.py` file in the same folder as your application.
 
-Even though HTML looks like XML[<sup>1</sup>](#fn1)i and some pages are carefully constructed to be XML, most HTML is generally broken in ways that cause an XML parser to reject the entire page of HTML as improperly formed. BeautifulSoup tolerates highly flawed HTML and still lets you easily extract the data you need.
+Even though HTML looks like XML[^1]i and some pages are carefully constructed to be XML, most HTML is generally broken in ways that cause an XML parser to reject the entire page of HTML as improperly formed. BeautifulSoup tolerates highly flawed HTML and still lets you easily extract the data you need.
 
 We will use `urllib` to read the page and then use `BeautifulSoup` to extract the `href` attributes from the anchor (`a`) tags.
 
@@ -329,5 +329,5 @@ The command `curl` is short for "copy URL" and so these two examples are cleverl
 ---
 
 
-1. The XML format is described in the next chapter.[↩](#fnref1)
+[^1]: The XML format is described in the next chapter.
 

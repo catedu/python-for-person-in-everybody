@@ -1,5 +1,20 @@
 # Variables, expresiones y declaraciones
 
+* [Valores y tipos](#values-and-types)
+* [Variables](#variables)
+* [Nombres de variables y palabras clave](#variable-names-and-keywords)
+* [Declaraciones](#statements)
+* [Operadores y operandos](#operators-and-operands)
+* [Expresiones](#expressions)
+* [Orden de operaciones](#order-of-operations)
+* [Operador de módulo](#modulus-operator)
+* [Operaciones con cadenas](#string-operations)
+* [Preguntando al usuario por la entrada](#asking-the-user-for-input)
+* [Comentarios](#comments)
+* [Eligiendo nombres de variables mnemónicas](#choosing-mnemonic-variable-names)
+* [Depuración](#debugging)
+* [Ejercicios](#exercises)
+
 ## Valores y tipos {#values-and-types}
 
 

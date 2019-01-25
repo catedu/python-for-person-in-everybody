@@ -89,7 +89,7 @@ If we look back at the link extraction application where we used the BeautifulSo
 
  
 
-We read the URL into a string, and then pass that into `urllib` to retrieve the data from the web. The `urllib` library uses the `socket` library to make the actual network connection to retrieve the data. We take the string that we get back from `urllib` and hand it to BeautifulSoup for parsing. BeautifulSoup makes use of another object called `html.parser`[<sup>1</sup>](#fn1) and returns an object. We call the `tags()` method in the returned object and then get a dictionary of tag objects, and loop through the tags and call the `get()` method for each tag to print out the 'href' attribute.
+We read the URL into a string, and then pass that into `urllib` to retrieve the data from the web. The `urllib` library uses the `socket` library to make the actual network connection to retrieve the data. We take the string that we get back from `urllib` and hand it to BeautifulSoup for parsing. BeautifulSoup makes use of another object called `html.parser`[^1] and returns an object. We call the `tags()` method in the returned object and then get a dictionary of tag objects, and loop through the tags and call the `get()` method for each tag to print out the 'href' attribute.
 
 A Program as Network of Objects
 
@@ -123,7 +123,7 @@ We use the `class` keyword to define the data and code that will make up each of
 
 Each method looks like a function, starting with the `def` keyword and consisting of an indented block of code. This example has one attribute (x) and one method (party). The methods have a special first parameter that we name by convention `self`.
 
-Much like the `def` keyword does not cause function code to be executed, the `class` keyword does not create an object. Instead, the `class` keyword defines a template indicating what data and code will be contained in each object of type `PartyAnimal`. The class is like a cookie cutter and the objects created using the class are the cookies[<sup>2</sup>](#fn2). You don't put frosting on the cookie cutter, you put frosting on the cookies - and you can put different frosting on each cookie.
+Much like the `def` keyword does not cause function code to be executed, the `class` keyword does not create an object. Instead, the `class` keyword defines a template indicating what data and code will be contained in each object of type `PartyAnimal`. The class is like a cookie cutter and the objects created using the class are the cookies[^2]. You don't put frosting on the cookie cutter, you put frosting on the cookies - and you can put different frosting on each cookie.
 
 A Class and Two Objects
 
@@ -296,7 +296,7 @@ Then we print out the first item in the list using the square brackets which are
 
 At the end of the program the `stuff` object is discarded but not before calling the **destructor** (named `__del__`) so the object can clean up any loose ends as necessary.
 
-Those are the basics and terminology of object oriented programming. There are many additional details as to how to best use object oriented approaches when developing large applications and libraries that are beyond the scope of this chapter.[<sup>3</sup>](#fn3)
+Those are the basics and terminology of object oriented programming. There are many additional details as to how to best use object oriented approaches when developing large applications and libraries that are beyond the scope of this chapter.[^3]
 
 ## [Glossary](#glossary)
 
@@ -321,6 +321,6 @@ Those are the basics and terminology of object oriented programming. There are m
 ---
 
 
-1. https://docs.python.org/3/library/html.parser.html[↩](#fnref1)
-2. Cookie image copyright CC-BY https://www.flickr.com/photos/dinnerseries/23570475099[↩](#fnref2)
-3. If you are curious about where the list class is defined, take a look at (hopefully the URL won't change) https://github.com/python/cpython/blob/master/Objects/listobject.c - the list class is written in a language called "C". If you take a look at that source code and find it curious you might want to explore a few Computer Science courses.[↩](#fnref3)
+[^1]: https://docs.python.org/3/library/html.parser.html
+[^2]: Cookie image copyright CC-BY https://www.flickr.com/photos/dinnerseries/23570475099
+[^3]: If you are curious about where the list class is defined, take a look at (hopefully the URL won't change) https://github.com/python/cpython/blob/master/Objects/listobject.c - the list class is written in a language called "C". If you take a look at that source code and find it curious you might want to explore a few Computer Science courses.

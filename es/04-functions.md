@@ -114,7 +114,7 @@ Este programa produce la siguiente lista de 10 números aleatorios entre 0.0 y h
 0.27447040171978143
 0.028511805472785867
 ```
-Ejercicio 1: Ejecute el programa en su sistema y vea qué números obtiene. Ejecute el programa más de una vez y vea qué números obtiene.
+**Ejercicio 1** Ejecute el programa en su sistema y vea qué números obtiene. Ejecute el programa más de una vez y vea qué números obtiene.
 
 La función `random` es solo una de las muchas funciones que manejan números aleatorios. La función `randint` toma los parámetros` low` y `high`, y devuelve un número entero entre` low` y `high` (incluyendo ambos).
 
@@ -261,9 +261,9 @@ Este programa contiene dos definiciones de funciones: `print_lyrics` y` repeat_l
 
 Como es de esperar, debe crear una función antes de poder ejecutarla. En otras palabras, la definición de la función debe ejecutarse antes de la primera vez que se llama.
 
-Ejercicio 2: Mueva la última línea de este programa a la parte superior, para que la llamada a la función aparezca antes de las definiciones. Ejecute el programa y vea qué mensaje de error recibe.
+**Ejercicio 2** Mueva la última línea de este programa a la parte superior, para que la llamada a la función aparezca antes de las definiciones. Ejecute el programa y vea qué mensaje de error recibe.
 
-Ejercicio 3: Mueva la llamada de la función a la parte inferior y mueva la definición de `print_lyrics` después de la definición de` repeat_lyrics`. ¿Qué pasa cuando ejecutas este programa?
+**Ejercicio 3** Mueva la llamada de la función a la parte inferior y mueva la definición de `print_lyrics` después de la definición de` repeat_lyrics`. ¿Qué pasa cuando ejecutas este programa?
 
 ## [Flujo de ejecución] (# flujo de ejecución)
 
@@ -449,11 +449,11 @@ Asegúrese de que el código que está viendo es el código que está ejecutando
 
 ## [Ejercicios] (# ejercicios)
 
-Ejercicio 4: ¿Cuál es el propósito de la palabra clave "def" en Python?
+**Ejercicio 4** ¿Cuál es el propósito de la palabra clave "def" en Python?
 
 a) Es una jerga que significa "el siguiente código es realmente genial" <br/> b) Indica el inicio de una función <br/> c) Indica que la siguiente sección de código con sangría debe almacenarse para más adelante < br /> d) byc son verdaderas <br/> e) Ninguna de las anteriores
 
-Ejercicio 5: ¿Qué se imprimirá el siguiente programa de Python?
+**Ejercicio 5** ¿Qué se imprimirá el siguiente programa de Python?
 
 ```def fred():
    print("Zap")
@@ -467,13 +467,13 @@ jane()
 ```
 a) Zap ABC jane fred jane <br/> b) Zap ABC Zap <br/> c) ABC Zap jane <br/> d) ABC Zap ABC <br/> e) Zap Zap Zap
 
-Ejercicio 6: reescriba su cálculo de pago con tiempo y medio para horas extras y cree una función llamada `computepay` que toma dos parámetros (` hours` y `rate`).
+**Ejercicio 6** reescriba su cálculo de pago con tiempo y medio para horas extras y cree una función llamada `computepay` que toma dos parámetros (` hours` y `rate`).
 
 ```Enter Hours: 45
 Enter Rate: 10
 Pay: 475.0
 ```
-Ejercicio 7: reescriba el programa de calificación del capítulo anterior utilizando una función llamada `computegrade` que toma una puntuación como parámetro y devuelve una nota como una cadena.
+**Ejercicio 7** reescriba el programa de calificación del capítulo anterior utilizando una función llamada `computegrade` que toma una puntuación como parámetro y devuelve una nota como una cadena.
 
 ```Score   Grade
 > 0.9     A

@@ -4,7 +4,7 @@
 
  
 
-A tuple[<sup>1</sup>](#fn1) is a sequence of values much like a list. The values stored in a tuple can be any type, and they are indexed by integers. The important difference is that tuples are **immutable**. Tuples are also **comparable** and **hashable** so we can sort lists of them and use tuples as key values in Python dictionaries.
+A tuple[^1] is a sequence of values much like a list. The values stored in a tuple can be any type, and they are indexed by integers. The important difference is that tuples are **immutable**. Tuples are also **comparable** and **hashable** so we can sort lists of them and use tuples as key values in Python dictionaries.
 
  
 
@@ -111,7 +111,7 @@ One of the unique syntactic features of the Python language is the ability to ha
 
 In this example we have a two-element list (which is a sequence) and assign the first and second elements of the sequence to the variables `x` and `y` in a single statement.
 
-It is not magic, Python **roughly** translates the tuple assignment syntax to be the following:[<sup>2</sup>](#fn2)
+It is not magic, Python **roughly** translates the tuple assignment syntax to be the following:[^2]
 
 Stylistically when we use a tuple on the left side of the assignment statement, we omit the parentheses, but the following is an equally valid syntax:
 
@@ -406,8 +406,8 @@ Enter a file name: mbox-short.txt
 ---
 
 
-1. Fun fact: The word "tuple" comes from the names given to sequences of numbers of varying lengths: single, double, triple, quadruple, quituple, sextuple, septuple, etc.[↩](#fnref1)
-1. Python does not translate the syntax literally. For example, if you try this with a dictionary, it will not work as might expect.[↩](#fnref2)
+[^1]: Fun fact: The word "tuple" comes from the names given to sequences of numbers of varying lengths: single, double, triple, quadruple, quituple, sextuple, septuple, etc.
+[^1]: Python does not translate the syntax literally. For example, if you try this with a dictionary, it will not work as might expect.
 
 ©2015-2018 Trinket
 

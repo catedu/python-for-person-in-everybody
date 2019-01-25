@@ -304,7 +304,7 @@ Para la mayoría de los sistemas, hay aplicaciones para convertir de un formato 
 
 ## [Ejercicios] (# ejercicios)
 
-Ejercicio 1: escriba un programa para leer un archivo e imprima el contenido del mismo (línea por línea) todo en mayúsculas. Ejecutando el programa se verá como sigue:
+**Ejercicio 1** escriba un programa para leer un archivo e imprima el contenido del mismo (línea por línea) todo en mayúsculas. Ejecutando el programa se verá como sigue:
 
 ```python shout.py
 Enter a file name: mbox-short.txt
@@ -318,7 +318,7 @@ Puede descargar el archivo desde
 
 [www.py4e.com/code3/mbox-short.txt](http://www.py4e.com/code3/mbox-short.txt)
 
-Ejercicio 2: escriba un programa para solicitar un nombre de archivo, y luego lea el archivo y busque las líneas del formulario:
+**Ejercicio 2** escriba un programa para solicitar un nombre de archivo, y luego lea el archivo y busque las líneas del formulario:
 
 `X-DSPAM-Confidence:` ** `0.8475` **
 
@@ -332,7 +332,7 @@ Average spam confidence: 0.750718518519
 ```
 Pruebe su archivo en los archivos `mbox.txt` y` mbox-short.txt`.
 
-Ejercicio 3: A veces, cuando los programadores se aburren o quieren divertirse un poco, agregan un ** Huevo de Pascua ** inofensivo a su programa. Modifique el programa que solicita al usuario el nombre del archivo para que imprima un mensaje divertido cuando el el usuario escribe el nombre exacto del archivo "na na boo boo". El programa debería comportarse normalmente para todos los demás archivos que existen y no existen. Aquí hay una muestra de ejecución del programa:
+**Ejercicio 3** A veces, cuando los programadores se aburren o quieren divertirse un poco, agregan un ** Huevo de Pascua ** inofensivo a su programa. Modifique el programa que solicita al usuario el nombre del archivo para que imprima un mensaje divertido cuando el el usuario escribe el nombre exacto del archivo "na na boo boo". El programa debería comportarse normalmente para todos los demás archivos que existen y no existen. Aquí hay una muestra de ejecución del programa:
 
 ```python egg.py
 Enter the file name: mbox.txt

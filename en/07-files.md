@@ -337,7 +337,7 @@ For most systems, there are applications to convert from one format to another. 
 
 ## [Exercises](#exercises)
 
-Exercise 1: Write a program to read through a file and print the contents of the file (line by line) all in upper case. Executing the program will look as follows:
+**Exercise 1**: Write a program to read through a file and print the contents of the file (line by line) all in upper case. Executing the program will look as follows:
 
 ```
 python shout.py
@@ -353,7 +353,7 @@ You can download the file from
 
 [www.py4e.com/code3/mbox-short.txt](http://www.py4e.com/code3/mbox-short.txt)
 
-Exercise 2: Write a program to prompt for a file name, and then read through the file and look for lines of the form:
+**Exercise 2**: Write a program to prompt for a file name, and then read through the file and look for lines of the form:
 
 `X-DSPAM-Confidence:`**`0.8475`**
 
@@ -369,7 +369,7 @@ Average spam confidence: 0.750718518519
 
 Test your file on the `mbox.txt` and `mbox-short.txt` files.
 
-Exercise 3: Sometimes when programmers get bored or want to have a bit of fun, they add a harmless **Easter Egg** to their program Modify the program that prompts the user for the file name so that it prints a funny message when the user types in the exact file name "na na boo boo". The program should behave normally for all other files which exist and don't exist. Here is a sample execution of the program:
+**Exercise 3**: Sometimes when programmers get bored or want to have a bit of fun, they add a harmless **Easter Egg** to their program Modify the program that prompts the user for the file name so that it prints a funny message when the user types in the exact file name "na na boo boo". The program should behave normally for all other files which exist and don't exist. Here is a sample execution of the program:
 
 ```
 python egg.py

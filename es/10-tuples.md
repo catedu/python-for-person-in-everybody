@@ -4,7 +4,7 @@
 
 
 
-Una tupla [<sup> 1 </sup>] (# fn1) es una secuencia de valores muy parecida a una lista. Los valores almacenados en una tupla pueden ser de cualquier tipo, y están indexados por enteros. La diferencia importante es que las tuplas son ** inmutables **. Las tuplas también son ** comparables ** y ** hashable **, por lo que podemos clasificar las listas y usar tuplas como valores clave en los diccionarios de Python.
+Una tupla [^1] es una secuencia de valores muy parecida a una lista. Los valores almacenados en una tupla pueden ser de cualquier tipo, y están indexados por enteros. La diferencia importante es que las tuplas son ** inmutables **. Las tuplas también son ** comparables ** y ** hashable **, por lo que podemos clasificar las listas y usar tuplas como valores clave en los diccionarios de Python.
 
 
 
@@ -99,7 +99,7 @@ Una de las características sintácticas únicas del lenguaje Python es la capac
 
 En este ejemplo tenemos una lista de dos elementos (que es una secuencia) y asignamos el primer y segundo elementos de la secuencia a las variables `x` y` y` en una sola declaración.
 
-No es mágico, Python ** aproximadamente ** traduce la sintaxis de asignación de tupla para que sea la siguiente: [<sup> 2 </sup>] (# fn2)
+No es mágico, Python ** aproximadamente ** traduce la sintaxis de asignación de tupla para que sea la siguiente: [^2]
 
 Estilísticamente, cuando usamos una tupla en el lado izquierdo de la declaración de asignación, omitimos los paréntesis, pero la siguiente es una sintaxis igualmente válida:
 
@@ -368,7 +368,7 @@ Enter a file name: mbox-short.txt
 ---
 
 
-1. Dato curioso: la palabra "tupla" proviene de los nombres que se dan a las secuencias de números de diferentes longitudes: simple, doble, triple, cuádruple, quituple, sextuple, septuple, etc. [↩] (# fnref1)
-1. Python no traduce la sintaxis literalmente. Por ejemplo, si intenta esto con un diccionario, no funcionará como podría esperarse. [↩] (# fnref2)
+[^1]: Dato curioso: la palabra "tupla" proviene de los nombres que se dan a las secuencias de números de diferentes longitudes: simple, doble, triple, cuádruple, quituple, sextuple, septuple, etc. 
+[^1]: Python no traduce la sintaxis literalmente. Por ejemplo, si intenta esto con un diccionario, no funcionará como podría esperarse. 
 
 Python no traduce la sintaxis literalmente. Por ejemplo, si intenta esto con un diccionario, no funcionará como podría esperarse. [↩] (# fnref2)

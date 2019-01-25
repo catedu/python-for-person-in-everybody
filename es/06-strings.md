@@ -80,7 +80,7 @@ while index < len(fruit):
 ```
 Este bucle atraviesa la cadena y muestra cada letra en una línea por sí misma. La condición del bucle es `index \ & lt; len (fruit) `, por lo que cuando` index` es igual a la longitud de la cadena, la condición es falsa, y el cuerpo del bucle no se ejecuta. El último carácter accedido es el que tiene el índice `len (fruit) -1`, que es el último carácter de la cadena.
 
-Ejercicio 1: escriba un bucle `while` que comience en el último carácter de la cadena y avance hacia el primer carácter de la cadena, imprimiendo cada letra en una línea separada, excepto al revés.
+**Ejercicio 1** escriba un bucle `while` que comience en el último carácter de la cadena y avance hacia el primer carácter de la cadena, imprimiendo cada letra en una línea separada, excepto al revés.
 
 Otra forma de escribir un recorrido es con un bucle `for`:
 
@@ -121,7 +121,7 @@ Si el primer índice es mayor o igual que el segundo, el resultado es una ** cad
 ```
 Una cadena vacía no contiene caracteres y tiene una longitud de 0, pero aparte de eso, es la misma que cualquier otra cadena.
 
-Ejercicio 2: Dado que `fruit` es una cuerda, ¿qué significa` fruit [:] `?
+**Ejercicio 2** Dado que `fruit` es una cuerda, ¿qué significa` fruit [:] `?
 
 
 
@@ -166,7 +166,7 @@ print(count)
 ```
 Este programa demuestra otro patrón de cálculo llamado ** contador **. La variable `count` se inicializa a 0 y luego se incrementa cada vez que se encuentra un` a`. Cuando el bucle sale, `count` contiene el resultado: el número total de` a`'s.
 
-Ejercicio 3:
+**Ejercicio 3**
 
 
 
@@ -307,7 +307,7 @@ True
 ```
 En el último ejemplo, se llama al método `lower` y luego usamos` startswith` para ver si la cadena en minúsculas resultante comienza con la letra "h". Mientras tengamos cuidado con el orden, podemos realizar múltiples llamadas de método en una sola expresión.
 
-Ejercicio 4:
+**Ejercicio 4**
 
 
 
@@ -367,7 +367,7 @@ Una secuencia de formato puede aparecer en cualquier parte de la cadena, por lo 
 >>> 'I have spotted %d camels.' % camels
 'I have spotted 42 camels.'
 ```
-Si hay más de una secuencia de formato en la cadena, el segundo argumento debe ser una tupla [<sup> 1 </sup>] (# fn1). Cada secuencia de formato se empareja con un elemento de la tupla, en orden.
+Si hay más de una secuencia de formato en la cadena, el segundo argumento debe ser una tupla [^1]. Cada secuencia de formato se empareja con un elemento de la tupla, en orden.
 
 El siguiente ejemplo utiliza "% d" para formatear un número entero, "% g" para formatear un número de punto flotante (no pregunte por qué) y "% s" para formatear una cadena:
 
@@ -458,13 +458,13 @@ Otra forma es escribir de forma segura la instrucción `if` utilizando el patró
 
 ## [Ejercicios] (# ejercicios)
 
-Ejercicio 5: tome el siguiente código de Python que almacena una cadena: `
+**Ejercicio 5** tome el siguiente código de Python que almacena una cadena: `
 
 `str = 'X-DSPAM-Confidence:` ** `0.8475` **`'
 
 Use `find` y el corte de cadena para extraer la parte de la cadena después del carácter de dos puntos y luego use la función` float` para convertir la cadena extraída en un número de punto flotante.
 
-Ejercicio 6:
+**Ejercicio 6**
 
 
 
@@ -479,4 +479,4 @@ La documentación utiliza una sintaxis que puede ser confusa. Por ejemplo, en `f
 ---
 
 
-1. Una tupla es una secuencia de valores separados por comas dentro de un par de paréntesis. Cubriremos las tuplas en el Capítulo 10 [↩] (# fnref1)
+[^1]: Una tupla es una secuencia de valores separados por comas dentro de un par de paréntesis. Cubriremos las tuplas en el Capítulo 10 

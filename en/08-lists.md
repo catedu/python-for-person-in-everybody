@@ -368,7 +368,7 @@ def tail(t):
 
 This function leaves the original list unmodified. Here's how it is used:
 
-Exercise 1:
+**Exercise 1**:
 
 Write a function called `chop` that takes a list and modifies it, removing the first and last elements, and returns `None`.
 
@@ -459,9 +459,9 @@ First we commented out the debug print statement instead of removing it, in case
 We can think of the two `continue` statements as helping us refine the set of lines which are "interesting" to us and which we want to process some more. A line which has no words is "uninteresting" to us so we skip to the next line. A line which does not have "From" as its first word is uninteresting to us so we skip it.
 The program as modified runs successfully, so perhaps it is correct. Our guardian statement does make sure that the `words[0]` will never fail, but perhaps it is not enough. When we are programming, we must always be thinking, "What might go wrong?"</li>
 
-Exercise 2: Figure out which line of the above program is still not properly guarded. See if you can construct a text file which causes the program to fail and then modify the program so that the line is properly guarded and test it to make sure it handles your new text file.
+**Exercise 2**: Figure out which line of the above program is still not properly guarded. See if you can construct a text file which causes the program to fail and then modify the program so that the line is properly guarded and test it to make sure it handles your new text file.
 
-Exercise 3: Rewrite the guardian code in the above example without two `if` statements. Instead, use a compound logical expression using the `and` logical operator with a single `if` statement.
+**Exercise 3**: Rewrite the guardian code in the above example without two `if` statements. Instead, use a compound logical expression using the `and` logical operator with a single `if` statement.
 
 ## [Glossary](#glossary)
 
@@ -489,7 +489,7 @@ Exercise 3: Rewrite the guardian code in the above example without two `if` stat
 
 ## [Exercises](#exercises)
 
-Exercise 4: Download a copy of the file from [www.py4e.com/code3/romeo.txt](http://www.py4e.com/code3/romeo.txt)
+**Exercise 4**: Download a copy of the file from [www.py4e.com/code3/romeo.txt](http://www.py4e.com/code3/romeo.txt)
 
 
 

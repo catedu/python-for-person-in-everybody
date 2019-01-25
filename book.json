@@ -1,5 +1,5 @@
 {
-    "plugins": ["youtube", "accordion", "styled-blockquotes", "localized-footer", "edit-link", "githubcontributors", "language-picker"],
+    "plugins": ["youtube", "image-captions", "accordion", "styled-blockquotes", "localized-footer", "edit-link", "githubcontributors", "language-picker"],
     "variables": {
         "title": "Python for person in everybody",
         "author": "Charles R. Severance",
@@ -8,6 +8,9 @@
         ]
     },
     "pluginsConfig": {
+        "image-captions": {
+            "caption": "Imagen - _CAPTION_"
+        },
         "localized-footer": {
             "hline": true,
             "filename": "./FOOTER.md"

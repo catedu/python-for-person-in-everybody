@@ -91,7 +91,7 @@ The `in` operator uses different algorithms for lists and dictionaries. For list
 
 
 
-Exercise 1: [wordlist2]
+**Exercise 1**: [wordlist2]
 
  
 

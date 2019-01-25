@@ -97,7 +97,7 @@ while index < len(fruit):
 
 This loop traverses the string and displays each letter on a line by itself. The loop condition is `index \< len(fruit)`, so when `index` is equal to the length of the string, the condition is false, and the body of the loop is not executed. The last character accessed is the one with the index `len(fruit)-1`, which is the last character in the string.
 
-Exercise 1: Write a `while` loop that starts at the last character in the string and works its way backwards to the first character in the string, printing each letter on a separate line, except backwards.
+**Exercise 1**: Write a `while` loop that starts at the last character in the string and works its way backwards to the first character in the string, printing each letter on a separate line, except backwards.
 
 Another way to write a traversal is with a `for` loop:
 
@@ -146,7 +146,7 @@ If the first index is greater than or equal to the second the result is an **emp
 
 An empty string contains no characters and has length 0, but other than that, it is the same as any other string.
 
-Exercise 2: Given that `fruit` is a string, what does `fruit[:]` mean?
+**Exercise 2**: Given that `fruit` is a string, what does `fruit[:]` mean?
 
  
 
@@ -198,7 +198,7 @@ print(count)
 
 This program demonstrates another pattern of computation called a **counter**. The variable `count` is initialized to 0 and then incremented each time an `a` is found. When the loop exits, `count` contains the result: the total number of `a`'s.
 
-Exercise 3:
+**Exercise 3**:
 
 
 
@@ -364,7 +364,7 @@ True
 
 In the last example, the method `lower` is called and then we use `startswith` to see if the resulting lowercase string starts with the letter "h". As long as we are careful with the order, we can make multiple method calls in a single expression.
 
-Exercise 4:
+**Exercise 4**:
 
  
 
@@ -430,7 +430,7 @@ A format sequence can appear anywhere in the string, so you can embed a value in
 'I have spotted 42 camels.'
 ```
 
-If there is more than one format sequence in the string, the second argument has to be a tuple[<sup>1</sup>](#fn1). Each format sequence is matched with an element of the tuple, in order.
+If there is more than one format sequence in the string, the second argument has to be a tuple[^1]. Each format sequence is matched with an element of the tuple, in order.
 
 The following example uses "%d" to format an integer, "%g" to format a floating-point number (don't ask why), and "%s" to format a string:
 
@@ -531,13 +531,13 @@ Another way is to safely write the `if` statement using the **guardian** pattern
 
 ## [Exercises](#exercises)
 
-Exercise 5: Take the following Python code that stores a string:`
+**Exercise 5**: Take the following Python code that stores a string:`
 
 `str = 'X-DSPAM-Confidence:`**`0.8475`**`'`
 
 Use `find` and string slicing to extract the portion of the string after the colon character and then use the `float` function to convert the extracted string into a floating point number.
 
-Exercise 6:
+**Exercise 6**:
 
  
 
@@ -552,4 +552,4 @@ The documentation uses a syntax that might be confusing. For example, in `find(s
 ---
 
 
-1. A tuple is a sequence of comma-separated values inside a pair of parenthesis. We will cover tuples in Chapter 10[↩](#fnref1)
+[^1]: A tuple is a sequence of comma-separated values inside a pair of parenthesis. We will cover tuples in Chapter 10

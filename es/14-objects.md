@@ -83,7 +83,7 @@ Si miramos hacia atrás en la aplicación de extracción de enlaces donde usamos
 
 
 
-Leemos la URL en una cadena y luego la pasamos a `urllib` para recuperar los datos de la web. La biblioteca `urllib` usa la biblioteca` socket` para hacer la conexión de red real para recuperar los datos. Tomamos la cadena que recibimos de `urllib` y la entregamos a BeautifulSoup para que la analice. BeautifulSoup utiliza otro objeto llamado `html.parser` [<sup> 1 </sup>] (# fn1) y devuelve un objeto. Llamamos al método `tags ()` en el objeto devuelto y luego obtenemos un diccionario de objetos de etiquetas, hacemos un bucle a través de las etiquetas y llamamos al método `get ()` para que cada etiqueta imprima el atributo 'href'.
+Leemos la URL en una cadena y luego la pasamos a `urllib` para recuperar los datos de la web. La biblioteca `urllib` usa la biblioteca` socket` para hacer la conexión de red real para recuperar los datos. Tomamos la cadena que recibimos de `urllib` y la entregamos a BeautifulSoup para que la analice. BeautifulSoup utiliza otro objeto llamado `html.parser` [^1] y devuelve un objeto. Llamamos al método `tags ()` en el objeto devuelto y luego obtenemos un diccionario de objetos de etiquetas, hacemos un bucle a través de las etiquetas y llamamos al método `get ()` para que cada etiqueta imprima el atributo 'href'.
 
 Un programa como red de objetos
 
@@ -117,7 +117,7 @@ Usamos la palabra clave `class` para definir los datos y el código que conforma
 
 Cada método se parece a una función, comenzando con la palabra clave `def` y consiste en un bloque de código con sangría. Este ejemplo tiene un atributo (x) y un método (parte). Los métodos tienen un primer parámetro especial que nombramos por convención `self`.
 
-Al igual que la palabra clave `def` no hace que se ejecute el código de función, la palabra clave` class` no crea un objeto. En cambio, la palabra clave `class` define una plantilla que indica qué datos y código estarán contenidos en cada objeto de tipo` PartyAnimal`. La clase es como un cortador de galletas y los objetos creados usando la clase son las cookies [<sup> 2 </sup>] (# fn2). No coloque glaseado en el cortador de galletas, coloque glaseado en las galletas y puede colocar glaseado diferente en cada galleta.
+Al igual que la palabra clave `def` no hace que se ejecute el código de función, la palabra clave` class` no crea un objeto. En cambio, la palabra clave `class` define una plantilla que indica qué datos y código estarán contenidos en cada objeto de tipo` PartyAnimal`. La clase es como un cortador de galletas y los objetos creados usando la clase son las cookies [^2]. No coloque glaseado en el cortador de galletas, coloque glaseado en las galletas y puede colocar glaseado diferente en cada galleta.
 
 Una clase y dos objetos
 
@@ -264,7 +264,7 @@ Luego imprimimos el primer elemento de la lista usando los corchetes, que son un
 
 Al final del programa, el objeto `stuff` se descarta, pero no antes de llamar al ** destructor ** (llamado` __del__`) para que el objeto pueda limpiar los cabos sueltos según sea necesario.
 
-Esos son los fundamentos y la terminología de la programación orientada a objetos. Hay muchos detalles adicionales sobre cómo usar mejor los enfoques orientados a objetos al desarrollar aplicaciones y bibliotecas grandes que están fuera del alcance de este capítulo. [<sup> 3 </sup>] (# fn3)
+Esos son los fundamentos y la terminología de la programación orientada a objetos. Hay muchos detalles adicionales sobre cómo usar mejor los enfoques orientados a objetos al desarrollar aplicaciones y bibliotecas grandes que están fuera del alcance de este capítulo. [^3]
 
 ## [Glosario] (# glosario)
 
@@ -289,8 +289,8 @@ Esos son los fundamentos y la terminología de la programación orientada a obje
 ---
 
 
-1. https://docs.python.org/3/library/html.parser.html[↩](#fnref1)
+[^1]: https://docs.python.org/3/library/html.parser.html
 2. La imagen de la cookie está protegida por derechos de autor de CC-BY https://www.flickr.com/photos/dinnerseries/23570475099[#◆(#fnref2)
-3. Si tiene curiosidad por saber dónde está definida la clase de la lista, eche un vistazo (esperemos que la URL no cambie) https://github.com/python/cpython/blob/master/Objects/listobject.c - el La lista de clases está escrita en un lenguaje llamado "C". Si echas un vistazo a ese código fuente y te resulta curioso, quizás quieras explorar algunos cursos de informática. [↩] (# fnref3)
+[^3]: Si tiene curiosidad por saber dónde está definida la clase de la lista, eche un vistazo (esperemos que la URL no cambie) https://github.com/python/cpython/blob/master/Objects/listobject.c - el La lista de clases está escrita en un lenguaje llamado "C". Si echas un vistazo a ese código fuente y te resulta curioso, quizás quieras explorar algunos cursos de informática. 
 
 Derechos de autor de la imagen de la cookie CC-BY https://www.flickr.com/photos/dinnerseries/23570475099[↩◆(#fnref2)

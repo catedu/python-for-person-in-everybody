@@ -132,7 +132,7 @@ This program produces the following list of 10 random numbers between 0.0 and up
 0.028511805472785867
 ```
 
-Exercise 1: Run the program on your system and see what numbers you get. Run the program more than once and see what numbers you get.
+**Exercise 1**: Run the program on your system and see what numbers you get. Run the program more than once and see what numbers you get.
 
 The `random` function is only one of many functions that handle random numbers. The function `randint` takes the parameters `low` and `high`, and returns an integer between `low` and `high` (including both).
 
@@ -306,9 +306,9 @@ This program contains two function definitions: `print_lyrics` and `repeat_lyric
 
 As you might expect, you have to create a function before you can execute it. In other words, the function definition has to be executed before the first time it is called.
 
-Exercise 2: Move the last line of this program to the top, so the function call appears before the definitions. Run the program and see what error message you get.
+**Exercise 2**: Move the last line of this program to the top, so the function call appears before the definitions. Run the program and see what error message you get.
 
-Exercise 3: Move the function call back to the bottom and move the definition of `print_lyrics` after the definition of `repeat_lyrics`. What happens when you run this program?
+**Exercise 3**: Move the function call back to the bottom and move the definition of `print_lyrics` after the definition of `repeat_lyrics`. What happens when you run this program?
 
 ## [Flow of execution](#flow-of-execution)
 
@@ -513,11 +513,11 @@ Make sure that the code you are looking at is the code you are running. If you'r
 
 ## [Exercises](#exercises)
 
-Exercise 4: What is the purpose of the "def" keyword in Python?
+**Exercise 4**: What is the purpose of the "def" keyword in Python?
 
 a) It is slang that means "the following code is really cool"<br/>b) It indicates the start of a function<br/>c) It indicates that the following indented section of code is to be stored for later<br/>d) b and c are both true<br/>e) None of the above
 
-Exercise 5: What will the following Python program print out?
+**Exercise 5**: What will the following Python program print out?
 
 ```
 def fred():
@@ -533,7 +533,7 @@ jane()
 
 a) Zap ABC jane fred jane<br/>b) Zap ABC Zap<br/>c) ABC Zap jane<br/>d) ABC Zap ABC<br/>e) Zap Zap Zap
 
-Exercise 6: Rewrite your pay computation with time-and-a-half for overtime and create a function called `computepay` which takes two parameters (`hours` and `rate`).
+**Exercise 6**: Rewrite your pay computation with time-and-a-half for overtime and create a function called `computepay` which takes two parameters (`hours` and `rate`).
 
 ```
 Enter Hours: 45
@@ -541,7 +541,7 @@ Enter Rate: 10
 Pay: 475.0
 ```
 
-Exercise 7: Rewrite the grade program from the previous chapter using a function called `computegrade` that takes a score as its parameter and returns a grade as a string.
+**Exercise 7**: Rewrite the grade program from the previous chapter using a function called `computegrade` that takes a score as its parameter and returns a grade as a string.
 
 ```
 Score   Grade

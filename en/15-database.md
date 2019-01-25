@@ -36,7 +36,7 @@ In a sense, the database browser is similar to a text editor when working with t
 
 ## [Creating a database table](#creating-a-database-table)
 
-Databases require more defined structure than Python lists or dictionaries[<sup>1</sup>](#fn1).
+Databases require more defined structure than Python lists or dictionaries[^1].
 
 When we create a database **table** we must tell the database in advance the names of each of the **columns** in the table and the type of data which we are planning to store in each **column**. When the database software knows the type of data in each column, it can choose the most efficient way to store and look up the data based on the type of data.
 
@@ -396,7 +396,7 @@ This is a very common pattern and is done twice in the program above. This code 
 
 Since over time it will be increasingly likely that the account will already be in the database, we first check to see if the `People` record exists using a `SELECT` statement.
 
-If all goes well[<sup>2</sup>](#fn2) inside the `try` section, we retrieve the record using `fetchone()` and then retrieve the first (and only) element of the returned tuple and store it in `friend_id`.
+If all goes well[^2] inside the `try` section, we retrieve the record using `fetchone()` and then retrieve the first (and only) element of the returned tuple and store it in `friend_id`.
 
 If the `SELECT` fails, the `fetchone()[0]` code will fail and control will transfer into the `except` section.
 
@@ -580,5 +580,5 @@ So a solution is to make sure to either close the database browser or use the **
 ---
 
 
-1. SQLite actually does allow some flexibility in the type of data stored in a column, but we will keep our data types strict in this chapter so the concepts apply equally to other database systems such as MySQL.[↩](#fnref1)
-1. In general, when a sentence starts with "if all goes well" you will find that the code needs to use try/except.[↩](#fnref2)
+[^1]: SQLite actually does allow some flexibility in the type of data stored in a column, but we will keep our data types strict in this chapter so the concepts apply equally to other database systems such as MySQL.
+[^1]: In general, when a sentence starts with "if all goes well" you will find that the code needs to use try/except.

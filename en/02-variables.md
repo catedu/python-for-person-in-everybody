@@ -1,6 +1,21 @@
-# [Variables, expressions, and statements](#variables-expressions-and-statements)
+# Variables, expressions, and statements {#variables-expressions-and-statements}
 
-## [Values and types](#values-and-types)
+* [Values and types](#values-and-types)
+* [Variables](#variables)
+* [Variable names and keywords](#variable-names-and-keywords)
+* [Statements](#statements)
+* [Operators and operands](#operators-and-operands)
+* [Expressions](#expressions)
+* [Order of operations](#order-of-operations)
+* [Modulus operator](#modulus-operator)
+* [String operations](#string-operations)
+* [Asking the user for input](#asking-the-user-for-input)
+* [Comments](#comments)
+* [Choosing mnemonic variable names](#choosing-mnemonic-variable-names)
+* [Debugging](#debugging)
+* [Exercises](#exercises)
+
+## Values and types {#values-and-types}
 
 A **value** is one of the basic things a program works with, like a letter or a number. The values we have seen so far are `1`, `2`, and "Hello, World!"
 
@@ -52,7 +67,7 @@ Well, that's not what we expected at all! Python interprets `1,000,000` as a com
 
 This is the first example we have seen of a semantic error: the code runs without producing an error message, but it doesn't do the "right" thing.
 
-## [Variables](#variables)
+## Variables {#variables}
 
 One of the most powerful features of a programming language is the ability to manipulate **variables**. A variable is a name that refers to a value.
 
@@ -86,7 +101,7 @@ The type of a variable is the type of the value it refers to.
 <class 'float'>
 ```
 
-## [Variable names and keywords](#variable-names-and-keywords)
+## Variable names and keywords {#variable-names-and-keywords}
 
 Programmers generally choose names for their variables that are meaningful and document what the variable is used for.
 
@@ -123,7 +138,7 @@ def       for       lambda    return
 
 You might want to keep this list handy. If the interpreter complains about one of your variable names and you don't know why, see if it is on this list.
 
-## [Statements](#statements)
+## Statements {#statements}
 
 A **statement** is a unit of code that the Python interpreter can execute. We have seen two kinds of statements: print being an expression statement and assignment.
 
@@ -148,7 +163,7 @@ produces the output
 
 The assignment statement produces no output.
 
-## [Operators and operands](#operators-and-operands)
+## Operators and operands {#operators-and-operands}
 
 **Operators** are special symbols that represent computations like addition and multiplication. The values the operator is applied to are called **operands**.
 
@@ -184,7 +199,7 @@ To obtain the same answer in Python 3.0 use floored ( // integer) division.
 
 In Python 3.0 integer division functions much more as you would expect if you entered the expression on a calculator.
 
-## [Expressions](#expressions)
+## Expressions {#expressions}
 
 An **expression** is a combination of values, variables, and operators. A value all by itself is considered an expression, and so is a variable, so the following are all legal expressions (assuming that the variable `x` has been assigned a value):
 
@@ -203,7 +218,7 @@ If you type an expression in interactive mode, the interpreter **evaluates** it 
 
 But in a script, an expression all by itself doesn't do anything! This is a common source of confusion for beginners.
 
-Exercise 1: Type the following statements in the Python interpreter to see what they do:
+**Exercise 1**: Type the following statements in the Python interpreter to see what they do:
 
 ```python
 5
@@ -211,7 +226,7 @@ x = 5
 x + 1
 ```
 
-## [Order of operations](#order-of-operations)
+## Order of operations {#order-of-operations}
 
 When more than one operator appears in an expression, the order of evaluation depends on the **rules of precedence**. For mathematical operators, Python follows mathematical convention. The acronym **PEMDAS** is a useful way to remember the rules:
 
@@ -222,7 +237,7 @@ When more than one operator appears in an expression, the order of evaluation de
 
 When in doubt, always put parentheses in your expressions to make sure the computations are performed in the order you intend.
 
-## [Modulus operator](#modulus-operator)
+## Modulus operator {#modulus-operator}
 
 The **modulus operator** works on integers and yields the remainder when the first operand is divided by the second. In Python, the modulus operator is a percent sign (`%`). The syntax is the same as for other operators:
 
@@ -241,7 +256,7 @@ The modulus operator turns out to be surprisingly useful. For example, you can c
 
 You can also extract the right-most digit or digits from a number. For example, `x % 10` yields the right-most digit of `x` (in base 10). Similarly, `x % 100` yields the last two digits.
 
-## [String operations](#string-operations)
+## String operations {#string-operations}
 
 
 
@@ -262,7 +277,7 @@ The `+` operator works with strings, but it is not addition in the mathematical 
 
 The output of this program is `100150`.
 
-## [Asking the user for input](#asking-the-user-for-input)
+## Asking the user for input {#asking-the-user-for-input}
 
 
 
@@ -320,7 +335,7 @@ We will see how to handle this kind of error later.
 
  
 
-## [Comments](#comments)
+## Comments {#comments}
 
 
 
@@ -357,7 +372,7 @@ v = 5     # velocity in meters/second.
 
 Good variable names can reduce the need for comments, but long names can make complex expressions hard to read, so there is a trade-off.
 
-## [Choosing mnemonic variable names](#choosing-mnemonic-variable-names)
+## Choosing mnemonic variable names {#choosing-mnemonic-variable-names}
 
 
 
@@ -416,7 +431,7 @@ After a pretty short period of time, you will know the most common reserved word
 
 The parts of the code that are defined by Python (`for`, `in`, `print`, and `:`) are in bold and the programmer-chosen variables (`word` and `words`) are not in bold. Many text editors are aware of Python syntax and will color reserved words differently to give you clues to keep your variables and reserved words separate. After a while you will begin to read Python and quickly determine what is a variable and what is a reserved word.
 
-## [Debugging](#debugging)
+## Debugging {#debugging}
 
 At this point, the syntax error you are most likely to make is an illegal variable name, like `class` and `yield`, which are keywords, or `odd~job` and `US$`, which contain illegal characters.
 
@@ -459,7 +474,7 @@ At this point, the most likely cause of a semantic error is the order of operati
 
 But the division happens first, so you would get **π** / 2, which is not the same thing! There is no way for Python to know what you meant to write, so in this case you don't get an error message; you just get the wrong answer.
 
-## [Exercises](#exercises)
+## Exercises {#exercises}
 
 **Exercise 1**: Write a program that uses `input` to prompt a user for their name and then welcomes them.
 

@@ -132,7 +132,7 @@ for friend in friends:
     print('Happy New Year:', friend)
 print('Done!')
 ```
-En términos de Python, la variable `friends` es una lista [<sup> 1 </sup>] (# fn1) de tres cadenas y el bucle` for` recorre la lista y ejecuta el cuerpo una vez para cada una de las tres cadenas en la lista que da como resultado esta salida:
+En términos de Python, la variable `friends` es una lista [^1] de tres cadenas y el bucle` for` recorre la lista y ejecuta el cuerpo una vez para cada una de las tres cadenas en la lista que da como resultado esta salida:
 
 ```Happy New Year: Joseph
 Happy New Year: Glenn
@@ -279,7 +279,7 @@ Una asignación que da un valor inicial a una variable que se actualizará.
 
 ## [Ejercicios] (# ejercicios)
 
-Ejercicio 1: escriba un programa que lea números repetidamente hasta que el usuario ingrese "listo". Una vez que se ingrese "listo", imprima el total, el recuento y el promedio de los números. Si el usuario ingresa algo que no sea un número, detecte su error usando `try` y` except` e imprima un mensaje de error y salte al siguiente número.
+**Ejercicio 1** escriba un programa que lea números repetidamente hasta que el usuario ingrese "listo". Una vez que se ingrese "listo", imprima el total, el recuento y el promedio de los números. Si el usuario ingresa algo que no sea un número, detecte su error usando `try` y` except` e imprima un mensaje de error y salte al siguiente número.
 
 ```Enter a number: 4
 Enter a number: 5
@@ -289,9 +289,9 @@ Enter a number: 7
 Enter a number: done
 16 3 5.333333333333333
 ```
-Ejercicio 2: escriba otro programa que solicite una lista de números como arriba y al final imprima el máximo y el mínimo de los números en lugar del promedio.
+**Ejercicio 2** escriba otro programa que solicite una lista de números como arriba y al final imprima el máximo y el mínimo de los números en lugar del promedio.
 
 ---
 
 
-1. Examinaremos las listas con más detalle en un capítulo posterior. [↩] (# fnref1)
+[^1]: Examinaremos las listas con más detalle en un capítulo posterior. 

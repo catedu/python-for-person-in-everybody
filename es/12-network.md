@@ -214,7 +214,7 @@ Como ejemplo, simplemente analizaremos algunas entradas de HTML y extraeremos en
 
 Puede descargar e "instalar" BeautifulSoup o simplemente puede colocar el archivo `BeautifulSoup.py` en la misma carpeta que su aplicación.
 
-A pesar de que el HTML se parece a XML [<sup> 1 </sup>] (# fn1) i y algunas páginas se construyen cuidadosamente para ser XML, la mayoría de HTML generalmente se rompe de manera que un analizador XML rechaza la página completa de HTML como incorrectamente formado. BeautifulSoup tolera HTML muy defectuoso y aún le permite extraer fácilmente los datos que necesita.
+A pesar de que el HTML se parece a XML [^1] i y algunas páginas se construyen cuidadosamente para ser XML, la mayoría de HTML generalmente se rompe de manera que un analizador XML rechaza la página completa de HTML como incorrectamente formado. BeautifulSoup tolera HTML muy defectuoso y aún le permite extraer fácilmente los datos que necesita.
 
 Usaremos `urllib` para leer la página y luego usaremos` BeautifulSoup` para extraer los atributos `href` de las etiquetas de anclaje (` a`).
 
@@ -303,4 +303,4 @@ El comando `curl` es la abreviatura de" copiar URL ", por lo que estos dos ejemp
 ---
 
 
-1. El formato XML se describe en el siguiente capítulo. [↩] (# fnref1)
+[^1]: El formato XML se describe en el siguiente capítulo. 

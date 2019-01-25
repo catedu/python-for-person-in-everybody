@@ -36,7 +36,7 @@ En cierto sentido, el navegador de la base de datos es similar a un editor de te
 
 ## [Creando una tabla de base de datos] (# creating-a-database-table)
 
-Las bases de datos requieren una estructura más definida que las listas o los diccionarios de Python [<sup> 1 </sup>] (# fn1).
+Las bases de datos requieren una estructura más definida que las listas o los diccionarios de Python [^1].
 
 Cuando creamos una base de datos ** tabla ** debemos informar a la base de datos por adelantado los nombres de cada una de las ** columnas ** en la tabla y el tipo de datos que planeamos almacenar en cada ** columna **. Cuando el software de la base de datos conoce el tipo de datos en cada columna, puede elegir la forma más eficiente de almacenar y buscar los datos según el tipo de datos.
 
@@ -352,7 +352,7 @@ Este es un patrón muy común y se realiza dos veces en el programa anterior. Es
 
 Dado que con el tiempo será cada vez más probable que la cuenta ya esté en la base de datos, primero verificamos si existe el registro 'Personas' usando una declaración 'SELECCIONAR'.
 
-Si todo va bien [<sup> 2 </sup>] (# fn2) dentro de la sección `try`, recuperamos el registro usando` fetchone () `y luego recuperamos el primer (y único) elemento de la tupla devuelta y guárdalo en `friend_id`.
+Si todo va bien [^2] dentro de la sección `try`, recuperamos el registro usando` fetchone () `y luego recuperamos el primer (y único) elemento de la tupla devuelta y guárdalo en `friend_id`.
 
 Si el `SELECT` falla, el código` fetchone () [0] `fallará y el control se transferirá a la sección` except`.
 
@@ -526,5 +526,5 @@ Por lo tanto, una solución es asegurarse de cerrar el navegador de la base de d
 ---
 
 
-1. SQLite realmente permite cierta flexibilidad en el tipo de datos almacenados en una columna, pero mantendremos nuestros tipos de datos estrictos en este capítulo para que los conceptos se apliquen por igual a otros sistemas de bases de datos como MySQL. [↩] (# fnref1)
-1. En general, cuando una oración comienza con "si todo va bien", encontrará que el código debe usar try / except. [↩] (# fnref2)
+[^1]: SQLite realmente permite cierta flexibilidad en el tipo de datos almacenados en una columna, pero mantendremos nuestros tipos de datos estrictos en este capítulo para que los conceptos se apliquen por igual a otros sistemas de bases de datos como MySQL. 
+[^1]: En general, cuando una oración comienza con "si todo va bien", encontrará que el código debe usar try / except. 

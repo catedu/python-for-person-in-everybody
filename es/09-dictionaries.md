@@ -75,7 +75,7 @@ El operador `in` usa diferentes algoritmos para listas y diccionarios. Para list
 
 
 
-Ejercicio 1: [lista de palabras 2]
+**Ejercicio 1** [lista de palabras 2]
 
 
 

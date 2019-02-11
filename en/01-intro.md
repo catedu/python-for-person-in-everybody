@@ -12,6 +12,18 @@
     * [The learning journey](#the-learning-journey)
     * [Exercises](#exercises)
 
+>**info**
+>
+>We will just have to go to the web [https://www.python.org/](https://www.python.org/) and download the installer.
+>
+>The steps vary somewhat between operating systems.
+>
+>Attention! In Windows, do not forget to add Python to the PATH in the first steps of installation:
+>
+>![Installing Python](https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png)
+>
+>Once done, we will have Python accessible from the terminal.
+
 # [Why should you learn to write programs?](#why-should-you-learn-to-write-programs)
 
 Writing programs (or programming) is a very creative and rewarding activity. You can write programs for many reasons, ranging from making your living to solving a difficult data analysis problem to having fun to helping someone else solve a problem. This book assumes that **everyone** needs to know how to program, and that once you know how to program you will figure out what you want to do with your newfound skills.

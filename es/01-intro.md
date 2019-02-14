@@ -15,6 +15,20 @@
 * [El viaje del aprendizaje](#the-learning-journey)
 * [Ejercicios](#ejercicios)
 
+> **info**
+> 
+>Sólo tendremos que ir a la web [https://www.python.org/](https://www.python.org/) y descargar el instalador.
+> 
+>Los pasos varían algo entre sistemas operativos.
+> 
+>¡Atención! En Windows, no olvides añadir Python al PATH en los primeros pasos de instalación:
+> 
+>![Instalando Python](https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png)
+>
+>Una vez hecho eso ya tendremos accesible Python desde la terminal.
+>
+>{% youtube %}https://youtu.be/9fNKy9zOPkg{% endyoutube %}
+
 ## ¿Por qué debería aprender a escribir programas? {#por-que-programar}
 
 Escribir programas (o programación) es una actividad muy creativa y gratificante. Puede escribir programas por muchas razones, desde ganarse la vida hasta resolver un problema difícil de análisis de datos hasta divertirse o ayudar a alguien más a resolver un problema. Este libro asume que ** todos ** deben saber cómo programar, y que una vez que sepa cómo programar, descubrirá qué quiere hacer con sus nuevas habilidades.

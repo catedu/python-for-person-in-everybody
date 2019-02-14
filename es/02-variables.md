@@ -21,7 +21,7 @@
 
 Un ** valor ** es una de las cosas básicas con las que trabaja un programa, como una letra o un número. Los valores que hemos visto hasta ahora son `1`,` 2` y "¡Hola, mundo!"
 
-Estos valores pertenecen a diferentes tipos ** **: `2` es un número entero y" ¡Hola, mundo! " es una ** cadena **, llamada así porque contiene una "cadena" de letras. Usted (y el intérprete) pueden identificar cadenas porque están entre comillas.
+Estos valores pertenecen a diferentes tipos ** **: `2` es un número entero y "¡Hola, mundo!" es una ** cadena **, llamada así porque contiene una "cadena" de letras. Usted (y el intérprete) pueden identificar cadenas porque están entre comillas.
 
 
 

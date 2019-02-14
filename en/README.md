@@ -20,3 +20,4 @@ serious study of computer science.
 - The [Author's Website](http://pythonlearn.com) contains more information about the book and provides downloadable PDFs, ebooks, and videos.
 - You can also download this CATEDU's course content from here in: [pdf](https://www.gitbook.com/download/pdf/book/catedu/python-for-person-in-everybody), [epub](https://www.gitbook.com/download/epub/book/catedu/python-for-person-in-everybody), [mobi](https://www.gitbook.com/download/mobi/book/catedu/python-for-person-in-everybody).
 
+{% include "git+https://github.com/catedu/robotica.git/README.md" %}

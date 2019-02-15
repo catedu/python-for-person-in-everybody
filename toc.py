@@ -9,8 +9,12 @@ import re
 # Sustituye por: \n```python\n$1
 #
 # Para cambiar el formato de los títulos en la versión inglesa:
-# Busca: ^(#.+\s)\[(.*)\]\((.*)\)
-# Sustituye por: $1 $2 {$3}
+# Busca: ^(#+\s)\[(.*)\]\((.*)\)
+# Sustituye por: $1$2 {$3}
+#
+# Para cambiar el formato de los títulos en la versión española:
+# Busca: ^(#+\s)\[(.*)\]\s\((.*)\)
+# Sustituye por: $1$2 {$3}
 
 text = '''
 

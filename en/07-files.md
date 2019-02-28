@@ -17,7 +17,7 @@ So far, we have learned how to write programs and communicate our intentions to 
 
 But if you recall from our hardware architecture discussions, once the power is turned off, anything stored in either the CPU or main memory is erased. So up to now, our programs have just been transient fun exercises to learn Python.
 
-![Secondary memory](img/seconday_memory.svg)
+![Secondary memory](../img/seconday_memory.svg)
 
 In this chapter, we start to work with **Secondary Memory** (or files). Secondary memory is not erased when the power is turned off. Or in the case of a USB flash drive, the data we write from our programs can be removed from the system and transported to another system.
 
@@ -35,7 +35,7 @@ When we want to read or write a file (say on your hard drive), we first must **o
 
 If the `open` is successful, the operating system returns us a **file handle**. The file handle is not the actual data contained in the file, but instead it is a "handle" that we can use to read the data. You are given a handle if the requested file exists and you have the proper permissions to read the file.
 
-![A File Handle](img/file-handle.svg)
+![A File Handle](../img/file-handle.svg)
 
 If the file does not exist, `open` will fail with a traceback and you will not get a handle to access the contents of the file:
 

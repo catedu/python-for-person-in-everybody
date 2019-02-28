@@ -44,7 +44,7 @@ b
 
 Entonces `b` es la 0ª letra (" zero-eth ") de" banana ", `a` es la 1ª letra ("one-eth"), y `n` es la 2ª letra (" two-eth ") .
 
-![String Indexes](img/banana.svg)
+![String Indexes](../img/banana.svg)
 
 Puede usar cualquier expresión, incluidas las variables y los operadores, como un índice, pero el valor del índice debe ser un entero. De lo contrario obtendrá:
 

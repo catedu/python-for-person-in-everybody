@@ -1,12 +1,23 @@
 # Archivos {#files}
 
+* [Persistencia](#persistence)
+* [Apertura de archivos](#opening-files)
+* [Archivos y líneas de texto](#text-files-and-lines)
+* [Archivos de lectura](#reading-files)
+* [Buscando a través de un archivo](#searching-through-a-file)
+* [Permitiendo que el usuario elija el nombre del archivo](#letting-the-user-choose-the-file-name)
+* [Usando `try, except,` y `open`](#using-try-except-and-open)
+* [Escribiendo archivos](#writing-files)
+* [depuración](#debugging)
+* [Ejercicios](#exercises)
+
 ## Persistencia {#persistence}
 
-Hasta ahora, hemos aprendido cómo escribir programas y comunicar nuestras intenciones a la ** Unidad de procesamiento central ** mediante la ejecución condicional, las funciones y las iteraciones. Hemos aprendido cómo crear y usar estructuras de datos en la ** Memoria principal **. La CPU y la memoria son donde nuestro software funciona y se ejecuta. Es donde sucede todo el "pensamiento".
+Hasta ahora, hemos aprendido cómo escribir programas y comunicar nuestras intenciones a la **Unidad de procesamiento central** mediante la ejecución condicional, las funciones y las iteraciones. Hemos aprendido cómo crear y usar estructuras de datos en la **Memoria principal**. La CPU y la memoria son donde nuestro software funciona y se ejecuta. Es donde sucede todo el "pensamiento".
 
 Pero si recuerda de nuestras discusiones sobre la arquitectura del hardware, una vez que se apaga la alimentación, cualquier cosa almacenada en la CPU o la memoria principal se borra. Hasta ahora, nuestros programas solo han sido ejercicios transitorios y divertidos para aprender Python.
 
-![Memoria secundaria](img/seconday_memory.svg)
+![Memoria secundaria](../img/seconday_memory.svg)
 
 En este capítulo, comenzamos a trabajar con ** Memoria secundaria ** (o archivos). La memoria secundaria no se borra cuando se apaga la alimentación. O en el caso de una unidad flash USB, los datos que escribimos de nuestros programas se pueden eliminar del sistema y transportar a otro sistema.
 
@@ -25,7 +36,7 @@ Cuando queremos leer o escribir un archivo (digamos en su disco duro), primero d
 
 Si el `open` tiene éxito, el sistema operativo nos devuelve un **archivo manejador**. El identificador de archivo no es la información real contenida en el archivo, sino que es un "identificador" que podemos usar para leer los datos. Se le otorga un identificador si el archivo solicitado existe y tiene los permisos adecuados para leer el archivo.
 
-![A File Handle](img/file-handle.svg)
+![A File Handle](../img/file-handle.svg)
 
 Si el archivo no existe, `open` fallará con un rastreo y no obtendrá un identificador para acceder al contenido del archivo:
 
@@ -81,9 +92,9 @@ Así que el carácter de nueva línea separa los caracteres del archivo en líne
 
 ## Archivos de lectura {#reading-files}
 
-
-
 Mientras que el ** manejador de archivo ** no contiene los datos para el archivo, es bastante fácil construir un bucle `for` para leer y contar cada una de las líneas en un archivo:
+
+<iframe src="https://trinket.io/embed/python3/971f4a72f3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Podemos usar el identificador de archivo como la secuencia en nuestro bucle `for`. Nuestro bucle `for` simplemente cuenta el número de líneas en el archivo y las imprime. La traducción aproximada del bucle `for` al inglés es," para cada línea en el archivo representado por el identificador de archivo, agregue uno a la variable `count`".
 
@@ -103,19 +114,20 @@ Si sabe que el archivo es relativamente pequeño en comparación con el tamaño 
 >>> print(inp[:20])
 From stephen.marquar
 ```
-En este ejemplo, el contenido completo (todos los 94,626 caracteres) del archivo `mbox-short.txt` se lee directamente en la variable` inp`. Utilizamos el corte de cadena para imprimir los primeros 20 caracteres de los datos de cadena almacenados en `inp`.
 
-Cuando el archivo se lee de esta manera, todos los caracteres, incluidas todas las líneas y los caracteres de nueva línea, son una cadena grande en la variable ** inp **. Recuerde que esta forma de la función `abrir 'solo debe usarse si los datos del archivo caben cómodamente en la memoria principal de su computadora.
+En este ejemplo, el contenido completo (todos los 94,626 caracteres) del archivo `mbox-short.txt` se lee directamente en la variable `inp`. Utilizamos el corte de cadena para imprimir los primeros 20 caracteres de los datos de cadena almacenados en `inp`.
 
-Si el archivo es demasiado grande para caber en la memoria principal, debe escribir su programa para leer el archivo en trozos usando un bucle `for` o` while`.
+Cuando el archivo se lee de esta manera, todos los caracteres, incluidas todas las líneas y los caracteres de nueva línea, son una cadena grande en la variable **inp**. Recuerde que esta forma de la función `abrir 'solo debe usarse si los datos del archivo caben cómodamente en la memoria principal de su computadora.
 
-## Buscando a través de un archivo {# buscando a través de un archivo}
+Si el archivo es demasiado grande para caber en la memoria principal, debe escribir su programa para leer el archivo en trozos usando un bucle `for` o `while`.
+
+## Buscando a través de un archivo {#searching-through-a-file}
 
 Cuando busca datos en un archivo, es un patrón muy común leer un archivo, ignorando la mayoría de las líneas y solo procesando líneas que cumplen con una condición particular. Podemos combinar el patrón para leer un archivo con métodos de cadena para construir mecanismos de búsqueda simples.
 
+Por ejemplo, si quisiéramos leer un archivo y solo imprimir líneas que comenzaran con el prefijo "De:", podríamos usar el método de cadena **startswith** para seleccionar solo aquellas líneas con el prefijo deseado:
 
-
-Por ejemplo, si quisiéramos leer un archivo y solo imprimir líneas que comenzaran con el prefijo "De:", podríamos usar el método de cadena ** comienza con ** para seleccionar solo aquellas líneas con el prefijo deseado:
+<iframe src="https://trinket.io/embed/python3/064568c5b1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Cuando este programa se ejecuta, obtenemos el siguiente resultado:
 
@@ -129,9 +141,12 @@ From: zqian@umich.edu
 From: rjlowe@iupui.edu
 ...
 ```
-El resultado se ve muy bien ya que las únicas líneas que estamos viendo son aquellas que comienzan con "De:", pero ¿por qué vemos las líneas en blanco adicionales? Esto se debe a ese carácter invisible ** de nueva línea **. Cada una de las líneas termina con una nueva línea, por lo que la instrucción `print` imprime la cadena en la línea de la variable ** ** que incluye una nueva línea y luego` print` agrega ** otra ** nueva línea, resultando en el efecto de doble espacio que ver.
 
-Podríamos usar el corte de línea para imprimir todo menos el último carácter, pero un enfoque más simple es usar el método ** rstrip ** que elimina el espacio en blanco del lado derecho de una cadena de la siguiente manera:
+El resultado se ve muy bien ya que las únicas líneas que estamos viendo son aquellas que comienzan con "De:", pero ¿por qué vemos las líneas en blanco adicionales? Esto se debe a ese carácter invisible **de nueva línea**. Cada una de las líneas termina con una nueva línea, por lo que la instrucción `print` imprime la cadena en la línea de la variable ** ** que incluye una nueva línea y luego `print` agrega **otra** nueva línea, resultando en el efecto de doble espacio que ver.
+
+Podríamos usar el corte de línea para imprimir todo menos el último carácter, pero un enfoque más simple es usar el método **rstrip** que elimina el espacio en blanco del lado derecho de una cadena de la siguiente manera:
+
+<iframe src="https://trinket.io/embed/python3/8436ab534f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Cuando este programa se ejecuta, obtenemos el siguiente resultado:
 
@@ -145,13 +160,18 @@ From: rjlowe@iupui.edu
 From: cwen@iupui.edu
 ...
 ```
+
 A medida que los programas de procesamiento de archivos se vuelven más complicados, es posible que desee estructurar sus bucles de búsqueda utilizando `continue`. La idea básica del bucle de búsqueda es que usted está buscando líneas "interesantes" y que efectivamente omite líneas "no interesantes". Y luego, cuando encontramos una línea interesante, hacemos algo con esa línea.
 
 Podemos estructurar el bucle para seguir el patrón de omitir líneas no interesantes como sigue:
 
+<iframe src="https://trinket.io/embed/python3/c175b5a15f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 La salida del programa es la misma. En inglés, las líneas no interesantes son aquellas que no comienzan con "De:", que omitimos usando `continue`. Para las líneas "interesantes" (es decir, aquellas que comienzan con "De:") realizamos el procesamiento en esas líneas.
 
 Podemos usar el método de cadena `find` para simular una búsqueda de editor de texto que encuentra líneas donde la cadena de búsqueda está en cualquier lugar de la línea. Dado que `find` busca una aparición de una cadena dentro de otra cadena y devuelve la posición de la cadena o -1 si no se encontró la cadena, podemos escribir el siguiente bucle para mostrar las líneas que contienen la cadena" @ uct.ac .za "(es decir, provienen de la Universidad de Ciudad del Cabo en Sudáfrica):
+
+<iframe src="https://trinket.io/embed/python3/25e3e59816" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Que produce el siguiente resultado:
 
@@ -166,11 +186,14 @@ From: david.horwitz@uct.ac.za
 Author: david.horwitz@uct.ac.za
 ...
 ```
-## Permitiendo que el usuario elija el nombre del archivo {# dejando que el usuario elija el nombre del archivo}
+
+## Permitiendo que el usuario elija el nombre del archivo {#letting-the-user-choose-the-file-name}
 
 Realmente no queremos tener que editar nuestro código Python cada vez que deseamos procesar un archivo diferente. Sería más útil pedirle al usuario que ingrese la cadena del nombre del archivo cada vez que se ejecute el programa para que puedan usar nuestro programa en diferentes archivos sin cambiar el código Python.
 
 Esto es bastante simple de hacer leyendo el nombre del archivo del usuario usando `input` de la siguiente manera:
+
+<iframe src="https://trinket.io/embed/python3/e92683e754" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Leemos el nombre del archivo del usuario, lo colocamos en una variable llamada `fname` y abrimos ese archivo. Ahora podemos ejecutar el programa repetidamente en diferentes archivos.
 
@@ -183,9 +206,10 @@ python search6.py
 Enter the file name: mbox-short.txt
 There were 27 subject lines in mbox-short.txt
 ```
+
 Antes de echar un vistazo a la siguiente sección, eche un vistazo al programa anterior y pregúntese: "¿Qué podría salir mal aquí?" o "¿Qué podría hacer nuestro usuario amigable que haría que nuestro pequeño y agradable programa salga sin gracia con un rastreo, haciéndonos ver no tan geniales a los ojos de nuestros usuarios?"
 
-## Usando `try, except,` y `open` {# using-try-except-and-open}
+## Usando `try, except,` y `open` {#using-try-except-and-open}
 
 Te dije que no miraras. Esta es tu última oportunidad.
 
@@ -206,15 +230,14 @@ Traceback (most recent call last):
     fhand = open(fname)
 FileNotFoundError: [Errno 2] No such file or directory: 'na na boo boo'
 ```
-No te rías. Los usuarios eventualmente harán todo lo posible para romper sus programas, ya sea a propósito o con intención maliciosa. De hecho, una parte importante de cualquier equipo de desarrollo de software es una persona o grupo llamado ** Aseguramiento de la calidad ** (o control de calidad para abreviar) cuyo trabajo consiste en hacer las cosas más locas posibles en un intento de romper el software. que el programador ha creado.
 
-
+No te rías. Los usuarios eventualmente harán todo lo posible para romper sus programas, ya sea a propósito o con intención maliciosa. De hecho, una parte importante de cualquier equipo de desarrollo de software es una persona o grupo llamado **Aseguramiento de la calidad** (o control de calidad para abreviar) cuyo trabajo consiste en hacer las cosas más locas posibles en un intento de romper el software. que el programador ha creado.
 
 El equipo de control de calidad es responsable de encontrar las fallas en los programas antes de que entreguemos el programa a los usuarios finales que pueden estar comprando el software o pagando nuestro salario para escribir el software. Así que el equipo de control de calidad es el mejor amigo del programador.
 
+Así que ahora que vemos la falla en el programa, podemos arreglarlo con elegancia usando la estructura `try`/` except`. Debemos suponer que la llamada `open` puede fallar y agregar un código de recuperación cuando el `open` falla de la siguiente manera:
 
-
-Así que ahora que vemos la falla en el programa, podemos arreglarlo con elegancia usando la estructura `try` /` except`. Debemos suponer que la llamada `open` puede fallar y agregar un código de recuperación cuando el` open` falla de la siguiente manera:
+<iframe src="https://trinket.io/embed/python3/ee7849d86b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 La función `exit` termina el programa. Es una función que llamamos que nunca vuelve. Ahora, cuando nuestro usuario (o equipo de control de calidad) escribe tonterías o nombres de archivos incorrectos, los "capturamos" y recuperamos con gracia:
 
@@ -228,14 +251,11 @@ Enter the file name: na na boo boo
 File cannot be opened: na na boo boo
 ```
 
-
-Proteger la llamada `open` es un buen ejemplo del uso correcto de` try` y `except` en un programa Python. Usamos el término "Pythonic" cuando estamos haciendo algo de "manera Python". Podríamos decir que el ejemplo anterior es la forma Pythonic de abrir un archivo.
+Proteger la llamada `open` es un buen ejemplo del uso correcto de `try` y `except` en un programa Python. Usamos el término "Pythonic" cuando estamos haciendo algo de "manera Python". Podríamos decir que el ejemplo anterior es la forma Pythonic de abrir un archivo.
 
 Una vez que adquiera más experiencia en Python, puede comprometerse con otros programadores de Python para decidir cuál de las dos soluciones equivalentes a un problema es "más Pythonic". El objetivo de ser "más Pythonic" capta la noción de que la programación es parte ingeniería y parte arte. No siempre estamos interesados ​​en hacer que algo funcione, también queremos que nuestra solución sea elegante y que nuestros pares la aprecien como elegante.
 
-## Escribiendo archivos {# writing-files}
-
-
+## Escribiendo archivos {#writing-files}
 
 Para escribir un archivo, debe abrirlo con el modo "w" como segundo parámetro:
 
@@ -244,6 +264,7 @@ Para escribir un archivo, debe abrirlo con el modo "w" como segundo parámetro:
 >>> print(fout)
 <_io.TextIOWrapper name='output.txt' mode='w' encoding='cp1252'>
 ```
+
 Si el archivo ya existe, abrirlo en modo de escritura borra los datos antiguos y comienza de nuevo, ¡así que tenga cuidado! Si el archivo no existe, se crea uno nuevo.
 
 El método `write` del objeto de identificador de archivo coloca datos en el archivo, devolviendo el número de caracteres escritos. El modo de escritura predeterminado es texto para escribir (y leer) cadenas.
@@ -254,7 +275,6 @@ El método `write` del objeto de identificador de archivo coloca datos en el arc
 24
 ```
 
-
 Nuevamente, el objeto de archivo mantiene un registro de dónde está, por lo que si llama a `write` de nuevo, agrega los nuevos datos al final.
 
 Debemos asegurarnos de administrar los extremos de las líneas a medida que escribimos en el archivo insertando explícitamente el carácter de nueva línea cuando queremos terminar una línea. La instrucción `print` agrega automáticamente una nueva línea, pero el método` write` no agrega la nueva línea automáticamente.
@@ -264,16 +284,18 @@ Debemos asegurarnos de administrar los extremos de las líneas a medida que escr
 >>> fout.write(line2)
 24
 ```
+
 Cuando haya terminado de escribir, debe cerrar el archivo para asegurarse de que el último bit de datos se haya escrito físicamente en el disco para que no se pierda si se corta la alimentación.
 
 ```python
 >>> fout.close()
 ```
+
 Podríamos cerrar los archivos que abrimos para leer también, pero podemos ser un poco descuidados si solo abrimos algunos archivos ya que Python se asegura de que todos los archivos abiertos se cierren cuando finalice el programa. Cuando estamos escribiendo archivos, queremos cerrar explícitamente los archivos para no dejar nada al azar.
 
 
 
-## depuración {# depuración}
+## depuración {#debugging}
 
 
 Cuando está leyendo y escribiendo archivos, puede tener problemas con el espacio en blanco. Estos errores pueden ser difíciles de depurar porque los espacios, las pestañas y las nuevas líneas son normalmente invisibles:
@@ -285,34 +307,20 @@ Cuando está leyendo y escribiendo archivos, puede tener problemas con el espaci
  4
 ```
 
-
 La función incorporada `repr` puede ayudar. Toma cualquier objeto como un argumento y devuelve una representación de cadena del objeto. Para cadenas, representa caracteres de espacio en blanco con secuencias de barra invertida:
 
 ```python
 >>> print(repr(s))
 '1 2\t 3\n 4'
 ```
+
 Esto puede ser útil para la depuración.
 
-Otro problema que podría encontrar es que los diferentes sistemas usan caracteres diferentes para indicar el final de una línea. Algunos sistemas usan una nueva línea, representada `\ n`. Otros utilizan un carácter de retorno, representado `\ r`. Algunos usan ambos. Si mueve archivos entre diferentes sistemas, estas inconsistencias pueden causar problemas.
+Otro problema que podría encontrar es que los diferentes sistemas usan caracteres diferentes para indicar el final de una línea. Algunos sistemas usan una nueva línea, representada `\n`. Otros utilizan un carácter de retorno, representado `\r`. Algunos usan ambos. Si mueve archivos entre diferentes sistemas, estas inconsistencias pueden causar problemas.
 
+Para la mayoría de los sistemas, hay aplicaciones para convertir de un formato a otro. Puede encontrarlos (y leer más sobre este problema) en [wikipedia.org/wiki/Newline](wikipedia.org/wiki/Newline). O, por supuesto, podrías escribir uno tú mismo.
 
-
-Para la mayoría de los sistemas, hay aplicaciones para convertir de un formato a otro. Puede encontrarlos (y leer más sobre este problema) en [wikipedia.org/wiki/Newline◆(wikipedia.org/wiki/Newline). O, por supuesto, podrías escribir uno tú mismo.
-
-## Glosario {# glosario}
-
-
-
-
-
-
-
-
-
-
-
-## Ejercicios {# ejercicios}
+## Ejercicios {#exercises}
 
 **Ejercicio 1** escriba un programa para leer un archivo e imprima el contenido del mismo (línea por línea) todo en mayúsculas. Ejecutando el programa se verá como sigue:
 
@@ -325,6 +333,7 @@ RECEIVED: FROM MURDER (MAIL.UMICH.EDU [141.211.14.90])
      BY FRANKENSTEIN.MAIL.UMICH.EDU (CYRUS V2.3.8) WITH LMTPA;
      SAT, 05 JAN 2008 09:14:16 -0500
 ```
+
 Puede descargar el archivo desde
 
 [www.py4e.com/code3/mbox-short.txt](http://www.py4e.com/code3/mbox-short.txt)
@@ -342,9 +351,10 @@ Average spam confidence: 0.894128046745
 Enter the file name: mbox-short.txt
 Average spam confidence: 0.750718518519
 ```
+
 Pruebe su archivo en los archivos `mbox.txt` y` mbox-short.txt`.
 
-**Ejercicio 3** A veces, cuando los programadores se aburren o quieren divertirse un poco, agregan un ** Huevo de Pascua ** inofensivo a su programa. Modifique el programa que solicita al usuario el nombre del archivo para que imprima un mensaje divertido cuando el el usuario escribe el nombre exacto del archivo "na na boo boo". El programa debería comportarse normalmente para todos los demás archivos que existen y no existen. Aquí hay una muestra de ejecución del programa:
+**Ejercicio 3** A veces, cuando los programadores se aburren o quieren divertirse un poco, agregan un **Huevo de Pascua** inofensivo a su programa. Modifique el programa que solicita al usuario el nombre del archivo para que imprima un mensaje divertido cuando el el usuario escribe el nombre exacto del archivo "na na boo boo". El programa debería comportarse normalmente para todos los demás archivos que existen y no existen. Aquí hay una muestra de ejecución del programa:
 
 ```python
 python egg.py
@@ -359,4 +369,5 @@ python egg.py
 Enter the file name: na na boo boo
 NA NA BOO BOO TO YOU - You have been punk'd!
 ```
-No lo alentamos a que ponga Huevos de Pascua en sus programas; esto es solo un ejercicio
+
+No te alentamos a que pongas Huevos de Pascua en sus programas; esto es solo un ejercicio

@@ -44,7 +44,7 @@ b
 
 So `b` is the 0th letter ("zero-eth") of "banana", `a` is the 1th letter ("one-eth"), and `n` is the 2th ("two-eth") letter.
 
-![String Indexes](img/banana.svg)
+![String Indexes](../img/banana.svg)
 
 You can use any expression, including variables and operators, as an index, but the value of the index has to be an integer. Otherwise you get:
 

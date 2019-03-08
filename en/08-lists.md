@@ -166,7 +166,7 @@ A slice operator on the left side of an assignment can update multiple elements:
 >>>
 ```
 
-## List methods {#list-methods} 
+## List methods {#list-methods}
 
 Python provides methods that operate on lists. For example, `append` adds a new element to the end of a list:
 
@@ -181,9 +181,9 @@ Python provides methods that operate on lists. For example, `append` adds a new 
 
 ```python
 >>> t = ['a', 'b', 'c']
->>> t.append('d')
+>>> t.extend(['d', 'f'])
 >>> print(t)
-['a', 'b', 'c', 'd']
+['a', 'b', 'c', 'd', 'f']
 ```
 
 This example leaves `t2` unmodified.
@@ -478,8 +478,6 @@ def bad_delete_head(t):
 
 The slice operator creates a new list and the assignment makes `t` refer to it, but none of that has any effect on the list that was passed as an argument.
 
- 
-
 An alternative is to write a function that creates and returns a new list. For example, `tail` returns all but the first element of a list:
 
 ```python
@@ -638,7 +636,7 @@ Try out each of these examples in interactive mode to make sure you understand w
     
     We can think of the two `continue` statements as helping us refine the set of lines which are "interesting" to us and which we want to process some more. A line which has no words is "uninteresting" to us so we skip to the next line. A line which does not have "From" as its first word is uninteresting to us so we skip it.
     
-    The program as modified runs successfully, so perhaps it is correct. Our guardian statement does make sure that the `words[0]` will never fail, but perhaps it is not enough. When we are programming, we must always be thinking, "What might go wrong?"</li>
+    The program as modified runs successfully, so perhaps it is correct. Our guardian statement does make sure that the `words[0]` will never fail, but perhaps it is not enough. When we are programming, we must always be thinking, "What might go wrong?</li>
 
 **Exercise 2**: Figure out which line of the above program is still not properly guarded. See if you can construct a text file which causes the program to fail and then modify the program so that the line is properly guarded and test it to make sure it handles your new text file.
 

@@ -14,6 +14,8 @@
 
 >**info**
 >
+>### Installing Python
+>
 >We will just have to go to the web [https://www.python.org/](https://www.python.org/) and download the installer.
 >
 >The steps vary somewhat between operating systems.

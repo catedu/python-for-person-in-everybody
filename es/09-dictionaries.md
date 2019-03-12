@@ -31,7 +31,7 @@ Este formato de salida es también un formato de entrada. Por ejemplo, puede cre
 >>> print(eng2sp)
 {'one': 'uno', 'three': 'tres', 'two': 'dos'}
 ```
-El orden de los pares clave-valor no es el mismo. De hecho, si escribe el mismo ejemplo en su computadora, puede obtener un resultado diferente. En general, el orden de los elementos en un diccionario es impredecible.
+El orden de los pares clave-valor no es el mismo. De hecho, si escribe el mismo ejemplo en su ordenador, puede obtener un resultado diferente. En general, el orden de los elementos en un diccionario es impredecible.
 
 Pero eso no es un problema porque los elementos de un diccionario nunca se indexan con índices enteros. En su lugar, utiliza las teclas para buscar los valores correspondientes:
 

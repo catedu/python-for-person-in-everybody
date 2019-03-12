@@ -106,7 +106,7 @@ El siguiente paso es comenzar a definir y documentar los "contratos" entre las a
 
 Cuando comenzamos a construir nuestros programas donde la funcionalidad de nuestro programa incluye el acceso a los servicios proporcionados por otros programas, llamamos a este enfoque ** Arquitectura Orientada a Servicios ** o SOA. Un enfoque SOA es uno en el que nuestra aplicación general hace uso de los servicios de otras aplicaciones. Un enfoque que no es SOA es cuando la aplicación es una única aplicación independiente que contiene todo el código necesario para implementar la aplicación.
 
-Vemos muchos ejemplos de SOA cuando usamos la web. Podemos ir a un solo sitio web y reservar viajes aéreos, hoteles y automóviles desde un solo sitio. Los datos de los hoteles no se almacenan en las computadoras de la aerolínea. En su lugar, las computadoras de la línea aérea se ponen en contacto con los servicios de las computadoras del hotel, recuperan los datos del hotel y los presentan al usuario. Cuando el usuario acepta hacer una reserva de hotel utilizando el sitio de la aerolínea, el sitio de la línea aérea utiliza otro servicio web en los sistemas del hotel para realizar la reserva. Y cuando llega el momento de cargar su tarjeta de crédito por toda la transacción, aún otras computadoras se involucran en el proceso.
+Vemos muchos ejemplos de SOA cuando usamos la web. Podemos ir a un solo sitio web y reservar viajes aéreos, hoteles y automóviles desde un solo sitio. Los datos de los hoteles no se almacenan en los ordenadores de la aerolínea. En su lugar, los ordenadores de la línea aérea se ponen en contacto con los servicios de los ordenadores del hotel, recuperan los datos del hotel y los presentan al usuario. Cuando el usuario acepta hacer una reserva de hotel utilizando el sitio de la aerolínea, el sitio de la línea aérea utiliza otro servicio web en los sistemas del hotel para realizar la reserva. Y cuando llega el momento de cargar su tarjeta de crédito por toda la transacción, aún otros ordenadores se involucran en el proceso.
 
 Arquitectura orientada a Servicios
 
@@ -194,7 +194,7 @@ Otras veces, el proveedor desea una mayor seguridad de la fuente de las solicitu
 
 A medida que la API de Twitter se hizo cada vez más valiosa, Twitter pasó de una API abierta y pública a una API que requería el uso de firmas OAuth en cada solicitud de API. Afortunadamente, todavía hay una serie de bibliotecas OAuth convenientes y gratuitas para que pueda evitar escribir una implementación de OAuth desde cero leyendo la especificación. Estas bibliotecas son de complejidad variable y tienen diversos grados de riqueza. El sitio web de OAuth tiene información sobre varias bibliotecas de OAuth.
 
-Para este próximo programa de muestra, descargaremos los archivos ** twurl.py **, ** hidden.py **, ** oauth.py ** y ** twitter1.py ** de [www.py4e.com/ código] (http://www.py4e.com/code3) y póngalos en una carpeta en su computadora.
+Para este próximo programa de muestra, descargaremos los archivos ** twurl.py **, ** hidden.py **, ** oauth.py ** y ** twitter1.py ** de [www.py4e.com/ código] (http://www.py4e.com/code3) y póngalos en una carpeta en su ordenador.
 
 Para utilizar estos programas, necesitará tener una cuenta de Twitter y autorizar su código Python como una aplicación, configurar una clave, un secreto, un token y un token secreto. Editará el archivo ** hidden.py ** y colocará estas cuatro cadenas en las variables apropiadas en el archivo:
 

@@ -17,4 +17,4 @@ Python para Todos es una introducción a los conceptos básicos de la programaci
 - [La web del autor](http://pythonlearn.com) contiene mucha más información sobre el libro, así como PDFs, ebooks y videos descargables.
 - Puedes descargar el contenido de este curso de CATEDU en: [pdf](https://www.gitbook.com/download/pdf/book/catedu/python-for-person-in-everybody), [epub](https://www.gitbook.com/download/epub/book/catedu/python-for-person-in-everybody), [mobi](https://www.gitbook.com/download/mobi/book/catedu/python-for-person-in-everybody).
 
-{% include "git+https://github.com/catedu/robotica.git/README.md" %}
+

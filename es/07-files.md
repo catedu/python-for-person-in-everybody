@@ -117,7 +117,7 @@ From stephen.marquar
 
 En este ejemplo, el contenido completo (todos los 94,626 caracteres) del archivo `mbox-short.txt` se lee directamente en la variable `inp`. Utilizamos el corte de cadena para imprimir los primeros 20 caracteres de los datos de cadena almacenados en `inp`.
 
-Cuando el archivo se lee de esta manera, todos los caracteres, incluidas todas las líneas y los caracteres de nueva línea, son una cadena grande en la variable **inp**. Recuerde que esta forma de la función `abrir 'solo debe usarse si los datos del archivo caben cómodamente en la memoria principal de su computadora.
+Cuando el archivo se lee de esta manera, todos los caracteres, incluidas todas las líneas y los caracteres de nueva línea, son una cadena grande en la variable **inp**. Recuerde que esta forma de la función `abrir 'solo debe usarse si los datos del archivo caben cómodamente en la memoria principal de su ordenador.
 
 Si el archivo es demasiado grande para caber en la memoria principal, debe escribir su programa para leer el archivo en trozos usando un bucle `for` o `while`.
 

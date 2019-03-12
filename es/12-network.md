@@ -257,9 +257,9 @@ A veces desea recuperar un archivo que no sea de texto (o binario), como un arch
 
 El patrón es abrir la URL y usar `read` para descargar todo el contenido del documento en una variable de cadena (` img`) y luego escribir esa información en un archivo local de la siguiente manera:
 
-Este programa lee todos los datos de una sola vez a través de la red y los almacena en la variable `img` en la memoria principal de su computadora, luego abre el archivo` cover.jpg` y escribe los datos en su disco. Esto funcionará si el tamaño del archivo es menor que el tamaño de la memoria de su computadora.
+Este programa lee todos los datos de una sola vez a través de la red y los almacena en la variable `img` en la memoria principal de su ordenador, luego abre el archivo` cover.jpg` y escribe los datos en su disco. Esto funcionará si el tamaño del archivo es menor que el tamaño de la memoria de su ordenador.
 
-Sin embargo, si se trata de un gran archivo de audio o video, este programa puede fallar o, al menos, ejecutarse muy lentamente cuando la computadora se queda sin memoria. Para evitar quedarse sin memoria, recuperamos los datos en bloques (o búferes) y luego escribimos cada bloque en su disco antes de recuperar el siguiente bloque. De esta manera, el programa puede leer archivos de cualquier tamaño sin utilizar toda la memoria que tiene en su computadora.
+Sin embargo, si se trata de un gran archivo de audio o video, este programa puede fallar o, al menos, ejecutarse muy lentamente cuando el ordenador se queda sin memoria. Para evitar quedarse sin memoria, recuperamos los datos en bloques (o búferes) y luego escribimos cada bloque en su disco antes de recuperar el siguiente bloque. De esta manera, el programa puede leer archivos de cualquier tamaño sin utilizar toda la memoria que tiene en su ordenador.
 
 En este ejemplo, leemos solo 100,000 caracteres a la vez y luego escribimos esos caracteres en el archivo `cover.jpg` antes de recuperar los siguientes 100,000 caracteres de datos de la web.
 
@@ -268,7 +268,7 @@ Este programa se ejecuta de la siguiente manera:
 ```python curl2.py
 568248 characters copied.
 ```
-Si tiene una computadora Unix o Macintosh, es probable que tenga un comando integrado en su sistema operativo que realice esta operación de la siguiente manera:
+Si tiene una ordenador Unix o Macintosh, es probable que tenga un comando integrado en su sistema operativo que realice esta operación de la siguiente manera:
 
 
 

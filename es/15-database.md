@@ -4,11 +4,11 @@
 
 
 
-Una ** base de datos ** es un archivo que está organizado para almacenar datos. La mayoría de las bases de datos están organizadas como un diccionario en el sentido de que se asignan de claves a valores. La mayor diferencia es que la base de datos está en el disco (u otro almacenamiento permanente), por lo que persiste después de que finalice el programa. Debido a que una base de datos se almacena en un almacenamiento permanente, puede almacenar muchos más datos que un diccionario, lo que se limita al tamaño de la memoria en la computadora.
+Una ** base de datos ** es un archivo que está organizado para almacenar datos. La mayoría de las bases de datos están organizadas como un diccionario en el sentido de que se asignan de claves a valores. La mayor diferencia es que la base de datos está en el disco (u otro almacenamiento permanente), por lo que persiste después de que finalice el programa. Debido a que una base de datos se almacena en un almacenamiento permanente, puede almacenar muchos más datos que un diccionario, lo que se limita al tamaño de la memoria en el ordenador.
 
 
 
-Al igual que un diccionario, el software de base de datos está diseñado para mantener la inserción y el acceso de datos muy rápido, incluso para grandes cantidades de datos. El software de la base de datos mantiene su rendimiento mediante la creación de índices ** a medida que se agregan datos a la base de datos para permitir que la computadora salte rápidamente a una entrada en particular.
+Al igual que un diccionario, el software de base de datos está diseñado para mantener la inserción y el acceso de datos muy rápido, incluso para grandes cantidades de datos. El software de la base de datos mantiene su rendimiento mediante la creación de índices ** a medida que se agregan datos a la base de datos para permitir que el ordenador salte rápidamente a una entrada en particular.
 
 Hay muchos sistemas de bases de datos diferentes que se utilizan para una amplia variedad de propósitos, incluyendo: Oracle, MySQL, Microsoft SQL Server, PostgreSQL y SQLite. Nos centramos en SQLite en este libro porque es una base de datos muy común y ya está integrada en Python. SQLite está diseñado para ser ** integrado ** en otras aplicaciones para proporcionar soporte de base de datos dentro de la aplicación. Por ejemplo, el navegador Firefox también usa la base de datos SQLite internamente al igual que muchos otros productos.
 
@@ -148,7 +148,7 @@ Comenzaremos por recuperar los amigos de Twitter de una persona y sus estados, r
 
 También hacemos un seguimiento de cuántas veces hemos visto a un amigo en particular en la base de datos para tener una idea de su "popularidad".
 
-Al almacenar nuestra lista de cuentas conocidas y si hemos recuperado la cuenta o no, y cuán popular es la cuenta en una base de datos en el disco de la computadora, podemos detener y reiniciar nuestro programa tantas veces como lo deseemos.
+Al almacenar nuestra lista de cuentas conocidas y si hemos recuperado la cuenta o no, y cuán popular es la cuenta en una base de datos en el disco de el ordenador, podemos detener y reiniciar nuestro programa tantas veces como lo deseemos.
 
 Este programa es un poco complejo. Se basa en el código del ejercicio anterior en el libro que utiliza la API de Twitter.
 
@@ -285,7 +285,7 @@ Como estamos procesando a los 20 amigos del feed de Twitter `drchuck`, insertare
 
 Esta duplicación de datos de cadena viola una de las mejores prácticas para ** la normalización de la base de datos ** que básicamente dice que nunca debemos colocar los mismos datos de cadena en la base de datos más de una vez. Si necesitamos los datos más de una vez, creamos una clave numérica ** para los datos y hacemos referencia a los datos reales utilizando esta clave.
 
-En términos prácticos, una cadena ocupa mucho más espacio que un entero en el disco y en la memoria de nuestra computadora, y toma más tiempo de procesador para comparar y ordenar. Si solo tenemos unos pocos cientos de entradas, el tiempo de almacenamiento y procesador apenas importa. Pero si tenemos un millón de personas en nuestra base de datos y una posibilidad de 100 millones de enlaces de amigos, es importante poder escanear los datos lo más rápido posible.
+En términos prácticos, una cadena ocupa mucho más espacio que un entero en el disco y en la memoria de nuestra ordenador, y toma más tiempo de procesador para comparar y ordenar. Si solo tenemos unos pocos cientos de entradas, el tiempo de almacenamiento y procesador apenas importa. Pero si tenemos un millón de personas en nuestra base de datos y una posibilidad de 100 millones de enlaces de amigos, es importante poder escanear los datos lo más rápido posible.
 
 Almacenaremos nuestras cuentas de Twitter en una tabla llamada `People` en lugar de la tabla` Twitter` utilizada en el ejemplo anterior. La tabla `People` tiene una columna adicional para almacenar la clave numérica asociada a la fila para este usuario de Twitter. SQLite tiene una función que agrega automáticamente el valor clave para cualquier fila que insertamos en una tabla usando un tipo especial de columna de datos (`INTEGER PRIMARY KEY`).
 

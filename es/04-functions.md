@@ -96,7 +96,7 @@ Finalmente, `str` convierte su argumento en una cadena:
 ```
 ## Números aleatorios {#random-numbers}
 
-Dadas las mismas entradas, la mayoría de los programas de computadora generan las mismas salidas cada vez, por lo que se dice que son ** deterministas **. El determinismo suele ser algo bueno, ya que esperamos que el mismo cálculo dé el mismo resultado. Para algunas aplicaciones, sin embargo, queremos que la computadora sea impredecible. Los juegos son un ejemplo obvio, pero hay más.
+Dadas las mismas entradas, la mayoría de los programas de ordenador generan las mismas salidas cada vez, por lo que se dice que son ** deterministas **. El determinismo suele ser algo bueno, ya que esperamos que el mismo cálculo dé el mismo resultado. Para algunas aplicaciones, sin embargo, queremos que el ordenador sea impredecible. Los juegos son un ejemplo obvio, pero hay más.
 
 Hacer que un programa sea realmente no determinista resulta no ser tan fácil, pero hay formas de que al menos parezca no determinista. Uno de ellos es utilizar ** algoritmos ** que generan ** números pseudoaleatorios **. Los números pseudoaleatorios no son realmente aleatorios porque son generados por un cálculo determinista, pero con solo mirar los números es casi imposible distinguirlos de los aleatorios.
 

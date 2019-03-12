@@ -46,7 +46,7 @@ Actualizar una variable agregando 1 se llama **incremento**; restar 1 se llama u
 ## La declaración 'while' {#the-while-statement}
 
 
-Las computadoras se utilizan a menudo para automatizar tareas repetitivas. Repetir tareas idénticas o similares sin cometer errores es algo que a las computadoras les va bien y a las personas les va mal. Debido a que la iteración es tan común, Python proporciona varias características de lenguaje para que sea más fácil.
+Los ordenadores se utilizan a menudo para automatizar tareas repetitivas. Repetir tareas idénticas o similares sin cometer errores es algo que a los ordenadores les va bien y a las personas les va mal. Debido a que la iteración es tan común, Python proporciona varias características de lenguaje para que sea más fácil.
 
 Una forma de iteración en Python es la instrucción `while`. Aquí hay un programa simple que cuenta a partir de cinco y luego dice "¡Explosión!".
 
@@ -92,7 +92,7 @@ while True:
 print('Done!')
 ```
 
-Si comete el error y ejecuta este código, aprenderá rápidamente cómo detener un proceso de Python fuera de control en su sistema o dónde encontrará el botón de apagado en su computadora. Este programa se ejecutará para siempre o hasta que la batería se agote porque la expresión lógica en la parte superior del bucle siempre es verdadera en virtud del hecho de que la expresión es el valor constante "Verdadero".
+Si comete el error y ejecuta este código, aprenderá rápidamente cómo detener un proceso de Python fuera de control en su sistema o dónde encontrará el botón de apagado en su ordenador. Este programa se ejecutará para siempre o hasta que la batería se agote porque la expresión lógica en la parte superior del bucle siempre es verdadera en virtud del hecho de que la expresión es el valor constante "Verdadero".
 
 Si bien este es un bucle infinito disfuncional, aún podemos usar este patrón para crear bucles útiles siempre y cuando agreguemos cuidadosamente el código del cuerpo del bucle para salir explícitamente del bucle usando `break` cuando hayamos alcanzado la condición de salida.
 

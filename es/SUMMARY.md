@@ -7,6 +7,8 @@ ___
 - [2. Variables](02-variables.md)
 - [3. Condicionales](03-conditional.md)
 - [4. Funciones](04-functions.md)
+
+<!--
 - [5. Bucles](05-iterations.md)
 - [6. Cadenas](06-strings.md)
 - [7. Archivos](07-files.md)
@@ -18,6 +20,7 @@ ___
 - [13. Python y servicios web](13-web.md)
 - [14. Objetos](14-objects.md)
 - [15. Python y Bases de Datos](15-database.md)
+-->
 
 ___
 

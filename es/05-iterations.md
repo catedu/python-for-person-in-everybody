@@ -14,9 +14,7 @@
 
 ## Actualizando variables {#updating-variables}
 
-
-
-Un patrón común en las declaraciones de asignación es una instrucción de asignación que actualiza una variable, donde el nuevo valor de la variable depende de la antigua.
+Un patrón común en las asignaciones es una instrucción de asignación que actualiza una variable, donde el nuevo valor de la variable depende de la antigua.
 
 ```python
 python
@@ -32,21 +30,18 @@ Si intentas actualizar una variable que no existe, obtienes un error, porque Pyt
 NameError: name 'x' is not defined
 ```
 
-Antes de poder actualizar una variable, debe **inicializarla**, generalmente con una tarea simple:
+Antes de poder actualizar una variable, debes **inicializarla**:
 
 ```python
 >>> x = 0
 >>> x = x + 1
 ```
 
-Actualizar una variable agregando 1 se llama **incremento**; restar 1 se llama un **decremento**.
-
-
+Actualizar una variable agregando 1 se llama **incrementar**.
 
 ## La declaración 'while' {#the-while-statement}
 
-
-Los ordenadores se utilizan a menudo para automatizar tareas repetitivas. Repetir tareas idénticas o similares sin cometer errores es algo que a los ordenadores les va bien y a las personas les va mal. Debido a que la iteración es tan común, Python proporciona varias características de lenguaje para que sea más fácil.
+Los ordenadores se utilizan a menudo para automatizar tareas repetitivas. Repetir tareas idénticas o similares sin cometer errores es algo que a los ordenadores se les da muy bien y a las personas se les da muy mal. Debido a que la iteración es tan común, Python proporciona varias características de lenguaje para que sea más fácil.
 
 Una forma de iteración en Python es la instrucción `while`. Aquí hay un programa simple que cuenta a partir de cinco y luego dice "¡Explosión!".
 
@@ -58,17 +53,15 @@ while n > 0:
 print('Blastoff!')
 ```
 
-Casi se puede leer la instrucción `while` como si fuera inglés. Significa que "Mientras` n` es mayor que 0, muestra el valor de `n` y luego reduce el valor de `n` en 1. Cuando llegues a 0, sal de la instrucción `while` y muestra la palabra `Blastoff !`"
+Casi se puede leer la instrucción `while` como si fuera inglés. Significa que "Mientras `n` es mayor que 0, muestra el valor de `n` y luego reduce el valor de `n` en 1. Cuando llegues a 0, sal de la instrucción `while` y muestra la palabra `Blastoff !`"
 
+Más formalmente, aquí está el flujo de ejecución para una instrucción `while`:
 
+1. Evalúa la condición, obteniendo "Verdadero" o "Falso".
+1. Si la condición es falsa, salga de la instrucción `while` y continúa con la ejecución en la siguiente instrucción.
+1. Si la condición es verdadera, ejecuta el cuerpo y luego vuelve al paso 1.
 
-Más formalmente, aquí está el flujo de ejecución para una instrucción `while ':
-
-1. Evalúe la condición, obteniendo "Verdadero" o "Falso".
-1. Si la condición es falsa, salga de la instrucción `while` y continúe con la ejecución en la siguiente instrucción.
-1. Si la condición es verdadera, ejecute el cuerpo y luego vuelva al paso 1.
-
-Este tipo de flujo se llama un bucle ** porque el tercer paso vuelve a la parte superior. Cada vez que ejecutamos el cuerpo del bucle llamamos una ** iteración **. Para el bucle anterior, diríamos "tenía cinco iteraciones", lo que significa que el cuerpo del bucle se ejecutó cinco veces.
+Este tipo de flujo se llama un bucle porque el tercer paso vuelve a la parte superior. Cada vuelta del bucle la llamamos una **iteración**. Para el bucle anterior, diríamos que "tenía cinco iteraciones", lo que significa que el cuerpo del bucle se ejecutó cinco veces.
 
 El cuerpo del bucle debe cambiar el valor de una o más variables para que finalmente la condición se vuelva falsa y el bucle finalice. Llamamos a la variable que cambia cada vez que el bucle se ejecuta y controla cuando el bucle termina la **variable de iteración**. Si no hay una variable de iteración, el bucle se repetirá para siempre, dando como resultado un **bucle infinito**.
 
@@ -79,7 +72,7 @@ Una fuente inagotable de diversión para los programadores es la observación de
 En el caso de `countdown`, podemos probar que el bucle termina porque sabemos que el valor de `n` es finito, y podemos ver que el valor de `n` se reduce cada vez que pasa por el bucle, por lo que eventualmente tiene que llegar a 0. Otras veces, un bucle es obviamente infinito porque no tiene ninguna variable de iteración.
 
 ## "Infinite loops" y `break` {#infinite-loops-and-break}
-
+TODO voy por aquí
 A veces no sabes que es hora de terminar un ciclo hasta que llegues a la mitad del cuerpo. En ese caso, puede escribir un bucle infinito a propósito y luego usar la instrucción `break` para saltar fuera del bucle.
 
 Este bucle es obviamente un **bucle infinito** porque la expresión lógica en la instrucción `while` es simplemente la constante lógica` True`:

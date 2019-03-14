@@ -7,9 +7,9 @@ ___
 - [2. Variables](02-variables.md)
 - [3. Conditionals](03-conditional.md)
 - [4. Functions](04-functions.md)
+- [5. Iterations](05-iterations.md)
 
 <!--
-- [5. Iterations](05-iterations.md)
 - [6. Strings](06-strings.md)
 - [7. Files](07-files.md)
 - [8. Lists](08-lists.md)

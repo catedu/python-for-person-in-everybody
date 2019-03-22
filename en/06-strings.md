@@ -254,7 +254,7 @@ capitalize(...)
 >>>
 ```
 
-While the `dir` function lists the methods, and you can use `help` to get some simple documentation on a method, a better source of documentation for string methods would be [https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods).
+While the `dir` function lists the methods, and you can use `help` to get some simple documentation on a method, a better source of documentation for string methods would be [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods).
 
 Calling a **method** is similar to calling a function (it takes arguments and returns a value) but the syntax is different. We call a method by appending the method name to the variable name using the period as a delimiter.
 
@@ -332,7 +332,7 @@ In the last example, the method `lower` is called and then we use `startswith` t
 
 **Exercise 4**:
 
-There is a string method called `count` that is similar to the function in the previous exercise. Read the documentation of this method at [https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods) and write an invocation that counts the number of times the letter a occurs in "banana".
+There is a string method called `count` that is similar to the function in the previous exercise. Read the documentation of this method at [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods) and write an invocation that counts the number of times the letter a occurs in "banana".
 
 ## Parsing strings {#parsing-strings}
 
@@ -362,7 +362,7 @@ We use a version of the `find` method which allows us to specify a position in t
 
 The documentation for the `find` method is available at
 
-[https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods).
+[https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods).
 
 ## Format operator {#format-operator}
 
@@ -410,7 +410,7 @@ In the first example, there aren't enough elements; in the second, the element i
 
 The format operator is powerful, but it can be difficult to use. You can read more about it at
 
-[https://docs.python.org/3.5/library/stdtypes.html#printf-style-string-formatting](https://docs.python.org/3.5/library/stdtypes.html#printf-style-string-formatting).
+[https://docs.python.org/3.7/library/stdtypes.html#printf-style-string-formatting](https://docs.python.org/3.7/library/stdtypes.html#printf-style-string-formatting).
 
 ## Debugging {#debugging}
 
@@ -460,7 +460,7 @@ Use `find` and string slicing to extract the portion of the string after the col
 
 Read the documentation of the string methods at
 
-[https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods)
+[https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods)
 
 You might want to experiment with some of them to make sure you understand how they work. `strip` and `replace` are particularly useful.
 

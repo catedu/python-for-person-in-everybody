@@ -10,7 +10,7 @@
 * [Comparación de cadenas](#string-comparison)
 * [métodos 'de cadena'](#string-methods)
 * [Parseando cadenas](#parsing-strings)
-* [Operador de formato](#parsing-strings)
+* [Operador de formato](#format-operator)
 * [Depuración](#debugging)
 * [Ejercicios](#exercises)
 
@@ -23,9 +23,9 @@ Una cadena es una **secuencia** de caracteres. Puede acceder a los caracteres un
 >>> letter = fruit[1]
 ```
 
-La segunda declaración extrae el carácter en la posición de índice 1 de la variable `fruit` y lo asigna a la variable` letter`.
+La segunda declaración extrae el caracter en la posición de índice 1 de la variable `fruit` y lo asigna a la variable `letter`.
 
-La expresión entre paréntesis se llama un índice ** **. El índice indica qué carácter de la secuencia desea (de ahí el nombre).
+La expresión entre corchetes se llama un índice. El índice indica qué caracter de la secuencia desea.
 
 Pero puede que no consigas lo que esperas:
 
@@ -34,7 +34,7 @@ Pero puede que no consigas lo que esperas:
 a
 ```
 
-Para la mayoría de las personas, la primera letra de "banana" es `b`, no` a`. Pero en Python, el índice es un desplazamiento desde el principio de la cadena, y el desplazamiento de la primera letra es cero.
+Para la mayoría de las personas, la primera letra de "banana" es `b`, no `a`. Pero en Python, el índice es un desplazamiento desde el principio de la cadena, y el índice de la primera letra es cero.
 
 ```python
 >>> letter = fruit[0]
@@ -42,11 +42,11 @@ Para la mayoría de las personas, la primera letra de "banana" es `b`, no` a`. P
 b
 ```
 
-Entonces `b` es la 0ª letra (" zero-eth ") de" banana ", `a` es la 1ª letra ("one-eth"), y `n` es la 2ª letra (" two-eth ") .
+Entonces `b` es la 0ª letra ("zero-eth") de "banana ", `a` es la 1ª letra ("one-eth"), y `n` es la 2ª letra ("two-eth").
 
 ![String Indexes](../img/banana.svg)
 
-Puede usar cualquier expresión, incluidas las variables y los operadores, como un índice, pero el valor del índice debe ser un entero. De lo contrario obtendrá:
+Puedes usar cualquier expresión, incluidas las variables y los operadores, como un índice, pero el valor del índice debe ser un entero. De lo contrario obtendrás:
 
 ```python
 >>> letter = fruit[1.5]
@@ -71,7 +71,7 @@ Para obtener la última letra de una cadena, puedes tener la tentación de proba
 IndexError: string index out of range
 ```
 
-La razón para el `IndexError` es que no hay una letra en `banana` con el índice 6. Desde que comenzamos a contar a cero, las seis letras están numeradas del 0 al 5. Para obtener el último carácter, debes restar 1 de `lenght`:
+La razón para el `IndexError` es que no hay una letra en `banana` con el índice 6. Ya que comenzamos a contar desde cero, las seis letras están numeradas del 0 al 5. Para obtener el último caracter, debes restar 1 de `lenght`:
 
 ```python
 >>> last = fruit[length-1]
@@ -79,11 +79,11 @@ La razón para el `IndexError` es que no hay una letra en `banana` con el índic
 a
 ```
 
-Alternativamente, puede usar índices negativos, que cuentan hacia atrás desde el final de la cadena. La expresión `fruit [-1]` produce la última letra, `fruit [-2]` produce la segunda para durar, y así sucesivamente.
+Alternativamente, puede usar índices negativos, que cuentan hacia atrás desde el final de la cadena. La expresión `fruit[-1]` extrae la última letra, `fruit[-2]` extrae la penúltima, y así sucesivamente.
 
 ## Atravesar una cadena con un bucle {#traversal-through-a-string-with-a-loop}
 
-Una gran cantidad de cálculos implican procesar una cadena de un carácter a la vez. A menudo comienzan al principio, seleccionan cada personaje por turno, le hacen algo y continúan hasta el final. Este patrón de procesamiento se denomina **transversal**. Una forma de escribir un recorrido es con un bucle `while`:
+Muchos algoritmos implican procesar una cadena, caracter a caracter. A menudo comienzan al principio, seleccionan un caracter por iteración, le hacen algo y continúan hasta el final. Este patrón de procesamiento se denomina **recorrido**. Una forma de escribir un recorrido es con un bucle `while`:
 
 ```python
 index = 0
@@ -93,9 +93,9 @@ while index < len(fruit):
     index = index + 1
 ```
 
-Este bucle atraviesa la cadena y muestra cada letra en una línea por sí misma. La condición del bucle es `index \< len(fruit)`, por lo que cuando `index` es igual a la longitud de la cadena, la condición es falsa, y el cuerpo del bucle no se ejecuta. El último carácter accedido es el que tiene el índice `len (fruit) -1`, que es el último carácter de la cadena.
+Este bucle atraviesa la cadena y muestra cada letra en una línea separada. La condición del bucle es `index < len(fruit)`, por lo que cuando `index` es igual a la longitud de la cadena, la condición es falsa, y el cuerpo del bucle no se ejecuta. El último caracter accedido es el que tiene el índice `len(fruit)-1`, que es el último caracter de la cadena.
 
-**Ejercicio 1** escriba un bucle `while` que comience en el último carácter de la cadena y avance hacia el primer carácter de la cadena, imprimiendo cada letra en una línea separada, excepto al revés.
+**Ejercicio 1** escribe un bucle `while` que comience en el último caracter de la cadena y avance hacia el primer caracter de la cadena, imprimiendo cada letra en una línea separada.
 
 Otra forma de escribir un recorrido es con un bucle `for`:
 
@@ -104,11 +104,11 @@ for char in fruit:
     print(char)
 ```
 
-Cada vez que pasa por el bucle, el siguiente carácter de la cadena se asigna a la variable `char`. El bucle continúa hasta que no quedan caracteres.
+Cada vez que pasa por el bucle, el siguiente caracter de la cadena se asigna a la variable `char`. El bucle continúa hasta que no quedan caracteres.
 
-## String slices {#string-slices}
+## String slices (segmentando cadenas) {#string-slices}
 
-Un segmento de una cadena se llama **segmento**. Seleccionar una división es similar a seleccionar un personaje:
+Un trozo de una cadena se llama **segmento**. Seleccionar segmento es similar a seleccionar un caracter:
 
 ```python
 >>> s = 'Monty Python'
@@ -118,9 +118,9 @@ Monty
 Python
 ```
 
-El operador devuelve la parte de la cadena del carácter "n-eth" al carácter "m-eth", incluido el primero pero excluyendo el último.
+El operador devuelve el segmento desde el caracter "n-eth" al caracter "m-eth", incluido el primero pero excluyendo el último.
 
-Si omite el primer índice (antes de los dos puntos), el segmento comienza al principio de la cadena. Si omite el segundo índice, la división va al final de la cadena:
+Si omites el primer índice (antes de los dos puntos), el segmento comienza al principio de la cadena. Si omites el segundo índice, la segmento llega hasta el final de la cadena:
 
 ```python
 >>> fruit = 'banana'
@@ -130,7 +130,7 @@ Si omite el primer índice (antes de los dos puntos), el segmento comienza al pr
 'ana'
 ```
 
-Si el primer índice es mayor o igual que el segundo, el resultado es una ** cadena vacía **, representada por dos comillas:
+Si el primer índice es mayor o igual que el segundo, el resultado es una **cadena vacía**, representada por dos comillas:
 
 ```python
 >>> fruit = 'banana'
@@ -140,11 +140,11 @@ Si el primer índice es mayor o igual que el segundo, el resultado es una ** cad
 
 Una cadena vacía no contiene caracteres y tiene una longitud de 0, pero aparte de eso, es la misma que cualquier otra cadena.
 
-**Ejercicio 2**: Dado que `fruit` es una cadena, ¿qué significa `fruit [:]`?
+**Ejercicio 2**: Dado que `fruit` es una cadena, ¿qué significa `fruit[:]`?
 
 ## Las cadenas son inmutables {#strings-are-immutable}
 
-Es tentador utilizar el operador en el lado izquierdo de una tarea, con la intención de cambiar un carácter en una cadena. Por ejemplo:
+Es tentador utilizar el operador en el lado izquierdo de una tarea, con la intención de cambiar un caracter en una cadena. Por ejemplo:
 
 ```python
 >>> greeting = 'Hello, world!'
@@ -152,7 +152,7 @@ Es tentador utilizar el operador en el lado izquierdo de una tarea, con la inten
 TypeError: 'str' object does not support item assignment
 ```
 
-El "objeto" en este caso es la cadena y el "elemento" es el carácter que intentó asignar. Por ahora, un **objeto** es lo mismo que un valor, pero refinaremos esa definición más adelante. Un **artículo** es uno de los valores en una secuencia.
+El "objeto" en este caso es la cadena y el "elemento" es el caracter que intentó asignar. Por ahora, un **objeto** es lo mismo que un valor, pero refinaremos esa definición más adelante. Un **elemento** es uno de los valores en una secuencia.
 
 El motivo del error es que las cadenas son **inmutables**, lo que significa que no puede cambiar una cadena existente. Lo mejor que puedes hacer es crear una nueva cadena que sea una variación del original:
 
@@ -163,7 +163,7 @@ El motivo del error es que las cadenas son **inmutables**, lo que significa que 
 Jello, world!
 ```
 
-Este ejemplo concatena una nueva primera letra en una porción de "saludo". No tiene efecto en la cadena original.
+Este ejemplo concatena una nueva primera letra en una porción de "greeting". No tiene efecto en la cadena original.
 
 ## Bucles y conteos {#looping-and-counting}
 
@@ -178,15 +178,15 @@ for letter in word:
 print(count)
 ```
 
-Este programa demuestra otro patrón de cálculo llamado **contador**. La variable `count` se inicializa a 0 y luego se incrementa cada vez que se encuentra un `a`. Cuando el bucle sale, `count` contiene el resultado: el número total de `a`'s.
+Este programa demuestra otro algoritmo llamado **contador**. La variable `count` se inicializa a 0 y luego se incrementa cada vez que se encuentra un `a`. Cuando el bucle sale, `count` contiene el resultado: el número total de `a`s.
 
 **Ejercicio 3**
 
-Encapsule este código en una función llamada `count`, y generalícelo para que acepte la cadena y la letra como argumentos.
+Encapsula este código en una función llamada `count`, y generalízalo para que acepte la cadena y la letra como argumentos.
 
 ## El operador `in` {#the-in-operator}
 
-La palabra `in` es un operador booleano que toma dos cadenas y devuelve` True` si la primera aparece como una subcadena en la segunda:
+La palabra `in` es un operador booleano que toma dos cadenas y devuelve `True` si la primera aparece como una subcadena en la segunda:
 
 ```python
 >>> 'a' in 'banana'
@@ -197,7 +197,7 @@ False
 
 ## Comparación de cadenas {#string-comparison}
 
-Los operadores de comparación trabajan en cadenas. Para ver si dos cuerdas son iguales:
+Los operadores de comparación trabajan en cadenas. Para ver si dos cadenas son iguales:
 
 ```python
 if word == 'banana':
@@ -225,7 +225,7 @@ Una forma común de abordar este problema es convertir las cadenas a un formato 
 
 ## métodos 'de cadena' {#string-methods}
 
-Las cadenas son un ejemplo de objetos de Python. Un objeto contiene tanto datos (la propia cadena real) como **métodos**, que son efectivamente funciones que están integradas en el objeto y están disponibles para cualquier **instancia** del objeto.
+Las cadenas son un ejemplo de objetos de Python. Un objeto contiene tanto datos (la propia cadena real) como **métodos**, que son efectivamente funciones que están integradas en el objeto y están disponibles para cualquier **instancia** (copia) del objeto.
 
 Python tiene una función llamada `dir` que lista los métodos disponibles para un objeto. La función `type` muestra el tipo de un objeto y la función `dir` muestra los métodos disponibles.
 
@@ -254,9 +254,9 @@ capitalize(...)
 >>>
 ```
 
-Mientras que la función `dir` enumera los métodos, y usted puede usar `help` para obtener alguna documentación simple sobre un método, una mejor fuente de documentación para los métodos de cadena sería [https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods).
+Mientras que la función `dir` enumera los métodos, y puedes usar `help` para obtener alguna documentación simple sobre un método, una mejor fuente de documentación para los métodos de cadena sería [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods).
 
-Llamar a un **método** es similar a llamar a una función (toma argumentos y devuelve un valor) pero la sintaxis es diferente. Llamamos a un método agregando el nombre del método al nombre de la variable utilizando el período como delimitador.
+Llamar a un **método** es similar a llamar a una función (toma argumentos y devuelve un valor) pero la sintaxis es diferente. Llamamos a un método agregando el nombre del método al nombre de la variable utilizando el punto como delimitador.
 
 Por ejemplo, el método `upper` toma una cadena y devuelve una nueva cadena con todas las letras en mayúsculas:
 
@@ -269,7 +269,7 @@ En lugar de la sintaxis de la función `upper(word)`, utiliza la sintaxis del m�
 BANANA
 ```
 
-Esta forma de notación de puntos especifica el nombre del método, `upper`, y el nombre de la cadena para aplicar el método a, `word`. Los paréntesis vacíos indican que este método no toma ningún argumento.
+Esta forma de notación de puntos especifica el nombre del método, `upper`, y la cadena a la que aplicar el método. Los paréntesis vacíos indican que este método no toma ningún argumento.
 
 Una llamada al método se llama **invocación**; en este caso, diríamos que estamos invocando `upper` en `word`.
 
@@ -298,7 +298,7 @@ Puede tomar como segundo argumento el índice donde debe comenzar:
 4
 ```
 
-Una tarea común es eliminar los espacios en blanco (espacios, pestañas o nuevas líneas) desde el principio y el final de una cadena usando el método `strip`:
+Una tarea común es eliminar los espacios en blanco (espacios, tabuladores o nuevas líneas) desde el principio y el final de una cadena usando el método `strip`:
 
 ```python
 >>> line = '  Here we go  '
@@ -316,7 +316,7 @@ True
 False
 ```
 
-Notará que `startswith` requiere mayúsculas y minúsculas, por lo que a veces tomamos una línea y las mapeamos en minúsculas antes de realizar cualquier comprobación utilizando el método `lower`.
+Notarás que `startswith` requiere mayúsculas y minúsculas, por lo que a veces tomamos una línea y las mapeamos en minúsculas antes de realizar cualquier comprobación utilizando el método `lower`.
 
 ```python
 >>> line = 'Have a nice day'
@@ -332,7 +332,7 @@ En el último ejemplo, se llama al método `lower` y luego usamos `startswith` p
 
 **Ejercicio 4**
 
-Existe un método de cadena llamado `count` que es similar a la función en el ejercicio anterior. Lea la documentación de este método en [https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods) y escriba una invocación que cuente el número de veces que aparece la letra a en "banana".
+Existe un método de cadena llamado `count` que es similar a la función en el ejercicio anterior. Lee la documentación de este método en [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods) y escribe una invocación que cuente el número de veces que aparece la letra a en "banana".
 
 ## Parseando cadenas {#parsing-strings}
 
@@ -340,7 +340,7 @@ A menudo, queremos buscar en una cadena y encontrar una subcadena. Por ejemplo, 
 
 `From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008`
 
-y queríamos extraer solo la segunda mitad de la dirección (es decir, `uct.ac.za`) de cada línea, podemos hacerlo usando el método `find` y el corte de cadena.
+y quisiéramos extraer solo la segunda mitad de la dirección (es decir, `uct.ac.za`) de cada línea, podemos hacerlo usando el método `find` y el corte de cadena.
 
 Primero, encontraremos la posición del signo en la cadena. Luego encontraremos la posición del primer espacio **después de** el signo de entrada. Y luego usaremos el corte de cadena para extraer la parte de la cadena que estamos buscando.
 
@@ -358,21 +358,17 @@ uct.ac.za
 >>>
 ```
 
-Usamos una versión del método `find` que nos permite especificar una posición en la cadena donde queremos que `find` comience a buscar. Cuando cortamos, extraemos los caracteres de "uno más allá del signo de entrada hasta **pero sin incluir** el carácter de espacio".
+Usamos una versión del método `find` que nos permite especificar una posición en la cadena donde queremos que `find` comience a buscar. Cuando cortamos, extraemos los caracteres de "uno más allá del signo de entrada hasta **pero sin incluir** el caracter de espacio".
 
-La documentación para el método `find` está disponible en
+La documentación para el método `find` está disponible en [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods).
 
-[https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods).
-
-## Operador de formato {#parsing-strings}
+## Operador de formato {#format-operator}
 
 El operador de formato, `%` nos permite construir cadenas, reemplazando partes de las cadenas con los datos almacenados en variables. Cuando se aplica a enteros, `%` es el operador de módulo. Pero cuando el primer operando es una cadena, `%` es el operador de formato.
 
+El primer operando es la **cadena de formato**, que contiene una o más **secuencias de formato** que especifican cómo se formatea el segundo operando. El resultado es una cadena.
 
-
-El primer operando es la ** cadena de formato **, que contiene una o más ** secuencias de formato ** que especifican cómo se formatea el segundo operando. El resultado es una cadena.
-
-Por ejemplo, la secuencia de formato "% d" significa que el segundo operando debe formatearse como un entero ("d" significa "decimal"):
+Por ejemplo, la secuencia de formato "%d" significa que el segundo operando debe formatearse como un entero ("d" significa "dígito"):
 
 ```python
 >>> camels = 42
@@ -392,7 +388,7 @@ Una secuencia de formato puede aparecer en cualquier parte de la cadena, por lo 
 
 Si hay más de una secuencia de formato en la cadena, el segundo argumento debe ser una tupla [^1]. Cada secuencia de formato se empareja con un elemento de la tupla, en orden.
 
-El siguiente ejemplo utiliza "% d" para formatear un número entero, "% g" para formatear un número de punto flotante (no pregunte por qué) y "% s" para formatear una cadena:
+El siguiente ejemplo utiliza "%d" para formatear un número entero, "%g" para formatear un número de punto flotante (no pregunte por qué) y "%s" para formatear una cadena:
 
 ```python
 >>> 'In %d years I have spotted %g %s.' % (3, 0.1, 'camels')
@@ -412,13 +408,13 @@ En el primer ejemplo, no hay suficientes elementos; en el segundo, el elemento e
 
 El operador de formato es poderoso, pero puede ser difícil de usar. Puedes leer más sobre esto en
 
-[https://docs.python.org/3.5/library/stdtypes.html#printf-style-string-formatting](https://docs.python.org/3.5/library/stdtypes.html#printf-style-string-formatting).
+[https://docs.python.org/3.7/library/stdtypes.html#printf-style-string-formatting](https://docs.python.org/3.7/library/stdtypes.html#printf-style-string-formatting).
 
 ## Depuración {#debugging}
 
 Una habilidad que deberías cultivar a medida que programas siempre es preguntarte: "¿Qué podría salir mal aquí?" o alternativamente, "¿Qué locura podría hacer nuestro usuario para bloquear nuestro programa (aparentemente) perfecto?"
 
-Por ejemplo, mire el programa que usamos para demostrar el bucle `while` en el capítulo sobre iteración:
+Por ejemplo, mira el programa que usamos para demostrar el bucle `while` en el capítulo sobre iteración:
 
 <iframe src="https://trinket.io/embed/python3/406b93ae34" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -437,7 +433,7 @@ Traceback (most recent call last):
 IndexError: string index out of range
 ```
 
-El código funciona bien hasta que se presenta una línea vacía. Entonces no hay cero caracteres, por lo que obtenemos un rastreo. Existen dos soluciones para hacer que la línea tres sea "segura" incluso si la línea está vacía.
+El código funciona bien hasta que se presenta una línea vacía. Entonces no hay caracter `0`, por lo que obtenemos un error. Existen dos soluciones para hacer que la línea tres sea "segura" incluso si la línea está vacía.
 
 Una posibilidad es simplemente usar el método `startswith` que devuelve `False` si la cadena está vacía.
 
@@ -445,8 +441,7 @@ Una posibilidad es simplemente usar el método `startswith` que devuelve `False`
     if line.startswith('#'):
 ```
 
-
-Otra forma es escribir de forma segura la instrucción `if` utilizando el patrón ** guardian ** y asegurarse de que la segunda expresión lógica se evalúa solo cuando hay al menos un carácter en la cadena:
+Otra forma es escribir de forma segura la instrucción `if` utilizando el patrón **guardian** y asegurarse de que la segunda expresión lógica se evalúa solo cuando hay al menos un caracter en la cadena:
 
 ```python
     if len(line) > 0 and line[0] == '#':
@@ -454,21 +449,21 @@ Otra forma es escribir de forma segura la instrucción `if` utilizando el patró
 
 ## Ejercicios {#exercises}
 
-**Ejercicio 5** tome el siguiente código de Python que almacena una cadena: `
+**Ejercicio 5** toma el siguiente código de Python que almacena una cadena: `
 
 `str = 'X-DSPAM-Confidence: 0.8475'`
 
-Use `find` y el corte de cadena para extraer la parte de la cadena después del carácter de dos puntos y luego use la función` float` para convertir la cadena extraída en un número de punto flotante.
+Usa `find` y el corte de cadena para extraer la parte de la cadena después del caracter de dos puntos y luego use la función `float` para convertir la cadena extraída en un número de punto flotante.
 
 **Ejercicio 6**
 
-Lea la documentación de los métodos de cadena en
+Lee la documentación de los métodos de cadena en
 
-[https://docs.python.org/3.5/library/stdtypes.html#string-methods](https://docs.python.org/3.5/library/stdtypes.html#string-methods)
+[https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods)
 
-Es posible que desee experimentar con algunos de ellos para asegurarse de que comprende cómo funcionan. `strip` y `replace` son particularmente útiles.
+Es posible que desees experimentar con algunos de ellos para asegurarte de que comprendes cómo funcionan. `strip` y `replace` son particularmente útiles.
 
-La documentación utiliza una sintaxis que puede ser confusa. Por ejemplo, en `find (sub [, start [, end]])`, los corchetes indican argumentos opcionales. Entonces se requiere `sub`, pero `start` es opcional, y si incluye `start`, entonces` end` es opcional.
+La documentación utiliza una sintaxis que puede ser confusa. Por ejemplo, en `find (sub [, start [, end]])`, los corchetes indican argumentos opcionales. Entonces se requiere `sub`, pero `start` es opcional, y si incluye `start`, entonces `end` es opcional.
 
 ---
 

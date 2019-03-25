@@ -127,8 +127,8 @@ Similarly, the operator repeats a list a given number of times:
 
 ```python
 >>> [0] * 4
->>> [1, 2, 3] * 3
 [0, 0, 0, 0]
+>>> [1, 2, 3] * 3
 [1, 2, 3, 1, 2, 3, 1, 2, 3]
 >>>
 ```
@@ -140,10 +140,13 @@ The first example repeats four times. The second example repeats the list three 
 The slice operator also works on lists:
 
 ```python
->>> [0] * 4
->>> [1, 2, 3] * 3
-[0, 0, 0, 0]
-[1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> t = ['a', 'b', 'c', 'd', 'e', 'f']
+>>> t[1:3]
+['b', 'c']
+>>> t[:4]
+['a', 'b', 'c', 'd']
+>>> t[3:]
+['d', 'e', 'f']
 >>>
 ```
 
@@ -516,7 +519,7 @@ Careless use of lists (and other mutable objects) can lead to long hours of debu
  
     Because `sort` returns `None`, the next operation you perform with `t` is likely to fail.
 
-    Before using list methods and operators, you should read the documentation carefully and then test them in interactive mode. The methods and operators that lists share with other sequences (like strings) are documented at [https://docs.python.org/2/library/stdtypes.html#string-methods](https://docs.python.org/2/library/stdtypes.html#string-methods). The methods and operators that only apply to mutable sequences are documented at [https://docs.python.org/2/library/stdtypes.html#mutable-sequence-types](https://docs.python.org/2/library/stdtypes.html#mutable-sequence-types).
+    Before using list methods and operators, you should read the documentation carefully and then test them in interactive mode. The methods and operators that lists share with other sequences (like strings) are documented at [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods). The methods and operators that only apply to mutable sequences are documented at [https://docs.python.org/3.7/library/stdtypes.html#mutable-sequence-types](https://docs.python.org/3.7/library/stdtypes.html#mutable-sequence-types).
 
 2. Pick an idiom and stick with it.
 

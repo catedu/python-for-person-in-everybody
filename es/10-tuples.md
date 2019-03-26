@@ -1,4 +1,3 @@
-# Tuples {#tuples}
 # Tuplas {# tuplas}
 
 ## Las tuplas son inmutables {#tuples-are-immutable}

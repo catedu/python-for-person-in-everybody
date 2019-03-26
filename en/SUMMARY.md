@@ -11,10 +11,10 @@ ___
 - [6. Strings](06-strings.md)
 - [7. Files](07-files.md)
 - [8. Lists](08-lists.md)
-
-<!--
 - [9. Dictionaries](09-dictionaries.md)
 - [10. Tuples](10-tuples.md)
+
+<!--
 - [11. Regex](11-regex.md)
 - [12. Networked Programs](12-network.md)
 - [13. Python and Web Services](13-web.md)

@@ -1,8 +1,11 @@
-# [Dictionaries](#dictionaries)
+# Dictionaries {#dictionaries}
 
- 
-
- 
+* [Dictionary as a set of counters](#dictionary-as-a-set-of-counters)
+* [Dictionaries and files](#dictionaries-and-files)
+* [Looping and dictionaries](#looping-and-dictionaries)
+* [Advanced text parsing](#advanced-text-parsing)
+* [Debugging](#debugging)
+* [Exercises](#exercises)
 
 A **dictionary** is like a list, but more general. In a list, the index positions have to be integers; in a dictionary, the indices can be (almost) any type.
 
@@ -12,26 +15,28 @@ As an example, we'll build a dictionary that maps from English to Spanish words,
 
 The function `dict` creates a new dictionary with no items. Because `dict` is the name of a built-in function, you should avoid using it as a variable name.
 
- 
+```python
+named_variable = dict()
+# you also can create one as follows
+named_variable_2 = {}
+```
 
 The curly brackets, `{}`, represent an empty dictionary. To add items to the dictionary, you can use square brackets:
 
- 
-
-```
+```python
 >>> eng2sp['one'] = 'uno'
 ```
 
 This line creates an item that maps from the key `'one'` to the value "uno". If we print the dictionary again, we see a key-value pair with a colon between the key and value:
 
-```
+```python
 >>> print(eng2sp)
 {'one': 'uno'}
 ```
 
 This output format is also an input format. For example, you can create a new dictionary with three items. But if you print `eng2sp`, you might be surprised:
 
-```
+```python
 >>> eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
 >>> print(eng2sp)
 {'one': 'uno', 'three': 'tres', 'two': 'dos'}
@@ -41,7 +46,7 @@ The order of the key-value pairs is not the same. In fact, if you type the same 
 
 But that's not a problem because the elements of a dictionary are never indexed with integer indices. Instead, you use the keys to look up the corresponding values:
 
-```
+```python
 >>> print(eng2sp['two'])
 'dos'
 ```
@@ -50,18 +55,14 @@ The key `'two'` always maps to the value "dos" so the order of the items doesn't
 
 If the key isn't in the dictionary, you get an exception:
 
- 
-
-```
+```python
 >>> print(eng2sp['four'])
 KeyError: 'four'
 ```
 
 The `len` function works on dictionaries; it returns the number of key-value pairs:
 
- 
-
-```
+```python
 >>> len(eng2sp)
 3
 ```
@@ -70,7 +71,7 @@ The `in` operator works on dictionaries; it tells you whether something appears 
 
  
 
-```
+```python
 >>> 'one' in eng2sp
 True
 >>> 'uno' in eng2sp
@@ -79,27 +80,18 @@ False
 
 To see whether something appears as a value in a dictionary, you can use the method `values`, which returns the values as a list, and then use the `in` operator:
 
- 
-
-```
->>> vals = list(eng2sp.values())
->>> 'uno' in vals
+```python
+>>> 'uno' in eng2sp.values()
 True
 ```
 
 The `in` operator uses different algorithms for lists and dictionaries. For lists, it uses a linear search algorithm. As the list gets longer, the search time gets longer in direct proportion to the length of the list. For dictionaries, Python uses an algorithm called a **hash table** that has a remarkable property: the `in` operator takes about the same amount of time no matter how many items there are in a dictionary. I won't explain why hash functions are so magical, but you can read more about it at [wikipedia.org/wiki/Hash_table](wikipedia.org/wiki/Hash_table).
 
-
-
 **Exercise 1**: [wordlist2]
-
- 
 
 Write a program that reads the words in `words.txt` and stores them as keys in a dictionary. It doesn't matter what the values are. Then you can use the `in` operator as a fast way to check whether a string is in the dictionary.
 
-## [Dictionary as a set of counters](#dictionary-as-a-set-of-counters)
-
-
+## Dictionary as a set of counters {#dictionary-as-a-set-of-counters}
 
 Suppose you are given a string and you want to count how many times each letter appears. There are several ways you could do it:
 
@@ -109,35 +101,46 @@ Suppose you are given a string and you want to count how many times each letter 
 
 Each of these options performs the same computation, but each of them implements that computation in a different way.
 
-
-
 An **implementation** is a way of performing a computation; some implementations are better than others. For example, an advantage of the dictionary implementation is that we don't have to know ahead of time which letters appear in the string and we only have to make room for the letters that do appear.
 
 Here is what the code might look like:
 
-We are effectively computing a **histogram**, which is a statistical term for a set of counters (or frequencies).
+```python
+word = 'brontosaurus'
+d = {}
+for c in word:
+  if c not in d:
+    d[c] = 1
+  else:
+    d[c] = d[c] + 1
+print(d)
+```
 
- 
+We are effectively computing a **histogram**, which is a statistical term for a set of counters (or frequencies).
 
 The `for` loop traverses the string. Each time through the loop, if the character `c` is not in the dictionary, we create a new item with key `c` and the initial value 1 (since we have seen this letter once). If `c` is already in the dictionary we increment `d[c]`.
 
-
-
 Here's the output of the program:
 
-```
+```python
 {'a': 1, 'b': 1, 'o': 2, 'n': 1, 's': 2, 'r': 2, 'u': 2, 't': 1}
 ```
 
 The histogram indicates that the letters `'a'` and "b" appear once; "o" appears twice, and so on.
 
- 
-
 Dictionaries have a method called `get` that takes a key and a default value. If the key appears in the dictionary, `get` returns the corresponding value; otherwise it returns the default value. For example:
+
+```python
+>>> counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+>>> print(counts.get('jan', 0))
+100
+>>> print(counts.get('tim', 0))
+0
+```
 
 We can use `get` to write our histogram loop more concisely. Because the `get` method automatically handles the case where a key is not in a dictionary, we can reduce four lines down to one and eliminate the `if` statement.
 
-```
+```python
 word = 'brontosaurus'
 d = dict()
 for c in word:
@@ -147,15 +150,13 @@ print(d)
 
 The use of the `get` method to simplify this counting loop ends up being a very commonly used "idiom" in Python and we will use it many times in the rest of the book. So you should take a moment and compare the loop using the `if` statement and `in` operator with the loop using the `get` method. They do exactly the same thing, but one is more succinct.
 
-
-
-## [Dictionaries and files](#dictionaries-and-files)
+## Dictionaries and files {#dictionaries-and-files}
 
 One of the common uses of a dictionary is to count the occurrence of words in a file with some written text. Let's start with a very simple file of words taken from the text of **Romeo and Juliet**.
 
 For the first set of examples, we will use a shortened and simplified version of the text with no punctuation. Later we will work with the text of the scene with punctuation included.
 
-```
+```txt
 But soft what light through yonder window breaks
 It is the east and Juliet is the sun
 Arise fair sun and kill the envious moon
@@ -164,19 +165,17 @@ Who is already sick and pale with grief
 
 We will write a Python program to read through the lines of the file, break each line into a list of words, and then loop through each of the words in the line and count each word using a dictionary.
 
- 
-
 You will see that we have two `for` loops. The outer loop is reading the lines of the file and the inner loop is iterating through each of the words on that particular line. This is an example of a pattern called **nested loops** because one of the loops is the **outer** loop and the other loop is the **inner** loop.
 
 Because the inner loop executes all of its iterations each time the outer loop makes a single iteration, we think of the inner loop as iterating "more quickly" and the outer loop as iterating more slowly.
 
-
-
 The combination of the two nested loops ensures that we will count every word on every line of the input file.
+
+<iframe src="https://trinket.io/embed/python3/17a4334148" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 When we run the program, we see a raw dump of all of the counts in unsorted hash order. (the `romeo.txt` file is available at [www.py4e.com/code3/romeo.txt](http://www.py4e.com/code3/romeo.txt))
 
-```
+```python
 python count1.py
 Enter the file name: romeo.txt
 {'and': 3, 'envious': 1, 'already': 1, 'fair': 1,
@@ -189,13 +188,11 @@ Enter the file name: romeo.txt
 
 It is a bit inconvenient to look through the dictionary to find the most common words and their counts, so we need to add some more Python code to get us the output that will be more helpful.
 
-## [Looping and dictionaries](#looping-and-dictionaries)
-
- 
+## Looping and dictionaries {#looping-and-dictionaries}
 
 If you use a dictionary as the sequence in a `for` statement, it traverses the keys of the dictionary. This loop prints each key and the corresponding value:
 
-```
+```python
 counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
 for key in counts:
     print(key, counts[key])
@@ -203,7 +200,7 @@ for key in counts:
 
 Here's what the output looks like:
 
-```
+```txt
 jan 100
 chuck 1
 annie 42
@@ -211,11 +208,9 @@ annie 42
 
 Again, the keys are in no particular order.
 
-
-
 We can use this pattern to implement the various loop idioms that we have described earlier. For example if we wanted to find all the entries in a dictionary with a value above ten, we could write the following code:
 
-```
+```python
 counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
 for key in counts:
     if counts[key] > 10 :
@@ -224,18 +219,16 @@ for key in counts:
 
 The `for` loop iterates through the **keys** of the dictionary, so we must use the index operator to retrieve the corresponding **value** for each key. Here's what the output looks like:
 
-```
+```python
 jan 100
 annie 42
 ```
 
 We see only the entries with a value above 10.
 
- 
-
 If you want to print the keys in alphabetical order, you first make a list of the keys in the dictionary using the `keys` method available in dictionary objects, and then sort that list and loop through the sorted list, looking up each key and printing out key-value pairs in sorted order as follows:
 
-```
+```python
 counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
 lst = list(counts.keys())
 print(lst)
@@ -246,7 +239,7 @@ for key in lst:
 
 Here's what the output looks like:
 
-```
+```python
 ['jan', 'chuck', 'annie']
 annie 42
 chuck 1
@@ -255,13 +248,11 @@ jan 100
 
 First you see the list of keys in unsorted order that we get from the `keys` method. Then we see the key-value pairs in order from the `for` loop.
 
-## [Advanced text parsing](#advanced-text-parsing)
-
-
+## Advanced text parsing {#advanced-text-parsing}
 
 In the above example using the file `romeo.txt`, we made the file as simple as possible by removing all punctuation by hand. The actual text has lots of punctuation, as shown below.
 
-```
+```python
 But, soft! what light through yonder window breaks?
 It is the east, and Juliet is the sun.
 Arise, fair sun, and kill the envious moon,
@@ -280,7 +271,7 @@ We can solve both these problems by using the string methods `lower`, `punctuati
 
 We will not specify the `table` but we will use the `deletechars` parameter to delete all of the punctuation. We will even let Python tell us the list of characters that it considers "punctuation":
 
-```
+```python
 >>> import string
 >>> string.punctuation
 '!"#$%&amp;\'()*+,-./:;<=>?@[\\]^_`{|}~'
@@ -290,11 +281,13 @@ The parameters used by `translate` were different in Python 2.0.
 
 We make the following modifications to our program:
 
+<iframe src="https://trinket.io/embed/python3/25874ef3fd" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 Part of learning the "Art of Python" or "Thinking Pythonically" is realizing that Python often has built-in capabilities for many common data analysis problems. Over time, you will see enough example code and read enough of the documentation to know where to look to see if someone has already written something that makes your job much easier.
 
 The following is an abbreviated version of the output:
 
-```
+```python
 Enter the file name: romeo-full.txt
 {'swearst': 1, 'all': 6, 'afeard': 1, 'leave': 2, 'these': 2,
 'kinsmen': 2, 'what': 11, 'thinkst': 1, 'love': 24, 'cloak': 1,
@@ -305,67 +298,43 @@ a': 24, 'orchard': 2, 'light': 5, 'lovers': 2, 'romeo': 40,
 
 Looking through this output is still unwieldy and we can use Python to give us exactly what we are looking for, but to do so, we need to learn about Python **tuples**. We will pick up this example once we learn about tuples.
 
-## [Debugging](#debugging)
-
-
+## Debugging {#debugging}
 
 As you work with bigger datasets it can become unwieldy to debug by printing and checking data by hand. Here are some suggestions for debugging large datasets:
+
+**Scale down the input**
 
 If possible, reduce the size of the dataset. For example if the program reads a text file, start with just the first 10 lines, or with the smallest example you can find. You can either edit the files themselves, or (better) modify the program so it reads only the first `n` lines.
 
 If there is an error, you can reduce `n` to the smallest value that manifests the error, and then increase it gradually as you find and correct errors.
 
+**Check summaries and types**
+
 Instead of printing and checking the entire dataset, consider printing summaries of the data: for example, the number of items in a dictionary or the total of a list of numbers.
 
 A common cause of runtime errors is a value that is not the right type. For debugging this kind of error, it is often enough to print the type of a value.
 
- 
+Another kind of check compares the results of two different computations to see if they are consistent. This is called a "consistency check".
 
-```
-Another kind of check compares the results of two different
-computations to see if they are consistent. This is called a
-"consistency check".
-```
+**Pretty print the output**
+
+Formatting debugging output can make it easier to spot an error.
 
 Again, time you spend building scaffolding can reduce the time you spend debugging. 
 
-## [Glossary](#glossary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-## [Exercises](#exercises)
+## Exercises {#exercises}
 
 **Exercise 2:** Write a program that categorizes each mail message by which day of the week the commit was done. To do this look for lines that start with "From", then look for the third word and keep a running count of each of the days of the week. At the end of the program print out the contents of your dictionary (order does not matter).
 
 Sample Line:
 
-```
+```txt
     From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
 ```
 
 Sample Execution:
 
-```
+```python
 python dow.py
 Enter a file name: mbox-short.txt
 {'Fri': 20, 'Thu': 6, 'Sat': 1}
@@ -373,7 +342,7 @@ Enter a file name: mbox-short.txt
 
 **Exercise 3:** Write a program to read through a mail log, build a histogram using a dictionary to count how many messages have come from each email address, and print the dictionary.
 
-```
+```python
 Enter file name: mbox-short.txt
 {'gopal.ramasammycook@gmail.com': 1, 'louis@media.berkeley.edu': 3,
 'cwen@iupui.edu': 5, 'antranig@caret.cam.ac.uk': 1,
@@ -387,7 +356,7 @@ Enter file name: mbox-short.txt
 
 After all the data has been read and the dictionary has been created, look through the dictionary using a maximum loop (see Section [maximumloop]) to find who has the most messages and print how many messages the person has.
 
-```
+```python
 Enter a file name: mbox-short.txt
 cwen@iupui.edu 5
 
@@ -397,7 +366,7 @@ zqian@umich.edu 195
 
 **Exercise 5:** This program records the domain name (instead of the address) where the message was sent from instead of who the mail came from (i.e., the whole email address). At the end of the program, print out the contents of your dictionary.
 
-```
+```python
 python schoolcount.py
 Enter a file name: mbox-short.txt
 {'media.berkeley.edu': 4, 'uct.ac.za': 6, 'umich.edu': 7,

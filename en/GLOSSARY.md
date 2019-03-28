@@ -387,3 +387,18 @@ A network connection between two applications where the applications can send an
 
 ## spider
 The act of a web search engine retrieving a page and then all the pages linked from a page and so on until they have nearly all of the pages on the Internet which they use to build their search index.
+
+## API
+Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.
+
+## ElementTree
+A built-in Python library used to parse XML data.
+
+## JSON
+JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.
+
+## SOA
+Service-Oriented Architecture. When an application is made of components connected across a network.
+
+## XML
+eXtensible Markup Language. A format that allows for the markup of structured data.

@@ -10,7 +10,7 @@ There are two common formats that we use when exchanging data across the web. Th
 
 XML looks very similar to HTML, but XML is more structured than HTML. Here is a sample of an XML document:
 
-```
+```python
 <person>
   <name>Chuck</name>
   <phone type="intl">
@@ -34,7 +34,7 @@ Calling `fromstring` converts the string representation of the XML into a "tree"
 
 The `find` function searches through the XML tree and retrieves a **node** that matches the specified tag. Each node can have some text, some attributes (like hide), and some "child" nodes. Each node can be the top of a tree of nodes.
 
-```
+```python
 Name: Chuck
 Attr: yes
 ```
@@ -49,7 +49,7 @@ Often the XML has multiple nodes and we need to write a loop to process all of t
 
 The `findall` method retrieves a Python list of subtrees that represent the `user` structures in the XML tree. Then we can write a `for` loop that looks at each of the user nodes, and prints the `name` and `id` text elements as well as the `x` attribute from the `user` node.
 
-```
+```python
 User count: 2
 Name Chuck
 Id 001
@@ -67,7 +67,7 @@ The JSON format was inspired by the object and array format used in the JavaScri
 
 Here is a JSON encoding that is roughly equivalent to the simple XML from above:
 
-```
+```python
 {
   "name" : "Chuck",
   "phone" : {
@@ -96,7 +96,7 @@ If you compare the code to extract data from the parsed JSON and XML you will se
 
 The output of this program is exactly the same as the XML version above.
 
-```
+```python
 User count: 2
 Name Chuck
 Id 001
@@ -150,7 +150,7 @@ Once we retrieve the JSON data, we parse it with the **json** library and do a f
 
 The output of the program is as follows (some of the returned JSON has been removed):
 
-```
+```python
 $ python geojson.py
 Enter location: Ann Arbor, MI
 Retrieving http://maps.googleapis.com/maps/api/
@@ -158,7 +158,7 @@ Retrieving http://maps.googleapis.com/maps/api/
 Retrieved 1669 characters
 ```
 
-```
+```python
 {
     "status": "OK",
     "results": [
@@ -192,7 +192,7 @@ lat 42.2808256 lng -83.7430378
 Ann Arbor, MI, USA
 ```
 
-```
+```python
 Enter location:
 ```
 
@@ -220,7 +220,7 @@ The Twitter web service are accessed using a URL like this:
 
 But once all of the security information has been added, the URL will look more like:
 
-```
+```python
 https://api.twitter.com/1.1/statuses/user_timeline.json?count=2
 &amp;oauth_version=1.0&amp;oauth_token=101...SGI&amp;screen_name=drchuck
 &amp;oauth_nonce=09239679&amp;oauth_timestamp=1380395644
@@ -236,7 +236,7 @@ This program retrieves the timeline for a particular Twitter user and returns it
 
 When the program runs it produces the following output:
 
-```
+```python
 Enter Twitter Account:drchuck
 Retrieving https://api.twitter.com/1.1/ ...
 [{"created_at":"Sat Sep 28 17:30:25 +0000 2013","
@@ -266,13 +266,13 @@ Since the JSON becomes a set of nested Python lists and dictionaries, we can use
 
 The output of the program looks as follows (some of the data items are shortened to fit on the page):
 
-```
+```python
 Enter Twitter Account:drchuck
 Retrieving https://api.twitter.com/1.1/friends ...
 Remaining 14
 ```
 
-```
+```python
 {
     "next_cursor": 1444171224491980205,
     "users": [
@@ -303,7 +303,7 @@ Remaining 14
 }
 ```
 
-```
+```python
 leahculver
    @jazzychad I just bought one .__.
 _valeriei

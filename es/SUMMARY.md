@@ -15,10 +15,10 @@ ___
 - [10. Tuplas](10-tuples.md)
 - [11. Regex](11-regex.md)
 - [12. Programas en red](12-network.md)
-
-<!--
 - [13. Python y servicios web](13-web.md)
 - [14. Objetos](14-objects.md)
+
+<!--
 - [15. Python y Bases de Datos](15-database.md)
 -->
 

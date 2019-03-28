@@ -10,7 +10,8 @@ Hay dos formatos comunes que utilizamos cuando intercambiamos datos a través de
 
 XML se ve muy similar a HTML, pero XML es más estructurado que HTML. Aquí hay una muestra de un documento XML:
 
-```<person>
+```python
+<person>
   <name>Chuck</name>
   <phone type="intl">
      +1 734 303 4456
@@ -18,6 +19,7 @@ XML se ve muy similar a HTML, pero XML es más estructurado que HTML. Aquí hay 
    <email hide="yes"/>
 </person>
 ```
+
 A menudo es útil pensar en un documento XML como una estructura de árbol donde hay una etiqueta superior "persona" y otras etiquetas como "teléfono" se dibujan como ** hijos ** de sus nodos principales.
 
 Una representación en árbol de XML
@@ -32,7 +34,8 @@ Al llamar `fromstring` se convierte la representación de cadena del XML en un" 
 
 La función `find` busca en el árbol XML y recupera un ** nodo ** que coincide con la etiqueta especificada. Cada nodo puede tener algún texto, algunos atributos (como ocultar) y algunos nodos "secundarios". Cada nodo puede ser la parte superior de un árbol de nodos.
 
-```Name: Chuck
+```python
+Name: Chuck
 Attr: yes
 ```
 El uso de un analizador XML como `ElementTree` tiene la ventaja de que si bien el XML en este ejemplo es bastante simple, resulta que hay muchas reglas con respecto a XML válido y el uso de` ElementTree` nos permite extraer datos de XML sin preocuparnos por las reglas de la sintaxis XML.
@@ -45,7 +48,8 @@ A menudo, el XML tiene varios nodos y necesitamos escribir un bucle para procesa
 
 El método `findall` recupera una lista Python de subárboles que representan las estructuras` user` en el árbol XML. Luego podemos escribir un bucle `for` que mira cada uno de los nodos de usuario e imprime los elementos de texto` name` e `id`, así como el atributo` x` del nodo `user`.
 
-```User count: 2
+```python
+User count: 2
 Name Chuck
 Id 001
 Attribute 2
@@ -61,7 +65,8 @@ El formato JSON se inspiró en el formato de objeto y matriz utilizado en el len
 
 Aquí hay una codificación JSON que es aproximadamente equivalente al XML simple de arriba:
 
-```{
+```python
+{
   "name" : "Chuck",
   "phone" : {
     "type" : "intl",
@@ -88,7 +93,8 @@ Si compara el código para extraer datos de JSON y XML analizados, verá que lo 
 
 La salida de este programa es exactamente la misma que la versión XML anterior.
 
-```User count: 2
+```python
+User count: 2
 Name Chuck
 Id 001
 Attribute 2
@@ -140,13 +146,15 @@ Una vez que recuperamos los datos de JSON, los analizamos con la biblioteca ** j
 
 La salida del programa es la siguiente (parte del JSON devuelto se ha eliminado):
 
-```$ python geojson.py
+```python
+$ python geojson.py
 Enter location: Ann Arbor, MI
 Retrieving http://maps.googleapis.com/maps/api/
   geocode/json?sensor=false&amp;address=Ann+Arbor%2C+MI
 Retrieved 1669 characters
 ```
-```{
+```python
+{
     "status": "OK",
     "results": [
         {
@@ -178,7 +186,8 @@ Retrieved 1669 characters
 lat 42.2808256 lng -83.7430378
 Ann Arbor, MI, USA
 ```
-```Enter location:
+```python
+Enter location:
 ```
 Puede descargar [www.py4e.com/code3/geoxml.py◆(http://www.py4e.com/code3/geoxml.py) para explorar la variante XML de la API de geocodificación de Google.
 
@@ -204,7 +213,8 @@ Se accede al servicio web de Twitter usando una URL como esta:
 
 Pero una vez que se haya agregado toda la información de seguridad, la URL se verá más como:
 
-```https://api.twitter.com/1.1/statuses/user_timeline.json?count=2
+```python
+https://api.twitter.com/1.1/statuses/user_timeline.json?count=2
 &amp;oauth_version=1.0&amp;oauth_token=101...SGI&amp;screen_name=drchuck
 &amp;oauth_nonce=09239679&amp;oauth_timestamp=1380395644
 &amp;oauth_signature=rLK...BoD&amp;oauth_consumer_key=h7Lu...GNg
@@ -218,7 +228,8 @@ Este programa recupera la línea de tiempo para un usuario de Twitter en particu
 
 Cuando el programa se ejecuta produce el siguiente resultado:
 
-```Enter Twitter Account:drchuck
+```python
+Enter Twitter Account:drchuck
 Retrieving https://api.twitter.com/1.1/ ...
 [{"created_at":"Sat Sep 28 17:30:25 +0000 2013","
 id":384007200990982144,"id_str":"384007200990982144",
@@ -246,11 +257,13 @@ Dado que JSON se convierte en un conjunto de listas y diccionarios Python anidad
 
 El resultado del programa es el siguiente (algunos de los elementos de datos se acortan para ajustarse a la página):
 
-```Enter Twitter Account:drchuck
+```python
+Enter Twitter Account:drchuck
 Retrieving https://api.twitter.com/1.1/friends ...
 Remaining 14
 ```
-```{
+```python
+{
     "next_cursor": 1444171224491980205,
     "users": [
         {
@@ -279,7 +292,8 @@ Remaining 14
     "next_cursor_str": "1444171224491980205"
 }
 ```
-```leahculver
+```python
+leahculver
    @jazzychad I just bought one .__.
 _valeriei
    RT @WSJ: Big employers like Google, AT&amp;amp;T are h

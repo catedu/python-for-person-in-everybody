@@ -284,4 +284,4 @@ Estas claves de API seguras permiten que Twitter tenga una sólida confianza de 
 
 ## Ejercicios {#exercises}
 
-** Ejercicio 1: ** Cambie el [www.py4e.com/code3/geojson.py◆(http://www.py4e.com/code3/geojson.py) o [www.py4e.com/code3/ geoxml.py] (http://www.py4e.com/code3/geoxml.py) para imprimir el código de país de dos caracteres a partir de los datos recuperados. Agregue la verificación de errores para que su programa no se registre si el código de país no está allí. Una vez que lo tenga funcionando, busque "Océano Atlántico" y asegúrese de que pueda manejar ubicaciones que no estén en ningún país.
+**Ejercicio 1:** Cambie el [www.py4e.com/code3/geojson.py](http://www.py4e.com/code3/geojson.py) o [www.py4e.com/code3/geoxml.py](http://www.py4e.com/code3/geoxml.py) para imprimir el código de país de dos caracteres a partir de los datos recuperados. Agregue la verificación de errores para que su programa no se registre si el código de país no está allí. Una vez que lo tenga funcionando, busque "Océano Atlántico" y asegúrese de que pueda manejar ubicaciones que no estén en ningún país.

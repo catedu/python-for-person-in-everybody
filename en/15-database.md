@@ -1,12 +1,8 @@
-# [Using Databases and SQL](#using-databases-and-sql)
+# Using Databases and SQL {#using-databases-and-sql}
 
-## [What is a database?](#what-is-a-database)
-
-
+## What is a database? {#what-is-a-database}
 
 A **database** is a file that is organized for storing data. Most databases are organized like a dictionary in the sense that they map from keys to values. The biggest difference is that the database is on disk (or other permanent storage), so it persists after the program ends. Because a database is stored on permanent storage, it can store far more data than a dictionary, which is limited to the size of the memory in the computer.
-
-
 
 Like a dictionary, database software is designed to keep the inserting and accessing of data very fast, even for large amounts of data. Database software maintains its performance by building **indexes** as data is added to the database to allow the computer to jump quickly to a particular entry.
 
@@ -16,15 +12,15 @@ There are many different database systems which are used for a wide variety of p
 
 SQLite is well suited to some of the data manipulation problems that we see in Informatics such as the Twitter spidering application that we describe in this chapter.
 
-## [Database concepts](#database-concepts)
+## Database concepts {#database-concepts}
 
 When you first look at a database it looks like a spreadsheet with multiple sheets. The primary data structures in a database are: **tables**, **rows**, and **columns**.
 
-Relational Databases
+![Relational databases](../img/databases.svg)
 
 In technical descriptions of relational databases the concepts of table, row, and column are more formally referred to as **relation**, **tuple**, and **attribute**, respectively. We will use the less formal terms in this chapter.
 
-## [Database Browser for SQLite](#database-browser-for-sqlite)
+## Database Browser for SQLite {#database-browser-for-sqlite}
 
 While this chapter will focus on using Python to work with data in SQLite database files, many operations can be done more conveniently using software called the **Database Browser for SQLite** which is freely available from:
 
@@ -34,7 +30,7 @@ Using the browser you can easily create tables, insert data, edit data, or run s
 
 In a sense, the database browser is similar to a text editor when working with text files. When you want to do one or very few operations on a text file, you can just open it in a text editor and make the changes you want. When you have many changes that you need to do to a text file, often you will write a simple Python program. You will find the same pattern when working with databases. You will do simple operations in the database manager and more complex operations will be most conveniently done in Python.
 
-## [Creating a database table](#creating-a-database-table)
+## Creating a database table {#creating-a-database-table}
 
 Databases require more defined structure than Python lists or dictionaries[^1].
 
@@ -48,15 +44,13 @@ Defining structure for your data up front may seem inconvenient at the beginning
 
 The code to create a database file and a table named `Tracks` with two columns in the database is as follows:
 
- 
-
- 
+<iframe src="https://trinket.io/embed/python3/09d1152020" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 The `connect` operation makes a "connection" to the database stored in the file `music.sqlite3` in the current directory. If the file does not exist, it will be created. The reason this is called a "connection" is that sometimes the database is stored on a separate "database server" from the server on which we are running our application. In our simple examples the database will just be a local file in the same directory as the Python code we are running.
 
 A **cursor** is like a file handle that we can use to perform operations on the data stored in the database. Calling `cursor()` is very similar conceptually to calling `open()` when dealing with text files.
 
-A Database Cursor
+![A Database Cursor](../img/database-cursor.svg)
 
 Once we have the cursor, we can begin to execute commands on the contents of the database using the `execute()` method.
 
@@ -68,13 +62,13 @@ In our example, we are executing two SQL commands in our database. As a conventi
 
 The first SQL command removes the `Tracks` table from the database if it exists. This pattern is simply to allow us to run the same program to create the `Tracks` table over and over again without causing an error. Note that the `DROP TABLE` command deletes the table and all of its contents from the database (i.e., there is no "undo").
 
-```
+```python
 cur.execute('DROP TABLE IF EXISTS Tracks ')
 ```
 
 The second command creates a table named `Tracks` with a text column named `title` and an integer column named `plays`.
 
-```
+```python
 cur.execute('CREATE TABLE Tracks (title TEXT, plays INTEGER)')
 ```
 
@@ -82,21 +76,21 @@ Now that we have created a table named `Tracks`, we can put some data into that 
 
 The SQL `INSERT` command indicates which table we are using and then defines a new row by listing the fields we want to include `(title, plays)` followed by the `VALUES` we want placed in the new row. We specify the values as question marks `(?, ?)` to indicate that the actual values are passed in as a tuple `( 'My Way', 15 )` as the second parameter to the `execute()` call.
 
+<iframe src="https://trinket.io/embed/python3/e665c26f67" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 First we `INSERT` two rows into our table and use `commit()` to force the data to be written to the database file.
 
-Rows in a Table
+![Rows in a Table](../img/rows-in-table.svg)
 
 Then we use the `SELECT` command to retrieve the rows we just inserted from the table. On the `SELECT` command, we indicate which columns we would like `(title, plays)` and indicate which table we want to retrieve the data from. After we execute the `SELECT` statement, the cursor is something we can loop through in a `for` statement. For efficiency, the cursor does not read all of the data from the database when we execute the `SELECT` statement. Instead, the data is read on demand as we loop through the rows in the `for` statement.
 
 The output of the program is as follows:
 
-```
+```python
 Tracks:
 ('Thunderstruck', 20)
 ('My Way', 15)
 ```
-
-
 
 Our `for` loop finds two rows, and each row is a Python tuple with the first value as the `title` and the second value as the number of `plays`.
 
@@ -104,21 +98,23 @@ Our `for` loop finds two rows, and each row is a Python tuple with the first val
 
 At the very end of the program, we execute an SQL command to `DELETE` the rows we have just created so we can run the program over and over. The `DELETE` command shows the use of a `WHERE` clause that allows us to express a selection criterion so that we can ask the database to apply the command to only the rows that match the criterion. In this example the criterion happens to apply to all the rows so we empty the table out so we can run the program repeatedly. After the `DELETE` is performed, we also call `commit()` to force the data to be removed from the database.
 
-## [Structured Query Language summary](#structured-query-language-summary)
+## Structured Query Language summary {#structured-query-language-summary}
 
+
+TODO go on here
 So far, we have been using the Structured Query Language in our Python examples and have covered many of the basics of the SQL commands. In this section, we look at the SQL language in particular and give an overview of SQL syntax.
 
 Since there are so many different database vendors, the Structured Query Language (SQL) was standardized so we could communicate in a portable manner to database systems from multiple vendors.
 
 A relational database is made up of tables, rows, and columns. The columns generally have a type such as text, numeric, or date data. When we create a table, we indicate the names and types of the columns:
 
-```
+```python
 CREATE TABLE Tracks (title TEXT, plays INTEGER)
 ```
 
 To insert a row into a table, we use the SQL `INSERT` command:
 
-```
+```python
 INSERT INTO Tracks (title, plays) VALUES ('My Way', 15)
 ```
 
@@ -126,7 +122,7 @@ The `INSERT` statement specifies the table name, then a list of the fields/colum
 
 The SQL `SELECT` command is used to retrieve rows and columns from a database. The `SELECT` statement lets you specify which columns you would like to retrieve as well as a `WHERE` clause to select which rows you would like to see. It also allows an optional `ORDER BY` clause to control the sorting of the returned rows.
 
-```
+```python
 SELECT * FROM Tracks WHERE title = 'My Way'
 ```
 
@@ -136,19 +132,19 @@ Note, unlike in Python, in a SQL `WHERE` clause we use a single equal sign to in
 
 You can request that the returned rows be sorted by one of the fields as follows:
 
-```
+```python
 SELECT title,plays FROM Tracks ORDER BY title
 ```
 
 To remove a row, you need a `WHERE` clause on an SQL `DELETE` statement. The `WHERE` clause determines which rows are to be deleted:
 
-```
+```python
 DELETE FROM Tracks WHERE title = 'My Way'
 ```
 
 It is possible to `UPDATE` a column or columns within one or more rows in a table using the SQL `UPDATE` statement as follows:
 
-```
+```python
 UPDATE Tracks SET plays = 16 WHERE title = 'My Way'
 ```
 
@@ -156,7 +152,7 @@ The `UPDATE` statement specifies a table and then a list of fields and values to
 
 These four basic SQL commands (INSERT, SELECT, UPDATE, and DELETE) allow the four basic operations needed to create and maintain data.
 
-## [Spidering Twitter using a database](#spidering-twitter-using-a-database)
+## Spidering Twitter using a database {#spidering-twitter-using-a-database}
 
 In this section, we will create a simple spidering program that will go through Twitter accounts and build a database of them. **Note: Be very careful when running this program. You do not want to pull too much data or run the program for too long and end up having your Twitter access shut off.**
 
@@ -180,7 +176,7 @@ If the user presses enter, we look in the database for the next Twitter account 
 
 Once we retrieve the list of friends and statuses, we loop through all of the `user` items in the returned JSON and retrieve the `screen_name` for each user. Then we use the `SELECT` statement to see if we already have stored this particular `screen_name` in the database and retrieve the friend count (`friends`) if the record exists.
 
-```
+```python
 countnew = 0
 countold = 0
 for u in js['users'] :
@@ -209,7 +205,7 @@ If the code in the `try` block fails, it is probably because no record matched t
 
 So the first time the program runs and we enter a Twitter account, the program runs as follows:
 
-```
+```python
 Enter a Twitter account, or quit: drchuck
 Retrieving http://api.twitter.com/1.1/friends ...
 New accounts= 20  revisited= 0
@@ -224,7 +220,7 @@ This program simply opens the database and selects all of the columns of all of 
 
 If we run this program after the first execution of our Twitter spider above, its output will be as follows:
 
-```
+```python
 ('opencontent', 0, 1)
 ('lhawthorn', 0, 1)
 ('steve_coppin', 0, 1)
@@ -238,7 +234,7 @@ We see one row for each `screen_name`, that we have not retrieved the data for t
 
 Now our database reflects the retrieval of the friends of our first Twitter account (**drchuck**). We can run the program again and tell it to retrieve the friends of the next "unprocessed" account by simply pressing enter instead of a Twitter account as follows:
 
-```
+```python
 Enter a Twitter account, or quit:
 Retrieving http://api.twitter.com/1.1/friends ...
 New accounts= 18  revisited= 2
@@ -250,7 +246,7 @@ Enter a Twitter account, or quit: quit
 
 Since we pressed enter (i.e., we did not specify a Twitter account), the following code is executed:
 
-```
+```python
 if ( len(acct) < 1 ) :
     cur.execute('SELECT name FROM Twitter WHERE retrieved = 0 LIMIT 1')
     try:
@@ -272,7 +268,7 @@ Once we retrieve the data successfully, we use the `UPDATE` statement to set the
 
 If we run the friend program and press enter twice to retrieve the next unvisited friend's friends, then run the dumping program, it will give us the following output:
 
-```
+```python
 ('opencontent', 1, 1)
 ('lhawthorn', 1, 1)
 ('steve_coppin', 0, 1)
@@ -293,7 +289,7 @@ Each time we run the program and press enter it will pick the next unvisited acc
 
 Since the program's data is all stored on disk in a database, the spidering activity can be suspended and resumed as many times as you like with no loss of data.
 
-## [Basic data modeling](#basic-data-modeling)
+## Basic data modeling {#basic-data-modeling}
 
 The real power of a relational database is when we create multiple tables and make links between those tables. The act of deciding how to break up your application data into multiple tables and establishing the relationships between the tables is called **data modeling**. The design document that shows the tables and their relationships is called a **data model**.
 
@@ -305,13 +301,13 @@ Let's say for our Twitter spider application, instead of just counting a person'
 
 Since everyone will potentially have many accounts that follow them, we cannot simply add a single column to our `Twitter` table. So we create a new table that keeps track of pairs of friends. The following is a simple way of making such a table:
 
-```
+```python
 CREATE TABLE Pals (from_friend TEXT, to_friend TEXT)
 ```
 
 Each time we encounter a person who `drchuck` is following, we would insert a row of the form:
 
-```
+```python
 INSERT INTO Pals (from_friend,to_friend) VALUES ('drchuck', 'lhawthorn')
 ```
 
@@ -325,7 +321,7 @@ We will store our Twitter accounts in a table named `People` instead of the `Twi
 
 We can create the `People` table with this additional `id` column as follows:
 
-```
+```python
 CREATE TABLE People
     (id INTEGER PRIMARY KEY, name TEXT UNIQUE, retrieved INTEGER)
 ```
@@ -334,7 +330,7 @@ Notice that we are no longer maintaining a friend count in each row of the `Peop
 
 Now instead of creating the table `Pals` above, we create a table called `Follows` with two integer columns `from_id` and `to_id` and a constraint on the table that the **combination** of `from_id` and `to_id` must be unique in this table (i.e., we cannot insert duplicate rows) in our database.
 
-```
+```python
 CREATE TABLE Follows
     (from_id INTEGER, to_id INTEGER, UNIQUE(from_id, to_id) )
 ```
@@ -345,7 +341,7 @@ In essence, in creating this `Follows` table, we are modelling a "relationship" 
 
 Relationships Between Tables
 
-## [Programming with multiple tables](#programming-with-multiple-tables)
+## Programming with multiple tables {#programming-with-multiple-tables}
 
 We will now redo the Twitter spider program using two tables, the primary keys, and the key references as described above. Here is the code for the new version of the program:
 
@@ -357,11 +353,11 @@ This program is starting to get a bit complicated, but it illustrates the patter
 
 We will cover each of these in turn.
 
-### [Constraints in database tables](#constraints-in-database-tables)
+### Constraints in database tables {#constraints-in-database-tables}
 
 As we design our table structures, we can tell the database system that we would like it to enforce a few rules on us. These rules help us from making mistakes and introducing incorrect data into out tables. When we create our tables:
 
-```
+```python
 cur.execute('''CREATE TABLE IF NOT EXISTS People
     (id INTEGER PRIMARY KEY, name TEXT UNIQUE, retrieved INTEGER)''')
 cur.execute('''CREATE TABLE IF NOT EXISTS Follows
@@ -372,7 +368,7 @@ We indicate that the `name` column in the `People` table must be `UNIQUE`. We al
 
 We can take advantage of these constraints in the following code:
 
-```
+```python
 cur.execute('''INSERT OR IGNORE INTO People (name, retrieved)
     VALUES ( ?, 0)''', ( friend, ) )
 ```
@@ -381,14 +377,14 @@ We add the `OR IGNORE` clause to our `INSERT` statement to indicate that if this
 
 Similarly, the following code ensures that we don't add the exact same `Follows` relationship twice.
 
-```
+```python
 cur.execute('''INSERT OR IGNORE INTO Follows
     (from_id, to_id) VALUES (?, ?)''', (id, friend_id) )
 ```
 
 Again, we simply tell the database to ignore our attempted `INSERT` if it would violate the uniqueness constraint that we specified for the `Follows` rows.
 
-### [Retrieve and/or insert a record](#retrieve-andor-insert-a-record)
+### Retrieve and/or insert a record {#retrieve-andor-insert-a-record}
 
 When we prompt the user for a Twitter account, if the account exists, we must look up its `id` value. If the account does not yet exist in the `People` table, we must insert the record and get the `id` value from the inserted row.
 
@@ -422,11 +418,11 @@ If we end up in the `except` code, it simply means that the row was not found, s
 
 If the `INSERT` is successful, we can look at `cur.lastrowid` to find out what value the database assigned to the `id` column in our newly created row.
 
-### [Storing the friend relationship](#storing-the-friend-relationship)
+### Storing the friend relationship {#storing-the-friend-relationship}
 
 Once we know the key value for both the Twitter user and the friend in the JSON, it is a simple matter to insert the two numbers into the `Follows` table with the following code:
 
-```
+```python
 cur.execute('INSERT OR IGNORE INTO Follows (from_id, to_id) VALUES (?, ?)',
     (id, friend_id) )
 ```
@@ -435,7 +431,7 @@ Notice that we let the database take care of keeping us from "double-inserting" 
 
 Here is a sample execution of this program:
 
-```
+```python
 Enter a Twitter account, or quit:
 No unretrieved Twitter accounts found
 Enter a Twitter account, or quit: drchuck
@@ -454,7 +450,7 @@ We started with the `drchuck` account and then let the program automatically pic
 
 The following is the first few rows in the `People` and `Follows` tables after this run is completed:
 
-```
+```python
 People:
 (1, 'drchuck', 1)
 (2, 'opencontent', 1)
@@ -473,7 +469,7 @@ Follows:
 
 You can see the `id`, `name`, and `visited` fields in the `People` table and you see the numbers of both ends of the relationship in the `Follows` table. In the `People` table, we can see that the first three people have been visited and their data has been retrieved. The data in the `Follows` table indicates that `drchuck` (user 1) is a friend to all of the people shown in the first five rows. This makes sense because the first data we retrieved and stored was the Twitter friends of `drchuck`. If you were to print more rows from the `Follows` table, you would see the friends of users 2 and 3 as well.
 
-## [Three kinds of keys](#three-kinds-of-keys)
+## Three kinds of keys {#three-kinds-of-keys}
 
 Now that we have started building a data model putting our data into multiple linked tables and linking the rows in those tables using **keys**, we need to look at some terminology around keys. There are generally three kinds of keys used in a database model.
 
@@ -483,7 +479,7 @@ Now that we have started building a data model putting our data into multiple li
 
 We are using a naming convention of always calling the primary key field name `id` and appending the suffix `_id` to any field name that is a foreign key.
 
-## [Using JOIN to retrieve data](#using-join-to-retrieve-data)
+## Using JOIN to retrieve data {#using-join-to-retrieve-data}
 
 Now that we have followed the rules of database normalization and have data separated into two tables, linked together using primary and foreign keys, we need to be able to build a `SELECT` that reassembles the data across the tables.
 
@@ -491,7 +487,7 @@ SQL uses the `JOIN` clause to reconnect these tables. In the `JOIN` clause you s
 
 The following is an example of a `SELECT` with a `JOIN` clause:
 
-```
+```python
 SELECT * FROM Follows JOIN People
     ON Follows.from_id = People.id WHERE People.id = 1
 ```
@@ -508,7 +504,7 @@ In this program, we first dump out the `People` and `Follows` and then dump out 
 
 Here is the output of the program:
 
-```
+```python
 python twjoin.py
 People:
 (1, 'drchuck', 1)
@@ -539,13 +535,13 @@ In the last select, we are looking for accounts that are friends of "opencontent
 
 In each of the "metarows" in the last select, the first two columns are from the `Follows` table followed by columns three through five from the `People` table. You can also see that the second column (`Follows.to_id`) matches the third column (`People.id`) in each of the joined-up "metarows".
 
-## [Summary](#summary)
+## Summary {#summary}
 
 This chapter has covered a lot of ground to give you an overview of the basics of using a database in Python. It is more complicated to write the code to use a database to store data than Python dictionaries or flat files so there is little reason to use a database unless your application truly needs the capabilities of a database. The situations where a database can be quite useful are: (1) when your application needs to make small many random updates within a large data set, (2) when your data is so large it cannot fit in a dictionary and you need to look up information repeatedly, or (3) when you have a long-running process that you want to be able to stop and restart and retain the data from one run to the next.
 
 You can build a simple database with a single table to suit many application needs, but most problems will require several tables and links/relationships between rows in different tables. When you start making links between tables, it is important to do some thoughtful design and follow the rules of database normalization to make the best use of the database's capabilities. Since the primary motivation for using a database is that you have a large amount of data to deal with, it is important to model your data efficiently so your programs run as fast as possible.
 
-## [Debugging](#debugging)
+## Debugging {#debugging}
 
 One common pattern when you are developing a Python program to connect to an SQLite database will be to run a Python program and check the results using the Database Browser for SQLite. The browser allows you to quickly check to see if your program is working properly.
 
@@ -553,7 +549,7 @@ You must be careful because SQLite takes care to keep two programs from changing
 
 So a solution is to make sure to either close the database browser or use the **File** menu to close the database in the browser before you attempt to access the database from Python to avoid the problem of your Python code failing because the database is locked.
 
-## [Glossary](#glossary)
+## Glossary {#glossary}
 
 
 

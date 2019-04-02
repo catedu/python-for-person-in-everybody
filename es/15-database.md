@@ -1,96 +1,96 @@
-# [Uso de bases de datos y SQL] (# using -atabases-and-sql)
+# Uso de bases de datos y SQL {#using-databases-and-sql}
 
-## [¿Qué es una base de datos?] (# What-is-a-database)
+## ¿Qué es una base de datos? {#what-is-a-database}
 
+Una **base de datos** es un archivo que está organizado para almacenar datos. La mayoría de las bases de datos están organizadas como un diccionario en el sentido de que se asignan de claves a valores. La mayor diferencia es que la base de datos está en el disco (u otro almacenamiento permanente), por lo que persiste después de que finalice el programa. Debido a que una base de datos se almacena en un almacenamiento permanente, puede almacenar muchos más datos que un diccionario, que está limitado al tamaño de la memoria en el ordenador.
 
+Al igual que un diccionario, el software de base de datos está diseñado para mantener la inserción y el acceso de datos muy rápidos, incluso para grandes cantidades de datos. El software de la base de datos mantiene su rendimiento mediante la creación de índices a medida que se agregan datos para permitir que el ordenador salte rápidamente a una entrada en particular.
 
-Una ** base de datos ** es un archivo que está organizado para almacenar datos. La mayoría de las bases de datos están organizadas como un diccionario en el sentido de que se asignan de claves a valores. La mayor diferencia es que la base de datos está en el disco (u otro almacenamiento permanente), por lo que persiste después de que finalice el programa. Debido a que una base de datos se almacena en un almacenamiento permanente, puede almacenar muchos más datos que un diccionario, lo que se limita al tamaño de la memoria en el ordenador.
-
-
-
-Al igual que un diccionario, el software de base de datos está diseñado para mantener la inserción y el acceso de datos muy rápido, incluso para grandes cantidades de datos. El software de la base de datos mantiene su rendimiento mediante la creación de índices ** a medida que se agregan datos a la base de datos para permitir que el ordenador salte rápidamente a una entrada en particular.
-
-Hay muchos sistemas de bases de datos diferentes que se utilizan para una amplia variedad de propósitos, incluyendo: Oracle, MySQL, Microsoft SQL Server, PostgreSQL y SQLite. Nos centramos en SQLite en este libro porque es una base de datos muy común y ya está integrada en Python. SQLite está diseñado para ser ** integrado ** en otras aplicaciones para proporcionar soporte de base de datos dentro de la aplicación. Por ejemplo, el navegador Firefox también usa la base de datos SQLite internamente al igual que muchos otros productos.
+Hay muchos sistemas de bases de datos diferentes que se utilizan para una amplia variedad de propósitos, incluyendo: Oracle, MySQL, Microsoft SQL Server, PostgreSQL y SQLite. Nos centramos en SQLite en este libro porque es una base de datos muy común y ya está integrada en Python. SQLite está diseñado para ser **integrada** en otras aplicaciones para proporcionar soporte de base de datos dentro de la aplicación. Por ejemplo, el navegador Firefox también usa la base de datos SQLite internamente al igual que muchos otros productos.
 
 [http://sqlite.org/](http://sqlite.org/)
 
 SQLite se adapta bien a algunos de los problemas de manipulación de datos que vemos en Informática, como la aplicación de rastreo de Twitter que describimos en este capítulo.
 
-## [Conceptos de base de datos] (# conceptos de base de datos)
+## Conceptos de base de datos {#database-concepts}
 
-Cuando miras por primera vez una base de datos, parece una hoja de cálculo con varias hojas. Las estructuras de datos principales en una base de datos son: ** tablas **, ** filas ** y ** columnas **.
+Cuando miras por primera vez una base de datos, parece una hoja de cálculo con varias hojas. Las estructuras de datos principales en una base de datos son: **tablas**, **filas** y **columnas**.
 
-Bases de datos relacionales
+![Bases de datos relacionales](../img/databases.svg)
 
 En las descripciones técnicas de las bases de datos relacionales, los conceptos de tabla, fila y columna se denominan más formalmente **relación**, **tupla** y **atributo**, respectivamente. Usaremos los términos menos formales en este capítulo.
 
-## [Database Browser for SQLite] (# database-browser-for-sqlite)
+## Database Browser for SQLite {#database-browser-for-sqlite}
 
-Si bien este capítulo se centrará en el uso de Python para trabajar con datos en archivos de base de datos SQLite, muchas operaciones se pueden realizar de manera más conveniente utilizando el software denominado ** Database Browser for SQLite **, que está disponible gratuitamente en:
+Si bien este capítulo se centrará en el uso de Python para trabajar con datos en archivos de base de datos SQLite, muchas operaciones se pueden realizar de manera más conveniente utilizando el software denominado **Database Browser for SQLite**, que está disponible gratuitamente en:
 
 [http://sqlitebrowser.org/](http://sqlitebrowser.org/)
 
-Con el navegador puede crear fácilmente tablas, insertar datos, editar datos o ejecutar consultas SQL simples en los datos de la base de datos.
+Con el navegador puedes crear fácilmente tablas, insertar datos, editar datos o ejecutar consultas SQL simples.
 
-En cierto sentido, el navegador de la base de datos es similar a un editor de texto cuando se trabaja con archivos de texto. Cuando desee realizar una o muy pocas operaciones en un archivo de texto, puede abrirlo en un editor de texto y realizar los cambios que desee. Cuando tienes muchos cambios que debes hacer en un archivo de texto, a menudo escribirás un programa Python simple. Encontrará el mismo patrón cuando trabaje con bases de datos. Hará operaciones simples en el administrador de bases de datos y las operaciones más complejas se realizarán de manera más conveniente en Python.
+En cierto sentido, el navegador de la base de datos es similar a un editor de texto cuando se trabaja con archivos de texto. Cuando desees realizar una o muy pocas operaciones en un archivo de texto, puedes abrirlo en un editor de texto y realizar los cambios que desees. Cuando tienes muchos cambios que debes hacer en un archivo de texto, a menudo escribirás un programa Python simple. Encontrarás el mismo patrón cuando trabajes con bases de datos. Harás operaciones simples en el administrador de bases de datos y las operaciones más complejas se realizarán de manera más conveniente en Python.
 
-## [Creando una tabla de base de datos] (# creating-a-database-table)
+## Creando una tabla de base de datos {#creating-a-database-table}
 
 Las bases de datos requieren una estructura más definida que las listas o los diccionarios de Python [^1].
 
-Cuando creamos una base de datos ** tabla ** debemos informar a la base de datos por adelantado los nombres de cada una de las ** columnas ** en la tabla y el tipo de datos que planeamos almacenar en cada ** columna **. Cuando el software de la base de datos conoce el tipo de datos en cada columna, puede elegir la forma más eficiente de almacenar y buscar los datos según el tipo de datos.
+Cuando creamos una tabla en la base de datos debemos decir a la base de datos por adelantado los nombres de cada una de las **columnas** en la tabla y el tipo de datos que planeamos almacenar en cada cada una de ellas. Cuando el software de la base de datos conoce el tipo de datos en cada columna, puedes elegir la forma más eficiente de almacenar y buscar los datos según el tipo de datos.
 
-Puede ver los diversos tipos de datos admitidos por SQLite en la siguiente url:
+Puedes ver los diversos tipos de datos admitidos por SQLite en la siguiente url:
 
 [http://www.sqlite.org/datatypes.html](http://www.sqlite.org/datatypes.html)
 
-Definir la estructura de sus datos por adelantado puede parecer inconveniente al principio, pero la recompensa es un acceso rápido a sus datos, incluso cuando la base de datos contiene una gran cantidad de datos.
+Definir la estructura de tus datos por adelantado puede parecer inconveniente al principio, pero la recompensa es un acceso rápido a tus datos, incluso cuando la base de datos contenga una gran cantidad de datos.
 
 El código para crear un archivo de base de datos y una tabla llamada `Tracks` con dos columnas en la base de datos es la siguiente:
 
+<iframe src="https://trinket.io/embed/python3/09d1152020" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
+La operación `connect` hace una "conexión" a la base de datos almacenada en el archivo `music.sqlite3` en el directorio actual. Si el archivo no existe, será creado. La razón por la que esto se denomina "conexión" es que a veces la base de datos se almacena en un "servidor de base de datos" independiente del servidor en el que ejecutamos nuestra aplicación. En nuestros ejemplos simples, la base de datos solo será un archivo local en el mismo directorio que el código Python que estamos ejecutando.
 
+Un **cursor** es como un identificador de archivo que podemos usar para realizar operaciones en los datos almacenados en la base de datos. Llamar a `cursor()` es muy similar conceptualmente a llamar a `open()` cuando se trata de archivos de texto.
 
+![A Database Cursor](../img/database-cursor.svg)
 
-La operación `connect` hace una" conexión "a la base de datos almacenada en el archivo` music.sqlite3` en el directorio actual. Si el archivo no existe, será creado. La razón por la que esto se denomina "conexión" es que a veces la base de datos se almacena en un "servidor de base de datos" independiente del servidor en el que ejecutamos nuestra aplicación. En nuestros ejemplos simples, la base de datos solo será un archivo local en el mismo directorio que el código Python que estamos ejecutando.
+Una vez que tengamos el cursor, podemos comenzar a ejecutar comandos en el contenido de la base de datos usando el método `execute()`.
 
-Un ** cursor ** es como un identificador de archivo que podemos usar para realizar operaciones en los datos almacenados en la base de datos. Llamar a `cursor ()` es muy similar conceptualmente a llamar a `open ()` cuando se trata de archivos de texto.
-
-A Database Cursor
-
-Una vez que tengamos el cursor, podemos comenzar a ejecutar comandos en el contenido de la base de datos usando el método `execute ()`.
-
-Los comandos de la base de datos se expresan en un lenguaje especial que se ha estandarizado en muchos proveedores de bases de datos diferentes para permitirnos aprender un solo idioma de base de datos. El lenguaje de la base de datos se llama ** Lenguaje de consulta estructurado ** o ** SQL ** para abreviar.
+Los comandos de la base de datos se expresan en un lenguaje especial que se ha estandarizado en muchos proveedores de bases de datos diferentes para permitirnos aprender un solo idioma de base de datos. El lenguaje de la base de datos se llama **Lenguaje de consulta estructurada** o **SQL** (Structured Query Language) para abreviar.
 
 [http://en.wikipedia.org/wiki/SQL](http://en.wikipedia.org/wiki/SQL)
 
 En nuestro ejemplo, estamos ejecutando dos comandos SQL en nuestra base de datos. Como convención, mostraremos las palabras clave de SQL en mayúsculas y las partes del comando que estamos agregando (como los nombres de tablas y columnas) se mostrarán en minúsculas.
 
-El primer comando SQL elimina la tabla `Tracks` de la base de datos si existe. Este patrón es simplemente para permitirnos ejecutar el mismo programa para crear la tabla `Tracks` una y otra vez sin causar un error. Tenga en cuenta que el comando `DROP TABLE` elimina la tabla y todo su contenido de la base de datos (es decir, no hay" deshacer ").
+El primer comando SQL elimina la tabla `Tracks` de la base de datos si existe. Este patrón es simplemente para permitirnos ejecutar el mismo programa para crear la tabla `Tracks` una y otra vez sin causar un error. Tenga en cuenta que el comando `DROP TABLE` elimina la tabla y todo su contenido de la base de datos (es decir, no hay "deshacer").
 
-```cur.execute('DROP TABLE IF EXISTS Tracks ')
+```python
+cur.execute('DROP TABLE IF EXISTS Tracks ')
 ```
-El segundo comando crea una tabla llamada `Tracks` con una columna de texto llamada` title` y una columna entera llamada `plays`.
 
-```cur.execute('CREATE TABLE Tracks (title TEXT, plays INTEGER)')
+El segundo comando crea una tabla llamada `Tracks` con una columna de texto llamada `title` y una columna entera llamada `plays`.
+
+```python
+cur.execute('CREATE TABLE Tracks (title TEXT, plays INTEGER)')
 ```
-Ahora que hemos creado una tabla llamada `Tracks`, podemos poner algunos datos en esa tabla usando la operación SQL` INSERT`. Nuevamente, comenzamos haciendo una conexión a la base de datos y obteniendo el `cursor`. Luego podemos ejecutar comandos SQL usando el cursor.
 
-El comando SQL `INSERT` indica qué tabla estamos usando y luego define una nueva fila al enumerar los campos que queremos incluir` (título, jugadas) `seguido de los` VALORES` que queremos colocar en la nueva fila. Especificamos los valores como signos de interrogación `(?,?)` Para indicar que los valores reales se pasan como una tupla `('My Way', 15)` como el segundo parámetro a la llamada `execute ()`.
+Ahora que hemos creado una tabla llamada `Tracks`, podemos poner algunos datos en esa tabla usando la operación SQL `INSERT`. Nuevamente, comenzamos haciendo una conexión a la base de datos y obteniendo el `cursor`. Luego podemos ejecutar comandos SQL usando el cursor.
 
-Primero, insertamos dos filas en nuestra tabla y usamos `commit ()` para forzar que los datos se escriban en el archivo de la base de datos.
+El comando SQL `INSERT` indica qué tabla estamos usando y luego define una nueva fila al enumerar los campos que queremos incluir `(título, jugadas)` seguido de los `VALORES` que queremos colocar en la nueva fila. Especificamos los valores como signos de interrogación `(?,?)` Para indicar que los valores reales se pasan como una tupla `('My Way', 15)` como el segundo parámetro a la llamada `execute()`.
 
-Filas en una tabla
+<iframe src="https://trinket.io/embed/python3/e665c26f67" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-Luego usamos el comando `SELECT` para recuperar las filas que acabamos de insertar de la tabla. En el comando `SELECT`, indicamos en qué columnas nos gustaría` (título, jugamos) `e indicamos de qué tabla queremos recuperar los datos. Después de ejecutar la instrucción `SELECT`, el cursor es algo que podemos recorrer en una instrucción` for`. Por eficiencia, el cursor no lee todos los datos de la base de datos cuando ejecutamos la instrucción `SELECT`. En su lugar, los datos se leen a pedido a medida que recorramos las filas en la declaración `for`.
+Primero, insertamos dos filas en nuestra tabla y usamos `commit()` para forzar que los datos se escriban en el archivo de la base de datos.
+
+![Filas en una tabla](../img/rows-in-table.svg)
+
+Luego usamos el comando `SELECT` para recuperar las filas que acabamos de insertar de la tabla. En el comando `SELECT`, indicamos en qué columnas nos gustaría extraer, `(título, jugamos)`, e indicamos de qué tabla queremos recuperar los datos. Después de ejecutar la instrucción `SELECT`, el cursor es algo que podemos recorrer en una instrucción `for`. Por eficiencia, el cursor no lee todos los datos de la base de datos cuando ejecutamos la instrucción `SELECT`. En su lugar, los datos se leen a medida que recorramos las filas en la declaración `for`.
 
 La salida del programa es la siguiente:
 
-```Tracks:
+```python
+Tracks:
 ('Thunderstruck', 20)
 ('My Way', 15)
 ```
-
 
 Nuestro bucle `for` encuentra dos filas, y cada fila es una tupla de Python con el primer valor como` title` y el segundo valor como el número de `plays`.
 
@@ -98,25 +98,30 @@ Nuestro bucle `for` encuentra dos filas, y cada fila es una tupla de Python con 
 
 Al final del programa, ejecutamos un comando SQL para 'BORRAR' las filas que acabamos de crear para que podamos ejecutar el programa una y otra vez. El comando `DELETE` muestra el uso de una cláusula` WHERE` que nos permite expresar un criterio de selección para que podamos pedir a la base de datos que aplique el comando solo a las filas que coincidan con el criterio. En este ejemplo, el criterio pasa a aplicarse a todas las filas, de modo que vaciamos la tabla para poder ejecutar el programa repetidamente. Después de que se realiza el `BORRAR`, también llamamos a` commit () `para forzar que los datos se eliminen de la base de datos.
 
-## [Resumen de lenguaje de consulta estructurado] (# estructurado de consulta-lenguaje-resumen)
+## Resumen de lenguaje de consulta estructurado {# estructurado de consulta-lenguaje-resumen}
 
+
+TODO seguir por aquí
 Hasta ahora, hemos estado utilizando el lenguaje de consulta estructurado en nuestros ejemplos de Python y hemos cubierto muchos de los conceptos básicos de los comandos SQL. En esta sección, analizamos el lenguaje SQL en particular y ofrecemos una descripción general de la sintaxis de SQL.
 
 Dado que hay tantos proveedores de bases de datos diferentes, el lenguaje de consulta estructurado (SQL) se estandarizó para que pudiéramos comunicarnos de manera portátil a los sistemas de bases de datos de varios proveedores.
 
 Una base de datos relacional está formada por tablas, filas y columnas. Las columnas generalmente tienen un tipo como datos de texto, numéricos o de fecha. Cuando creamos una tabla, indicamos los nombres y tipos de las columnas:
 
-```CREATE TABLE Tracks (title TEXT, plays INTEGER)
+```python
+CREATE TABLE Tracks (title TEXT, plays INTEGER)
 ```
 Para insertar una fila en una tabla, usamos el comando SQL `INSERT`:
 
-```INSERT INTO Tracks (title, plays) VALUES ('My Way', 15)
+```python
+INSERT INTO Tracks (title, plays) VALUES ('My Way', 15)
 ```
 La declaración `INSERT` especifica el nombre de la tabla, luego una lista de los campos / columnas que le gustaría establecer en la nueva fila, y luego la palabra clave` VALUES` y una lista de valores correspondientes para cada uno de los campos.
 
 El comando SQL 'SELECT` se usa para recuperar filas y columnas de una base de datos. La declaración `SELECT` le permite especificar qué columnas desea recuperar, así como una cláusula WHERE` para seleccionar qué filas desea ver. También permite una cláusula opcional `ORDER BY` para controlar la clasificación de las filas devueltas.
 
-```SELECT * FROM Tracks WHERE title = 'My Way'
+```python
+SELECT * FROM Tracks WHERE title = 'My Way'
 ```
 Usar `*` indica que desea que la base de datos devuelva todas las columnas para cada fila que coincida con la cláusula `WHERE`.
 
@@ -124,21 +129,24 @@ Tenga en cuenta que, a diferencia de Python, en una cláusula SQL `WHERE` usamos
 
 Puede solicitar que las filas devueltas se ordenen por uno de los campos de la siguiente manera:
 
-```SELECT title,plays FROM Tracks ORDER BY title
+```python
+SELECT title,plays FROM Tracks ORDER BY title
 ```
 Para eliminar una fila, necesita una cláusula `WHERE` en una sentencia SQL` DELETE`. La cláusula `WHERE` determina qué filas se van a eliminar:
 
-```DELETE FROM Tracks WHERE title = 'My Way'
+```python
+DELETE FROM Tracks WHERE title = 'My Way'
 ```
 Es posible `ACTUALIZAR` una columna o columnas dentro de una o más filas en una tabla usando la declaración SQL` ACTUALIZACIÓN` de la siguiente manera:
 
-```UPDATE Tracks SET plays = 16 WHERE title = 'My Way'
+```python
+UPDATE Tracks SET plays = 16 WHERE title = 'My Way'
 ```
 La declaración `UPDATE` especifica una tabla y luego una lista de campos y valores para cambiar después de la palabra clave` SET` y luego una cláusula opcional `WHERE` para seleccionar las filas que se actualizarán. Una sola instrucción `UPDATE` cambiará todas las filas que coincidan con la cláusula` WHERE`. Si no se especifica una cláusula `WHERE`, realiza el` UPDATE` en todas las filas de la tabla.
 
 Estos cuatro comandos SQL básicos (INSERTAR, SELECCIONAR, ACTUALIZAR y BORRAR) permiten las cuatro operaciones básicas necesarias para crear y mantener datos.
 
-## [Spidering Twitter usando una base de datos] (# spidering-twitter-using-a-database)
+## Spidering Twitter usando una base de datos {# spidering-twitter-using-a-database}
 
 En esta sección, crearemos un programa de spidering simple que pasará por las cuentas de Twitter y creará una base de datos de ellas. ** Nota: Tenga mucho cuidado al ejecutar este programa. No desea extraer demasiados datos o ejecutar el programa durante demasiado tiempo y terminar con el cierre de su acceso a Twitter. **
 
@@ -162,7 +170,8 @@ Si el usuario presiona Intro, buscamos en la base de datos la próxima cuenta de
 
 Una vez que recuperamos la lista de amigos y estados, recorramos todos los elementos `user` en el JSON devuelto y recuperamos el` screen_name` para cada usuario. Luego usamos la declaración `SELECT` para ver si ya hemos almacenado este` screen_name` en particular en la base de datos y recuperar el recuento de amigos (`friends`) si el registro existe.
 
-```countnew = 0
+```python
+countnew = 0
 countold = 0
 for u in js['users'] :
     friend = u['screen_name']
@@ -189,7 +198,8 @@ Si el código en el bloque `try` falla, es probable que no haya ningún registro
 
 Entonces, la primera vez que se ejecuta el programa y entramos en una cuenta de Twitter, el programa se ejecuta de la siguiente manera:
 
-```Enter a Twitter account, or quit: drchuck
+```python
+Enter a Twitter account, or quit: drchuck
 Retrieving http://api.twitter.com/1.1/friends ...
 New accounts= 20  revisited= 0
 Enter a Twitter account, or quit: quit
@@ -202,7 +212,8 @@ Este programa simplemente abre la base de datos y selecciona todas las columnas 
 
 Si ejecutamos este programa después de la primera ejecución de nuestra araña de Twitter anterior, su salida será la siguiente:
 
-```('opencontent', 0, 1)
+```python
+('opencontent', 0, 1)
 ('lhawthorn', 0, 1)
 ('steve_coppin', 0, 1)
 ('davidkocher', 0, 1)
@@ -214,7 +225,8 @@ Vemos una fila para cada `nombre_de_la pantalla`, que no hemos recuperado los da
 
 Ahora nuestra base de datos refleja la recuperación de los amigos de nuestra primera cuenta de Twitter (** drchuck **). Podemos ejecutar el programa nuevamente y decirle que recupere a los amigos de la próxima cuenta "sin procesar" simplemente presionando Intro en lugar de una cuenta de Twitter de la siguiente manera:
 
-```Enter a Twitter account, or quit:
+```python
+Enter a Twitter account, or quit:
 Retrieving http://api.twitter.com/1.1/friends ...
 New accounts= 18  revisited= 2
 Enter a Twitter account, or quit:
@@ -224,7 +236,8 @@ Enter a Twitter account, or quit: quit
 ```
 Desde que presionamos enter (es decir, no especificamos una cuenta de Twitter), se ejecuta el siguiente código:
 
-```if ( len(acct) < 1 ) :
+```python
+if ( len(acct) < 1 ) :
     cur.execute('SELECT name FROM Twitter WHERE retrieved = 0 LIMIT 1')
     try:
         acct = cur.fetchone()[0]
@@ -244,7 +257,8 @@ Una vez que recuperamos los datos con éxito, usamos la instrucción `ACTUALIZAR
 
 Si ejecutamos el programa de amigos y presionamos Intro dos veces para recuperar a los amigos de los siguientes amigos no visitados, luego ejecutamos el programa de descarga, nos dará el siguiente resultado:
 
-```('opencontent', 1, 1)
+```python
+('opencontent', 1, 1)
 ('lhawthorn', 1, 1)
 ('steve_coppin', 0, 1)
 ('davidkocher', 0, 1)
@@ -263,7 +277,7 @@ Cada vez que ejecutamos el programa y presionamos enter, elegimos la siguiente c
 
 Dado que todos los datos del programa se almacenan en el disco en una base de datos, la actividad de rastreo se puede suspender y reanudar tantas veces como desee sin perder datos.
 
-## [Modelado básico de datos] (# modelado básico de datos)
+## Modelado básico de datos {# modelado básico de datos}
 
 El poder real de una base de datos relacional es cuando creamos varias tablas y hacemos enlaces entre esas tablas. El acto de decidir cómo dividir los datos de su aplicación en varias tablas y establecer las relaciones entre las tablas se denomina ** modelado de datos **. El documento de diseño que muestra las tablas y sus relaciones se denomina ** modelo de datos **.
 
@@ -275,11 +289,13 @@ Digamos que para nuestra aplicación de araña de Twitter, en lugar de simplemen
 
 Dado que potencialmente todos tendrán muchas cuentas que los siguen, no podemos simplemente agregar una sola columna a nuestra tabla `Twitter`. Así que creamos una nueva tabla que hace un seguimiento de parejas de amigos. La siguiente es una forma simple de hacer una tabla de este tipo:
 
-```CREATE TABLE Pals (from_friend TEXT, to_friend TEXT)
+```python
+CREATE TABLE Pals (from_friend TEXT, to_friend TEXT)
 ```
 Cada vez que nos encontramos con una persona que está siguiendo `drchuck`, insertamos una fila del formulario:
 
-```INSERT INTO Pals (from_friend,to_friend) VALUES ('drchuck', 'lhawthorn')
+```python
+INSERT INTO Pals (from_friend,to_friend) VALUES ('drchuck', 'lhawthorn')
 ```
 Como estamos procesando a los 20 amigos del feed de Twitter `drchuck`, insertaremos 20 registros con" drchuck "como primer parámetro, por lo que terminaremos duplicando la cadena muchas veces en la base de datos.
 
@@ -291,14 +307,16 @@ Almacenaremos nuestras cuentas de Twitter en una tabla llamada `People` en lugar
 
 Podemos crear la tabla `People` con esta columna adicional` id` de la siguiente manera:
 
-```CREATE TABLE People
+```python
+CREATE TABLE People
     (id INTEGER PRIMARY KEY, name TEXT UNIQUE, retrieved INTEGER)
 ```
 Tenga en cuenta que ya no estamos manteniendo un recuento de amigos en cada fila de la tabla "Personas". Cuando seleccionamos `INTEGER PRIMARY KEY` como el tipo de nuestra columna` id`, estamos indicando que nos gustaría que SQLite administre esta columna y asigne una clave numérica única a cada fila que insertamos automáticamente. También agregamos la palabra clave `UNIQUE` para indicar que no permitiremos que SQLite inserte dos filas con el mismo valor para` name`.
 
 Ahora, en lugar de crear la tabla `Pals` anterior, creamos una tabla llamada` Follows` con dos columnas enteras `from_id` y` to_id` y una restricción en la tabla que la combinación ** ** de `from_id` y` to_id `debe ser único en esta tabla (es decir, no podemos insertar filas duplicadas) en nuestra base de datos.
 
-```CREATE TABLE Follows
+```python
+CREATE TABLE Follows
     (from_id INTEGER, to_id INTEGER, UNIQUE(from_id, to_id) )
 ```
 Cuando agregamos cláusulas `UNIQUE` a nuestras tablas, estamos comunicando un conjunto de reglas que le estamos pidiendo a la base de datos que aplique cuando intentemos insertar registros. Estamos creando estas reglas como una conveniencia en nuestros programas, como veremos en un momento. Las reglas nos impiden cometer errores y simplifican la escritura de algunos de nuestros códigos.
@@ -307,7 +325,7 @@ En esencia, al crear esta tabla "Siguiendo", estamos modelando una "relación" d
 
 Relaciones entre tablas
 
-## [Programación con varias tablas] (# programación-con-tablas-múltiples)
+## Programación con varias tablas {# programación-con-tablas-múltiples}
 
 Ahora rehaceremos el programa de arañas de Twitter utilizando dos tablas, las claves principales y las referencias clave, como se describe anteriormente. Aquí está el código para la nueva versión del programa:
 
@@ -319,11 +337,12 @@ Este programa está empezando a complicarse un poco, pero ilustra los patrones q
 
 Vamos a cubrir cada uno de estos a su vez.
 
-### [Restricciones en tablas de bases de datos] (# restricciones-en-tablas-de-bases de datos)
+### Restricciones en tablas de bases de datos {# restricciones-en-tablas-de-bases de datos}
 
 A medida que diseñamos nuestras estructuras de tablas, podemos decirle al sistema de base de datos que nos gustaría aplicar algunas reglas. Estas reglas nos ayudan a cometer errores e introducir datos incorrectos en las tablas. Cuando creamos nuestras tablas:
 
-```cur.execute('''CREATE TABLE IF NOT EXISTS People
+```python
+cur.execute('''CREATE TABLE IF NOT EXISTS People
     (id INTEGER PRIMARY KEY, name TEXT UNIQUE, retrieved INTEGER)''')
 cur.execute('''CREATE TABLE IF NOT EXISTS Follows
     (from_id INTEGER, to_id INTEGER, UNIQUE(from_id, to_id))''')
@@ -332,19 +351,21 @@ Indicamos que la columna `name` en la tabla` People` debe ser `UNIQUE`. También
 
 Podemos aprovechar estas restricciones en el siguiente código:
 
-```cur.execute('''INSERT OR IGNORE INTO People (name, retrieved)
+```python
+cur.execute('''INSERT OR IGNORE INTO People (name, retrieved)
     VALUES ( ?, 0)''', ( friend, ) )
 ```
 Añadimos la cláusula `OR IGNORE` a nuestra declaración` INSERT` para indicar que si este `INSERT` en particular causaría una violación de la regla" `name` debe ser único", el sistema de la base de datos puede ignorar el `INSERT` . Estamos utilizando la restricción de la base de datos como una red de seguridad para asegurarnos de no hacer algo incorrecto sin querer.
 
 De manera similar, el siguiente código asegura que no agregamos la misma relación exacta de 'Sigue' dos veces.
 
-```cur.execute('''INSERT OR IGNORE INTO Follows
+```python
+cur.execute('''INSERT OR IGNORE INTO Follows
     (from_id, to_id) VALUES (?, ?)''', (id, friend_id) )
 ```
 Una vez más, simplemente le pedimos a la base de datos que ignore nuestro intento de "INSERTAR" si viola la restricción de unicidad que especificamos para las filas de "Siguientes".
 
-### [Recuperar y / o insertar un registro] (# recuperar-andor-insertar-un-registro)
+### Recuperar y / o insertar un registro {# recuperar-andor-insertar-un-registro}
 
 Cuando solicitamos al usuario una cuenta de Twitter, si la cuenta existe, debemos buscar su valor 'id'. Si la cuenta aún no existe en la tabla `People`, debemos insertar el registro y obtener el valor` id` de la fila insertada.
 
@@ -376,18 +397,20 @@ Si terminamos en el código `except`, simplemente significa que no se encontró 
 
 Si el `INSERT` tiene éxito, podemos ver` cur.lastrowid` para averiguar qué valor asignó la base de datos a la columna `id` en nuestra fila recién creada.
 
-### [Guardando la relación de amistad] (# almacenando la relación de amistad)
+### Guardando la relación de amistad {# almacenando la relación de amistad}
 
 Una vez que sepamos el valor clave tanto para el usuario de Twitter como para el amigo en el JSON, es muy sencillo insertar los dos números en la tabla `Siguiendo 'con el siguiente código:
 
-```cur.execute('INSERT OR IGNORE INTO Follows (from_id, to_id) VALUES (?, ?)',
+```python
+cur.execute('INSERT OR IGNORE INTO Follows (from_id, to_id) VALUES (?, ?)',
     (id, friend_id) )
 ```
 Tenga en cuenta que dejamos que la base de datos se encargue de evitar que "insertemos dos veces" una relación creando la tabla con una restricción de unicidad y luego agregando `OR IGNORE` a nuestra declaración` INSERT`.
 
 Aquí hay una ejecución de muestra de este programa:
 
-```Enter a Twitter account, or quit:
+```python
+Enter a Twitter account, or quit:
 No unretrieved Twitter accounts found
 Enter a Twitter account, or quit: drchuck
 Retrieving http://api.twitter.com/1.1/friends ...
@@ -404,7 +427,8 @@ Comenzamos con la cuenta `drchuck` y luego dejamos que el programa seleccione au
 
 A continuación se muestran las primeras filas de las tablas `People` y` Follows` después de completar esta ejecución:
 
-```People:
+```python
+People:
 (1, 'drchuck', 1)
 (2, 'opencontent', 1)
 (3, 'lhawthorn', 1)
@@ -421,7 +445,7 @@ Follows:
 ```
 Puede ver los campos `id`,` name` y `visited` en la tabla` People` y puede ver los números de ambos extremos de la relación en la tabla `Follows`. En la tabla "Personas", podemos ver que las tres primeras personas han sido visitadas y sus datos han sido recuperados. Los datos en la tabla `Follows` indican que` drchuck` (usuario 1) es un amigo para todas las personas que aparecen en las primeras cinco filas. Esto tiene sentido porque los primeros datos que recuperamos y almacenamos fueron los amigos de Twitter de `drchuck`. Si tuviera que imprimir más filas de la tabla `Follows`, también vería a los amigos de los usuarios 2 y 3.
 
-## [Tres tipos de teclas] (# tres tipos de teclas)
+## Tres tipos de teclas {# tres tipos de teclas}
 
 Ahora que hemos empezado a construir un modelo de datos que coloca nuestros datos en varias tablas vinculadas y vincula las filas en esas tablas usando ** claves **, debemos analizar la terminología relacionada con las claves. En general, hay tres tipos de claves utilizadas en un modelo de base de datos.
 
@@ -433,7 +457,7 @@ Una ** clave principal ** suele ser un número que la base de datos asigna autom
 
 Estamos utilizando una convención de nomenclatura para llamar siempre el nombre de campo de la clave principal `id` y añadir el sufijo` _id` a cualquier nombre de campo que sea una clave externa.
 
-## [Uso de JOIN para recuperar datos] (# using-join-to-retrieve-data)
+## Uso de JOIN para recuperar datos {# using-join-to-retrieve-data}
 
 Ahora que hemos seguido las reglas de normalización de la base de datos y hemos separado los datos en dos tablas, vinculadas entre sí mediante claves primarias y externas, debemos poder construir un 'SELECCIONAR' que vuelva a ensamblar los datos en todas las tablas.
 
@@ -441,7 +465,8 @@ SQL usa la cláusula `JOIN` para volver a conectar estas tablas. En la cláusula
 
 El siguiente es un ejemplo de un `SELECT` con una cláusula` JOIN`:
 
-```SELECT * FROM Follows JOIN People
+```python
+SELECT * FROM Follows JOIN People
     ON Follows.from_id = People.id WHERE People.id = 1
 ```
 La cláusula `JOIN` indica que los campos que estamos seleccionando cruzan las tablas` Follows` y `People`. La cláusula `ON` indica cómo se deben unir las dos tablas: tome las filas de` Follows` y agregue la fila de `People` donde el campo` from_id` en `Follows` es el mismo que el valor de` id` en el Tabla de personas.
@@ -456,7 +481,8 @@ En este programa, primero desechamos 'People` y `Follows` y luego volcamos un su
 
 Aquí está la salida del programa:
 
-```python twjoin.py
+```python
+python twjoin.py
 People:
 (1, 'drchuck', 1)
 (2, 'opencontent', 1)
@@ -485,13 +511,13 @@ En la última selección, estamos buscando cuentas que sean amigos de "openconte
 
 En cada uno de los "metarows" en la última selección, las dos primeras columnas son de la tabla "Follows" seguidas por las columnas tres a cinco de la tabla "People". También puede ver que la segunda columna (`Follows.to_id`) coincide con la tercera columna (` People.id`) en cada uno de los "metarows" unidos.
 
-## [Resumen] (# resumen)
+## Resumen {# resumen}
 
 Este capítulo ha cubierto mucho terreno para ofrecerle una descripción general de los conceptos básicos del uso de una base de datos en Python. Es más complicado escribir el código para usar una base de datos para almacenar datos que los diccionarios de Python o los archivos planos, por lo que hay pocas razones para usar una base de datos a menos que su aplicación realmente necesite las capacidades de una base de datos. Las situaciones en las que una base de datos puede ser bastante útil son: (1) cuando su aplicación necesita realizar muchas actualizaciones aleatorias dentro de un conjunto de datos grande, (2) cuando sus datos son tan grandes que no caben en un diccionario y necesita buscar actualice la información repetidamente, o (3) cuando tenga un proceso de larga ejecución que desee poder detener, reiniciar y conservar los datos de una ejecución a la siguiente.
 
 Puede crear una base de datos simple con una sola tabla para satisfacer las necesidades de muchas aplicaciones, pero la mayoría de los problemas requerirán varias tablas y vínculos / relaciones entre filas en diferentes tablas. Cuando comienza a crear enlaces entre tablas, es importante hacer un diseño cuidadoso y seguir las reglas de normalización de la base de datos para aprovechar al máximo las capacidades de la base de datos. Dado que la motivación principal para usar una base de datos es que tiene una gran cantidad de datos con los que tratar, es importante modelar sus datos de manera eficiente para que sus programas se ejecuten lo más rápido posible.
 
-## [depuración] (# depuración)
+## depuración {# depuración}
 
 Un patrón común cuando desarrolle un programa Python para conectarse a una base de datos SQLite será ejecutar un programa Python y verificar los resultados utilizando el Explorador de bases de datos para SQLite. El navegador le permite verificar rápidamente si su programa está funcionando correctamente.
 
@@ -499,7 +525,7 @@ Debe tener cuidado porque SQLite se encarga de evitar que dos programas cambien 
 
 Por lo tanto, una solución es asegurarse de cerrar el navegador de la base de datos o usar el menú ** Archivo ** para cerrar la base de datos en el navegador antes de intentar acceder a la base de datos desde Python para evitar el problema de su código Python debido a que la base de datos no funciona. está bloqueado.
 
-## [Glosario] (# glosario)
+## Glosario {# glosario}
 
 
 

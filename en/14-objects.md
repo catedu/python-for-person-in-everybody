@@ -1,5 +1,17 @@
 # Object-Oriented Programming {#object-oriented-programming}
 
+* [Managing Larger Programs](#managing-larger-programs)
+* [Getting Started](#getting-started)
+* [Using Objects](#using-objects)
+* [Starting with Programs](#starting-with-programs)
+* [Subdividing a Problem - Encapsulation](#subdividing-a-problem---encapsulation)
+* [Our First Python Object](#our-first-python-object)
+* [Classes as Types](#classes-as-types)
+* [Object Lifecycle](#object-lifecycle)
+* [Many Instances](#many-instances)
+* [Inheritance](#inheritance)
+* [Summary](#summary)
+
 ## Managing Larger Programs {#managing-larger-programs}
 
 At the beginning of this book, we came up with four basic programming patterns which we use to construct programs:
@@ -106,10 +118,7 @@ One of the advantages of the object oriented approach is that it can hide comple
 
 This ability to focus on a part of a program that we care about and ignore the rest of the program is also helpful to the developers of the objects. For example the programmers developing BeautifulSoup do not need to know or care about how we retrieve our HTML page, what parts we want to read or what we plan to do with the data we extract from the web page.
 
-TODO go on here
-Ignoring Detail When Building an Object
-
-
+![Ignoring Detail When Building an Object](../img/building-objects-details-ignored.svg)
 
 Another word we use to capture this idea that we ignore the internal detail of objects we use is "encapsulation". This means that we can know how to use an object without knowing how it internally accomplishes what we need done.
 
@@ -119,23 +128,21 @@ At its simplest, an object is some code plus data structures that is smaller tha
 
 An object can contain a number of functions (which we call "methods") as well as data that is used by those functions. We call data items that are part of the object "attributes".
 
-
-
 We use the `class` keyword to define the data and code that will make up each of the objects. The class keyword includes the name of the class and begins an indented block of code where we include the attributes (data) and methods (code).
+
+<iframe src="https://trinket.io/embed/python3/b88be451e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Each method looks like a function, starting with the `def` keyword and consisting of an indented block of code. This example has one attribute (x) and one method (party). The methods have a special first parameter that we name by convention `self`.
 
 Much like the `def` keyword does not cause function code to be executed, the `class` keyword does not create an object. Instead, the `class` keyword defines a template indicating what data and code will be contained in each object of type `PartyAnimal`. The class is like a cookie cutter and the objects created using the class are the cookies[^2]. You don't put frosting on the cookie cutter, you put frosting on the cookies - and you can put different frosting on each cookie.
 
-A Class and Two Objects
+![A Class and Two Objects](../img/cookies.png)
 
 If you continue through the example code, we see the first executable line of code:
 
 ```python
 an = PartyAnimal()
 ```
-
- 
 
 This is where we instruct Python to construct (e.g. create) an **object** or "instance of the class named PartyAnimal". It looks like a function call to the class itself and Python constructs the object with the right data and methods and returns the object which is then assigned to the variable `an`. In a way this is quite similar to the following line which we have been using all along:
 
@@ -182,9 +189,9 @@ The object is constructed, and the `party` method is called four times, both inc
 
 ## Classes as Types {#classes-as-types}
 
- 
-
 As we have seen, in Python, all variables have a type. And we can use the built-in `dir` function to examine the capabilities of a variable. We can use `type` and `dir` with the classes that we create.
+
+<iframe src="https://trinket.io/embed/python3/a502e6571d" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 When this program executes, it produces the following output:
 
@@ -200,8 +207,6 @@ Type <class 'method'>
 You can see that using the `class` keyword, we have created a new type. From the `dir` output, you can see both the `x` integer attribute and the `party` method are available in the object.
 
 ## Object Lifecycle {#object-lifecycle}
-
- 
 
 In the previous examples, we are defining a class (template) and using that class to create an instance of that class (object) and then using the instance. When the program finishes, all the variables are discarded. Usually we don't think much about the creation and destruction of variables, but often as our objects become more complex, we need to take some action within the object to set things up as the object is being constructed and possibly clean things up as the object is being discarded.
 
@@ -233,6 +238,8 @@ So far, we have been defining a class, making a single object, using that object
 
 When we are making multiple objects from our class, we might want to set up different initial values for each of the objects. We can pass data into the constructors to give each object a different initial value:
 
+<iframe src="https://trinket.io/embed/python3/a1464da1b6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 The constructor has both a `self` parameter that points to the object instance and then additional parameters that are passed into the constructor as the object is being constructed:
 
 ```python
@@ -263,7 +270,11 @@ Another powerful feature of object oriented programming is the ability to create
 
 For this example, we will move our `PartyAnimal` class into its own file:
 
+<iframe src="https://trinket.io/embed/python3/859f1006a3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 Then, we can 'import' the `PartyAnimal` class in a new file and extend it as follows:
+
+<iframe src="https://trinket.io/embed/python3/980f08c259" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 When we are defining the `CricketFan` object, we indicate that we are extending the `PartyAnimal` class. This means that all of the variables (`x`) and methods (`party`) from the `PartyAnimal` class are inherited by the `CricketFan` class.
 
@@ -288,6 +299,8 @@ In the `dir` output for the `j` object (instance of the `CricketFan` class) you 
 
 This is a very quick introduction to object-oriented programming that focuses mainly on terminology and the syntax of defining and using objects. Let's quickly review the code that we looked at in the beginning of the chapter. At this point you should fully understand what is going on.
 
+<iframe src="https://trinket.io/embed/python3/ee59ee4759" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 The first line constructs a `list` **object**. When Python creates the `list` object, it calls the **constructor** method (named `__init__`) to set up the internal data attributes that will be used to store the list data. Due to **encapsulation** we neither need to know, nor need to care about these in internal data attributes are arranged.
 
 We are not passing any parameters to the **constructor** and when the constructor returns, we use the variable `stuff` to point to the returned instance of the `list` class.
@@ -300,29 +313,8 @@ At the end of the program the `stuff` object is discarded but not before calling
 
 Those are the basics and terminology of object oriented programming. There are many additional details as to how to best use object oriented approaches when developing large applications and libraries that are beyond the scope of this chapter.[^3]
 
-## Glossary {#glossary}
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
 ---
 
-
-[^1]: https://docs.python.org/3/library/html.parser.html
+[^1]: [https://docs.python.org/3/library/html.parser.html](https://docs.python.org/3/library/html.parser.html)
 [^2]: Cookie image copyright CC-BY https://www.flickr.com/photos/dinnerseries/23570475099
 [^3]: If you are curious about where the list class is defined, take a look at (hopefully the URL won't change) https://github.com/python/cpython/blob/master/Objects/listobject.c - the list class is written in a language called "C". If you take a look at that source code and find it curious you might want to explore a few Computer Science courses.

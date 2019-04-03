@@ -100,21 +100,19 @@ At the very end of the program, we execute an SQL command to `DELETE` the rows w
 
 ## Structured Query Language summary {#structured-query-language-summary}
 
-
-TODO go on here
 So far, we have been using the Structured Query Language in our Python examples and have covered many of the basics of the SQL commands. In this section, we look at the SQL language in particular and give an overview of SQL syntax.
 
 Since there are so many different database vendors, the Structured Query Language (SQL) was standardized so we could communicate in a portable manner to database systems from multiple vendors.
 
 A relational database is made up of tables, rows, and columns. The columns generally have a type such as text, numeric, or date data. When we create a table, we indicate the names and types of the columns:
 
-```python
+```sql
 CREATE TABLE Tracks (title TEXT, plays INTEGER)
 ```
 
 To insert a row into a table, we use the SQL `INSERT` command:
 
-```python
+```sql
 INSERT INTO Tracks (title, plays) VALUES ('My Way', 15)
 ```
 
@@ -122,7 +120,7 @@ The `INSERT` statement specifies the table name, then a list of the fields/colum
 
 The SQL `SELECT` command is used to retrieve rows and columns from a database. The `SELECT` statement lets you specify which columns you would like to retrieve as well as a `WHERE` clause to select which rows you would like to see. It also allows an optional `ORDER BY` clause to control the sorting of the returned rows.
 
-```python
+```sql
 SELECT * FROM Tracks WHERE title = 'My Way'
 ```
 
@@ -132,19 +130,19 @@ Note, unlike in Python, in a SQL `WHERE` clause we use a single equal sign to in
 
 You can request that the returned rows be sorted by one of the fields as follows:
 
-```python
+```sql
 SELECT title,plays FROM Tracks ORDER BY title
 ```
 
 To remove a row, you need a `WHERE` clause on an SQL `DELETE` statement. The `WHERE` clause determines which rows are to be deleted:
 
-```python
+```sql
 DELETE FROM Tracks WHERE title = 'My Way'
 ```
 
 It is possible to `UPDATE` a column or columns within one or more rows in a table using the SQL `UPDATE` statement as follows:
 
-```python
+```sql
 UPDATE Tracks SET plays = 16 WHERE title = 'My Way'
 ```
 
@@ -167,6 +165,8 @@ By storing our list of known accounts and whether we have retrieved the account 
 This program is a bit complex. It is based on the code from the exercise earlier in the book that uses the Twitter API.
 
 Here is the source code for our Twitter spidering application:
+
+<iframe src="https://trinket.io/embed/python3/f9ee36fa1f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Our database is stored in the file `spider.sqlite3` and it has one table named `Twitter`. Each row in the `Twitter` table has a column for the account name, whether we have retrieved the friends of this account, and how many times this account has been "friended".
 
@@ -197,7 +197,7 @@ print 'New accounts=',countnew,' revisited=',countold
 conn.commit()
 ```
 
-Once the cursor executes the `SELECT` statement, we must retrieve the rows. We could do this with a `for` statement, but since we are only retrieving one row (`LIMIT 1`), we can use the `fetchone()` method to fetch the first (and only) row that is the result of the `SELECT` operation. Since `fetchone()` returns the row as a **tuple** (even though there is only one field), we take the first value from the tuple using to get the current friend count into the variable `count`.
+Once the cursor executes the `SELECT` statement, we must retrieve the rows. We could do this with a `for` statement, but since we are only retrieving one row (`LIMIT 1`), we can use the `fetchone()` method to fetch the first (and only) row that is the result of the `SELECT` operation. Since `fetchone()` returns the row as a **tuple** (even though there is only one field), we take the first value from the tuple to get the current friend count into the variable `count`.
 
 If this retrieval is successful, we use the SQL `UPDATE` statement with a `WHERE` clause to add 1 to the `friends` column for the row that matches the friend's account. Notice that there are two placeholders (i.e., question marks) in the SQL, and the second parameter to the `execute()` is a two-element tuple that holds the values to be substituted into the SQL in place of the question marks.
 
@@ -215,6 +215,8 @@ Enter a Twitter account, or quit: quit
 Since this is the first time we have run the program, the database is empty and we create the database in the file `spider.sqlite3` and add a table named `Twitter` to the database. Then we retrieve some friends and add them all to the database since the database is empty.
 
 At this point, we might want to write a simple database dumper to take a look at what is in our `spider.sqlite3` file:
+
+<iframe src="https://trinket.io/embed/python3/e986702fd6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 This program simply opens the database and selects all of the columns of all of the rows in the table `Twitter`, then loops through the rows and prints out each row.
 
@@ -260,9 +262,14 @@ We use the SQL `SELECT` statement to retrieve the name of the first (`LIMIT 1`) 
 
 If we successfully retrieved an unprocessed `screen_name`, we retrieve their data as follows:
 
-~<sub>~</sub> {.python{ url = twurl.augment(TWITTER_URL, {'screen_name': acct, 'count': '20'} ) print 'Retrieving', url connection = urllib.urlopen(url) data = connection.read() js = json.loads(data)
-
-cur.execute('UPDATE Twitter SET retrieved=1 WHERE name = ?', (acct, ) ) ~<sub>~</sub>
+```python
+url = twurl.augment(TWITTER_URL, {'screen_name': acct, 'count': '20'})
+print('Retrieving')
+url connection = urllib.urlopen(url)
+data = connection.read()
+js = json.loads(data)
+cur.execute('UPDATE Twitter SET retrieved = 1 WHERE nombre =?', (acct,))
+```
 
 Once we retrieve the data successfully, we use the `UPDATE` statement to set the `retrieved` column to 1 to indicate that we have completed the retrieval of the friends of this account. This keeps us from retrieving the same data over and over and keeps us progressing forward through the network of Twitter friends.
 
@@ -301,13 +308,13 @@ Let's say for our Twitter spider application, instead of just counting a person'
 
 Since everyone will potentially have many accounts that follow them, we cannot simply add a single column to our `Twitter` table. So we create a new table that keeps track of pairs of friends. The following is a simple way of making such a table:
 
-```python
+```sql
 CREATE TABLE Pals (from_friend TEXT, to_friend TEXT)
 ```
 
 Each time we encounter a person who `drchuck` is following, we would insert a row of the form:
 
-```python
+```sql
 INSERT INTO Pals (from_friend,to_friend) VALUES ('drchuck', 'lhawthorn')
 ```
 
@@ -321,7 +328,7 @@ We will store our Twitter accounts in a table named `People` instead of the `Twi
 
 We can create the `People` table with this additional `id` column as follows:
 
-```python
+```sql
 CREATE TABLE People
     (id INTEGER PRIMARY KEY, name TEXT UNIQUE, retrieved INTEGER)
 ```
@@ -330,7 +337,7 @@ Notice that we are no longer maintaining a friend count in each row of the `Peop
 
 Now instead of creating the table `Pals` above, we create a table called `Follows` with two integer columns `from_id` and `to_id` and a constraint on the table that the **combination** of `from_id` and `to_id` must be unique in this table (i.e., we cannot insert duplicate rows) in our database.
 
-```python
+```sql
 CREATE TABLE Follows
     (from_id INTEGER, to_id INTEGER, UNIQUE(from_id, to_id) )
 ```
@@ -339,11 +346,14 @@ When we add `UNIQUE` clauses to our tables, we are communicating a set of rules 
 
 In essence, in creating this `Follows` table, we are modelling a "relationship" where one person "follows" someone else and representing it with a pair of numbers indicating that (a) the people are connected and (b) the direction of the relationship.
 
-Relationships Between Tables
+![Relationships Between Tables](img/relatinos-db.png)
+
 
 ## Programming with multiple tables {#programming-with-multiple-tables}
 
 We will now redo the Twitter spider program using two tables, the primary keys, and the key references as described above. Here is the code for the new version of the program:
+
+<iframe src="https://trinket.io/embed/python3/88efa27a18" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 This program is starting to get a bit complicated, but it illustrates the patterns that we need to use when we are using integer keys to link tables. The basic patterns are:
 
@@ -396,7 +406,7 @@ If all goes well[^2] inside the `try` section, we retrieve the record using `fet
 
 If the `SELECT` fails, the `fetchone()[0]` code will fail and control will transfer into the `except` section.
 
-```
+```python
     friend = u['screen_name']
     cur.execute('SELECT id FROM People WHERE name = ? LIMIT 1',
         (friend, ) )
@@ -471,6 +481,7 @@ You can see the `id`, `name`, and `visited` fields in the `People` table and you
 
 ## Three kinds of keys {#three-kinds-of-keys}
 
+TODO go on here
 Now that we have started building a data model putting our data into multiple linked tables and linking the rows in those tables using **keys**, we need to look at some terminology around keys. There are generally three kinds of keys used in a database model.
 
 - A **logical key** is a key that the "real world" might use to look up a row. In our example data model, the `name` field is a logical key. It is the screen name for the user and we indeed look up a user's row several times in the program using the `name` field. You will often find that it makes sense to add a `UNIQUE` constraint to a logical key. Since the logical key is how we look up a row from the outside world, it makes little sense to allow multiple rows with the same value in the table.

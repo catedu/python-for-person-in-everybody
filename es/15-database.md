@@ -98,59 +98,63 @@ Nuestro bucle `for` encuentra dos filas, y cada fila es una tupla de Python con 
 
 Al final del programa, ejecutamos un comando SQL para 'BORRAR' las filas que acabamos de crear para que podamos ejecutar el programa una y otra vez. El comando `DELETE` muestra el uso de una cláusula` WHERE` que nos permite expresar un criterio de selección para que podamos pedir a la base de datos que aplique el comando solo a las filas que coincidan con el criterio. En este ejemplo, el criterio pasa a aplicarse a todas las filas, de modo que vaciamos la tabla para poder ejecutar el programa repetidamente. Después de que se realiza el `BORRAR`, también llamamos a` commit () `para forzar que los datos se eliminen de la base de datos.
 
-## Resumen de lenguaje de consulta estructurado {# estructurado de consulta-lenguaje-resumen}
+## Resumen de lenguaje de consulta estructurado {#structured-query-language-summary}
 
-
-TODO seguir por aquí
 Hasta ahora, hemos estado utilizando el lenguaje de consulta estructurado en nuestros ejemplos de Python y hemos cubierto muchos de los conceptos básicos de los comandos SQL. En esta sección, analizamos el lenguaje SQL en particular y ofrecemos una descripción general de la sintaxis de SQL.
 
-Dado que hay tantos proveedores de bases de datos diferentes, el lenguaje de consulta estructurado (SQL) se estandarizó para que pudiéramos comunicarnos de manera portátil a los sistemas de bases de datos de varios proveedores.
+Dado que hay tantos proveedores de bases de datos diferentes, el lenguaje de consulta estructurado (SQL) se estandarizó para que pudiéramos comunicarnos facilmente con los sistemas de bases de datos de varios proveedores.
 
 Una base de datos relacional está formada por tablas, filas y columnas. Las columnas generalmente tienen un tipo como datos de texto, numéricos o de fecha. Cuando creamos una tabla, indicamos los nombres y tipos de las columnas:
 
-```python
+```sql
 CREATE TABLE Tracks (title TEXT, plays INTEGER)
 ```
+
 Para insertar una fila en una tabla, usamos el comando SQL `INSERT`:
 
-```python
+```sql
 INSERT INTO Tracks (title, plays) VALUES ('My Way', 15)
 ```
-La declaración `INSERT` especifica el nombre de la tabla, luego una lista de los campos / columnas que le gustaría establecer en la nueva fila, y luego la palabra clave` VALUES` y una lista de valores correspondientes para cada uno de los campos.
 
-El comando SQL 'SELECT` se usa para recuperar filas y columnas de una base de datos. La declaración `SELECT` le permite especificar qué columnas desea recuperar, así como una cláusula WHERE` para seleccionar qué filas desea ver. También permite una cláusula opcional `ORDER BY` para controlar la clasificación de las filas devueltas.
+La declaración `INSERT` especifica el nombre de la tabla, luego una lista de los campos/columnas que te gustaría establecer en la nueva fila, y luego la palabra clave `VALUES` y una lista de valores correspondientes para cada uno de los campos.
 
-```python
+El comando SQL `SELECT` se usa para recuperar filas y columnas de una base de datos. La declaración `SELECT` te permite especificar qué columnas deseas recuperar, así como una cláusula `WHERE` para seleccionar qué filas deseas ver. También permite una cláusula opcional `ORDER BY` para controlar la clasificación de las filas devueltas.
+
+```sql
 SELECT * FROM Tracks WHERE title = 'My Way'
 ```
-Usar `*` indica que desea que la base de datos devuelva todas las columnas para cada fila que coincida con la cláusula `WHERE`.
 
-Tenga en cuenta que, a diferencia de Python, en una cláusula SQL `WHERE` usamos un único signo igual para indicar una prueba de igualdad en lugar de un doble signo igual. Otras operaciones lógicas permitidas en una cláusula `WHERE` incluyen` & lt; `,` & gt; `,` & lt; = `,` & gt; = `,`! = `, Así como` AND` y `OR` y paréntesis para construir tus expresiones lógicas.
+Usar `*` indica que deseas que la base de datos devuelva todas las columnas para cada fila que coincida con la cláusula `WHERE`.
 
-Puede solicitar que las filas devueltas se ordenen por uno de los campos de la siguiente manera:
+Ten en cuenta que, a diferencia de Python, en una cláusula SQL `WHERE` usamos un único signo igual para indicar una prueba de igualdad en lugar de un doble signo igual. Otras operaciones lógicas permitidas en una cláusula `WHERE` incluyen `<`, `>`, `<=`, `>=`, `!=`, así como `AND` y `OR` y paréntesis para construir tus expresiones lógicas.
 
-```python
+Puedes solicitar que las filas devueltas se ordenen por uno de los campos de la siguiente manera:
+
+```sql
 SELECT title,plays FROM Tracks ORDER BY title
 ```
-Para eliminar una fila, necesita una cláusula `WHERE` en una sentencia SQL` DELETE`. La cláusula `WHERE` determina qué filas se van a eliminar:
 
-```python
+Para eliminar una fila, necesitas una cláusula `WHERE` en una sentencia SQL `DELETE`. La cláusula `WHERE` determina qué filas se van a eliminar:
+
+```sql
 DELETE FROM Tracks WHERE title = 'My Way'
 ```
-Es posible `ACTUALIZAR` una columna o columnas dentro de una o más filas en una tabla usando la declaración SQL` ACTUALIZACIÓN` de la siguiente manera:
 
-```python
+Es posible `UPDATE` una columna o columnas dentro de una o más filas en una tabla usando la declaración SQL `UPDATE` de la siguiente manera:
+
+```sql
 UPDATE Tracks SET plays = 16 WHERE title = 'My Way'
 ```
-La declaración `UPDATE` especifica una tabla y luego una lista de campos y valores para cambiar después de la palabra clave` SET` y luego una cláusula opcional `WHERE` para seleccionar las filas que se actualizarán. Una sola instrucción `UPDATE` cambiará todas las filas que coincidan con la cláusula` WHERE`. Si no se especifica una cláusula `WHERE`, realiza el` UPDATE` en todas las filas de la tabla.
 
-Estos cuatro comandos SQL básicos (INSERTAR, SELECCIONAR, ACTUALIZAR y BORRAR) permiten las cuatro operaciones básicas necesarias para crear y mantener datos.
+La declaración `UPDATE` especifica una tabla y luego una lista de campos y valores para cambiar después de la palabra clave `SET` y luego una cláusula opcional `WHERE` para seleccionar las filas que se actualizarán. Una sola instrucción `UPDATE` cambiará todas las filas que coincidan con la cláusula `WHERE`. Si no se especificas una cláusula `WHERE`, realiza el `UPDATE` en todas las filas de la tabla.
 
-## Spidering Twitter usando una base de datos {# spidering-twitter-using-a-database}
+Estos cuatro comandos SQL básicos (INSERT, SELECT, UPDATE, y DELETE) permiten las cuatro operaciones básicas necesarias para crear y mantener datos.
 
-En esta sección, crearemos un programa de spidering simple que pasará por las cuentas de Twitter y creará una base de datos de ellas. ** Nota: Tenga mucho cuidado al ejecutar este programa. No desea extraer demasiados datos o ejecutar el programa durante demasiado tiempo y terminar con el cierre de su acceso a Twitter. **
+## Spidering Twitter usando una base de datos {#spidering-twitter-using-a-database}
 
-Uno de los problemas de cualquier tipo de programa spidering es que debe poder detenerse y reiniciarse muchas veces y no quiere perder los datos que ha recuperado hasta ahora. No siempre desea reiniciar su recuperación de datos desde el principio, por lo que queremos almacenar datos a medida que los recuperamos para que nuestro programa pueda iniciarse nuevamente y continuar donde lo dejó.
+En esta sección, crearemos un programa de spidering simple que pasará por las cuentas de Twitter y creará una base de datos de ellas. **Nota: Ten mucho cuidado al ejecutar este programa. No deseas extraer demasiados datos o ejecutar el programa durante demasiado tiempo y terminar con el cierre de tu acceso a Twitter.**
+
+Uno de los problemas de cualquier tipo de programa spidering es que debe poder detenerse y reiniciarse muchas veces y no quieres perder los datos que has recuperado hasta ahora. No siempre deseas reiniciar tu recuperación de datos desde el principio, por lo que queremos almacenar datos a medida que los recuperamos para que nuestro programa pueda iniciarse nuevamente y continuar donde lo dejó.
 
 Comenzaremos por recuperar los amigos de Twitter de una persona y sus estados, recorreremos la lista de amigos y agregaremos a cada uno de los amigos a una base de datos para recuperarlos en el futuro. Después de procesar los amigos de Twitter de una persona, revisamos nuestra base de datos y recuperamos a uno de los amigos del amigo. Hacemos esto una y otra vez, seleccionando a una persona "no visitada", recuperando su lista de amigos y agregando amigos que no hemos visto en nuestra lista para una futura visita.
 
@@ -162,13 +166,15 @@ Este programa es un poco complejo. Se basa en el código del ejercicio anterior 
 
 Aquí está el código fuente de nuestra aplicación de spidering de Twitter:
 
-Nuestra base de datos se almacena en el archivo `spider.sqlite3` y tiene una tabla llamada` Twitter`. Cada fila en la tabla `Twitter` tiene una columna para el nombre de la cuenta, si hemos recuperado los amigos de esta cuenta y cuántas veces esta cuenta ha sido" amigable ".
+<iframe src="https://trinket.io/embed/python3/f9ee36fa1f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-En el ciclo principal del programa, le pedimos al usuario un nombre de cuenta de Twitter o "salir" para salir del programa. Si el usuario ingresa a una cuenta de Twitter, recuperamos la lista de amigos y estados de ese usuario y agregamos a cada amigo a la base de datos si aún no está en la base de datos. Si el amigo ya está en la lista, agregamos 1 al campo `friends` en la fila de la base de datos.
+Nuestra base de datos se almacena en el archivo `spider.sqlite3` y tiene una tabla llamada `Twitter`. Cada fila en la tabla `Twitter` tiene una columna para el nombre de la cuenta, si hemos recuperado los amigos de esta cuenta y cuántas veces esta cuenta ha sido "seguida".
+
+En el ciclo principal del programa, le pedimos al usuario un nombre de cuenta de Twitter o "salir" para salir del programa. Si el usuario ingresa una cuenta de Twitter, recuperamos la lista de amigos y estados de ese usuario y agregamos a cada amigo a la base de datos si aún no está en la base de datos. Si el amigo ya está en la lista, agregamos 1 al campo `friends` en la fila de la base de datos.
 
 Si el usuario presiona Intro, buscamos en la base de datos la próxima cuenta de Twitter que aún no hemos recuperado, recuperamos los amigos y los estados de esa cuenta, los agregamos a la base de datos o los actualizamos, y aumentamos el recuento de sus "amigos".
 
-Una vez que recuperamos la lista de amigos y estados, recorramos todos los elementos `user` en el JSON devuelto y recuperamos el` screen_name` para cada usuario. Luego usamos la declaración `SELECT` para ver si ya hemos almacenado este` screen_name` en particular en la base de datos y recuperar el recuento de amigos (`friends`) si el registro existe.
+Una vez que recuperamos la lista de amigos y estados, recorremos todos los elementos `user` en el JSON devuelto y recuperamos el `screen_name` para cada usuario. Luego usamos la declaración `SELECT` para ver si ya hemos almacenado este `screen_name` en particular en la base de datos y recuperar el recuento de amigos (`friends`) si el registro existe.
 
 ```python
 countnew = 0
@@ -190,11 +196,12 @@ for u in js['users'] :
 print 'New accounts=',countnew,' revisited=',countold
 conn.commit()
 ```
-Una vez que el cursor ejecuta la instrucción `SELECT`, debemos recuperar las filas. Podríamos hacer esto con una declaración `for`, pero como solo estamos recuperando una fila (` LIMIT 1`), podemos usar el método `fetchone ()` para recuperar la primera (y única) fila que es el resultado de La operación `SELECT`. Como `fetchone ()` devuelve la fila como ** tupla ** (aunque solo hay un campo), tomamos el primer valor de la tupla usando para obtener el recuento actual de amigos en la variable `recuento '.
 
-Si esta recuperación es exitosa, usamos la declaración SQL `UPDATE` con una cláusula` WHERE` para agregar 1 a la columna `friends` para la fila que coincide con la cuenta del amigo. Observe que hay dos marcadores de posición (es decir, signos de interrogación) en el SQL, y el segundo parámetro de `execute ()` es una tupla de dos elementos que contiene los valores que se sustituirán en el SQL en lugar de los signos de interrogación.
+Una vez que el cursor ejecuta la instrucción `SELECT`, debemos recuperar las filas. Podríamos hacer esto con una declaración `for`, pero como solo estamos recuperando una fila (`LIMIT 1`), podemos usar el método `fetchone()` para recuperar la primera (y única) fila que es el resultado de la operación `SELECT`. Como `fetchone()` devuelve la fila como **tupla** (aunque solo haya un campo), tomamos el primer valor de la tupla para obtener el recuento actual de amigos y guardarlo en la variable `count`.
 
-Si el código en el bloque `try` falla, es probable que no haya ningún registro que coincida con la cláusula WHERE name =? En la instrucción SELECT. Entonces, en el bloque `except`, usamos la declaración SQL` INSERT` para agregar el `screen_name` del amigo a la tabla con una indicación de que aún no hemos recuperado el` screen_name` y establecer el recuento de amigos en cero.
+Si esta recuperación es exitosa, usamos la declaración SQL `UPDATE` con una cláusula `WHERE` para agregar 1 a la columna `friends` para la fila que coincide con la cuenta del amigo. Observa que hay dos marcadores de posición (es decir, signos de interrogación) en el SQL, y el segundo parámetro de `execute()` es una tupla de dos elementos que contiene los valores que se sustituirán en el SQL en lugar de los signos de interrogación.
+
+Si el código en el bloque `try` falla, es probable que no haya ningún registro que coincida con la cláusula WHERE name =? en la instrucción SELECT. Entonces, en el bloque `except`, usamos la declaración SQL `INSERT` para agregar el `screen_name` del amigo a la tabla con una indicación de que aún no hemos recuperado el `screen_name` y establecer el recuento de amigos en cero.
 
 Entonces, la primera vez que se ejecuta el programa y entramos en una cuenta de Twitter, el programa se ejecuta de la siguiente manera:
 
@@ -204,9 +211,12 @@ Retrieving http://api.twitter.com/1.1/friends ...
 New accounts= 20  revisited= 0
 Enter a Twitter account, or quit: quit
 ```
-Como esta es la primera vez que ejecutamos el programa, la base de datos está vacía y creamos la base de datos en el archivo `spider.sqlite3` y agregamos una tabla llamada` Twitter` a la base de datos. Luego recuperamos algunos amigos y los agregamos a la base de datos ya que la base de datos está vacía.
+
+Como esta es la primera vez que ejecutamos el programa, la base de datos está vacía y creamos la base de datos en el archivo `spider.sqlite3` y agregamos una tabla llamada `Twitter` a la base de datos. Luego recuperamos algunos amigos y los agregamos a la base de datos, que está vacía.
 
 En este punto, podríamos querer escribir un dumper de base de datos simple para echar un vistazo a lo que está en nuestro archivo `spider.sqlite3`:
+
+<iframe src="https://trinket.io/embed/python3/e986702fd6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Este programa simplemente abre la base de datos y selecciona todas las columnas de todas las filas en la tabla `Twitter`, luego recorre las filas e imprime cada fila.
 
@@ -221,9 +231,10 @@ Si ejecutamos este programa después de la primera ejecución de nuestra araña 
 ...
 20 rows.
 ```
-Vemos una fila para cada `nombre_de_la pantalla`, que no hemos recuperado los datos para ese` nombre_de_la pantalla`, y todos en la base de datos tienen un amigo.
 
-Ahora nuestra base de datos refleja la recuperación de los amigos de nuestra primera cuenta de Twitter (** drchuck **). Podemos ejecutar el programa nuevamente y decirle que recupere a los amigos de la próxima cuenta "sin procesar" simplemente presionando Intro en lugar de una cuenta de Twitter de la siguiente manera:
+Vemos una fila para cada `screen_name`, que no hemos recuperado los datos para ese `screen_name`, y todos en la base de datos tienen un amigo.
+
+Ahora nuestra base de datos refleja la recuperación de los amigos de nuestra primera cuenta de Twitter (**drchuck**). Podemos ejecutar el programa nuevamente y decirle que recupere a los amigos de la próxima cuenta "sin procesar" simplemente presionando Intro en lugar de una cuenta de Twitter de la siguiente manera:
 
 ```python
 Enter a Twitter account, or quit:
@@ -234,6 +245,7 @@ Retrieving http://api.twitter.com/1.1/friends ...
 New accounts= 17  revisited= 3
 Enter a Twitter account, or quit: quit
 ```
+
 Desde que presionamos enter (es decir, no especificamos una cuenta de Twitter), se ejecuta el siguiente código:
 
 ```python
@@ -245,15 +257,21 @@ if ( len(acct) < 1 ) :
         print 'No unretrieved twitter accounts found'
         continue
 ```
-Usamos la instrucción SQL 'SELECT` para recuperar el nombre del primer usuario (`LIMIT 1`) que todavía tiene su valor de" hemos recuperado este usuario "establecido en cero. También utilizamos el patrón `fetchone () [0]` dentro de un bloque try / except para extraer un `screen_name` de los datos recuperados o para mostrar un mensaje de error y realizar un bucle de copia de seguridad.
+
+Usamos la instrucción SQL `SELECT` para recuperar el nombre del primer usuario (`LIMIT 1`) que todavía tiene su valor establecido en cero. También utilizamos el patrón `fetchone() [0]` dentro de un bloque try / except para extraer un `screen_name` de los datos recuperados o para mostrar un mensaje de error y realizar un bucle de copia de seguridad.
 
 Si recuperamos con éxito un `screen_name` sin procesar, recuperamos sus datos de la siguiente manera:
 
-~ <sub> ~ </sub> {.python {url = twurl.augment (TWITTER_URL, {'screen_name': acct, 'count': '20'}) imprime 'Retrieving', url connection = urllib.urlopen (url ) data = connection.read () js = json.loads (data)
+```python
+url = twurl.augment(TWITTER_URL, {'screen_name': acct, 'count': '20'})
+print('Retrieving')
+url connection = urllib.urlopen(url)
+data = connection.read()
+js = json.loads(data)
+cur.execute('UPDATE Twitter SET retrieved = 1 WHERE nombre =?', (acct,))
+```
 
-cur.execute ('UPDATE Twitter SET recuperado = 1 DÓNDE nombre =?', (acct,)) ~ <sub> ~ </sub>
-
-Una vez que recuperamos los datos con éxito, usamos la instrucción `ACTUALIZAR` para establecer la columna `recuperado` en 1 para indicar que hemos completado la recuperación de los amigos de esta cuenta. Esto nos impide recuperar los mismos datos una y otra vez y nos mantiene progresando a través de la red de amigos de Twitter.
+Una vez que recuperamos los datos con éxito, usamos la instrucción `UPDATE` para establecer la columna `retrieved` en 1 para indicar que hemos completado la recuperación de los amigos de esta cuenta. Esto nos impide recuperar los mismos datos una y otra vez y nos mantiene progresando a través de la red de amigos de Twitter.
 
 Si ejecutamos el programa de amigos y presionamos Intro dos veces para recuperar a los amigos de los siguientes amigos no visitados, luego ejecutamos el programa de descarga, nos dará el siguiente resultado:
 
@@ -271,17 +289,18 @@ Si ejecutamos el programa de amigos y presionamos Intro dos veces para recuperar
 ...
 55 rows.
 ```
-Podemos ver que hemos registrado correctamente que hemos visitado `lhawthorn` y` opencontent`. También las cuentas `cnxorg` y` kthanos` ya tienen dos seguidores. Como ahora hemos recuperado los amigos de tres personas (`drchuck`,` opencontent` y `lhawthorn`), nuestra tabla tiene 55 filas de amigos para recuperar.
 
-Cada vez que ejecutamos el programa y presionamos enter, elegimos la siguiente cuenta no visitada (por ejemplo, la siguiente cuenta será `steve_coppin`), recuperará a sus amigos, los marcará como recuperados y, para cada uno de los amigos de` steve_coppin`, agregue hasta el final de la base de datos o actualice el recuento de sus amigos si ya están en la base de datos.
+Podemos ver que hemos registrado correctamente que hemos visitado `lhawthorn` y` opencontent`. También las cuentas `cnxorg` y `kthanos` ya tienen dos seguidores. Como ahora hemos recuperado los amigos de tres personas (`drchuck`,`opencontent` y `lhawthorn`), nuestra tabla tiene 55 filas de amigos para recuperar.
+
+Cada vez que ejecutamos el programa y presionamos enter, elegimos la siguiente cuenta no visitada (por ejemplo, la siguiente cuenta será `steve_coppin`), recuperará a sus amigos, los marcará como recuperados y, para cada uno de los amigos de `steve_coppin`, agregará hasta el final de la base de datos o actualizará el recuento de sus amigos si ya están en la base de datos.
 
 Dado que todos los datos del programa se almacenan en el disco en una base de datos, la actividad de rastreo se puede suspender y reanudar tantas veces como desee sin perder datos.
 
-## Modelado básico de datos {# modelado básico de datos}
+## Modelado básico de datos {#basic-data-modeling}
 
-El poder real de una base de datos relacional es cuando creamos varias tablas y hacemos enlaces entre esas tablas. El acto de decidir cómo dividir los datos de su aplicación en varias tablas y establecer las relaciones entre las tablas se denomina ** modelado de datos **. El documento de diseño que muestra las tablas y sus relaciones se denomina ** modelo de datos **.
+El poder real de una base de datos relacional es cuando creamos varias tablas y hacemos enlaces entre esas tablas. El acto de decidir cómo dividir los datos de su aplicación en varias tablas y establecer las relaciones entre las tablas se denomina **modelado de datos**. El documento de diseño que muestra las tablas y sus relaciones se denomina **modelo de datos**.
 
-El modelado de datos es una habilidad relativamente sofisticada y solo presentaremos los conceptos más básicos del modelado de datos relacionales en esta sección. Para más detalles sobre el modelado de datos, puede comenzar con:
+El modelado de datos es una habilidad relativamente sofisticada y solo presentaremos los conceptos más básicos del modelado de datos relacionales en esta sección. Para más detalles sobre el modelado de datos, puedes comenzar con:
 
 [http://en.wikipedia.org/wiki/Relational_model](http://en.wikipedia.org/wiki/Relational_model)
 
@@ -289,55 +308,60 @@ Digamos que para nuestra aplicación de araña de Twitter, en lugar de simplemen
 
 Dado que potencialmente todos tendrán muchas cuentas que los siguen, no podemos simplemente agregar una sola columna a nuestra tabla `Twitter`. Así que creamos una nueva tabla que hace un seguimiento de parejas de amigos. La siguiente es una forma simple de hacer una tabla de este tipo:
 
-```python
+```sql
 CREATE TABLE Pals (from_friend TEXT, to_friend TEXT)
 ```
+
 Cada vez que nos encontramos con una persona que está siguiendo `drchuck`, insertamos una fila del formulario:
 
-```python
+```sql
 INSERT INTO Pals (from_friend,to_friend) VALUES ('drchuck', 'lhawthorn')
 ```
-Como estamos procesando a los 20 amigos del feed de Twitter `drchuck`, insertaremos 20 registros con" drchuck "como primer parámetro, por lo que terminaremos duplicando la cadena muchas veces en la base de datos.
 
-Esta duplicación de datos de cadena viola una de las mejores prácticas para ** la normalización de la base de datos ** que básicamente dice que nunca debemos colocar los mismos datos de cadena en la base de datos más de una vez. Si necesitamos los datos más de una vez, creamos una clave numérica ** para los datos y hacemos referencia a los datos reales utilizando esta clave.
+Como estamos procesando a los 20 amigos del feed de Twitter `drchuck`, insertaremos 20 registros con "drchuck" como primer parámetro, por lo que terminaremos duplicando la cadena muchas veces en la base de datos.
+
+Esta duplicación de datos de cadena viola una de las mejores prácticas para **la normalización de la base de datos** que básicamente dice que nunca debemos colocar los mismos datos de cadena en la base de datos más de una vez. Si necesitamos los datos más de una vez, creamos una clave numérica para los datos y hacemos referencia a los datos reales utilizando esta clave.
 
 En términos prácticos, una cadena ocupa mucho más espacio que un entero en el disco y en la memoria de nuestra ordenador, y toma más tiempo de procesador para comparar y ordenar. Si solo tenemos unos pocos cientos de entradas, el tiempo de almacenamiento y procesador apenas importa. Pero si tenemos un millón de personas en nuestra base de datos y una posibilidad de 100 millones de enlaces de amigos, es importante poder escanear los datos lo más rápido posible.
 
-Almacenaremos nuestras cuentas de Twitter en una tabla llamada `People` en lugar de la tabla` Twitter` utilizada en el ejemplo anterior. La tabla `People` tiene una columna adicional para almacenar la clave numérica asociada a la fila para este usuario de Twitter. SQLite tiene una función que agrega automáticamente el valor clave para cualquier fila que insertamos en una tabla usando un tipo especial de columna de datos (`INTEGER PRIMARY KEY`).
+Almacenaremos nuestras cuentas de Twitter en una tabla llamada `People` en lugar de la tabla `Twitter` utilizada en el ejemplo anterior. La tabla `People` tiene una columna adicional para almacenar la clave numérica asociada a la fila para este usuario de Twitter. SQLite tiene una función que agrega automáticamente el valor clave para cualquier fila que insertamos en una tabla usando un tipo especial de columna de datos (`INTEGER PRIMARY KEY`).
 
-Podemos crear la tabla `People` con esta columna adicional` id` de la siguiente manera:
+Podemos crear la tabla `People` con esta columna adicional `id` de la siguiente manera:
 
-```python
-CREATE TABLE People
-    (id INTEGER PRIMARY KEY, name TEXT UNIQUE, retrieved INTEGER)
+```sql
+CREATE TABLE People (id INTEGER PRIMARY KEY, name TEXT UNIQUE, retrieved INTEGER)
 ```
-Tenga en cuenta que ya no estamos manteniendo un recuento de amigos en cada fila de la tabla "Personas". Cuando seleccionamos `INTEGER PRIMARY KEY` como el tipo de nuestra columna` id`, estamos indicando que nos gustaría que SQLite administre esta columna y asigne una clave numérica única a cada fila que insertamos automáticamente. También agregamos la palabra clave `UNIQUE` para indicar que no permitiremos que SQLite inserte dos filas con el mismo valor para` name`.
 
-Ahora, en lugar de crear la tabla `Pals` anterior, creamos una tabla llamada` Follows` con dos columnas enteras `from_id` y` to_id` y una restricción en la tabla que la combinación ** ** de `from_id` y` to_id `debe ser único en esta tabla (es decir, no podemos insertar filas duplicadas) en nuestra base de datos.
+Ten en cuenta que ya no estamos manteniendo un recuento de amigos en cada fila de la tabla "People". Cuando seleccionamos `INTEGER PRIMARY KEY` como el tipo de nuestra columna `id`, estamos indicando que nos gustaría que SQLite administre esta columna y asigne una clave numérica única a cada fila que insertamos automáticamente. También agregamos la palabra clave `UNIQUE` para indicar que no permitiremos que SQLite inserte dos filas con el mismo valor para `name`.
 
-```python
+Ahora, en lugar de crear la tabla `Pals` anterior, creamos una tabla llamada `Follows` con dos columnas enteras `from_id` y `to_id` y una restricción en la tabla que la combinación de `from_id` y `to_id `debe ser única en esta tabla (es decir, no podemos insertar filas duplicadas) en nuestra base de datos.
+
+```sql
 CREATE TABLE Follows
     (from_id INTEGER, to_id INTEGER, UNIQUE(from_id, to_id) )
 ```
-Cuando agregamos cláusulas `UNIQUE` a nuestras tablas, estamos comunicando un conjunto de reglas que le estamos pidiendo a la base de datos que aplique cuando intentemos insertar registros. Estamos creando estas reglas como una conveniencia en nuestros programas, como veremos en un momento. Las reglas nos impiden cometer errores y simplifican la escritura de algunos de nuestros códigos.
 
-En esencia, al crear esta tabla "Siguiendo", estamos modelando una "relación" donde una persona "sigue" a otra persona y la representamos con un par de números que indican que (a) las personas están conectadas y (b) la dirección de la relación.
+Cuando agregamos cláusulas `UNIQUE` a nuestras tablas, estamos comunicando un conjunto de reglas que le estamos pidiendo a la base de datos que aplique cuando intentemos insertar registros. Las reglas nos impiden cometer errores y simplifican la escritura de algunos de nuestros códigos.
 
-Relaciones entre tablas
+En esencia, al crear esta tabla "Follows", estamos modelando una "relación" donde una persona "sigue" a otra persona y la representamos con un par de números que indican que (a) las personas están conectadas y (b) la dirección de la relación.
 
-## Programación con varias tablas {# programación-con-tablas-múltiples}
+![Relaciones entre tablas](img/relatinos-db.png)
 
-Ahora rehaceremos el programa de arañas de Twitter utilizando dos tablas, las claves principales y las referencias clave, como se describe anteriormente. Aquí está el código para la nueva versión del programa:
+## Programación con varias tablas {#programming-with-multiple-tables}
+
+Ahora reharemos el programa de arañas de Twitter utilizando dos tablas, las claves principales y las referencias clave, como se describe anteriormente. Aquí está el código para la nueva versión del programa:
+
+<iframe src="https://trinket.io/embed/python3/88efa27a18" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Este programa está empezando a complicarse un poco, pero ilustra los patrones que debemos usar cuando estamos usando claves de enteros para vincular tablas. Los patrones básicos son:
 
 1. Crear tablas con claves primarias y restricciones.
-2. Cuando tenemos una clave lógica para una persona (es decir, el nombre de la cuenta) y necesitamos el valor `id` para la persona, dependiendo de si la persona ya está en la tabla` Personas 'o bien debemos: ( 1) busque la persona en la tabla `People` y recupere el valor` id` para la persona o (2) agregue a la persona a la tabla `People` y obtenga el valor` id` para la fila recién agregada.
-3. Inserte la fila que captura la relación "sigue".
+2. Cuando tenemos una clave lógica para una persona (es decir, el nombre de la cuenta) y necesitamos el valor `id` para la persona, dependiendo de si la persona ya está en la tabla ` People` o bien debemos: (1) buscar la persona en la tabla `People` y recuperar el valor `id` para la persona o (2) agrear la persona a la tabla `People` y obtener el valor `id` para la fila recién agregada.
+3. Inserta la fila que captura la relación "follows".
 
-Vamos a cubrir cada uno de estos a su vez.
+Desarrollaremos brevemente estos puntos.
 
-### Restricciones en tablas de bases de datos {# restricciones-en-tablas-de-bases de datos}
+### Restricciones en tablas de bases de datos {#constraints-in-database-tables}
 
 A medida que diseñamos nuestras estructuras de tablas, podemos decirle al sistema de base de datos que nos gustaría aplicar algunas reglas. Estas reglas nos ayudan a cometer errores e introducir datos incorrectos en las tablas. Cuando creamos nuestras tablas:
 
@@ -347,7 +371,8 @@ cur.execute('''CREATE TABLE IF NOT EXISTS People
 cur.execute('''CREATE TABLE IF NOT EXISTS Follows
     (from_id INTEGER, to_id INTEGER, UNIQUE(from_id, to_id))''')
 ```
-Indicamos que la columna `name` en la tabla` People` debe ser `UNIQUE`. También indicamos que la combinación de los dos números en cada fila de la tabla 'Siguiendo' debe ser única. Estas restricciones nos impiden cometer errores, como agregar la misma relación más de una vez.
+
+Indicamos que la columna `name` en la tabla `People` debe ser `UNIQUE`. También indicamos que la combinación de los dos números en cada fila de la tabla `Follows` debe ser única. Estas restricciones nos impiden cometer errores, como agregar la misma relación más de una vez.
 
 Podemos aprovechar estas restricciones en el siguiente código:
 
@@ -355,29 +380,32 @@ Podemos aprovechar estas restricciones en el siguiente código:
 cur.execute('''INSERT OR IGNORE INTO People (name, retrieved)
     VALUES ( ?, 0)''', ( friend, ) )
 ```
-Añadimos la cláusula `OR IGNORE` a nuestra declaración` INSERT` para indicar que si este `INSERT` en particular causaría una violación de la regla" `name` debe ser único", el sistema de la base de datos puede ignorar el `INSERT` . Estamos utilizando la restricción de la base de datos como una red de seguridad para asegurarnos de no hacer algo incorrecto sin querer.
 
-De manera similar, el siguiente código asegura que no agregamos la misma relación exacta de 'Sigue' dos veces.
+Añadimos la cláusula `OR IGNORE` a nuestra declaración `INSERT` para indicar que si este `INSERT` en particular causaría una violación de la regla _`name` debe ser único_, el sistema de la base de datos puede ignorar el `INSERT` . Estamos utilizando la restricción de la base de datos como una red de seguridad para asegurarnos de no hacer algo incorrecto sin querer.
+
+De manera similar, el siguiente código asegura que no agregamos la misma relación exacta de `Follows` dos veces.
 
 ```python
 cur.execute('''INSERT OR IGNORE INTO Follows
     (from_id, to_id) VALUES (?, ?)''', (id, friend_id) )
 ```
-Una vez más, simplemente le pedimos a la base de datos que ignore nuestro intento de "INSERTAR" si viola la restricción de unicidad que especificamos para las filas de "Siguientes".
 
-### Recuperar y / o insertar un registro {# recuperar-andor-insertar-un-registro}
+Una vez más, simplemente le pedimos a la base de datos que ignore nuestro intento de `INSERT` si viola la restricción de unicidad que especificamos para las filas de `Follows`.
 
-Cuando solicitamos al usuario una cuenta de Twitter, si la cuenta existe, debemos buscar su valor 'id'. Si la cuenta aún no existe en la tabla `People`, debemos insertar el registro y obtener el valor` id` de la fila insertada.
+### Recuperar y/o insertar un registro {#retrieve-andor-insert-a-record}
 
-Este es un patrón muy común y se realiza dos veces en el programa anterior. Este código muestra cómo buscamos el `id` para la cuenta de un amigo cuando hemos extraído un` screen_name` de un nodo `usuario` en el JSON de Twitter recuperado.
+Cuando solicitamos al usuario una cuenta de Twitter, si la cuenta existe, debemos buscar su valor 'id'. Si la cuenta aún no existe en la tabla `People`, debemos insertar el registro y obtener el valor `id` de la fila insertada.
 
-Dado que con el tiempo será cada vez más probable que la cuenta ya esté en la base de datos, primero verificamos si existe el registro 'Personas' usando una declaración 'SELECCIONAR'.
+Este es un patrón muy común y se realiza dos veces en el programa anterior. Este código muestra cómo buscamos el `id` para la cuenta de un amigo cuando hemos extraído un `screen_name` de un nodo `usuario` en el JSON de Twitter recuperado.
 
-Si todo va bien [^2] dentro de la sección `try`, recuperamos el registro usando` fetchone () `y luego recuperamos el primer (y único) elemento de la tupla devuelta y guárdalo en `friend_id`.
+Dado que con el tiempo será cada vez más probable que la cuenta ya esté en la base de datos, primero verificamos si existe el registro 'Personas' usando una declaración `SELECT`.
 
-Si el `SELECT` falla, el código` fetchone () [0] `fallará y el control se transferirá a la sección` except`.
+Si todo va bien [^2] dentro de la sección `try`, recuperamos el registro usando `fetchone()` y luego recuperamos el primer (y único) elemento de la tupla devuelta y lo guardamos en `friend_id`.
 
-```    friend = u['screen_name']
+Si el `SELECT` falla, el código `fetchone()[0]` fallará y el control se transferirá a la sección `except`.
+
+```python
+    friend = u['screen_name']
     cur.execute('SELECT id FROM People WHERE name = ? LIMIT 1',
         (friend, ) )
     try:
@@ -393,6 +421,7 @@ Si el `SELECT` falla, el código` fetchone () [0] `fallará y el control se tran
         friend_id = cur.lastrowid
         countnew = countnew + 1
 ```
+
 Si terminamos en el código `except`, simplemente significa que no se encontró la fila, por lo que debemos insertar la fila. Usamos `INSERT OR IGNORE` solo para evitar errores y luego llamamos a` commit () `para forzar que la base de datos se actualice realmente. Una vez que se realiza la escritura, podemos verificar el `cur.rowcount` para ver cuántas filas se vieron afectadas. Ya que estamos intentando insertar una sola fila, si el número de filas afectadas es diferente a 1, es un error.
 
 Si el `INSERT` tiene éxito, podemos ver` cur.lastrowid` para averiguar qué valor asignó la base de datos a la columna `id` en nuestra fila recién creada.
@@ -405,7 +434,8 @@ Una vez que sepamos el valor clave tanto para el usuario de Twitter como para el
 cur.execute('INSERT OR IGNORE INTO Follows (from_id, to_id) VALUES (?, ?)',
     (id, friend_id) )
 ```
-Tenga en cuenta que dejamos que la base de datos se encargue de evitar que "insertemos dos veces" una relación creando la tabla con una restricción de unicidad y luego agregando `OR IGNORE` a nuestra declaración` INSERT`.
+
+Ten en cuenta que dejamos que la base de datos se encargue de evitar que "insertemos dos veces" una relación creando la tabla con una restricción de unicidad y luego agregando `OR IGNORE` a nuestra declaración `INSERT`.
 
 Aquí hay una ejecución de muestra de este programa:
 
@@ -423,9 +453,10 @@ Retrieving http://api.twitter.com/1.1/friends ...
 New accounts= 17  revisited= 3
 Enter a Twitter account, or quit: quit
 ```
+
 Comenzamos con la cuenta `drchuck` y luego dejamos que el programa seleccione automáticamente las siguientes dos cuentas para recuperar y agregar a nuestra base de datos.
 
-A continuación se muestran las primeras filas de las tablas `People` y` Follows` después de completar esta ejecución:
+A continuación se muestran las primeras filas de las tablas `People` y `Follows` después de completar esta ejecución:
 
 ```python
 People:
@@ -443,17 +474,19 @@ Follows:
 (1, 6)
 60 rows.
 ```
-Puede ver los campos `id`,` name` y `visited` en la tabla` People` y puede ver los números de ambos extremos de la relación en la tabla `Follows`. En la tabla "Personas", podemos ver que las tres primeras personas han sido visitadas y sus datos han sido recuperados. Los datos en la tabla `Follows` indican que` drchuck` (usuario 1) es un amigo para todas las personas que aparecen en las primeras cinco filas. Esto tiene sentido porque los primeros datos que recuperamos y almacenamos fueron los amigos de Twitter de `drchuck`. Si tuviera que imprimir más filas de la tabla `Follows`, también vería a los amigos de los usuarios 2 y 3.
 
-## Tres tipos de teclas {# tres tipos de teclas}
+Puedes ver los campos `id`, `name` y `visited` en la tabla `People` y puedes ver los números de ambos extremos de la relación en la tabla `Follows`. En la tabla `People`, podemos ver que las tres primeras personas han sido visitadas y sus datos han sido recuperados. Los datos en la tabla `Follows` indican que `drchuck` (usuario 1) es un amigo para todas las personas que aparecen en las primeras cinco filas. Esto tiene sentido porque los primeros datos que recuperamos y almacenamos fueron los amigos de Twitter de `drchuck`. Si tuvieras que imprimir más filas de la tabla `Follows`, también verías a los amigos de los usuarios 2 y 3.
 
+## Tres tipos de teclas {#three-kinds-of-keys}
+
+TODO sigue por aquí
 Ahora que hemos empezado a construir un modelo de datos que coloca nuestros datos en varias tablas vinculadas y vincula las filas en esas tablas usando ** claves **, debemos analizar la terminología relacionada con las claves. En general, hay tres tipos de claves utilizadas en un modelo de base de datos.
 
 - Una ** llave lógica ** es una clave que el "mundo real" puede usar para buscar una fila. En nuestro modelo de datos de ejemplo, el campo `nombre` es una clave lógica. Es el nombre de pantalla para el usuario y, de hecho, buscamos la fila de un usuario varias veces en el programa usando el campo `nombre`. A menudo encontrará que tiene sentido agregar una restricción 'ÚNICA' a una clave lógica. Dado que la clave lógica es la forma en que buscamos una fila del mundo exterior, no tiene mucho sentido permitir varias filas con el mismo valor en la tabla.
 - Una ** clave principal ** suele ser un número que la base de datos asigna automáticamente. Por lo general, no tiene ningún significado fuera del programa y solo se utiliza para vincular filas de diferentes tablas. Cuando queremos buscar una fila en una tabla, generalmente buscar la fila con la clave principal es la forma más rápida de encontrar la fila. Dado que las claves primarias son números enteros, ocupan muy poco espacio de almacenamiento y se pueden comparar o clasificar muy rápidamente. En nuestro modelo de datos, el campo `id` es un ejemplo de una clave primaria.
 - Una ** clave externa ** es generalmente un número que apunta a la clave principal de una fila asociada en una tabla diferente. Un ejemplo de una clave externa en nuestro modelo de datos es el `from_id`.
 
-Una ** clave principal ** suele ser un número que la base de datos asigna automáticamente. Por lo general, no tiene ningún significado fuera del programa y solo se utiliza para vincular filas de diferentes tablas. Cuando queremos buscar una fila en una tabla, generalmente buscar la fila con la clave principal es la forma más rápida de encontrar la fila. Dado que las claves primarias son números enteros, ocupan muy poco espacio de almacenamiento y se pueden comparar o clasificar muy rápidamente. En nuestro modelo de datos, el campo `id` es un ejemplo de una clave primaria.
+Una **clave principal** suele ser un número que la base de datos asigna automáticamente. Por lo general, no tiene ningún significado fuera del programa y solo se utiliza para vincular filas de diferentes tablas. Cuando queremos buscar una fila en una tabla, generalmente buscar la fila con la clave principal es la forma más rápida de encontrar la fila. Dado que las claves primarias son números enteros, ocupan muy poco espacio de almacenamiento y se pueden comparar o clasificar muy rápidamente. En nuestro modelo de datos, el campo `id` es un ejemplo de una clave primaria.
 
 Estamos utilizando una convención de nomenclatura para llamar siempre el nombre de campo de la clave principal `id` y añadir el sufijo` _id` a cualquier nombre de campo que sea una clave externa.
 

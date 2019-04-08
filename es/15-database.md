@@ -480,37 +480,38 @@ Puedes ver los campos `id`, `name` y `visited` en la tabla `People` y puedes ver
 ## Tres tipos de teclas {#three-kinds-of-keys}
 
 TODO sigue por aquí
-Ahora que hemos empezado a construir un modelo de datos que coloca nuestros datos en varias tablas vinculadas y vincula las filas en esas tablas usando ** claves **, debemos analizar la terminología relacionada con las claves. En general, hay tres tipos de claves utilizadas en un modelo de base de datos.
+Ahora que hemos empezado a construir un modelo que coloca nuestros datos en varias tablas vinculadas y vincula las filas en esas tablas usando **claves**, debemos analizar la terminología relacionada con las claves. En general, hay tres tipos de claves utilizadas en un modelo de base de datos.
 
-- Una ** llave lógica ** es una clave que el "mundo real" puede usar para buscar una fila. En nuestro modelo de datos de ejemplo, el campo `nombre` es una clave lógica. Es el nombre de pantalla para el usuario y, de hecho, buscamos la fila de un usuario varias veces en el programa usando el campo `nombre`. A menudo encontrará que tiene sentido agregar una restricción 'ÚNICA' a una clave lógica. Dado que la clave lógica es la forma en que buscamos una fila del mundo exterior, no tiene mucho sentido permitir varias filas con el mismo valor en la tabla.
-- Una ** clave principal ** suele ser un número que la base de datos asigna automáticamente. Por lo general, no tiene ningún significado fuera del programa y solo se utiliza para vincular filas de diferentes tablas. Cuando queremos buscar una fila en una tabla, generalmente buscar la fila con la clave principal es la forma más rápida de encontrar la fila. Dado que las claves primarias son números enteros, ocupan muy poco espacio de almacenamiento y se pueden comparar o clasificar muy rápidamente. En nuestro modelo de datos, el campo `id` es un ejemplo de una clave primaria.
-- Una ** clave externa ** es generalmente un número que apunta a la clave principal de una fila asociada en una tabla diferente. Un ejemplo de una clave externa en nuestro modelo de datos es el `from_id`.
+- Una **clave lógica** es una clave que el "mundo real" puede usar para buscar una fila. En nuestro modelo de datos de ejemplo, el campo `nombre` es una clave lógica. Es el nombre de pantalla para el usuario y, de hecho, buscamos la fila de un usuario varias veces en el programa usando el campo `nombre`. A menudo verás que tiene sentido agregar una restricción `UNIQUE` a una clave lógica. Dado que la clave lógica es la forma en que buscamos una fila del mundo exterior, no tiene mucho sentido permitir varias filas con el mismo valor en la tabla.
+- Una **clave principal** suele ser un número que la base de datos asigna automáticamente. Por lo general, no tiene ningún significado fuera del programa y solo se utiliza para vincular filas de diferentes tablas. Cuando queremos buscar una fila en una tabla, generalmente buscar la fila con la clave principal es la forma más rápida de encontrar la fila. Dado que las claves primarias son números enteros, ocupan muy poco espacio de almacenamiento y se pueden comparar o clasificar muy rápidamente. En nuestro modelo de datos, el campo `id` es un ejemplo de una clave primaria.
+- Una **clave externa** es generalmente un número que apunta a la clave principal de una fila asociada en una tabla diferente. Un ejemplo de una clave externa en nuestro modelo de datos es el `from_id`.
 
-Una **clave principal** suele ser un número que la base de datos asigna automáticamente. Por lo general, no tiene ningún significado fuera del programa y solo se utiliza para vincular filas de diferentes tablas. Cuando queremos buscar una fila en una tabla, generalmente buscar la fila con la clave principal es la forma más rápida de encontrar la fila. Dado que las claves primarias son números enteros, ocupan muy poco espacio de almacenamiento y se pueden comparar o clasificar muy rápidamente. En nuestro modelo de datos, el campo `id` es un ejemplo de una clave primaria.
+Estamos utilizando una convención de nomenclatura para llamar siempre el nombre de campo de la clave principal `id` y añadir el sufijo `_id` a cualquier nombre de campo que sea una clave externa.
 
-Estamos utilizando una convención de nomenclatura para llamar siempre el nombre de campo de la clave principal `id` y añadir el sufijo` _id` a cualquier nombre de campo que sea una clave externa.
+## Uso de JOIN para recuperar datos {#using-join-to-retrieve-data}
 
-## Uso de JOIN para recuperar datos {# using-join-to-retrieve-data}
-
-Ahora que hemos seguido las reglas de normalización de la base de datos y hemos separado los datos en dos tablas, vinculadas entre sí mediante claves primarias y externas, debemos poder construir un 'SELECCIONAR' que vuelva a ensamblar los datos en todas las tablas.
+Ahora que hemos seguido las reglas de normalización de la base de datos y hemos separado los datos en dos tablas, vinculadas entre sí mediante claves primarias y externas, debemos poder construir un `SELECT` que vuelva a ensamblar los datos en todas las tablas.
 
 SQL usa la cláusula `JOIN` para volver a conectar estas tablas. En la cláusula `JOIN` usted especifica los campos que se utilizan para volver a conectar las filas entre las tablas.
 
-El siguiente es un ejemplo de un `SELECT` con una cláusula` JOIN`:
+El siguiente es un ejemplo de un `SELECT` con una cláusula `JOIN`:
 
 ```python
 SELECT * FROM Follows JOIN People
     ON Follows.from_id = People.id WHERE People.id = 1
 ```
-La cláusula `JOIN` indica que los campos que estamos seleccionando cruzan las tablas` Follows` y `People`. La cláusula `ON` indica cómo se deben unir las dos tablas: tome las filas de` Follows` y agregue la fila de `People` donde el campo` from_id` en `Follows` es el mismo que el valor de` id` en el Tabla de personas.
 
-Conectando tablas utilizando JOIN
+La cláusula `JOIN` indica que los campos que estamos seleccionando cruzan las tablas `Follows` y `People`. La cláusula `ON` indica cómo se deben unir las dos tablas: toma las filas de `Follows` y agrega la fila de `People` donde el campo `from_id` en `Follows` es el mismo que el valor de `id` en el Tabla de personas.
 
-El resultado de JOIN es crear "metarows" extra largos que tienen los campos de "Personas" y los campos correspondientes de los "Follows". Donde hay más de una coincidencia entre el campo `id` de` People` y el `from_id` de` People`, entonces JOIN crea un metarow para ** cada ** de los pares de filas correspondientes, duplicando los datos según sea necesario.
+![Conectando tablas utilizando JOIN](../img/connecting-tables.svg)
+
+El resultado de JOIN es crear "metarows" extra largos que tienen los campos de "Personas" y los campos correspondientes de los "Follows". Donde hay más de una coincidencia entre el campo `id` de `People` y el `from_id` de `People`, entonces JOIN crea un metarow para cada uno de los pares de filas correspondientes, duplicando los datos según sea necesario.
 
 El siguiente código muestra los datos que tendremos en la base de datos después de que se haya ejecutado varias veces el programa de arañas de Twitter de múltiples tablas (arriba).
 
-En este programa, primero desechamos 'People` y `Follows` y luego volcamos un subconjunto de los datos en las tablas unidas.
+<iframe src="https://trinket.io/embed/python3/8f92ad783f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+En este programa, primero desechamos `People` y `Follows` y luego volcamos un subconjunto de los datos en las tablas unidas.
 
 Aquí está la salida del programa:
 
@@ -538,52 +539,28 @@ Connections for id=2:
 (2, 103, 103, 'ja_Pac', 0)
 20 rows.
 ```
-Verá las columnas de las tablas `People` y` Follows` y el último conjunto de filas es el resultado de `SELECT` con la cláusula` JOIN`.
+
+Verás las columnas de las tablas `People` y `Follows` y el último conjunto de filas es el resultado de `SELECT` con la cláusula `JOIN`.
 
 En la última selección, estamos buscando cuentas que sean amigos de "opencontent" (es decir, `People.id = 2`).
 
-En cada uno de los "metarows" en la última selección, las dos primeras columnas son de la tabla "Follows" seguidas por las columnas tres a cinco de la tabla "People". También puede ver que la segunda columna (`Follows.to_id`) coincide con la tercera columna (` People.id`) en cada uno de los "metarows" unidos.
+En cada uno de los "metarows" en la última selección, las dos primeras columnas son de la tabla "Follows" seguidas por las columnas tres a cinco de la tabla "People". También puedes ver que la segunda columna (`Follows.to_id`) coincide con la tercera columna (`People.id`) en cada uno de los "metarows" unidos.
 
-## Resumen {# resumen}
+## Resumen {#summary}
 
-Este capítulo ha cubierto mucho terreno para ofrecerle una descripción general de los conceptos básicos del uso de una base de datos en Python. Es más complicado escribir el código para usar una base de datos para almacenar datos que los diccionarios de Python o los archivos planos, por lo que hay pocas razones para usar una base de datos a menos que su aplicación realmente necesite las capacidades de una base de datos. Las situaciones en las que una base de datos puede ser bastante útil son: (1) cuando su aplicación necesita realizar muchas actualizaciones aleatorias dentro de un conjunto de datos grande, (2) cuando sus datos son tan grandes que no caben en un diccionario y necesita buscar actualice la información repetidamente, o (3) cuando tenga un proceso de larga ejecución que desee poder detener, reiniciar y conservar los datos de una ejecución a la siguiente.
+Este capítulo ha cubierto mucho terreno para ofrecerte una descripción general de los conceptos básicos del uso de una base de datos en Python. Es más complicado escribir el código para usar una base de datos para almacenar datos que los diccionarios de Python o los archivos planos, por lo que hay pocas razones para usar una base de datos a menos que su aplicación realmente necesite las capacidades de una base de datos. Las situaciones en las que una base de datos puede ser bastante útil son: (1) cuando tu aplicación necesita realizar muchas actualizaciones aleatorias dentro de un conjunto de datos grande, (2) cuando sus datos son tan grandes que no caben en un diccionario y necesitas buscar y actualizar la información repetidamente, o (3) cuando tengas un proceso de larga ejecución que desees poder detener, reiniciar y conservar los datos de una ejecución a la siguiente.
 
-Puede crear una base de datos simple con una sola tabla para satisfacer las necesidades de muchas aplicaciones, pero la mayoría de los problemas requerirán varias tablas y vínculos / relaciones entre filas en diferentes tablas. Cuando comienza a crear enlaces entre tablas, es importante hacer un diseño cuidadoso y seguir las reglas de normalización de la base de datos para aprovechar al máximo las capacidades de la base de datos. Dado que la motivación principal para usar una base de datos es que tiene una gran cantidad de datos con los que tratar, es importante modelar sus datos de manera eficiente para que sus programas se ejecuten lo más rápido posible.
+Puedes crear una base de datos simple con una sola tabla para satisfacer las necesidades de muchas aplicaciones, pero la mayoría de los problemas requerirán varias tablas y vínculos/relaciones entre filas en diferentes tablas. Cuando comienzas a crear enlaces entre tablas, es importante hacer un diseño cuidadoso y seguir las reglas de normalización de la base de datos para aprovechar al máximo sus capacidades. Dado que la motivación principal para usar una base de datos es que tienes una gran cantidad de datos con los que tratar, es importante modelar tus datos de manera eficiente para que tus programas se ejecuten lo más rápido posible.
 
-## depuración {# depuración}
+## depuración {#debugging}
 
-Un patrón común cuando desarrolle un programa Python para conectarse a una base de datos SQLite será ejecutar un programa Python y verificar los resultados utilizando el Explorador de bases de datos para SQLite. El navegador le permite verificar rápidamente si su programa está funcionando correctamente.
+Un patrón común cuando desarrolles un programa en Python para conectarte a una base de datos SQLite será ejecutar un programa y verificar los resultados utilizando el Explorador de bases de datos para SQLite. El navegador te permite verificar rápidamente si tu programa está funcionando correctamente.
 
-Debe tener cuidado porque SQLite se encarga de evitar que dos programas cambien los mismos datos al mismo tiempo. Por ejemplo, si abre una base de datos en el navegador y realiza un cambio en la base de datos y aún no ha presionado el botón "guardar" en el navegador, el navegador "bloquea" el archivo de la base de datos y evita que cualquier otro programa acceda al archivo. En particular, su programa Python no podrá acceder al archivo si está bloqueado.
+Debes tener cuidado porque SQLite se encarga de evitar que dos programas cambien los mismos datos al mismo tiempo. Por ejemplo, si abres una base de datos en el navegador y realizas un cambio en la base de datos y aún no has presionado el botón "guardar" en el navegador, el navegador "bloquea" el archivo de la base de datos y evita que cualquier otro programa acceda al mismo. En particular, tu programa Python no podrá acceder al archivo si está bloqueado.
 
-Por lo tanto, una solución es asegurarse de cerrar el navegador de la base de datos o usar el menú ** Archivo ** para cerrar la base de datos en el navegador antes de intentar acceder a la base de datos desde Python para evitar el problema de su código Python debido a que la base de datos no funciona. está bloqueado.
-
-## Glosario {# glosario}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Por lo tanto, una solución es asegurarte de cerrar el navegador de la base de datos o usar el menú **Archivo** para cerrar la base de datos en el navegador antes de intentar acceder a la base de datos desde Python para evitar el problema.
 
 ---
 
-
 [^1]: SQLite realmente permite cierta flexibilidad en el tipo de datos almacenados en una columna, pero mantendremos nuestros tipos de datos estrictos en este capítulo para que los conceptos se apliquen por igual a otros sistemas de bases de datos como MySQL. 
-[^1]: En general, cuando una oración comienza con "si todo va bien", encontrará que el código debe usar try / except. 
+[^1]: En general, cuando una oración comienza con "si todo va bien", encontrarás que el código debe usar try / except.

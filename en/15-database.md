@@ -505,11 +505,13 @@ SELECT * FROM Follows JOIN People
 
 The `JOIN` clause indicates that the fields we are selecting cross both the `Follows` and `People` tables. The `ON` clause indicates how the two tables are to be joined: Take the rows from `Follows` and append the row from `People` where the field `from_id` in `Follows` is the same the `id` value in the `People` table.
 
-Connecting Tables Using JOIN
+![Connecting Tables Using JOIN](../img/connecting-tables.svg)
 
 The result of the JOIN is to create extra-long "metarows" which have both the fields from `People` and the matching fields from `Follows`. Where there is more than one match between the `id` field from `People` and the `from_id` from `People`, then JOIN creates a metarow for **each** of the matching pairs of rows, duplicating data as needed.
 
 The following code demonstrates the data that we will have in the database after the multi-table Twitter spider program (above) has been run several times.
+
+<iframe src="https://trinket.io/embed/python3/8f92ad783f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 In this program, we first dump out the `People` and `Follows` and then dump out a subset of the data in the tables joined together.
 
@@ -560,32 +562,7 @@ You must be careful because SQLite takes care to keep two programs from changing
 
 So a solution is to make sure to either close the database browser or use the **File** menu to close the database in the browser before you attempt to access the database from Python to avoid the problem of your Python code failing because the database is locked.
 
-## Glossary {#glossary}
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-
-
 ---
-
 
 [^1]: SQLite actually does allow some flexibility in the type of data stored in a column, but we will keep our data types strict in this chapter so the concepts apply equally to other database systems such as MySQL.
 [^1]: In general, when a sentence starts with "if all goes well" you will find that the code needs to use try/except.

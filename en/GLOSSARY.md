@@ -429,3 +429,37 @@ A constructed instance of a class. An object contains all of the attributes and 
 
 ## parent class
 The class which is being extended to create a new child class. The parent class contributes all of its methods and attributes to the new child class.
+
+
+## attribute
+One of the values within a tuple. More commonly called a "column" or "field".
+
+## constraint
+When we tell the database to enforce a rule on a field or a row in a table. A common constraint is to insist that there can be no duplicate values in a particular field (i.e., all the values must be unique).
+
+## cursor
+A cursor allows you to execute SQL commands in a database and retrieve data from the database. A cursor is similar to a socket or file handle for network connections and files, respectively.
+
+## database browser
+A piece of software that allows you to directly connect to a database and manipulate the database directly without writing a program.
+
+## foreign key
+A numeric key that points to the primary key of a row in another table. Foreign keys establish relationships between rows stored in different tables.
+
+## index
+Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.
+
+## logical key
+A key that the "outside world" uses to look up a particular row. For example in a table of user accounts, a person's email address might be a good candidate as the logical key for the user's data.
+
+## normalization
+Designing a data model so that no data is replicated. We store each item of data at one place in the database and reference it elsewhere using a foreign key.
+
+## primary key
+A numeric key assigned to each row that is used to refer to one row in a table from another table. Often the database is configured to automatically assign primary keys as rows are inserted.
+
+## relation
+An area within a database that contains tuples and attributes. More typically called a "table".
+
+## tuple
+A single entry in a database table that is a set of attributes. More typically called "row".

@@ -17,10 +17,8 @@ ___
 - [12. Networked Programs](12-network.md)
 - [13. Python and Web Services](13-web.md)
 - [14. Objects](14-objects.md)
-
-<!--
 - [15. Python and Databases](15-database.md)
--->
+
 ___
 
 - [Créditos](crditos.md)

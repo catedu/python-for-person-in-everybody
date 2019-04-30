@@ -1,4 +1,4 @@
-# Cuerdas {#strings}
+# Cadenas {#strings}
 
 * [Una cadena es una secuencia](#a-string-is-a-sequence)
 * [Obteniendo la longitud de una cadena usando `len`](#getting-the-length-of-a-string-using-len)

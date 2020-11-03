@@ -1,0 +1,855 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>15. Python y Bases de Datos · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="crditos.html" />
+    
+    
+    <link rel="prev" href="14-objects.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Comenzando el camino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Condicionales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Cadenas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Archivos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Listas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Diccionarios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuplas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Programas en red
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python y servicios web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python y Bases de Datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >15. Python y Bases de Datos</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="using-databases-and-sql">Uso de bases de datos y SQL </h1>
+<h2 id="what-is-a-database">&#xBF;Qu&#xE9; es una base de datos? </h2>
+<p>Una <strong>base de datos</strong> es un archivo que est&#xE1; organizado para almacenar datos. La mayor&#xED;a de las bases de datos est&#xE1;n organizadas como un diccionario en el sentido de que se asignan de claves a valores. La mayor diferencia es que la base de datos est&#xE1; en el disco (u otro almacenamiento permanente), por lo que persiste despu&#xE9;s de que finalice el programa. Debido a que una base de datos se almacena en un almacenamiento permanente, puede almacenar muchos m&#xE1;s datos que un diccionario, que est&#xE1; limitado al tama&#xF1;o de la memoria en el ordenador.</p>
+<p>Al igual que un diccionario, el software de base de datos est&#xE1; dise&#xF1;ado para mantener la inserci&#xF3;n y el acceso de datos muy r&#xE1;pidos, incluso para grandes cantidades de datos. El software de la base de datos mantiene su rendimiento mediante la creaci&#xF3;n de &#xED;ndices a medida que se agregan datos para permitir que el ordenador salte r&#xE1;pidamente a una entrada en particular.</p>
+<p>Hay muchos sistemas de bases de datos diferentes que se utilizan para una amplia variedad de prop&#xF3;sitos, incluyendo: Oracle, MySQL, Microsoft SQL Server, PostgreSQL y SQLite. Nos centramos en SQLite en este libro porque es una base de datos muy com&#xFA;n y ya est&#xE1; integrada en Python. SQLite est&#xE1; dise&#xF1;ado para ser <strong>integrada</strong> en otras aplicaciones para proporcionar soporte de base de datos dentro de la aplicaci&#xF3;n. Por ejemplo, el navegador Firefox tambi&#xE9;n usa la base de datos SQLite internamente al igual que muchos otros productos.</p>
+<p><a href="http://sqlite.org/" target="_blank">http://sqlite.org/</a></p>
+<p>SQLite se adapta bien a algunos de los problemas de manipulaci&#xF3;n de datos que vemos en Inform&#xE1;tica, como la aplicaci&#xF3;n de rastreo de Twitter que describimos en este cap&#xED;tulo.</p>
+<h2 id="database-concepts">Conceptos de base de datos </h2>
+<p>Cuando miras por primera vez una base de datos, parece una hoja de c&#xE1;lculo con varias hojas. Las estructuras de datos principales en una base de datos son: <strong>tablas</strong>, <strong>filas</strong> y <strong>columnas</strong>.</p>
+<figure id="fig2.15.1"><img src="../img/databases.svg" alt="Bases de datos relacionales"><figcaption>Imagen - Bases de datos relacionales</figcaption></figure>
+<p>En las descripciones t&#xE9;cnicas de las bases de datos relacionales, los conceptos de tabla, fila y columna se denominan m&#xE1;s formalmente <strong>relaci&#xF3;n</strong>, <strong>tupla</strong> y <strong>atributo</strong>, respectivamente. Usaremos los t&#xE9;rminos menos formales en este cap&#xED;tulo.</p>
+<h2 id="database-browser-for-sqlite">Database Browser for SQLite </h2>
+<p>Si bien este cap&#xED;tulo se centrar&#xE1; en el uso de Python para trabajar con datos en archivos de base de datos SQLite, muchas operaciones se pueden realizar de manera m&#xE1;s conveniente utilizando el software denominado <strong>Database Browser for SQLite</strong>, que est&#xE1; disponible gratuitamente en:</p>
+<p><a href="http://sqlitebrowser.org/" target="_blank">http://sqlitebrowser.org/</a></p>
+<p>Con el navegador puedes crear f&#xE1;cilmente tablas, insertar datos, editar datos o ejecutar consultas SQL simples.</p>
+<p>En cierto sentido, el navegador de la base de datos es similar a un editor de texto cuando se trabaja con archivos de texto. Cuando desees realizar una o muy pocas operaciones en un archivo de texto, puedes abrirlo en un editor de texto y realizar los cambios que desees. Cuando tienes muchos cambios que debes hacer en un archivo de texto, a menudo escribir&#xE1;s un programa Python simple. Encontrar&#xE1;s el mismo patr&#xF3;n cuando trabajes con bases de datos. Har&#xE1;s operaciones simples en el administrador de bases de datos y las operaciones m&#xE1;s complejas se realizar&#xE1;n de manera m&#xE1;s conveniente en Python.</p>
+<h2 id="creating-a-database-table">Creando una tabla de base de datos </h2>
+<p>Las bases de datos requieren una estructura m&#xE1;s definida que las listas o los diccionarios de Python <sup><a href="#fn_1" id="reffn_1">1</a></sup>.</p>
+<p>Cuando creamos una tabla en la base de datos debemos decir a la base de datos por adelantado los nombres de cada una de las <strong>columnas</strong> en la tabla y el tipo de datos que planeamos almacenar en cada cada una de ellas. Cuando el software de la base de datos conoce el tipo de datos en cada columna, puedes elegir la forma m&#xE1;s eficiente de almacenar y buscar los datos seg&#xFA;n el tipo de datos.</p>
+<p>Puedes ver los diversos tipos de datos admitidos por SQLite en la siguiente url:</p>
+<p><a href="http://www.sqlite.org/datatypes.html" target="_blank">http://www.sqlite.org/datatypes.html</a></p>
+<p>Definir la estructura de tus datos por adelantado puede parecer inconveniente al principio, pero la recompensa es un acceso r&#xE1;pido a tus datos, incluso cuando la base de datos contenga una gran cantidad de datos.</p>
+<p>El c&#xF3;digo para crear un archivo de base de datos y una tabla llamada <code>Tracks</code> con dos columnas en la base de datos es la siguiente:</p>
+<iframe src="https://trinket.io/embed/python3/09d1152020" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>La operaci&#xF3;n <code>connect</code> hace una &quot;conexi&#xF3;n&quot; a la base de datos almacenada en el archivo <code>music.sqlite3</code> en el directorio actual. Si el archivo no existe, ser&#xE1; creado. La raz&#xF3;n por la que esto se denomina &quot;conexi&#xF3;n&quot; es que a veces la base de datos se almacena en un &quot;servidor de base de datos&quot; independiente del servidor en el que ejecutamos nuestra aplicaci&#xF3;n. En nuestros ejemplos simples, la base de datos solo ser&#xE1; un archivo local en el mismo directorio que el c&#xF3;digo Python que estamos ejecutando.</p>
+<p>Un <strong>cursor</strong> es como un identificador de archivo que podemos usar para realizar operaciones en los datos almacenados en la base de datos. Llamar a <code>cursor()</code> es muy similar conceptualmente a llamar a <code>open()</code> cuando se trata de archivos de texto.</p>
+<figure id="fig2.15.2"><img src="../img/database-cursor.svg" alt="A Database Cursor"><figcaption>Imagen - A Database Cursor</figcaption></figure>
+<p>Una vez que tengamos el cursor, podemos comenzar a ejecutar comandos en el contenido de la base de datos usando el m&#xE9;todo <code>execute()</code>.</p>
+<p>Los comandos de la base de datos se expresan en un lenguaje especial que se ha estandarizado en muchos proveedores de bases de datos diferentes para permitirnos aprender un solo idioma de base de datos. El lenguaje de la base de datos se llama <strong>Lenguaje de consulta estructurada</strong> o <strong>SQL</strong> (Structured Query Language) para abreviar.</p>
+<p><a href="http://en.wikipedia.org/wiki/SQL" target="_blank">http://en.wikipedia.org/wiki/SQL</a></p>
+<p>En nuestro ejemplo, estamos ejecutando dos comandos SQL en nuestra base de datos. Como convenci&#xF3;n, mostraremos las palabras clave de SQL en may&#xFA;sculas y las partes del comando que estamos agregando (como los nombres de tablas y columnas) se mostrar&#xE1;n en min&#xFA;sculas.</p>
+<p>El primer comando SQL elimina la tabla <code>Tracks</code> de la base de datos si existe. Este patr&#xF3;n es simplemente para permitirnos ejecutar el mismo programa para crear la tabla <code>Tracks</code> una y otra vez sin causar un error. Tenga en cuenta que el comando <code>DROP TABLE</code> elimina la tabla y todo su contenido de la base de datos (es decir, no hay &quot;deshacer&quot;).</p>
+<pre><code class="lang-python">cur.execute(<span class="hljs-string">&apos;DROP TABLE IF EXISTS Tracks &apos;</span>)
+</code></pre>
+<p>El segundo comando crea una tabla llamada <code>Tracks</code> con una columna de texto llamada <code>title</code> y una columna entera llamada <code>plays</code>.</p>
+<pre><code class="lang-python">cur.execute(<span class="hljs-string">&apos;CREATE TABLE Tracks (title TEXT, plays INTEGER)&apos;</span>)
+</code></pre>
+<p>Ahora que hemos creado una tabla llamada <code>Tracks</code>, podemos poner algunos datos en esa tabla usando la operaci&#xF3;n SQL <code>INSERT</code>. Nuevamente, comenzamos haciendo una conexi&#xF3;n a la base de datos y obteniendo el <code>cursor</code>. Luego podemos ejecutar comandos SQL usando el cursor.</p>
+<p>El comando SQL <code>INSERT</code> indica qu&#xE9; tabla estamos usando y luego define una nueva fila al enumerar los campos que queremos incluir <code>(t&#xED;tulo, jugadas)</code> seguido de los <code>VALORES</code> que queremos colocar en la nueva fila. Especificamos los valores como signos de interrogaci&#xF3;n <code>(?,?)</code> Para indicar que los valores reales se pasan como una tupla <code>(&apos;My Way&apos;, 15)</code> como el segundo par&#xE1;metro a la llamada <code>execute()</code>.</p>
+<iframe src="https://trinket.io/embed/python3/e665c26f67" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Primero, insertamos dos filas en nuestra tabla y usamos <code>commit()</code> para forzar que los datos se escriban en el archivo de la base de datos.</p>
+<figure id="fig2.15.3"><img src="../img/rows-in-table.svg" alt="Filas en una tabla"><figcaption>Imagen - Filas en una tabla</figcaption></figure>
+<p>Luego usamos el comando <code>SELECT</code> para recuperar las filas que acabamos de insertar de la tabla. En el comando <code>SELECT</code>, indicamos en qu&#xE9; columnas nos gustar&#xED;a extraer, <code>(t&#xED;tulo, jugamos)</code>, e indicamos de qu&#xE9; tabla queremos recuperar los datos. Despu&#xE9;s de ejecutar la instrucci&#xF3;n <code>SELECT</code>, el cursor es algo que podemos recorrer en una instrucci&#xF3;n <code>for</code>. Por eficiencia, el cursor no lee todos los datos de la base de datos cuando ejecutamos la instrucci&#xF3;n <code>SELECT</code>. En su lugar, los datos se leen a medida que recorramos las filas en la declaraci&#xF3;n <code>for</code>.</p>
+<p>La salida del programa es la siguiente:</p>
+<pre><code class="lang-python">Tracks:
+(<span class="hljs-string">&apos;Thunderstruck&apos;</span>, <span class="hljs-number">20</span>)
+(<span class="hljs-string">&apos;My Way&apos;</span>, <span class="hljs-number">15</span>)
+</code></pre>
+<p>Nuestro bucle <code>for</code> encuentra dos filas, y cada fila es una tupla de Python con el primer valor como<code>title</code> y el segundo valor como el n&#xFA;mero de <code>plays</code>.</p>
+<p><strong> Nota: Puede ver cadenas que comienzan con <code>u&apos;</code> en otros libros o en Internet. Esto era una indicaci&#xF3;n en Python 2 de que las cadenas son </strong> Unicode <em> cadenas que son capaces de almacenar conjuntos de caracteres no latinos. En Python 3, todas las cadenas son cadenas Unicode por defecto. </em></p>
+<p>Al final del programa, ejecutamos un comando SQL para &apos;BORRAR&apos; las filas que acabamos de crear para que podamos ejecutar el programa una y otra vez. El comando <code>DELETE</code> muestra el uso de una cl&#xE1;usula<code>WHERE</code> que nos permite expresar un criterio de selecci&#xF3;n para que podamos pedir a la base de datos que aplique el comando solo a las filas que coincidan con el criterio. En este ejemplo, el criterio pasa a aplicarse a todas las filas, de modo que vaciamos la tabla para poder ejecutar el programa repetidamente. Despu&#xE9;s de que se realiza el <code>BORRAR</code>, tambi&#xE9;n llamamos a<code>commit ()</code>para forzar que los datos se eliminen de la base de datos.</p>
+<h2 id="structured-query-language-summary">Resumen de lenguaje de consulta estructurado </h2>
+<p>Hasta ahora, hemos estado utilizando el lenguaje de consulta estructurado en nuestros ejemplos de Python y hemos cubierto muchos de los conceptos b&#xE1;sicos de los comandos SQL. En esta secci&#xF3;n, analizamos el lenguaje SQL en particular y ofrecemos una descripci&#xF3;n general de la sintaxis de SQL.</p>
+<p>Dado que hay tantos proveedores de bases de datos diferentes, el lenguaje de consulta estructurado (SQL) se estandariz&#xF3; para que pudi&#xE9;ramos comunicarnos facilmente con los sistemas de bases de datos de varios proveedores.</p>
+<p>Una base de datos relacional est&#xE1; formada por tablas, filas y columnas. Las columnas generalmente tienen un tipo como datos de texto, num&#xE9;ricos o de fecha. Cuando creamos una tabla, indicamos los nombres y tipos de las columnas:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> Tracks (title <span class="hljs-built_in">TEXT</span>, plays <span class="hljs-built_in">INTEGER</span>)
+</code></pre>
+<p>Para insertar una fila en una tabla, usamos el comando SQL <code>INSERT</code>:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> Tracks (title, plays) <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&apos;My Way&apos;</span>, <span class="hljs-number">15</span>)
+</code></pre>
+<p>La declaraci&#xF3;n <code>INSERT</code> especifica el nombre de la tabla, luego una lista de los campos/columnas que te gustar&#xED;a establecer en la nueva fila, y luego la palabra clave <code>VALUES</code> y una lista de valores correspondientes para cada uno de los campos.</p>
+<p>El comando SQL <code>SELECT</code> se usa para recuperar filas y columnas de una base de datos. La declaraci&#xF3;n <code>SELECT</code> te permite especificar qu&#xE9; columnas deseas recuperar, as&#xED; como una cl&#xE1;usula <code>WHERE</code> para seleccionar qu&#xE9; filas deseas ver. Tambi&#xE9;n permite una cl&#xE1;usula opcional <code>ORDER BY</code> para controlar la clasificaci&#xF3;n de las filas devueltas.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> Tracks <span class="hljs-keyword">WHERE</span> title = <span class="hljs-string">&apos;My Way&apos;</span>
+</code></pre>
+<p>Usar <code>*</code> indica que deseas que la base de datos devuelva todas las columnas para cada fila que coincida con la cl&#xE1;usula <code>WHERE</code>.</p>
+<p>Ten en cuenta que, a diferencia de Python, en una cl&#xE1;usula SQL <code>WHERE</code> usamos un &#xFA;nico signo igual para indicar una prueba de igualdad en lugar de un doble signo igual. Otras operaciones l&#xF3;gicas permitidas en una cl&#xE1;usula <code>WHERE</code> incluyen <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>!=</code>, as&#xED; como <code>AND</code> y <code>OR</code> y par&#xE9;ntesis para construir tus expresiones l&#xF3;gicas.</p>
+<p>Puedes solicitar que las filas devueltas se ordenen por uno de los campos de la siguiente manera:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> title,plays <span class="hljs-keyword">FROM</span> Tracks <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> title
+</code></pre>
+<p>Para eliminar una fila, necesitas una cl&#xE1;usula <code>WHERE</code> en una sentencia SQL <code>DELETE</code>. La cl&#xE1;usula <code>WHERE</code> determina qu&#xE9; filas se van a eliminar:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> Tracks <span class="hljs-keyword">WHERE</span> title = <span class="hljs-string">&apos;My Way&apos;</span>
+</code></pre>
+<p>Es posible <code>UPDATE</code> una columna o columnas dentro de una o m&#xE1;s filas en una tabla usando la declaraci&#xF3;n SQL <code>UPDATE</code> de la siguiente manera:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">UPDATE</span> Tracks <span class="hljs-keyword">SET</span> plays = <span class="hljs-number">16</span> <span class="hljs-keyword">WHERE</span> title = <span class="hljs-string">&apos;My Way&apos;</span>
+</code></pre>
+<p>La declaraci&#xF3;n <code>UPDATE</code> especifica una tabla y luego una lista de campos y valores para cambiar despu&#xE9;s de la palabra clave <code>SET</code> y luego una cl&#xE1;usula opcional <code>WHERE</code> para seleccionar las filas que se actualizar&#xE1;n. Una sola instrucci&#xF3;n <code>UPDATE</code> cambiar&#xE1; todas las filas que coincidan con la cl&#xE1;usula <code>WHERE</code>. Si no se especificas una cl&#xE1;usula <code>WHERE</code>, realiza el <code>UPDATE</code> en todas las filas de la tabla.</p>
+<p>Estos cuatro comandos SQL b&#xE1;sicos (INSERT, SELECT, UPDATE, y DELETE) permiten las cuatro operaciones b&#xE1;sicas necesarias para crear y mantener datos.</p>
+<h2 id="spidering-twitter-using-a-database">Spidering Twitter usando una base de datos </h2>
+<p>En esta secci&#xF3;n, crearemos un programa de spidering simple que pasar&#xE1; por las cuentas de Twitter y crear&#xE1; una base de datos de ellas. <strong>Nota: Ten mucho cuidado al ejecutar este programa. No deseas extraer demasiados datos o ejecutar el programa durante demasiado tiempo y terminar con el cierre de tu acceso a Twitter.</strong></p>
+<p>Uno de los problemas de cualquier tipo de programa spidering es que debe poder detenerse y reiniciarse muchas veces y no quieres perder los datos que has recuperado hasta ahora. No siempre deseas reiniciar tu recuperaci&#xF3;n de datos desde el principio, por lo que queremos almacenar datos a medida que los recuperamos para que nuestro programa pueda iniciarse nuevamente y continuar donde lo dej&#xF3;.</p>
+<p>Comenzaremos por recuperar los amigos de Twitter de una persona y sus estados, recorreremos la lista de amigos y agregaremos a cada uno de los amigos a una base de datos para recuperarlos en el futuro. Despu&#xE9;s de procesar los amigos de Twitter de una persona, revisamos nuestra base de datos y recuperamos a uno de los amigos del amigo. Hacemos esto una y otra vez, seleccionando a una persona &quot;no visitada&quot;, recuperando su lista de amigos y agregando amigos que no hemos visto en nuestra lista para una futura visita.</p>
+<p>Tambi&#xE9;n hacemos un seguimiento de cu&#xE1;ntas veces hemos visto a un amigo en particular en la base de datos para tener una idea de su &quot;popularidad&quot;.</p>
+<p>Al almacenar nuestra lista de cuentas conocidas y si hemos recuperado la cuenta o no, y cu&#xE1;n popular es la cuenta en una base de datos en el disco de el ordenador, podemos detener y reiniciar nuestro programa tantas veces como lo deseemos.</p>
+<p>Este programa es un poco complejo. Se basa en el c&#xF3;digo del ejercicio anterior en el libro que utiliza la API de Twitter.</p>
+<p>Aqu&#xED; est&#xE1; el c&#xF3;digo fuente de nuestra aplicaci&#xF3;n de spidering de Twitter:</p>
+<iframe src="https://trinket.io/embed/python3/f9ee36fa1f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Nuestra base de datos se almacena en el archivo <code>spider.sqlite3</code> y tiene una tabla llamada <code>Twitter</code>. Cada fila en la tabla <code>Twitter</code> tiene una columna para el nombre de la cuenta, si hemos recuperado los amigos de esta cuenta y cu&#xE1;ntas veces esta cuenta ha sido &quot;seguida&quot;.</p>
+<p>En el ciclo principal del programa, le pedimos al usuario un nombre de cuenta de Twitter o &quot;salir&quot; para salir del programa. Si el usuario ingresa una cuenta de Twitter, recuperamos la lista de amigos y estados de ese usuario y agregamos a cada amigo a la base de datos si a&#xFA;n no est&#xE1; en la base de datos. Si el amigo ya est&#xE1; en la lista, agregamos 1 al campo <code>friends</code> en la fila de la base de datos.</p>
+<p>Si el usuario presiona Intro, buscamos en la base de datos la pr&#xF3;xima cuenta de Twitter que a&#xFA;n no hemos recuperado, recuperamos los amigos y los estados de esa cuenta, los agregamos a la base de datos o los actualizamos, y aumentamos el recuento de sus &quot;amigos&quot;.</p>
+<p>Una vez que recuperamos la lista de amigos y estados, recorremos todos los elementos <code>user</code> en el JSON devuelto y recuperamos el <code>screen_name</code> para cada usuario. Luego usamos la declaraci&#xF3;n <code>SELECT</code> para ver si ya hemos almacenado este <code>screen_name</code> en particular en la base de datos y recuperar el recuento de amigos (<code>friends</code>) si el registro existe.</p>
+<pre><code class="lang-python">countnew = <span class="hljs-number">0</span>
+countold = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> u <span class="hljs-keyword">in</span> js[<span class="hljs-string">&apos;users&apos;</span>] :
+    friend = u[<span class="hljs-string">&apos;screen_name&apos;</span>]
+    <span class="hljs-keyword">print</span> friend
+    cur.execute(<span class="hljs-string">&apos;SELECT friends FROM Twitter WHERE name = ? LIMIT 1&apos;</span>,
+        (friend, ) )
+    <span class="hljs-keyword">try</span>:
+        count = cur.fetchone()[<span class="hljs-number">0</span>]
+        cur.execute(<span class="hljs-string">&apos;UPDATE Twitter SET friends = ? WHERE name = ?&apos;</span>,
+            (count+<span class="hljs-number">1</span>, friend) )
+        countold = countold + <span class="hljs-number">1</span>
+    <span class="hljs-keyword">except</span>:
+        cur.execute(<span class="hljs-string">&apos;&apos;&apos;INSERT INTO Twitter (name, retrieved, friends)
+            VALUES ( ?, 0, 1 )&apos;&apos;&apos;</span>, ( friend, ) )
+        countnew = countnew + <span class="hljs-number">1</span>
+<span class="hljs-keyword">print</span> <span class="hljs-string">&apos;New accounts=&apos;</span>,countnew,<span class="hljs-string">&apos; revisited=&apos;</span>,countold
+conn.commit()
+</code></pre>
+<p>Una vez que el cursor ejecuta la instrucci&#xF3;n <code>SELECT</code>, debemos recuperar las filas. Podr&#xED;amos hacer esto con una declaraci&#xF3;n <code>for</code>, pero como solo estamos recuperando una fila (<code>LIMIT 1</code>), podemos usar el m&#xE9;todo <code>fetchone()</code> para recuperar la primera (y &#xFA;nica) fila que es el resultado de la operaci&#xF3;n <code>SELECT</code>. Como <code>fetchone()</code> devuelve la fila como <strong>tupla</strong> (aunque solo haya un campo), tomamos el primer valor de la tupla para obtener el recuento actual de amigos y guardarlo en la variable <code>count</code>.</p>
+<p>Si esta recuperaci&#xF3;n es exitosa, usamos la declaraci&#xF3;n SQL <code>UPDATE</code> con una cl&#xE1;usula <code>WHERE</code> para agregar 1 a la columna <code>friends</code> para la fila que coincide con la cuenta del amigo. Observa que hay dos marcadores de posici&#xF3;n (es decir, signos de interrogaci&#xF3;n) en el SQL, y el segundo par&#xE1;metro de <code>execute()</code> es una tupla de dos elementos que contiene los valores que se sustituir&#xE1;n en el SQL en lugar de los signos de interrogaci&#xF3;n.</p>
+<p>Si el c&#xF3;digo en el bloque <code>try</code> falla, es probable que no haya ning&#xFA;n registro que coincida con la cl&#xE1;usula WHERE name =? en la instrucci&#xF3;n SELECT. Entonces, en el bloque <code>except</code>, usamos la declaraci&#xF3;n SQL <code>INSERT</code> para agregar el <code>screen_name</code> del amigo a la tabla con una indicaci&#xF3;n de que a&#xFA;n no hemos recuperado el <code>screen_name</code> y establecer el recuento de amigos en cero.</p>
+<p>Entonces, la primera vez que se ejecuta el programa y entramos en una cuenta de Twitter, el programa se ejecuta de la siguiente manera:</p>
+<pre><code class="lang-python">Enter a Twitter account, <span class="hljs-keyword">or</span> quit: drchuck
+Retrieving http://api.twitter.com/<span class="hljs-number">1.1</span>/friends ...
+New accounts= <span class="hljs-number">20</span>  revisited= <span class="hljs-number">0</span>
+Enter a Twitter account, <span class="hljs-keyword">or</span> quit: quit
+</code></pre>
+<p>Como esta es la primera vez que ejecutamos el programa, la base de datos est&#xE1; vac&#xED;a y creamos la base de datos en el archivo <code>spider.sqlite3</code> y agregamos una tabla llamada <code>Twitter</code> a la base de datos. Luego recuperamos algunos amigos y los agregamos a la base de datos, que est&#xE1; vac&#xED;a.</p>
+<p>En este punto, podr&#xED;amos querer escribir un dumper de base de datos simple para echar un vistazo a lo que est&#xE1; en nuestro archivo <code>spider.sqlite3</code>:</p>
+<iframe src="https://trinket.io/embed/python3/e986702fd6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Este programa simplemente abre la base de datos y selecciona todas las columnas de todas las filas en la tabla <code>Twitter</code>, luego recorre las filas e imprime cada fila.</p>
+<p>Si ejecutamos este programa despu&#xE9;s de la primera ejecuci&#xF3;n de nuestra ara&#xF1;a de Twitter anterior, su salida ser&#xE1; la siguiente:</p>
+<pre><code class="lang-python">(<span class="hljs-string">&apos;opencontent&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;lhawthorn&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;steve_coppin&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;davidkocher&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;hrheingold&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+...
+<span class="hljs-number">20</span> rows.
+</code></pre>
+<p>Vemos una fila para cada <code>screen_name</code>, que no hemos recuperado los datos para ese <code>screen_name</code>, y todos en la base de datos tienen un amigo.</p>
+<p>Ahora nuestra base de datos refleja la recuperaci&#xF3;n de los amigos de nuestra primera cuenta de Twitter (<strong>drchuck</strong>). Podemos ejecutar el programa nuevamente y decirle que recupere a los amigos de la pr&#xF3;xima cuenta &quot;sin procesar&quot; simplemente presionando Intro en lugar de una cuenta de Twitter de la siguiente manera:</p>
+<pre><code class="lang-python">Enter a Twitter account, <span class="hljs-keyword">or</span> quit:
+Retrieving http://api.twitter.com/<span class="hljs-number">1.1</span>/friends ...
+New accounts= <span class="hljs-number">18</span>  revisited= <span class="hljs-number">2</span>
+Enter a Twitter account, <span class="hljs-keyword">or</span> quit:
+Retrieving http://api.twitter.com/<span class="hljs-number">1.1</span>/friends ...
+New accounts= <span class="hljs-number">17</span>  revisited= <span class="hljs-number">3</span>
+Enter a Twitter account, <span class="hljs-keyword">or</span> quit: quit
+</code></pre>
+<p>Desde que presionamos enter (es decir, no especificamos una cuenta de Twitter), se ejecuta el siguiente c&#xF3;digo:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> ( len(acct) &lt; <span class="hljs-number">1</span> ) :
+    cur.execute(<span class="hljs-string">&apos;SELECT name FROM Twitter WHERE retrieved = 0 LIMIT 1&apos;</span>)
+    <span class="hljs-keyword">try</span>:
+        acct = cur.fetchone()[<span class="hljs-number">0</span>]
+    <span class="hljs-keyword">except</span>:
+        <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;No unretrieved twitter accounts found&apos;</span>
+        <span class="hljs-keyword">continue</span>
+</code></pre>
+<p>Usamos la instrucci&#xF3;n SQL <code>SELECT</code> para recuperar el nombre del primer usuario (<code>LIMIT 1</code>) que todav&#xED;a tiene su valor establecido en cero. Tambi&#xE9;n utilizamos el patr&#xF3;n <code>fetchone() [0]</code> dentro de un bloque try / except para extraer un <code>screen_name</code> de los datos recuperados o para mostrar un mensaje de error y realizar un bucle de copia de seguridad.</p>
+<p>Si recuperamos con &#xE9;xito un <code>screen_name</code> sin procesar, recuperamos sus datos de la siguiente manera:</p>
+<pre><code class="lang-python">url = twurl.augment(TWITTER_URL, {<span class="hljs-string">&apos;screen_name&apos;</span>: acct, <span class="hljs-string">&apos;count&apos;</span>: <span class="hljs-string">&apos;20&apos;</span>})
+print(<span class="hljs-string">&apos;Retrieving&apos;</span>)
+url connection = urllib.urlopen(url)
+data = connection.read()
+js = json.loads(data)
+cur.execute(<span class="hljs-string">&apos;UPDATE Twitter SET retrieved = 1 WHERE nombre =?&apos;</span>, (acct,))
+</code></pre>
+<p>Una vez que recuperamos los datos con &#xE9;xito, usamos la instrucci&#xF3;n <code>UPDATE</code> para establecer la columna <code>retrieved</code> en 1 para indicar que hemos completado la recuperaci&#xF3;n de los amigos de esta cuenta. Esto nos impide recuperar los mismos datos una y otra vez y nos mantiene progresando a trav&#xE9;s de la red de amigos de Twitter.</p>
+<p>Si ejecutamos el programa de amigos y presionamos Intro dos veces para recuperar a los amigos de los siguientes amigos no visitados, luego ejecutamos el programa de descarga, nos dar&#xE1; el siguiente resultado:</p>
+<pre><code class="lang-python">(<span class="hljs-string">&apos;opencontent&apos;</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;lhawthorn&apos;</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;steve_coppin&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;davidkocher&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;hrheingold&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+...
+(<span class="hljs-string">&apos;cnxorg&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>)
+(<span class="hljs-string">&apos;knoop&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-string">&apos;kthanos&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>)
+(<span class="hljs-string">&apos;LectureTools&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+...
+<span class="hljs-number">55</span> rows.
+</code></pre>
+<p>Podemos ver que hemos registrado correctamente que hemos visitado <code>lhawthorn</code> y<code>opencontent</code>. Tambi&#xE9;n las cuentas <code>cnxorg</code> y <code>kthanos</code> ya tienen dos seguidores. Como ahora hemos recuperado los amigos de tres personas (<code>drchuck</code>,<code>opencontent</code> y <code>lhawthorn</code>), nuestra tabla tiene 55 filas de amigos para recuperar.</p>
+<p>Cada vez que ejecutamos el programa y presionamos enter, elegimos la siguiente cuenta no visitada (por ejemplo, la siguiente cuenta ser&#xE1; <code>steve_coppin</code>), recuperar&#xE1; a sus amigos, los marcar&#xE1; como recuperados y, para cada uno de los amigos de <code>steve_coppin</code>, agregar&#xE1; hasta el final de la base de datos o actualizar&#xE1; el recuento de sus amigos si ya est&#xE1;n en la base de datos.</p>
+<p>Dado que todos los datos del programa se almacenan en el disco en una base de datos, la actividad de rastreo se puede suspender y reanudar tantas veces como desee sin perder datos.</p>
+<h2 id="basic-data-modeling">Modelado b&#xE1;sico de datos </h2>
+<p>El poder real de una base de datos relacional es cuando creamos varias tablas y hacemos enlaces entre esas tablas. El acto de decidir c&#xF3;mo dividir los datos de su aplicaci&#xF3;n en varias tablas y establecer las relaciones entre las tablas se denomina <strong>modelado de datos</strong>. El documento de dise&#xF1;o que muestra las tablas y sus relaciones se denomina <strong>modelo de datos</strong>.</p>
+<p>El modelado de datos es una habilidad relativamente sofisticada y solo presentaremos los conceptos m&#xE1;s b&#xE1;sicos del modelado de datos relacionales en esta secci&#xF3;n. Para m&#xE1;s detalles sobre el modelado de datos, puedes comenzar con:</p>
+<p><a href="http://en.wikipedia.org/wiki/Relational_model" target="_blank">http://en.wikipedia.org/wiki/Relational_model</a></p>
+<p>Digamos que para nuestra aplicaci&#xF3;n de ara&#xF1;a de Twitter, en lugar de simplemente contar los amigos de una persona, quer&#xED;amos mantener una lista de todas las relaciones entrantes para poder encontrar una lista de todas las personas que siguen una cuenta en particular.</p>
+<p>Dado que potencialmente todos tendr&#xE1;n muchas cuentas que los siguen, no podemos simplemente agregar una sola columna a nuestra tabla <code>Twitter</code>. As&#xED; que creamos una nueva tabla que hace un seguimiento de parejas de amigos. La siguiente es una forma simple de hacer una tabla de este tipo:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> Pals (from_friend <span class="hljs-built_in">TEXT</span>, to_friend <span class="hljs-built_in">TEXT</span>)
+</code></pre>
+<p>Cada vez que nos encontramos con una persona que est&#xE1; siguiendo <code>drchuck</code>, insertamos una fila del formulario:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> Pals (from_friend,to_friend) <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&apos;drchuck&apos;</span>, <span class="hljs-string">&apos;lhawthorn&apos;</span>)
+</code></pre>
+<p>Como estamos procesando a los 20 amigos del feed de Twitter <code>drchuck</code>, insertaremos 20 registros con &quot;drchuck&quot; como primer par&#xE1;metro, por lo que terminaremos duplicando la cadena muchas veces en la base de datos.</p>
+<p>Esta duplicaci&#xF3;n de datos de cadena viola una de las mejores pr&#xE1;cticas para <strong>la normalizaci&#xF3;n de la base de datos</strong> que b&#xE1;sicamente dice que nunca debemos colocar los mismos datos de cadena en la base de datos m&#xE1;s de una vez. Si necesitamos los datos m&#xE1;s de una vez, creamos una clave num&#xE9;rica para los datos y hacemos referencia a los datos reales utilizando esta clave.</p>
+<p>En t&#xE9;rminos pr&#xE1;cticos, una cadena ocupa mucho m&#xE1;s espacio que un entero en el disco y en la memoria de nuestra ordenador, y toma m&#xE1;s tiempo de procesador para comparar y ordenar. Si solo tenemos unos pocos cientos de entradas, el tiempo de almacenamiento y procesador apenas importa. Pero si tenemos un mill&#xF3;n de personas en nuestra base de datos y una posibilidad de 100 millones de enlaces de amigos, es importante poder escanear los datos lo m&#xE1;s r&#xE1;pido posible.</p>
+<p>Almacenaremos nuestras cuentas de Twitter en una tabla llamada <code>People</code> en lugar de la tabla <code>Twitter</code> utilizada en el ejemplo anterior. La tabla <code>People</code> tiene una columna adicional para almacenar la clave num&#xE9;rica asociada a la fila para este usuario de Twitter. SQLite tiene una funci&#xF3;n que agrega autom&#xE1;ticamente el valor clave para cualquier fila que insertamos en una tabla usando un tipo especial de columna de datos (<code>INTEGER PRIMARY KEY</code>).</p>
+<p>Podemos crear la tabla <code>People</code> con esta columna adicional <code>id</code> de la siguiente manera:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> People (<span class="hljs-keyword">id</span> <span class="hljs-built_in">INTEGER</span> PRIMARY <span class="hljs-keyword">KEY</span>, <span class="hljs-keyword">name</span> <span class="hljs-built_in">TEXT</span> <span class="hljs-keyword">UNIQUE</span>, retrieved <span class="hljs-built_in">INTEGER</span>)
+</code></pre>
+<p>Ten en cuenta que ya no estamos manteniendo un recuento de amigos en cada fila de la tabla &quot;People&quot;. Cuando seleccionamos <code>INTEGER PRIMARY KEY</code> como el tipo de nuestra columna <code>id</code>, estamos indicando que nos gustar&#xED;a que SQLite administre esta columna y asigne una clave num&#xE9;rica &#xFA;nica a cada fila que insertamos autom&#xE1;ticamente. Tambi&#xE9;n agregamos la palabra clave <code>UNIQUE</code> para indicar que no permitiremos que SQLite inserte dos filas con el mismo valor para <code>name</code>.</p>
+<p>Ahora, en lugar de crear la tabla <code>Pals</code> anterior, creamos una tabla llamada <code>Follows</code> con dos columnas enteras <code>from_id</code> y <code>to_id</code> y una restricci&#xF3;n en la tabla que la combinaci&#xF3;n de <code>from_id</code> y <code>to_id</code>debe ser &#xFA;nica en esta tabla (es decir, no podemos insertar filas duplicadas) en nuestra base de datos.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">Follows</span>
+    (from_id <span class="hljs-built_in">INTEGER</span>, to_id <span class="hljs-built_in">INTEGER</span>, <span class="hljs-keyword">UNIQUE</span>(from_id, to_id) )
+</code></pre>
+<p>Cuando agregamos cl&#xE1;usulas <code>UNIQUE</code> a nuestras tablas, estamos comunicando un conjunto de reglas que le estamos pidiendo a la base de datos que aplique cuando intentemos insertar registros. Las reglas nos impiden cometer errores y simplifican la escritura de algunos de nuestros c&#xF3;digos.</p>
+<p>En esencia, al crear esta tabla &quot;Follows&quot;, estamos modelando una &quot;relaci&#xF3;n&quot; donde una persona &quot;sigue&quot; a otra persona y la representamos con un par de n&#xFA;meros que indican que (a) las personas est&#xE1;n conectadas y (b) la direcci&#xF3;n de la relaci&#xF3;n.</p>
+<figure id="fig2.15.4"><img src="img/relatinos-db.png" alt="Relaciones entre tablas"><figcaption>Imagen - Relaciones entre tablas</figcaption></figure>
+<h2 id="programming-with-multiple-tables">Programaci&#xF3;n con varias tablas </h2>
+<p>Ahora reharemos el programa de ara&#xF1;as de Twitter utilizando dos tablas, las claves principales y las referencias clave, como se describe anteriormente. Aqu&#xED; est&#xE1; el c&#xF3;digo para la nueva versi&#xF3;n del programa:</p>
+<iframe src="https://trinket.io/embed/python3/88efa27a18" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Este programa est&#xE1; empezando a complicarse un poco, pero ilustra los patrones que debemos usar cuando estamos usando claves de enteros para vincular tablas. Los patrones b&#xE1;sicos son:</p>
+<ol>
+<li>Crear tablas con claves primarias y restricciones.</li>
+<li>Cuando tenemos una clave l&#xF3;gica para una persona (es decir, el nombre de la cuenta) y necesitamos el valor <code>id</code> para la persona, dependiendo de si la persona ya est&#xE1; en la tabla <code>People</code> o bien debemos: (1) buscar la persona en la tabla <code>People</code> y recuperar el valor <code>id</code> para la persona o (2) agrear la persona a la tabla <code>People</code> y obtener el valor <code>id</code> para la fila reci&#xE9;n agregada.</li>
+<li>Inserta la fila que captura la relaci&#xF3;n &quot;follows&quot;.</li>
+</ol>
+<p>Desarrollaremos brevemente estos puntos.</p>
+<h3 id="constraints-in-database-tables">Restricciones en tablas de bases de datos </h3>
+<p>A medida que dise&#xF1;amos nuestras estructuras de tablas, podemos decirle al sistema de base de datos que nos gustar&#xED;a aplicar algunas reglas. Estas reglas nos ayudan a cometer errores e introducir datos incorrectos en las tablas. Cuando creamos nuestras tablas:</p>
+<pre><code class="lang-python">cur.execute(<span class="hljs-string">&apos;&apos;&apos;CREATE TABLE IF NOT EXISTS People
+    (id INTEGER PRIMARY KEY, name TEXT UNIQUE, retrieved INTEGER)&apos;&apos;&apos;</span>)
+cur.execute(<span class="hljs-string">&apos;&apos;&apos;CREATE TABLE IF NOT EXISTS Follows
+    (from_id INTEGER, to_id INTEGER, UNIQUE(from_id, to_id))&apos;&apos;&apos;</span>)
+</code></pre>
+<p>Indicamos que la columna <code>name</code> en la tabla <code>People</code> debe ser <code>UNIQUE</code>. Tambi&#xE9;n indicamos que la combinaci&#xF3;n de los dos n&#xFA;meros en cada fila de la tabla <code>Follows</code> debe ser &#xFA;nica. Estas restricciones nos impiden cometer errores, como agregar la misma relaci&#xF3;n m&#xE1;s de una vez.</p>
+<p>Podemos aprovechar estas restricciones en el siguiente c&#xF3;digo:</p>
+<pre><code class="lang-python">cur.execute(<span class="hljs-string">&apos;&apos;&apos;INSERT OR IGNORE INTO People (name, retrieved)
+    VALUES ( ?, 0)&apos;&apos;&apos;</span>, ( friend, ) )
+</code></pre>
+<p>A&#xF1;adimos la cl&#xE1;usula <code>OR IGNORE</code> a nuestra declaraci&#xF3;n <code>INSERT</code> para indicar que si este <code>INSERT</code> en particular causar&#xED;a una violaci&#xF3;n de la regla <em><code>name</code> debe ser &#xFA;nico</em>, el sistema de la base de datos puede ignorar el <code>INSERT</code> . Estamos utilizando la restricci&#xF3;n de la base de datos como una red de seguridad para asegurarnos de no hacer algo incorrecto sin querer.</p>
+<p>De manera similar, el siguiente c&#xF3;digo asegura que no agregamos la misma relaci&#xF3;n exacta de <code>Follows</code> dos veces.</p>
+<pre><code class="lang-python">cur.execute(<span class="hljs-string">&apos;&apos;&apos;INSERT OR IGNORE INTO Follows
+    (from_id, to_id) VALUES (?, ?)&apos;&apos;&apos;</span>, (id, friend_id) )
+</code></pre>
+<p>Una vez m&#xE1;s, simplemente le pedimos a la base de datos que ignore nuestro intento de <code>INSERT</code> si viola la restricci&#xF3;n de unicidad que especificamos para las filas de <code>Follows</code>.</p>
+<h3 id="retrieve-andor-insert-a-record">Recuperar y/o insertar un registro </h3>
+<p>Cuando solicitamos al usuario una cuenta de Twitter, si la cuenta existe, debemos buscar su valor &apos;id&apos;. Si la cuenta a&#xFA;n no existe en la tabla <code>People</code>, debemos insertar el registro y obtener el valor <code>id</code> de la fila insertada.</p>
+<p>Este es un patr&#xF3;n muy com&#xFA;n y se realiza dos veces en el programa anterior. Este c&#xF3;digo muestra c&#xF3;mo buscamos el <code>id</code> para la cuenta de un amigo cuando hemos extra&#xED;do un <code>screen_name</code> de un nodo <code>usuario</code> en el JSON de Twitter recuperado.</p>
+<p>Dado que con el tiempo ser&#xE1; cada vez m&#xE1;s probable que la cuenta ya est&#xE9; en la base de datos, primero verificamos si existe el registro &apos;Personas&apos; usando una declaraci&#xF3;n <code>SELECT</code>.</p>
+<p>Si todo va bien <sup><a href="#fn_2" id="reffn_2">2</a></sup> dentro de la secci&#xF3;n <code>try</code>, recuperamos el registro usando <code>fetchone()</code> y luego recuperamos el primer (y &#xFA;nico) elemento de la tupla devuelta y lo guardamos en <code>friend_id</code>.</p>
+<p>Si el <code>SELECT</code> falla, el c&#xF3;digo <code>fetchone()[0]</code> fallar&#xE1; y el control se transferir&#xE1; a la secci&#xF3;n <code>except</code>.</p>
+<pre><code class="lang-python">    friend = u[<span class="hljs-string">&apos;screen_name&apos;</span>]
+    cur.execute(<span class="hljs-string">&apos;SELECT id FROM People WHERE name = ? LIMIT 1&apos;</span>,
+        (friend, ) )
+    <span class="hljs-keyword">try</span>:
+        friend_id = cur.fetchone()[<span class="hljs-number">0</span>]
+        countold = countold + <span class="hljs-number">1</span>
+    <span class="hljs-keyword">except</span>:
+        cur.execute(<span class="hljs-string">&apos;&apos;&apos;INSERT OR IGNORE INTO People (name, retrieved)
+            VALUES ( ?, 0)&apos;&apos;&apos;</span>, ( friend, ) )
+        conn.commit()
+        <span class="hljs-keyword">if</span> cur.rowcount != <span class="hljs-number">1</span> :
+            <span class="hljs-keyword">print</span> <span class="hljs-string">&apos;Error inserting account:&apos;</span>,friend
+            <span class="hljs-keyword">continue</span>
+        friend_id = cur.lastrowid
+        countnew = countnew + <span class="hljs-number">1</span>
+</code></pre>
+<p>Si terminamos en el c&#xF3;digo <code>except</code>, simplemente significa que no se encontr&#xF3; la fila, por lo que debemos insertar la fila. Usamos <code>INSERT OR IGNORE</code> solo para evitar errores y luego llamamos a<code>commit ()</code>para forzar que la base de datos se actualice realmente. Una vez que se realiza la escritura, podemos verificar el <code>cur.rowcount</code> para ver cu&#xE1;ntas filas se vieron afectadas. Ya que estamos intentando insertar una sola fila, si el n&#xFA;mero de filas afectadas es diferente a 1, es un error.</p>
+<p>Si el <code>INSERT</code> tiene &#xE9;xito, podemos ver<code>cur.lastrowid</code> para averiguar qu&#xE9; valor asign&#xF3; la base de datos a la columna <code>id</code> en nuestra fila reci&#xE9;n creada.</p>
+<h3 id=" almacenando la relaci&#xF3;n de amistad">Guardando la relaci&#xF3;n de amistad </h3>
+<p>Una vez que sepamos el valor clave tanto para el usuario de Twitter como para el amigo en el JSON, es muy sencillo insertar los dos n&#xFA;meros en la tabla `Siguiendo &apos;con el siguiente c&#xF3;digo:</p>
+<pre><code class="lang-python">cur.execute(<span class="hljs-string">&apos;INSERT OR IGNORE INTO Follows (from_id, to_id) VALUES (?, ?)&apos;</span>,
+    (id, friend_id) )
+</code></pre>
+<p>Ten en cuenta que dejamos que la base de datos se encargue de evitar que &quot;insertemos dos veces&quot; una relaci&#xF3;n creando la tabla con una restricci&#xF3;n de unicidad y luego agregando <code>OR IGNORE</code> a nuestra declaraci&#xF3;n <code>INSERT</code>.</p>
+<p>Aqu&#xED; hay una ejecuci&#xF3;n de muestra de este programa:</p>
+<pre><code class="lang-python">Enter a Twitter account, <span class="hljs-keyword">or</span> quit:
+No unretrieved Twitter accounts found
+Enter a Twitter account, <span class="hljs-keyword">or</span> quit: drchuck
+Retrieving http://api.twitter.com/<span class="hljs-number">1.1</span>/friends ...
+New accounts= <span class="hljs-number">20</span>  revisited= <span class="hljs-number">0</span>
+Enter a Twitter account, <span class="hljs-keyword">or</span> quit:
+Retrieving http://api.twitter.com/<span class="hljs-number">1.1</span>/friends ...
+New accounts= <span class="hljs-number">17</span>  revisited= <span class="hljs-number">3</span>
+Enter a Twitter account, <span class="hljs-keyword">or</span> quit:
+Retrieving http://api.twitter.com/<span class="hljs-number">1.1</span>/friends ...
+New accounts= <span class="hljs-number">17</span>  revisited= <span class="hljs-number">3</span>
+Enter a Twitter account, <span class="hljs-keyword">or</span> quit: quit
+</code></pre>
+<p>Comenzamos con la cuenta <code>drchuck</code> y luego dejamos que el programa seleccione autom&#xE1;ticamente las siguientes dos cuentas para recuperar y agregar a nuestra base de datos.</p>
+<p>A continuaci&#xF3;n se muestran las primeras filas de las tablas <code>People</code> y <code>Follows</code> despu&#xE9;s de completar esta ejecuci&#xF3;n:</p>
+<pre><code class="lang-python">People:
+(<span class="hljs-number">1</span>, <span class="hljs-string">&apos;drchuck&apos;</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-number">2</span>, <span class="hljs-string">&apos;opencontent&apos;</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-number">3</span>, <span class="hljs-string">&apos;lhawthorn&apos;</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-number">4</span>, <span class="hljs-string">&apos;steve_coppin&apos;</span>, <span class="hljs-number">0</span>)
+(<span class="hljs-number">5</span>, <span class="hljs-string">&apos;davidkocher&apos;</span>, <span class="hljs-number">0</span>)
+<span class="hljs-number">55</span> rows.
+Follows:
+(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>)
+(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>)
+(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
+(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>)
+<span class="hljs-number">60</span> rows.
+</code></pre>
+<p>Puedes ver los campos <code>id</code>, <code>name</code> y <code>visited</code> en la tabla <code>People</code> y puedes ver los n&#xFA;meros de ambos extremos de la relaci&#xF3;n en la tabla <code>Follows</code>. En la tabla <code>People</code>, podemos ver que las tres primeras personas han sido visitadas y sus datos han sido recuperados. Los datos en la tabla <code>Follows</code> indican que <code>drchuck</code> (usuario 1) es un amigo para todas las personas que aparecen en las primeras cinco filas. Esto tiene sentido porque los primeros datos que recuperamos y almacenamos fueron los amigos de Twitter de <code>drchuck</code>. Si tuvieras que imprimir m&#xE1;s filas de la tabla <code>Follows</code>, tambi&#xE9;n ver&#xED;as a los amigos de los usuarios 2 y 3.</p>
+<h2 id="three-kinds-of-keys">Tres tipos de teclas </h2>
+<p>TODO sigue por aqu&#xED;
+Ahora que hemos empezado a construir un modelo que coloca nuestros datos en varias tablas vinculadas y vincula las filas en esas tablas usando <strong>claves</strong>, debemos analizar la terminolog&#xED;a relacionada con las claves. En general, hay tres tipos de claves utilizadas en un modelo de base de datos.</p>
+<ul>
+<li>Una <strong>clave l&#xF3;gica</strong> es una clave que el &quot;mundo real&quot; puede usar para buscar una fila. En nuestro modelo de datos de ejemplo, el campo <code>nombre</code> es una clave l&#xF3;gica. Es el nombre de pantalla para el usuario y, de hecho, buscamos la fila de un usuario varias veces en el programa usando el campo <code>nombre</code>. A menudo ver&#xE1;s que tiene sentido agregar una restricci&#xF3;n <code>UNIQUE</code> a una clave l&#xF3;gica. Dado que la clave l&#xF3;gica es la forma en que buscamos una fila del mundo exterior, no tiene mucho sentido permitir varias filas con el mismo valor en la tabla.</li>
+<li>Una <strong>clave principal</strong> suele ser un n&#xFA;mero que la base de datos asigna autom&#xE1;ticamente. Por lo general, no tiene ning&#xFA;n significado fuera del programa y solo se utiliza para vincular filas de diferentes tablas. Cuando queremos buscar una fila en una tabla, generalmente buscar la fila con la clave principal es la forma m&#xE1;s r&#xE1;pida de encontrar la fila. Dado que las claves primarias son n&#xFA;meros enteros, ocupan muy poco espacio de almacenamiento y se pueden comparar o clasificar muy r&#xE1;pidamente. En nuestro modelo de datos, el campo <code>id</code> es un ejemplo de una clave primaria.</li>
+<li>Una <strong>clave externa</strong> es generalmente un n&#xFA;mero que apunta a la clave principal de una fila asociada en una tabla diferente. Un ejemplo de una clave externa en nuestro modelo de datos es el <code>from_id</code>.</li>
+</ul>
+<p>Estamos utilizando una convenci&#xF3;n de nomenclatura para llamar siempre el nombre de campo de la clave principal <code>id</code> y a&#xF1;adir el sufijo <code>_id</code> a cualquier nombre de campo que sea una clave externa.</p>
+<h2 id="using-join-to-retrieve-data">Uso de JOIN para recuperar datos </h2>
+<p>Ahora que hemos seguido las reglas de normalizaci&#xF3;n de la base de datos y hemos separado los datos en dos tablas, vinculadas entre s&#xED; mediante claves primarias y externas, debemos poder construir un <code>SELECT</code> que vuelva a ensamblar los datos en todas las tablas.</p>
+<p>SQL usa la cl&#xE1;usula <code>JOIN</code> para volver a conectar estas tablas. En la cl&#xE1;usula <code>JOIN</code> usted especifica los campos que se utilizan para volver a conectar las filas entre las tablas.</p>
+<p>El siguiente es un ejemplo de un <code>SELECT</code> con una cl&#xE1;usula <code>JOIN</code>:</p>
+<pre><code class="lang-python">SELECT * FROM Follows JOIN People
+    ON Follows.from_id = People.id WHERE People.id = <span class="hljs-number">1</span>
+</code></pre>
+<p>La cl&#xE1;usula <code>JOIN</code> indica que los campos que estamos seleccionando cruzan las tablas <code>Follows</code> y <code>People</code>. La cl&#xE1;usula <code>ON</code> indica c&#xF3;mo se deben unir las dos tablas: toma las filas de <code>Follows</code> y agrega la fila de <code>People</code> donde el campo <code>from_id</code> en <code>Follows</code> es el mismo que el valor de <code>id</code> en el Tabla de personas.</p>
+<figure id="fig2.15.5"><img src="../img/connecting-tables.svg" alt="Conectando tablas utilizando JOIN"><figcaption>Imagen - Conectando tablas utilizando JOIN</figcaption></figure>
+<p>El resultado de JOIN es crear &quot;metarows&quot; extra largos que tienen los campos de &quot;Personas&quot; y los campos correspondientes de los &quot;Follows&quot;. Donde hay m&#xE1;s de una coincidencia entre el campo <code>id</code> de <code>People</code> y el <code>from_id</code> de <code>People</code>, entonces JOIN crea un metarow para cada uno de los pares de filas correspondientes, duplicando los datos seg&#xFA;n sea necesario.</p>
+<p>El siguiente c&#xF3;digo muestra los datos que tendremos en la base de datos despu&#xE9;s de que se haya ejecutado varias veces el programa de ara&#xF1;as de Twitter de m&#xFA;ltiples tablas (arriba).</p>
+<iframe src="https://trinket.io/embed/python3/8f92ad783f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>En este programa, primero desechamos <code>People</code> y <code>Follows</code> y luego volcamos un subconjunto de los datos en las tablas unidas.</p>
+<p>Aqu&#xED; est&#xE1; la salida del programa:</p>
+<pre><code class="lang-python">python twjoin.py
+People:
+(<span class="hljs-number">1</span>, <span class="hljs-string">&apos;drchuck&apos;</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-number">2</span>, <span class="hljs-string">&apos;opencontent&apos;</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-number">3</span>, <span class="hljs-string">&apos;lhawthorn&apos;</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-number">4</span>, <span class="hljs-string">&apos;steve_coppin&apos;</span>, <span class="hljs-number">0</span>)
+(<span class="hljs-number">5</span>, <span class="hljs-string">&apos;davidkocher&apos;</span>, <span class="hljs-number">0</span>)
+<span class="hljs-number">55</span> rows.
+Follows:
+(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>)
+(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>)
+(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
+(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>)
+<span class="hljs-number">60</span> rows.
+Connections <span class="hljs-keyword">for</span> id=<span class="hljs-number">2</span>:
+(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-string">&apos;drchuck&apos;</span>, <span class="hljs-number">1</span>)
+(<span class="hljs-number">2</span>, <span class="hljs-number">28</span>, <span class="hljs-number">28</span>, <span class="hljs-string">&apos;cnxorg&apos;</span>, <span class="hljs-number">0</span>)
+(<span class="hljs-number">2</span>, <span class="hljs-number">30</span>, <span class="hljs-number">30</span>, <span class="hljs-string">&apos;kthanos&apos;</span>, <span class="hljs-number">0</span>)
+(<span class="hljs-number">2</span>, <span class="hljs-number">102</span>, <span class="hljs-number">102</span>, <span class="hljs-string">&apos;SomethingGirl&apos;</span>, <span class="hljs-number">0</span>)
+(<span class="hljs-number">2</span>, <span class="hljs-number">103</span>, <span class="hljs-number">103</span>, <span class="hljs-string">&apos;ja_Pac&apos;</span>, <span class="hljs-number">0</span>)
+<span class="hljs-number">20</span> rows.
+</code></pre>
+<p>Ver&#xE1;s las columnas de las tablas <code>People</code> y <code>Follows</code> y el &#xFA;ltimo conjunto de filas es el resultado de <code>SELECT</code> con la cl&#xE1;usula <code>JOIN</code>.</p>
+<p>En la &#xFA;ltima selecci&#xF3;n, estamos buscando cuentas que sean amigos de &quot;opencontent&quot; (es decir, <code>People.id = 2</code>).</p>
+<p>En cada uno de los &quot;metarows&quot; en la &#xFA;ltima selecci&#xF3;n, las dos primeras columnas son de la tabla &quot;Follows&quot; seguidas por las columnas tres a cinco de la tabla &quot;People&quot;. Tambi&#xE9;n puedes ver que la segunda columna (<code>Follows.to_id</code>) coincide con la tercera columna (<code>People.id</code>) en cada uno de los &quot;metarows&quot; unidos.</p>
+<h2 id="summary">Resumen </h2>
+<p>Este cap&#xED;tulo ha cubierto mucho terreno para ofrecerte una descripci&#xF3;n general de los conceptos b&#xE1;sicos del uso de una base de datos en Python. Es m&#xE1;s complicado escribir el c&#xF3;digo para usar una base de datos para almacenar datos que los diccionarios de Python o los archivos planos, por lo que hay pocas razones para usar una base de datos a menos que su aplicaci&#xF3;n realmente necesite las capacidades de una base de datos. Las situaciones en las que una base de datos puede ser bastante &#xFA;til son: (1) cuando tu aplicaci&#xF3;n necesita realizar muchas actualizaciones aleatorias dentro de un conjunto de datos grande, (2) cuando sus datos son tan grandes que no caben en un diccionario y necesitas buscar y actualizar la informaci&#xF3;n repetidamente, o (3) cuando tengas un proceso de larga ejecuci&#xF3;n que desees poder detener, reiniciar y conservar los datos de una ejecuci&#xF3;n a la siguiente.</p>
+<p>Puedes crear una base de datos simple con una sola tabla para satisfacer las necesidades de muchas aplicaciones, pero la mayor&#xED;a de los problemas requerir&#xE1;n varias tablas y v&#xED;nculos/relaciones entre filas en diferentes tablas. Cuando comienzas a crear enlaces entre tablas, es importante hacer un dise&#xF1;o cuidadoso y seguir las reglas de normalizaci&#xF3;n de la base de datos para aprovechar al m&#xE1;ximo sus capacidades. Dado que la motivaci&#xF3;n principal para usar una base de datos es que tienes una gran cantidad de datos con los que tratar, es importante modelar tus datos de manera eficiente para que tus programas se ejecuten lo m&#xE1;s r&#xE1;pido posible.</p>
+<h2 id="debugging">depuraci&#xF3;n </h2>
+<p>Un patr&#xF3;n com&#xFA;n cuando desarrolles un programa en Python para conectarte a una base de datos SQLite ser&#xE1; ejecutar un programa y verificar los resultados utilizando el Explorador de bases de datos para SQLite. El navegador te permite verificar r&#xE1;pidamente si tu programa est&#xE1; funcionando correctamente.</p>
+<p>Debes tener cuidado porque SQLite se encarga de evitar que dos programas cambien los mismos datos al mismo tiempo. Por ejemplo, si abres una base de datos en el navegador y realizas un cambio en la base de datos y a&#xFA;n no has presionado el bot&#xF3;n &quot;guardar&quot; en el navegador, el navegador &quot;bloquea&quot; el archivo de la base de datos y evita que cualquier otro programa acceda al mismo. En particular, tu programa Python no podr&#xE1; acceder al archivo si est&#xE1; bloqueado.</p>
+<p>Por lo tanto, una soluci&#xF3;n es asegurarte de cerrar el navegador de la base de datos o usar el men&#xFA; <strong>Archivo</strong> para cerrar la base de datos en el navegador antes de intentar acceder a la base de datos desde Python para evitar el problema.</p>
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. SQLite realmente permite cierta flexibilidad en el tipo de datos almacenados en una columna, pero mantendremos nuestros tipos de datos estrictos en este cap&#xED;tulo para que los conceptos se apliquen por igual a otros sistemas de bases de datos como MySQL. <a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_1">
+<sup>1</sup>. En general, cuando una oraci&#xF3;n comienza con &quot;si todo va bien&quot;, encontrar&#xE1;s que el c&#xF3;digo debe usar try / except.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="14-objects.html" class="navigation navigation-prev " aria-label="Previous page: 14. Objetos">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="crditos.html" class="navigation navigation-next " aria-label="Next page: Créditos">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"15. Python y Bases de Datos","level":"2.15","depth":1,"next":{"title":"Créditos","level":"3.1","depth":1,"path":"crditos.md","ref":"crditos.md","articles":[]},"previous":{"title":"14. Objetos","level":"2.14","depth":1,"path":"14-objects.md","ref":"14-objects.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Instalando Python","alt":"Instalando Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Instalando Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Asistente personal digital","alt":"Asistente personal digital","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Asistente personal digital","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programadores hablando contigo","alt":"Programadores hablando contigo","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programadores hablando contigo","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Arquitectura de hardware","alt":"Arquitectura de hardware","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Arquitectura de hardware","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: ¿Dónde estás?","alt":"¿Dónde estás?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"¿Dónde estás?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: Si logica","alt":"Si logica","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Si logica","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: Lógica de If-Then-Else","alt":"Lógica de If-Then-Else","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Lógica de If-Then-Else","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: Lógica de elif","alt":"Lógica de elif","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Lógica de elif","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Memoria secundaria","alt":"Memoria secundaria","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Memoria secundaria","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables y objetos","alt":"Variables y objetos","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables y objetos","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: Una representación en árbol de XML","alt":"Una representación en árbol de XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Una representación en árbol de XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"13-web.html#fig2.13.2","level":"2.13","list_caption":"Figure: Arquitectura orientada a Servicios","alt":"Arquitectura orientada a Servicios","nro":16,"url":"../img/api.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Arquitectura orientada a Servicios","attributes":{},"skip":false,"key":"2.13.2"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: Un programa","alt":"Un programa","nro":17,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Un programa","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: Un programa como red de objetos","alt":"Un programa como red de objetos","nro":18,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Un programa como red de objetos","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignorar los detalles al usar un objeto","alt":"Ignorar los detalles al usar un objeto","nro":19,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignorar los detalles al usar un objeto","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignorar los detalles al construir un objeto","alt":"Ignorar los detalles al construir un objeto","nro":20,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignorar los detalles al construir un objeto","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: Una clase y dos objetos","alt":"Una clase y dos objetos","nro":21,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"Una clase y dos objetos","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Bases de datos relacionales","alt":"Bases de datos relacionales","nro":22,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Bases de datos relacionales","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":23,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Filas en una tabla","alt":"Filas en una tabla","nro":24,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Filas en una tabla","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relaciones entre tablas","alt":"Relaciones entre tablas","nro":25,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relaciones entre tablas","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Conectando tablas utilizando JOIN","alt":"Conectando tablas utilizando JOIN","nro":26,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Conectando tablas utilizando JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"es","gitbook":"*"},"file":{"path":"15-database.md","mtime":"2020-11-03T15:12:48.372Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,695 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5. Iterations · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-strings.html" />
+    
+    
+    <link rel="prev" href="04-functions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Starting the journey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Iterations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Networked Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python and Web Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python and Databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >5. Iterations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="iteration">Iteration </h1>
+<ul>
+<li><a href="#updating-variables">Updating variables</a></li>
+<li><a href="#the-while-statement">The <code>while</code> statement</a></li>
+<li><a href="#infinite-loops">Infinite loops</a></li>
+<li><a href="#infinite-loops-and-break">&quot;Infinite loops&quot; and <code>break</code></a></li>
+<li><a href="#finishing-iterations-with-continue">Finishing iterations with <code>continue</code></a></li>
+<li><a href="#definite-loops-using-for">Definite loops using <code>for</code></a></li>
+<li><a href="#loop-patterns">Loop patterns</a></li>
+<li><a href="#counting-and-summing-loops">Counting and summing loops</a></li>
+<li><a href="#maximum-and-minimum-loops">Maximum and minimum loops</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#exercises">Exercises</a></li>
+</ul>
+<h2 id="updating-variables">Updating variables </h2>
+<p>A common pattern in <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> statements is an <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> that updates a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a>, where the new <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> depends on the old.</p>
+<pre><code class="lang-python">x = x + <span class="hljs-number">1</span>
+</code></pre>
+<p>This means &quot;get the current <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>x</code>, add 1, and then update <code>x</code> with the new <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>.&quot;</p>
+<p>If you try to update a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> that doesn&apos;t exist, you get an error, because Python evaluates the right side before it assigns a <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> to <code>x</code>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = x + <span class="hljs-number">1</span>
+NameError: name <span class="hljs-string">&apos;x&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>Before you can update a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a>, you have to <strong><a href="GLOSSARY.html#initialize" class="glossary-term" title="An assignment that gives an initial value to a variable that will be updated.">initialize</a></strong> it, usually with a simple <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x = x + <span class="hljs-number">1</span>
+</code></pre>
+<p>Updating a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> by adding 1 is called an <strong><a href="GLOSSARY.html#increment" class="glossary-term" title="An update that increases the value of a variable (often by one).">increment</a></strong>; subtracting 1 is called a <strong><a href="GLOSSARY.html#decrement" class="glossary-term" title="An update that decreases the value of a variable.">decrement</a></strong>.</p>
+<h2 id="the-while-statement">The <code>while</code> statement </h2>
+<p>Computers are often used to automate repetitive tasks. Repeating <a href="GLOSSARY.html#identical" class="glossary-term" title="Being the same object (which implies equivalence).">identical</a> or similar tasks without making errors is something that computers do well and people do poorly. Because <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> is so common, Python provides several language features to make it easier.</p>
+<p>One form of <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> in Python is the <code>while</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>. Here is a simple <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that counts down from five and then says &quot;Blastoff!&quot;.</p>
+<pre><code class="lang-python">n = <span class="hljs-number">5</span>
+<span class="hljs-keyword">while</span> n &gt; <span class="hljs-number">0</span>:
+    print(n)
+    n = n - <span class="hljs-number">1</span>
+print(<span class="hljs-string">&apos;Blastoff!&apos;</span>)
+</code></pre>
+<p>You can almost read the <code>while</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> as if it were English. It means, &quot;While <code>n</code> is greater than 0, display the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>n</code> and then reduce the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>n</code> by 1. When you get to 0, exit the <code>while</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> and display the word <code>Blastoff!</code>&quot;</p>
+<p>More formally, here is the <a href="GLOSSARY.html#flow-of-execution" class="glossary-term" title="The order in which statements are executed during a program run.">flow of execution</a> for a <code>while</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>:</p>
+<ol>
+<li><a href="GLOSSARY.html#evaluate" class="glossary-term" title="To simplify an expression by performing the operations in order to yield a single value.">Evaluate</a> the <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a>, yielding <code>True</code> or <code>False</code>.</li>
+<li>If the <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> is false, exit the <code>while</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> and continue execution at the next <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>.</li>
+<li>If the <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> is true, execute the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> and then go back to step 1.</li>
+</ol>
+<p>This <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> of flow is called a <strong>loop</strong> because the third step loops back around to the top. We call each time we execute the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> of the loop an <strong><a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a></strong>. For the above loop, we would say, &quot;It had five iterations&quot;, which means that the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> of the loop was executed five times.</p>
+<p>The <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> of the loop should change the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of one or more variables so that eventually the <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> becomes false and the loop terminates. We call the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> that changes each time the loop executes and controls when the loop finishes the <strong><a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a></strong>. If there is no <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a>, the loop will repeat forever, resulting in an <strong><a href="GLOSSARY.html#infinite-loop" class="glossary-term" title="A loop in which the terminating condition is never satisfied or for which there is no terminating condition.">infinite loop</a></strong>.</p>
+<h2 id="infinite-loops">Infinite loops </h2>
+<p>An endless source of amusement for programmers is the observation that the directions on shampoo, &quot;Lather, rinse, repeat,&quot; are an <a href="GLOSSARY.html#infinite-loop" class="glossary-term" title="A loop in which the terminating condition is never satisfied or for which there is no terminating condition.">infinite loop</a> because there is no <strong><a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a></strong> telling you how many times to execute the loop.</p>
+<p>In the case of <code>countdown</code>, we can prove that the loop terminates because we know that the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>n</code> is finite, and we can see that the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>n</code> gets smaller each time through the loop, so eventually we have to get to 0. Other times a loop is obviously infinite because it has no <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> at all.</p>
+<h2 id="infinite-loops-and-break">&quot;Infinite loops&quot; and <code>break</code> </h2>
+<p>Sometimes you don&apos;t know it&apos;s time to end a loop until you get half way through the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a>. In that case you can write an <a href="GLOSSARY.html#infinite-loop" class="glossary-term" title="A loop in which the terminating condition is never satisfied or for which there is no terminating condition.">infinite loop</a> on purpose and then use the <code>break</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> to jump out of the loop.</p>
+<p>This loop is obviously an <strong><a href="GLOSSARY.html#infinite-loop" class="glossary-term" title="A loop in which the terminating condition is never satisfied or for which there is no terminating condition.">infinite loop</a></strong> because the logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> on the <code>while</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> is simply the logical constant <code>True</code>:</p>
+<pre><code class="lang-python">n = <span class="hljs-number">10</span>
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    print(n, end=<span class="hljs-string">&apos; &apos;</span>)
+    n = n - <span class="hljs-number">1</span>
+print(<span class="hljs-string">&apos;Done!&apos;</span>)
+</code></pre>
+<p>If you make the mistake and run this code, you will learn quickly how to stop a runaway Python process on your system or find where the power-off button is on your computer. This <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> will run forever or until your battery runs out because the logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> at the top of the loop is always true by virtue of the fact that the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> is the constant <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> <code>True</code>.</p>
+<p>While this is a dysfunctional <a href="GLOSSARY.html#infinite-loop" class="glossary-term" title="A loop in which the terminating condition is never satisfied or for which there is no terminating condition.">infinite loop</a>, we can still use this pattern to build useful loops as long as we carefully add code to the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> of the loop to explicitly exit the loop using <code>break</code> when we have reached the exit <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a>.</p>
+<p>For example, suppose you want to take input from the user until they <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> <code>done</code>. You could write:</p>
+<iframe src="https://trinket.io/embed/python3/7a1dd00756" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>The loop <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> is <code>True</code>, which is always true, so the loop runs repeatedly until it hits the break <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>.</p>
+<p>Each time through, it prompts the user with an angle bracket. If the user types <code>done</code>, the <code>break</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> exits the loop. Otherwise the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> echoes whatever the user types and goes back to the top of the loop. Here&apos;s a sample run:</p>
+<pre><code class="lang-python">&gt; hello there
+hello there
+&gt; finished
+finished
+&gt; done
+Done!
+</code></pre>
+<p>This way of writing <code>while</code> loops is common because you can check the <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> anywhere in the loop (not just at the top) and you can express the stop <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> affirmatively (&quot;stop when this happens&quot;) rather than negatively (&quot;keep going until that happens.&quot;).</p>
+<h2 id="finishing-iterations-with-continue">Finishing iterations with <code>continue</code> </h2>
+<p>Sometimes you are in an <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> of a loop and want to finish the current <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> and immediately jump to the next <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a>. In that case you can use the <code>continue</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> to skip to the next <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> without finishing the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> of the loop for the current <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a>.</p>
+<p>Here is an example of a loop that copies its input until the user types &quot;done&quot;, but treats lines that start with the hash character as lines not to be printed (kind of like Python comments).</p>
+<iframe src="https://trinket.io/embed/python3/f1f5dc61e1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Here is a sample run of this new <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> with <code>continue</code> added.</p>
+<pre><code class="lang-python">&gt; hello there
+hello there
+&gt; <span class="hljs-comment"># don&apos;t print this</span>
+&gt; <span class="hljs-keyword">print</span> this!
+<span class="hljs-keyword">print</span> this!
+&gt; done
+Done!
+</code></pre>
+<p>All the lines are printed except the one that starts with the hash sign because when the <code>continue</code> is executed, it ends the current <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> and jumps back to the <code>while</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> to start the next <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a>, thus skipping the <code>print</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>.</p>
+<h2 id="definite-loops-using-for">Definite loops using <code>for</code> </h2>
+<p>Sometimes we want to loop through a <strong>set</strong> of things such as a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of words, the lines in a file, or a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of numbers. When we have a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of things to loop through, we can construct a <strong>definite</strong> loop using a <code>for</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>. We call the <code>while</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> an <strong>indefinite</strong> loop because it simply loops until some <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> becomes <code>False</code>, whereas the <code>for</code> loop is looping through a known set of items so it runs through as many iterations as there are items in the set.</p>
+<p>The syntax of a <code>for</code> loop is similar to the <code>while</code> loop in that there is a <code>for</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> and a loop <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a>:</p>
+<pre><code class="lang-python">friends = [<span class="hljs-string">&apos;Joseph&apos;</span>, <span class="hljs-string">&apos;Glenn&apos;</span>, <span class="hljs-string">&apos;Sally&apos;</span>]
+<span class="hljs-keyword">for</span> friend <span class="hljs-keyword">in</span> friends:
+    print(<span class="hljs-string">&apos;Happy New Year:&apos;</span>, friend)
+print(<span class="hljs-string">&apos;Done!&apos;</span>)
+</code></pre>
+<p>In Python terms, the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>friends</code> is a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a><sup><a href="#fn_1" id="reffn_1">1</a></sup> of three strings and the <code>for</code> loop goes through the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and executes the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> once for each of the three strings in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> resulting in this output:</p>
+<pre><code class="lang-python">Happy New Year: Joseph
+Happy New Year: Glenn
+Happy New Year: Sally
+Done!
+</code></pre>
+<p>Translating this <code>for</code> loop to English is not as direct as the <code>while</code>, but if you think of friends as a <strong>set</strong>, it goes like this: &quot;Run the statements in the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> of the for loop once for each friend <strong>in</strong> the set named friends.&quot;</p>
+<p>Looking at the <code>for</code> loop, <strong>for</strong> and <strong>in</strong> are reserved Python keywords, and <code>friend</code> and <code>friends</code> are variables.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> friend <span class="hljs-keyword">in</span> friends:
+    print(<span class="hljs-string">&apos;Happy New Year:&apos;</span>, friend)
+</code></pre>
+<p>In particular, <code>friend</code> is the <strong><a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a></strong> for the for loop. The <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>friend</code> changes for each <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> of the loop and controls when the <code>for</code> loop completes. The <strong><a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a></strong> steps successively through the three strings stored in the <code>friends</code> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a>.</p>
+<h2 id="loop-patterns">Loop patterns </h2>
+<p>Often we use a <code>for</code> or <code>while</code> loop to go through a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of items or the contents of a file and we are looking for something such as the largest or smallest <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of the data we scan through.</p>
+<p>These loops are generally constructed by:</p>
+<ul>
+<li>Initializing one or more variables before the loop starts</li>
+<li>Performing some computation on each <a href="GLOSSARY.html#item" class="glossary-term" title="Another name for a key-value pair.">item</a> in the loop <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a>, possibly changing the variables in the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> of the loop</li>
+<li>Looking at the resulting variables when the loop completes</li>
+</ul>
+<p>We will use a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of numbers to demonstrate the concepts and construction of these loop patterns.</p>
+<h3 id="counting-and-summing-loops">Counting and summing loops </h3>
+<p>For example, to count the number of items in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, we would write the following <code>for</code> loop:</p>
+<pre><code class="lang-python">count = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> itervar <span class="hljs-keyword">in</span> [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]:
+    count = count + <span class="hljs-number">1</span>
+print(<span class="hljs-string">&apos;Count: &apos;</span>, count)
+</code></pre>
+<p>We set the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>count</code> to zero before the loop starts, then we write a <code>for</code> loop to run through the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of numbers. Our <strong><a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a></strong> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> is named <code>itervar</code> and while we do not use <code>itervar</code> in the loop, it does control the loop and cause the loop <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> to be executed once for each of the values in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<p>In the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> of the loop, we add 1 to the current <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>count</code> for each of the values in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. While the loop is executing, the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>count</code> is the number of values we have seen &quot;so far&quot;.</p>
+<p>Once the loop completes, the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>count</code> is the total number of items. The total number &quot;falls in our lap&quot; at the end of the loop. We construct the loop so that we have what we want when the loop finishes.</p>
+<p>Another similar loop that computes the total of a set of numbers is as follows:</p>
+<pre><code class="lang-python">total = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> itervar <span class="hljs-keyword">in</span> [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]:
+    total = total + itervar
+print(<span class="hljs-string">&apos;Total: &apos;</span>, total)
+</code></pre>
+<p>In this loop we <strong>do</strong> use the <strong><a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a></strong>. Instead of simply adding one to the <code>count</code> as in the previous loop, we add the actual number (3, 41, 12, etc.) to the running total during each loop <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a>. If you think about the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>total</code>, it contains the &quot;running total of the values so far&quot;. So before the loop starts <code>total</code> is zero because we have not yet seen any values, during the loop <code>total</code> is the running total, and at the end of the loop <code>total</code> is the overall total of all the values in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<p>As the loop executes, <code>total</code> accumulates the sum of the elements; a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> used this way is sometimes called an <strong><a href="GLOSSARY.html#accumulator" class="glossary-term" title="A variable used in a loop to add up or accumulate a result.">accumulator</a></strong>.</p>
+<p>Neither the counting loop nor the summing loop are particularly useful in practice because there are built-in functions <code>len()</code> and <code>sum()</code> that compute the number of items in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and the total of the items in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> respectively.</p>
+<h3 id="maximum-and-minimum-loops">Maximum and minimum loops </h3>
+<p>To find the largest <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> or <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a>, we construct the following loop:</p>
+<pre><code class="lang-python">largest = <span class="hljs-keyword">None</span>
+print(<span class="hljs-string">&apos;Before:&apos;</span>, largest)
+<span class="hljs-keyword">for</span> itervar <span class="hljs-keyword">in</span> [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]:
+    <span class="hljs-keyword">if</span> largest <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span> <span class="hljs-keyword">or</span> itervar &gt; largest :
+        largest = itervar
+    print(<span class="hljs-string">&apos;Loop:&apos;</span>, itervar, largest)
+print(<span class="hljs-string">&apos;Largest:&apos;</span>, largest)
+</code></pre>
+<p>When the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> executes, the output is as follows:</p>
+<pre><code class="lang-python">Before: <span class="hljs-keyword">None</span>
+Loop: <span class="hljs-number">3</span> <span class="hljs-number">3</span>
+Loop: <span class="hljs-number">41</span> <span class="hljs-number">41</span>
+Loop: <span class="hljs-number">12</span> <span class="hljs-number">41</span>
+Loop: <span class="hljs-number">9</span> <span class="hljs-number">41</span>
+Loop: <span class="hljs-number">74</span> <span class="hljs-number">74</span>
+Loop: <span class="hljs-number">15</span> <span class="hljs-number">74</span>
+Largest: <span class="hljs-number">74</span>
+</code></pre>
+<p>The <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>largest</code> is best thought of as the &quot;largest <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> we have seen so far&quot;. Before the loop, we set <code>largest</code> to the constant <code>None</code>. <code>None</code> is a special constant <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> which we can store in a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> to mark the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> as &quot;empty&quot;.</p>
+<p>Before the loop starts, the largest <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> we have seen so far is <code>None</code> since we have not yet seen any values. While the loop is executing, if <code>largest</code> is <code>None</code> then we take the first <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> we see as the largest so far. You can see in the first <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> when the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <code>itervar</code> is 3, since <code>largest</code> is <code>None</code>, we immediately set <code>largest</code> to be 3.</p>
+<p>After the first <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a>, <code>largest</code> is no longer <code>None</code>, so the second part of the compound logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> that checks <code>itervar &gt; largest</code> triggers only when we see a <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> that is larger than the &quot;largest so far&quot;. When we see a new &quot;even larger&quot; <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> we take that new <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> for <code>largest</code>. You can see in the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> output that <code>largest</code> progresses from 3 to 41 to 74.</p>
+<p>At the end of the loop, we have scanned all of the values and the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>largest</code> now does contain the largest <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<p>To compute the smallest number, the code is very similar with one small change:</p>
+<pre><code class="lang-python">smallest = <span class="hljs-keyword">None</span>
+print(<span class="hljs-string">&apos;Before:&apos;</span>, smallest)
+<span class="hljs-keyword">for</span> itervar <span class="hljs-keyword">in</span> [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]:
+    <span class="hljs-keyword">if</span> smallest <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span> <span class="hljs-keyword">or</span> itervar &lt; smallest:
+        smallest = itervar
+    print(<span class="hljs-string">&apos;Loop:&apos;</span>, itervar, smallest)
+print(<span class="hljs-string">&apos;Smallest:&apos;</span>, smallest)
+</code></pre>
+<p>Again, <code>smallest</code> is the &quot;smallest so far&quot; before, during, and after the loop executes. When the loop has completed, <code>smallest</code> contains the minimum <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<p>Again as in counting and summing, the built-in functions <code>max()</code> and <code>min()</code> make writing these exact loops unnecessary.</p>
+<p>The following is a simple version of the Python built-in <code>min()</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a>:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">min</span><span class="hljs-params">(values)</span>:</span>
+    smallest = <span class="hljs-keyword">None</span>
+    <span class="hljs-keyword">for</span> value <span class="hljs-keyword">in</span> values:
+        <span class="hljs-keyword">if</span> smallest <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span> <span class="hljs-keyword">or</span> value &lt; smallest:
+            smallest = value
+    <span class="hljs-keyword">return</span> smallest
+</code></pre>
+<p>In the <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> version of the smallest code, we removed all of the <code>print</code> statements so as to be <a href="GLOSSARY.html#equivalent" class="glossary-term" title="Having the same value.">equivalent</a> to the <code>min</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> which is already built in to Python.</p>
+<h2 id="debugging">Debugging </h2>
+<p>As you start writing bigger programs, you might find yourself spending more time debugging. More code means more chances to make an error and more places for bugs to hide.</p>
+<p>One way to cut your debugging time is &quot;debugging by bisection.&quot; For example, if there are 100 lines in your <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> and you check them one at a time, it would take 100 steps.</p>
+<p>Instead, try to break the problem in half. Look at the middle of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, or near it, for an intermediate <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> you can check. Add a <code>print</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> (or something else that has a verifiable effect) and run the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>.</p>
+<p>If the mid-point check is incorrect, the problem must be in the first half of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>. If it is correct, the problem is in the second half.</p>
+<p>Every time you perform a check like this, you halve the number of lines you have to <a href="GLOSSARY.html#search" class="glossary-term" title="A pattern of traversal that stops when it finds what it is looking for.">search</a>. After six steps (which is much less than 100), you would be down to one or two lines of code, at least in theory.</p>
+<p>In practice it is not always clear what the &quot;middle of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>&quot; is and not always possible to check it. It doesn&apos;t make sense to count lines and find the exact midpoint. Instead, think about places in the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> where there might be errors and places where it is easy to put a check. Then choose a spot where you think the chances are about the same that the <a href="GLOSSARY.html#bug" class="glossary-term" title="An error in a program.">bug</a> is before or after the check.</p>
+<h2 id="exercises">Exercises </h2>
+<p><strong>Exercise 1</strong>: Write a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> which repeatedly reads numbers until the user enters &quot;done&quot;. Once &quot;done&quot; is entered, print out the total, count, and average of the numbers. If the user enters anything other than a number, detect their mistake using <code>try</code> and <code>except</code> and print an error message and skip to the next number.</p>
+<pre><code class="lang-python">Enter a number: <span class="hljs-number">4</span>
+Enter a number: <span class="hljs-number">5</span>
+Enter a number: bad data
+Invalid input
+Enter a number: <span class="hljs-number">7</span>
+Enter a number: done
+<span class="hljs-number">16</span> <span class="hljs-number">3</span> <span class="hljs-number">5.333333333333333</span>
+</code></pre>
+<p><strong>Exercise 2</strong>: Write another <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that prompts for a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of numbers as above and at the end prints out both the maximum and minimum of the numbers instead of the average.</p>
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. We will examine lists in more detail in a later chapter.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-functions.html" class="navigation navigation-prev " aria-label="Previous page: 4. Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-strings.html" class="navigation navigation-next " aria-label="Next page: 6. Strings">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5. Iterations","level":"2.5","depth":1,"next":{"title":"6. Strings","level":"2.6","depth":1,"path":"06-strings.md","ref":"06-strings.md","articles":[]},"previous":{"title":"4. Functions","level":"2.4","depth":1,"path":"04-functions.md","ref":"04-functions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Installing Python","alt":"Installing Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Installing Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Personal Digital Assistant","alt":"Personal Digital Assistant","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Personal Digital Assistant","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programmers Talking to You","alt":"Programmers Talking to You","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programmers Talking to You","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Hardware Archicture","alt":"Hardware Archicture","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Hardware Archicture","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: Where Are you?","alt":"Where Are you?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Where Are you?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: If logic","alt":"If logic","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"If logic","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: If-Then-Else Logic","alt":"If-Then-Else Logic","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"If-Then-Else Logic","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: If-Then-ElseIf Logic","alt":"If-Then-ElseIf Logic","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"If-Then-ElseIf Logic","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Secondary memory","alt":"Secondary memory","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Secondary memory","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables and Objects","alt":"Variables and Objects","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables and Objects","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: A Tree Representation of XML","alt":"A Tree Representation of XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Tree Representation of XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: A program","alt":"A program","nro":16,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A program","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: A Program as Network of Objects","alt":"A Program as Network of Objects","nro":17,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Program as Network of Objects","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignoring Detail When Using an Object","alt":"Ignoring Detail When Using an Object","nro":18,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Using an Object","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignoring Detail When Building an Object","alt":"Ignoring Detail When Building an Object","nro":19,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Building an Object","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: A Class and Two Objects","alt":"A Class and Two Objects","nro":20,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"A Class and Two Objects","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Relational databases","alt":"Relational databases","nro":21,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Relational databases","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":22,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Rows in a Table","alt":"Rows in a Table","nro":23,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Rows in a Table","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relationships Between Tables","alt":"Relationships Between Tables","nro":24,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relationships Between Tables","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Connecting Tables Using JOIN","alt":"Connecting Tables Using JOIN","nro":25,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Connecting Tables Using JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"en","gitbook":"*"},"file":{"path":"05-iterations.md","mtime":"2020-11-03T15:12:48.364Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

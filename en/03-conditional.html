@@ -1,0 +1,752 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3. Conditionals · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-functions.html" />
+    
+    
+    <link rel="prev" href="02-variables.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Starting the journey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Iterations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Networked Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python and Web Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python and Databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3. Conditionals</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="conditional-execution">Conditional execution </h1>
+<ul>
+<li><a href="#boolean-expressions">Boolean expressions</a></li>
+<li><a href="#logical-operators">Logical operators</a></li>
+<li><a href="#conditional-execution-1">Conditional execution</a></li>
+<li><a href="#alternative-execution">Alternative execution</a></li>
+<li><a href="#chained-conditionals">Chained conditionals</a></li>
+<li><a href="#nested-conditionals">Nested conditionals</a></li>
+<li><a href="#catching-exceptions-using-try-and-except">Catching exceptions using try and except</a></li>
+<li><a href="#short-circuit-evaluation-of-logical-expressions">Short-circuit evaluation of logical expressions</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#exercises">Exercises</a></li>
+</ul>
+<h2 id="boolean-expressions">Boolean expressions </h2>
+<p>A <strong>boolean <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a></strong> is an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> that is either true or false. The following examples use the <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> <code>==</code>, which compares two operands and produces <code>True</code> if they are equal and <code>False</code> otherwise:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> == <span class="hljs-number">5</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> == <span class="hljs-number">6</span>
+<span class="hljs-keyword">False</span>
+{}
+</code></pre>
+<p><code>True</code> and <code>False</code> are special values that belong to the <a href="GLOSSARY.html#class" class="glossary-term" title="A template that can be used to construct an object. Defines the attributes and methods that will make up the object.">class</a> <code>bool</code>; they are not strings:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; type(True)
+&lt;class &apos;bool&apos;&gt;
+&gt;&gt;&gt; type(False)
+&lt;class &apos;bool&apos;&gt;
+</code></pre>
+<p>The <code>==</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> is one of the <strong>comparison operators</strong>; the others are:</p>
+<pre><code class="lang-python">      x != y               <span class="hljs-comment"># x is not equal to y</span>
+      x &gt; y                <span class="hljs-comment"># x is greater than y</span>
+      x &lt; y                <span class="hljs-comment"># x is less than y</span>
+      x &gt;= y               <span class="hljs-comment"># x is greater than or equal to y</span>
+      x &lt;= y               <span class="hljs-comment"># x is less than or equal to y</span>
+      x <span class="hljs-keyword">is</span> y               <span class="hljs-comment"># x is the same as y</span>
+      x <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> y           <span class="hljs-comment"># x is not the same as y</span>
+</code></pre>
+<p>Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols for the same operations. A common error is to use a single equal sign (<code>=</code>) instead of a double equal sign (<code>==</code>). Remember that <code>=</code> is an <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> and <code>==</code> is a comparison <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a>. There is no such thing as <code>=&lt;</code> or <code>=&gt;</code>.</p>
+<h2 id="logical-operators">Logical operators </h2>
+<p>There are three <strong>logical operators</strong>: <code>and</code>, <code>or</code>, and <code>not</code>. The <a href="GLOSSARY.html#semantics" class="glossary-term" title="The meaning of a program.">semantics</a> (meaning) of these operators is similar to their meaning in English. For example,</p>
+<p><code>x &gt; 0 and x &lt; 10</code></p>
+<p>is true only if <code>x</code> is greater than 0 <strong>and</strong> less than 10.</p>
+<p><code>n%2 == 0 or n%3 == 0</code> is true if <strong>either</strong> of the conditions is true, that is, if the number is divisible by 2 <strong>or</strong> 3.</p>
+<p>Finally, the <code>not</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> negates a boolean <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>, so <code>not (x &gt; y)</code> is true if <code>x &gt; y</code> is false; that is, if <code>x</code> is less than or equal to <code>y</code>.</p>
+<p>Strictly speaking, the operands of the logical operators should be boolean expressions, but Python is not very strict. Any nonzero number is interpreted as &quot;true.&quot;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">17</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">True</span>
+<span class="hljs-keyword">True</span>
+</code></pre>
+<p>This flexibility can be useful, but there are some subtleties to it that might be confusing. You might want to avoid it until you are sure you know what you are doing.</p>
+<h2 id="conditional-execution-1">Conditional execution </h2>
+<p>In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> accordingly. <strong>Conditional statements</strong> give us this ability. The simplest form is the <code>if</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> x &gt; <span class="hljs-number">0</span> :
+    print(<span class="hljs-string">&apos;x is positive&apos;</span>)
+</code></pre>
+<p>The boolean <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> after the <code>if</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> is called the <strong><a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a></strong>. We end the <code>if</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> with a colon character (:) and the line(s) after the if <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> are indented.</p>
+<figure id="fig2.3.1"><img src="../img/if.svg" alt="If logic"><figcaption>Imagen - If logic</figcaption></figure>
+<p>If the logical <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> is true, then the indented <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> gets executed. If the logical <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> is false, the indented <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> is skipped.</p>
+<p><code>if</code> statements have the same structure as <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> definitions or <code>for</code> loops<sup><a href="#fn_1" id="reffn_1">1</a></sup>. The <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> consists of a <a href="GLOSSARY.html#header" class="glossary-term" title="The first line of a function definition.">header</a> line that ends with the colon character (:) followed by an indented block. Statements like this are called <strong>compound statements</strong> because they stretch across more than one line.</p>
+<p>There is no limit on the number of statements that can appear in the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a>, but there must be at least one. Occasionally, it is useful to have a <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> with no statements (usually as a place holder for code you haven&apos;t written yet). In that case, you can use the <code>pass</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>, which does nothing.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">0</span> :
+    <span class="hljs-keyword">pass</span>          <span class="hljs-comment"># need to handle negative values!</span>
+</code></pre>
+<p>If you enter an <code>if</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> in the Python interpreter, the <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a> will change from three chevrons to three dots to indicate you are in the middle of a block of statements, as shown below:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">3</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">10</span>:
+<span class="hljs-meta">... </span>   print(<span class="hljs-string">&apos;Small&apos;</span>)
+...
+Small
+&gt;&gt;&gt;
+</code></pre>
+<h2 id="alternative-execution">Alternative execution </h2>
+<p>A second form of the <code>if</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> is <strong>alternative execution</strong>, in which there are two possibilities and the <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> determines which one gets executed. The syntax looks like this:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> x%<span class="hljs-number">2</span> == <span class="hljs-number">0</span> :
+    print(<span class="hljs-string">&apos;x is even&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;x is odd&apos;</span>)
+</code></pre>
+<p>If the remainder when <code>x</code> is divided by 2 is 0, then we know that <code>x</code> is even, and the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> displays a message to that effect. If the <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> is false, the second set of statements is executed.</p>
+<figure id="fig2.3.2"><img src="../img/if-else.svg" alt="If-Then-Else Logic"><figcaption>Imagen - If-Then-Else Logic</figcaption></figure>
+<p>Since the <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> must either be true or false, exactly one of the alternatives will be executed. The alternatives are called <strong>branches</strong>, because they are branches in the <a href="GLOSSARY.html#flow-of-execution" class="glossary-term" title="The order in which statements are executed during a program run.">flow of execution</a>.</p>
+<h2 id="chained-conditionals">Chained conditionals </h2>
+<p>Sometimes there are more than two possibilities and we need more than two branches. One way to express a computation like that is a <strong><a href="GLOSSARY.html#chained-conditional" class="glossary-term" title="A conditional statement with a series of alternative branches.">chained conditional</a></strong>:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> x &lt; y:
+    print(<span class="hljs-string">&apos;x is less than y&apos;</span>)
+<span class="hljs-keyword">elif</span> x &gt; y:
+    print(<span class="hljs-string">&apos;x is greater than y&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;x and y are equal&apos;</span>)
+</code></pre>
+<p><code>elif</code> is an abbreviation of &quot;else if.&quot; Again, exactly one <a href="GLOSSARY.html#branch" class="glossary-term" title="One of the alternative sequences of statements in a conditional statement.">branch</a> will be executed.</p>
+<figure id="fig2.3.3"><img src="../img/elif.svg" alt="If-Then-ElseIf Logic"><figcaption>Imagen - If-Then-ElseIf Logic</figcaption></figure>
+<p>There is no limit on the number of <code>elif</code> statements. If there is an <code>else</code> clause, it has to be at the end, but there doesn&apos;t have to be one.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> choice == <span class="hljs-string">&apos;a&apos;</span>:
+    print(<span class="hljs-string">&apos;Bad guess&apos;</span>)
+<span class="hljs-keyword">elif</span> choice == <span class="hljs-string">&apos;b&apos;</span>:
+    print(<span class="hljs-string">&apos;Good guess&apos;</span>)
+<span class="hljs-keyword">elif</span> choice == <span class="hljs-string">&apos;c&apos;</span>:
+    print(<span class="hljs-string">&apos;Close, but not correct&apos;</span>)
+</code></pre>
+<p>Each <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> is checked in order. If the first is false, the next is checked, and so on. If one of them is true, the corresponding <a href="GLOSSARY.html#branch" class="glossary-term" title="One of the alternative sequences of statements in a conditional statement.">branch</a> executes, and the <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> ends. Even if more than one <a href="GLOSSARY.html#condition" class="glossary-term" title="The boolean expression in a conditional statement that determines which branch is executed.">condition</a> is true, only the first true <a href="GLOSSARY.html#branch" class="glossary-term" title="One of the alternative sequences of statements in a conditional statement.">branch</a> executes.</p>
+<h2 id="nested-conditionals">Nested conditionals </h2>
+<p>One conditional can also be nested within another. We could have written the three-<a href="GLOSSARY.html#branch" class="glossary-term" title="One of the alternative sequences of statements in a conditional statement.">branch</a> example like this:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> x == y:
+    print(<span class="hljs-string">&apos;x and y are equal&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">if</span> x &lt; y:
+        print(<span class="hljs-string">&apos;x is less than y&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&apos;x is greater than y&apos;</span>)
+</code></pre>
+<p>The outer conditional contains two branches. The first <a href="GLOSSARY.html#branch" class="glossary-term" title="One of the alternative sequences of statements in a conditional statement.">branch</a> contains a simple <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>. The second <a href="GLOSSARY.html#branch" class="glossary-term" title="One of the alternative sequences of statements in a conditional statement.">branch</a> contains another <code>if</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>, which has two branches of its own. Those two branches are both simple statements, although they could have been conditional statements as well.</p>
+<figure id="fig2.3.4"><img src="../img/nested.svg" alt="Nested If Statements"><figcaption>Imagen - Nested If Statements</figcaption></figure>
+<p>Although the indentation of the statements makes the structure apparent, <strong>nested conditionals</strong> become difficult to read very quickly. In general, it is a good idea to avoid them when you can.</p>
+<p>Logical operators often provide a way to simplify <a href="GLOSSARY.html#nested-conditional" class="glossary-term" title="A conditional statement that appears in one of the branches of another conditional statement.">nested conditional</a> statements. For example, we can rewrite the following code using a single conditional:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">0</span> &lt; x:
+    <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">10</span>:
+        print(<span class="hljs-string">&apos;x is a positive single-digit number.&apos;</span>)
+</code></pre>
+<p>The <code>print</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> is executed only if we make it past both conditionals, so we can get the same effect with the <code>and</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a>:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">0</span> &lt; x <span class="hljs-keyword">and</span> x &lt; <span class="hljs-number">10</span>:
+    print(<span class="hljs-string">&apos;x is a positive single-digit number.&apos;</span>)
+</code></pre>
+<h2 id="catching-exceptions-using-try-and-except">Catching exceptions using try and except </h2>
+<p>Earlier we saw a code segment where we used the <code>input</code> and <code>int</code> functions to read and <a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a> an <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a> number entered by the user. We also saw how treacherous doing this could be:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; prompt = &quot;What...is the airspeed velocity of an unladen swallow?\n&quot;
+&gt;&gt;&gt; speed = input(prompt)
+What...is the airspeed velocity of an unladen swallow?
+What do you mean, an African or a European swallow?
+&gt;&gt;&gt; int(speed)
+ValueError: invalid literal for int() with base 10:
+&gt;&gt;&gt;
+</code></pre>
+<p>When we are executing these statements in the Python interpreter, we get a new <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a> from the interpreter, think &quot;oops&quot;, and move on to our next <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>.</p>
+<p>However if you place this code in a Python script and this error occurs, your script immediately stops in its tracks with a <a href="GLOSSARY.html#traceback" class="glossary-term" title="A list of the functions that are executing, printed when an exception occurs.">traceback</a>. It does not execute the following <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>.</p>
+<p>Here is a sample <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to convert a Fahrenheit temperature to a Celsius temperature:</p>
+<iframe src="https://trinket.io/embed/python3/27bbe8b7ab" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>If we execute this code and give it invalid input, it simply fails with an unfriendly error message:</p>
+<pre><code class="lang-python">python fahren.py
+Enter Fahrenheit Temperature:<span class="hljs-number">72</span>
+<span class="hljs-number">22.22222222222222</span>
+</code></pre>
+<pre><code class="lang-python">python fahren.py
+Enter Fahrenheit Temperature:fred
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;fahren.py&quot;</span>, line <span class="hljs-number">2</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+    fahr = float(inp)
+ValueError: could <span class="hljs-keyword">not</span> convert string to float: <span class="hljs-string">&apos;fred&apos;</span>
+</code></pre>
+<p>There is a conditional execution structure built into Python to handle these types of expected and unexpected errors called &quot;try / except&quot;. The idea of <code>try</code> and <code>except</code> is that you know that some <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of instruction(s) may have a problem and you want to add some statements to be executed if an error occurs. These extra statements (the except block) are ignored if there is no error.</p>
+<p>You can think of the <code>try</code> and <code>except</code> feature in Python as an &quot;insurance policy&quot; on a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of statements.</p>
+<p>We can rewrite our temperature converter as follows:</p>
+<iframe src="https://trinket.io/embed/python3/5dbec1550b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Python starts by executing the <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of statements in the <code>try</code> block. If all goes well, it skips the <code>except</code> block and proceeds. If an exception occurs in the <code>try</code> block, Python jumps out of the <code>try</code> block and executes the <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of statements in the <code>except</code> block.</p>
+<pre><code class="lang-python">python fahren2.py
+Enter Fahrenheit Temperature:<span class="hljs-number">72</span>
+<span class="hljs-number">22.22222222222222</span>
+</code></pre>
+<pre><code class="lang-python">python fahren2.py
+Enter Fahrenheit Temperature:fred
+Please enter a number
+</code></pre>
+<p>Handling an exception with a <code>try</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> is called <strong>catching</strong> an exception. In this example, the <code>except</code> clause prints an error message. In general, catching an exception gives you a chance to fix the problem, or try again, or at least end the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> gracefully.</p>
+<h2 id="short-circuit-evaluation-of-logical-expressions">Short-circuit evaluation of logical expressions </h2>
+<p>When Python is processing a logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> such as <code>x &gt;= 2 and (x/y) &gt; 2</code>, it evaluates the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> from left to right. Because of the definition of <code>and</code>, if <code>x</code> is less than 2, the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> <code>x &gt;= 2</code> is <code>False</code> and so the whole <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> is <code>False</code> regardless of whether <code>(x/y) &gt; 2</code> evaluates to <code>True</code> or <code>False</code>.</p>
+<p>When Python detects that there is nothing to be gained by evaluating the rest of a logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>, it stops its evaluation and does not do the computations in the rest of the logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>. When the evaluation of a logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> stops because the overall <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> is already known, it is called <strong>short-circuiting</strong> the evaluation.</p>
+<p>While this may seem like a fine point, the short-circuit behavior leads to a clever technique called the <strong><a href="GLOSSARY.html#guardian-pattern" class="glossary-term" title="Where we construct a logical expression with additional comparisons to take advantage of the short-circuit behavior.">guardian pattern</a></strong>. Consider the following code <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> in the Python interpreter:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y = <span class="hljs-number">2</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> (x/y) &gt; <span class="hljs-number">2</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">1</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y = <span class="hljs-number">0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> (x/y) &gt; <span class="hljs-number">2</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y = <span class="hljs-number">0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> (x/y) &gt; <span class="hljs-number">2</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+ZeroDivisionError: division by zero
+&gt;&gt;&gt;
+</code></pre>
+<p>The third calculation failed because Python was evaluating <code>(x/y)</code> and <code>y</code> was zero, which causes a runtime error. But the second example did <strong>not</strong> fail because the first part of the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> <code>x &gt;= 2</code> evaluated to <code>False</code> so the <code>(x/y)</code> was not ever executed due to the <strong>short-circuit</strong> rule and there was no error.</p>
+<p>We can construct the logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> to strategically place a <strong>guard</strong> evaluation just before the evaluation that might cause an error as follows:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">1</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y = <span class="hljs-number">0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> y != <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> (x/y) &gt; <span class="hljs-number">2</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y = <span class="hljs-number">0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> y != <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> (x/y) &gt; <span class="hljs-number">2</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> (x/y) &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> y != <span class="hljs-number">0</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+ZeroDivisionError: division by zero
+&gt;&gt;&gt;
+</code></pre>
+<p>In the first logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>, <code>x &gt;= 2</code> is <code>False</code> so the evaluation stops at the <code>and</code>. In the second logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>, <code>x &gt;= 2</code> is <code>True</code> but <code>y != 0</code> is <code>False</code> so we never reach <code>(x/y)</code>.</p>
+<p>In the third logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>, the <code>y != 0</code> is <strong>after</strong> the <code>(x/y)</code> calculation so the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> fails with an error.</p>
+<p>In the second <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>, we say that <code>y != 0</code> acts as a <strong>guard</strong> to insure that we only execute <code>(x/y)</code> if <code>y</code> is non-zero.</p>
+<h2 id="debugging">Debugging </h2>
+<p>The <a href="GLOSSARY.html#traceback" class="glossary-term" title="A list of the functions that are executing, printed when an exception occurs.">traceback</a> Python displays when an error occurs contains a lot of information, but it can be overwhelming. The most useful parts are usually:</p>
+<ul>
+<li>What kind of error it was, and</li>
+<li>Where it occurred.</li>
+</ul>
+<p>Syntax errors are usually easy to find, but there are a few gotchas. Whitespace errors can be tricky because spaces and tabs are invisible and we are used to ignoring them.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span> y = <span class="hljs-number">6</span>
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>
+    y = <span class="hljs-number">6</span>
+    ^
+IndentationError: unexpected indent
+</code></pre>
+<p>In this example, the problem is that the second line is indented by one space. But the error message points to <code>y</code>, which is misleading. In general, error messages indicate where the problem was discovered, but the actual error might be earlier in the code, sometimes on a previous line.</p>
+<p>In general, error messages tell you where the problem was discovered, but that is often not where it was caused.</p>
+<h2 id="exercises">Exercises </h2>
+<p><strong>Exercise 1</strong>: Rewrite your pay computation to give the employee 1.5 times the hourly rate for hours worked above 40 hours.</p>
+<pre><code class="lang-python">Enter Hours: <span class="hljs-number">45</span>
+Enter Rate: <span class="hljs-number">10</span>
+Pay: <span class="hljs-number">475.0</span>
+</code></pre>
+<p><strong>Exercise 2</strong>: Rewrite your pay <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> using <code>try</code> and <code>except</code> so that your <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> handles non-numeric input gracefully by printing a message and exiting the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>. The following shows two executions of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>:</p>
+<pre><code class="lang-python">Enter Hours: <span class="hljs-number">20</span>
+Enter Rate: nine
+Error, please enter numeric input
+</code></pre>
+<pre><code class="lang-python">Enter Hours: forty
+Error, please enter numeric input
+</code></pre>
+<p><strong>Exercise 3</strong>: Write a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a> for a score between 0.0 and 1.0. If the score is out of range, print an error message. If the score is between 0.0 and 1.0, print a grade using the following table:</p>
+<pre><code class="lang-python">Score   Grade
+&gt;= <span class="hljs-number">0.9</span>     A
+&gt;= <span class="hljs-number">0.8</span>     B
+&gt;= <span class="hljs-number">0.7</span>     C
+&gt;= <span class="hljs-number">0.6</span>     D
+&lt; <span class="hljs-number">0.6</span>    F
+~~~
+</code></pre>
+<p>Enter score: 0.95 A ~<sub>~</sub></p>
+<pre><code class="lang-python">Enter score: perfect
+Bad score
+</code></pre>
+<pre><code class="lang-python">Enter score: <span class="hljs-number">10.0</span>
+Bad score
+</code></pre>
+<pre><code class="lang-python">Enter score: <span class="hljs-number">0.75</span>
+C
+</code></pre>
+<pre><code class="lang-python">Enter score: <span class="hljs-number">0.5</span>
+F
+</code></pre>
+<p>Run the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> repeatedly as shown above to test the various different values for input.</p>
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. We will learn about functions in Chapter 4 and loops in Chapter 5.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-variables.html" class="navigation navigation-prev " aria-label="Previous page: 2. Variables">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-functions.html" class="navigation navigation-next " aria-label="Next page: 4. Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. Conditionals","level":"2.3","depth":1,"next":{"title":"4. Functions","level":"2.4","depth":1,"path":"04-functions.md","ref":"04-functions.md","articles":[]},"previous":{"title":"2. Variables","level":"2.2","depth":1,"path":"02-variables.md","ref":"02-variables.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Installing Python","alt":"Installing Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Installing Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Personal Digital Assistant","alt":"Personal Digital Assistant","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Personal Digital Assistant","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programmers Talking to You","alt":"Programmers Talking to You","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programmers Talking to You","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Hardware Archicture","alt":"Hardware Archicture","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Hardware Archicture","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: Where Are you?","alt":"Where Are you?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Where Are you?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: If logic","alt":"If logic","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"If logic","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: If-Then-Else Logic","alt":"If-Then-Else Logic","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"If-Then-Else Logic","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: If-Then-ElseIf Logic","alt":"If-Then-ElseIf Logic","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"If-Then-ElseIf Logic","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Secondary memory","alt":"Secondary memory","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Secondary memory","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables and Objects","alt":"Variables and Objects","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables and Objects","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: A Tree Representation of XML","alt":"A Tree Representation of XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Tree Representation of XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: A program","alt":"A program","nro":16,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A program","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: A Program as Network of Objects","alt":"A Program as Network of Objects","nro":17,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Program as Network of Objects","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignoring Detail When Using an Object","alt":"Ignoring Detail When Using an Object","nro":18,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Using an Object","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignoring Detail When Building an Object","alt":"Ignoring Detail When Building an Object","nro":19,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Building an Object","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: A Class and Two Objects","alt":"A Class and Two Objects","nro":20,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"A Class and Two Objects","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Relational databases","alt":"Relational databases","nro":21,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Relational databases","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":22,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Rows in a Table","alt":"Rows in a Table","nro":23,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Rows in a Table","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relationships Between Tables","alt":"Relationships Between Tables","nro":24,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relationships Between Tables","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Connecting Tables Using JOIN","alt":"Connecting Tables Using JOIN","nro":25,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Connecting Tables Using JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"en","gitbook":"*"},"file":{"path":"03-conditional.md","mtime":"2020-11-03T15:12:48.364Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

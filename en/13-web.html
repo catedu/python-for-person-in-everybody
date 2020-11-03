@@ -1,0 +1,702 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13. Python and Web Services · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14-objects.html" />
+    
+    
+    <link rel="prev" href="12-network.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Starting the journey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Iterations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Networked Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python and Web Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python and Databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >13. Python and Web Services</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="using-web-services">Using Web Services </h1>
+<p>Once it became easy to retrieve documents and <a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a> documents over HTTP using programs, it did not take long to develop an approach where we</p>
+<p>started producing documents that were specifically designed to be consumed by other programs (i.e., not HTML to be displayed in a browser).</p>
+<p>There are two common formats that we use when exchanging data across the web. The &quot;eXtensible Markup Language&quot; or <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> has been in use for a very long time and is best suited for exchanging document-style data. When programs just want to exchange dictionaries, lists, or other internal information with each other, they use JavaScript <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">Object</a> Notation or <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> (see <a href="http://www.json.org" target="_blank">www.json.org</a>). We will look at both formats.</p>
+<h2 id="extensible-markup-language---xml">eXtensible Markup Language - XML </h2>
+<p><a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> looks very similar to HTML, but <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> is more structured than HTML. Here is a sample of an <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> document:</p>
+<pre><code class="lang-python">&lt;person&gt;
+  &lt;name&gt;Chuck&lt;/name&gt;
+  &lt;phone type=&quot;intl&quot;&gt;
+     +1 734 303 4456
+   &lt;/phone&gt;
+   &lt;email hide=&quot;yes&quot;/&gt;
+&lt;/person&gt;
+</code></pre>
+<p>Often it is helpful to think of an <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> document as a tree structure where there is a top tag <code>person</code> and other tags such as <code>phone</code> are drawn as <strong>children</strong> of their parent nodes.</p>
+<figure id="fig2.13.1"><img src="../img/xml.svg" alt="A Tree Representation of XML"><figcaption>Imagen - A Tree Representation of <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a></figcaption></figure>
+<h2 id="parsing-xml">Parsing XML </h2>
+<p>Here is a simple application that parses some <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> and extracts some data elements from the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a>:</p>
+<iframe src="https://trinket.io/embed/python3/b4dfccee06" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Calling <code>fromstring</code> converts the <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> representation of the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> into a &quot;tree&quot; of <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> nodes. When the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> is in a tree, we have a series of methods we can call to extract portions of data from the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a>.</p>
+<p>The <code>find</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> searches through the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> tree and retrieves a <strong>node</strong> that matches the specified tag. Each node can have some text, some attributes (like hide), and some &quot;child&quot; nodes. Each node can be the top of a tree of nodes.</p>
+<pre><code class="lang-python">Name: Chuck
+Attr: yes
+</code></pre>
+<p>Using an <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> parser such as <code>ElementTree</code> has the advantage that while the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> in this example is quite simple, it turns out there are many rules regarding valid <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> and using <code>ElementTree</code> allows us to extract data from <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> without worrying about the rules of <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> syntax.</p>
+<h2 id="looping-through-nodes">Looping through nodes </h2>
+<p>Often the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> has multiple nodes and we need to write a loop to process all of the nodes. In the following <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, we loop through all of the <code>user</code> nodes:</p>
+<iframe src="https://trinket.io/embed/python3/80ba384fbd" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>The <code>findall</code> <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a> retrieves a Python <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of subtrees that represent the <code>user</code> structures in the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> tree. Then we can write a <code>for</code> loop that looks at each of the user nodes, and prints the <code>name</code> and <code>id</code> text elements as well as the <code>x</code> <a href="GLOSSARY.html#attribute" class="glossary-term" title="One of the values within a tuple. More commonly called a &quot;column&quot; or &quot;field&quot;.">attribute</a> from the <code>user</code> node.</p>
+<pre><code class="lang-python">User count: <span class="hljs-number">2</span>
+Name Chuck
+Id <span class="hljs-number">001</span>
+Attribute <span class="hljs-number">2</span>
+Name Brent
+Id <span class="hljs-number">009</span>
+Attribute <span class="hljs-number">7</span>
+</code></pre>
+<h2 id="javascript-object-notation---json">JavaScript Object Notation - JSON </h2>
+<p>The <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> format was inspired by the <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a> and array format used in the JavaScript language. But since Python was invented before JavaScript, Python&apos;s syntax for dictionaries and lists influenced the syntax of <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a>. So the format of <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> is nearly <a href="GLOSSARY.html#identical" class="glossary-term" title="Being the same object (which implies equivalence).">identical</a> to a combination of Python lists and dictionaries.</p>
+<p>Here is a <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> encoding that is roughly <a href="GLOSSARY.html#equivalent" class="glossary-term" title="Having the same value.">equivalent</a> to the simple <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> from above:</p>
+<pre><code class="lang-python">{
+  <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;Chuck&quot;</span>,
+  <span class="hljs-string">&quot;phone&quot;</span> : {
+    <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;intl&quot;</span>,
+    <span class="hljs-string">&quot;number&quot;</span> : <span class="hljs-string">&quot;+1 734 303 4456&quot;</span>
+   },
+   <span class="hljs-string">&quot;email&quot;</span> : {
+     <span class="hljs-string">&quot;hide&quot;</span> : <span class="hljs-string">&quot;yes&quot;</span>
+   }
+}
+</code></pre>
+<p>You will notice some differences. First, in <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a>, we can add attributes like &quot;intl&quot; to the &quot;phone&quot; tag. In <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a>, we simply have <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>-<a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> pairs. Also the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> &quot;person&quot; tag is gone, replaced by a set of outer curly braces.</p>
+<p>In general, <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> structures are simpler than <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> because <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> has fewer capabilities than <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a>. But <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> has the advantage that it maps <strong>directly</strong> to some combination of dictionaries and lists. And since nearly all programming languages have something <a href="GLOSSARY.html#equivalent" class="glossary-term" title="Having the same value.">equivalent</a> to Python&apos;s dictionaries and lists, <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> is a very natural format to have two cooperating programs exchange data.</p>
+<p><a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> is quickly becoming the format of choice for nearly all data exchange between applications because of its relative simplicity compared to <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a>.</p>
+<h2 id="parsing-json">Parsing JSON </h2>
+<p>We construct our <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> by nesting dictionaries (objects) and lists as needed. In this example, we represent a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of users where each user is a set of <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>-<a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> pairs (i.e., a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a>). So we have a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of dictionaries.</p>
+<p>In the following <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, we use the built-in <strong><a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">json</a></strong> library to <a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a> the <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> and read through the data. Compare this closely to the <a href="GLOSSARY.html#equivalent" class="glossary-term" title="Having the same value.">equivalent</a> <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> data and code above. The <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> has less detail, so we must know in advance that we are getting a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and that the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> is of users and each user is a set of <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>-<a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> pairs. The <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> is more succinct (an advantage) but also is less self-describing (a disadvantage).</p>
+<iframe src="https://trinket.io/embed/python3/b540d86a7f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>If you compare the code to extract data from the parsed <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> and <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> you will see that what we get from <strong><a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">json</a>.loads()</strong> is a Python <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> which we <a href="GLOSSARY.html#traverse" class="glossary-term" title="To iterate through the items in a sequence, performing a similar operation on each.">traverse</a> with a <code>for</code> loop, and each <a href="GLOSSARY.html#item" class="glossary-term" title="Another name for a key-value pair.">item</a> within that <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> is a Python <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a>. Once the <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> has been parsed, we can use the Python <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> to extract the various bits of data for each user. We don&apos;t have to use the <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> library to dig through the parsed <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a>, since the returned data is simply native Python structures.</p>
+<p>The output of this <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> is exactly the same as the <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> version above.</p>
+<pre><code class="lang-python">User count: <span class="hljs-number">2</span>
+Name Chuck
+Id <span class="hljs-number">001</span>
+Attribute <span class="hljs-number">2</span>
+Name Brent
+Id <span class="hljs-number">009</span>
+Attribute <span class="hljs-number">7</span>
+</code></pre>
+<p>In general, there is an industry trend away from <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> and towards <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> for web services. Because the <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> is simpler and more directly maps to native data structures we already have in programming languages, the parsing and data extraction code is usually simpler and more direct when using <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a>. But <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> is more self-descriptive than <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> and so there are some applications where <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> retains an advantage. For example, most word processors store documents internally using <a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a> rather than <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a>.</p>
+<h2 id="application-programming-interfaces">Application Programming Interfaces </h2>
+<p>We now have the ability to exchange data between applications using HyperText Transport Protocol (HTTP) and a way to represent complex data that we are sending back and forth between these applications using eXtensible Markup Language (<a href="GLOSSARY.html#xml" class="glossary-term" title="eXtensible Markup Language. A format that allows for the markup of structured data.">XML</a>) or JavaScript <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">Object</a> Notation (<a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a>).</p>
+<p>The next step is to begin to define and document &quot;contracts&quot; between applications using these techniques. The general name for these application-to-application contracts is <strong>Application <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">Program</a> Interfaces</strong> or APIs. When we use an <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a>, generally one <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> makes a set of <strong>services</strong> available for use by other applications and publishes the APIs (i.e., the &quot;rules&quot;) that must be followed to access the services provided by the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>.</p>
+<p>When we begin to build our programs where the functionality of our <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> includes access to services provided by other programs, we call the approach a <strong>Service-Oriented Architecture</strong> or <a href="GLOSSARY.html#soa" class="glossary-term" title="Service-Oriented Architecture. When an application is made of components connected across a network.">SOA</a>. A <a href="GLOSSARY.html#soa" class="glossary-term" title="Service-Oriented Architecture. When an application is made of components connected across a network.">SOA</a> approach is one where our overall application makes use of the services of other applications. A non-<a href="GLOSSARY.html#soa" class="glossary-term" title="Service-Oriented Architecture. When an application is made of components connected across a network.">SOA</a> approach is where the application is a single standalone application which contains all of the code necessary to implement the application.</p>
+<p>We see many examples of <a href="GLOSSARY.html#soa" class="glossary-term" title="Service-Oriented Architecture. When an application is made of components connected across a network.">SOA</a> when we use the web. We can go to a single web site and book air travel, hotels, and automobiles all from a single site. The data for hotels is not stored on the airline computers. Instead, the airline computers contact the services on the hotel computers and retrieve the hotel data and present it to the user. When the user agrees to make a hotel reservation using the airline site, the airline site uses another web service on the hotel systems to actually make the reservation. And when it comes time to charge your credit card for the whole transaction, still other computers become involved in the process.</p>
+<p>Service Oriented Architecture</p>
+<p>A Service-Oriented Architecture has many advantages including: (1) we always maintain only one copy of data (this is particularly important for things like hotel reservations where we do not want to over-commit) and (2) the owners of the data can set the rules about the use of their data. With these advantages, an <a href="GLOSSARY.html#soa" class="glossary-term" title="Service-Oriented Architecture. When an application is made of components connected across a network.">SOA</a> system must be carefully designed to have good performance and meet the user&apos;s needs.</p>
+<p>When an application makes a set of services in its <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> available over the web, we call these <strong>web services</strong>.</p>
+<h2 id="security-and-api-usage">Security and API usage </h2>
+<p>It is quite common that you need some kind of &quot;<a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>&quot; to make use of a vendor&apos;s <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a>. The general idea is that they want to know who is using their services and how much each user is using. Perhaps they have free and pay tiers of their services or have a policy that limits the number of requests that a single individual can make during a particular time period.</p>
+<p>Sometimes once you get your <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>, you simply include the <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a> as part of POST data or perhaps as a <a href="GLOSSARY.html#parameter" class="glossary-term" title="A name used inside a function to refer to the value passed as an argument.">parameter</a> on the URL when calling the <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a>.</p>
+<p>Other times, the vendor wants increased assurance of the source of the requests and so they add expect you to send cryptographically signed messages using shared keys and secrets. A very common technology that is used to sign requests over the Internet is called <strong>OAuth</strong>. You can read more about the OAuth protocol at <a href="http://www.oauth.net" target="_blank">www.oauth.net</a>.</p>
+<p>As the Twitter <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> became increasingly valuable, Twitter went from an open and public <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> to an <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> that required the use of OAuth signatures on each <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> request. Thankfully there are still a number of convenient and free OAuth libraries so you can avoid writing an OAuth <a href="GLOSSARY.html#implementation" class="glossary-term" title="A way of performing a computation.">implementation</a> from scratch by reading the specification. These libraries are of varying complexity and have varying degrees of richness. The OAuth web site has information about various OAuth libraries.</p>
+<p>For this next sample <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> we will download the files <strong>twurl.py</strong>, <strong>hidden.py</strong>, <strong>oauth.py</strong>, and <strong>twitter1.py</strong> from <a href="http://www.py4e.com/code3" target="_blank">www.py4e.com/code</a> and put them all in a folder on your computer.</p>
+<p>To make use of these programs you will need to have a Twitter account, and authorize your Python code as an application, set up a <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>, secret, token and token secret. You will edit the file <strong>hidden.py</strong> and put these four strings into the appropriate variables in the file:</p>
+<iframe src="https://trinket.io/embed/python3/ab6352e0a3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>The Twitter web service are accessed using a URL like this:</p>
+<p><a href="https://api.twitter.com/1.1/statuses/user_timeline.json" target="_blank">https://api.twitter.com/1.1/statuses/user_timeline.json</a></p>
+<p>But once all of the security information has been added, the URL will look more like:</p>
+<pre><code class="lang-txt">https://api.twitter.com/1.1/statuses/user_timeline.json?count=2
+&amp;oauth_version=1.0&amp;oauth_token=101...SGI&amp;screen_name=drchuck
+&amp;oauth_nonce=09239679&amp;oauth_timestamp=1380395644
+&amp;oauth_signature=rLK...BoD&amp;oauth_consumer_key=h7Lu...GNg
+&amp;oauth_signature_method=HMAC-SHA1
+</code></pre>
+<p>You can read the OAuth specification if you want to know more about the meaning of the various parameters that are added to meet the security requirements of OAuth.</p>
+<p>For the programs we run with Twitter, we hide all the complexity in the files <strong>oauth.py</strong> and <strong>twurl.py</strong>. We simply set the secrets in <strong>hidden.py</strong> and then send the desired URL to the <strong>twurl.augment()</strong> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> and the library code adds all the necessary parameters to the URL for us.</p>
+<p>This <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> retrieves the timeline for a particular Twitter user and returns it to us in <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> format in a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>. We simply print the first 250 characters of the <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> urllib.request, urllib.parse, urllib.error
+<span class="hljs-keyword">import</span> twurl
+<span class="hljs-keyword">import</span> ssl
+
+<span class="hljs-comment"># https://apps.twitter.com/</span>
+<span class="hljs-comment"># Create App and get the four strings, put them in hidden.py</span>
+
+TWITTER_URL = <span class="hljs-string">&apos;https://api.twitter.com/1.1/statuses/user_timeline.json&apos;</span>
+
+<span class="hljs-comment"># Ignore SSL certificate errors</span>
+ctx = ssl.create_default_context()
+ctx.check_hostname = <span class="hljs-keyword">False</span>
+ctx.verify_mode = ssl.CERT_NONE
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    print(<span class="hljs-string">&apos;&apos;</span>)
+    acct = input(<span class="hljs-string">&apos;Enter Twitter Account:&apos;</span>)
+    <span class="hljs-keyword">if</span> (len(acct) &lt; <span class="hljs-number">1</span>): <span class="hljs-keyword">break</span>
+    url = twurl.augment(TWITTER_URL,
+                        {<span class="hljs-string">&apos;screen_name&apos;</span>: acct, <span class="hljs-string">&apos;count&apos;</span>: <span class="hljs-string">&apos;2&apos;</span>})
+    print(<span class="hljs-string">&apos;Retrieving&apos;</span>, url)
+    connection = urllib.request.urlopen(url, context=ctx)
+    data = connection.read().decode()
+    print(data[:<span class="hljs-number">250</span>])
+    headers = dict(connection.getheaders())
+    <span class="hljs-comment"># print headers</span>
+    print(<span class="hljs-string">&apos;Remaining&apos;</span>, headers[<span class="hljs-string">&apos;x-rate-limit-remaining&apos;</span>])
+
+<span class="hljs-comment"># Code: http://www.py4e.com/code3/twitter1.py</span>
+<span class="hljs-comment"># Or select Download from this trinket&apos;s left-hand menu</span>
+</code></pre>
+<p>When the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> runs it produces the following output:</p>
+<pre><code class="lang-python">Enter Twitter Account:drchuck
+Retrieving https://api.twitter.com/1.1/ ...
+[{&quot;created_at&quot;:&quot;Sat Sep 28 17:30:25 +0000 2013&quot;,&quot;
+id&quot;:384007200990982144,&quot;id_str&quot;:&quot;384007200990982144&quot;,
+&quot;text&quot;:&quot;RT @fixpert: See how the Dutch handle traffic
+intersections: http:\/\/t.co\/tIiVWtEhj4\n#brilliant&quot;,
+&quot;source&quot;:&quot;web&quot;,&quot;truncated&quot;:false,&quot;in_rep
+Remaining 178
+
+Enter Twitter Account:fixpert
+Retrieving https://api.twitter.com/1.1/ ...
+[{&quot;created_at&quot;:&quot;Sat Sep 28 18:03:56 +0000 2013&quot;,
+&quot;id&quot;:384015634108919808,&quot;id_str&quot;:&quot;384015634108919808&quot;,
+&quot;text&quot;:&quot;3 months after my freak bocce ball accident,
+my wedding ring fits again! :)\n\nhttps:\/\/t.co\/2XmHPx7kgX&quot;,
+&quot;source&quot;:&quot;web&quot;,&quot;truncated&quot;:false,
+Remaining 177
+
+Enter Twitter Account:
+</code></pre>
+<p>Along with the returned timeline data, Twitter also returns metadata about the request in the HTTP response headers. One <a href="GLOSSARY.html#header" class="glossary-term" title="The first line of a function definition.">header</a> in particular, <strong>x-rate-limit-remaining</strong>, informs us how many more requests we can make before we will be shut off for a short time period. You can see that our remaining retrievals drop by one each time we make a request to the <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a>.</p>
+<p>In the following example, we retrieve a user&apos;s Twitter friends, <a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a> the returned <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a>, and extract some of the information about the friends. We also dump the <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> after parsing and &quot;pretty-print&quot; it with an indent of four characters to allow us to pore through the data when we want to extract more fields.</p>
+<iframe src="https://trinket.io/embed/python3/54ce78fb02" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Since the <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a> becomes a set of nested Python lists and dictionaries, we can use a combination of the <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a> operation and <code>for</code> loops to wander through the returned data structures with very little Python code.</p>
+<p>The output of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> looks as follows (some of the data items are shortened to fit on the page):</p>
+<pre><code class="lang-python">Enter Twitter Account:drchuck
+Retrieving https://api.twitter.com/<span class="hljs-number">1.1</span>/friends ...
+Remaining <span class="hljs-number">14</span>
+</code></pre>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;next_cursor&quot;</span>: <span class="hljs-number">1444171224491980205</span>,
+    <span class="hljs-string">&quot;users&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">662433</span>,
+            <span class="hljs-string">&quot;followers_count&quot;</span>: <span class="hljs-number">28725</span>,
+            <span class="hljs-string">&quot;status&quot;</span>: {
+                <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;@jazzychad I just bought one .__.&quot;</span>,
+                <span class="hljs-string">&quot;created_at&quot;</span>: <span class="hljs-string">&quot;Fri Sep 20 08:36:34 +0000 2013&quot;</span>,
+                <span class="hljs-string">&quot;retweeted&quot;</span>: false,
+            },
+            <span class="hljs-string">&quot;location&quot;</span>: <span class="hljs-string">&quot;San Francisco, California&quot;</span>,
+            <span class="hljs-string">&quot;screen_name&quot;</span>: <span class="hljs-string">&quot;leahculver&quot;</span>,
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Leah Culver&quot;</span>,
+        },
+        {
+            <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">40426722</span>,
+            <span class="hljs-string">&quot;followers_count&quot;</span>: <span class="hljs-number">2635</span>,
+            <span class="hljs-string">&quot;status&quot;</span>: {
+                <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;RT @WSJ: Big employers like Google ...&quot;</span>,
+                <span class="hljs-string">&quot;created_at&quot;</span>: <span class="hljs-string">&quot;Sat Sep 28 19:36:37 +0000 2013&quot;</span>,
+            },
+            <span class="hljs-string">&quot;location&quot;</span>: <span class="hljs-string">&quot;Victoria Canada&quot;</span>,
+            <span class="hljs-string">&quot;screen_name&quot;</span>: <span class="hljs-string">&quot;_valeriei&quot;</span>,
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Valerie Irvine&quot;</span>,
+    ],
+    <span class="hljs-string">&quot;next_cursor_str&quot;</span>: <span class="hljs-string">&quot;1444171224491980205&quot;</span>
+}
+</code></pre>
+<pre><code class="lang-python">leahculver
+<span class="hljs-meta">   @jazzychad I just bought one .__.</span>
+_valeriei
+   RT @WSJ: Big employers like Google, AT&amp;amp;amp;T are h
+ericbollens
+   RT @lukew: sneak peek: my LONG take on the good &amp;amp;a
+halherzog
+   Learning Objects <span class="hljs-keyword">is</span> <span class="hljs-number">10.</span> We had a cake <span class="hljs-keyword">with</span> the LO,
+scweeker
+<span class="hljs-meta">   @DeviceLabDC love it! Now where so I get that &quot;etc</span>
+
+Enter Twitter Account:
+</code></pre>
+<p>The last bit of the output is where we see the for loop reading the five most recent &quot;friends&quot; of the <strong>drchuck</strong> Twitter account and printing the most recent status for each friend. There is a great deal more data available in the returned <a href="GLOSSARY.html#json" class="glossary-term" title="JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.">JSON</a>. If you look in the output of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, you can also see that the &quot;find the friends&quot; of a particular account has a different rate limitation than the number of timeline queries we are allowed to run per time period.</p>
+<p>These secure <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> keys allow Twitter to have solid confidence that they know who is using their <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> and data and at what level. The rate-limiting approach allows us to do simple, personal data retrievals but does not allow us to build a product that pulls data from their <a href="GLOSSARY.html#api" class="glossary-term" title="Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.">API</a> millions of times per day.</p>
+<h2 id="exercises">Exercises </h2>
+<p><strong>Exercise 1:</strong> Change either the <a href="http://www.py4e.com/code3/geojson.py" target="_blank">www.py4e.com/code3/geojson.py</a> or <a href="http://www.py4e.com/code3/geoxml.py" target="_blank">www.py4e.com/code3/geoxml.py</a> to print out the two-character country code from the retrieved data. Add error checking so your <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> does not <a href="GLOSSARY.html#traceback" class="glossary-term" title="A list of the functions that are executing, printed when an exception occurs.">traceback</a> if the country code is not there. Once you have it working, <a href="GLOSSARY.html#search" class="glossary-term" title="A pattern of traversal that stops when it finds what it is looking for.">search</a> for &quot;Atlantic Ocean&quot; and make sure it can handle locations that are not in any country.</p>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12-network.html" class="navigation navigation-prev " aria-label="Previous page: 12. Networked Programs">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14-objects.html" class="navigation navigation-next " aria-label="Next page: 14. Objects">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13. Python and Web Services","level":"2.13","depth":1,"next":{"title":"14. Objects","level":"2.14","depth":1,"path":"14-objects.md","ref":"14-objects.md","articles":[]},"previous":{"title":"12. Networked Programs","level":"2.12","depth":1,"path":"12-network.md","ref":"12-network.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Installing Python","alt":"Installing Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Installing Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Personal Digital Assistant","alt":"Personal Digital Assistant","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Personal Digital Assistant","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programmers Talking to You","alt":"Programmers Talking to You","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programmers Talking to You","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Hardware Archicture","alt":"Hardware Archicture","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Hardware Archicture","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: Where Are you?","alt":"Where Are you?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Where Are you?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: If logic","alt":"If logic","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"If logic","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: If-Then-Else Logic","alt":"If-Then-Else Logic","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"If-Then-Else Logic","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: If-Then-ElseIf Logic","alt":"If-Then-ElseIf Logic","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"If-Then-ElseIf Logic","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Secondary memory","alt":"Secondary memory","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Secondary memory","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables and Objects","alt":"Variables and Objects","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables and Objects","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: A Tree Representation of XML","alt":"A Tree Representation of XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Tree Representation of XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: A program","alt":"A program","nro":16,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A program","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: A Program as Network of Objects","alt":"A Program as Network of Objects","nro":17,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Program as Network of Objects","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignoring Detail When Using an Object","alt":"Ignoring Detail When Using an Object","nro":18,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Using an Object","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignoring Detail When Building an Object","alt":"Ignoring Detail When Building an Object","nro":19,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Building an Object","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: A Class and Two Objects","alt":"A Class and Two Objects","nro":20,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"A Class and Two Objects","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Relational databases","alt":"Relational databases","nro":21,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Relational databases","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":22,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Rows in a Table","alt":"Rows in a Table","nro":23,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Rows in a Table","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relationships Between Tables","alt":"Relationships Between Tables","nro":24,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relationships Between Tables","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Connecting Tables Using JOIN","alt":"Connecting Tables Using JOIN","nro":25,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Connecting Tables Using JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"en","gitbook":"*"},"file":{"path":"13-web.md","mtime":"2020-11-03T15:12:48.368Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

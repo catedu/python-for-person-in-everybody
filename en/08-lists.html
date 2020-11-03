@@ -1,0 +1,962 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>8. Lists · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="09-dictionaries.html" />
+    
+    
+    <link rel="prev" href="07-files.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Starting the journey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Iterations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Networked Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python and Web Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python and Databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >8. Lists</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lists">Lists </h1>
+<ul>
+<li><a href="#a-list-is-a-sequence">A list is a sequence</a></li>
+<li><a href="#lists-are-mutable">Lists are mutable</a></li>
+<li><a href="#traversing-a-list">Traversing a list</a></li>
+<li><a href="#list-operations">List operations</a></li>
+<li><a href="#list-slices">List slices</a></li>
+<li><a href="#list-methods">List methods</a></li>
+<li><a href="#deleting-elements">Deleting elements</a></li>
+<li><a href="#lists-and-functions">Lists and functions</a></li>
+<li><a href="#lists-and-strings">Lists and strings</a></li>
+<li><a href="#parsing-lines">Parsing lines</a></li>
+<li><a href="#objects-and-values">Objects and values</a></li>
+<li><a href="#aliasing">Aliasing</a></li>
+<li><a href="#list-arguments">List arguments</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#exercises">Exercises</a></li>
+</ul>
+<h2 id="a-list-is-a-sequence">A list is a sequence </h2>
+<p>Like a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>, a <strong><a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a></strong> is a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of values. In a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>, the values are characters; in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, they can be any <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a>. The values in <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> are called <strong>elements</strong> or sometimes <strong>items</strong>.</p>
+<p>There are several ways to create a new <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>; the simplest is to enclose the elements in square brackets (<code>[</code> and <code>]</code>):</p>
+<pre><code class="lang-python">[<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>]
+[<span class="hljs-string">&apos;crunchy frog&apos;</span>, <span class="hljs-string">&apos;ram bladder&apos;</span>, <span class="hljs-string">&apos;lark vomit&apos;</span>]
+</code></pre>
+<p>The first example is a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of four integers. The second is a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of three strings. The elements of a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> don&apos;t have to be the same <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a>. The following <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> contains a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>, a float, an <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a>, and (lo!) another <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>:</p>
+<pre><code class="lang-python">[<span class="hljs-string">&apos;spam&apos;</span>, <span class="hljs-number">2.0</span>, <span class="hljs-number">5</span>, [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>]]
+</code></pre>
+<p>A <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> within another <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> is <strong>nested</strong>.</p>
+<p>A <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> that contains no elements is called an empty <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>; you can create one with empty brackets, <code>[]</code>.</p>
+<p>As you might expect, you can assign <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> values to variables:</p>
+<h2 id="lists-are-mutable">Lists are mutable </h2>
+<p>The syntax for accessing the elements of a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> is the same as for accessing the characters of a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>: the bracket <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a>. The <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> inside the brackets specifies the <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a>. Remember that the indices start at 0:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(cheeses[<span class="hljs-number">0</span>])
+Cheddar
+</code></pre>
+<p>Unlike strings, lists are mutable because you can change the order of items in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> or reassign an <a href="GLOSSARY.html#item" class="glossary-term" title="Another name for a key-value pair.">item</a> in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. When the bracket <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> appears on the left side of an <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a>, it identifies the <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> of the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> that will be assigned.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>numbers = [<span class="hljs-number">17</span>, <span class="hljs-number">123</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>numbers[<span class="hljs-number">1</span>] = <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(numbers)
+[<span class="hljs-number">17</span>, <span class="hljs-number">5</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>The one-eth <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> of <code>numbers</code>, which used to be 123, is now 5.</p>
+<p>You can think of a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> as a relationship between indices and elements. This relationship is called a <strong>mapping</strong>; each <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a> &quot;maps to&quot; one of the elements.</p>
+<p><a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">List</a> indices work the same way as <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> indices:</p>
+<ul>
+<li>Any <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a> <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> can be used as an <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a>.</li>
+<li>If you try to read or write an <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> that does not exist, you get an <code>IndexError</code>.</li>
+<li>If an <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a> has a negative <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>, it counts backward from the end of the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</li>
+</ul>
+<p>The <code>in</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> also works on lists.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>cheeses = [<span class="hljs-string">&apos;Cheddar&apos;</span>, <span class="hljs-string">&apos;Edam&apos;</span>, <span class="hljs-string">&apos;Gouda&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;Edam&apos;</span> <span class="hljs-keyword">in</span> cheeses
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;Brie&apos;</span> <span class="hljs-keyword">in</span> cheeses
+<span class="hljs-keyword">False</span>
+&gt;&gt;&gt;
+</code></pre>
+<h2 id="traversing-a-list">Traversing a list </h2>
+<p>The most common way to <a href="GLOSSARY.html#traverse" class="glossary-term" title="To iterate through the items in a sequence, performing a similar operation on each.">traverse</a> the elements of a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> is with a <code>for</code> loop. The syntax is the same as for strings:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> cheese <span class="hljs-keyword">in</span> cheeses:
+    print(cheese)
+</code></pre>
+<p>This works well if you only need to read the elements of the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. But if you want to write or update the elements, you need the indices. A common way to do that is to combine the functions <code>range</code> and <code>len</code>:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(numbers)):
+    numbers[i] = numbers[i] * <span class="hljs-number">2</span>
+</code></pre>
+<p>This loop traverses the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and updates each <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>. <code>len</code> returns the number of elements in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. <code>range</code> returns a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of indices from 0 to <strong>n</strong>&#x2005;&#x2212;&#x2005;1, where <strong>n</strong> is the length of the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. Each time through the loop, <code>i</code> gets the <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a> of the next <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>. The <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> in the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a> uses <code>i</code> to read the old <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of the <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> and to assign the new <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>.</p>
+<p>A <code>for</code> loop over an empty <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> never executes the <a href="GLOSSARY.html#body" class="glossary-term" title="The sequence of statements inside a function definition.">body</a>:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> empty:
+    print(<span class="hljs-string">&apos;This never happens.&apos;</span>)
+</code></pre>
+<p>Although a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> can contain another <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, the nested <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> still counts as a single <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>. The length of this <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> is four:</p>
+<pre><code class="lang-python">[<span class="hljs-string">&apos;spam&apos;</span>, <span class="hljs-number">1</span>, [<span class="hljs-string">&apos;Brie&apos;</span>, <span class="hljs-string">&apos;Roquefort&apos;</span>, <span class="hljs-string">&apos;Pol le Veq&apos;</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]]
+</code></pre>
+<h2 id="list-operations">List operations </h2>
+<p>The <code>+</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> concatenates lists:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>c = a + b
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(c)
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>Similarly, the <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> repeats a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> a given number of times:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[<span class="hljs-number">0</span>] * <span class="hljs-number">4</span>
+[<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>] * <span class="hljs-number">3</span>
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>The first example repeats four times. The second example repeats the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> three times.</p>
+<h2 id="list-slices">List slices </h2>
+<p>The <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> also works on lists:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]
+[<span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t[:<span class="hljs-number">4</span>]
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t[<span class="hljs-number">3</span>:]
+[<span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>If you omit the first <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a>, the <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> starts at the beginning. If you omit the second, the <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> goes to the end. So if you omit both, the <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> is a copy of the whole <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t[:]
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>]
+</code></pre>
+<p>Since lists are mutable, it is often useful to make a copy before performing operations that fold, spindle, or mutilate lists.</p>
+<p>A <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> on the left side of an <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> can update multiple elements:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>] = [<span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;y&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;y&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>]
+&gt;&gt;&gt;
+</code></pre>
+<h2 id="list-methods">List methods </h2>
+<p>Python provides methods that operate on lists. For example, <code>append</code> adds a new <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> to the end of a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t.append(<span class="hljs-string">&apos;d&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>]
+</code></pre>
+<p><code>extend</code> takes a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> as an <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a> and appends all of the elements:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t.extend([<span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>]
+</code></pre>
+<p>This example leaves <code>t2</code> unmodified.</p>
+<p><code>sort</code> arranges the elements of the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> from low to high:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t.sort()
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>]
+</code></pre>
+<p>Most <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> methods are void; they modify the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and return <code>None</code>. If you accidentally write <code>t = t.sort()</code>, you will be disappointed with the result.</p>
+<h2 id="deleting-elements">Deleting elements </h2>
+<p>There are several ways to delete elements from a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. If you know the <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a> of the <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> you want, you can use <code>pop</code>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>x = t.pop(<span class="hljs-number">1</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(x)
+b
+&gt;&gt;&gt;
+</code></pre>
+<p><code>pop</code> modifies the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and returns the <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> that was removed. If you don&apos;t provide an <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a>, it deletes and returns the last <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>.</p>
+<p>If you don&apos;t need the removed <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>, you can use the <code>del</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">del</span> t[<span class="hljs-number">1</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>If you know the <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> you want to remove (but not the <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a>), you can use <code>remove</code>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t.remove(<span class="hljs-string">&apos;b&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>The return <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> from <code>remove</code> is <code>None</code>.</p>
+<p>To remove more than one <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>, you can use <code>del</code> with a <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">del</span> t[<span class="hljs-number">1</span>:<span class="hljs-number">5</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>As usual, the <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> selects all the elements up to, but not including, the second <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a>.</p>
+<h2 id="lists-and-functions">Lists and functions </h2>
+<p>There are a number of built-in functions that can be used on lists that allow you to quickly look through a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> without writing your own loops:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>nums = [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(len(nums))
+<span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(max(nums))
+<span class="hljs-number">74</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(min(nums))
+<span class="hljs-number">3</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(sum(nums))
+<span class="hljs-number">154</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(sum(nums)/len(nums))
+<span class="hljs-number">25.666666666666668</span>
+</code></pre>
+<p>The <code>sum()</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> only works when the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> elements are numbers. The other functions (<code>max()</code>, <code>len()</code>, etc.) work with lists of strings and other types that can be comparable.</p>
+<p>We could rewrite an earlier <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that computed the average of a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of numbers entered by the user using a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<p>First, the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to compute an average without a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>:</p>
+<iframe src="https://trinket.io/embed/python3/e02540c91c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>In this <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, we have <code>count</code> and <code>total</code> variables to keep the number and running total of the user&apos;s numbers as we repeatedly <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a> the user for a number.</p>
+<p>We could simply remember each number as the user entered it and use built-in functions to compute the sum and count at the end.</p>
+<iframe src="https://trinket.io/embed/python3/d5f9bf95ff" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>We make an empty <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> before the loop starts, and then each time we have a number, we append it to the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. At the end of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, we simply compute the sum of the numbers in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and divide it by the count of the numbers in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> to come up with the average.</p>
+<h2 id="lists-and-strings">Lists and strings </h2>
+<p>A <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> is a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of characters and a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> is a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of values, but a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of characters is not the same as a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>. To convert from a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> to a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of characters, you can use <code>list</code>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = <span class="hljs-string">&apos;spam&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>t = list(s)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;s&apos;</span>, <span class="hljs-string">&apos;p&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;m&apos;</span>]
+</code></pre>
+<p>Because <code>list</code> is the name of a built-in <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a>, you should avoid using it as a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> name. I also avoid the letter <code>l</code> because it looks too much like the number <code>1</code>. So that&apos;s why I use <code>t</code>.</p>
+<p>The <code>list</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> breaks a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> into individual letters. If you want to break a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> into words, you can use the <code>split</code> <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = <span class="hljs-string">&apos;pining for the fjords&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>t = s.split()
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[<span class="hljs-string">&apos;pining&apos;</span>, <span class="hljs-string">&apos;for&apos;</span>, <span class="hljs-string">&apos;the&apos;</span>, <span class="hljs-string">&apos;fjords&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t[<span class="hljs-number">2</span>])
+the
+</code></pre>
+<p>Once you have used <code>split</code> to break the <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> into a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of words, you can use the <a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> (square bracket) to look at a particular word in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<p>You can call <code>split</code> with an optional <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a> called a <strong><a href="GLOSSARY.html#delimiter" class="glossary-term" title="A character or string used to indicate where a string should be split.">delimiter</a></strong> that specifies which characters to use as word boundaries. The following example uses a hyphen as a <a href="GLOSSARY.html#delimiter" class="glossary-term" title="A character or string used to indicate where a string should be split.">delimiter</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = <span class="hljs-string">&apos;spam-spam-spam&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>delimiter = <span class="hljs-string">&apos;-&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s.split(delimiter)
+[<span class="hljs-string">&apos;spam&apos;</span>, <span class="hljs-string">&apos;spam&apos;</span>, <span class="hljs-string">&apos;spam&apos;</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p><code>join</code> is the inverse of <code>split</code>. It takes a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of strings and concatenates the elements. <code>join</code> is a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a>, so you have to invoke it on the <a href="GLOSSARY.html#delimiter" class="glossary-term" title="A character or string used to indicate where a string should be split.">delimiter</a> and pass the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> as a <a href="GLOSSARY.html#parameter" class="glossary-term" title="A name used inside a function to refer to the value passed as an argument.">parameter</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = [<span class="hljs-string">&apos;pining&apos;</span>, <span class="hljs-string">&apos;for&apos;</span>, <span class="hljs-string">&apos;the&apos;</span>, <span class="hljs-string">&apos;fjords&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>delimiter = <span class="hljs-string">&apos; &apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>delimiter.join(t)
+<span class="hljs-string">&apos;pining for the fjords&apos;</span>
+</code></pre>
+<p>In this case the <a href="GLOSSARY.html#delimiter" class="glossary-term" title="A character or string used to indicate where a string should be split.">delimiter</a> is a space character, so <code>join</code> puts a space between words. To <a href="GLOSSARY.html#concatenate" class="glossary-term" title="To join two operands end to end.">concatenate</a> strings without spaces, you can use the empty <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>, &quot;&quot;, as a <a href="GLOSSARY.html#delimiter" class="glossary-term" title="A character or string used to indicate where a string should be split.">delimiter</a>.</p>
+<h2 id="parsing-lines">Parsing lines </h2>
+<p>Usually when we are reading a file we want to do something to the lines other than just printing the whole line. Often we want to find the &quot;interesting lines&quot; and then <strong><a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a></strong> the line to find some interesting <strong>part</strong> of the line. What if we wanted to print out the day of the week from those lines that start with &quot;From &quot;?</p>
+<p><code>From stephen.marquard@uct.ac.za</code><strong><code>Sat</code></strong><code>Jan  5 09:14:16 2008</code></p>
+<p>The <code>split</code> <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a> is very effective when faced with this kind of problem. We can write a small <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that looks for lines where the line starts with &quot;From &quot;, <code>split</code> those lines, and then print out the third word in the line:</p>
+<iframe src="https://trinket.io/embed/python3/106858f1a8" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Here we also use the contracted form of the <code>if</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> where we put the <code>continue</code> on the same line as the <code>if</code>. This contracted form of the <code>if</code> functions the same as if the <code>continue</code> were on the next line and indented.</p>
+<p>The <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> produces the following output:</p>
+<pre><code class="lang-python">Sat
+Fri
+Fri
+Fri
+    ...
+</code></pre>
+<p>Later, we will learn increasingly sophisticated techniques for picking the lines to work on and how we pull those lines apart to find the exact bit of information we are looking for.</p>
+<h2 id="objects-and-values">Objects and values </h2>
+<p>If we execute these <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> statements:</p>
+<pre><code class="lang-python">a = <span class="hljs-string">&apos;banana&apos;</span>
+b = <span class="hljs-string">&apos;banana&apos;</span>
+</code></pre>
+<p>we know that <code>a</code> and <code>b</code> both refer to a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>, but we don&apos;t know whether they refer to the <strong>same</strong> <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>. There are two possible states:</p>
+<figure id="fig2.8.1"><img src="../img/variables-objects.svg" alt="Variables and Objects"><figcaption>Imagen - Variables and Objects</figcaption></figure>
+<p>In one case, <code>a</code> and <code>b</code> refer to two different objects that have the same <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>. In the second case, they refer to the same <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a>.</p>
+<p>To check whether two variables refer to the same <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a>, you can use the <code>is</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a>.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-string">&apos;banana&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = <span class="hljs-string">&apos;banana&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a <span class="hljs-keyword">is</span> b
+<span class="hljs-keyword">True</span>
+</code></pre>
+<p>In this example, Python only created one <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a>, and both <code>a</code> and <code>b</code> refer to it.</p>
+<p>But when you create two lists, you get two objects:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>a <span class="hljs-keyword">is</span> b
+<span class="hljs-keyword">False</span>
+&gt;&gt;&gt;
+</code></pre>
+<p>In this case we would say that the two lists are <strong><a href="GLOSSARY.html#equivalent" class="glossary-term" title="Having the same value.">equivalent</a></strong>, because they have the same elements, but not <strong><a href="GLOSSARY.html#identical" class="glossary-term" title="Being the same object (which implies equivalence).">identical</a></strong>, because they are not the same <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a>. If two objects are <a href="GLOSSARY.html#identical" class="glossary-term" title="Being the same object (which implies equivalence).">identical</a>, they are also <a href="GLOSSARY.html#equivalent" class="glossary-term" title="Having the same value.">equivalent</a>, but if they are <a href="GLOSSARY.html#equivalent" class="glossary-term" title="Having the same value.">equivalent</a>, they are not necessarily <a href="GLOSSARY.html#identical" class="glossary-term" title="Being the same object (which implies equivalence).">identical</a>.</p>
+<p>Until now, we have been using &quot;<a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a>&quot; and &quot;<a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>&quot; interchangeably, but it is more precise to say that an <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a> has a <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>. If you execute <code>a = [1,2,3]</code>, <code>a</code> refers to a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a> whose <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> is a particular <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of elements. If another <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> has the same elements, we would say it has the same <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>.</p>
+<h2 id="aliasing">Aliasing </h2>
+<p>If <code>a</code> refers to an <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a> and you assign <code>b = a</code>, then both variables refer to the same <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = a
+<span class="hljs-meta">&gt;&gt;&gt; </span>b
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[<span class="hljs-number">2</span>] = <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>]
+</code></pre>
+<p>The association of a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> with an <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a> is called a <strong><a href="GLOSSARY.html#reference" class="glossary-term" title="The association between a variable and its value.">reference</a></strong>. In this example, there are two references to the same <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a>.</p>
+<p>An <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a> with more than one <a href="GLOSSARY.html#reference" class="glossary-term" title="The association between a variable and its value.">reference</a> has more than one name, so we say that the <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a> is <strong>aliased</strong>.</p>
+<p>If the aliased <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a> is mutable, changes made with one alias affect the other:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>b[<span class="hljs-number">0</span>] = <span class="hljs-number">17</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(a)
+[<span class="hljs-number">17</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<p>Although this behavior can be useful, it is error-prone. In general, it is safer to avoid <a href="GLOSSARY.html#aliasing" class="glossary-term" title="A circumstance where two or more variables refer to the same object.">aliasing</a> when you are working with mutable objects.</p>
+<p>For <a href="GLOSSARY.html#immutable" class="glossary-term" title="The property of a sequence whose items cannot be assigned.">immutable</a> objects like strings, <a href="GLOSSARY.html#aliasing" class="glossary-term" title="A circumstance where two or more variables refer to the same object.">aliasing</a> is not as much of a problem. In this example:</p>
+<pre><code class="lang-python">a = <span class="hljs-string">&apos;banana&apos;</span>
+b = <span class="hljs-string">&apos;banana&apos;</span>
+</code></pre>
+<p>it almost never makes a difference whether <code>a</code> and <code>b</code> refer to the same <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> or not.</p>
+<h2 id="list-arguments">List arguments </h2>
+<p>When you pass a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> to a <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a>, the <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> gets a <a href="GLOSSARY.html#reference" class="glossary-term" title="The association between a variable and its value.">reference</a> to the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. If the <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> modifies a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> <a href="GLOSSARY.html#parameter" class="glossary-term" title="A name used inside a function to refer to the value passed as an argument.">parameter</a>, the caller sees the change. For example, <code>delete_head</code> removes the first <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> from a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_head</span><span class="hljs-params">(t)</span>:</span>
+    <span class="hljs-keyword">del</span> t[<span class="hljs-number">0</span>]
+</code></pre>
+<p>Here&apos;s how it is used:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>letters = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>delete_head(letters)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(letters)
+[<span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>The <a href="GLOSSARY.html#parameter" class="glossary-term" title="A name used inside a function to refer to the value passed as an argument.">parameter</a> <code>t</code> and the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>letters</code> are aliases for the same <a href="GLOSSARY.html#object" class="glossary-term" title="A constructed instance of a class. An object contains all of the attributes and methods that were defined by the class. Some object-oriented documentation uses the term &apos;instance&apos; interchangeably with &apos;object&apos;.">object</a>.</p>
+<p>It is important to distinguish between operations that modify lists and operations that create new lists. For example, the <code>append</code> <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a> modifies a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, but the <code>+</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> creates a new <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t2 = t1.append(<span class="hljs-number">3</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t1)
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t2)
+<span class="hljs-keyword">None</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>t3 = t1 + [<span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t3)
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t2 <span class="hljs-keyword">is</span> t3
+<span class="hljs-keyword">False</span>
+&gt;&gt;&gt;
+</code></pre>
+<p>This difference is important when you write functions that are supposed to modify lists. For example, this <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> <strong>does not</strong> delete the head of a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bad_delete_head</span><span class="hljs-params">(t)</span>:</span>
+    t = t[<span class="hljs-number">1</span>:]              <span class="hljs-comment"># WRONG!</span>
+</code></pre>
+<p>The <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> creates a new <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and the <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> makes <code>t</code> refer to it, but none of that has any effect on the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> that was passed as an <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a>.</p>
+<p>An alternative is to write a <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> that creates and returns a new <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. For example, <code>tail</code> returns all but the first <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> of a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tail</span><span class="hljs-params">(t)</span>:</span>
+    <span class="hljs-keyword">return</span> t[<span class="hljs-number">1</span>:]
+</code></pre>
+<p>This <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> leaves the original <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> unmodified. Here&apos;s how it is used:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>letters = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>rest = tail(letters)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(rest)
+[<span class="hljs-string">&apos;b&apos;</span>,<span class="hljs-string">&apos;c&apos;</span>]
+</code></pre>
+<p><strong>Exercise 1</strong>:</p>
+<p>Write a <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> called <code>chop</code> that takes a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and modifies it, removing the first and last elements, and returns <code>None</code>.</p>
+<p>Then write a <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> called <code>middle</code> that takes a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and returns a new <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> that contains all but the first and last elements.</p>
+<h2 id="debugging">Debugging </h2>
+<p>Careless use of lists (and other mutable objects) can lead to long hours of debugging. Here are some common pitfalls and ways to avoid them:</p>
+<ol>
+<li><p>Don&apos;t forget that most <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> methods modify the <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a> and return <code>None</code>. This is the opposite of the <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> methods, which return a new <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> and leave the original alone.</p>
+<p> If you are used to writing <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> code like this:</p>
+<pre><code class="lang-python"> word = word.strip()
+</code></pre>
+<p> It is tempting to write <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> code like this: ~<sub>~</sub>{.python}t = t.sort() # WRONG! ~<sub>~</sub></p>
+<p> Because <code>sort</code> returns <code>None</code>, the next operation you perform with <code>t</code> is likely to fail.</p>
+<p> Before using <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> methods and operators, you should read the documentation carefully and then test them in <a href="GLOSSARY.html#interactive-mode" class="glossary-term" title="A way of using the Python interpreter by typing commands and expressions at the prompt.">interactive mode</a>. The methods and operators that lists share with other sequences (like strings) are documented at <a href="https://docs.python.org/3.7/library/stdtypes.html#string-methods" target="_blank">https://docs.python.org/3.7/library/stdtypes.html#string-methods</a>. The methods and operators that only apply to mutable sequences are documented at <a href="https://docs.python.org/3.7/library/stdtypes.html#mutable-sequence-types" target="_blank">https://docs.python.org/3.7/library/stdtypes.html#mutable-sequence-types</a>.</p>
+</li>
+<li><p>Pick an idiom and stick with it.</p>
+<p> Part of the problem with lists is that there are too many ways to do things. For example, to remove an <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> from a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, you can use <code>pop</code>, <code>remove</code>, <code>del</code>, or even a <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a>.</p>
+<p> To add an <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>, you can use the <code>append</code> <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a> or the <code>+</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a>. But don&apos;t forget that these are right:</p>
+<pre><code class="lang-python"> t.append(x)
+ t = t + [x]
+</code></pre>
+<p> And these are wrong:</p>
+<pre><code class="lang-python"> t.append([x])          <span class="hljs-comment"># WRONG!</span>
+ t = t.append(x)        <span class="hljs-comment"># WRONG!</span>
+ t + [x]                <span class="hljs-comment"># WRONG!</span>
+ t = t + x              <span class="hljs-comment"># WRONG!</span>
+</code></pre>
+</li>
+</ol>
+<p>Try out each of these examples in <a href="GLOSSARY.html#interactive-mode" class="glossary-term" title="A way of using the Python interpreter by typing commands and expressions at the prompt.">interactive mode</a> to make sure you understand what they do. Notice that only the last one causes a runtime error; the other three are legal, but they do the wrong thing.</p>
+<ol>
+<li><p>Make copies to avoid <a href="GLOSSARY.html#aliasing" class="glossary-term" title="A circumstance where two or more variables refer to the same object.">aliasing</a>.</p>
+<p> If you want to use a <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a> like <code>sort</code> that modifies the <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a>, but you need to keep the original <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> as well, you can make a copy.</p>
+<pre><code class="lang-python"> orig = t[:]
+ t.sort()
+</code></pre>
+<p> In this example you could also use the built-in <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> <code>sorted</code>, which returns a new, sorted <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and leaves the original alone. But in that case you should avoid using <code>sorted</code> as a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> name!</p>
+</li>
+<li><p>Lists, <code>split</code>, and files</p>
+<p> When we read and <a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a> files, there are many opportunities to encounter input that can crash our <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> so it is a good idea to revisit the <strong>guardian</strong> pattern when it comes writing programs that read through a file and look for a &quot;needle in the haystack&quot;.</p>
+<p> Let&apos;s revisit our <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that is looking for the day of the week on the from lines of our file:</p>
+<p> <code>From stephen.marquard@uct.ac.za</code><strong><code>Sat</code></strong><code>Jan  5 09:14:16 2008</code></p>
+<p> Since we are breaking this line into words, we could dispense with the use of <code>startswith</code> and simply look at the first word of the line to determine if we are interested in the line at all. We can use <code>continue</code> to skip lines that don&apos;t have &quot;From&quot; as the first word as follows:</p>
+<pre><code class="lang-python"> fhand = open(<span class="hljs-string">&apos;mbox-short.txt&apos;</span>)
+ <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> fhand:
+     words = line.split()
+     <span class="hljs-keyword">if</span> words[<span class="hljs-number">0</span>] != <span class="hljs-string">&apos;From&apos;</span> : <span class="hljs-keyword">continue</span>
+     print(words[<span class="hljs-number">2</span>])
+</code></pre>
+<p> This looks much simpler and we don&apos;t even need to do the <code>rstrip</code> to remove the <a href="GLOSSARY.html#newline" class="glossary-term" title="A special character used in files and strings to indicate the end of a line.">newline</a> at the end of the file. But is it better?</p>
+<pre><code class="lang-python"> python search8.py
+ Sat
+ Traceback (most recent call last):
+     File <span class="hljs-string">&quot;search8.py&quot;</span>, line <span class="hljs-number">5</span>, <span class="hljs-keyword">in</span> 
+     <span class="hljs-keyword">if</span> words[<span class="hljs-number">0</span>] != <span class="hljs-string">&apos;From&apos;</span> : <span class="hljs-keyword">continue</span>
+ IndexError: list index out of range
+</code></pre>
+<p> It kind of works and we see the day from the first line (Sat), but then the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> fails with a <a href="GLOSSARY.html#traceback" class="glossary-term" title="A list of the functions that are executing, printed when an exception occurs.">traceback</a> error. What went wrong? What messed-up data caused our elegant, clever, and very <a href="GLOSSARY.html#pythonic" class="glossary-term" title="A technique that works elegantly in Python. &quot;Using try and except is the Pythonic way to recover from missing files&quot;.">Pythonic</a> <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to fail?</p>
+<p> You could stare at it for a long time and puzzle through it or ask someone for help, but the quicker and smarter approach is to add a <code>print</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>. The best place to add the print <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> is right before the line where the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> failed and print out the data that seems to be causing the failure.</p>
+<p> Now this approach may generate a lot of lines of output, but at least you will immediately have some clue as to the problem at hand. So we add a print of the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>words</code> right before line five. We even add a prefix &quot;Debug:&quot; to the line so we can keep our regular output separate from our debug output.</p>
+<pre><code class="lang-python"> <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> fhand:
+     words = line.split()
+     print(<span class="hljs-string">&apos;Debug:&apos;</span>, words)
+     <span class="hljs-keyword">if</span> words[<span class="hljs-number">0</span>] != <span class="hljs-string">&apos;From&apos;</span> : <span class="hljs-keyword">continue</span>
+     print(words[<span class="hljs-number">2</span>])
+</code></pre>
+<p> When we run the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, a lot of output scrolls off the screen but at the end, we see our debug output and the <a href="GLOSSARY.html#traceback" class="glossary-term" title="A list of the functions that are executing, printed when an exception occurs.">traceback</a> so we know what happened just before the <a href="GLOSSARY.html#traceback" class="glossary-term" title="A list of the functions that are executing, printed when an exception occurs.">traceback</a>.</p>
+<pre><code class="lang-python"> Debug: [<span class="hljs-string">&apos;X-DSPAM-Confidence:&apos;</span>, <span class="hljs-string">&apos;0.8475&apos;</span>]
+ Debug: [<span class="hljs-string">&apos;X-DSPAM-Probability:&apos;</span>, <span class="hljs-string">&apos;0.0000&apos;</span>]
+ Debug: []
+ Traceback (most recent call last):
+     File <span class="hljs-string">&quot;search9.py&quot;</span>, line <span class="hljs-number">6</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+     <span class="hljs-keyword">if</span> words[<span class="hljs-number">0</span>] != <span class="hljs-string">&apos;From&apos;</span> : <span class="hljs-keyword">continue</span>
+ IndexError: list index out of range
+</code></pre>
+<p> Each debug line is printing the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of words which we get when we <code>split</code> the line into words. When the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> fails, the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of words is empty <code>[]</code>. If we open the file in a text editor and look at the file, at that point it looks as follows:</p>
+<pre><code class="lang-python"> X-DSPAM-Result: Innocent
+ X-DSPAM-Processed: Sat Jan  5 09:14:16 2008
+ X-DSPAM-Confidence: 0.8475
+ X-DSPAM-Probability: 0.0000
+
+ Details: http://source.sakaiproject.org/viewsvn/?view=rev&amp;rev=39772
+</code></pre>
+<p> The error occurs when our <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> encounters a blank line! Of course there are &quot;zero words&quot; on a blank line. Why didn&apos;t we think of that when we were writing the code? When the code looks for the first word (<code>word[0]</code>) to check to see if it matches &quot;From&quot;, we get an &quot;<a href="GLOSSARY.html#index" class="glossary-term" title="Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.">index</a> out of range&quot; error.</p>
+<p> This of course is the perfect place to add some <strong>guardian</strong> code to avoid checking the first word if the first word is not there. There are many ways to protect this code; we will choose to check the number of words we have before we look at the first word:</p>
+<pre><code class="lang-python"> fhand = open(<span class="hljs-string">&apos;mbox-short.txt&apos;</span>)
+ count = <span class="hljs-number">0</span>
+ <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> fhand:
+     words = line.split()
+     <span class="hljs-comment"># print &apos;Debug:&apos;, words</span>
+     <span class="hljs-keyword">if</span> len(words) == <span class="hljs-number">0</span> : <span class="hljs-keyword">continue</span>
+     <span class="hljs-keyword">if</span> words[<span class="hljs-number">0</span>] != <span class="hljs-string">&apos;From&apos;</span> : <span class="hljs-keyword">continue</span>
+     print(words[<span class="hljs-number">2</span>])
+</code></pre>
+<p> First we commented out the debug print <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> instead of removing it, in case our modification fails and we need to debug again. Then we added a guardian <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> that checks to see if we have zero words, and if so, we use <code>continue</code> to skip to the next line in the file.</p>
+<p> We can think of the two <code>continue</code> statements as helping us refine the set of lines which are &quot;interesting&quot; to us and which we want to process some more. A line which has no words is &quot;uninteresting&quot; to us so we skip to the next line. A line which does not have &quot;From&quot; as its first word is uninteresting to us so we skip it.</p>
+<p> The <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> as modified runs successfully, so perhaps it is correct. Our guardian <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> does make sure that the <code>words[0]</code> will never fail, but perhaps it is not enough. When we are programming, we must always be thinking, &quot;What might go wrong?&lt;/li&gt;</p>
+</li>
+</ol>
+<p><strong>Exercise 2</strong>: Figure out which line of the above <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> is still not properly guarded. See if you can construct a <a href="GLOSSARY.html#text-file" class="glossary-term" title="A sequence of characters stored in permanent storage like a hard drive.">text file</a> which causes the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to fail and then modify the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> so that the line is properly guarded and test it to make sure it handles your new <a href="GLOSSARY.html#text-file" class="glossary-term" title="A sequence of characters stored in permanent storage like a hard drive.">text file</a>.</p>
+<p><strong>Exercise 3</strong>: Rewrite the guardian code in the above example without two <code>if</code> statements. Instead, use a compound logical <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> using the <code>and</code> logical <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> with a single <code>if</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>.</p>
+<h2 id="exercises">Exercises </h2>
+<p><strong>Exercise 4</strong>: Download a copy of the file from <a href="http://www.py4e.com/code3/romeo.txt" target="_blank">www.py4e.com/code3/romeo.txt</a></p>
+<p>Write a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to open the file <code>romeo.txt</code> and read it line by line. For each line, split the line into a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of words using the <code>split</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a>.</p>
+<p>For each word, check to see if the word is already in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. If the word is not in the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, add it to the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<p>When the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> completes, sort and print the resulting words in alphabetical order.</p>
+<pre><code class="lang-python">Enter file: romeo.txt
+[<span class="hljs-string">&apos;Arise&apos;</span>, <span class="hljs-string">&apos;But&apos;</span>, <span class="hljs-string">&apos;It&apos;</span>, <span class="hljs-string">&apos;Juliet&apos;</span>, <span class="hljs-string">&apos;Who&apos;</span>, <span class="hljs-string">&apos;already&apos;</span>,
+<span class="hljs-string">&apos;and&apos;</span>, <span class="hljs-string">&apos;breaks&apos;</span>, <span class="hljs-string">&apos;east&apos;</span>, <span class="hljs-string">&apos;envious&apos;</span>, <span class="hljs-string">&apos;fair&apos;</span>, <span class="hljs-string">&apos;grief&apos;</span>,
+<span class="hljs-string">&apos;is&apos;</span>, <span class="hljs-string">&apos;kill&apos;</span>, <span class="hljs-string">&apos;light&apos;</span>, <span class="hljs-string">&apos;moon&apos;</span>, <span class="hljs-string">&apos;pale&apos;</span>, <span class="hljs-string">&apos;sick&apos;</span>, <span class="hljs-string">&apos;soft&apos;</span>,
+<span class="hljs-string">&apos;sun&apos;</span>, <span class="hljs-string">&apos;the&apos;</span>, <span class="hljs-string">&apos;through&apos;</span>, <span class="hljs-string">&apos;what&apos;</span>, <span class="hljs-string">&apos;window&apos;</span>,
+<span class="hljs-string">&apos;with&apos;</span>, <span class="hljs-string">&apos;yonder&apos;</span>]
+</code></pre>
+<p><strong>Exercise 5:</strong> Write a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to read through the mail box data and when you find line that starts with &quot;From&quot;, you will split the line into words using the <code>split</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a>. We are interested in who sent the message, which is the second word on the From line.</p>
+<p><code>From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008</code></p>
+<p>You will <a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a> the From line and print out the second word for each From line, then you will also count the number of From (not From:) lines and print out a count at the end.</p>
+<p>This is a good sample output with a few lines removed:</p>
+<pre><code class="lang-python">python fromcount.py
+Enter a file name: mbox-short.txt
+stephen.marquard@uct.ac.za
+louis@media.berkeley.edu
+zqian@umich.edu
+
+[...some output removed...]
+
+ray@media.berkeley.edu
+cwen@iupui.edu
+cwen@iupui.edu
+cwen@iupui.edu
+There were <span class="hljs-number">27</span> lines <span class="hljs-keyword">in</span> the file <span class="hljs-keyword">with</span> From <span class="hljs-keyword">as</span> the first word
+</code></pre>
+<p><strong>Exercise 6:</strong> Rewrite the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that prompts the user for a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of numbers and prints out the maximum and minimum of the numbers at the end when the user enters &quot;done&quot;. Write the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to store the numbers the user enters in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and use the <code>max()</code> and <code>min()</code> functions to compute the maximum and minimum numbers after the loop completes.</p>
+<pre><code class="lang-python">Enter a number: <span class="hljs-number">6</span>
+Enter a number: <span class="hljs-number">2</span>
+Enter a number: <span class="hljs-number">9</span>
+Enter a number: <span class="hljs-number">3</span>
+Enter a number: <span class="hljs-number">5</span>
+Enter a number: done
+Maximum: <span class="hljs-number">9.0</span>
+Minimum: <span class="hljs-number">2.0</span>
+</code></pre>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="07-files.html" class="navigation navigation-prev " aria-label="Previous page: 7. Files">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="09-dictionaries.html" class="navigation navigation-next " aria-label="Next page: 9. Dictionaries">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"8. Lists","level":"2.8","depth":1,"next":{"title":"9. Dictionaries","level":"2.9","depth":1,"path":"09-dictionaries.md","ref":"09-dictionaries.md","articles":[]},"previous":{"title":"7. Files","level":"2.7","depth":1,"path":"07-files.md","ref":"07-files.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Installing Python","alt":"Installing Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Installing Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Personal Digital Assistant","alt":"Personal Digital Assistant","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Personal Digital Assistant","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programmers Talking to You","alt":"Programmers Talking to You","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programmers Talking to You","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Hardware Archicture","alt":"Hardware Archicture","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Hardware Archicture","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: Where Are you?","alt":"Where Are you?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Where Are you?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: If logic","alt":"If logic","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"If logic","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: If-Then-Else Logic","alt":"If-Then-Else Logic","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"If-Then-Else Logic","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: If-Then-ElseIf Logic","alt":"If-Then-ElseIf Logic","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"If-Then-ElseIf Logic","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Secondary memory","alt":"Secondary memory","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Secondary memory","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables and Objects","alt":"Variables and Objects","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables and Objects","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: A Tree Representation of XML","alt":"A Tree Representation of XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Tree Representation of XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: A program","alt":"A program","nro":16,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A program","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: A Program as Network of Objects","alt":"A Program as Network of Objects","nro":17,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Program as Network of Objects","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignoring Detail When Using an Object","alt":"Ignoring Detail When Using an Object","nro":18,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Using an Object","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignoring Detail When Building an Object","alt":"Ignoring Detail When Building an Object","nro":19,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Building an Object","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: A Class and Two Objects","alt":"A Class and Two Objects","nro":20,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"A Class and Two Objects","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Relational databases","alt":"Relational databases","nro":21,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Relational databases","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":22,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Rows in a Table","alt":"Rows in a Table","nro":23,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Rows in a Table","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relationships Between Tables","alt":"Relationships Between Tables","nro":24,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relationships Between Tables","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Connecting Tables Using JOIN","alt":"Connecting Tables Using JOIN","nro":25,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Connecting Tables Using JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"en","gitbook":"*"},"file":{"path":"08-lists.md","mtime":"2020-11-03T15:12:48.364Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

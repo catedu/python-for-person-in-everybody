@@ -1,0 +1,696 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5. Bucles · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-strings.html" />
+    
+    
+    <link rel="prev" href="04-functions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Comenzando el camino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Condicionales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Cadenas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Archivos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Listas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Diccionarios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuplas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Programas en red
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python y servicios web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python y Bases de Datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >5. Bucles</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="iteracion">Iteraci&#xF3;n </h1>
+<ul>
+<li><a href="#updating-variables">Actualizando variables</a></li>
+<li><a href="#the-while-statement">La declaraci&#xF3;n &apos;while&apos;</a></li>
+<li><a href="#infinite-loops">Bucles infinitos</a></li>
+<li><a href="#infinite-loops-and-break">&quot;Infinite loops&quot; y <code>break</code></a></li>
+<li><a href="#finishing-iterations-with-continue">Finalizaci&#xF3;n de iteraciones con <code>continue</code></a></li>
+<li><a href="#definite-loops-using-for">Bucles definidos usando <code>for</code></a></li>
+<li><a href="#loop-patterns">Patrones de bucle</a></li>
+<li><a href="#counting-and-summing-loops">Recuento y suma de bucles</a></li>
+<li><a href="#maximum-and-minimum-loops">Bucles m&#xE1;ximos y m&#xED;nimos</a></li>
+<li><a href="#debugging">depuraci&#xF3;n</a></li>
+<li><a href="#ejercicios">Ejercicios</a></li>
+</ul>
+<h2 id="updating-variables">Actualizando variables </h2>
+<p>Un patr&#xF3;n com&#xFA;n en las asignaciones es una instrucci&#xF3;n de asignaci&#xF3;n que actualiza una variable, donde el nuevo valor de la variable depende de la antigua.</p>
+<pre><code class="lang-python">python
+x = x + <span class="hljs-number">1</span>
+</code></pre>
+<p>Esto significa que &quot;obtenga el valor actual de <code>x</code>, agregue 1 y luego actualice <code>x</code> con el nuevo valor&quot;.</p>
+<p>Si intentas actualizar una variable que no existe, obtienes un error, porque Python eval&#xFA;a el lado derecho antes de asignar un valor a <code>x</code>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = x + <span class="hljs-number">1</span>
+NameError: name <span class="hljs-string">&apos;x&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>Antes de poder actualizar una variable, debes <strong>inicializarla</strong>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = <span class="hljs-number">0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x = x + <span class="hljs-number">1</span>
+</code></pre>
+<p>Actualizar una variable agregando 1 se llama <strong>incrementar</strong>.</p>
+<h2 id="the-while-statement">La declaraci&#xF3;n &apos;while&apos; </h2>
+<p>Los ordenadores se utilizan a menudo para automatizar tareas repetitivas. Repetir tareas id&#xE9;nticas o similares sin cometer errores es algo que a los ordenadores se les da muy bien y a las personas se les da muy mal. Debido a que la iteraci&#xF3;n es tan com&#xFA;n, Python proporciona varias caracter&#xED;sticas de lenguaje para que sea m&#xE1;s f&#xE1;cil.</p>
+<p>Una forma de iteraci&#xF3;n en Python es la instrucci&#xF3;n <code>while</code>. Aqu&#xED; hay un programa simple que cuenta a partir de cinco y luego dice &quot;&#xA1;Explosi&#xF3;n!&quot;.</p>
+<pre><code class="lang-python">n = <span class="hljs-number">5</span>
+<span class="hljs-keyword">while</span> n &gt; <span class="hljs-number">0</span>:
+    print(n)
+    n = n - <span class="hljs-number">1</span>
+print(<span class="hljs-string">&apos;Blastoff!&apos;</span>)
+</code></pre>
+<p>Casi se puede leer la instrucci&#xF3;n <code>while</code> como si fuera ingl&#xE9;s. Significa que &quot;Mientras <code>n</code> es mayor que 0, muestra el valor de <code>n</code> y luego reduce el valor de <code>n</code> en 1. Cuando llegues a 0, sal de la instrucci&#xF3;n <code>while</code> y muestra la palabra <code>Blastoff !</code>&quot;</p>
+<p>M&#xE1;s formalmente, aqu&#xED; est&#xE1; el flujo de ejecuci&#xF3;n para una instrucci&#xF3;n <code>while</code>:</p>
+<ol>
+<li>Eval&#xFA;a la condici&#xF3;n, obteniendo &quot;Verdadero&quot; o &quot;Falso&quot;.</li>
+<li>Si la condici&#xF3;n es falsa, salga de la instrucci&#xF3;n <code>while</code> y contin&#xFA;a con la ejecuci&#xF3;n en la siguiente instrucci&#xF3;n.</li>
+<li>Si la condici&#xF3;n es verdadera, ejecuta el cuerpo y luego vuelve al paso 1.</li>
+</ol>
+<p>Este tipo de flujo se llama un bucle porque el tercer paso vuelve a la parte superior. Cada vuelta del bucle la llamamos una <strong>iteraci&#xF3;n</strong>. Para el bucle anterior, dir&#xED;amos que &quot;ten&#xED;a cinco iteraciones&quot;, lo que significa que el cuerpo del bucle se ejecut&#xF3; cinco veces.</p>
+<p>El cuerpo del bucle debe cambiar el valor de una o m&#xE1;s variables para que finalmente la condici&#xF3;n se vuelva falsa y el bucle finalice. Llamamos a la variable que cambia cada vez que el bucle se ejecuta y controla cuando el bucle termina la <strong>variable de iteraci&#xF3;n</strong>. Si no hay una variable de iteraci&#xF3;n, el bucle se repetir&#xE1; para siempre, dando como resultado un <strong>bucle infinito</strong>.</p>
+<h2 id="infinite-loops">Bucles infinitos </h2>
+<p>Una fuente inagotable de diversi&#xF3;n para los programadores es la observaci&#xF3;n de que las instrucciones en el champ&#xFA;, &quot;Enjabonar, enjuagar, repetir&quot;, son un bucle infinito porque no hay una <strong>variable de iteraci&#xF3;n</strong> que indique cu&#xE1;ntas veces se debe ejecutar el bucle.</p>
+<p>En el caso de <code>countdown</code>, podemos probar que el bucle termina porque sabemos que el valor de <code>n</code> es finito, y podemos ver que el valor de <code>n</code> se reduce cada vez que pasa por el bucle, por lo que eventualmente tiene que llegar a 0. Otras veces, un bucle es obviamente infinito porque no tiene ninguna variable de iteraci&#xF3;n.</p>
+<h2 id="infinite-loops-and-break">&quot;Infinite loops&quot; y <code>break</code> </h2>
+<p>A veces no sabes que es hora de terminar un ciclo hasta que lleguas a la mitad del cuerpo. En ese caso, puedes escribir un bucle infinito a prop&#xF3;sito y luego usar la instrucci&#xF3;n <code>break</code> para saltar fuera del bucle.</p>
+<p>Este bucle es obviamente un <strong>bucle infinito</strong> porque la expresi&#xF3;n l&#xF3;gica en la instrucci&#xF3;n <code>while</code> es simplemente la constante l&#xF3;gica <code>True</code>:</p>
+<pre><code class="lang-python">n = <span class="hljs-number">10</span>
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    print(n, end=<span class="hljs-string">&apos; &apos;</span>)
+    n = n - <span class="hljs-number">1</span>
+print(<span class="hljs-string">&apos;Done!&apos;</span>)
+</code></pre>
+<p>Si cometes el error y ejecuta este c&#xF3;digo, aprender&#xE1;s r&#xE1;pidamente c&#xF3;mo detener un proceso de Python fuera de control en su sistema o d&#xF3;nde encontrar&#xE1;s el bot&#xF3;n de apagado en su ordenador. Este programa se ejecutar&#xE1; para siempre o hasta que la bater&#xED;a se agote porque la expresi&#xF3;n l&#xF3;gica en la parte superior del bucle siempre es verdadera.</p>
+<p>Si bien este es un bucle infinito disfuncional, a&#xFA;n podemos usar este patr&#xF3;n para crear bucles &#xFA;tiles, siempre y cuando agreguemos cuidadosamente <code>break</code> cuando hayamos alcanzado la condici&#xF3;n de salida.</p>
+<p>Por ejemplo, supongamos que desea recibir informaci&#xF3;n del usuario hasta que escriban <code>done</code>. Podr&#xED;as escribir:</p>
+<iframe src="https://trinket.io/embed/python3/7a1dd00756" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>La condici&#xF3;n del bucle es <code>True</code>, que siempre es verdadera, por lo que el bucle se ejecuta repetidamente hasta que llega a la instrucci&#xF3;n break.</p>
+<p>Cada vez que itera, le pide al usuario que de un input. Si el usuario escribe <code>done</code>, la instrucci&#xF3;n <code>break</code> sale del bucle. De lo contrario, el programa hace eco de lo que sea que el usuario escriba y vuelve a la parte superior del bucle. Aqu&#xED; hay una muestra de ejecuci&#xF3;n:</p>
+<pre><code class="lang-bash">&gt; hello there
+hello there
+&gt; finished
+finished
+&gt; <span class="hljs-keyword">done</span>
+Done!
+</code></pre>
+<p>Esta forma de escribir bucles <code>while</code> es com&#xFA;n porque puede verificar la condici&#xF3;n en cualquier parte del bucle (no solo en la parte superior) y puede expresar la condici&#xF3;n de detenci&#xF3;n afirmativamente (&quot;detenerse cuando esto sucede&quot;) en lugar de negativamente (&quot;seguir adelante hasta que eso suceda&quot;).</p>
+<h2 id="finishing-iterations-with-continue">Finalizaci&#xF3;n de iteraciones con <code>continue</code> </h2>
+<p>A veces te encuentras en una iteraci&#xF3;n de un bucle y deseas finalizar la iteraci&#xF3;n actual y pasar de inmediato a la siguiente iteraci&#xF3;n. En ese caso, puedes usar la instrucci&#xF3;n <code>continue</code> para saltar a la siguiente iteraci&#xF3;n sin terminar el cuerpo del bucle para la iteraci&#xF3;n actual.</p>
+<p>Aqu&#xED; hay un ejemplo de un bucle que copia su entrada hasta que el usuario escribe &quot;hecho&quot;, pero trata las l&#xED;neas que comienzan con el car&#xE1;cter de hash como l&#xED;neas que no se imprimen (como los comentarios de Python).</p>
+<iframe src="https://trinket.io/embed/python3/f1f5dc61e1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Aqu&#xED; hay una muestra de ejecuci&#xF3;n de este nuevo programa con <code>continue</code> agregado.</p>
+<pre><code class="lang-bash">&gt; hello there
+hello there
+&gt; <span class="hljs-comment"># don&apos;t print this</span>
+&gt; <span class="hljs-built_in">print</span> this!
+<span class="hljs-built_in">print</span> this!
+&gt; <span class="hljs-keyword">done</span>
+Done!
+</code></pre>
+<p>Todas las l&#xED;neas se imprimen, excepto las que comienza con el signo hash porque cuando se ejecuta <code>continue</code>, finaliza la iteraci&#xF3;n actual y vuelve a la instrucci&#xF3;n <code>while</code> para iniciar la siguiente iteraci&#xF3;n, omitiendo la instrucci&#xF3;n <code>print</code>.</p>
+<h2 id="definite-loops-using-for">Bucles definidos usando <code>for</code> </h2>
+<p>A veces queremos recorrer un <strong>conjunto</strong> de cosas como una lista de palabras, las l&#xED;neas de un archivo o una lista de n&#xFA;meros. Cuando tenemos una lista de cosas para recorrer, podemos construir un bucle <strong>definido</strong> usando una instrucci&#xF3;n <code>for</code>. Llamamos a la frase <code>while</code> un bucle <strong>indefinido</strong> porque simplemente se repite hasta que alguna condici&#xF3;n se convierte en <code>Falsa</code>, mientras que el bucle <code>for</code> se repite en un conjunto conocido de elementos, por lo que se ejecuta a trav&#xE9;s de tantas iteraciones como Elementos del conjunto.</p>
+<p>La sintaxis de un bucle <code>for</code> es similar al bucle <code>while</code> en que hay una sentencia <code>for</code> y un cuerpo de bucle:</p>
+<pre><code class="lang-python">friends = [<span class="hljs-string">&apos;Joseph&apos;</span>, <span class="hljs-string">&apos;Glenn&apos;</span>, <span class="hljs-string">&apos;Sally&apos;</span>]
+<span class="hljs-keyword">for</span> friend <span class="hljs-keyword">in</span> friends:
+    print(<span class="hljs-string">&apos;Happy New Year:&apos;</span>, friend)
+print(<span class="hljs-string">&apos;Done!&apos;</span>)
+</code></pre>
+<p>En t&#xE9;rminos de Python, la variable <code>friends</code> es una lista <sup><a href="#fn_1" id="reffn_1">1</a></sup> de tres cadenas y el bucle <code>for</code> recorre la lista y ejecuta el cuerpo una vez para cada una de las tres cadenas en la lista que da como resultado esta salida:</p>
+<pre><code class="lang-python">Happy New Year: Joseph
+Happy New Year: Glenn
+Happy New Year: Sally
+Done!
+</code></pre>
+<p>La traducci&#xF3;n de este bucle <code>for</code> al ingl&#xE9;s no es tan directa como el <code>while</code>, pero si piensas en los amigos como un <strong>conjunto</strong>, quedar&#xED;a as&#xED;: &quot;Ejecute las declaraciones en el cuerpo del bucle <code>for</code> una vez para cada amigo <strong>en</strong> el conjunto llamado amigos &quot;.</p>
+<p>Mirando el bucle <code>for</code>, <strong>for</strong> y <strong>in</strong> son palabras clave reservadas de Python, y <code>friend</code> y <code>friends</code> son variables.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> friend <span class="hljs-keyword">in</span> friends:
+    print(<span class="hljs-string">&apos;Happy New Year:&apos;</span>, friend)
+</code></pre>
+<p>En particular, <code>friend</code> es la <strong>variable de iteraci&#xF3;n</strong> para el bucle for. La variable <code>friend</code> cambia para cada iteraci&#xF3;n del bucle y se controla cuando se completa el bucle <code>for</code>. La <strong>variable de iteraci&#xF3;n</strong> pasa sucesivamente por las tres cadenas almacenadas en la variable <code>friends</code>.</p>
+<h2 id="loop-patterns">Patrones de bucle </h2>
+<p>A menudo, utilizamos un bucle <code>for</code> o <code>while</code> para revisar una lista de elementos o el contenido de un archivo y estamos buscando algo como el valor m&#xE1;s grande o m&#xE1;s peque&#xF1;o de los datos que escaneamos.</p>
+<p>Estos bucles generalmente se componen de:</p>
+<ul>
+<li>Una o m&#xE1;s variables inicializadas antes de que comience el ciclo.</li>
+<li>Realizaci&#xF3;n de algunos c&#xE1;lculos en cada elemento del cuerpo del bucle, posiblemente cambiando las variables en el cuerpo del bucle</li>
+<li>Observaci&#xF3;n las variables resultantes cuando se completa el bucle.</li>
+</ul>
+<p>Usaremos una lista de n&#xFA;meros para demostrar los conceptos y la construcci&#xF3;n de estos patrones de bucle.</p>
+<h3 id="counting-and-summing-loops">Bucles de suma y recuento </h3>
+<p>Por ejemplo, para contar el n&#xFA;mero de elementos en una lista, escribir&#xED;amos el siguiente bucle <code>for</code>:</p>
+<pre><code class="lang-python">count = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> itervar <span class="hljs-keyword">in</span> [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]:
+    count = count + <span class="hljs-number">1</span>
+print(<span class="hljs-string">&apos;Count: &apos;</span>, count)
+</code></pre>
+<p>Establecemos la variable <code>count</code> en cero antes de que comience el bucle, luego escribimos un bucle <code>for</code> para ejecutar la lista de n&#xFA;meros. Nuestra variable <strong>iterativa</strong> se llama <code>itervar</code> y, aunque no usamos <code>itervar</code> en el bucle, controla el bucle y hace que el cuerpo se ejecute una vez para cada uno de los valores de la lista.</p>
+<p>En el cuerpo del bucle, agregamos 1 al valor actual de <code>count</code> para cada uno de los valores en la lista. Mientras el bucle se est&#xE1; ejecutando, el valor de <code>count</code> es el n&#xFA;mero de valores que hemos visto &quot;hasta ahora&quot;.</p>
+<p>Una vez que el bucle se completa, el valor de <code>count</code> es el n&#xFA;mero total de elementos. El n&#xFA;mero total &quot;cae en nuestro regazo&quot; al final del bucle. Construimos el bucle para que tengamos lo deseado cuando el bucle finalice.</p>
+<p>Otro bucle similar que calcula el total de un conjunto de n&#xFA;meros es el siguiente:</p>
+<pre><code class="lang-python">total = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> itervar <span class="hljs-keyword">in</span> [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]:
+    total = total + itervar
+print(<span class="hljs-string">&apos;Total: &apos;</span>, total)
+</code></pre>
+<p>En este bucle nosotros <strong>s&#xED;</strong> usamos la <strong>variable de iteraci&#xF3;n</strong>. En lugar de simplemente agregar uno al <code>recuento</code> como en el bucle anterior, agregamos el n&#xFA;mero real (3, 41, 12, etc.) al total acumulado durante cada iteraci&#xF3;n de bucle. Antes de que el bucle comience, <code>total</code> es cero porque a&#xFA;n no hemos visto ning&#xFA;n valor. Durante el bucle, <code>total</code> es el total acumulado, y al final del bucle <code>total</code> es el total general de todos los valores en el lista.</p>
+<p>A medida que se ejecuta el bucle, <code>total</code> acumula la suma de los elementos; una variable utilizada de esta manera a veces se llama un <strong>acumulador</strong>.</p>
+<p>Ni el bucle de conteo ni el bucle de suma son particularmente &#xFA;tiles en la pr&#xE1;ctica porque hay funciones incorporadas <code>len()</code> y <code>sum()</code> que computan el n&#xFA;mero de elementos en una lista y el total de los elementos en la lista respectivamente .</p>
+<h3 id="maximum-and-minimum-loops">Bucles m&#xE1;ximos y m&#xED;nimos </h3>
+<p>Para encontrar el valor m&#xE1;s grande en una lista o secuencia, construimos el siguiente bucle:</p>
+<pre><code class="lang-python">largest = <span class="hljs-keyword">None</span>
+print(<span class="hljs-string">&apos;Before:&apos;</span>, largest)
+<span class="hljs-keyword">for</span> itervar <span class="hljs-keyword">in</span> [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]:
+    <span class="hljs-keyword">if</span> largest <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span> <span class="hljs-keyword">or</span> itervar &gt; largest :
+        largest = itervar
+    print(<span class="hljs-string">&apos;Loop:&apos;</span>, itervar, largest)
+print(<span class="hljs-string">&apos;Largest:&apos;</span>, largest)
+</code></pre>
+<p>Cuando el programa se ejecuta, la salida es la siguiente:</p>
+<pre><code class="lang-python">Before: <span class="hljs-keyword">None</span>
+Loop: <span class="hljs-number">3</span> <span class="hljs-number">3</span>
+Loop: <span class="hljs-number">41</span> <span class="hljs-number">41</span>
+Loop: <span class="hljs-number">12</span> <span class="hljs-number">41</span>
+Loop: <span class="hljs-number">9</span> <span class="hljs-number">41</span>
+Loop: <span class="hljs-number">74</span> <span class="hljs-number">74</span>
+Loop: <span class="hljs-number">15</span> <span class="hljs-number">74</span>
+Largest: <span class="hljs-number">74</span>
+</code></pre>
+<p>La variable <code>largest</code> se comprende mejor como el &quot;valor m&#xE1;s grande que hemos visto hasta ahora&quot;. Antes del bucle, asignamos a <code>largest</code> la constante <code>None</code>. <code>None</code> es un valor constante especial que podemos almacenar en una variable para marcar la variable como &quot;vac&#xED;a&quot;.</p>
+<p>Antes de que comience el bucle, el valor m&#xE1;s grande que hemos visto hasta ahora es &apos;Ninguno&apos;, ya que todav&#xED;a no hemos visto ning&#xFA;n valor. Mientras el bucle se est&#xE1; ejecutando, si <code>largest</code> es <code>None</code> entonces tomamos el primer valor que vemos como el m&#xE1;s grande hasta ahora.</p>
+<p>Despu&#xE9;s de la primera iteraci&#xF3;n, <code>largest</code> ya no es <code>None</code>, as&#xED; que la segunda parte de la expresi&#xF3;n l&#xF3;gica compuesta que comprueba, <code>itervar &gt; largest</code>, se dispara solo cuando vemos un valor que es m&#xE1;s grande que el &quot;m&#xE1;s grande hasta ahora&quot;. Cuando vemos un nuevo valor &quot;a&#xFA;n m&#xE1;s grande&quot;, tomamos ese nuevo valor para &quot;m&#xE1;s grande&quot;. Puede ver en la salida del programa que &quot;m&#xE1;s grande&quot; progresa de 3 a 41 a 74.</p>
+<p>Al final del ciclo, hemos escaneado todos los valores y la variable <code>largest</code> ahora contiene el valor m&#xE1;s grande en la lista.</p>
+<p>Para calcular el n&#xFA;mero m&#xE1;s peque&#xF1;o, el c&#xF3;digo es muy similar con un peque&#xF1;o cambio:</p>
+<pre><code class="lang-python">smallest = <span class="hljs-keyword">None</span>
+print(<span class="hljs-string">&apos;Before:&apos;</span>, smallest)
+<span class="hljs-keyword">for</span> itervar <span class="hljs-keyword">in</span> [<span class="hljs-number">3</span>, <span class="hljs-number">41</span>, <span class="hljs-number">12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">74</span>, <span class="hljs-number">15</span>]:
+    <span class="hljs-keyword">if</span> smallest <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span> <span class="hljs-keyword">or</span> itervar &lt; smallest:
+        smallest = itervar
+    print(<span class="hljs-string">&apos;Loop:&apos;</span>, itervar, smallest)
+print(<span class="hljs-string">&apos;Smallest:&apos;</span>, smallest)
+</code></pre>
+<p>Nuevamente, &apos;smallest&apos; es el &quot;m&#xE1;s peque&#xF1;o hasta ahora&quot; antes, durante y despu&#xE9;s de que se ejecute el bucle. Cuando el bucle se ha completado, <code>smallest</code> contiene el valor m&#xED;nimo en la lista.</p>
+<p>De nuevo, al contar y sumar, las funciones incorporadas <code>max()</code> y <code>min()</code> hacen que la escritura de estos bucles exactos sea innecesaria.</p>
+<p>La siguiente es una versi&#xF3;n simple de la funci&#xF3;n <code>min()</code> incorporada en Python:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">min</span><span class="hljs-params">(values)</span>:</span>
+    smallest = <span class="hljs-keyword">None</span>
+    <span class="hljs-keyword">for</span> value <span class="hljs-keyword">in</span> values:
+        <span class="hljs-keyword">if</span> smallest <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span> <span class="hljs-keyword">or</span> value &lt; smallest:
+            smallest = value
+    <span class="hljs-keyword">return</span> smallest
+</code></pre>
+<p>En la versi&#xF3;n de la funci&#xF3;n anterior, eliminamos todas las declaraciones <code>print</code> para que sean equivalentes a la funci&#xF3;n <code>min</code> que ya est&#xE1; incorporada en Python.</p>
+<h2 id="debugging">Depurando </h2>
+<p>A medida que comienzas a escribir programas m&#xE1;s grandes, puedes pasar m&#xE1;s tiempo depurando. M&#xE1;s c&#xF3;digo significa m&#xE1;s posibilidades de cometer un error y m&#xE1;s lugares para que los errores se oculten.</p>
+<p>Una forma de reducir el tiempo de depuraci&#xF3;n es &quot;depuraci&#xF3;n por bisecci&#xF3;n&quot;. Por ejemplo, si hay 100 l&#xED;neas en tu programa y las verificas una cada vez, te tomar&#xED;a 100 pasos.</p>
+<p>En su lugar, intenta romper el problema por la mitad. Busca en la mitad del programa, o cerca de &#xE9;l, un valor intermedio que puedas verificar. Agrega una declaraci&#xF3;n <code>print</code> (o algo que puedas verificar) y ejecuta el programa.</p>
+<p>Si la verificaci&#xF3;n del punto medio es incorrecta, el problema debe estar en la primera mitad del programa. Si es correcto, el problema est&#xE1; en la segunda mitad.</p>
+<p>Cada vez que realizas una verificaci&#xF3;n como esta, reduces a la mitad el n&#xFA;mero de l&#xED;neas en las que tiene que buscar. Despu&#xE9;s de seis pasos (que es mucho menos que 100), se reducir&#xED;a a una o dos l&#xED;neas de c&#xF3;digo, al menos en teor&#xED;a.</p>
+<p>En la pr&#xE1;ctica, no siempre est&#xE1; claro cu&#xE1;l es la &quot;mitad del programa&quot; y no siempre es posible verificarlo. No tiene sentido contar l&#xED;neas y encontrar el punto medio exacto. En su lugar, piensa en los lugares del programa en los que podr&#xED;a haber errores y en los lugares donde es f&#xE1;cil poner un chequeo. Luego, elije un lugar donde pienses que las probabilidades son casi las mismas de que el error est&#xE9; antes o despu&#xE9;s de la comprobaci&#xF3;n.</p>
+<h2 id="ejercicios">Ejercicios </h2>
+<p><strong>Ejercicio 1</strong> escribe un programa que lea n&#xFA;meros repetidamente hasta que el usuario ingrese &quot;listo&quot;. Una vez que se ingrese &quot;listo&quot;, imprima el total, el recuento y el promedio de los n&#xFA;meros. Si el usuario ingresa algo que no sea un n&#xFA;mero, detecta su error usando <code>try</code> y <code>except</code> e imprime un mensaje de error y salta al siguiente n&#xFA;mero.</p>
+<pre><code class="lang-python">Enter a number: <span class="hljs-number">4</span>
+Enter a number: <span class="hljs-number">5</span>
+Enter a number: bad data
+Invalid input
+Enter a number: <span class="hljs-number">7</span>
+Enter a number: done
+<span class="hljs-number">16</span> <span class="hljs-number">3</span> <span class="hljs-number">5.333333333333333</span>
+</code></pre>
+<p><strong>Ejercicio 2</strong> escribe otro programa que solicite una lista de n&#xFA;meros como arriba y al final imprima el m&#xE1;ximo y el m&#xED;nimo de los n&#xFA;meros en lugar del promedio.</p>
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. Examinaremos las listas con m&#xE1;s detalle en un cap&#xED;tulo posterior. <a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-functions.html" class="navigation navigation-prev " aria-label="Previous page: 4. Funciones">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-strings.html" class="navigation navigation-next " aria-label="Next page: 6. Cadenas">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5. Bucles","level":"2.5","depth":1,"next":{"title":"6. Cadenas","level":"2.6","depth":1,"path":"06-strings.md","ref":"06-strings.md","articles":[]},"previous":{"title":"4. Funciones","level":"2.4","depth":1,"path":"04-functions.md","ref":"04-functions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Instalando Python","alt":"Instalando Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Instalando Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Asistente personal digital","alt":"Asistente personal digital","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Asistente personal digital","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programadores hablando contigo","alt":"Programadores hablando contigo","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programadores hablando contigo","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Arquitectura de hardware","alt":"Arquitectura de hardware","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Arquitectura de hardware","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: ¿Dónde estás?","alt":"¿Dónde estás?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"¿Dónde estás?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: Si logica","alt":"Si logica","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Si logica","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: Lógica de If-Then-Else","alt":"Lógica de If-Then-Else","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Lógica de If-Then-Else","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: Lógica de elif","alt":"Lógica de elif","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Lógica de elif","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Memoria secundaria","alt":"Memoria secundaria","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Memoria secundaria","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables y objetos","alt":"Variables y objetos","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables y objetos","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: Una representación en árbol de XML","alt":"Una representación en árbol de XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Una representación en árbol de XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"13-web.html#fig2.13.2","level":"2.13","list_caption":"Figure: Arquitectura orientada a Servicios","alt":"Arquitectura orientada a Servicios","nro":16,"url":"../img/api.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Arquitectura orientada a Servicios","attributes":{},"skip":false,"key":"2.13.2"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: Un programa","alt":"Un programa","nro":17,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Un programa","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: Un programa como red de objetos","alt":"Un programa como red de objetos","nro":18,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Un programa como red de objetos","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignorar los detalles al usar un objeto","alt":"Ignorar los detalles al usar un objeto","nro":19,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignorar los detalles al usar un objeto","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignorar los detalles al construir un objeto","alt":"Ignorar los detalles al construir un objeto","nro":20,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignorar los detalles al construir un objeto","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: Una clase y dos objetos","alt":"Una clase y dos objetos","nro":21,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"Una clase y dos objetos","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Bases de datos relacionales","alt":"Bases de datos relacionales","nro":22,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Bases de datos relacionales","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":23,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Filas en una tabla","alt":"Filas en una tabla","nro":24,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Filas en una tabla","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relaciones entre tablas","alt":"Relaciones entre tablas","nro":25,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relaciones entre tablas","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Conectando tablas utilizando JOIN","alt":"Conectando tablas utilizando JOIN","nro":26,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Conectando tablas utilizando JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"es","gitbook":"*"},"file":{"path":"05-iterations.md","mtime":"2020-11-03T15:12:48.368Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

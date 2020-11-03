@@ -1,0 +1,810 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2. Variables · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03-conditional.html" />
+    
+    
+    <link rel="prev" href="01-intro.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Starting the journey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Iterations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Networked Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python and Web Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python and Databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >2. Variables</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="variables-expressions-and-statements">Variables, expressions, and statements </h1>
+<ul>
+<li><a href="#values-and-types">Values and types</a></li>
+<li><a href="#variables">Variables</a></li>
+<li><a href="#variable-names-and-keywords">Variable names and keywords</a></li>
+<li><a href="#statements">Statements</a></li>
+<li><a href="#operators-and-operands">Operators and operands</a></li>
+<li><a href="#expressions">Expressions</a></li>
+<li><a href="#order-of-operations">Order of operations</a></li>
+<li><a href="#modulus-operator">Modulus operator</a></li>
+<li><a href="#string-operations">String operations</a></li>
+<li><a href="#asking-the-user-for-input">Asking the user for input</a></li>
+<li><a href="#comments">Comments</a></li>
+<li><a href="#choosing-mnemonic-variable-names">Choosing mnemonic variable names</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#exercises">Exercises</a></li>
+</ul>
+<h2 id="values-and-types">Values and types </h2>
+<p>A <strong><a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a></strong> is one of the basic things a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> works with, like a letter or a number. The values we have seen so far are <code>1</code>, <code>2</code>, and &quot;Hello, World!&quot;</p>
+<p>These values belong to different <strong>types</strong>: <code>2</code> is an <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a>, and &quot;Hello, World!&quot; is a <strong><a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a></strong>, so called because it contains a &quot;<a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>&quot; of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.</p>
+<p>The <code>print</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> also works for integers. We use the <code>python</code> command to start the interpreter.</p>
+<pre><code class="lang-python">python
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-number">4</span>)
+<span class="hljs-number">4</span>
+</code></pre>
+<p>If you are not sure what <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> a <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> has, the interpreter can tell you.</p>
+<pre><code class="lang-python">&gt;&gt;&gt; type(&apos;Hello, World!&apos;)
+&lt;class &apos;str&apos;&gt;
+&gt;&gt;&gt; type(17)
+&lt;class &apos;int&apos;&gt;
+</code></pre>
+<p>Not surprisingly, strings belong to the <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> <code>str</code> and integers belong to the <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> <code>int</code>. Less obviously, numbers with a decimal point belong to a <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> called <code>float</code>, because these numbers are represented in a format called <strong><a href="GLOSSARY.html#floating-point" class="glossary-term" title="A type that represents numbers with fractional parts.">floating point</a></strong>.</p>
+<pre><code class="lang-python">&gt;&gt;&gt; type(3.2)
+&lt;class &apos;float&apos;&gt;
+</code></pre>
+<p>What about values like &quot;17&quot; and &quot;3.2&quot;? They look like numbers, but they are in quotation marks like strings.</p>
+<pre><code class="lang-python">&gt;&gt;&gt; type(&apos;17&apos;)
+&lt;class &apos;str&apos;&gt;
+&gt;&gt;&gt; type(&apos;3.2&apos;)
+&lt;class &apos;str&apos;&gt;
+</code></pre>
+<p>They&apos;re strings.</p>
+<p>When you <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> a large <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a>, you might be tempted to use commas between groups of three digits, as in <code>1,000,000</code>. This is not a legal <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a> in Python, but it is legal:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-number">1</span>,<span class="hljs-number">000</span>,<span class="hljs-number">000</span>)
+<span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>
+</code></pre>
+<p>Well, that&apos;s not what we expected at all! Python interprets <code>1,000,000</code> as a comma-separated <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of integers, which it prints with spaces between.</p>
+<p>This is the first example we have seen of a <a href="GLOSSARY.html#semantic-error" class="glossary-term" title="An error in a program that makes it do something other than what the programmer intended.">semantic error</a>: the code runs without producing an error message, but it doesn&apos;t do the &quot;right&quot; thing.</p>
+<h2 id="variables">Variables </h2>
+<p>One of the most powerful features of a programming language is the ability to manipulate <strong>variables</strong>. A <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> is a name that refers to a <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>.</p>
+<p>An <strong><a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a></strong> creates new variables and gives them values:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>message = <span class="hljs-string">&apos;And now for something completely different&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>n = <span class="hljs-number">17</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>pi = <span class="hljs-number">3.1415926535897931</span>
+</code></pre>
+<p>This example makes three assignments. The first assigns a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> to a new <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> named <code>message</code>; the second assigns the <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a> <code>17</code> to <code>n</code>; the third assigns the (approximate) <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of <strong>&#x3C0;</strong> to <code>pi</code>.</p>
+<p>To display the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a>, you can use a print <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(n)
+<span class="hljs-number">17</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(pi)
+<span class="hljs-number">3.141592653589793</span>
+</code></pre>
+<p>The <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> of a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> is the <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> of the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> it refers to.</p>
+<pre><code class="lang-python">&gt;&gt;&gt; type(message)
+&lt;class &apos;str&apos;&gt;
+&gt;&gt;&gt; type(n)
+&lt;class &apos;int&apos;&gt;
+&gt;&gt;&gt; type(pi)
+&lt;class &apos;float&apos;&gt;
+</code></pre>
+<h2 id="variable-names-and-keywords">Variable names and keywords </h2>
+<p>Programmers generally choose names for their variables that are meaningful and document what the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> is used for.</p>
+<p><a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">Variable</a> names can be arbitrarily long. They can contain both letters and numbers, but they cannot start with a number. It is legal to use uppercase letters, but it is a good idea to begin <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names with a lowercase letter (you&apos;ll see why later).</p>
+<p>The underscore character (<code>_</code>) can appear in a name. It is often used in names with multiple words, such as <code>my_name</code> or <code>airspeed_of_unladen_swallow</code>. <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">Variable</a> names can start with an underscore character, but we generally avoid doing this unless we are writing library code for others to use.</p>
+<p>If you give a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> an illegal name, you get a syntax error:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; 76trombones = &apos;big parade&apos;
+SyntaxError: invalid syntax
+&gt;&gt;&gt; more@ = 1000000
+SyntaxError: invalid syntax
+&gt;&gt;&gt; class = &apos;Advanced Theoretical Zymurgy&apos;
+SyntaxError: invalid syntax
+</code></pre>
+<p><code>76trombones</code> is illegal because it begins with a number. <code>more@</code> is illegal because it contains an illegal character, <code>@</code>. But what&apos;s wrong with <code>class</code>?</p>
+<p>It turns out that <code>class</code> is one of Python&apos;s <strong>keywords</strong>. The interpreter uses keywords to recognize the structure of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, and they cannot be used as <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names.</p>
+<p>Python reserves 33 keywords:</p>
+<pre><code class="lang-python">and       del       from      None      True
+as        elif      global    nonlocal  try
+assert    else      if        not       while
+break     except    import    or        with
+class     False     in        pass      yield
+continue  finally   is        raise
+def       for       lambda    return
+</code></pre>
+<p>You might want to keep this <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> handy. If the interpreter complains about one of your <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names and you don&apos;t know why, see if it is on this <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<h2 id="statements">Statements </h2>
+<p>A <strong><a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a></strong> is a unit of code that the Python interpreter can execute. We have seen two kinds of statements: print being an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> and <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a>.</p>
+<p>When you <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> a <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> in <a href="GLOSSARY.html#interactive-mode" class="glossary-term" title="A way of using the Python interpreter by typing commands and expressions at the prompt.">interactive mode</a>, the interpreter executes it and displays the result, if there is one.</p>
+<p>A script usually contains a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of statements. If there is more than one <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>, the results appear one at a time as the statements execute.</p>
+<p>For example, the script</p>
+<pre><code class="lang-python">print(<span class="hljs-number">1</span>)
+x = <span class="hljs-number">2</span>
+print(x)
+</code></pre>
+<p>produces the output</p>
+<pre><code class="lang-python"><span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+</code></pre>
+<p>The <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> produces no output.</p>
+<h2 id="operators-and-operands">Operators and operands </h2>
+<p><strong>Operators</strong> are special symbols that represent computations like addition and multiplication. The values the <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> is applied to are called <strong>operands</strong>.</p>
+<p>The operators <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, and <code>**</code> perform addition, subtraction, multiplication, division, and exponentiation, as in the following examples:</p>
+<pre><code class="lang-python"><span class="hljs-number">20</span>+<span class="hljs-number">32</span>   hour<span class="hljs-number">-1</span>   hour*<span class="hljs-number">60</span>+minute   minute/<span class="hljs-number">60</span>   <span class="hljs-number">5</span>**<span class="hljs-number">2</span>   (<span class="hljs-number">5</span>+<span class="hljs-number">9</span>)*(<span class="hljs-number">15</span><span class="hljs-number">-7</span>)
+</code></pre>
+<p>There has been a change in the division <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> between Python 2.x and Python 3.x. In Python 3.x, the result of this division is a <a href="GLOSSARY.html#floating-point" class="glossary-term" title="A type that represents numbers with fractional parts.">floating point</a> result:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>minute = <span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>minute/<span class="hljs-number">60</span>
+<span class="hljs-number">0.9833333333333333</span>
+</code></pre>
+<p>The division <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> in Python 2.0 would divide two integers and truncate the result to an <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>minute = <span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>minute/<span class="hljs-number">60</span>
+<span class="hljs-number">0</span>
+</code></pre>
+<p>To obtain the same answer in Python 3.0 use floored ( // <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a>) division.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>minute = <span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>minute//<span class="hljs-number">60</span>
+<span class="hljs-number">0</span>
+</code></pre>
+<p>In Python 3.0 <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a> division functions much more as you would expect if you entered the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> on a calculator.</p>
+<h2 id="expressions">Expressions </h2>
+<p>An <strong><a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a></strong> is a combination of values, variables, and operators. A <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> all by itself is considered an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>, and so is a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a>, so the following are all legal expressions (assuming that the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> <code>x</code> has been assigned a <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>):</p>
+<pre><code class="lang-python"><span class="hljs-number">17</span>
+x
+x + <span class="hljs-number">17</span>
+</code></pre>
+<p>If you <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> in <a href="GLOSSARY.html#interactive-mode" class="glossary-term" title="A way of using the Python interpreter by typing commands and expressions at the prompt.">interactive mode</a>, the interpreter <strong>evaluates</strong> it and displays the result:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> + <span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+</code></pre>
+<p>But in a script, an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> all by itself doesn&apos;t do anything! This is a common source of confusion for beginners.</p>
+<p><strong>Exercise 1</strong>: <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">Type</a> the following statements in the Python interpreter to see what they do:</p>
+<pre><code class="lang-python"><span class="hljs-number">5</span>
+x = <span class="hljs-number">5</span>
+x + <span class="hljs-number">1</span>
+</code></pre>
+<h2 id="order-of-operations">Order of operations </h2>
+<p>When more than one <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> appears in an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>, the order of evaluation depends on the <strong><a href="GLOSSARY.html#rules-of-precedence" class="glossary-term" title="The set of rules governing the order in which expressions involving multiple operators and operands are evaluated.">rules of precedence</a></strong>. For mathematical operators, Python follows mathematical convention. The acronym <strong>PEMDAS</strong> is a useful way to remember the rules:</p>
+<ul>
+<li><strong>P</strong>arentheses have the highest precedence and can be used to force an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> to <a href="GLOSSARY.html#evaluate" class="glossary-term" title="To simplify an expression by performing the operations in order to yield a single value.">evaluate</a> in the order you want. Since expressions in parentheses are evaluated first, <code>2 *     (3-1)</code> is 4, and <code>(1+1)**(5-2)</code> is 8. You can also use parentheses to make an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> easier to read, as in <code>(minute * 100) / 60</code>, even if it doesn&apos;t change the result.</li>
+<li><strong>E</strong>xponentiation has the next highest precedence, so <code>2**1+1</code> is 3, not 4, and <code>3*1**3</code> is 3, not 27.</li>
+<li><strong>M</strong>ultiplication and <strong>D</strong>ivision have the same precedence, which is higher than <strong>A</strong>ddition and <strong>S</strong>ubtraction, which also have the same precedence. So <code>2*3-1</code> is 5, not 4, and <code>6+4/2</code> is 8.0, not 5.</li>
+<li>Operators with the same precedence are evaluated from left to right. So the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> <code>5-3-1</code> is 1, not 3, because the <code>5-3</code> happens first and then <code>1</code> is subtracted from <code>2</code>.</li>
+</ul>
+<p>When in doubt, always put parentheses in your expressions to make sure the computations are performed in the order you intend.</p>
+<h2 id="modulus-operator">Modulus operator </h2>
+<p>The <strong><a href="GLOSSARY.html#modulus-operator" class="glossary-term" title="An operator, denoted with a percent sign (%), that works on integers and yields the remainder when one number is divided by another.">modulus operator</a></strong> works on integers and yields the remainder when the first <a href="GLOSSARY.html#operand" class="glossary-term" title="One of the values on which an operator operates.">operand</a> is divided by the second. In Python, the <a href="GLOSSARY.html#modulus-operator" class="glossary-term" title="An operator, denoted with a percent sign (%), that works on integers and yields the remainder when one number is divided by another.">modulus operator</a> is a percent sign (<code>%</code>). The syntax is the same as for other operators:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>quotient = <span class="hljs-number">7</span> // <span class="hljs-number">3</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(quotient)
+<span class="hljs-number">2</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>remainder = <span class="hljs-number">7</span> % <span class="hljs-number">3</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(remainder)
+<span class="hljs-number">1</span>
+</code></pre>
+<p>So 7 divided by 3 is 2 with 1 left over.</p>
+<p>The <a href="GLOSSARY.html#modulus-operator" class="glossary-term" title="An operator, denoted with a percent sign (%), that works on integers and yields the remainder when one number is divided by another.">modulus operator</a> turns out to be surprisingly useful. For example, you can check whether one number is divisible by another: if <code>x % y</code> is zero, then <code>x</code> is divisible by <code>y</code>.</p>
+<p>You can also extract the right-most digit or digits from a number. For example, <code>x % 10</code> yields the right-most digit of <code>x</code> (in base 10). Similarly, <code>x % 100</code> yields the last two digits.</p>
+<h2 id="string-operations">String operations </h2>
+<p>The <code>+</code> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> works with strings, but it is not addition in the mathematical sense. Instead it performs <strong>concatenation</strong>, which means joining the strings by linking them end to end. For example:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>first = <span class="hljs-number">10</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>second = <span class="hljs-number">15</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(first+second)
+<span class="hljs-number">25</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>first = <span class="hljs-string">&apos;100&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>second = <span class="hljs-string">&apos;150&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(first + second)
+<span class="hljs-number">100150</span>
+</code></pre>
+<p>The output of this <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> is <code>100150</code>.</p>
+<h2 id="asking-the-user-for-input">Asking the user for input </h2>
+<p>Sometimes we would like to take the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> for a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> from the user via their keyboard. Python provides a built-in <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> called <code>input</code> that gets input from the keyboard<sup><a href="#fn_1" id="reffn_1">1</a></sup>. When this <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> is called, the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> stops and waits for the user to <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> something. When the user presses <code>Return</code> or <code>Enter</code>, the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> resumes and <code>input</code> returns what the user typed as a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>input = input()
+Some silly stuff
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(input)
+Some silly stuff
+</code></pre>
+<p>Before getting input from the user, it is a good idea to print a <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a> telling the user what to input. You can pass a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> to <code>input</code> to be displayed to the user before pausing for input:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; name = input(&apos;What is your name?\n&apos;)
+What is your name?
+Chuck
+&gt;&gt;&gt; print(name)
+Chuck
+</code></pre>
+<p>The <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> <code>\n</code> at the end of the <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a> represents a <strong><a href="GLOSSARY.html#newline" class="glossary-term" title="A special character used in files and strings to indicate the end of a line.">newline</a></strong>, which is a special character that causes a line break. That&apos;s why the user&apos;s input appears below the <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a>.</p>
+<p>If you expect the user to <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> an <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a>, you can try to convert the return <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> to <code>int</code> using the <code>int()</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a>:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; prompt = &apos;What...is the airspeed velocity of an unladen swallow?\n&apos;
+&gt;&gt;&gt; speed = input(prompt)
+What...is the airspeed velocity of an unladen swallow?
+17
+&gt;&gt;&gt; int(speed)
+17
+&gt;&gt;&gt; int(speed) + 5
+22
+</code></pre>
+<p>But if the user types something other than a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> of digits, you get an error:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; speed = input(prompt)
+What...is the airspeed velocity of an unladen swallow?
+What do you mean, an African or a European swallow?
+&gt;&gt;&gt; int(speed)
+ValueError: invalid literal for int() with base 10:
+</code></pre>
+<p>We will see how to handle this kind of error later.</p>
+<h2 id="comments">Comments </h2>
+<p>As programs get bigger and more complicated, they get more difficult to read. Formal languages are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why.</p>
+<p>For this reason, it is a good idea to add notes to your programs to explain in natural language what the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> is doing. These notes are called <strong>comments</strong>, and in Python they start with the <code>#</code> symbol:</p>
+<pre><code class="lang-python"><span class="hljs-comment"># compute the percentage of the hour that has elapsed</span>
+percentage = (minute * <span class="hljs-number">100</span>) / <span class="hljs-number">60</span>
+</code></pre>
+<p>In this case, the <a href="GLOSSARY.html#comment" class="glossary-term" title="Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.">comment</a> appears on a line by itself. You can also put comments at the end of a line:</p>
+<pre><code class="lang-python">percentage = (minute * <span class="hljs-number">100</span>) / <span class="hljs-number">60</span>     <span class="hljs-comment"># percentage of an hour</span>
+</code></pre>
+<p>Everything from the <code>\#</code> to the end of the line is ignored; it has no effect on the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>.</p>
+<p>Comments are most useful when they document non-obvious features of the code. It is reasonable to assume that the reader can figure out <strong>what</strong> the code does; it is much more useful to explain <strong>why</strong>.</p>
+<p>This <a href="GLOSSARY.html#comment" class="glossary-term" title="Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.">comment</a> is redundant with the code and useless:</p>
+<pre><code class="lang-python">v = <span class="hljs-number">5</span>     <span class="hljs-comment"># assign 5 to v</span>
+</code></pre>
+<p>This <a href="GLOSSARY.html#comment" class="glossary-term" title="Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.">comment</a> contains useful information that is not in the code:</p>
+<pre><code class="lang-python">v = <span class="hljs-number">5</span>     <span class="hljs-comment"># velocity in meters/second.</span>
+</code></pre>
+<p>Good <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names can reduce the need for comments, but long names can make complex expressions hard to read, so there is a trade-off.</p>
+<h2 id="choosing-mnemonic-variable-names">Choosing mnemonic variable names </h2>
+<p>As long as you follow the simple rules of <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> naming, and avoid reserved words, you have a lot of choice when you name your variables. In the beginning, this choice can be confusing both when you read a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> and when you write your own programs. For example, the following three programs are <a href="GLOSSARY.html#identical" class="glossary-term" title="Being the same object (which implies equivalence).">identical</a> in terms of what they accomplish, but very different when you read them and try to understand them.</p>
+<pre><code class="lang-python">a = <span class="hljs-number">35.0</span>
+b = <span class="hljs-number">12.50</span>
+c = a * b
+print(c)
+</code></pre>
+<pre><code class="lang-python">hours = <span class="hljs-number">35.0</span>
+rate = <span class="hljs-number">12.50</span>
+pay = hours * rate
+print(pay)
+</code></pre>
+<pre><code class="lang-python">x1q3z9ahd = <span class="hljs-number">35.0</span>
+x1q3z9afd = <span class="hljs-number">12.50</span>
+x1q3p9afd = x1q3z9ahd * x1q3z9afd
+print(x1q3p9afd)
+</code></pre>
+<p>The Python interpreter sees all three of these programs as <strong>exactly the same</strong> but humans see and understand these programs quite differently. Humans will most quickly understand the <strong>intent</strong> of the second <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> because the programmer has chosen <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names that reflect their intent regarding what data will be stored in each <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a>.</p>
+<p>We call these wisely chosen <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names &quot;<a href="GLOSSARY.html#mnemonic" class="glossary-term" title="A memory aid. We often give variables mnemonic names to help us remember what is stored in the variable.">mnemonic</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names&quot;. The word <strong><a href="GLOSSARY.html#mnemonic" class="glossary-term" title="A memory aid. We often give variables mnemonic names to help us remember what is stored in the variable.">mnemonic</a></strong><sup><a href="#fn_2" id="reffn_2">2</a></sup> means &quot;memory aid&quot;. We choose <a href="GLOSSARY.html#mnemonic" class="glossary-term" title="A memory aid. We often give variables mnemonic names to help us remember what is stored in the variable.">mnemonic</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names to help us remember why we created the <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> in the first place.</p>
+<p>While this all sounds great, and it is a very good idea to use <a href="GLOSSARY.html#mnemonic" class="glossary-term" title="A memory aid. We often give variables mnemonic names to help us remember what is stored in the variable.">mnemonic</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names, <a href="GLOSSARY.html#mnemonic" class="glossary-term" title="A memory aid. We often give variables mnemonic names to help us remember what is stored in the variable.">mnemonic</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names can get in the way of a beginning programmer&apos;s ability to <a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a> and understand code. This is because beginning programmers have not yet memorized the reserved words (there are only 33 of them) and sometimes variables with names that are too descriptive start to look like part of the language and not just well-chosen <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names.</p>
+<p>Take a quick look at the following Python sample code which loops through some data. We will cover loops soon, but for now try to just puzzle through what this means:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> words:
+    print(word)
+</code></pre>
+<p>What is happening here? Which of the tokens (for, word, in, etc.) are reserved words and which are just <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names? Does Python understand at a fundamental level the notion of words? Beginning programmers have trouble separating what parts of the code <strong>must</strong> be the same as this example and what parts of the code are simply choices made by the programmer.</p>
+<p>The following code is <a href="GLOSSARY.html#equivalent" class="glossary-term" title="Having the same value.">equivalent</a> to the above code:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> slice <span class="hljs-keyword">in</span> pizza:
+    print(slice)
+</code></pre>
+<p>It is easier for the beginning programmer to look at this code and know which parts are reserved words defined by Python and which parts are simply <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names chosen by the programmer. It is pretty clear that Python has no fundamental understanding of pizza and slices and the fact that a pizza consists of a set of one or more slices.</p>
+<p>But if our <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> is truly about reading data and looking for words in the data, <code>pizza</code> and <code>slice</code> are very un-<a href="GLOSSARY.html#mnemonic" class="glossary-term" title="A memory aid. We often give variables mnemonic names to help us remember what is stored in the variable.">mnemonic</a> <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names. Choosing them as <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> names distracts from the meaning of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>.</p>
+<p>After a pretty short period of time, you will know the most common reserved words and you will start to see the reserved words jumping out at you:</p>
+<p><code>word *in* words*:*\</code> <code>*print* word</code></p>
+<p>The parts of the code that are defined by Python (<code>for</code>, <code>in</code>, <code>print</code>, and <code>:</code>) are in bold and the programmer-chosen variables (<code>word</code> and <code>words</code>) are not in bold. Many text editors are aware of Python syntax and will color reserved words differently to give you clues to keep your variables and reserved words separate. After a while you will begin to read Python and quickly determine what is a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> and what is a reserved word.</p>
+<h2 id="debugging">Debugging </h2>
+<p>At this point, the syntax error you are most likely to make is an illegal <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> name, like <code>class</code> and <code>yield</code>, which are keywords, or <code>odd~job</code> and <code>US$</code>, which contain illegal characters.</p>
+<p>If you put a space in a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> name, Python thinks it is two operands without an <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>bad name = <span class="hljs-number">5</span>
+SyntaxError: invalid syntax
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>month = <span class="hljs-number">09</span>
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>
+    month = <span class="hljs-number">09</span>
+             ^
+SyntaxError: invalid token
+</code></pre>
+<p>For syntax errors, the error messages don&apos;t help much. The most common messages are <code>SyntaxError: invalid syntax</code> and <code>SyntaxError: invalid token</code>, neither of which is very informative.</p>
+<p>The runtime error you are most likely to make is a &quot;use before def;&quot; that is, trying to use a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> before you have assigned a <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>. This can happen if you spell a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> name wrong:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>principal = <span class="hljs-number">327.68</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>interest = principle * rate
+NameError: name <span class="hljs-string">&apos;principle&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>Variables names are case sensitive, so <code>LaTeX</code> is not the same as <code>latex</code>.</p>
+<p>At this point, the most likely cause of a <a href="GLOSSARY.html#semantic-error" class="glossary-term" title="An error in a program that makes it do something other than what the programmer intended.">semantic error</a> is the order of operations. For example, to <a href="GLOSSARY.html#evaluate" class="glossary-term" title="To simplify an expression by performing the operations in order to yield a single value.">evaluate</a> 1&#x2005;/&#x2005;2<strong>&#x3C0;</strong>, you might be tempted to write</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1.0</span> / <span class="hljs-number">2.0</span> * pi
+</code></pre>
+<p>But the division happens first, so you would get <strong>&#x3C0;</strong>&#x2005;/&#x2005;2, which is not the same thing! There is no way for Python to know what you meant to write, so in this case you don&apos;t get an error message; you just get the wrong answer.</p>
+<h2 id="exercises">Exercises </h2>
+<p><strong>Exercise 1</strong>: Write a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that uses <code>input</code> to <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a> a user for their name and then welcomes them.</p>
+<pre><code class="lang-python">Enter your name: Chuck
+Hello Chuck
+</code></pre>
+<p><strong>Exercise 3</strong>: Write a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to <a href="GLOSSARY.html#prompt" class="glossary-term" title="When a program displays a message and pauses for the user to type some input to the program.">prompt</a> the user for hours and rate per hour to compute gross pay.</p>
+<pre><code class="lang-python">Enter Hours: <span class="hljs-number">35</span>
+Enter Rate: <span class="hljs-number">2.75</span>
+Pay: <span class="hljs-number">96.25</span>
+</code></pre>
+<p>We won&apos;t worry about making sure our pay has exactly two digits after the decimal place for now. If you want, you can play with the built-in Python <code>round</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> to properly round the resulting pay to two decimal places.</p>
+<p><strong>Exercise 4</strong>: Assume that we execute the following <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> statements:</p>
+<pre><code class="lang-python">width = <span class="hljs-number">17</span>
+height = <span class="hljs-number">12.0</span>
+</code></pre>
+<p>For each of the following expressions, write the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> and the <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> (of the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> of the <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a>).</p>
+<ol>
+<li><code>width//2</code></li>
+<li><code>width/2.0</code></li>
+<li><code>height/3</code></li>
+<li><code>1 + 2 \* 5</code></li>
+</ol>
+<p>Use the Python interpreter to check your answers.</p>
+<p><strong>Exercise 5</strong>: Write a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> which prompts the user for a Celsius temperature, convert the temperature to Fahrenheit, and print out the converted temperature.</p>
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. In Python 2.0, this <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> was named <code>raw_input</code>.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. See <a href="http://en.wikipedia.org/wiki/Mnemonic" target="_blank">http://en.wikipedia.org/wiki/Mnemonic</a> for an extended description of the word &quot;<a href="GLOSSARY.html#mnemonic" class="glossary-term" title="A memory aid. We often give variables mnemonic names to help us remember what is stored in the variable.">mnemonic</a>&quot;.<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#x21A9;</a>
+</blockquote>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-intro.html" class="navigation navigation-prev " aria-label="Previous page: 1. Starting the journey">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03-conditional.html" class="navigation navigation-next " aria-label="Next page: 3. Conditionals">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2. Variables","level":"2.2","depth":1,"next":{"title":"3. Conditionals","level":"2.3","depth":1,"path":"03-conditional.md","ref":"03-conditional.md","articles":[]},"previous":{"title":"1. Starting the journey","level":"2.1","depth":1,"path":"01-intro.md","ref":"01-intro.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Installing Python","alt":"Installing Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Installing Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Personal Digital Assistant","alt":"Personal Digital Assistant","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Personal Digital Assistant","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programmers Talking to You","alt":"Programmers Talking to You","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programmers Talking to You","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Hardware Archicture","alt":"Hardware Archicture","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Hardware Archicture","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: Where Are you?","alt":"Where Are you?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Where Are you?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: If logic","alt":"If logic","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"If logic","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: If-Then-Else Logic","alt":"If-Then-Else Logic","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"If-Then-Else Logic","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: If-Then-ElseIf Logic","alt":"If-Then-ElseIf Logic","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"If-Then-ElseIf Logic","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Secondary memory","alt":"Secondary memory","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Secondary memory","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables and Objects","alt":"Variables and Objects","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables and Objects","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: A Tree Representation of XML","alt":"A Tree Representation of XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Tree Representation of XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: A program","alt":"A program","nro":16,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A program","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: A Program as Network of Objects","alt":"A Program as Network of Objects","nro":17,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Program as Network of Objects","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignoring Detail When Using an Object","alt":"Ignoring Detail When Using an Object","nro":18,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Using an Object","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignoring Detail When Building an Object","alt":"Ignoring Detail When Building an Object","nro":19,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Building an Object","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: A Class and Two Objects","alt":"A Class and Two Objects","nro":20,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"A Class and Two Objects","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Relational databases","alt":"Relational databases","nro":21,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Relational databases","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":22,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Rows in a Table","alt":"Rows in a Table","nro":23,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Rows in a Table","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relationships Between Tables","alt":"Relationships Between Tables","nro":24,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relationships Between Tables","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Connecting Tables Using JOIN","alt":"Connecting Tables Using JOIN","nro":25,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Connecting Tables Using JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"en","gitbook":"*"},"file":{"path":"02-variables.md","mtime":"2020-11-03T15:12:48.364Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

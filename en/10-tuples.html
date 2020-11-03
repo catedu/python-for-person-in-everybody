@@ -1,0 +1,753 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10. Tuples · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11-regex.html" />
+    
+    
+    <link rel="prev" href="09-dictionaries.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Starting the journey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Iterations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Networked Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python and Web Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python and Databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >10. Tuples</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tuples">Tuples </h1>
+<h2 id="tuples-are-immutable">Tuples are immutable </h2>
+<p>A <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a><sup><a href="#fn_1" id="reffn_1">1</a></sup> is a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> of values much like a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. The values stored in a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> can be any <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a>, and they are indexed by integers. The important difference is that tuples are <strong><a href="GLOSSARY.html#immutable" class="glossary-term" title="The property of a sequence whose items cannot be assigned.">immutable</a></strong>. Tuples are also <strong>comparable</strong> and <strong>hashable</strong> so we can sort lists of them and use tuples as <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a> values in Python dictionaries.</p>
+<p>Syntactically, a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> is a comma-separated <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of values:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>
+</code></pre>
+<p>Although it is not necessary, it is common to enclose tuples in parentheses to help us quickly identify tuples when we look at Python code:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = (<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>)
+</code></pre>
+<p>To create a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> with a single <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>, you have to include the final comma:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; var_tupla = &apos;a&apos;,
+&gt;&gt;&gt; type(var_tupla)
+&lt;class &apos;tuple&apos;&gt;
+</code></pre>
+<p>Without the comma Python treats <code>(&apos;a&apos;)</code> as an <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> with a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> in parentheses that evaluates to a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t2 = (<span class="hljs-string">&apos;a&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>type(t2)
+&lt;type <span class="hljs-string">&apos;str&apos;</span>&gt;
+</code></pre>
+<p>Another way to construct a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> is the built-in <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> <code>tuple</code>. With no <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a>, it creates an empty ; or with <code>()</code>:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; t2 = ()
+&gt;&gt;&gt; type(t2)
+&lt;class &apos;tuple&apos;&gt;
+</code></pre>
+<p>If the <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a> is a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> (<a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>, <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, or <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a>), the result of the call to <code>tuple</code> is a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> with the elements of the <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = tuple(<span class="hljs-string">&apos;lupins&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+(<span class="hljs-string">&apos;l&apos;</span>, <span class="hljs-string">&apos;u&apos;</span>, <span class="hljs-string">&apos;p&apos;</span>, <span class="hljs-string">&apos;i&apos;</span>, <span class="hljs-string">&apos;n&apos;</span>, <span class="hljs-string">&apos;s&apos;</span>)
+</code></pre>
+<p>Because <code>tuple</code> is the name of a <a href="GLOSSARY.html#constructor" class="glossary-term" title="An optional specially named method (init) that is called at the moment when a class is being used to construct an object. Usually this is used to set up initial values for the object.">constructor</a>, you should avoid using it as a <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> name.</p>
+<p>Most <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> operators also work on tuples. The bracket <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> indexes an <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = (<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t[<span class="hljs-number">0</span>])
+a
+</code></pre>
+<p>And the <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> <a href="GLOSSARY.html#operator" class="glossary-term" title="A special symbol that represents a simple computation like addition, multiplication, or string concatenation.">operator</a> selects a range of elements.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(t[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>])
+(<span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>)
+</code></pre>
+<p>But if you try to modify one of the elements of the <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a>, you get an error:</p>
+<pre><code class="lang-python">&gt;&gt;&gt; t[0] = &apos;A&apos;
+TypeError: object doesn&apos;t support item assignment
+</code></pre>
+<p>You can&apos;t modify the elements of a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a>, but you can replace one <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> with another:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>t = (<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>t = (<span class="hljs-string">&apos;A&apos;</span>,) + t
+<span class="hljs-meta">&gt;&gt;&gt; </span>t
+(<span class="hljs-string">&apos;A&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>)
+</code></pre>
+<h2 id="comparing-tuples">Comparing tuples </h2>
+<p>The comparison operators work with tuples and other sequences. Python starts by comparing the first <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> from each <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a>. If they are equal, it goes on to the next <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>, and so on, until it finds elements that differ. Subsequent elements are not considered (even if they are really big).</p>
+<p>The <code>sort</code> <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a> works the same way. It sorts primarily by first <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>, but in the case of a tie, it sorts by second <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>, and so on.</p>
+<p>This feature lends itself to a pattern called <strong>DSU</strong> for</p>
+<p><strong>Decorate</strong></p>
+<p>a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> by building a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples with one or more sort keys preceding the elements from the <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a>,</p>
+<p><strong>Sort</strong></p>
+<p>the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples using the Python built-in <code>sort</code>, and</p>
+<p><strong>Undecorate</strong></p>
+<p>by extracting the sorted elements of the <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a>.</p>
+<p>[DSU]</p>
+<p>For example, suppose you have a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of words and you want to sort them from longest to shortest:</p>
+<iframe src="https://trinket.io/embed/python3/84b1d6d4a1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>The first loop builds a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples, where each <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> is a word preceded by its length.</p>
+<p><code>sort</code> compares the first <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a>, length, first, and only considers the second <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> to break ties. The <a href="GLOSSARY.html#keyword" class="glossary-term" title="A reserved word that is used by the compiler to parse a program; you cannot use keywords like if, def, and while as variable names.">keyword</a> <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a> <code>reverse=True</code> tells <code>sort</code> to go in decreasing order.</p>
+<p>The second loop traverses the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples and builds a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of words in descending order of length. The four-character words are sorted in <strong>reverse</strong> alphabetical order, so &quot;what&quot; appears before &quot;soft&quot; in the following <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<p>The output of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> is as follows:</p>
+<pre><code class="lang-txt">[&apos;yonder&apos;, &apos;window&apos;, &apos;breaks&apos;, &apos;light&apos;, &apos;what&apos;,
+&apos;soft&apos;, &apos;but&apos;, &apos;in&apos;]
+</code></pre>
+<p>Of course the line loses much of its poetic impact when turned into a Python <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> and sorted in descending word length order.</p>
+<h2 id="tuple-assignment">Tuple assignment </h2>
+<p>One of the unique syntactic features of the Python language is the ability to have a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> on the left side of an <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>. This allows you to assign more than one <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> at a time when the left side is a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a>.</p>
+<p>In this example we have a two-<a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> (which is a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a>) and assign the first and second elements of the <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> to the variables <code>x</code> and <code>y</code> in a single <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>m = [ <span class="hljs-string">&apos;have&apos;</span>, <span class="hljs-string">&apos;fun&apos;</span> ]
+<span class="hljs-meta">&gt;&gt;&gt; </span>x, y = m
+<span class="hljs-meta">&gt;&gt;&gt; </span>x
+<span class="hljs-string">&apos;have&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y
+<span class="hljs-string">&apos;fun&apos;</span>
+</code></pre>
+<p>It is not magic, Python <strong>roughly</strong> translates the <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> syntax to be the following:<sup><a href="#fn_2" id="reffn_2">2</a></sup></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>m = [ <span class="hljs-string">&apos;have&apos;</span>, <span class="hljs-string">&apos;fun&apos;</span> ]
+<span class="hljs-meta">&gt;&gt;&gt; </span>x = m[<span class="hljs-number">0</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>y = m[<span class="hljs-number">1</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>x
+<span class="hljs-string">&apos;have&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y
+<span class="hljs-string">&apos;fun&apos;</span>
+</code></pre>
+<p>Stylistically when we use a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> on the left side of the <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>, we omit the parentheses, but the following is an equally valid syntax:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>m = [ <span class="hljs-string">&apos;have&apos;</span>, <span class="hljs-string">&apos;fun&apos;</span> ]
+<span class="hljs-meta">&gt;&gt;&gt; </span>(x, y) = m
+<span class="hljs-meta">&gt;&gt;&gt; </span>x
+<span class="hljs-string">&apos;have&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y
+<span class="hljs-string">&apos;fun&apos;</span>
+&gt;&gt;&gt;
+</code></pre>
+<p>A particularly clever application of <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> allows us to <strong>swap</strong> the values of two variables in a single <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a, b = b, a
+</code></pre>
+<p>Both sides of this <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> are tuples, but the left side is a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> of variables; the right side is a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> of expressions. Each <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> on the right side is assigned to its respective <a href="GLOSSARY.html#variable" class="glossary-term" title="A name that refers to a value.">variable</a> on the left side. All the expressions on the right side are evaluated before any of the assignments.</p>
+<p>The number of variables on the left and the number of values on the right must be the same:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a, b = <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>
+ValueError: too many values to unpack
+</code></pre>
+<p>More generally, the right side can be any kind of <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> (<a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>, <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, or <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a>). For example, to split an email address into a user name and a domain, you could write:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>addr = <span class="hljs-string">&apos;monty@python.org&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>uname, domain = addr.split(<span class="hljs-string">&apos;@&apos;</span>)
+</code></pre>
+<p>The return <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> from <code>split</code> is a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> with two elements; the first <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> is assigned to <code>uname</code>, the second to <code>domain</code>.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(uname)
+monty
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(domain)
+python.org
+</code></pre>
+<h2 id="dictionaries-and-tuples">Dictionaries and tuples </h2>
+<p>Dictionaries have a <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a> called <code>items</code> that returns a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples, where each <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> is a <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>-<a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> pair:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>d = {<span class="hljs-string">&apos;a&apos;</span>:<span class="hljs-number">10</span>, <span class="hljs-string">&apos;b&apos;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&apos;c&apos;</span>:<span class="hljs-number">22</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>t = list(d.items())
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(t)
+[(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-number">10</span>), (<span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-number">1</span>), (<span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-number">22</span>)]
+</code></pre>
+<p>As you should expect from a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a>, the items are in no particular order.</p>
+<p>However, since the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples is a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>, and tuples are comparable, we can now sort the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples. Converting a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> to a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples is a way for us to output the contents of a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> sorted by <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>d = {<span class="hljs-string">&apos;a&apos;</span>:<span class="hljs-number">10</span>, <span class="hljs-string">&apos;b&apos;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&apos;c&apos;</span>:<span class="hljs-number">22</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>t = list(d.items())
+<span class="hljs-meta">&gt;&gt;&gt; </span>t
+[(<span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-number">1</span>), (<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-number">10</span>), (<span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-number">22</span>)]
+<span class="hljs-meta">&gt;&gt;&gt; </span>t.sort()
+<span class="hljs-meta">&gt;&gt;&gt; </span>t
+[(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-number">10</span>), (<span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-number">1</span>), (<span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-number">22</span>)]
+</code></pre>
+<p>The new <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> is sorted in ascending alphabetical order by the <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a> <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>.</p>
+<h2 id="multiple-assignment-with-dictionaries">Multiple assignment with dictionaries </h2>
+<p>Combining <code>items</code>, <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a>, and <code>for</code>, you can see a nice code pattern for traversing the keys and values of a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> in a single loop:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> key, val <span class="hljs-keyword">in</span> list(d.items()):
+    print(val, key)
+</code></pre>
+<p>This loop has two <strong><a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> variables</strong> because <code>items</code> returns a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples and <code>key, val</code> is a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> that successively iterates through each of the <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>-<a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> pairs in the <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a>.</p>
+<p>For each <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> through the loop, both <code>key</code> and <code>value</code> are advanced to the next <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>-<a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> pair in the <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> (still in hash order).</p>
+<p>The output of this loop is:</p>
+<pre><code class="lang-txt">10 a
+22 c
+1 b
+</code></pre>
+<p>Again, it is in hash <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a> order (i.e., no particular order).</p>
+<p>If we combine these two techniques, we can print out the contents of a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> sorted by the <strong><a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a></strong> stored in each <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>-<a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> pair.</p>
+<p>To do this, we first make a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples where each <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> is <code>(value, key)</code>. The <code>items</code> <a href="GLOSSARY.html#method" class="glossary-term" title="A function that is contained within a class and the objects that are constructed from the class. Some object-oriented patterns use &apos;message&apos; instead of &apos;method&apos; to describe this concept.">method</a> would give us a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of <code>(key, value)</code> tuples, but this time we want to sort by <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>, not <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>. Once we have constructed the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> with the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>-<a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a> tuples, it is a simple matter to sort the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> in reverse order and print out the new, sorted <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>d = {<span class="hljs-string">&apos;a&apos;</span>:<span class="hljs-number">10</span>, <span class="hljs-string">&apos;b&apos;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&apos;c&apos;</span>:<span class="hljs-number">22</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>l = list()
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> key, val <span class="hljs-keyword">in</span> d.items() :
+<span class="hljs-meta">... </span>    l.append( (val, key) )
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span>l
+[(<span class="hljs-number">10</span>, <span class="hljs-string">&apos;a&apos;</span>), (<span class="hljs-number">22</span>, <span class="hljs-string">&apos;c&apos;</span>), (<span class="hljs-number">1</span>, <span class="hljs-string">&apos;b&apos;</span>)]
+<span class="hljs-meta">&gt;&gt;&gt; </span>l.sort(reverse=<span class="hljs-keyword">True</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>l
+[(<span class="hljs-number">22</span>, <span class="hljs-string">&apos;c&apos;</span>), (<span class="hljs-number">10</span>, <span class="hljs-string">&apos;a&apos;</span>), (<span class="hljs-number">1</span>, <span class="hljs-string">&apos;b&apos;</span>)]
+&gt;&gt;&gt;
+</code></pre>
+<p>By carefully constructing the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples to have the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> as the first <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> of each <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a>, we can sort the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of tuples and get our <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> contents sorted by <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>.</p>
+<h2 id="the-most-common-words">The most common words </h2>
+<p>Coming back to our running example of the text from <strong>Romeo and Juliet</strong> Act 2, Scene 2, we can augment our <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> to use this technique to print the ten most common words in the text as follows:</p>
+<iframe src="https://trinket.io/embed/python3/2f13e5b367" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>The first part of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> which reads the file and computes the <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> that maps each word to the count of words in the document is unchanged. But instead of simply printing out <code>counts</code> and ending the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, we construct a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of <code>(val, key)</code> tuples and then sort the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> in reverse order.</p>
+<p>Since the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> is first, it will be used for the comparisons. If there is more than one <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> with the same <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a>, it will look at the second <a href="GLOSSARY.html#element" class="glossary-term" title="One of the values in a list (or other sequence); also called items.">element</a> (the <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>), so tuples where the <a href="GLOSSARY.html#value" class="glossary-term" title="An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word &quot;value&quot;.">value</a> is the same will be further sorted by the alphabetical order of the <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>.</p>
+<p>At the end we write a nice <code>for</code> loop which does a multiple <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#iteration" class="glossary-term" title="Repeated execution of a set of statements using either a function that calls itself or a loop.">iteration</a> and prints out the ten most common words by iterating through a <a href="GLOSSARY.html#slice" class="glossary-term" title="A part of a string specified by a range of indices.">slice</a> of the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> (<code>lst[:10]</code>).</p>
+<p>So now the output finally looks like what we want for our word frequency analysis.</p>
+<pre><code class="lang-python"><span class="hljs-number">61</span> i
+<span class="hljs-number">42</span> <span class="hljs-keyword">and</span>
+<span class="hljs-number">40</span> romeo
+<span class="hljs-number">34</span> to
+<span class="hljs-number">34</span> the
+<span class="hljs-number">32</span> thou
+<span class="hljs-number">32</span> juliet
+<span class="hljs-number">30</span> that
+<span class="hljs-number">29</span> my
+<span class="hljs-number">24</span> thee
+</code></pre>
+<p>The fact that this complex data parsing and analysis can be done with an easy-to-understand 19-line Python <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> is one reason why Python is a good choice as a language for exploring information.</p>
+<h2 id="using-tuples-as-keys-in-dictionaries">Using tuples as keys in dictionaries </h2>
+<p>Because tuples are <strong>hashable</strong> and lists are not, if we want to create a <strong>composite</strong> <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a> to use in a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> we must use a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> as the <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>.</p>
+<p>We would encounter a composite <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a> if we wanted to create a telephone directory that maps from last-name, first-name pairs to telephone numbers. Assuming that we have defined the variables <code>last</code>, <code>first</code>, and <code>number</code>, we could write a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a> as follows:</p>
+<pre><code class="lang-python">directory[last,first] = number
+</code></pre>
+<p>The <a href="GLOSSARY.html#expression" class="glossary-term" title="A combination of variables, operators, and values that represents a single result value.">expression</a> in brackets is a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a>. We could use <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> <a href="GLOSSARY.html#assignment" class="glossary-term" title="A statement that assigns a value to a variable.">assignment</a> in a <code>for</code> loop to <a href="GLOSSARY.html#traverse" class="glossary-term" title="To iterate through the items in a sequence, performing a similar operation on each.">traverse</a> this <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a>.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> last, first <span class="hljs-keyword">in</span> directory:
+    print(first, last, directory[last,first])
+</code></pre>
+<p>This loop traverses the keys in <code>directory</code>, which are tuples. It assigns the elements of each <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> to <code>last</code> and <code>first</code>, then prints the name and corresponding telephone number.</p>
+<h2 id="sequences-strings-lists-and-tuples---oh-my">Sequences: strings, lists, and tuples - Oh My! </h2>
+<p>I have focused on lists of tuples, but almost all of the examples in this chapter also work with lists of lists, tuples of tuples, and tuples of lists. To avoid enumerating the possible combinations, it is sometimes easier to talk about sequences of sequences.</p>
+<p>In many contexts, the different kinds of sequences (strings, lists, and tuples) can be used interchangeably. So how and why do you choose one over the others?</p>
+<p>To start with the obvious, strings are more limited than other sequences because the elements have to be characters. They are also <a href="GLOSSARY.html#immutable" class="glossary-term" title="The property of a sequence whose items cannot be assigned.">immutable</a>. If you need the ability to change the characters in a <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> (as opposed to creating a new <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>), you might want to use a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of characters instead.</p>
+<p>Lists are more common than tuples, mostly because they are mutable. But there are a few cases where you might prefer tuples:</p>
+<ol>
+<li>In some contexts, like a <code>return</code> <a href="GLOSSARY.html#statement" class="glossary-term" title="A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.">statement</a>, it is syntactically simpler to create a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> than a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>. In other contexts, you might prefer a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>.</li>
+<li>If you want to use a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> as a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a> <a href="GLOSSARY.html#key" class="glossary-term" title="An object that appears in a dictionary as the first part of a key-value pair.">key</a>, you have to use an <a href="GLOSSARY.html#immutable" class="glossary-term" title="The property of a sequence whose items cannot be assigned.">immutable</a> <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a> like a <a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a> or <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a>.</li>
+<li>If you are passing a <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> as an <a href="GLOSSARY.html#argument" class="glossary-term" title="A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.">argument</a> to a <a href="GLOSSARY.html#function" class="glossary-term" title="A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.">function</a>, using tuples reduces the potential for unexpected behavior due to <a href="GLOSSARY.html#aliasing" class="glossary-term" title="A circumstance where two or more variables refer to the same object.">aliasing</a>.</li>
+</ol>
+<p>Because tuples are <a href="GLOSSARY.html#immutable" class="glossary-term" title="The property of a sequence whose items cannot be assigned.">immutable</a>, they don&apos;t provide methods like <code>sort</code> and <code>reverse</code>, which modify existing lists. However Python provides the built-in functions <code>sorted</code> and <code>reversed</code>, which take any <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> as a <a href="GLOSSARY.html#parameter" class="glossary-term" title="A name used inside a function to refer to the value passed as an argument.">parameter</a> and return a new <a href="GLOSSARY.html#sequence" class="glossary-term" title="An ordered set; that is, a set of values where each value is identified by an integer index.">sequence</a> with the same elements in a different order.</p>
+<h2 id="debugging">Debugging </h2>
+<p>Lists, dictionaries and tuples are known generically as <strong>data structures</strong>; in this chapter we are starting to see compound data structures, like lists of tuples, and dictionaries that contain tuples as keys and lists as values. Compound data structures are useful, but they are prone to what I call <strong>shape errors</strong>; that is, errors caused when a data structure has the wrong <a href="GLOSSARY.html#type" class="glossary-term" title="A category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).">type</a>, size, or <a href="GLOSSARY.html#composition" class="glossary-term" title="Using an expression as part of a larger expression, or a statement as part of a larger statement.">composition</a>, or perhaps you write some code and forget the shape of your data and introduce an error.</p>
+<p>For example, if you are expecting a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> with one <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a> and I give you a plain old <a href="GLOSSARY.html#integer" class="glossary-term" title="A type that represents whole numbers.">integer</a> (not in a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a>), it won&apos;t work.</p>
+<p>When you are debugging a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, and especially if you are working on a hard <a href="GLOSSARY.html#bug" class="glossary-term" title="An error in a program.">bug</a>, there are four things to try:</p>
+<p><strong>reading</strong></p>
+<p>Examine your code, read it back to yourself, and check that it says what you meant to say.</p>
+<p><strong>running</strong></p>
+<p>Experiment by making changes and running different versions. Often if you display the right thing at the right place in the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>, the problem becomes obvious, but sometimes you have to spend some time to build scaffolding.</p>
+<p><strong>ruminating</strong></p>
+<p>Take some time to think! What kind of error is it: syntax, runtime, semantic? What information can you get from the error messages, or from the output of the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a>? What kind of error could cause the problem you&apos;re seeing? What did you change last, before the problem appeared?</p>
+<p>At some point, the best thing to do is back off, undoing recent changes, until you get back to a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that works and that you understand. Then you can start rebuilding.</p>
+<p>Beginning programmers sometimes get stuck on one of these activities and forget the others. Each activity comes with its own failure mode. </p>
+<p>For example, reading your code might help if the problem is a typographical error, but not if the problem is a conceptual misunderstanding. If you don&apos;t understand what your <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> does, you can read it 100 times and never see the error, because the error is in your head.</p>
+<p>Running experiments can help, especially if you run small, simple tests. But if you run experiments without thinking or reading your code, you might fall into a pattern I call &quot;random walk programming&quot;, which is the process of making random changes until the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> does the right thing. Needless to say, random walk programming can take a long time.</p>
+<p>You have to take time to think. Debugging is like an experimental science. You should have at least one hypothesis about what the problem is. If there are two or more possibilities, try to think of a test that would eliminate one of them.</p>
+<p>Taking a break helps with the thinking. So does talking. If you explain the problem to someone else (or even to yourself), you will sometimes find the answer before you finish asking the question.</p>
+<p>But even the best debugging techniques will fail if there are too many errors, or if the code you are trying to fix is too big and complicated. Sometimes the best option is to retreat, simplifying the <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> until you get to something that works and that you understand.</p>
+<p>Beginning programmers are often reluctant to retreat because they can&apos;t stand to delete a line of code (even if it&apos;s wrong). If it makes you feel better, copy your <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> into another file before you start stripping it down. Then you can paste the pieces back in a little bit at a time.</p>
+<p>Finding a hard <a href="GLOSSARY.html#bug" class="glossary-term" title="An error in a program.">bug</a> requires reading, running, ruminating, and sometimes retreating. If you get stuck on one of these activities, try the others.</p>
+<h2 id="exercises">Exercises </h2>
+<p><strong>Exercise 1:</strong> Revise a previous <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> as follows: Read and <a href="GLOSSARY.html#parse" class="glossary-term" title="To examine a program and analyze the syntactic structure.">parse</a> the &quot;From&quot; lines and pull out the addresses from the line. Count the number of messages from each person using a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a>.</p>
+<p>After all the data has been read, print the person with the most commits by creating a <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> of (count, email) tuples from the <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a>. Then sort the <a href="GLOSSARY.html#list" class="glossary-term" title="A sequence of values.">list</a> in reverse order and print out the person who has the most commits.</p>
+<pre><code class="lang-python">Sample Line:
+From stephen.marquard@uct.ac.za Sat Jan  <span class="hljs-number">5</span> <span class="hljs-number">09</span>:<span class="hljs-number">14</span>:<span class="hljs-number">16</span> <span class="hljs-number">2008</span>
+
+Enter a file name: mbox-short.txt
+cwen@iupui.edu <span class="hljs-number">5</span>
+
+Enter a file name: mbox.txt
+zqian@umich.edu <span class="hljs-number">195</span>
+</code></pre>
+<p><strong>Exercise 2:</strong> This <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> counts the distribution of the hour of the day for each of the messages. You can pull the hour from the &quot;From&quot; line by finding the time <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> and then splitting that <a href="GLOSSARY.html#string" class="glossary-term" title="A type that represents sequences of characters.">string</a> into parts using the colon character. Once you have accumulated the counts for each hour, print out the counts, one per line, sorted by hour as shown below.</p>
+<p>Sample Execution:</p>
+<pre><code class="lang-python">python timeofday.py
+Enter a file name: mbox-short.txt
+<span class="hljs-number">04</span> <span class="hljs-number">3</span>
+<span class="hljs-number">06</span> <span class="hljs-number">1</span>
+<span class="hljs-number">07</span> <span class="hljs-number">1</span>
+<span class="hljs-number">09</span> <span class="hljs-number">2</span>
+<span class="hljs-number">10</span> <span class="hljs-number">3</span>
+<span class="hljs-number">11</span> <span class="hljs-number">6</span>
+<span class="hljs-number">14</span> <span class="hljs-number">1</span>
+<span class="hljs-number">15</span> <span class="hljs-number">2</span>
+<span class="hljs-number">16</span> <span class="hljs-number">4</span>
+<span class="hljs-number">17</span> <span class="hljs-number">2</span>
+<span class="hljs-number">18</span> <span class="hljs-number">1</span>
+<span class="hljs-number">19</span> <span class="hljs-number">1</span>
+</code></pre>
+<p><strong>Exercise 3:</strong> Write a <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> that reads a file and prints the <strong>letters</strong> in decreasing order of frequency. Your <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> should convert all the input to lower case and only count the letters a-z. Your <a href="GLOSSARY.html#program" class="glossary-term" title="A set of instructions that specifies a computation.">program</a> should not count spaces, digits, punctuation, or anything other than the letters a-z. Find text samples from several different languages and see how letter frequency varies between languages. Compare your results with the tables at <a href="wikipedia.org/wiki/Letter_frequencies">wikipedia.org/wiki/Letter_frequencies</a>.</p>
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. Fun fact: The word &quot;<a href="GLOSSARY.html#tuple" class="glossary-term" title="A single entry in a database table that is a set of attributes. More typically called &quot;row&quot;.">tuple</a>&quot; comes from the names given to sequences of numbers of varying lengths: single, double, triple, quadruple, quituple, sextuple, septuple, etc.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_1">
+<sup>1</sup>. Python does not translate the syntax literally. For example, if you try this with a <a href="GLOSSARY.html#dictionary" class="glossary-term" title="A mapping from a set of keys to their corresponding values.">dictionary</a>, it will not work as might expect.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="09-dictionaries.html" class="navigation navigation-prev " aria-label="Previous page: 9. Dictionaries">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11-regex.html" class="navigation navigation-next " aria-label="Next page: 11. Regex">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10. Tuples","level":"2.10","depth":1,"next":{"title":"11. Regex","level":"2.11","depth":1,"path":"11-regex.md","ref":"11-regex.md","articles":[]},"previous":{"title":"9. Dictionaries","level":"2.9","depth":1,"path":"09-dictionaries.md","ref":"09-dictionaries.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Installing Python","alt":"Installing Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Installing Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Personal Digital Assistant","alt":"Personal Digital Assistant","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Personal Digital Assistant","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programmers Talking to You","alt":"Programmers Talking to You","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programmers Talking to You","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Hardware Archicture","alt":"Hardware Archicture","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Hardware Archicture","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: Where Are you?","alt":"Where Are you?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Where Are you?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: If logic","alt":"If logic","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"If logic","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: If-Then-Else Logic","alt":"If-Then-Else Logic","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"If-Then-Else Logic","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: If-Then-ElseIf Logic","alt":"If-Then-ElseIf Logic","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"If-Then-ElseIf Logic","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Secondary memory","alt":"Secondary memory","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Secondary memory","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables and Objects","alt":"Variables and Objects","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables and Objects","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: A Tree Representation of XML","alt":"A Tree Representation of XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Tree Representation of XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: A program","alt":"A program","nro":16,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A program","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: A Program as Network of Objects","alt":"A Program as Network of Objects","nro":17,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Program as Network of Objects","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignoring Detail When Using an Object","alt":"Ignoring Detail When Using an Object","nro":18,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Using an Object","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignoring Detail When Building an Object","alt":"Ignoring Detail When Building an Object","nro":19,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignoring Detail When Building an Object","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: A Class and Two Objects","alt":"A Class and Two Objects","nro":20,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"A Class and Two Objects","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Relational databases","alt":"Relational databases","nro":21,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Relational databases","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":22,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Rows in a Table","alt":"Rows in a Table","nro":23,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Rows in a Table","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relationships Between Tables","alt":"Relationships Between Tables","nro":24,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relationships Between Tables","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Connecting Tables Using JOIN","alt":"Connecting Tables Using JOIN","nro":25,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Connecting Tables Using JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"en","gitbook":"*"},"file":{"path":"10-tuples.md","mtime":"2020-11-03T15:12:48.364Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

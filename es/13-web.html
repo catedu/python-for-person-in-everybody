@@ -1,0 +1,702 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13. Python y servicios web · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14-objects.html" />
+    
+    
+    <link rel="prev" href="12-network.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Comenzando el camino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Condicionales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Cadenas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Archivos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Listas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Diccionarios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuplas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Programas en red
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python y servicios web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python y Bases de Datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >13. Python y servicios web</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="using-web-services">Uso de servicios web </h1>
+<p>Una vez que fue f&#xE1;cil recuperar documentos y analizarlos a trav&#xE9;s de HTTP usando programas, no tom&#xF3; mucho tiempo desarrollar un enfoque en el que comenz&#xF3; a producir documentos que fueron dise&#xF1;ados espec&#xED;ficamente para ser consumidos por otros programas (es decir, no HTML para mostrar en un navegador).</p>
+<p>Hay dos formatos comunes que utilizamos cuando intercambiamos datos a trav&#xE9;s de la web. El &quot;lenguaje de marcado extensible&quot; o XML ha estado en uso durante mucho tiempo y es el m&#xE1;s adecuado para intercambiar datos de tipo documento. Cuando los programas solo desean intercambiar diccionarios, listas u otra informaci&#xF3;n interna entre ellos, utilizan la notaci&#xF3;n de objetos JavaScript o JSON (consulte [www.json.org] (<a href="http://www.json.org" target="_blank">http://www.json.org</a>)). Veremos ambos formatos.</p>
+<h2 id="extensible-markup-language---xml">Lenguaje de marcado extensible - XML </h2>
+<p>XML se ve muy similar a HTML, pero XML es m&#xE1;s estructurado que HTML. Aqu&#xED; hay una muestra de un documento XML:</p>
+<pre><code class="lang-python">&lt;person&gt;
+  &lt;name&gt;Chuck&lt;/name&gt;
+  &lt;phone type=&quot;intl&quot;&gt;
+     +1 734 303 4456
+   &lt;/phone&gt;
+   &lt;email hide=&quot;yes&quot;/&gt;
+&lt;/person&gt;
+</code></pre>
+<p>A menudo es &#xFA;til pensar en un documento XML como una estructura de &#xE1;rbol donde hay una etiqueta superior &quot;persona&quot; y otras etiquetas como &quot;tel&#xE9;fono&quot; se crean como <strong>hijos</strong> de sus nodos padres.</p>
+<figure id="fig2.13.1"><img src="../img/xml.svg" alt="Una representaci&#xF3;n en &#xE1;rbol de XML"><figcaption>Imagen - Una representaci&#xF3;n en &#xE1;rbol de XML</figcaption></figure>
+<p>Una representaci&#xF3;n en &#xE1;rbol de XML</p>
+<h2 id="parsing-xml">Analizando XML </h2>
+<p>Aqu&#xED; hay una aplicaci&#xF3;n simple que analiza algunos XML y extrae algunos elementos de datos del XML:</p>
+<iframe src="https://trinket.io/embed/python3/b4dfccee06" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p><code>fromstring</code> convierte la representaci&#xF3;n de cadena del XML en un &quot;&#xE1;rbol&quot; de nodos XML. Cuando el XML est&#xE1; en un &#xE1;rbol, tenemos una serie de m&#xE9;todos a los que podemos llamar para extraer partes de datos del XML.</p>
+<p>La funci&#xF3;n <code>find</code> busca en el &#xE1;rbol XML y recupera un <strong>nodo</strong> que coincide con la etiqueta especificada. Cada nodo puede tener alg&#xFA;n texto, algunos atributos (como ocultar) y algunos nodos &quot;secundarios&quot;. Cada nodo puede ser la parte superior de un &#xE1;rbol de nodos.</p>
+<pre><code class="lang-python">Name: Chuck
+Attr: yes
+</code></pre>
+<p>El uso de un analizador XML como <code>ElementTree</code> tiene la ventaja de que si bien el XML en este ejemplo es bastante simple, resulta que hay muchas reglas con respecto a XML v&#xE1;lido y el uso de <code>ElementTree</code> nos permite extraer datos de XML sin preocuparnos por las reglas de la sintaxis XML.</p>
+<h2 id="looping-through-nodes">Bucle a trav&#xE9;s de nodos </h2>
+<p>A menudo, el XML tiene varios nodos y necesitamos escribir un bucle para procesar todos los nodos. En el siguiente programa, recorremos todos los nodos <code>user</code>:</p>
+<iframe src="https://trinket.io/embed/python3/80ba384fbd" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>El m&#xE9;todo <code>findall</code> recupera una lista Python de sub&#xE1;rboles que representan las estructuras <code>user</code> en el &#xE1;rbol XML. Luego podemos escribir un bucle <code>for</code> que mira cada uno de los nodos de usuario e imprime los elementos de texto <code>name</code> e <code>id</code>, as&#xED; como el atributoc<code>x</code> del nodo <code>user</code>.</p>
+<pre><code class="lang-python">User count: <span class="hljs-number">2</span>
+Name Chuck
+Id <span class="hljs-number">001</span>
+Attribute <span class="hljs-number">2</span>
+Name Brent
+Id <span class="hljs-number">009</span>
+Attribute <span class="hljs-number">7</span>
+</code></pre>
+<h2 id="javascript-object-notation---json">Notaci&#xF3;n de objetos de JavaScript - JSON </h2>
+<p>El formato JSON se inspir&#xF3; en el formato de objeto y matriz utilizado en el lenguaje JavaScript. Pero como Python se invent&#xF3; antes de JavaScript, la sintaxis de Python para diccionarios y listas influy&#xF3; en la sintaxis de JSON. Por lo tanto, el formato de JSON es casi id&#xE9;ntico a una combinaci&#xF3;n de listas y diccionarios de Python.</p>
+<p>Aqu&#xED; hay una codificaci&#xF3;n JSON que es aproximadamente equivalente al XML simple de arriba:</p>
+<pre><code class="lang-python">{
+  <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;Chuck&quot;</span>,
+  <span class="hljs-string">&quot;phone&quot;</span> : {
+    <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;intl&quot;</span>,
+    <span class="hljs-string">&quot;number&quot;</span> : <span class="hljs-string">&quot;+1 734 303 4456&quot;</span>
+   },
+   <span class="hljs-string">&quot;email&quot;</span> : {
+     <span class="hljs-string">&quot;hide&quot;</span> : <span class="hljs-string">&quot;yes&quot;</span>
+   }
+}
+</code></pre>
+<p>Notar&#xE1;s algunas diferencias. Primero, en XML, podemos agregar atributos como &quot;intl&quot; a la etiqueta &quot;phone&quot;. En JSON, simplemente tenemos pares clave-valor. Adem&#xE1;s, la etiqueta XML &quot;persona&quot; ha sido reemplazada por un conjunto de llaves exteriores.</p>
+<p>En general, las estructuras JSON son m&#xE1;s simples que las de XML porque JSON tiene menos prestaciones que le XML. Pero JSON tiene la ventaja de que mapea <strong>directamente</strong> a una combinaci&#xF3;n de diccionarios y listas. Y dado que casi todos los lenguajes de programaci&#xF3;n tienen algo equivalente a los diccionarios y listas de Python, JSON es un formato muy natural para que dos programas intercambien datos.</p>
+<p>JSON se est&#xE1; convirtiendo r&#xE1;pidamente en el formato de elecci&#xF3;n para casi todo el intercambio de datos entre aplicaciones debido a su relativa simplicidad en comparaci&#xF3;n con XML.</p>
+<h2 id="parsing-json">Parsing JSON </h2>
+<p>Construimos nuestro JSON al anidar diccionarios (objetos) y listas seg&#xFA;n sea necesario. En este ejemplo, representamos una lista de usuarios donde cada usuario es un conjunto de pares clave-valor (es decir, un diccionario). As&#xED; que tenemos una lista de diccionarios.</p>
+<p>En el siguiente programa, usamos la biblioteca incorporada <strong>json</strong>  para analizar el JSON y leer los datos. Compare esto de cerca con el c&#xF3;digo y los datos XML equivalentes de arriba. El JSON tiene menos detalles, por lo que debemos saber de antemano que estamos obteniendo una lista y que la lista es de usuarios y cada usuario es un conjunto de pares clave-valor. El JSON es m&#xE1;s sucinto (una ventaja) pero tambi&#xE9;n es menos autodescriptivo (una desventaja).</p>
+<iframe src="https://trinket.io/embed/python3/b540d86a7f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Si comparas el c&#xF3;digo para extraer datos de JSON y XML analizados, ver&#xE1;s que lo que obtenemos de <strong>json.loads()</strong> es una lista de Python que recorremos con un bucle <code>for</code>, y cada elemento dentro de esa lista es un diccionario de Python. Una vez que se hayas analizado el JSON, podemos utilizar el operador de &#xED;ndice de Python para extraer los distintos datos de cada usuario. No tenemos que usar la biblioteca JSON para explorar el JSON analizado, ya que los datos devueltos son simplemente estructuras nativas de Python.</p>
+<p>La salida de este programa es exactamente la misma que la versi&#xF3;n XML anterior.</p>
+<pre><code class="lang-python">User count: <span class="hljs-number">2</span>
+Name Chuck
+Id <span class="hljs-number">001</span>
+Attribute <span class="hljs-number">2</span>
+Name Brent
+Id <span class="hljs-number">009</span>
+Attribute <span class="hljs-number">7</span>
+</code></pre>
+<p>En general, hay una tendencia de la industria a alejarse del XML y apostar por JSON para servicios web. Debido a que el JSON es m&#xE1;s simple y se asigna m&#xE1;s directamente a las estructuras de datos nativos que ya tenemos en los lenguajes de programaci&#xF3;n, el c&#xF3;digo de an&#xE1;lisis y extracci&#xF3;n de datos suele ser m&#xE1;s simple y m&#xE1;s directo cuando se utiliza JSON. Pero XML es m&#xE1;s autodescriptivo que JSON y, por lo tanto, hay algunas aplicaciones en las que XML conserva una ventaja. Por ejemplo, la mayor&#xED;a de los procesadores de texto almacenan documentos internamente utilizando XML en lugar de JSON.</p>
+<h2 id="interface-programaci&#xF3;n-aplicaciones">Interfaces de programaci&#xF3;n de aplicaciones </h2>
+<p>Ahora tenemos la capacidad de intercambiar datos entre aplicaciones mediante el Protocolo de transporte de hipertexto (HTTP) y una forma de representar datos complejos que enviamos de un lado a otro entre estas aplicaciones mediante el lenguaje de marcado extensible (XML) o la notaci&#xF3;n de objetos de JavaScript (JSON).</p>
+<p>El siguiente paso es comenzar a definir y documentar los &quot;contratos&quot; entre las aplicaciones que utilizan estas t&#xE9;cnicas. El nombre general de estos contratos de aplicaci&#xF3;n a aplicaci&#xF3;n es API (Aplication Programming Interfaces o <em>Interfaces de Programaci&#xF3;n de Aplicaciones</em>). Cuando usamos una API, generalmente un programa hace que un conjunto de <strong>servicios</strong> est&#xE9; disponible para su uso por parte de otras aplicaciones, publicando las API (es decir, las &quot;reglas&quot;) que deben seguirse para acceder a los servicios proporcionados por el programa.</p>
+<p>Cuando comenzamos a construir nuestros programas donde la funcionalidad de nuestro programa incluye el acceso a los servicios proporcionados por otros programas, llamamos a este enfoque <strong>Arquitectura Orientada a ServiciosAPI</strong> o SOA. Un enfoque SOA es uno en el que nuestra aplicaci&#xF3;n general hace uso de los servicios de otras aplicaciones. Un enfoque que no es SOA es cuando la aplicaci&#xF3;n es una &#xFA;nica aplicaci&#xF3;n independiente que contiene todo el c&#xF3;digo necesario para implementar la aplicaci&#xF3;n.</p>
+<p>Vemos muchos ejemplos de SOA cuando usamos la web. Podemos ir a un solo sitio web y reservar viajes a&#xE9;reos, hoteles y autom&#xF3;viles desde un solo sitio. Los datos de los hoteles no se almacenan en los ordenadores de la aerol&#xED;nea. En su lugar, los ordenadores de la l&#xED;nea a&#xE9;rea se ponen en contacto con los servicios de los ordenadores del hotel, recuperan los datos del hotel y los presentan al usuario. Cuando el usuario acepta hacer una reserva de hotel utilizando el sitio de la aerol&#xED;nea, el sitio de la l&#xED;nea a&#xE9;rea utiliza otro servicio web en los sistemas del hotel para realizar la reserva. Y cuando llega el momento de cargar su tarjeta de cr&#xE9;dito por toda la transacci&#xF3;n, a&#xFA;n otros ordenadores se involucran en el proceso.</p>
+<figure id="fig2.13.2"><img src="../img/api.svg" alt="Arquitectura orientada a Servicios"><figcaption>Imagen - Arquitectura orientada a Servicios</figcaption></figure>
+<p>Una arquitectura orientada a servicios tiene muchas ventajas, entre ellas: (1) siempre mantenemos una sola copia de datos (esto es particularmente importante para cosas como reservas de hoteles donde no queremos comprometernos en exceso) y (2) los propietarios de los datos pueden establecer las reglas sobre el uso de sus datos. Con estas ventajas, un sistema SOA debe dise&#xF1;arse cuidadosamente para tener un buen rendimiento y satisfacer las necesidades del usuario.</p>
+<p>Cuando una aplicaci&#xF3;n hace que un conjunto de servicios en su API est&#xE9; disponible en la web, llamamos a &#xE9;stos <strong>servicios web</strong>.</p>
+<h2 id=" seguridad-y-api-uso">Seguridad y uso de API </h2>
+<p>Es bastante com&#xFA;n que necesiteS alg&#xFA;n tipo de &quot;clave API&quot; para hacer uso de la API de un proveedor. La idea general es que quieren saber qui&#xE9;n est&#xE1; usando sus servicios y cu&#xE1;nto est&#xE1; usando cada usuario. Tal vez tengan niveles de servicios gratuitos y de pago, o tengan una pol&#xED;tica que limite la cantidad de solicitudes que una sola persona puede realizar durante un per&#xED;odo de tiempo determinado.</p>
+<p>A veces, una vez que obtienes tu clave de API, simplemente incluyes la clave como parte de los datos POST o tal vez como un par&#xE1;metro en la URL al llamar a la API.</p>
+<p>Otras veces, el proveedor desea una mayor seguridad de la fuente de las solicitudes y, por lo tanto, agregan que esperan que usted env&#xED;e mensajes firmados criptogr&#xE1;ficamente con claves y secretos compartidos. Una tecnolog&#xED;a muy com&#xFA;n que se utiliza para firmar solicitudes a trav&#xE9;s de Internet se llama <strong>OAuth</strong>. Puede leer m&#xE1;s sobre el protocolo OAuth en [www.oauth.net] (<a href="http://www.oauth.net" target="_blank">http://www.oauth.net</a>).</p>
+<p>A medida que la API de Twitter se hizo cada vez m&#xE1;s valiosa, Twitter pas&#xF3; de una API abierta y p&#xFA;blica a una API que requer&#xED;a el uso de firmas OAuth en cada solicitud de API. Afortunadamente, todav&#xED;a hay una serie de bibliotecas OAuth convenientes y gratuitas para que pueda evitar escribir una implementaci&#xF3;n de OAuth desde cero leyendo la especificaci&#xF3;n. Estas bibliotecas son de complejidad variable y tienen diversos grados de riqueza. El sitio web de OAuth tiene informaci&#xF3;n sobre varias bibliotecas de OAuth.</p>
+<p>Para este pr&#xF3;ximo programa de muestra, descargaremos los archivos <strong>twurl.py</strong>, <strong>hidden.py</strong>, <strong>oauth.py</strong> y <strong>twitter1.py</strong> de <a href="http://www.py4e.com/code3" target="_blank">www.py4e.com/code3</a> y p&#xF3;ngalos en una carpeta en su ordenador.</p>
+<p>Para utilizar estos programas, necesitar&#xE1;s tener una cuenta de Twitter y autorizar su c&#xF3;digo Python como una aplicaci&#xF3;n, configurar una clave, un secreto, un token y un token secreto. Editar&#xE1;s el archivo <strong>hidden.py</strong> y colocar&#xE1;s estas cuatro cadenas en las variables apropiadas en el archivo:</p>
+<iframe src="https://trinket.io/embed/python3/ab6352e0a3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Se accede al servicio web de Twitter usando una URL como esta:</p>
+<p><a href="https://api.twitter.com/1.1/statuses/user_timeline.json" target="_blank">https://api.twitter.com/1.1/statuses/user_timeline.json</a></p>
+<p>Pero una vez que se haya agregado toda la informaci&#xF3;n de seguridad, la URL se ver&#xE1; m&#xE1;s como:</p>
+<pre><code class="lang-txt">https://api.twitter.com/1.1/statuses/user_timeline.json?count=2
+&amp;oauth_version=1.0&amp;oauth_token=101...SGI&amp;screen_name=drchuck
+&amp;oauth_nonce=09239679&amp;oauth_timestamp=1380395644
+&amp;oauth_signature=rLK...BoD&amp;oauth_consumer_key=h7Lu...GNg
+&amp;oauth_signature_method=HMAC-SHA1
+</code></pre>
+<p>Puedes leer la especificaci&#xF3;n de OAuth si deseas saber m&#xE1;s sobre el significado de los diversos par&#xE1;metros que se agregan para cumplir con los requisitos de seguridad de OAuth.</p>
+<p>Para los programas que ejecutamos con Twitter, ocultamos toda la complejidad de los archivos <strong>oauth.py</strong> y <strong>twurl.py</strong>. Simplemente configuramos los secretos en <strong>hidden.py</strong> y luego enviamos la URL deseada a la funci&#xF3;n <strong>twurl.augment()</strong> y el c&#xF3;digo de la biblioteca agrega todos los par&#xE1;metros necesarios a la URL para nosotros.</p>
+<p>Este programa recupera la l&#xED;nea de tiempo para un usuario de Twitter en particular y nos la devuelve en formato JSON en una cadena. Simplemente imprimimos los primeros 250 caracteres de la cadena:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> urllib.request, urllib.parse, urllib.error
+<span class="hljs-keyword">import</span> twurl
+<span class="hljs-keyword">import</span> ssl
+
+<span class="hljs-comment"># https://apps.twitter.com/</span>
+<span class="hljs-comment"># Create App and get the four strings, put them in hidden.py</span>
+
+TWITTER_URL = <span class="hljs-string">&apos;https://api.twitter.com/1.1/statuses/user_timeline.json&apos;</span>
+
+<span class="hljs-comment"># Ignore SSL certificate errors</span>
+ctx = ssl.create_default_context()
+ctx.check_hostname = <span class="hljs-keyword">False</span>
+ctx.verify_mode = ssl.CERT_NONE
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    print(<span class="hljs-string">&apos;&apos;</span>)
+    acct = input(<span class="hljs-string">&apos;Enter Twitter Account:&apos;</span>)
+    <span class="hljs-keyword">if</span> (len(acct) &lt; <span class="hljs-number">1</span>): <span class="hljs-keyword">break</span>
+    url = twurl.augment(TWITTER_URL,
+                        {<span class="hljs-string">&apos;screen_name&apos;</span>: acct, <span class="hljs-string">&apos;count&apos;</span>: <span class="hljs-string">&apos;2&apos;</span>})
+    print(<span class="hljs-string">&apos;Retrieving&apos;</span>, url)
+    connection = urllib.request.urlopen(url, context=ctx)
+    data = connection.read().decode()
+    print(data[:<span class="hljs-number">250</span>])
+    headers = dict(connection.getheaders())
+    <span class="hljs-comment"># print headers</span>
+    print(<span class="hljs-string">&apos;Remaining&apos;</span>, headers[<span class="hljs-string">&apos;x-rate-limit-remaining&apos;</span>])
+
+<span class="hljs-comment"># Code: http://www.py4e.com/code3/twitter1.py</span>
+<span class="hljs-comment"># Or select Download from this trinket&apos;s left-hand menu</span>
+</code></pre>
+<p>Cuando el programa se ejecuta produce el siguiente resultado:</p>
+<pre><code class="lang-python">Enter Twitter Account:drchuck
+Retrieving https://api.twitter.com/1.1/ ...
+[{&quot;created_at&quot;:&quot;Sat Sep 28 17:30:25 +0000 2013&quot;,&quot;
+id&quot;:384007200990982144,&quot;id_str&quot;:&quot;384007200990982144&quot;,
+&quot;text&quot;:&quot;RT @fixpert: See how the Dutch handle traffic
+intersections: http:\/\/t.co\/tIiVWtEhj4\n#brilliant&quot;,
+&quot;source&quot;:&quot;web&quot;,&quot;truncated&quot;:false,&quot;in_rep
+Remaining 178
+
+Enter Twitter Account:fixpert
+Retrieving https://api.twitter.com/1.1/ ...
+[{&quot;created_at&quot;:&quot;Sat Sep 28 18:03:56 +0000 2013&quot;,
+&quot;id&quot;:384015634108919808,&quot;id_str&quot;:&quot;384015634108919808&quot;,
+&quot;text&quot;:&quot;3 months after my freak bocce ball accident,
+my wedding ring fits again! :)\n\nhttps:\/\/t.co\/2XmHPx7kgX&quot;,
+&quot;source&quot;:&quot;web&quot;,&quot;truncated&quot;:false,
+Remaining 177
+
+Enter Twitter Account:
+</code></pre>
+<p>Junto con los datos de l&#xED;nea de tiempo devueltos, Twitter tambi&#xE9;n devuelve metadatos sobre la solicitud en los encabezados de respuesta HTTP. Un encabezado en particular, <strong>x-rate-limit-restantes</strong>, nos informa cu&#xE1;ntas solicitudes m&#xE1;s podemos hacer antes de que podamos cerrarnos por un corto per&#xED;odo de tiempo. Puedes ver que nuestras recuperaciones restantes se reducen en una cada vez que realizamos una solicitud a la API.</p>
+<p>En el siguiente ejemplo, recuperamos los amigos de Twitter de un usuario, analizamos el JSON devuelto y extraemos parte de la informaci&#xF3;n sobre los amigos. Tambi&#xE9;n volcamos el JSON despu&#xE9;s de analizarlo y lo &quot;imprimimos&quot; con una sangr&#xED;a de cuatro caracteres para permitirnos analizar los datos cuando queremos extraer m&#xE1;s campos.</p>
+<iframe src="https://trinket.io/embed/python3/54ce78fb02" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Dado que JSON se convierte en un conjunto de listas y diccionarios Python anidados, podemos usar una combinaci&#xF3;n de la operaci&#xF3;n de &#xED;ndice y los bucles <code>for</code> para recorrer las estructuras de datos devueltos con muy poco c&#xF3;digo Python.</p>
+<p>El resultado del programa es el siguiente (algunos de los elementos de datos se acortan para ajustarse a la p&#xE1;gina):</p>
+<pre><code class="lang-python">Enter Twitter Account:drchuck
+Retrieving https://api.twitter.com/<span class="hljs-number">1.1</span>/friends ...
+Remaining <span class="hljs-number">14</span>
+</code></pre>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;next_cursor&quot;</span>: <span class="hljs-number">1444171224491980205</span>,
+    <span class="hljs-string">&quot;users&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">662433</span>,
+            <span class="hljs-string">&quot;followers_count&quot;</span>: <span class="hljs-number">28725</span>,
+            <span class="hljs-string">&quot;status&quot;</span>: {
+                <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;@jazzychad I just bought one .__.&quot;</span>,
+                <span class="hljs-string">&quot;created_at&quot;</span>: <span class="hljs-string">&quot;Fri Sep 20 08:36:34 +0000 2013&quot;</span>,
+                <span class="hljs-string">&quot;retweeted&quot;</span>: false,
+            },
+            <span class="hljs-string">&quot;location&quot;</span>: <span class="hljs-string">&quot;San Francisco, California&quot;</span>,
+            <span class="hljs-string">&quot;screen_name&quot;</span>: <span class="hljs-string">&quot;leahculver&quot;</span>,
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Leah Culver&quot;</span>,
+        },
+        {
+            <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">40426722</span>,
+            <span class="hljs-string">&quot;followers_count&quot;</span>: <span class="hljs-number">2635</span>,
+            <span class="hljs-string">&quot;status&quot;</span>: {
+                <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;RT @WSJ: Big employers like Google ...&quot;</span>,
+                <span class="hljs-string">&quot;created_at&quot;</span>: <span class="hljs-string">&quot;Sat Sep 28 19:36:37 +0000 2013&quot;</span>,
+            },
+            <span class="hljs-string">&quot;location&quot;</span>: <span class="hljs-string">&quot;Victoria Canada&quot;</span>,
+            <span class="hljs-string">&quot;screen_name&quot;</span>: <span class="hljs-string">&quot;_valeriei&quot;</span>,
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Valerie Irvine&quot;</span>,
+    ],
+    <span class="hljs-string">&quot;next_cursor_str&quot;</span>: <span class="hljs-string">&quot;1444171224491980205&quot;</span>
+}
+</code></pre>
+<pre><code class="lang-python">leahculver
+<span class="hljs-meta">   @jazzychad I just bought one .__.</span>
+_valeriei
+   RT @WSJ: Big employers like Google, AT&amp;amp;amp;T are h
+ericbollens
+   RT @lukew: sneak peek: my LONG take on the good &amp;amp;a
+halherzog
+   Learning Objects <span class="hljs-keyword">is</span> <span class="hljs-number">10.</span> We had a cake <span class="hljs-keyword">with</span> the LO,
+scweeker
+<span class="hljs-meta">   @DeviceLabDC love it! Now where so I get that &quot;etc</span>
+
+Enter Twitter Account:
+</code></pre>
+<p>El &#xFA;ltimo bit de la salida es donde vemos el bucle for leyendo los cinco &quot;amigos&quot; m&#xE1;s recientes de la cuenta de Twitter <strong>drchuck</strong> e imprimiendo el estado m&#xE1;s reciente de cada amigo. Hay muchos m&#xE1;s datos disponibles en el JSON devuelto. Si observas la salida del programa, tambi&#xE9;n puedes ver que el &quot;buscar amigos&quot; de una cuenta en particular tiene una limitaci&#xF3;n de tasa diferente a la cantidad de consultas en la l&#xED;nea de tiempo que podemos ejecutar por per&#xED;odo de tiempo.</p>
+<p>Estas claves de API seguras permiten que Twitter tenga una s&#xF3;lida confianza de que saben qui&#xE9;n est&#xE1; usando su API y sus datos y en qu&#xE9; nivel. El enfoque de limitaci&#xF3;n de velocidad nos permite realizar recuperaciones de datos personales simples, pero no nos permite crear un producto que extraiga datos de su API millones de veces al d&#xED;a.</p>
+<h2 id="exercises">Ejercicios </h2>
+<p><strong>Ejercicio 1:</strong> Cambie el <a href="http://www.py4e.com/code3/geojson.py" target="_blank">www.py4e.com/code3/geojson.py</a> o <a href="http://www.py4e.com/code3/geoxml.py" target="_blank">www.py4e.com/code3/geoxml.py</a> para imprimir el c&#xF3;digo de pa&#xED;s de dos caracteres a partir de los datos recuperados. Agregue la verificaci&#xF3;n de errores para que su programa no se registre si el c&#xF3;digo de pa&#xED;s no est&#xE1; all&#xED;. Una vez que lo tenga funcionando, busque &quot;Oc&#xE9;ano Atl&#xE1;ntico&quot; y aseg&#xFA;rese de que pueda manejar ubicaciones que no est&#xE9;n en ning&#xFA;n pa&#xED;s.</p>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12-network.html" class="navigation navigation-prev " aria-label="Previous page: 12. Programas en red">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14-objects.html" class="navigation navigation-next " aria-label="Next page: 14. Objetos">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13. Python y servicios web","level":"2.13","depth":1,"next":{"title":"14. Objetos","level":"2.14","depth":1,"path":"14-objects.md","ref":"14-objects.md","articles":[]},"previous":{"title":"12. Programas en red","level":"2.12","depth":1,"path":"12-network.md","ref":"12-network.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Instalando Python","alt":"Instalando Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Instalando Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Asistente personal digital","alt":"Asistente personal digital","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Asistente personal digital","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programadores hablando contigo","alt":"Programadores hablando contigo","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programadores hablando contigo","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Arquitectura de hardware","alt":"Arquitectura de hardware","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Arquitectura de hardware","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: ¿Dónde estás?","alt":"¿Dónde estás?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"¿Dónde estás?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: Si logica","alt":"Si logica","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Si logica","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: Lógica de If-Then-Else","alt":"Lógica de If-Then-Else","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Lógica de If-Then-Else","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: Lógica de elif","alt":"Lógica de elif","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Lógica de elif","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Memoria secundaria","alt":"Memoria secundaria","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Memoria secundaria","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables y objetos","alt":"Variables y objetos","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables y objetos","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: Una representación en árbol de XML","alt":"Una representación en árbol de XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Una representación en árbol de XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"13-web.html#fig2.13.2","level":"2.13","list_caption":"Figure: Arquitectura orientada a Servicios","alt":"Arquitectura orientada a Servicios","nro":16,"url":"../img/api.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Arquitectura orientada a Servicios","attributes":{},"skip":false,"key":"2.13.2"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: Un programa","alt":"Un programa","nro":17,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Un programa","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: Un programa como red de objetos","alt":"Un programa como red de objetos","nro":18,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Un programa como red de objetos","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignorar los detalles al usar un objeto","alt":"Ignorar los detalles al usar un objeto","nro":19,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignorar los detalles al usar un objeto","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignorar los detalles al construir un objeto","alt":"Ignorar los detalles al construir un objeto","nro":20,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignorar los detalles al construir un objeto","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: Una clase y dos objetos","alt":"Una clase y dos objetos","nro":21,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"Una clase y dos objetos","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Bases de datos relacionales","alt":"Bases de datos relacionales","nro":22,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Bases de datos relacionales","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":23,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Filas en una tabla","alt":"Filas en una tabla","nro":24,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Filas en una tabla","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relaciones entre tablas","alt":"Relaciones entre tablas","nro":25,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relaciones entre tablas","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Conectando tablas utilizando JOIN","alt":"Conectando tablas utilizando JOIN","nro":26,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Conectando tablas utilizando JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"es","gitbook":"*"},"file":{"path":"13-web.md","mtime":"2020-11-03T15:12:48.372Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

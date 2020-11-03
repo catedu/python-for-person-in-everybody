@@ -1,0 +1,742 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11. Regex · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12-network.html" />
+    
+    
+    <link rel="prev" href="10-tuples.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-intro.html">
+            
+                <a href="01-intro.html">
+            
+                    
+                    1. Comenzando el camino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-variables.html">
+            
+                <a href="02-variables.html">
+            
+                    
+                    2. Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-conditional.html">
+            
+                <a href="03-conditional.html">
+            
+                    
+                    3. Condicionales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-functions.html">
+            
+                <a href="04-functions.html">
+            
+                    
+                    4. Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-iterations.html">
+            
+                <a href="05-iterations.html">
+            
+                    
+                    5. Bucles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-strings.html">
+            
+                <a href="06-strings.html">
+            
+                    
+                    6. Cadenas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-files.html">
+            
+                <a href="07-files.html">
+            
+                    
+                    7. Archivos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-lists.html">
+            
+                <a href="08-lists.html">
+            
+                    
+                    8. Listas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-dictionaries.html">
+            
+                <a href="09-dictionaries.html">
+            
+                    
+                    9. Diccionarios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-tuples.html">
+            
+                <a href="10-tuples.html">
+            
+                    
+                    10. Tuplas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.11" data-path="11-regex.html">
+            
+                <a href="11-regex.html">
+            
+                    
+                    11. Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12-network.html">
+            
+                <a href="12-network.html">
+            
+                    
+                    12. Programas en red
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13-web.html">
+            
+                <a href="13-web.html">
+            
+                    
+                    13. Python y servicios web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14-objects.html">
+            
+                <a href="14-objects.html">
+            
+                    
+                    14. Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15-database.html">
+            
+                <a href="15-database.html">
+            
+                    
+                    15. Python y Bases de Datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="crditos.html">
+            
+                <a href="crditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >11. Regex</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="regular-expressions">Expresiones regulares </h1>
+<ul>
+<li><a href="#character-matching-in-regular-expressions">Coincidencia de caracteres en expresiones regulares</a></li>
+<li><a href="#extracting-data-using-regular-expressions">Extracci&#xF3;n de datos usando expresiones regulares</a></li>
+<li><a href="#combining-searching-and-extracting">Combinando b&#xFA;squeda y extracci&#xF3;n</a></li>
+<li><a href="#escape-character">caracter de escape</a></li>
+<li><a href="#summary">Resumen</a></li>
+<li><a href="#bonus-section-for-unix-linux-users">Secci&#xF3;n extra para usuarios de Unix / Linux</a></li>
+<li><a href="#debugging">Depurando</a></li>
+<li><a href="#%20ejercicios">Ejercicios</a></li>
+</ul>
+<p>Hasta ahora hemos estado leyendo archivos, buscando patrones y extrayendo varios trozos de l&#xED;neas que nos parecen interesantes. Hemos ido utilizando m&#xE9;todos de cadena como <code>split</code> y <code>find</code>, utilizando listas y troceado de cadenas para extraer partes de las l&#xED;neas.</p>
+<p>Esta tarea de b&#xFA;squeda y extracci&#xF3;n es tan com&#xFA;n que Python tiene una biblioteca muy poderosa llamada <strong>expresiones regulares</strong> que maneja muchas de estas tareas de manera muy elegante. La raz&#xF3;n por la que no hemos introducido expresiones regulares anteriormente en el libro es que, si bien son muy potentes, son un poco complicadas y su sintaxis requiere un tiempo para acostumbrarse.</p>
+<p>Las expresiones regulares son casi su propio lenguaje de programaci&#xF3;n para buscar y analizar cadenas. De hecho, se han escrito libros completos sobre el tema de las expresiones regulares. En este cap&#xED;tulo, solo cubriremos los conceptos b&#xE1;sicos de las expresiones regulares. <a href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">Aqu&#xED;</a> tienes m&#xE1;s detalles sobre expresiones regulares. Tambi&#xE9;n en la documentaci&#xF3;n de Python:</p>
+<p><a href="https://docs.python.org/3.7/library/re.html" target="_blank">https://docs.python.org/3.7/library/re.html</a></p>
+<p>La biblioteca de expresiones regulares, <code>re</code>, debe importarse en tu programa antes de poder usarla. El uso m&#xE1;s simple de la biblioteca de expresiones regulares es la funci&#xF3;n <code>search()</code>. El siguiente programa demuestra un uso trivial de la funci&#xF3;n de b&#xFA;squeda.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># Search for lines that contain &apos;From&apos;</span>
+<span class="hljs-keyword">import</span> re
+hand = open(<span class="hljs-string">&apos;mbox-short.txt&apos;</span>)
+<span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> hand:
+    line = line.rstrip()
+    <span class="hljs-keyword">if</span> re.search(<span class="hljs-string">&apos;From:&apos;</span>, line):
+        print(line)
+
+<span class="hljs-comment"># Code: http://www.py4e.com/code3/re01.py</span>
+</code></pre>
+<p>Abrimos el archivo, recorremos cada l&#xED;nea y usamos la funci&#xF3;n <code>search()</code> para imprimir solo las l&#xED;neas que contienen la cadena &quot;From:&quot;. Este programa no usa el poder real de las expresiones regulares, ya que podr&#xED;amos haber utilizado <code>line.find()</code> con la misma facilidad para lograr el mismo resultado.</p>
+<p>El poder de las expresiones regulares llega cuando agregamos caracteres especiales a la cadena de b&#xFA;squeda que nos permiten controlar con mayor precisi&#xF3;n qu&#xE9; l&#xED;neas coinciden con la cadena. Agregar estos caracteres especiales a nuestra expresi&#xF3;n regular nos permite hacer una comparaci&#xF3;n y extracci&#xF3;n sofisticadas mientras escribimos muy poco c&#xF3;digo.</p>
+<p>Por ejemplo, el caracter <code>^</code> se usa en expresiones regulares para coincidir con &quot;el principio&quot; de una l&#xED;nea. Podr&#xED;amos cambiar nuestro programa para que solo coincida con las l&#xED;neas donde &quot;De:&quot; est&#xE1; al principio de la l&#xED;nea de la siguiente manera:</p>
+<iframe src="https://trinket.io/embed/python3/77c2350d8b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Ahora solo haremos coincidir las l&#xED;neas que <strong>comiencen con</strong> la cadena &quot;De:&quot;. Este es un ejemplo muy simple que podr&#xED;amos haber hecho de manera equivalente con el m&#xE9;todo <code>startswith()</code> de la biblioteca de cadenas. Pero sirve para introducir la idea de que las expresiones regulares contienen caracteres de acci&#xF3;n especiales que nos dan m&#xE1;s control en cuanto a qu&#xE9; coincidir&#xE1; con la expresi&#xF3;n regular.</p>
+<h2 id="character-matching-in-regular-expressions">Coincidencia de caracteres en expresiones regulares </h2>
+<p>Hay una serie de caracteres especiales que nos permiten construir expresiones regulares a&#xFA;n m&#xE1;s potentes. El caracter especial m&#xE1;s utilizado es el punto, que coincide con cualquier caracter.</p>
+<p>En el siguiente ejemplo, la expresi&#xF3;n regular &quot;F..m:&quot; coincidir&#xED;a con cualquiera de las cadenas &quot;From:&quot;, &quot;Fxxm:&quot;, &quot;F12m:&quot; o &quot;F!@M:&quot;.</p>
+<iframe src="https://trinket.io/embed/python3/d558453717" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Esto es particularmente poderoso cuando se combina con la capacidad de indicar que un caracter puede repetirse cualquier cantidad de veces utilizando los caracteres &quot;*&quot; o &quot;+&quot; en su expresi&#xF3;n regular. Estos caracteres especiales significan que, en lugar de coincidir con un solo caracter en la cadena de b&#xFA;squeda, coinciden con cero o m&#xE1;s caracteres (en el caso del asterisco), o uno o m&#xE1;s caracteres (en el caso del signo m&#xE1;s) .</p>
+<p>Podemos restringir a&#xFA;n m&#xE1;s las l&#xED;neas &apos;interesantes&apos; utilizando el caracter repetido de <strong>comod&#xED;n</strong> (wildcard) en el siguiente ejemplo:</p>
+<iframe src="https://trinket.io/embed/python3/e82ead95e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>La cadena de b&#xFA;squeda <code>^From:.+@</code> coincidir&#xE1; con las l&#xED;neas que comienzan con &quot;From:&quot;, seguido de uno o m&#xE1;s caracteres (&quot;. +&quot;), Seguido de un signo de at. As&#xED; que esto coincidir&#xE1; con la siguiente l&#xED;nea:</p>
+<p><code>From: uct.ac.za</code></p>
+<p>Puede pensar que el comod&#xED;n &quot;.+&quot; se expande para que coincida con todos los caracteres entre el caracter de dos puntos y la arroba.</p>
+<p>Es bueno saber que los caracteres de m&#xE1;s y asterisco son &quot;agresivos&quot;. Por ejemplo, la siguiente cadena coincidir&#xED;a con la &#xFA;ltima arroba en la cadena cuando el &quot;.+&quot; Empuja hacia afuera, como se muestra a continuaci&#xF3;n:</p>
+<p><code>From: iupui.edu</code></p>
+<p>Es posible decirle a un asterisco o signo m&#xE1;s que no sea tan &quot;codicioso&quot; al agregar otro personaje. Consulte la <a href="https://docs.python.org/3.7/howto/regex.html#greedy-versus-non-greedy" target="_blank">documentaci&#xF3;n</a> detallada para obtener informaci&#xF3;n sobre c&#xF3;mo desactivar el comportamiento codicioso.</p>
+<h2 id="extracting-data-using-regular-expressions">Extracci&#xF3;n de datos usando expresiones regulares </h2>
+<p>Si queremos extraer datos de una cadena en Python, podemos usar el m&#xE9;todo <code>findall()</code> para extraer todas las subcadenas que coinciden con una expresi&#xF3;n regular. Usemos el ejemplo de querer extraer todo lo que parece una direcci&#xF3;n de correo electr&#xF3;nico desde cualquier l&#xED;nea, independientemente del formato. Por ejemplo, queremos extraer las direcciones de correo electr&#xF3;nico de cada una de las siguientes l&#xED;neas:</p>
+<pre><code class="lang-txt">From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
+Return-Path: &lt;postmaster@collab.sakaiproject.org&gt;
+          for &lt;source@collab.sakaiproject.org&gt;;
+Received: (from apache@localhost)
+Author: stephen.marquard@uct.ac.za
+</code></pre>
+<p>No queremos escribir c&#xF3;digo para cada uno de los tipos de l&#xED;neas, dividir y dividir de manera diferente para cada l&#xED;nea. Este programa siguiente utiliza <code>findall()</code> para encontrar las l&#xED;neas con direcciones de correo electr&#xF3;nico en ellas y extraer una o m&#xE1;s direcciones de cada una de esas l&#xED;neas.</p>
+<iframe src="https://trinket.io/embed/python3/e8248e2794" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>El m&#xE9;todo <code>findall()</code> busca la cadena en el segundo argumento y devuelve una lista de todas las cadenas que parecen direcciones de correo electr&#xF3;nico. Estamos utilizando una secuencia de dos caracteres que coincide con uno o m&#xE1;s caracterers que no sean un espacio en blanco (<code>\S</code>).</p>
+<p>La salida del programa ser&#xED;a:</p>
+<pre><code class="lang-python">[<span class="hljs-string">&apos;csev@umich.edu&apos;</span>, <span class="hljs-string">&apos;cwen@iupui.edu&apos;</span>]
+</code></pre>
+<p>Al traducir la expresi&#xF3;n regular, estamos buscando subcadenas que tengan al menos un caracter que no sea un espacio en blanco, seguido de un signo <code>@</code>, seguido de al menos un caracter m&#xE1;s que no sea un espacio en blanco. La &quot;<code>\S+</code>&quot; coincide con la mayor cantidad posible de caracteres que no sean espacios en blanco.</p>
+<p>La expresi&#xF3;n regular coincidir&#xED;a dos veces (csev@umich.edu y cwen@iupui.edu), pero no coincidir&#xED;a con la cadena &quot;@2PM&quot; porque no hay caracteres que no est&#xE9;n en blanco <strong>antes</strong> del signo de inicio. Podemos usar esta expresi&#xF3;n regular en un programa para leer todas las l&#xED;neas de un archivo e imprimir cualquier cosa que parezca una direcci&#xF3;n de correo electr&#xF3;nico de la siguiente manera:</p>
+<iframe src="https://trinket.io/embed/python3/674fe79c92" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Leemos cada l&#xED;nea y luego extraemos todas las subcadenas que coinciden con nuestra expresi&#xF3;n regular. Como <code>findall()</code> devuelve una lista, simplemente verificamos si el n&#xFA;mero de elementos en nuestra lista devuelta es m&#xE1;s que cero para imprimir solo las l&#xED;neas donde encontramos al menos una subcadena que parece una direcci&#xF3;n de correo electr&#xF3;nico.</p>
+<p>Si ejecutamos el programa en <code>mbox.txt</code> obtenemos el siguiente resultado:</p>
+<pre><code class="lang-python">[<span class="hljs-string">&apos;wagnermr@iupui.edu&apos;</span>]
+[<span class="hljs-string">&apos;cwen@iupui.edu&apos;</span>]
+[<span class="hljs-string">&apos;&lt;postmaster@collab.sakaiproject.org&gt;&apos;</span>]
+[<span class="hljs-string">&apos;&lt;200801032122.m03LMFo4005148@nakamura.uits.iupui.edu&gt;&apos;</span>]
+[<span class="hljs-string">&apos;&lt;source@collab.sakaiproject.org&gt;;&apos;</span>]
+[<span class="hljs-string">&apos;&lt;source@collab.sakaiproject.org&gt;;&apos;</span>]
+[<span class="hljs-string">&apos;&lt;source@collab.sakaiproject.org&gt;;&apos;</span>]
+[<span class="hljs-string">&apos;apache@localhost)&apos;</span>]
+[<span class="hljs-string">&apos;source@collab.sakaiproject.org;&apos;</span>]
+</code></pre>
+<p>Algunas de nuestras direcciones de correo electr&#xF3;nico tienen caracteres incorrectos como &quot;<code>&lt;</code>&quot; o &quot;;&quot; al principio o al final. Declaremos que solo nos interesa la parte de la cadena que comienza y termina con una letra o un n&#xFA;mero.</p>
+<p>Para ello, utilizamos otra caracter&#xED;stica de las expresiones regulares. Los corchetes se utilizan para indicar un conjunto de m&#xFA;ltiples caracteres aceptables que estamos dispuestos a considerar que coincidan. En cierto sentido, el &quot;<code>\S</code>&quot; est&#xE1; pidiendo que coincida con el conjunto de &quot;caracteres que no son espacios en blanco&quot;. Ahora vamos a ser un poco m&#xE1;s expl&#xED;citos en t&#xE9;rminos de los caracteres con los que coincidiremos.</p>
+<p>Aqu&#xED; est&#xE1; nuestra nueva expresi&#xF3;n regular:</p>
+<pre><code class="lang-txt">[a-zA-Z0-9]\S*@\S*[a-zA-Z]
+</code></pre>
+<p>Esto se est&#xE1; complicando un poco y puedes empezar a ver porqu&#xE9; las expresiones regulares son un lenguaje en s&#xED; mismas. Al traducir esta expresi&#xF3;n regular, vemos que estamos buscando subcadenas que comiencen con una sola min&#xFA;scula, may&#xFA;scula o n&#xFA;mero &quot;[a-zA-Z0-9]&quot;, seguido de cero o m&#xE1;s caracteres que no est&#xE9;n en blanco (&quot;<code>\S*</code>&quot;), seguido de un signo arroba, seguido de cero o m&#xE1;s caracteres que no est&#xE9;n en blanco, seguido de una letra may&#xFA;scula o min&#xFA;scula. Ten en cuenta que cambiamos de &quot;+&quot; a <code>*</code> para indicar cero o m&#xE1;s caracteres que no est&#xE1;n en blanco ya que &quot;[a-zA-Z0-9]&quot; ya es un caracter que no est&#xE1; en blanco. Recuerda que el <code>*</code> o &quot;+&quot; se aplica al caracter &#xFA;nico inmediatamente a la izquierda del signo m&#xE1;s o asterisco.</p>
+<p>Si usamos esta expresi&#xF3;n en nuestro programa, nuestros datos son mucho m&#xE1;s limpios:</p>
+<iframe src="https://trinket.io/embed/python3/1b176f4d0e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<pre><code class="lang-python">...
+[<span class="hljs-string">&apos;wagnermr@iupui.edu&apos;</span>]
+[<span class="hljs-string">&apos;cwen@iupui.edu&apos;</span>]
+[<span class="hljs-string">&apos;postmaster@collab.sakaiproject.org&apos;</span>]
+[<span class="hljs-string">&apos;200801032122.m03LMFo4005148@nakamura.uits.iupui.edu&apos;</span>]
+[<span class="hljs-string">&apos;source@collab.sakaiproject.org&apos;</span>]
+[<span class="hljs-string">&apos;source@collab.sakaiproject.org&apos;</span>]
+[<span class="hljs-string">&apos;source@collab.sakaiproject.org&apos;</span>]
+[<span class="hljs-string">&apos;apache@localhost&apos;</span>]
+</code></pre>
+<p>Observa que en las l&#xED;neas &quot;source@collab.sakaiproject.org&quot;, nuestra expresi&#xF3;n regular elimin&#xF3; dos letras al final de la cadena (&quot;&gt;;&quot;). Esto se debe a que cuando agregamos &quot;[a-zA-Z]&quot; al final de nuestra expresi&#xF3;n regular, estamos exigiendo que cualquier cadena que el analizador de expresiones regulares encuentre debe terminar con una letra. Entonces, cuando ve &quot;&gt;&quot; despu&#xE9;s de &quot;sakaiproject.org&gt; simplemente se detiene en la &#xFA;ltima letra &quot;coincidente&quot; que encontr&#xF3; (es decir, la &quot;g&quot; fue la &#xFA;ltima buena coincidencia).</p>
+<p>Tambi&#xE9;n tenga en cuenta que la salida del programa es una lista de Python que tiene una cadena como elemento &#xFA;nico en la lista.</p>
+<h2 id="combining-searching-and-extracting">Combinando b&#xFA;squeda y extracci&#xF3;n </h2>
+<p>Si queremos encontrar n&#xFA;meros en las l&#xED;neas que comienzan con la cadena &quot;X-&quot;, como por ejemplo:</p>
+<pre><code class="lang-txt">X-DSPAM-Confidence: 0.8475
+X-DSPAM-Probability: 0.0000
+</code></pre>
+<p>No solo queremos n&#xFA;meros de punto flotante de cualquier l&#xED;nea. Solo queremos extraer n&#xFA;meros de l&#xED;neas que tengan la sintaxis anterior.</p>
+<p>Podemos construir la siguiente expresi&#xF3;n regular para seleccionar las l&#xED;neas:</p>
+<pre><code class="lang-python">^X-.*: [<span class="hljs-number">0</span><span class="hljs-number">-9.</span>]+
+</code></pre>
+<p>Tras traducir esto, estamos diciendo que queremos l&#xED;neas que comiencen con &quot;X-&quot;, seguidas de cero o m&#xE1;s caracteres (&quot;.*&quot;), Seguidas de dos puntos (&quot;:&quot;) y luego un espacio. Despu&#xE9;s del espacio, estamos buscando uno o m&#xE1;s caracteres que sean un d&#xED;gito (0-9) o un punto &quot;[0-9.]+&quot;. Ten en cuenta que dentro de los corchetes, el per&#xED;odo coincide con un per&#xED;odo real (es decir, no es un comod&#xED;n entre los corchetes).</p>
+<p>Esta es una expresi&#xF3;n muy estricta que coincidir&#xE1; en gran medida solo con las l&#xED;neas que nos interesan de la siguiente manera:</p>
+<iframe src="https://trinket.io/embed/python3/18870dcf26" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Cuando ejecutamos el programa, vemos que los datos se filtran bien para mostrar solo las l&#xED;neas que estamos buscando.</p>
+<pre><code class="lang-python">X-DSPAM-Confidence: <span class="hljs-number">0.8475</span>
+X-DSPAM-Probability: <span class="hljs-number">0.0000</span>
+X-DSPAM-Confidence: <span class="hljs-number">0.6178</span>
+X-DSPAM-Probability: <span class="hljs-number">0.0000</span>
+</code></pre>
+<p>Pero ahora tenemos que resolver el problema de extraer los n&#xFA;meros. Si bien ser&#xED;a lo suficientemente simple como para usar <code>split</code>, podemos usar otra caracter&#xED;stica de las expresiones regulares para buscar y analizar la l&#xED;nea al mismo tiempo.</p>
+<p>Los par&#xE9;ntesis son otro caracter especial en las expresiones regulares. Cuando agrega par&#xE9;ntesis a una expresi&#xF3;n regular, se ignoran cuando coinciden con la cadena. Pero cuando est&#xE1; utilizando <code>findall()</code>, los par&#xE9;ntesis indican que aunque desea que la expresi&#xF3;n completa coincida, solo le interesa extraer una parte de la subcadena que coincida con la expresi&#xF3;n regular.</p>
+<p>Entonces hacemos el siguiente cambio a nuestro programa:</p>
+<iframe src="https://trinket.io/embed/python3/38a31c1ce9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>En lugar de llamar a <code>search()</code>, agregamos par&#xE9;ntesis a la parte de la expresi&#xF3;n regular que representa el n&#xFA;mero de punto flotante para indicar que solo queremos que <code>findall()</code> nos devuelva la parte del n&#xFA;mero de punto flotante de la cadena correspondiente .</p>
+<p>La salida de este programa es la siguiente:</p>
+<pre><code class="lang-python">[<span class="hljs-string">&apos;0.8475&apos;</span>]
+[<span class="hljs-string">&apos;0.0000&apos;</span>]
+[<span class="hljs-string">&apos;0.6178&apos;</span>]
+[<span class="hljs-string">&apos;0.0000&apos;</span>]
+[<span class="hljs-string">&apos;0.6961&apos;</span>]
+[<span class="hljs-string">&apos;0.0000&apos;</span>]
+..
+</code></pre>
+<p>Los n&#xFA;meros a&#xFA;n est&#xE1;n en una lista y deben convertirse de cadenas a puntos flotantes, pero hemos utilizado el poder de las expresiones regulares para buscar y extraer la informaci&#xF3;n que encontramos interesante.</p>
+<p>Como otro ejemplo de esta t&#xE9;cnica, si observas el archivo, hay varias l&#xED;neas del formulario:</p>
+<pre><code class="lang-python">Details: http://source.sakaiproject.org/viewsvn/?view=rev&amp;amp;rev=39772
+</code></pre>
+<p>Si quisi&#xE9;ramos extraer todos los n&#xFA;meros de revisi&#xF3;n (el n&#xFA;mero entero al final de estas l&#xED;neas) utilizando la misma t&#xE9;cnica anterior, podr&#xED;amos escribir el siguiente programa:</p>
+<iframe src="https://trinket.io/embed/python3/93a830d48e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Al traducir nuestra expresi&#xF3;n regular, buscamos l&#xED;neas que comiencen con &quot;Details:&quot;, seguidas de cualquier n&#xFA;mero de caracteres (&quot;.*&quot;), seguidas de &quot;rev=&quot; y luego con uno o m&#xE1;s d&#xED;gitos. Queremos encontrar l&#xED;neas que coincidan con la expresi&#xF3;n completa, pero solo queremos extraer el n&#xFA;mero entero al final de la l&#xED;nea, por lo que rodeamos &quot;[0-9]+&quot; con par&#xE9;ntesis.</p>
+<p>Cuando ejecutamos el programa, obtenemos el siguiente resultado:</p>
+<pre><code class="lang-python">[<span class="hljs-string">&apos;39772&apos;</span>]
+[<span class="hljs-string">&apos;39771&apos;</span>]
+[<span class="hljs-string">&apos;39770&apos;</span>]
+[<span class="hljs-string">&apos;39769&apos;</span>]
+...
+</code></pre>
+<p>Recuerde que el &quot;[0-9] +&quot; es &quot;codicioso&quot; y trata de hacer una cadena de d&#xED;gitos tan grande como sea posible antes de extraer esos d&#xED;gitos. Este comportamiento &quot;codicioso&quot; es la raz&#xF3;n por la que obtenemos los cinco d&#xED;gitos para cada n&#xFA;mero. La biblioteca de expresiones regulares se expande en ambas direcciones hasta que encuentra un no d&#xED;gito, o el principio o el final de una l&#xED;nea.</p>
+<p>Ahora podemos usar expresiones regulares para rehacer un ejercicio anterior en el libro en el que est&#xE1;bamos interesados &#x200B;&#x200B;en la hora del d&#xED;a de cada mensaje de correo. Buscamos l&#xED;neas con la forma siguiente:</p>
+<pre><code class="lang-python">From stephen.marquard@uct.ac.za Sat Jan  <span class="hljs-number">5</span> <span class="hljs-number">09</span>:<span class="hljs-number">14</span>:<span class="hljs-number">16</span> <span class="hljs-number">2008</span>
+</code></pre>
+<p>Y quer&#xED;amos extraer la hora del d&#xED;a para cada l&#xED;nea. Anteriormente hicimos esto con dos llamadas a <code>split</code>. Primero, la l&#xED;nea se dividi&#xF3; en palabras y luego sacamos la quinta palabra y la dividimos nuevamente en el caracter de dos puntos para sacar los dos caracteres que nos interesaban.</p>
+<p>Si bien esto funcion&#xF3;, en realidad dio como resultado c&#xF3;digo bastante fr&#xE1;gil que asum&#xED;a que las l&#xED;neas estaban bien formateadas. Si tuvieras que agregar suficientes comprobaciones de errores (o un bloque grande de try/except) para asegurarte de que tu programa nunca fallara cuando se le presentaran l&#xED;neas de formato incorrecto, el c&#xF3;digo se inflar&#xED;a a 10-15 l&#xED;neas de c&#xF3;digo bastante dif&#xED;cil de leer.</p>
+<p>Podemos hacer esto de una manera mucho m&#xE1;s simple con la siguiente expresi&#xF3;n regular:</p>
+<pre><code class="lang-python">^From .* [<span class="hljs-number">0</span><span class="hljs-number">-9</span>][<span class="hljs-number">0</span><span class="hljs-number">-9</span>]:
+</code></pre>
+<p>La traducci&#xF3;n de esta expresi&#xF3;n regular es que estamos buscando l&#xED;neas que comiencen con &quot;From &quot; (nota el espacio), seguidas de cualquier n&#xFA;mero de caracteres (&quot;.*&quot;), seguidas de un espacio, seguidas de dos d&#xED;gitos <code>[0 -9][0-9]</code>, seguido de un caracter de dos puntos. Esta es la definici&#xF3;n de los tipos de l&#xED;neas que estamos buscando.</p>
+<p>Para extraer solo la hora usando <code>findall()</code>, agregamos par&#xE9;ntesis alrededor de los dos d&#xED;gitos de la siguiente manera:</p>
+<pre><code class="lang-python">^From .* ([<span class="hljs-number">0</span><span class="hljs-number">-9</span>][<span class="hljs-number">0</span><span class="hljs-number">-9</span>]):
+</code></pre>
+<p>Esto resulta en el siguiente programa:</p>
+<iframe src="https://trinket.io/embed/python3/6f58c712ee" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<p>Cuando el programa se ejecuta, produce el siguiente resultado:</p>
+<pre><code class="lang-python">[<span class="hljs-string">&apos;09&apos;</span>]
+[<span class="hljs-string">&apos;18&apos;</span>]
+[<span class="hljs-string">&apos;16&apos;</span>]
+[<span class="hljs-string">&apos;15&apos;</span>]
+...
+</code></pre>
+<h2 id="escape-character">caracter de escape </h2>
+<p>Ya que usamos caracteres especiales en expresiones regulares para hacer coincidir el comienzo o el final de una l&#xED;nea o especificar comodines, necesitamos una forma de indicar que estos caracteres son &quot;normales&quot; y queremos que coincidan con el caracter real, como un signo de d&#xF3;lar o un acento circunflejo.</p>
+<p>Podemos indicar que queremos simplemente hacer coincidir un caracter precediendo a ese caracter con una barra invertida. Por ejemplo, podemos encontrar cantidades de dinero con la siguiente expresi&#xF3;n regular.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> re
+x = <span class="hljs-string">&apos;We just received $10.00 for cookies.&apos;</span>
+y = re.findall(<span class="hljs-string">&apos;\$[0-9.]+&apos;</span>,x)
+</code></pre>
+<p>Como prefijamos el signo de d&#xF3;lar con una barra invertida, en realidad coincide con el signo de d&#xF3;lar en la cadena de entrada en lugar de coincidir con el &quot;fin de l&#xED;nea&quot;, y el resto de la expresi&#xF3;n regular coincide con uno o m&#xE1;s d&#xED;gitos o el caracter de per&#xED;odo. <strong>Nota:</strong> Dentro de los corchetes, los caracteres no son &quot;especiales&quot;. Entonces cuando decimos &quot;[0-9.]&quot;, Realmente significa d&#xED;gitos o un punto. Fuera de los corchetes, un punto es el caracter de &quot;comod&#xED;n&quot; y coincide con cualquier caracter. Dentro de los corchetes, el per&#xED;odo es un per&#xED;odo.</p>
+<h2 id="summary">Resumen </h2>
+<p>Si bien esto solo roz&#xF3; la superficie de las expresiones regulares, hemos aprendido un poco sobre el lenguaje de las expresiones regulares. Son cadenas de b&#xFA;squeda con caracteres especiales que comunican sus deseos al sistema de expresi&#xF3;n regular en cuanto a qu&#xE9; define &quot;coincidencia&quot; y qu&#xE9; se extrae de las cadenas coincidentes. &#xC9;stos son algunos de esos caracteres especiales y secuencias de caracteres:</p>
+<p><code>^</code> Coincide con el principio de la l&#xED;nea.</p>
+<p><code>$</code> Coincide con el final de la l&#xED;nea.</p>
+<p><code>.</code> Coincide con cualquier caracter (un comod&#xED;n).</p>
+<p><code>\s</code> Coincide con un caracter de espacio en blanco.</p>
+<p><code>\S</code> Coincide con un caracter que no es un espacio en blanco (opuesto a <code>\s</code>).</p>
+<p><code>*</code> Se aplica al caracter inmediatamente anterior e indica que coincida con cero o m&#xE1;s de los caracteres anteriores.</p>
+<p><code>*?</code> Se aplica al caracter inmediatamente anterior e indica que coincida con cero o m&#xE1;s de los caracteres anteriores en &quot;modo no codicioso&quot;.</p>
+<p><code>+</code> Se aplica al caracter inmediatamente anterior e indica que coincida con uno o m&#xE1;s de los caracteres anteriores.</p>
+<p><code>+?</code> Se aplica al caracter inmediatamente anterior e indica que coincida con uno o m&#xE1;s de los caracteres anteriores en &quot;modo no codicioso&quot;.</p>
+<p><code>[aeiou]</code> Coincide con un solo caracter siempre que ese caracter est&#xE9; en el conjunto especificado. En este ejemplo, coincidir&#xED;a con &quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, o &quot;u&quot;, pero no con otros caracteres.</p>
+<p><code>[a-z0-9]</code> Puedes especificar rangos de caracteres usando el signo menos. Este ejemplo es un solo caracter que debe ser una letra min&#xFA;scula o un d&#xED;gito.</p>
+<p><code>[^A-Za-z]</code> Cuando dentro de corchetes el primer caracter es un acento circunflejo, invierte la l&#xF3;gica. Este ejemplo coincide con un solo caracter que es cualquier cosa <strong>distinta de</strong> una letra may&#xFA;scula o min&#xFA;scula.</p>
+<p><code>()</code> Cuando se agregan par&#xE9;ntesis a una expresi&#xF3;n regular, se ignoran con el fin de hacer coincidir permitiendo extraer un subconjunto particular de la cadena coincidente en lugar de toda la cadena cuando se usa <code>findall()</code>.</p>
+<p><code>\b</code> Coincide con la cadena vac&#xED;a, pero solo al principio o al final de una palabra.</p>
+<p><code>\B</code> Coincide con la cadena vac&#xED;a, pero no al principio o al final de una palabra.</p>
+<p><code>\d</code> Coincide con cualquier d&#xED;gito decimal; Equivalente al conjunto [0-9].</p>
+<p><code>\D</code> Coincide con cualquier caracter que no sea un d&#xED;gito; equivalente al conjunto [<code>^</code> 0-9].</p>
+<h2 id="bonus-section-for-unix-linux-users">Secci&#xF3;n extra para usuarios de Unix / Linux </h2>
+<p>El soporte para buscar archivos usando expresiones regulares se incorpor&#xF3; al sistema operativo Unix desde la d&#xE9;cada de 1960 y est&#xE1; disponible en casi todos los lenguajes de programaci&#xF3;n de una forma u otra.</p>
+<p>De hecho, hay un programa de l&#xED;nea de comandos integrado en Unix llamado <strong>grep</strong> (Analizador de Expresi&#xF3;n Regular Generalizada) que hace pr&#xE1;cticamente lo mismo que los ejemplos de <code>search()</code> en este cap&#xED;tulo. Entonces, si tienes un sistema Macintosh o Linux, puedes probar los siguientes comandos en tu terminal.</p>
+<pre><code class="lang-python">$ grep <span class="hljs-string">&apos;^From:&apos;</span> mbox-short.txt
+From: stephen.marquard@uct.ac.za
+From: louis@media.berkeley.edu
+From: zqian@umich.edu
+From: rjlowe@iupui.edu
+</code></pre>
+<p>Esto le dice a <code>grep</code> que le muestre las l&#xED;neas que comienzan con la cadena &quot;From:&quot; en el archivo<code>mbox-short.txt</code>. Si experimentas con el comando <code>grep</code> un poco y lees la documentaci&#xF3;n de <code>grep</code>, encontrar&#xE1;s algunas diferencias sutiles entre el soporte de expresiones regulares en Python y el soporte de expresiones regulares en <code>grep</code>. Como ejemplo, <code>grep</code> no admite el caracter que no est&#xE1; en blanco <code>\S</code>, por lo que deber&#xE1; usar la notaci&#xF3;n de conjuntos un poco m&#xE1;s compleja <code>[^ ]</code>, que simplemente significa que coincida con un caracter que sea cualquier cosa Aparte de un espacio.</p>
+<h2 id="debugging">Depurando </h2>
+<p>Python tiene una documentaci&#xF3;n incorporada simple y rudimentaria que puede ser muy &#xFA;til si necesitas una actualizaci&#xF3;n r&#xE1;pida para activar tu memoria sobre el nombre exacto de un m&#xE9;todo en particular. Esta documentaci&#xF3;n se puede ver en el int&#xE9;rprete de Python en modo interactivo.</p>
+<p>Puedes abrir un sistema de ayuda interactivo usando <code>help()</code>.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>help()
+help&gt; modules
+</code></pre>
+<p>Si sabes qu&#xE9; m&#xF3;dulo deseas usar, puedes usar el comando <code>dir()</code> para encontrar los m&#xE9;todos en el m&#xF3;dulo de la siguiente manera:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> re
+<span class="hljs-meta">&gt;&gt;&gt; </span>dir(re)
+[<span class="hljs-string">&apos;A&apos;</span>, <span class="hljs-string">&apos;ASCII&apos;</span>, <span class="hljs-string">&apos;DEBUG&apos;</span>, <span class="hljs-string">&apos;DOTALL&apos;</span>, <span class="hljs-string">&apos;I&apos;</span>, <span class="hljs-string">&apos;IGNORECASE&apos;</span>, <span class="hljs-string">&apos;L&apos;</span>, <span class="hljs-string">&apos;LOCALE&apos;</span>, <span class="hljs-string">&apos;M&apos;</span>, <span class="hljs-string">&apos;MULTILINE&apos;</span>, <span class="hljs-string">&apos;RegexFlag&apos;</span>, <span class="hljs-string">&apos;S&apos;</span>, <span class="hljs-string">&apos;Scanner&apos;</span>, <span class="hljs-string">&apos;T&apos;</span>, <span class="hljs-string">&apos;TEMPLATE&apos;</span>, <span class="hljs-string">&apos;U&apos;</span>, <span class="hljs-string">&apos;UNICODE&apos;</span>, <span class="hljs-string">&apos;VERBOSE&apos;</span>, <span class="hljs-string">&apos;X&apos;</span>, <span class="hljs-string">&apos;_MAXCACHE&apos;</span>, <span class="hljs-string">&apos;__all__&apos;</span>, <span class="hljs-string">&apos;__builtins__&apos;</span>, <span class="hljs-string">&apos;__cached__&apos;</span>, <span class="hljs-string">&apos;__doc__&apos;</span>, <span class="hljs-string">&apos;__file__&apos;</span>, <span class="hljs-string">&apos;__loader__&apos;</span>, <span class="hljs-string">&apos;__name__&apos;</span>, <span class="hljs-string">&apos;__package__&apos;</span>, <span class="hljs-string">&apos;__spec__&apos;</span>, <span class="hljs-string">&apos;__version__&apos;</span>, <span class="hljs-string">&apos;_alphanum_bytes&apos;</span>, <span class="hljs-string">&apos;_alphanum_str&apos;</span>, <span class="hljs-string">&apos;_cache&apos;</span>, <span class="hljs-string">&apos;_compile&apos;</span>, <span class="hljs-string">&apos;_compile_repl&apos;</span>, <span class="hljs-string">&apos;_expand&apos;</span>, <span class="hljs-string">&apos;_locale&apos;</span>, <span class="hljs-string">&apos;_pattern_type&apos;</span>, <span class="hljs-string">&apos;_pickle&apos;</span>, <span class="hljs-string">&apos;_subx&apos;</span>, <span class="hljs-string">&apos;compile&apos;</span>, <span class="hljs-string">&apos;copyreg&apos;</span>, <span class="hljs-string">&apos;enum&apos;</span>, <span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-string">&apos;escape&apos;</span>, <span class="hljs-string">&apos;findall&apos;</span>, <span class="hljs-string">&apos;finditer&apos;</span>, <span class="hljs-string">&apos;fullmatch&apos;</span>, <span class="hljs-string">&apos;functools&apos;</span>, <span class="hljs-string">&apos;match&apos;</span>, <span class="hljs-string">&apos;purge&apos;</span>, <span class="hljs-string">&apos;search&apos;</span>, <span class="hljs-string">&apos;split&apos;</span>, <span class="hljs-string">&apos;sre_compile&apos;</span>, <span class="hljs-string">&apos;sre_parse&apos;</span>, <span class="hljs-string">&apos;sub&apos;</span>, <span class="hljs-string">&apos;subn&apos;</span>, <span class="hljs-string">&apos;template&apos;</span>]
+&gt;&gt;&gt;
+</code></pre>
+<p>Tambi&#xE9;n puedes obtener una peque&#xF1;a cantidad de documentaci&#xF3;n sobre un m&#xE9;todo en particular usando el comando help.</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> re
+<span class="hljs-meta">&gt;&gt;&gt; </span>help(re.search)
+</code></pre>
+<p>La documentaci&#xF3;n incorporada no es muy extensa, pero puede ser &#xFA;til cuando tienes prisa o no tienes acceso a un navegador web o motor de b&#xFA;squeda.</p>
+<h2 id=" ejercicios">Ejercicios </h2>
+<p><strong>Ejercicio 1:</strong> Escribe un programa simple para simular el funcionamiento del comando <code>grep</code> en Unix. P&#xED;dele al usuario que ingrese una expresi&#xF3;n regular y cuente el n&#xFA;mero de l&#xED;neas que coincidieron con la expresi&#xF3;n regular:</p>
+<pre><code class="lang-python">$ python grep.py
+Enter a regular expression: ^Author
+mbox.txt had <span class="hljs-number">1798</span> lines that matched ^Author
+
+$ python grep.py
+Enter a regular expression: ^X-
+mbox.txt had <span class="hljs-number">14368</span> lines that matched ^X-
+
+$ python grep.py
+Enter a regular expression: java$
+mbox.txt had <span class="hljs-number">4218</span> lines that matched java$
+</code></pre>
+<p><strong>Ejercicio 2:</strong> Escribe un programa para buscar l&#xED;neas del formulario</p>
+<pre><code class="lang-python">`New Revision: <span class="hljs-number">39772</span>`
+</code></pre>
+<p>y extrae el n&#xFA;mero de cada una de las l&#xED;neas utilizando una expresi&#xF3;n regular y el m&#xE9;todo <code>findall()</code>. Calcula el promedio de los n&#xFA;meros e imprime el promedio.</p>
+<pre><code class="lang-python">Enter file:mbox.txt
+<span class="hljs-number">38549.7949721</span>
+
+Enter file:mbox-short.txt
+<span class="hljs-number">39756.9259259</span>
+</code></pre>
+<p><div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Python for person in everybody</span>, escrito a partir del libro <a rel="license" href="https://www.py4e.com/book" target="_blank">&apos;Python for Everybody&apos;</a> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a rel="license" href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10-tuples.html" class="navigation navigation-prev " aria-label="Previous page: 10. Tuplas">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12-network.html" class="navigation navigation-next " aria-label="Next page: 12. Programas en red">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11. Regex","level":"2.11","depth":1,"next":{"title":"12. Programas en red","level":"2.12","depth":1,"path":"12-network.md","ref":"12-network.md","articles":[]},"previous":{"title":"10. Tuplas","level":"2.10","depth":1,"path":"10-tuples.md","ref":"10-tuples.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","image-captions","accordion","styled-blockquotes","localized-footer","edit-link","githubcontributors","language-picker","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"python-for-person-in-everybody"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":{"en":"Edit this page","es":"Edita esta página"},"base":"https://github.com/catedu/python-for-person-in-everybody/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Python for person in everybody","author":"Charles R. Severance","collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"01-intro.html#fig2.1.1","level":"2.1","list_caption":"Figure: Instalando Python","alt":"Instalando Python","nro":1,"url":"https://deleyva.gitbooks.io/automatiza-tu-aprendizaje-con-python/content/img/python-path.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Instalando Python","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"01-intro.html#fig2.1.2","level":"2.1","list_caption":"Figure: Asistente personal digital","alt":"Asistente personal digital","nro":2,"url":"../img/descarga.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Asistente personal digital","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"01-intro.html#fig2.1.3","level":"2.1","list_caption":"Figure: Programadores hablando contigo","alt":"Programadores hablando contigo","nro":3,"url":"../img/programers-talking-to-you.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Programadores hablando contigo","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"01-intro.html#fig2.1.4","level":"2.1","list_caption":"Figure: Arquitectura de hardware","alt":"Arquitectura de hardware","nro":4,"url":"../img/hardware-architecture.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Arquitectura de hardware","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"01-intro.html#fig2.1.5","level":"2.1","list_caption":"Figure: ¿Dónde estás?","alt":"¿Dónde estás?","nro":5,"url":"../img/where-r-you.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"¿Dónde estás?","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"03-conditional.html#fig2.3.1","level":"2.3","list_caption":"Figure: Si logica","alt":"Si logica","nro":6,"url":"../img/if.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Si logica","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"03-conditional.html#fig2.3.2","level":"2.3","list_caption":"Figure: Lógica de If-Then-Else","alt":"Lógica de If-Then-Else","nro":7,"url":"../img/if-else.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Lógica de If-Then-Else","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"03-conditional.html#fig2.3.3","level":"2.3","list_caption":"Figure: Lógica de elif","alt":"Lógica de elif","nro":8,"url":"../img/elif.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Lógica de elif","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"03-conditional.html#fig2.3.4","level":"2.3","list_caption":"Figure: Nested If Statements","alt":"Nested If Statements","nro":9,"url":"../img/nested.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Nested If Statements","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"06-strings.html#fig2.6.1","level":"2.6","list_caption":"Figure: String Indexes","alt":"String Indexes","nro":10,"url":"../img/banana.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"String Indexes","attributes":{},"skip":false,"key":"2.6.1"},{"backlink":"07-files.html#fig2.7.1","level":"2.7","list_caption":"Figure: Memoria secundaria","alt":"Memoria secundaria","nro":11,"url":"../img/seconday_memory.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Memoria secundaria","attributes":{},"skip":false,"key":"2.7.1"},{"backlink":"07-files.html#fig2.7.2","level":"2.7","list_caption":"Figure: A File Handle","alt":"A File Handle","nro":12,"url":"../img/file-handle.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A File Handle","attributes":{},"skip":false,"key":"2.7.2"},{"backlink":"08-lists.html#fig2.8.1","level":"2.8","list_caption":"Figure: Variables y objetos","alt":"Variables y objetos","nro":13,"url":"../img/variables-objects.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Variables y objetos","attributes":{},"skip":false,"key":"2.8.1"},{"backlink":"12-network.html#fig2.12.1","level":"2.12","list_caption":"Figure: A Socket Connection","alt":"A Socket Connection","nro":14,"url":"../img/socket.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"A Socket Connection","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"13-web.html#fig2.13.1","level":"2.13","list_caption":"Figure: Una representación en árbol de XML","alt":"Una representación en árbol de XML","nro":15,"url":"../img/xml.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Una representación en árbol de XML","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"13-web.html#fig2.13.2","level":"2.13","list_caption":"Figure: Arquitectura orientada a Servicios","alt":"Arquitectura orientada a Servicios","nro":16,"url":"../img/api.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Arquitectura orientada a Servicios","attributes":{},"skip":false,"key":"2.13.2"},{"backlink":"14-objects.html#fig2.14.1","level":"2.14","list_caption":"Figure: Un programa","alt":"Un programa","nro":17,"url":"../img/input-output.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Un programa","attributes":{},"skip":false,"key":"2.14.1"},{"backlink":"14-objects.html#fig2.14.2","level":"2.14","list_caption":"Figure: Un programa como red de objetos","alt":"Un programa como red de objetos","nro":18,"url":"../img/program-as-network.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"Un programa como red de objetos","attributes":{},"skip":false,"key":"2.14.2"},{"backlink":"14-objects.html#fig2.14.3","level":"2.14","list_caption":"Figure: Ignorar los detalles al usar un objeto","alt":"Ignorar los detalles al usar un objeto","nro":19,"url":"../img/ignoring-details.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Ignorar los detalles al usar un objeto","attributes":{},"skip":false,"key":"2.14.3"},{"backlink":"14-objects.html#fig2.14.4","level":"2.14","list_caption":"Figure: Ignorar los detalles al construir un objeto","alt":"Ignorar los detalles al construir un objeto","nro":20,"url":"../img/building-objects-details-ignored.svg","index":4,"caption_template":"Imagen - _CAPTION_","label":"Ignorar los detalles al construir un objeto","attributes":{},"skip":false,"key":"2.14.4"},{"backlink":"14-objects.html#fig2.14.5","level":"2.14","list_caption":"Figure: Una clase y dos objetos","alt":"Una clase y dos objetos","nro":21,"url":"../img/cookies.png","index":5,"caption_template":"Imagen - _CAPTION_","label":"Una clase y dos objetos","attributes":{},"skip":false,"key":"2.14.5"},{"backlink":"15-database.html#fig2.15.1","level":"2.15","list_caption":"Figure: Bases de datos relacionales","alt":"Bases de datos relacionales","nro":22,"url":"../img/databases.svg","index":1,"caption_template":"Imagen - _CAPTION_","label":"Bases de datos relacionales","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"15-database.html#fig2.15.2","level":"2.15","list_caption":"Figure: A Database Cursor","alt":"A Database Cursor","nro":23,"url":"../img/database-cursor.svg","index":2,"caption_template":"Imagen - _CAPTION_","label":"A Database Cursor","attributes":{},"skip":false,"key":"2.15.2"},{"backlink":"15-database.html#fig2.15.3","level":"2.15","list_caption":"Figure: Filas en una tabla","alt":"Filas en una tabla","nro":24,"url":"../img/rows-in-table.svg","index":3,"caption_template":"Imagen - _CAPTION_","label":"Filas en una tabla","attributes":{},"skip":false,"key":"2.15.3"},{"backlink":"15-database.html#fig2.15.4","level":"2.15","list_caption":"Figure: Relaciones entre tablas","alt":"Relaciones entre tablas","nro":25,"url":"img/relatinos-db.png","index":4,"caption_template":"Imagen - _CAPTION_","label":"Relaciones entre tablas","attributes":{},"skip":false,"key":"2.15.4"},{"backlink":"15-database.html#fig2.15.5","level":"2.15","list_caption":"Figure: Conectando tablas utilizando JOIN","alt":"Conectando tablas utilizando JOIN","nro":26,"url":"../img/connecting-tables.svg","index":5,"caption_template":"Imagen - _CAPTION_","label":"Conectando tablas utilizando JOIN","attributes":{},"skip":false,"key":"2.15.5"}]},"language":"es","gitbook":"*"},"file":{"path":"11-regex.md","mtime":"2020-11-03T15:12:48.372Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T15:13:25.577Z"},"basePath":".","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

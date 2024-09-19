@@ -477,7 +477,7 @@ Follows:
 
 Puedes ver los campos `id`, `name` y `visited` en la tabla `People` y puedes ver los números de ambos extremos de la relación en la tabla `Follows`. En la tabla `People`, podemos ver que las tres primeras personas han sido visitadas y sus datos han sido recuperados. Los datos en la tabla `Follows` indican que `drchuck` (usuario 1) es un amigo para todas las personas que aparecen en las primeras cinco filas. Esto tiene sentido porque los primeros datos que recuperamos y almacenamos fueron los amigos de Twitter de `drchuck`. Si tuvieras que imprimir más filas de la tabla `Follows`, también verías a los amigos de los usuarios 2 y 3.
 
-## Tres tipos de teclas {#three-kinds-of-keys}
+## Tres tipos de claves {#three-kinds-of-keys}
 
 TODO sigue por aquí
 Ahora que hemos empezado a construir un modelo que coloca nuestros datos en varias tablas vinculadas y vincula las filas en esas tablas usando **claves**, debemos analizar la terminología relacionada con las claves. En general, hay tres tipos de claves utilizadas en un modelo de base de datos.
